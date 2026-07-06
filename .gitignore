@@ -3,3 +3,10 @@ node_modules/
 *.log
 package-lock.json
 package.json
+
+# Internal / sensitive — never push to this PUBLIC repo
+enquiry-data-2026-07-01/
+HANDOFF.md
+Waterwell_DigitalConsult_Strategy.md
+Waterwell_DigitalConsult_Strategy.pdf
+relaunch-2026-06/
