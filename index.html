@@ -413,6 +413,15 @@
   .flow-card h3{font-size:1.6rem;margin-bottom:9px}
   .flow-card p{color:var(--muted);font-size:1.02rem;line-height:1.62;max-width:58ch}
 
+  /* about (below hero) */
+  .intro{padding:66px 0 6px}
+  .intro-inner{display:grid;grid-template-columns:auto 1fr;gap:42px;align-items:center;max-width:940px;margin:0 auto}
+  .intro-photo img{width:156px;height:156px;border-radius:50%;object-fit:cover;object-position:84% 28%;box-shadow:var(--shadow-soft);border:4px solid var(--paper)}
+  .intro-copy .eyebrow{margin-bottom:14px}
+  .intro-copy h2{font-size:clamp(1.7rem,2.6vw,2.2rem);display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+  .intro-creds{font-family:var(--mono);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--sage);font-weight:600}
+  .intro-copy p{color:var(--muted);margin-top:14px;font-size:1.06rem;line-height:1.62;max-width:62ch}
+
   /* nav active section */
   .nav-links a.active{color:var(--navy)}
   .nav-links a.active::after{width:100%}
@@ -466,6 +475,8 @@
     .hero-grid,.story-grid,.booking,.foot-grid,.faq-grid,.compare-wrap,.virtual-card{grid-template-columns:1fr}
     .virtual-card{padding:34px 26px;gap:30px}.virtual .wm{display:none}
     .hero{padding-top:128px}
+    .intro-inner{grid-template-columns:1fr;justify-items:center;text-align:center;gap:22px}
+    .intro-copy h2{justify-content:center}
     .portrait{max-width:380px;margin:10px auto 0}
     .trust{grid-template-columns:repeat(2,1fr);gap:28px}
     .cond-grid,.svc-list,.steps,.tst-grid,.visit-grid{grid-template-columns:1fr}
@@ -559,6 +570,18 @@
       <div class="item reveal"><b><span class="count" data-to="10">0</span>+</b><span>Years of clinical experience</span></div>
       <div class="item reveal d1"><b>Hundreds</b><span>Of eczema patients treated</span></div>
       <div class="item reveal d2"><b>100%</b><span>Online · treating patients worldwide</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT (below hero) -->
+<section class="intro">
+  <div class="wrap intro-inner">
+    <div class="intro-photo reveal"><img src="assets/kohei-hero.jpg" alt="Kohei Iguchi, naturopath at Waterwell Clinic" loading="lazy" decoding="async" /></div>
+    <div class="intro-copy">
+      <span class="eyebrow reveal">A little about me</span>
+      <h2 class="reveal d1">Kohei Iguchi <span class="intro-creds">BNatMed, BSc</span></h2>
+      <p class="reveal d1">I’m a qualified Naturopath and Medical Herbalist with over 10 years of clinical experience treating skin conditions. I have a special interest in treating patients with eczema, as I’ve experienced severe eczema myself and I know how hard it can be. Natural medicine helped me get my life back — so now I’m dedicated to helping you find that same relief.</p>
     </div>
   </div>
 </section>
