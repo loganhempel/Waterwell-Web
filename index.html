@@ -168,6 +168,12 @@
   .hero{position:relative;padding:168px 0 88px;overflow:hidden}
   .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
   .hero h1{font-size:clamp(2.9rem,6.2vw,5rem);font-weight:400;letter-spacing:-.01em;margin-top:22px}
+  /* rotating hero banners — single element swaps text; CTA + reassurance stay fixed */
+  .hero-rotator{transition:opacity .5s cubic-bezier(.16,1,.3,1),transform .5s cubic-bezier(.16,1,.3,1)}
+  .hero-rotator.fading{opacity:0;transform:translateY(10px)}
+  .hero-dots{display:flex;gap:9px;margin-top:22px}
+  .hero-dots i{width:26px;height:3px;border-radius:3px;background:var(--line);cursor:pointer;transition:background .4s}
+  .hero-dots i.on{background:var(--sage)}
   .hero h1 em{font-style:italic;color:var(--sage)}
   .hero .lead{font-size:clamp(1.05rem,1.6vw,1.22rem);color:var(--muted);max-width:34ch;margin:24px 0 14px}
   .hero .sub{font-size:1rem;color:var(--ink);max-width:42ch;margin-bottom:30px}
@@ -542,9 +548,12 @@
     <div class="hero-grid">
       <div class="hero-copy">
         <span class="eyebrow reveal">Online Naturopathy &amp; Skin Health · NZ &amp; Australia</span>
-        <h1 class="reveal d1">Wellness from <em class="sheen">within</em>.</h1>
-        <p class="lead reveal d2">Frustrated by skin problems that keep coming back? There is a reason — and a way through it.</p>
+        <div class="hero-rotator reveal d1" id="hero-rotator" aria-live="polite">
+          <h1 id="hero-h1">Wellness from <em class="sheen">within</em>.</h1>
+          <p class="lead" id="hero-lead">Frustrated by skin problems that keep coming back? There is a reason — and a way through it.</p>
+        </div>
         <p class="sub reveal d3">Waterwell Clinic treats the root cause of eczema, psoriasis, acne and topical steroid withdrawal, not just the surface. Natural, individual, and grounded in over a decade of clinical experience.</p>
+        <div class="hero-dots reveal d3" id="hero-dots" role="tablist" aria-label="Choose a message"><i class="on" role="tab" aria-label="Message 1"></i><i role="tab" aria-label="Message 2"></i><i role="tab" aria-label="Message 3"></i></div>
         <div class="hero-actions reveal d4">
           <a class="btn btn-primary" href="#visit">Book a free discovery session <span class="arrow">→</span></a>
           <a class="btn btn-ghost" href="#how">See how it works</a>
@@ -637,24 +646,24 @@
       <h2>Skin conditions, supported from the inside out.</h2>
     </div>
     <div class="cond-grid">
-      <div class="cond feature reveal">
+      <a class="cond feature reveal" href="/conditions/eczema">
         <span class="cic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 18 0"/><path d="M6.5 12a5.5 5.5 0 0 1 11 0"/><circle cx="12" cy="12" r="1.6" fill="currentColor" stroke="none"/></svg></span>
-        <h3>Eczema</h3><p>By understanding the type(s) of eczema, your individual triggers and causes, and rebalancing the gut and immune system.</p></div>
-      <div class="cond reveal d1">
+        <h3>Eczema</h3><p>By understanding the type(s) of eczema, your individual triggers and causes, and rebalancing the gut and immune system.</p></a>
+      <a class="cond reveal d1" href="/conditions/tsw">
         <span class="cic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg></span>
-        <h3>Topical Steroid Withdrawal</h3><p>By addressing the nervous-system disruption caused by steroid use, and managing the eczema that prompted the steroids in the first place.</p></div>
-      <div class="cond reveal d2">
+        <h3>Topical Steroid Withdrawal</h3><p>By addressing the nervous-system disruption caused by steroid use, and managing the eczema that prompted the steroids in the first place.</p></a>
+      <a class="cond reveal d2" href="/conditions/psoriasis">
         <span class="cic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><rect x="3.5" y="3.5" width="11" height="11" rx="2.5"/><rect x="9.5" y="9.5" width="11" height="11" rx="2.5"/></svg></span>
-        <h3>Psoriasis</h3><p>By looking at gut and liver function to slowly calm the autoimmune condition driving it.</p></div>
-      <div class="cond reveal d1">
+        <h3>Psoriasis</h3><p>By looking at gut and liver function to slowly calm the autoimmune condition driving it.</p></a>
+      <a class="cond reveal d1" href="/conditions/acne">
         <span class="cic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><circle cx="9" cy="10" r="1" fill="currentColor" stroke="none"/><circle cx="15" cy="11" r="1" fill="currentColor" stroke="none"/><circle cx="12" cy="15" r="1" fill="currentColor" stroke="none"/></svg></span>
-        <h3>Acne</h3><p>By supporting hormonal balance, gut health, microbial balance, dietary triggers and lifestyle factors.</p></div>
-      <div class="cond reveal d2">
+        <h3>Acne</h3><p>By supporting hormonal balance, gut health, microbial balance, dietary triggers and lifestyle factors.</p></a>
+      <a class="cond reveal d2" href="/conditions/skin-infections">
         <span class="cic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="6"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5.2 5.2l2 2M16.8 16.8l2 2M18.8 5.2l-2 2M7.2 16.8l-2 2" stroke-linecap="round"/></svg></span>
-        <h3>Skin infections</h3><p>By providing natural antimicrobial support and addressing the underlying immune imbalance that lets infections take hold.</p></div>
-      <div class="cond reveal d3">
+        <h3>Skin infections</h3><p>By providing natural antimicrobial support and addressing the underlying immune imbalance that lets infections take hold.</p></a>
+      <a class="cond reveal d3" href="/conditions/rosacea">
         <span class="cic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4c3 2.5 5 5.5 5 8.5a5 5 0 0 1-10 0C7 9.5 9 6.5 12 4z"/><path d="M9.5 13.5c1 1 4 1 5 0" opacity=".7"/></svg></span>
-        <h3>Rosacea</h3><p>By identifying and addressing microbial imbalance, digestive issues, dietary triggers and lifestyle factors.</p></div>
+        <h3>Rosacea</h3><p>By identifying and addressing microbial imbalance, digestive issues, dietary triggers and lifestyle factors.</p></a>
     </div>
     <p class="cond-note reveal">Dedicated pages for each condition are on the way.</p>
   </div>
@@ -878,7 +887,7 @@
     <div class="foot-grid">
       <div><div class="logo-w"><img src="assets/logo.png" alt="Waterwell Clinic" /></div><p class="tag">Naturopathy and medical herbalism for skin health — online, New Zealand &amp; worldwide. Treating the root cause — eczema, psoriasis, acne and topical steroid withdrawal — from the inside out.</p>
         <div class="foot-badges"><span>Reg. MNMHNZ</span><!--AU:cut--><span>★ 5.0 · 32 Google reviews</span><span>MoneyHub — Best Naturopath, Auckland 2024</span><!--/AU:cut--><span>10+ years</span><span>100% online</span></div></div>
-      <div><h4>Explore</h4><ul><li><a href="#conditions">Conditions treated</a></li><li><a href="#how">How it works</a></li><li><a href="#story">My eczema story</a></li><li><a href="#results">Patient results</a></li><li><a href="#services">Services</a></li></ul></div>
+      <div><h4>Explore</h4><ul><li><a href="#conditions">Conditions treated</a></li><li><a href="#how">How it works</a></li><li><a href="#story">My eczema story</a></li><li><a href="#results">Patient results</a></li><li><a href="#services">Services</a></li><li><a href="/blog">Articles</a></li></ul></div>
       <div><h4>Visit &amp; book</h4><ul><li><a href="mailto:info@waterwellclinic.co.nz">info@waterwellclinic.co.nz</a></li><li>Online consultations by video</li><li>New Zealand &amp; worldwide</li><li><a href="#visit">Book a free session →</a></li></ul></div>
     </div>
     <div class="foot-bottom">
@@ -1004,6 +1013,33 @@
       btn.addEventListener('mouseleave', () => { btn.style.transform = ''; });
     });
   }
+
+  // rotating hero banners — single element, fade-out → swap → fade-in (no ghosting)
+  (function(){
+    const rot = document.getElementById('hero-rotator'), h1 = document.getElementById('hero-h1'), lead = document.getElementById('hero-lead');
+    const dots = [...document.querySelectorAll('#hero-dots i')];
+    if(!rot || !h1 || !lead) return;
+    const MSG = [
+      {h1:'Wellness from <em class="sheen">within</em>.', lead:'Frustrated by skin problems that keep coming back? There is a reason — and a way through it.'},
+      {h1:'Real relief starts <em>inside</em>.', lead:'Eczema, psoriasis, acne and TSW — treated at the root cause, not just the surface.'},
+      {h1:'Skin that finally <em>settles</em>.', lead:'Personalised, natural treatment from a naturopath who has been exactly where you are.'},
+    ];
+    let i = 0, timer = null;
+    const go = n => {
+      n = (n + MSG.length) % MSG.length; if(n === i) return;
+      i = n;
+      dots.forEach((d,k) => d.classList.toggle('on', k===i));
+      if(reduce){ h1.innerHTML = MSG[i].h1; lead.textContent = MSG[i].lead; return; }
+      rot.classList.add('fading');
+      setTimeout(() => { h1.innerHTML = MSG[i].h1; lead.textContent = MSG[i].lead; rot.classList.remove('fading'); }, 500);
+    };
+    const stop = () => { if(timer){ clearInterval(timer); timer = null; } };
+    const start = () => { if(reduce) return; stop(); timer = setInterval(() => go(i+1), 5500); };
+    dots.forEach((d,k) => d.addEventListener('click', () => { go(k); start(); }));
+    const hero = document.getElementById('top');
+    hero.addEventListener('mouseenter', stop); hero.addEventListener('mouseleave', start);
+    start();
+  })();
 
   // ============ SCHEMATIC SCROLL DRIVER ============
   (function(){
