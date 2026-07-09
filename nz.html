@@ -236,37 +236,39 @@
   .cond.feature{background:var(--sage);color:#fff;border-color:transparent}
   .cond.feature h3,.cond.feature .idx{color:#fff}.cond.feature p{color:rgba(255,255,255,.88)}
 
-  /* ============ SCHEMATIC STAGE ============ */
-  .schematic{position:relative;height:540vh;background:linear-gradient(180deg,var(--navy-deep),var(--navy-ink) 60%,var(--navy-deep))}
-  .sch-inner{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;align-items:center}
-  .sch-inner::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(159,192,163,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(159,192,163,.05) 1px,transparent 1px);background-size:44px 44px;-webkit-mask-image:radial-gradient(ellipse 95% 75% at 50% 50%,#000,transparent 92%);mask-image:radial-gradient(ellipse 95% 75% at 50% 50%,#000,transparent 92%)}
-  .sch-grid{position:relative;z-index:2;width:100%;max-width:1180px;margin:0 auto;padding:0 32px;display:grid;grid-template-columns:.92fr 1.08fr;gap:40px;align-items:center}
-  .sch-panel .tag{font-family:var(--mono);font-size:11px;letter-spacing:.22em;color:var(--sage-bright);text-transform:uppercase}
-  .sch-panel .num{font-family:var(--mono);font-size:12px;letter-spacing:.2em;color:var(--sand);margin-bottom:18px;display:block;transition:opacity .5s}
-  .sch-panel h2{color:#fff;font-size:clamp(1.9rem,3.4vw,2.9rem);font-weight:400;line-height:1.1;min-height:2.1em}
-  .sch-panel p{color:rgba(255,255,255,.74);font-size:1.08rem;max-width:42ch;margin-top:20px;min-height:4.4em}
-  .sch-panel .pip{font-family:var(--mono);font-size:11px;color:var(--sage-bright);letter-spacing:.18em;margin-top:8px}
-  .sch-dots{display:flex;gap:9px;margin-top:34px}
-  .sch-dots i{width:30px;height:3px;border-radius:3px;background:rgba(255,255,255,.18);transition:background .4s}
-  .sch-dots i.on{background:var(--sage-bright)}
-  .sch-stage-wrap{position:relative}
-  .sch-svg{width:100%;height:auto;max-height:88vh;display:block;overflow:visible}
-  .sch-fade{opacity:0;transition:opacity 1s cubic-bezier(.16,1,.3,1),transform 1s cubic-bezier(.16,1,.3,1)}
-  .sch-fade.in{opacity:1}
-  .draw{stroke-dasharray:var(--l,1400);stroke-dashoffset:var(--l,1400);transition:stroke-dashoffset 1.3s cubic-bezier(.16,1,.3,1)}
-  .draw.in{stroke-dashoffset:0}
-  .pop{transform:scale(0);transform-origin:center;transition:transform .7s cubic-bezier(.34,1.56,.64,1)}
-  .pop.in{transform:scale(1)}
-  .flare-dot{fill:var(--sand);transition:fill 1.1s ease,opacity 1s ease}
-  .flare-dot.calm{fill:var(--sage-bright)}
-  .rash{fill:var(--sand);opacity:0;transition:opacity 1s ease}
-  .rash.show{opacity:.16}.rash.calm{opacity:0}
-  .sch-label{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;fill:var(--sky);text-transform:uppercase}
-  .sch-label.sand{fill:var(--sand)}.sch-label.sage{fill:var(--sage-bright)}
-  .node-drift{animation:drift var(--d,7s) ease-in-out infinite;animation-delay:var(--dl,0s)}
-  @keyframes drift{0%,100%{transform:translate(0,0)}33%{transform:translate(2px,-3px)}66%{transform:translate(-2px,2px)}}
-  .marker-pulse{transform-box:fill-box;transform-origin:center;animation:mpulse 2.6s ease-out infinite}
-  @keyframes mpulse{0%{opacity:.6;r:4}70%{opacity:0;r:16}100%{opacity:0;r:16}}
+  /* ============ HOW IT WORKS — the journey ============ */
+  .journey{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+  .jstep{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:34px 34px 32px;position:relative;overflow:hidden;transition:transform .5s cubic-bezier(.16,1,.3,1),box-shadow .5s,border-color .5s}
+  .jstep:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:transparent}
+  .jstep .jwm{position:absolute;top:-18px;right:6px;font-family:var(--display);font-size:9rem;line-height:1;color:var(--navy);opacity:.05;pointer-events:none;font-style:italic}
+  .jstep .jhead{display:flex;align-items:center;gap:16px;margin-bottom:16px}
+  .jstep .jic{width:52px;height:52px;border-radius:15px;background:var(--bg);color:var(--sage);display:flex;align-items:center;justify-content:center;flex:0 0 auto}
+  .jstep .jic svg{width:26px;height:26px}
+  .jstep .jn{font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--sand)}
+  .jstep h3{font-size:1.5rem;line-height:1.1;margin-bottom:11px}
+  .jstep p{font-size:1rem;color:var(--muted);line-height:1.6;position:relative;z-index:1;max-width:52ch}
+  .jstep p b{color:var(--ink);font-weight:600}
+  /* first step = full-width navy "start here" card */
+  .jstep.lead{grid-column:1/-1;background:var(--navy);border-color:transparent;display:grid;grid-template-columns:auto 1fr;gap:36px;align-items:center;padding:40px 44px}
+  .jstep.lead:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+  .jstep.lead .jwm{color:#fff;opacity:.07;font-size:11rem;top:-30px}
+  .jstep.lead .jic{width:64px;height:64px;border-radius:18px;background:rgba(159,192,163,.16);color:var(--sage-bright)}
+  .jstep.lead .jic svg{width:32px;height:32px}
+  .jstep.lead .jn{color:var(--sage-bright)}
+  .jstep.lead h3{color:#fff;font-size:1.85rem;margin:8px 0 12px}
+  .jstep.lead p{color:rgba(255,255,255,.78);max-width:64ch;font-size:1.06rem}
+  .jstep.lead p b{color:#fff}
+  .jstep.lead .lead-badge{display:flex;flex-direction:column;align-items:center;gap:12px}
+
+  /* THE STEPPING STONES — connected horizontal journey */
+  .stones{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;position:relative;margin-top:8px}
+  .stones::before{content:'';position:absolute;top:27px;left:11%;right:11%;height:2px;background:linear-gradient(90deg,var(--sage-bright),var(--sand));opacity:.55;z-index:0}
+  .stone{position:relative;z-index:1}
+  .stone .node{width:56px;height:56px;border-radius:50%;background:var(--paper);border:1px solid var(--line);box-shadow:var(--shadow-soft);color:var(--navy);font-family:var(--display);font-size:1.5rem;display:flex;align-items:center;justify-content:center;transition:transform .45s cubic-bezier(.16,1,.3,1),background .45s,color .45s}
+  .stone:hover .node{transform:translateY(-4px);background:var(--navy);color:#fff}
+  .stone h3{font-size:1.32rem;margin:24px 0 10px}
+  .stone p{font-size:.95rem;color:var(--muted);line-height:1.55}
+  .stone .meta{margin-top:16px;display:inline-block;font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--sage);border:1px solid var(--line);border-radius:30px;padding:5px 13px}
 
   /* story */
   .story{background:var(--bg-soft)}
@@ -310,15 +312,6 @@
   .rcard .cap span{display:block;font-family:var(--mono);font-size:10px;letter-spacing:.12em;color:rgba(255,255,255,.75);text-transform:uppercase;margin-top:3px}
   .disclaimer{font-size:12.5px;color:var(--muted);margin-top:26px;text-align:center;font-style:italic}
 
-  /* approach */
-  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--line)}
-  .step{padding:34px 26px 34px 0;border-right:1px solid var(--line);position:relative}
-  .step:last-child{border-right:0;padding-right:0}
-  .step .n{font-family:var(--mono);font-size:11px;color:var(--sand);letter-spacing:.18em;text-transform:uppercase}
-  .step h3{font-size:1.3rem;margin:14px 0 10px}
-  .step p{font-size:.93rem;color:var(--muted);line-height:1.55}
-  .step .meta{margin-top:14px;display:inline-block;font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--sage);border:1px solid var(--line);border-radius:30px;padding:5px 13px}
-
   /* services */
   .services{background:var(--navy);color:#fff}
   .services .sec-head h2{color:#fff}.services .sec-head p{color:rgba(255,255,255,.7)}
@@ -328,6 +321,8 @@
   .svc:hover{background:rgba(255,255,255,.03)}
   .svc:nth-child(odd){padding-right:48px}
   .svc:nth-child(even){padding-left:48px;border-left:1px solid rgba(255,255,255,.14)}
+  .svc.wide{grid-column:1/-1;padding-right:0;border-left:0}
+  .svc.wide p{max-width:64ch}
   .svc .sn{font-family:var(--mono);font-size:.85rem;color:var(--sage-bright)}
   .svc h3{color:#fff;font-size:1.4rem;margin-bottom:8px}
   .svc p{color:rgba(255,255,255,.7);font-size:.95rem;line-height:1.55}
@@ -403,18 +398,8 @@
   /* conditions note */
   .cond-note{text-align:center;margin-top:30px;font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--sand)}
 
-  /* how-it-works flow */
+  /* how-it-works + stepping-stones section backgrounds */
   .flow-sec{background:var(--bg-soft)}
-  .flow{max-width:800px;margin:6px auto 0;position:relative}
-  .flow::before{content:'';position:absolute;left:30px;top:24px;bottom:44px;width:2px;background:linear-gradient(180deg,var(--sage-bright),var(--line));border-radius:2px}
-  .flow-step{display:grid;grid-template-columns:62px 1fr;gap:28px;padding:0 0 40px;position:relative}
-  .flow-step:last-child{padding-bottom:0}
-  .flow-node{width:62px;height:62px;border-radius:50%;background:var(--paper);border:1.5px solid var(--line);box-shadow:var(--shadow-soft);display:flex;align-items:center;justify-content:center;color:var(--sage);position:relative;z-index:2}
-  .flow-node svg{width:27px;height:27px}
-  .flow-n{position:absolute;top:-7px;right:-7px;width:24px;height:24px;border-radius:50%;background:var(--navy);color:#fff;font-family:var(--mono);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;letter-spacing:0}
-  .flow-card{padding-top:7px}
-  .flow-card h3{font-size:1.6rem;margin-bottom:9px}
-  .flow-card p{color:var(--muted);font-size:1.02rem;line-height:1.62;max-width:58ch}
 
   /* about (below hero) */
   .intro{padding:66px 0 6px}
@@ -436,6 +421,9 @@
   .cond::after{content:"";position:absolute;left:0;top:0;height:3px;width:0;background:var(--sage);transition:width .5s cubic-bezier(.16,1,.3,1)}
   .cond:hover::after{width:100%}
   .cond.feature::after{display:none}
+  .cond .more{display:inline-flex;align-items:center;gap:7px;margin-top:18px;font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--sage);font-weight:600;transition:gap .35s cubic-bezier(.16,1,.3,1)}
+  .cond:hover .more{gap:13px}
+  .cond.feature .more{color:#fff}
 
   /* credential pills (story) */
   .creds{display:flex;flex-wrap:wrap;gap:9px;margin-top:24px}
@@ -465,8 +453,7 @@
   .reveal.d1{transition-delay:.08s}.reveal.d2{transition-delay:.16s}.reveal.d3{transition-delay:.24s}.reveal.d4{transition-delay:.32s}
 
   @media(prefers-reduced-motion:reduce){
-    .draw{stroke-dashoffset:0!important}.sch-fade,.pop{opacity:1!important;transform:none!important}
-    .node-drift,.marker-pulse,.droplet-bg path,.portrait .badge{animation:none!important}
+    .droplet-bg path,.portrait .badge{animation:none!important}
     .reveal{opacity:1!important;transform:none!important}
     .sheen{animation:none!important;-webkit-text-fill-color:var(--sage);color:var(--sage)!important}
   }
@@ -482,21 +469,22 @@
     .intro-copy h2{justify-content:center}
     .portrait{max-width:380px;margin:10px auto 0}
     .trust{grid-template-columns:repeat(2,1fr);gap:28px}
-    .cond-grid,.svc-list,.steps,.tst-grid,.visit-grid{grid-template-columns:1fr}
+    .cond-grid,.svc-list,.stones,.tst-grid,.visit-grid{grid-template-columns:1fr}
     .ba-grid{grid-template-columns:1fr}
-    .steps .step{border-right:0;border-bottom:1px solid var(--line);padding:28px 0}
+    .journey{grid-template-columns:1fr}
+    .jstep.lead{grid-template-columns:1fr;text-align:left;padding:32px 28px}
+    .jstep.lead .lead-badge{flex-direction:row;justify-content:flex-start}
+    .stones{gap:0}
+    .stones::before{display:none}
+    .stone{padding:22px 0;border-bottom:1px solid var(--line)}
+    .stone:last-child{border-bottom:0}
+    .stone h3{margin:16px 0 8px}
+    .stone .meta{margin-top:12px}
     .svc:nth-child(even){padding-left:0;border-left:0}.svc:nth-child(odd){padding-right:0}
     .tst.big{grid-column:span 1}
     .story-media .stack{position:relative;right:0;bottom:0;width:60%;margin:-30px 0 0 auto;border-width:5px}
     .booking{padding:38px 30px}
     .foot-bottom{flex-direction:column}
-    /* schematic → stack, shorter */
-    .schematic{height:auto;background:linear-gradient(180deg,var(--navy-deep),var(--navy-ink))}
-    .sch-inner{position:static;height:auto;padding:80px 0;display:block}
-    .sch-grid{grid-template-columns:1fr;gap:34px}
-    .sch-panel h2,.sch-panel p{min-height:0}
-    .sch-fade{opacity:1}.draw{stroke-dashoffset:0}.pop{transform:scale(1)}
-    .sch-dots{display:none}
     .mcta{display:flex}
     body{padding-bottom:0}
   }
@@ -647,56 +635,70 @@
     <div class="cond-grid">
       <a class="cond feature reveal" href="/conditions/eczema">
         <span class="cic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 18 0"/><path d="M6.5 12a5.5 5.5 0 0 1 11 0"/><circle cx="12" cy="12" r="1.6" fill="currentColor" stroke="none"/></svg></span>
-        <h3>Eczema</h3><p>By understanding the type(s) of eczema, your individual triggers and causes, and rebalancing the gut and immune system.</p></a>
+        <h3>Eczema</h3><p>By understanding the type(s) of eczema, your individual triggers and causes, and rebalancing the gut and immune system.</p><span class="more">Learn more →</span></a>
       <a class="cond reveal d1" href="/conditions/tsw">
         <span class="cic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg></span>
-        <h3>Topical Steroid Withdrawal</h3><p>By addressing the nervous-system disruption caused by steroid use, and managing the eczema that prompted the steroids in the first place.</p></a>
+        <h3>Topical Steroid Withdrawal</h3><p>By addressing the nervous-system disruption caused by steroid use, and managing the eczema that prompted the steroids in the first place.</p><span class="more">Learn more →</span></a>
       <a class="cond reveal d2" href="/conditions/psoriasis">
         <span class="cic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><rect x="3.5" y="3.5" width="11" height="11" rx="2.5"/><rect x="9.5" y="9.5" width="11" height="11" rx="2.5"/></svg></span>
-        <h3>Psoriasis</h3><p>By looking at gut and liver function to slowly calm the autoimmune condition driving it.</p></a>
+        <h3>Psoriasis</h3><p>By looking at gut and liver function to slowly calm the autoimmune condition driving it.</p><span class="more">Learn more →</span></a>
       <a class="cond reveal d1" href="/conditions/acne">
         <span class="cic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><circle cx="9" cy="10" r="1" fill="currentColor" stroke="none"/><circle cx="15" cy="11" r="1" fill="currentColor" stroke="none"/><circle cx="12" cy="15" r="1" fill="currentColor" stroke="none"/></svg></span>
-        <h3>Acne</h3><p>By supporting hormonal balance, gut health, microbial balance, dietary triggers and lifestyle factors.</p></a>
+        <h3>Acne</h3><p>By supporting hormonal balance, gut health, microbial balance, dietary triggers and lifestyle factors.</p><span class="more">Learn more →</span></a>
       <a class="cond reveal d2" href="/conditions/skin-infections">
         <span class="cic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="6"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5.2 5.2l2 2M16.8 16.8l2 2M18.8 5.2l-2 2M7.2 16.8l-2 2" stroke-linecap="round"/></svg></span>
-        <h3>Skin infections</h3><p>By providing natural antimicrobial support and addressing the underlying immune imbalance that lets infections take hold.</p></a>
+        <h3>Skin infections</h3><p>By providing natural antimicrobial support and addressing the underlying immune imbalance that lets infections take hold.</p><span class="more">Learn more →</span></a>
       <a class="cond reveal d3" href="/conditions/rosacea">
         <span class="cic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4c3 2.5 5 5.5 5 8.5a5 5 0 0 1-10 0C7 9.5 9 6.5 12 4z"/><path d="M9.5 13.5c1 1 4 1 5 0" opacity=".7"/></svg></span>
-        <h3>Rosacea</h3><p>By identifying and addressing microbial imbalance, digestive issues, dietary triggers and lifestyle factors.</p></a>
+        <h3>Rosacea</h3><p>By identifying and addressing microbial imbalance, digestive issues, dietary triggers and lifestyle factors.</p><span class="more">Learn more →</span></a>
     </div>
-    <p class="cond-note reveal">Dedicated pages for each condition are on the way.</p>
+    <p class="cond-note reveal">Select any condition to read Kohei’s full approach.</p>
   </div>
 </section>
 
-<!-- HOW IT WORKS — the path (replaces the old scroll schematic) -->
+<!-- HOW IT WORKS — the journey -->
 <section class="pad flow-sec" id="how">
   <div class="wrap">
-    <div class="sec-head reveal" style="max-width:720px">
-      <span class="eyebrow">How it works</span>
+    <div class="sec-head reveal" style="max-width:760px">
       <h2>A clear path from flare-ups to healthy skin.</h2>
       <p>No jargon, no guesswork — five considered steps that take you from where you are now to skin that looks after itself.</p>
     </div>
-    <div class="flow">
-      <div class="flow-step reveal">
-        <div class="flow-node"><span class="flow-n">1</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.6-4.6"/></svg></div>
-        <div class="flow-card"><h3>Identifying your skin condition</h3><p>Understanding what you’re dealing with is the single most important step in your healing journey — starting in the wrong direction costs time, effort and money. We combine in-depth consultations, a range of functional tests, and over a decade of clinical experience to pinpoint exactly what’s going on.</p></div>
-      </div>
-      <div class="flow-step reveal">
-        <div class="flow-node"><span class="flow-n">2</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 15c2 0 2.5-4 4.5-4s2.5 4 4.5 4 2.5-6 4.5-6 2.5 6 4.5 6"/><path d="M3 20h18" opacity=".5"/></svg></div>
-        <div class="flow-card"><h3>Removing the obstacles</h3><p>Food and environmental sensitivities are like speed bumps — they cause ups and downs and slow your progress, quietly fuelling inflammation so there’s little room to heal. Clearing them reduces inflammation significantly and paves a smoother path to healthy skin.</p></div>
-      </div>
-      <div class="flow-step reveal">
-        <div class="flow-node"><span class="flow-n">3</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-6.5-4.2-6.5-9A3.5 3.5 0 0 1 12 7.5 3.5 3.5 0 0 1 18.5 11c0 4.8-6.5 9-6.5 9z"/></svg></div>
-        <div class="flow-card"><h3>Treating the underlying cause</h3><p>Once the inflammation has settled, we address the root of your condition — because permanently avoiding allergens isn’t solving anything. We find what caused those sensitivities in the first place and bring it back to balance, with natural remedies that restore gut function, hormones, detox pathways, your microbiome, stress response and skin integrity.</p></div>
-      </div>
-      <div class="flow-step reveal">
-        <div class="flow-node"><span class="flow-n">4</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12a8 8 0 1 1-2.3-5.6"/><path d="M20 4v4h-4"/></svg></div>
-        <div class="flow-card"><h3>Reintroduction</h3><p>True health isn’t avoiding your triggers — it’s being strong enough to tolerate them. Once your symptoms have eased and the cause is addressed, we gently reintroduce these foods and habits. You’ll be surprised how well your body copes when it’s back in balance.</p></div>
-      </div>
-      <div class="flow-step reveal">
-        <div class="flow-node"><span class="flow-n">5</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2-5 3 10 2-5h7"/></svg></div>
-        <div class="flow-card"><h3>Maintenance</h3><p>Your journey isn’t over when treatment ends — some say that’s where it truly begins. You’ll use everything you’ve learned to hold your progress, and we provide a maintenance plan and check in from time to time, so you never slip back to where you started.</p></div>
-      </div>
+    <div class="journey">
+      <article class="jstep lead reveal">
+        <span class="jwm">01</span>
+        <div class="lead-badge">
+          <span class="jic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.6-4.6"/></svg></span>
+        </div>
+        <div class="lead-copy">
+          <span class="jn">Step 01 · Where we begin</span>
+          <h3>Identifying your skin condition</h3>
+          <p><b>Understanding what you’re dealing with is the single most important step in your healing journey</b> — starting in the wrong direction costs time, effort and money. We combine in-depth consultations, a range of functional tests, and over a decade of clinical experience to pinpoint exactly what’s going on.</p>
+        </div>
+      </article>
+      <article class="jstep reveal d1">
+        <span class="jwm">02</span>
+        <div class="jhead"><span class="jic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 15c2 0 2.5-4 4.5-4s2.5 4 4.5 4 2.5-6 4.5-6 2.5 6 4.5 6"/><path d="M3 20h18" opacity=".5"/></svg></span><span class="jn">Step 02</span></div>
+        <h3>Removing the obstacles</h3>
+        <p><b>Food and environmental sensitivities are like speed bumps</b> — they cause ups and downs and slow your progress, quietly fuelling inflammation so there’s little room to heal. Clearing them reduces inflammation significantly and paves a smoother path to healthy skin.</p>
+      </article>
+      <article class="jstep reveal d2">
+        <span class="jwm">03</span>
+        <div class="jhead"><span class="jic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-6.5-4.2-6.5-9A3.5 3.5 0 0 1 12 7.5 3.5 3.5 0 0 1 18.5 11c0 4.8-6.5 9-6.5 9z"/></svg></span><span class="jn">Step 03</span></div>
+        <h3>Treating the underlying cause</h3>
+        <p><b>Once the inflammation has settled, we address the root of your condition</b> — because permanently avoiding allergens isn’t solving anything. We find what caused those sensitivities in the first place and bring it back to balance, with natural remedies that restore gut function, hormones, detox pathways, your microbiome, stress response and skin integrity.</p>
+      </article>
+      <article class="jstep reveal d1">
+        <span class="jwm">04</span>
+        <div class="jhead"><span class="jic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12a8 8 0 1 1-2.3-5.6"/><path d="M20 4v4h-4"/></svg></span><span class="jn">Step 04</span></div>
+        <h3>Reintroduction</h3>
+        <p><b>True health isn’t avoiding your triggers — it’s being strong enough to tolerate them.</b> Once your symptoms have eased and the cause is addressed, we gently reintroduce these foods and habits. You’ll be surprised how well your body copes when it’s back in balance.</p>
+      </article>
+      <article class="jstep reveal d2">
+        <span class="jwm">05</span>
+        <div class="jhead"><span class="jic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2-5 3 10 2-5h7"/></svg></span><span class="jn">Step 05</span></div>
+        <h3>Maintenance</h3>
+        <p><b>Your journey isn’t over when treatment ends — some say that’s where it truly begins.</b> You’ll use everything you’ve learned to hold your progress, and we provide a maintenance plan and check in from time to time, so you never slip back to where you started.</p>
+      </article>
     </div>
   </div>
 </section>
@@ -773,11 +775,11 @@
       <h2>A calm, considered path towards your desired results.</h2>
       <p>Sometimes you just need reassurance when you’re putting your health in someone else’s hands. Here’s exactly what working together looks like.</p>
     </div>
-    <div class="steps">
-      <div class="step reveal"><div class="n">Step 01</div><h3>Free discovery session</h3><p>A relaxed 15-minute conversation to ask anything about the consultations, the treatment process and how I can help you. No pressure, no obligations — just your peace of mind.</p><span class="meta">15 min · Free</span></div>
-      <div class="step reveal d1"><div class="n">Step 02</div><h3>Initial consultation</h3><p>A comprehensive 75-minute appointment to uncover the triggers and root cause of your skin condition. We assess your history, diet, lifestyle, mental-emotional health and much more — a completely holistic view.</p><span class="meta">75 min · By video</span></div>
-      <div class="step reveal d2"><div class="n">Step 03</div><h3>Your tailored plan</h3><p>A treatment plan created only for you — herbal medicine, nutrition, and dietary and lifestyle support. No two plans are ever the same, because everyone is unique.</p><span class="meta">Individual</span></div>
-      <div class="step reveal d3"><div class="n">Step 04</div><h3>Review &amp; progress</h3><p>We track your progress together and adjust as your body responds — so you can see and feel the change over time. As your skin improves, the plan evolves with you.</p><span class="meta">Ongoing</span></div>
+    <div class="stones">
+      <div class="stone reveal"><div class="node">1</div><h3>Free discovery session</h3><p>A relaxed 15-minute conversation to ask anything about the consultations, the treatment process and how I can help you. No pressure, no obligations — just your peace of mind.</p><span class="meta">15 min · Free</span></div>
+      <div class="stone reveal d1"><div class="node">2</div><h3>Initial consultation</h3><p>A comprehensive 75-minute appointment to uncover the triggers and root cause of your skin condition. We assess your history, diet, lifestyle, mental-emotional health and much more — a completely holistic view.</p><span class="meta">75 min · By video</span></div>
+      <div class="stone reveal d2"><div class="node">3</div><h3>Your tailored plan</h3><p>A treatment plan created only for you — herbal medicine, nutrition, and dietary and lifestyle support. No two plans are ever the same, because everyone is unique.</p><span class="meta">Individual</span></div>
+      <div class="stone reveal d3"><div class="node">4</div><h3>Review &amp; progress</h3><p>We track your progress together and adjust as your body responds — so you can see and feel the change over time. As your skin improves, the plan evolves with you.</p><span class="meta">Ongoing</span></div>
     </div>
   </div>
 </section>
@@ -786,7 +788,6 @@
 <section class="pad services" id="services">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="eyebrow">Services</span>
       <h2>The tools behind the treatment.</h2>
       <p>Everything Waterwell offers works toward the same goal — understanding your body, then supporting it gently and effectively.</p>
     </div>
@@ -795,7 +796,7 @@
       <div class="svc reveal d1"><div class="sn">02</div><div><h3>Functional tests</h3><p>Gut microbiome mapping, allergy and intolerance panels, hormone (DUTCH) tests, organic acids, heavy metals and more — proven laboratory tests for the answers you need.</p></div></div>
       <div class="svc reveal"><div class="sn">03</div><div><h3>Herbal medicine</h3><p>GMP-approved, sustainably sourced, high-quality medicinal herbs as capsules, powders or tablets — traditional medicine used to its full potential in the modern world.</p></div></div>
       <div class="svc reveal d1"><div class="sn">04</div><div><h3>Nutritional supplements</h3><p>Prescription-only, practitioner-grade supplements chosen to address deficiencies and support your body’s own ability to heal. Quality, not quantity — just enough to nudge your body in the right direction.</p></div></div>
-      <div class="svc reveal"><div class="sn">05</div><div><h3>Dietary &amp; lifestyle advice</h3><p>Practical, realistic changes — step by step — that address the daily habits feeding into how your skin and body behave.</p></div></div>
+      <div class="svc wide reveal"><div class="sn">05</div><div><h3>Dietary &amp; lifestyle advice</h3><p>Practical, realistic changes — step by step — that address the daily habits feeding into how your skin and body behave.</p></div></div>
     </div>
   </div>
 </section>
@@ -1040,59 +1041,6 @@
     start();
   })();
 
-  // ============ SCHEMATIC SCROLL DRIVER ============
-  (function(){
-    const stage = document.getElementById('model'); if(!stage) return;
-    if (window.matchMedia('(max-width:980px)').matches){
-      // mobile: everything shown statically
-      document.querySelectorAll('#model .beat').forEach(g=>g.style.opacity=1);
-      document.querySelectorAll('#model .draw').forEach(el=>el.classList.add('in'));
-      return;
-    }
-    const beats = [
-      {id:'b1', s:0.02, e:0.14},
-      {id:'b2', s:0.18, e:0.34},
-      {id:'b3', s:0.38, e:0.60},
-      {id:'b4', s:0.62, e:0.78},
-      {id:'b5', s:0.80, e:0.96},
-    ];
-    const stages = [
-      {at:0.00, n:'01 / THE SURFACE',   ti:'You see the rash.',                  bo:'It’s where most treatment stops — at the surface, with creams that quiet the symptom. But the skin is only the surface of something deeper.'},
-      {at:0.18, n:'02 / BENEATH',       ti:'Skin is a reflection, not a source.',bo:'Beneath the surface — the epidermis, the dermis, the follicles — the skin is constantly responding to what’s happening further in.'},
-      {at:0.40, n:'03 / THE INSIDE',    ti:'The real conversation.',             bo:'Gut, immune system, liver and inflammation are where skin conditions are really driven. This is where Kohei looks first.'},
-      {at:0.62, n:'04 / THE INPUTS',    ti:'Everything you take in shows up.',   bo:'Diet, stress, environment and medication all feed into that internal balance — and surface, eventually, on your skin.'},
-      {at:0.80, n:'05 / THE WORK',      ti:'Restore the balance within.',        bo:'Find and address the root cause inside, and the skin follows. That is the work — individual, patient, and lasting.'},
-    ];
-    const numEl=document.getElementById('sch-num'),tiEl=document.getElementById('sch-title'),boEl=document.getElementById('sch-body'),pipEl=document.getElementById('sch-pip'),dots=[...document.querySelectorAll('#sch-dots i')];
-    let lastName=null;
-    const clamp01 = v => Math.max(0, Math.min(1, v));
-    function apply(p){
-      beats.forEach(b => {
-        const g = document.getElementById(b.id); if(!g) return;
-        const local = clamp01((p - b.s) / (b.e - b.s));
-        g.style.opacity = local;
-        g.querySelectorAll('.draw').forEach(el => el.classList.toggle('in', local > 0.02));
-      });
-      // flare calms at the end
-      const calm = p > 0.85;
-      document.querySelectorAll('#flare .flare-dot').forEach(d => d.classList.toggle('calm', calm));
-      document.getElementById('rash').classList.toggle('calm', calm);
-      // narration
-      let cur=stages[0],idx=0; stages.forEach((s,i)=>{if(p>=s.at){cur=s;idx=i;}});
-      if(lastName!==cur.n){lastName=cur.n;numEl.textContent=cur.n;tiEl.textContent=cur.ti;boEl.textContent=cur.bo;
-        dots.forEach((d,i)=>d.classList.toggle('on',i<=idx));}
-      pipEl.style.opacity = p>0.05 ? 0 : 1;
-    }
-    apply(0);
-    let ticking=false;
-    window.addEventListener('scroll', ()=>{
-      if(ticking) return; ticking=true;
-      requestAnimationFrame(()=>{
-        const r=stage.getBoundingClientRect(); const total=stage.offsetHeight-window.innerHeight;
-        const p=Math.max(0,Math.min(1,-r.top/total)); apply(p); ticking=false;
-      });
-    },{passive:true});
-  })();
 </script>
 </body>
 </html>
