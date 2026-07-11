@@ -462,7 +462,7 @@
   @media(max-width:980px){
     .nav-links,.nav-phone{display:none}
     .burger{display:flex}
-    .hero-grid,.story-grid,.booking,.foot-grid,.faq-grid,.compare-wrap,.virtual-card{grid-template-columns:1fr}
+    .hero-grid,.story-grid,.booking,.foot-grid,.faq-grid,.compare-wrap,.virtual-card,.book-cta-card{grid-template-columns:1fr}
     .virtual-card{padding:34px 26px;gap:30px}.virtual .wm{display:none}
     .hero{padding-top:128px}
     .intro-inner{grid-template-columns:1fr;justify-items:center;text-align:center;gap:22px}
@@ -484,6 +484,8 @@
     .tst.big{grid-column:span 1}
     .story-media .stack{position:relative;right:0;bottom:0;width:60%;margin:-30px 0 0 auto;border-width:5px}
     .booking{padding:38px 30px}
+    .bc-left{padding:38px 30px}
+    .bc-embed{padding:20px}
     .foot-bottom{flex-direction:column}
     .mcta{display:flex}
     body{padding-bottom:0}
@@ -496,6 +498,34 @@
     .rating-band{flex-wrap:wrap;justify-content:center;text-align:center;gap:12px}
     .rating-band .rb-g{padding-left:0;border-left:0}
     .book-form{grid-template-columns:1fr}
+    .bc-embed{padding:16px}
+    .bc-embed-inner{min-height:440px}
+  }
+
+  /* book a call — Cal.com discovery-call CTA */
+  .book-cta{padding:20px 0 96px}
+  .book-cta-card{background:var(--paper);border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow-soft);display:grid;grid-template-columns:.92fr 1.08fr;overflow:hidden}
+  .bc-left{background:var(--navy);color:#fff;padding:56px 50px;display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden}
+  .bc-left .wm{position:absolute;right:-30px;bottom:-40px;width:200px;color:var(--sage-bright);opacity:.08;pointer-events:none}
+  .bc-left .eyebrow{color:var(--sage-bright);position:relative;z-index:1}
+  .bc-left .eyebrow::before{background:var(--sage-bright)}
+  .bc-left h2{color:#fff;font-size:clamp(1.85rem,3.1vw,2.5rem);font-weight:400;margin-top:16px;line-height:1.14;position:relative;z-index:1}
+  .bc-left p{color:rgba(255,255,255,.75);margin-top:16px;max-width:42ch;font-size:1.02rem;position:relative;z-index:1}
+  .bc-left .btn{margin-top:28px;background:#fff;color:var(--navy);box-shadow:none;position:relative;z-index:1}
+  .bc-left .btn:hover{background:var(--sage-bright);color:var(--navy-deep)}
+  .bc-fallback{margin-top:18px;font-family:var(--mono);font-size:11px;letter-spacing:.05em;color:rgba(255,255,255,.6);position:relative;z-index:1}
+  .bc-fallback a{color:#fff;text-decoration:underline;text-underline-offset:3px}
+  .bc-embed{background:var(--bg-soft);padding:22px;display:flex;align-items:stretch}
+  .bc-embed-inner{width:100%;min-height:520px;border-radius:14px;border:1px solid var(--line);background:var(--paper);overflow:hidden;display:flex;align-items:center;justify-content:center}
+  .bc-loading{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);text-align:center;padding:24px}
+  @media(max-width:980px){
+    .book-cta-card{grid-template-columns:1fr}
+    .bc-left{padding:38px 30px}
+    .bc-embed{padding:20px}
+  }
+  @media(max-width:640px){
+    .bc-embed{padding:16px}
+    .bc-embed-inner{min-height:440px}
   }
 </style>
 </head>
@@ -614,6 +644,42 @@
     </div>
   </div>
 </section>
+
+<!-- BOOK A CALL — Cal.com discovery call -->
+<section class="book-cta" id="book-call">
+  <div class="wrap">
+    <div class="book-cta-card reveal">
+      <div class="bc-left">
+        <svg class="wm" viewBox="0 0 100 130" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M50 4 C50 4 88 52 88 82 A38 38 0 1 1 12 82 C12 52 50 4 50 4 Z"/></svg>
+        <span class="eyebrow">Free 15-minute call</span>
+        <h2>Book a free discovery call.</h2>
+        <p>Pick a time straight off Kohei’s calendar — a relaxed conversation about your skin and how we can help, no obligation, no back-and-forth emails.</p>
+        <!-- [CONFIRM CAL.COM URL] -->
+        <a class="btn" href="https://cal.com/waterwell/discovery" target="_blank" rel="noopener">Book your free call <span class="arrow">→</span></a>
+        <p class="bc-fallback">Trouble booking? Email <a href="mailto:info@waterwellclinic.co.nz">info@waterwellclinic.co.nz</a> and we’ll sort a time.</p>
+      </div>
+      <div class="bc-embed">
+        <div class="bc-embed-inner">
+          <div id="cal-inline-discovery" style="width:100%;height:100%">
+            <p class="bc-loading">Loading calendar…</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Cal.com inline embed — [CONFIRM CAL.COM URL] calLink below must match the booking link above -->
+<script type="text/javascript">
+  (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if (typeof namespace === "string") { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]); } else p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+  Cal("init", "discovery", {origin: "https://cal.com"});
+  Cal.ns.discovery("inline", {
+    elementOrSelector: "#cal-inline-discovery",
+    calLink: "waterwell/discovery", /* [CONFIRM CAL.COM URL] */
+    layout: "month_view"
+  });
+  Cal.ns.discovery("ui", {"styles": {"branding": {"brandColor": "#0E3A64"}}, "hideEventTypeDetails": false, "layout": "month_view"});
+</script>
 
 <!-- BELIEF -->
 <section class="promise">
