@@ -1,0 +1,13 @@
+<!-- Path A: fire generate_lead on the /thank-you/ page.
+     Add to the /thank-you/ page ONLY (Custom HTML block, bottom of page).
+     Requires the GA4 base tag to be live site-wide first. -->
+<script>
+  (function () {
+    if (typeof gtag !== 'function') return; // GA4 base tag missing — fix Step 0 first
+    var form = new URLSearchParams(location.search).get('form') || 'contact';
+    gtag('event', 'generate_lead', {
+      method: 'gravity_forms_redirect',
+      form_name: form
+    });
+  })();
+</script>

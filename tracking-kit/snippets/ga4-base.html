@@ -1,0 +1,10 @@
+<!-- GA4 base tag — only install if Step 0 finds NO GA4 on the site.
+     Replace G-XXXXXXXXXX (2 places) with the real Measurement ID.
+     Install site-wide: WPCode -> new snippet -> HTML -> location "Site Wide Header". -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>

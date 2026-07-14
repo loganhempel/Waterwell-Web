@@ -1,0 +1,20 @@
+<!-- Cal.com booking event -> GA4 book_discovery_call.
+     Add to the page carrying the booking-cta embed, BELOW the embed block.
+     Only catches bookings made in the inline embed (not the new-tab button link). -->
+<script>
+  (function hookCal(tries) {
+    tries = tries || 0;
+    if (window.Cal) {
+      Cal("on", {
+        action: "bookingSuccessful",
+        callback: function () {
+          if (typeof gtag === 'function') {
+            gtag('event', 'book_discovery_call', { method: 'cal_inline_embed' });
+          }
+        }
+      });
+    } else if (tries < 20) {
+      setTimeout(function () { hookCal(tries + 1); }, 500); // wait for Cal embed.js
+    }
+  })();
+</script>

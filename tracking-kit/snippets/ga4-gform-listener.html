@@ -1,0 +1,21 @@
+<!-- Path B: gform_confirmation_loaded listener (AJAX-embedded forms only).
+     Install site-wide: WPCode -> HTML snippet -> location "Site Wide Footer".
+     1) Update FORM_NAMES with the real form IDs (WP admin -> Forms, ID column).
+     2) Confirm each form embed has ajax="true" — this event does not fire otherwise.
+     3) Do NOT use this on a form that already has a redirect confirmation (double-count). -->
+<script>
+  jQuery(document).on('gform_confirmation_loaded', function (event, formId) {
+    var FORM_NAMES = {
+      // VERIFY: replace with real IDs before going live
+      1: 'contact_form',
+      2: 'health_questionnaire'
+    };
+    if (typeof gtag === 'function') {
+      gtag('event', 'generate_lead', {
+        method: 'gravity_forms_ajax',
+        form_id: formId,
+        form_name: FORM_NAMES[formId] || 'gravity_form_' + formId
+      });
+    }
+  });
+</script>

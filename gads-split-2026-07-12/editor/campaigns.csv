@@ -1,0 +1,6 @@
+Campaign,Campaign Type,Budget,Budget Type,Bid Strategy Type,Networks,Locations,Status
+WW | NZ | Brand,Search,2.00,Daily,"Maximise Clicks, max-CPC cap ~$1.50","Google Search only (Search Partners OFF, Display OFF)",New Zealand — Presence only,Paused
+WW | NZ | Online Naturopath,Search,8.00,Daily,"Maximise Clicks, max-CPC cap ~$3.50; move to Max Conversions after 15-20 tracked conversions","Google Search only (Search Partners OFF, Display OFF)",New Zealand — Presence only,Paused
+WW | NZ | Skin Conditions,Search,10.00,Daily,"Maximise Clicks, max-CPC cap ~$3.50; move to Max Conversions after 15-20 tracked conversions","Google Search only (Search Partners OFF, Display OFF)",New Zealand — Presence only,Paused
+WW | AU | Online Naturopath,Search,3.00,Daily,"Maximise Clicks, max-CPC cap ~$3.50 NZD","Google Search only (Search Partners OFF, Display OFF)",Australia — Presence only,Paused
+WW | AU | Skin Conditions,Search,4.00,Daily,"Maximise Clicks, max-CPC cap ~$3.50 NZD","Google Search only (Search Partners OFF, Display OFF)",Australia — Presence only,Paused

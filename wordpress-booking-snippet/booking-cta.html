@@ -1,0 +1,75 @@
+<!-- ============================================================
+  Waterwell Naturopath — "Book a free discovery call" CTA
+  Paste this whole file into ONE WordPress Custom HTML block.
+  Self-contained: all CSS inline, only external dependency is
+  the Cal.com embed script. See INSTALL.md in this folder.
+
+  [CONFIRM CAL.COM URL] — the booking link appears TWICE below
+  (once in the <a> button, once in the calLink of the script).
+  Replace "waterwell/discovery" in BOTH places with Kohei's
+  real Cal.com link before publishing.
+============================================================ -->
+
+<style>
+  /* Scoped under .wwcal- prefix so it can't clash with the WP theme */
+  .wwcal-section{padding:48px 0;background:transparent;font-family:'Hanken Grotesk','Helvetica Neue',Arial,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wwcal-wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+  .wwcal-card{background:#FFFFFF;border:1px solid #E2D9C9;border-radius:24px;box-shadow:0 18px 50px rgba(14,58,100,.08);display:grid;grid-template-columns:.92fr 1.08fr;overflow:hidden}
+  .wwcal-left{background:#0E3A64;color:#fff;padding:56px 50px;display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden;box-sizing:border-box}
+  .wwcal-drop{position:absolute;right:-30px;bottom:-40px;width:200px;color:#9FC0A3;opacity:.08;pointer-events:none}
+  .wwcal-eyebrow{display:inline-flex;align-items:center;gap:10px;color:#9FC0A3;font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;position:relative;z-index:1;margin:0}
+  .wwcal-eyebrow::before{content:"";display:inline-block;width:26px;height:1.5px;background:#9FC0A3}
+  .wwcal-h2{color:#fff !important;font-family:'Instrument Serif',Georgia,'Times New Roman',serif;font-size:clamp(1.85rem,3.1vw,2.5rem);font-weight:400;margin:16px 0 0 !important;line-height:1.14;letter-spacing:-.005em;position:relative;z-index:1}
+  .wwcal-p{color:rgba(255,255,255,.75) !important;margin:16px 0 0 !important;max-width:42ch;font-size:1.02rem;position:relative;z-index:1}
+  .wwcal-btn,.wwcal-btn:visited{display:inline-flex;align-items:center;gap:8px;margin-top:28px;background:#fff;color:#0E3A64 !important;padding:15px 30px;border-radius:999px;font-weight:600;font-size:15.5px;text-decoration:none !important;align-self:flex-start;transition:background .25s ease,color .25s ease;position:relative;z-index:1;box-sizing:border-box}
+  .wwcal-btn:hover{background:#9FC0A3;color:#0A2A49 !important}
+  .wwcal-fallback{margin:18px 0 0 !important;font-size:12px;letter-spacing:.05em;color:rgba(255,255,255,.6) !important;position:relative;z-index:1}
+  .wwcal-fallback a{color:#fff !important;text-decoration:underline !important;text-underline-offset:3px}
+  .wwcal-embed{background:#FBF7EF;padding:22px;display:flex;align-items:stretch;box-sizing:border-box}
+  .wwcal-embed-inner{width:100%;min-height:520px;border-radius:14px;border:1px solid #E2D9C9;background:#FFFFFF;overflow:hidden;display:flex;align-items:center;justify-content:center}
+  .wwcal-loading{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#5E6B73;text-align:center;padding:24px;margin:0}
+  @media(max-width:980px){
+    .wwcal-card{grid-template-columns:1fr}
+    .wwcal-left{padding:38px 30px}
+    .wwcal-embed{padding:20px}
+  }
+  @media(max-width:640px){
+    .wwcal-embed{padding:16px}
+    .wwcal-embed-inner{min-height:440px}
+  }
+</style>
+
+<section class="wwcal-section" id="book-call">
+  <div class="wwcal-wrap">
+    <div class="wwcal-card">
+      <div class="wwcal-left">
+        <svg class="wwcal-drop" viewBox="0 0 100 130" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M50 4 C50 4 88 52 88 82 A38 38 0 1 1 12 82 C12 52 50 4 50 4 Z"/></svg>
+        <span class="wwcal-eyebrow">Free 15-minute call</span>
+        <h2 class="wwcal-h2">Book a free discovery call.</h2>
+        <p class="wwcal-p">Pick a time straight off Kohei&rsquo;s calendar &mdash; a relaxed conversation about your skin and how we can help, no obligation, no back-and-forth emails.</p>
+        <!-- [CONFIRM CAL.COM URL] -->
+        <a class="wwcal-btn" href="https://cal.com/waterwell/discovery" target="_blank" rel="noopener">Book your free call <span aria-hidden="true">&rarr;</span></a>
+        <p class="wwcal-fallback">Trouble booking? Email <a href="mailto:info@waterwellclinic.co.nz">info@waterwellclinic.co.nz</a> and we&rsquo;ll sort a time.</p>
+      </div>
+      <div class="wwcal-embed">
+        <div class="wwcal-embed-inner">
+          <div id="wwcal-inline-discovery" style="width:100%;height:100%">
+            <p class="wwcal-loading">Loading calendar&hellip;</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Cal.com inline embed — [CONFIRM CAL.COM URL] calLink below must match the button link above -->
+<script type="text/javascript">
+  (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if (typeof namespace === "string") { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]); } else p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+  Cal("init", "discovery", {origin: "https://cal.com"});
+  Cal.ns.discovery("inline", {
+    elementOrSelector: "#wwcal-inline-discovery",
+    calLink: "waterwell/discovery", /* [CONFIRM CAL.COM URL] */
+    layout: "month_view"
+  });
+  Cal.ns.discovery("ui", {"styles": {"branding": {"brandColor": "#0E3A64"}}, "hideEventTypeDetails": false, "layout": "month_view"});
+</script>

@@ -85,8 +85,14 @@
     --sage-bright:#9FC0A3;
     --sand:#C2A375;
     --sky:#CFE0F0;
-    --shadow:0 18px 48px -28px rgba(14,58,100,.45);
-    --shadow-soft:0 10px 30px -22px rgba(14,58,100,.35);
+    /* layered, navy-tinted depth system — ambient bloom + contact shadow, never flat black */
+    --shadow-soft:0 2px 4px -2px rgba(10,42,73,.10), 0 10px 26px -18px rgba(10,42,73,.30);
+    --shadow:0 4px 10px -6px rgba(10,42,73,.16), 0 24px 56px -30px rgba(10,42,73,.42);
+    --shadow-lg:0 8px 20px -10px rgba(10,42,73,.22), 0 44px 96px -40px rgba(10,42,73,.50);
+    --hair:inset 0 1px 0 rgba(255,255,255,.7);
+    --hair-d:inset 0 1px 0 rgba(255,255,255,.10);
+    --ease:cubic-bezier(.16,1,.3,1);
+    --r:20px;
     --maxw:1200px;
     --display:'Instrument Serif',Georgia,'Times New Roman',serif;
     --body:'Manrope',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
@@ -94,7 +100,13 @@
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
-  body{font-family:var(--body);background:var(--bg);color:var(--ink);line-height:1.62;font-size:17px;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  body{font-family:var(--body);color:var(--ink);line-height:1.62;font-size:17px;-webkit-font-smoothing:antialiased;overflow-x:hidden;
+    background:
+      radial-gradient(120% 80% at 88% -8%, rgba(207,224,240,.55), transparent 46%),
+      radial-gradient(90% 60% at -10% 4%, rgba(159,192,163,.20), transparent 44%),
+      radial-gradient(140% 90% at 50% 118%, rgba(14,58,100,.06), transparent 55%),
+      var(--bg);
+    background-attachment:fixed}
   ::selection{background:var(--navy);color:#fff}
   ::-webkit-scrollbar{width:11px}
   ::-webkit-scrollbar-track{background:var(--bg)}
@@ -173,9 +185,17 @@
   .reassure b{color:var(--sage);font-weight:500}
 
   .portrait{position:relative}
-  .portrait .frame{position:relative;z-index:2;border-radius:200px 200px 18px 18px;overflow:hidden;aspect-ratio:4/5;box-shadow:var(--shadow);background:#e9e2d6}
+  /* ambient aura behind the portrait — soft brand light, gives the photo a place to sit */
+  .portrait::before{content:"";position:absolute;z-index:0;inset:-14% -10% -18% -10%;
+    background:radial-gradient(58% 52% at 62% 42%, rgba(159,192,163,.55), transparent 62%),
+      radial-gradient(70% 62% at 40% 74%, rgba(207,224,240,.6), transparent 66%);
+    filter:blur(8px);opacity:.9;pointer-events:none}
+  .portrait .frame{position:relative;z-index:2;border-radius:210px 210px 22px 22px;overflow:hidden;aspect-ratio:4/5;
+    background:#e9e2d6;box-shadow:var(--shadow-lg), 0 0 0 1px rgba(14,58,100,.08), inset 0 2px 0 rgba(255,255,255,.5)}
+  /* thin machined ring around the frame for a hardware-set feel */
+  .portrait .frame::after{content:"";position:absolute;inset:8px;border-radius:200px 200px 16px 16px;border:1px solid rgba(255,255,255,.35);pointer-events:none;z-index:3}
   .portrait .frame img{width:100%;height:100%;object-fit:cover;object-position:84% 30%}
-  .portrait .badge{position:absolute;z-index:3;bottom:24px;left:-26px;background:var(--paper);border-radius:16px;padding:15px 19px;box-shadow:var(--shadow);max-width:235px;animation:floaty 6s ease-in-out infinite}
+  .portrait .badge{position:absolute;z-index:4;bottom:24px;left:-26px;background:rgba(255,255,255,.82);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.7);border-radius:18px;padding:15px 19px;box-shadow:var(--shadow-lg), var(--hair);max-width:235px;animation:floaty 6s ease-in-out infinite}
   @keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
   .portrait .badge .star{color:var(--sand);font-size:14px;letter-spacing:1px}
   .portrait .badge b{font-family:var(--display);font-size:1.45rem;color:var(--navy);display:block;line-height:1;margin-top:2px}
@@ -185,10 +205,15 @@
   .droplet-bg path:nth-child(2){animation-delay:.5s}.droplet-bg path:nth-child(3){animation-delay:.75s}.droplet-bg path:nth-child(4){animation-delay:1s}
   @keyframes draw{to{stroke-dashoffset:0}}
 
-  .trust{border-top:1px solid var(--line);margin-top:70px;padding-top:32px;display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-  .trust .item b{font-family:var(--display);font-size:1.75rem;color:var(--navy);display:block;line-height:1}
+  .trust{margin-top:74px;padding:30px 34px;display:grid;grid-template-columns:repeat(3,1fr);gap:24px;
+    background:linear-gradient(180deg,rgba(255,255,255,.66),rgba(255,255,255,.34));border:1px solid rgba(255,255,255,.7);
+    border-radius:var(--r);box-shadow:var(--shadow-soft), var(--hair)}
+  .trust .item{position:relative;padding-left:26px}
+  .trust .item:not(:first-child)::before{content:"";position:absolute;left:0;top:2px;bottom:2px;width:1px;background:var(--line)}
+  .trust .item b{font-family:var(--display);font-size:2.4rem;color:var(--navy);display:block;line-height:.95;letter-spacing:-.01em}
+  .trust .item b .count{font-size:inherit;color:inherit;display:inline;margin-top:0}
   .trust .item .stars{color:var(--sand);font-size:.95rem;letter-spacing:1px;display:block;line-height:1}
-  .trust .item span{font-size:12.5px;color:var(--muted);display:block;margin-top:7px}
+  .trust .item span{font-size:12.5px;color:var(--muted);display:block;margin-top:9px;line-height:1.4}
 
   section{position:relative}
   .pad{padding:96px 0}.pad-lg{padding:120px 0}
@@ -512,6 +537,11 @@
   .bc-embed{background:var(--bg-soft);padding:22px;display:flex;align-items:stretch}
   .bc-embed-inner{width:100%;min-height:520px;border-radius:14px;border:1px solid var(--line);background:var(--paper);overflow:hidden;display:flex;align-items:center;justify-content:center}
   .bc-loading{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);text-align:center;padding:24px}
+  .bc-fallback-state{padding:30px;text-align:center;max-width:320px}
+  .bc-fallback-state svg{width:32px;height:32px;color:var(--sage);margin:0 auto 14px;display:block}
+  .bc-fallback-state p{font-size:.92rem;color:var(--muted);line-height:1.6}
+  .bc-fallback-state p+p{margin-top:10px}
+  .bc-fallback-state a{color:var(--navy);font-weight:600;text-decoration:underline;text-underline-offset:3px}
   @media(max-width:980px){
     .book-cta-card{grid-template-columns:1fr}
     .bc-left{padding:38px 30px}
@@ -520,6 +550,123 @@
   @media(max-width:640px){
     .bc-embed{padding:16px}
     .bc-embed-inner{min-height:440px}
+  }
+  /* ============================================================
+     PREMIUM REDESIGN LAYER — 2026-07 "wow" pass
+     Depth · hero presence · bento · story · scroll choreography.
+     Appended last so it wins the cascade; copy + IDs untouched.
+     ============================================================ */
+
+  /* --- HERO: ambient depth + presence --- */
+  .hero{padding:172px 0 96px}
+  .hero-amb{position:absolute;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+  .hero-topo{position:absolute;top:-6%;left:-9%;width:118%;height:auto;color:var(--navy);opacity:.055;will-change:transform}
+  .hero-topo path{stroke-dasharray:2700;stroke-dashoffset:2700;animation:topoDraw 2.8s var(--ease) forwards}
+  .hero-topo path:nth-child(2){animation-delay:.1s}.hero-topo path:nth-child(3){animation-delay:.2s}
+  .hero-topo path:nth-child(4){animation-delay:.3s}.hero-topo path:nth-child(5){animation-delay:.4s}.hero-topo path:nth-child(6){animation-delay:.5s}
+  @keyframes topoDraw{to{stroke-dashoffset:0}}
+  .hero>.wrap{position:relative;z-index:1}
+  .hero h1{font-size:clamp(3rem,6.6vw,5.4rem);line-height:.98;letter-spacing:-.02em;margin-top:20px}
+  .hero .lead{font-size:clamp(1.08rem,1.7vw,1.28rem);margin-top:22px}
+  .hero-copy{min-width:0}
+  .reassure{flex-wrap:wrap;row-gap:5px}
+  /* long eyebrows (esp. the hero's) were nowrap inline-flex ~469px wide, forcing the whole
+     document past narrow viewports. Let them wrap; on desktop they still sit on one line. */
+  .eyebrow{flex-wrap:wrap;max-width:100%}
+  .btn-primary{background:linear-gradient(180deg,#12508a,var(--navy));box-shadow:0 8px 20px -10px rgba(10,42,73,.5), var(--hair-d)}
+  .btn-primary:hover{background:linear-gradient(180deg,#0f426f,var(--navy-deep))}
+
+  /* --- shared card depth (base cards only; navy/sage modifiers keep their fill via specificity) --- */
+  .cond,.jstep,.tst,.loc{background:linear-gradient(180deg,#ffffff,#fbf7ef);box-shadow:var(--shadow-soft), var(--hair)}
+  .virtual-card,.book-cta-card{box-shadow:var(--shadow-lg), var(--hair)}
+  .rating-band{box-shadow:var(--shadow-soft), var(--hair)}
+
+  /* --- BENTO: "Completely online" --- */
+  .virtual{padding:34px 0 40px}
+  .bento{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+  .bento-cell{position:relative;border-radius:var(--r);padding:30px 30px;border:1px solid var(--line);
+    background:linear-gradient(180deg,#ffffff,#fbf7ef);box-shadow:var(--shadow-soft), var(--hair);overflow:hidden;
+    transition:transform .55s var(--ease),box-shadow .55s var(--ease)}
+  .bento-cell:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+  /* feature cell (navy statement + CTA) */
+  .bento-feature{grid-column:span 7;grid-row:span 2;background:var(--navy);border-color:transparent;color:#fff;
+    display:flex;flex-direction:column;justify-content:center;padding:46px 46px}
+  .bento-feature::after{content:"";position:absolute;inset:0;pointer-events:none;
+    background:radial-gradient(70% 90% at 100% 0%, rgba(159,192,163,.18), transparent 55%)}
+  .bento-feature .vc-pill{margin-bottom:18px;position:relative;z-index:1}
+  .bento-feature h2{color:#fff;font-size:clamp(1.7rem,3vw,2.5rem);line-height:1.1;margin-bottom:14px;position:relative;z-index:1}
+  .bento-feature p{color:rgba(255,255,255,.78);max-width:44ch;margin-bottom:28px;font-size:1.04rem;position:relative;z-index:1}
+  .bento-feature .btn{align-self:flex-start;background:#fff;color:var(--navy);position:relative;z-index:1;box-shadow:var(--shadow-soft)}
+  .bento-feature .btn:hover{background:var(--sage-bright);color:var(--navy-deep)}
+  .bento-feature .wm{position:absolute;right:-34px;bottom:-46px;width:220px;color:var(--sage-bright);opacity:.14;pointer-events:none;z-index:0}
+  /* brand tile — worldwide/water motif, adds visual variety to the grid */
+  .bento-tile{grid-column:span 5;grid-row:span 2;padding:0;border-color:transparent;
+    background:radial-gradient(120% 120% at 20% 10%, #14508a, var(--navy) 42%, var(--navy-ink))}
+  .bento-tile .tw{position:absolute;inset:0;color:#9FC0A3;opacity:.5}
+  .bento-tile .tw svg{width:100%;height:100%}
+  .bento-tile .tw path{stroke-dasharray:1600;stroke-dashoffset:1600}
+  .bento-tile.in .tw path{animation:topoDraw 2.4s var(--ease) forwards}
+  .bento-tile .glow{position:absolute;width:60%;aspect-ratio:1;left:50%;top:46%;transform:translate(-50%,-50%);
+    background:radial-gradient(circle,rgba(159,192,163,.4),transparent 68%);filter:blur(6px)}
+  .bento-tile .drip{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:38%;color:#EAF3EA;opacity:.92;z-index:1}
+  .bento-tile .drip path{stroke-dasharray:var(--l);stroke-dashoffset:var(--l)}
+  .bento-tile.in .drip path{animation:topoDraw 2s var(--ease) .3s forwards}
+  /* benefit cells */
+  .bento-b{grid-column:span 3}
+  .bento-b .vc-ic{margin-bottom:16px}
+  .bento-b b{font-family:var(--display);font-weight:400;font-size:1.22rem;color:var(--navy);display:block;margin-bottom:6px;line-height:1.15}
+  .bento-b .bt{font-size:.93rem;color:var(--muted);line-height:1.56;display:block}
+  @media(max-width:980px){
+    .bento{grid-template-columns:repeat(2,1fr)}
+    .bento-feature{grid-column:1/-1;grid-row:auto;padding:36px 30px}
+    .bento-tile{grid-column:1/-1;grid-row:auto;min-height:200px}
+    .bento-b{grid-column:span 1}
+  }
+  @media(max-width:560px){.bento{grid-template-columns:1fr}.bento-b{grid-column:1/-1}}
+
+  /* --- STORY: from wall-of-text to scannable chapters --- */
+  .story-media .main{box-shadow:var(--shadow-lg)}
+  .story-media .main::after{content:"";position:absolute;inset:0;border-radius:18px;box-shadow:inset 0 2px 0 rgba(255,255,255,.4), inset 0 0 0 1px rgba(14,58,100,.06);pointer-events:none}
+  .story blockquote{position:relative;font-size:clamp(1.6rem,2.8vw,2.15rem);padding:8px 0 8px 30px;margin:20px 0 30px;
+    border-left:3px solid var(--sage-bright)}
+  .story blockquote::before{content:"\201C";position:absolute;left:-4px;top:-26px;font-family:var(--display);font-size:5rem;color:var(--sage-bright);opacity:.32;line-height:1}
+  .story .narrative{position:relative;padding-left:30px}
+  .story .narrative::before{content:"";position:absolute;left:0;top:6px;bottom:6px;width:1px;
+    background:linear-gradient(var(--line),transparent)}
+  .story .narrative p{margin-bottom:22px}
+  .story p .hl{color:var(--navy);font-weight:700;background:linear-gradient(180deg,transparent 62%, rgba(159,192,163,.42) 62%);padding:0 2px;border-radius:2px}
+  .story .signoff{margin-top:30px;padding:24px 26px;border-radius:var(--r);
+    background:linear-gradient(180deg,rgba(255,255,255,.7),rgba(255,255,255,.4));border:1px solid rgba(255,255,255,.7);box-shadow:var(--shadow-soft), var(--hair)}
+  .story .creds span{background:var(--paper);box-shadow:var(--shadow-soft)}
+
+  /* --- SCROLL CHOREOGRAPHY: heavier, blurred fade-up + parallax --- */
+  .reveal{filter:blur(5px);transition:opacity 1s var(--ease),transform 1s var(--ease),filter 1s var(--ease)}
+  .reveal.in{filter:none}
+  [data-parallax]{will-change:transform}
+
+  @media(prefers-reduced-motion:reduce){
+    .reveal{filter:none!important}
+    .hero-topo path,.bento-tile .tw path,.bento-tile .drip path{animation:none!important;stroke-dashoffset:0!important}
+    [data-parallax]{transform:none!important}
+  }
+
+  /* responsive overrides for the redesign layer — must follow the base rules above to win the cascade */
+  @media(max-width:980px){
+    .hero{padding:120px 0 72px}
+    .trust{grid-template-columns:repeat(2,1fr);padding:26px 24px;gap:22px}
+    .hero-topo{opacity:.05}
+    /* mobile nav = brand + burger only; the wide CTA (fixed) was overflowing the viewport.
+       Booking stays reachable via the drawer + sticky bottom CTA. */
+    .nav-cta{display:none}
+  }
+  @media(max-width:560px){
+    .hero{padding:104px 0 60px}
+    .trust{grid-template-columns:1fr;gap:0;padding:22px 22px}
+    .trust .item{padding:18px 0}
+    .trust .item:not(:first-child){border-top:1px solid var(--line)}
+    .trust .item:not(:first-child)::before{display:none}
+    .story blockquote{padding-left:22px}
+    .story .narrative{padding-left:22px}
   }
 </style>
 </head>
@@ -534,7 +681,7 @@
       <a href="#online">Online</a>
       <a href="#conditions">Conditions</a>
       <a href="#how">How it works</a>
-      <a href="#results">Results</a>
+      
       <a href="#story">About</a>
       <a href="#services">Services</a>
     </nav>
@@ -548,13 +695,24 @@
 </header>
 <div class="drawer" id="drawer">
   <a href="#online">Online care</a><a href="#conditions">Conditions</a><a href="#how">How it works</a>
-  <a href="#results">Results</a><a href="#story">About Kohei</a><a href="#services">Services</a>
+  <a href="#story">About Kohei</a><a href="#services">Services</a>
   <a href="/nz">Viewing Australia · see New Zealand →</a>
   <a class="btn btn-primary" href="#visit">Book a free online session →</a>
 </div>
 
 <!-- HERO -->
 <section class="hero" id="top">
+  <!-- ambient depth layer: topographic contour motif (echoes the droplet logo) + soft brand light -->
+  <div class="hero-amb" aria-hidden="true">
+    <svg class="hero-topo" data-parallax="0.18" viewBox="0 0 1200 720" preserveAspectRatio="xMidYMid slice" fill="none" stroke="currentColor" stroke-width="1">
+      <path d="M-40 250 C 220 180 380 320 620 250 S 1040 150 1260 240"/>
+      <path d="M-40 320 C 220 250 380 390 620 320 S 1040 220 1260 310"/>
+      <path d="M-40 392 C 220 322 380 462 620 392 S 1040 292 1260 382"/>
+      <path d="M-40 470 C 220 400 380 540 620 470 S 1040 370 1260 460"/>
+      <path d="M-40 556 C 220 486 380 626 620 556 S 1040 456 1260 546"/>
+      <path d="M-40 650 C 220 580 380 720 620 650 S 1040 550 1260 640"/>
+    </svg>
+  </div>
   <div class="wrap">
     <div class="hero-grid">
       <div class="hero-copy">
@@ -605,71 +763,50 @@
 <!-- VIRTUAL CARE -->
 <section class="virtual" id="online">
   <div class="wrap">
-    <div class="virtual-card reveal">
-      <svg class="wm" viewBox="0 0 100 130" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M50 4 C50 4 88 52 88 82 A38 38 0 1 1 12 82 C12 52 50 4 50 4 Z"/></svg>
-      <div class="vc-left">
+    <div class="bento">
+      <div class="bento-cell bento-feature reveal">
+        <svg class="wm" viewBox="0 0 100 130" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M50 4 C50 4 88 52 88 82 A38 38 0 1 1 12 82 C12 52 50 4 50 4 Z"/></svg>
         <span class="vc-pill"><span class="dot"></span> 100% online</span>
         <h2>Completely online — and better for it.</h2>
         <p>Every consultation happens by secure video, so the same in-depth, root-cause care reaches you wherever you are. No waiting rooms, no travel — just genuine help, on your terms.</p>
         <a class="btn btn-primary" href="#visit">Book a free online session <span class="arrow">→</span></a>
       </div>
-      <div class="vc-right">
-        <div class="vc-benefit reveal d1">
-          <span class="vc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7M5 10v9h14v-9M10 19v-5h4v5"/></svg></span>
-          <div><b>From the comfort of home</b><span>Grab your favourite drink, settle into your own couch, and we begin with a click.</span></div>
-        </div>
-        <div class="vc-benefit reveal d2">
-          <span class="vc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18"/></svg></span>
-          <div><b>Available anywhere in the world</b><span>In town or halfway across the globe — distance is never a barrier to being seen.</span></div>
-        </div>
-        <div class="vc-benefit reveal d3">
-          <span class="vc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17a2 2 0 1 0 4 0 2 2 0 1 0-4 0M15 17a2 2 0 1 0 4 0 2 2 0 1 0-4 0M7 17h6l-1-6H4l1 4M13 11l2-4h4"/></svg></span>
-          <div><b>No traffic, no travel costs</b><span>Skip the drive across town — save the time, the fuel, and the stress of a busy day.</span></div>
-        </div>
-        <div class="vc-benefit reveal d4">
-          <span class="vc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c4 4 6 7 6 10a6 6 0 0 1-12 0c0-1 .3-2 .8-3M12 21v-6"/></svg></span>
-          <div><b>Lighter on the planet</b><span>Fewer trips means a smaller carbon footprint — care that’s kinder all round.</span></div>
-        </div>
+      <div class="bento-cell bento-tile reveal d1" aria-hidden="true">
+        <span class="tw"><svg viewBox="0 0 400 400" fill="none" stroke="currentColor" stroke-width="1" preserveAspectRatio="xMidYMid slice">
+          <path d="M-20 120 C 90 70 150 170 240 120 S 380 60 440 110"/>
+          <path d="M-20 175 C 90 125 150 225 240 175 S 380 115 440 165"/>
+          <path d="M-20 230 C 90 180 150 280 240 230 S 380 170 440 220"/>
+          <path d="M-20 288 C 90 238 150 338 240 288 S 380 228 440 278"/>
+        </svg></span>
+        <span class="glow"></span>
+        <svg class="drip" viewBox="0 0 100 130" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round">
+          <path style="--l:360" d="M50 8 C50 8 84 54 84 82 A34 34 0 1 1 16 82 C16 54 50 8 50 8 Z"/>
+          <path style="--l:80" d="M32 90 c8 5 24 5 34 0" opacity=".8"/>
+        </svg>
+      </div>
+      <div class="bento-cell bento-b reveal">
+        <span class="vc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7M5 10v9h14v-9M10 19v-5h4v5"/></svg></span>
+        <b>From the comfort of home</b>
+        <span class="bt">Grab your favourite drink, settle into your own couch, and we begin with a click.</span>
+      </div>
+      <div class="bento-cell bento-b reveal d1">
+        <span class="vc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18"/></svg></span>
+        <b>Available anywhere in the world</b>
+        <span class="bt">In town or halfway across the globe — distance is never a barrier to being seen.</span>
+      </div>
+      <div class="bento-cell bento-b reveal d2">
+        <span class="vc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17a2 2 0 1 0 4 0 2 2 0 1 0-4 0M15 17a2 2 0 1 0 4 0 2 2 0 1 0-4 0M7 17h6l-1-6H4l1 4M13 11l2-4h4"/></svg></span>
+        <b>No traffic, no travel costs</b>
+        <span class="bt">Skip the drive across town — save the time, the fuel, and the stress of a busy day.</span>
+      </div>
+      <div class="bento-cell bento-b reveal d3">
+        <span class="vc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c4 4 6 7 6 10a6 6 0 0 1-12 0c0-1 .3-2 .8-3M12 21v-6"/></svg></span>
+        <b>Lighter on the planet</b>
+        <span class="bt">Fewer trips means a smaller carbon footprint — care that’s kinder all round.</span>
       </div>
     </div>
   </div>
 </section>
-
-<!-- BOOK A CALL — Cal.com discovery call -->
-<section class="book-cta" id="book-call">
-  <div class="wrap">
-    <div class="book-cta-card reveal">
-      <div class="bc-left">
-        <svg class="wm" viewBox="0 0 100 130" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M50 4 C50 4 88 52 88 82 A38 38 0 1 1 12 82 C12 52 50 4 50 4 Z"/></svg>
-        <span class="eyebrow">Free 15-minute call</span>
-        <h2>Book a free discovery call.</h2>
-        <p>Pick a time straight off Kohei’s calendar — a relaxed conversation about your skin and how we can help, no obligation, no back-and-forth emails.</p>
-        <!-- [CONFIRM CAL.COM URL] -->
-        <a class="btn" href="https://cal.com/waterwell/discovery" target="_blank" rel="noopener">Book your free call <span class="arrow">→</span></a>
-        <p class="bc-fallback">Trouble booking? Email <a href="mailto:info@waterwellclinic.co.nz">info@waterwellclinic.co.nz</a> and we’ll sort a time.</p>
-      </div>
-      <div class="bc-embed">
-        <div class="bc-embed-inner">
-          <div id="cal-inline-discovery" style="width:100%;height:100%">
-            <p class="bc-loading">Loading calendar…</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Cal.com inline embed — [CONFIRM CAL.COM URL] calLink below must match the booking link above -->
-<script type="text/javascript">
-  (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if (typeof namespace === "string") { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]); } else p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
-  Cal("init", "discovery", {origin: "https://cal.com"});
-  Cal.ns.discovery("inline", {
-    elementOrSelector: "#cal-inline-discovery",
-    calLink: "waterwell/discovery", /* [CONFIRM CAL.COM URL] */
-    layout: "month_view"
-  });
-  Cal.ns.discovery("ui", {"styles": {"branding": {"brandColor": "#0E3A64"}}, "hideEventTypeDetails": false, "layout": "month_view"});
-</script>
 
 <!-- BELIEF -->
 <section class="promise">
@@ -764,15 +901,17 @@
   <div class="wrap">
     <div class="story-grid">
       <div class="story-media reveal">
-        <div class="main"><img src="assets/kohei-microscope.png" alt="Kohei Iguchi performing live blood analysis at Waterwell Clinic"  loading="lazy" decoding="async" /></div>
-        <div class="stack"><img src="assets/credentials.png" alt="Kohei Iguchi's qualifications, Bachelor of Natural Medicine"  loading="lazy" decoding="async" /></div>
+        <div class="main"><img src="assets/kohei-microscope.jpg" alt="Kohei Iguchi performing live blood analysis at Waterwell Clinic"  loading="lazy" decoding="async" /></div>
+        <div class="stack"><img src="assets/credentials.jpg" alt="Kohei Iguchi's qualifications, Bachelor of Natural Medicine"  loading="lazy" decoding="async" /></div>
       </div>
       <div class="story-copy">
         <span class="eyebrow reveal">My eczema story</span>
         <blockquote class="reveal d1">“Eczema is not just a skin condition. It’s an internal condition. I know, because I have suffered from it myself.”</blockquote>
-        <p class="reveal d1">Before I became a naturopath, I was covered head to toe in eczema. It grew so severe I had to resign from my job, and was <span class="hl">bed-ridden for nearly five months</span> — living on steroids and antibiotics, in constant pain from dry, weeping, itchy skin. It can only be described as agonising, torturous and hopeless.</p>
-        <p class="reveal d2">When the steroids stopped and every medical avenue was exhausted, a naturopath took me through a consultation that changed everything. A year and a half later, through nutritional, dietary and lifestyle support, my skin was <span class="hl">99.9% eczema-free</span>. That experience became my lifelong passion for natural medicine.</p>
-        <p class="reveal d2">Today I’m the founder and director of Waterwell — a holistic skin clinic on a mission to care for people going through the same hardship I did, or to help others avoid it altogether.</p>
+        <div class="narrative">
+          <p class="reveal d1">Before I became a naturopath, I was covered head to toe in eczema. It grew so severe I had to resign from my job, and was <span class="hl">bed-ridden for nearly five months</span> — living on steroids and antibiotics, in constant pain from dry, weeping, itchy skin. It can only be described as agonising, torturous and hopeless.</p>
+          <p class="reveal d2">When the steroids stopped and every medical avenue was exhausted, a naturopath took me through a consultation that changed everything. A year and a half later, through nutritional, dietary and lifestyle support, my skin was <span class="hl">99.9% eczema-free</span>. That experience became my lifelong passion for natural medicine.</p>
+          <p class="reveal d2">Today I’m the founder and director of Waterwell — a holistic skin clinic on a mission to care for people going through the same hardship I did, or to help others avoid it altogether.</p>
+        </div>
         <div class="signoff reveal d3">
           <div class="nm">Kohei Iguchi</div>
           <div class="cr">BNatMed, BSc · Qualified &amp; Accredited Naturopath &amp; Medical Herbalist</div>
@@ -790,38 +929,6 @@
 </section>
 
 <!-- RESULTS -->
-<section class="pad results" id="results">
-  <div class="wrap">
-    <div class="sec-head reveal" style="max-width:760px">
-      <span class="eyebrow">Real patient results</span>
-      <h2>What “from the inside out” can look like.</h2>
-      <p>Genuine before-and-after results from Waterwell patients — adults and children alike — shared with their permission.</p>
-    </div>
-
-    <div class="compare-wrap reveal">
-      <div class="compare" id="cmp">
-        <img class="before-img" src="assets/ba-acne-before.jpg" alt="Before — facial acne"  loading="lazy" decoding="async" />
-        <img class="after-img"  src="assets/ba-acne-after.jpg"  alt="After — facial acne"  loading="lazy" decoding="async" />
-        <span class="lbl l">Before</span><span class="lbl r">After</span>
-        <div class="divider" id="cmp-div"></div>
-        <div class="handle" id="cmp-handle">⟺</div>
-      </div>
-      <div class="compare-copy">
-        <span class="eyebrow">Adult acne · featured case</span>
-        <h3>Drag to see the difference.</h3>
-        <p>Persistent inflammatory acne, treated by addressing gut health, diet and the internal drivers behind the breakouts — not just the skin.</p>
-        <span class="hint">⟺ Drag the handle to compare</span>
-      </div>
-    </div>
-
-    <div class="ba-grid">
-      <div class="rcard reveal" data-reveal><img class="after-l" src="assets/ba-hand-after.jpg" alt="After — hand eczema" loading="lazy" decoding="async" /><img class="before-l" src="assets/ba-hand-before.jpg" alt="Before — hand eczema" loading="lazy" decoding="async" /><span class="pill">After</span><div class="cap"><b>Hand eczema</b><span>Adult · hover or tap for before</span></div></div>
-      <div class="rcard reveal d1" data-reveal><img class="after-l" src="assets/ba-baby-body-after.jpg" alt="After — infant body eczema" loading="lazy" decoding="async" /><img class="before-l" src="assets/ba-baby-body-before.jpg" alt="Before — infant body eczema" loading="lazy" decoding="async" /><span class="pill">After</span><div class="cap"><b>Infant body eczema</b><span>Child · hover or tap for before</span></div></div>
-      <div class="rcard reveal d2" data-reveal><img class="after-l" src="assets/ba-baby-face-after.jpg" alt="After — baby facial eczema" loading="lazy" decoding="async" /><img class="before-l" src="assets/ba-baby-face-before.jpg" alt="Before — baby facial eczema" loading="lazy" decoding="async" /><span class="pill">After</span><div class="cap"><b>Facial eczema</b><span>Infant · hover or tap for before</span></div></div>
-    </div>
-    <p class="disclaimer">Real patient results, shared with permission. Every case is unique and individual results will vary.</p>
-  </div>
-</section>
 
 <!-- APPROACH -->
 <section class="pad" id="approach">
@@ -858,6 +965,51 @@
 </section>
 
 <!-- TESTIMONIALS -->
+
+<!-- BOOK A CALL — Cal.com discovery call -->
+<section class="book-cta" id="book-call">
+  <div class="wrap">
+    <div class="book-cta-card reveal">
+      <div class="bc-left">
+        <svg class="wm" viewBox="0 0 100 130" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M50 4 C50 4 88 52 88 82 A38 38 0 1 1 12 82 C12 52 50 4 50 4 Z"/></svg>
+        <span class="eyebrow">Free 15-minute call</span>
+        <h2>Book a free discovery call.</h2>
+        <p>Pick a time straight off Kohei’s calendar — a relaxed conversation about your skin and how we can help, no obligation, no back-and-forth emails.</p>
+        <!-- [CONFIRM CAL.COM URL] -->
+        <a class="btn" href="https://cal.com/waterwell/discovery" target="_blank" rel="noopener">Book your free call <span class="arrow">→</span></a>
+        <p class="bc-fallback">Trouble booking? Email <a href="mailto:info@waterwellclinic.co.nz">info@waterwellclinic.co.nz</a> and we’ll sort a time.</p>
+      </div>
+      <div class="bc-embed">
+        <div class="bc-embed-inner">
+          <div id="cal-inline-discovery" style="width:100%;height:100%">
+            <!-- Cal.com not yet connected — waiting on Kohei's real calLink. Shows a graceful fallback instead of the raw embed 404. -->
+            <div class="bc-fallback-state">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 2c0 0 7 8.5 7 13a7 7 0 1 1-14 0c0-4.5 7-13 7-13Z"/></svg>
+              <p>Online booking is being finalised.</p>
+              <p>Email <a href="mailto:info@waterwellclinic.co.nz">info@waterwellclinic.co.nz</a> or use the button alongside — Kohei usually replies within a day.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Cal.com inline embed — [CONFIRM CAL.COM URL] calLink below must match the booking link above -->
+<script type="text/javascript">
+  (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if (typeof namespace === "string") { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]); } else p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+  Cal("init", "discovery", {origin: "https://cal.com"});
+  /* Inline calendar disabled until Kohei confirms his real Cal.com username — the
+     placeholder "waterwell/discovery" 404s. Re-enable the block below once confirmed. */
+  /*
+  Cal.ns.discovery("inline", {
+    elementOrSelector: "#cal-inline-discovery",
+    calLink: "waterwell/discovery", // [CONFIRM CAL.COM URL]
+    layout: "month_view"
+  });
+  Cal.ns.discovery("ui", {"styles": {"branding": {"brandColor": "#0E3A64"}}, "hideEventTypeDetails": false, "layout": "month_view"});
+  */
+</script>
 
 <!-- FAQ -->
 <section class="pad faq" id="faq">
@@ -927,7 +1079,7 @@
     <div class="foot-grid">
       <div><div class="logo-w"><img src="assets/logo.png" alt="Waterwell Clinic" /></div><p class="tag">Naturopathy and medical herbalism for skin health — in Sydney, Australia &amp; worldwide. Treating the root cause — eczema, psoriasis, acne and topical steroid withdrawal — from the inside out.</p>
         <div class="foot-badges"><span>Reg. MNMHNZ</span><span>10+ years</span><span>100% online</span></div></div>
-      <div><h4>Explore</h4><ul><li><a href="#conditions">Conditions treated</a></li><li><a href="#how">How it works</a></li><li><a href="#story">My eczema story</a></li><li><a href="#results">Patient results</a></li><li><a href="#services">Services</a></li><li><a href="/blog">Articles</a></li></ul></div>
+      <div><h4>Explore</h4><ul><li><a href="#conditions">Conditions treated</a></li><li><a href="#how">How it works</a></li><li><a href="#story">My eczema story</a></li><li><a href="#services">Services</a></li><li><a href="/blog">Articles</a></li></ul></div>
       <div><h4>Visit &amp; book</h4><ul><li><a href="mailto:info@waterwellclinic.co.nz">info@waterwellclinic.co.nz</a></li><li>Online consultations by video</li><li>Australia &amp; worldwide</li><li><a href="#visit">Book a free session →</a></li><li><a href="/">Main site</a></li></ul></div>
     </div>
     <div class="foot-bottom">
@@ -948,12 +1100,23 @@
   const nav = document.getElementById('nav'), progress = document.getElementById('progress'), mcta = document.getElementById('mcta');
   const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  // nav + progress + sticky cta
+  // subtle parallax on ambient layers (motion-safe only)
+  const parallaxEls = reduce ? [] : [...document.querySelectorAll('[data-parallax]')];
+  let ticking = false;
+  function applyParallax(y){
+    for (const el of parallaxEls){
+      const f = parseFloat(el.dataset.parallax) || 0;
+      el.style.transform = `translate3d(0, ${(y*f).toFixed(1)}px, 0)`;
+    }
+  }
+
+  // nav + progress + sticky cta + parallax (rAF-throttled)
   function scrollUI(){
     const y = window.scrollY, h = document.documentElement.scrollHeight - window.innerHeight;
     nav.classList.toggle('scrolled', y > 30);
     progress.style.width = (h>0 ? (y/h*100) : 0) + '%';
     mcta.classList.toggle('show', y > window.innerHeight*0.9);
+    if (!ticking){ ticking = true; requestAnimationFrame(() => { applyParallax(y); ticking = false; }); }
   }
   window.addEventListener('scroll', scrollUI, {passive:true}); scrollUI();
 
