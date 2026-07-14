@@ -668,6 +668,11 @@
     .story blockquote{padding-left:22px}
     .story .narrative{padding-left:22px}
   }
+
+  /* testimonial avatar initials */
+  .tst .who{display:flex;align-items:center;gap:10px}
+  .tst .who::before{content:attr(data-initial);width:26px;height:26px;border-radius:50%;background:var(--sage);color:#fff;font-family:var(--mono);font-size:10.5px;letter-spacing:0;text-transform:uppercase;display:flex;align-items:center;justify-content:center;flex:0 0 auto}
+  .tst.big .who::before{background:rgba(255,255,255,.25)}
 </style>
 </head>
 <body>
