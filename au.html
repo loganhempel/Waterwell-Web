@@ -33,7 +33,7 @@
   "@type": "MedicalClinic",
   "name": "Waterwell Clinic",
   "url": "https://waterwellclinic.co.nz/au",
-  "description": "Online naturopathy and medical herbalism for skin health — root-cause treatment for eczema, topical steroid withdrawal, psoriasis, acne, skin infections and rosacea, consulting online across New Zealand, Australia and worldwide.",
+  "description": "Online naturopathic care for skin health — root-cause treatment for eczema, topical steroid withdrawal, psoriasis, acne, skin infections and rosacea, consulting online across New Zealand, Australia and worldwide.",
   "email": "info@waterwellclinic.co.nz",
   "image": "https://waterwellclinic.co.nz/assets/kohei-hero.jpg",
   "medicalSpecialty": "Dermatology",
@@ -41,15 +41,12 @@
   "areaServed": {"@type": "Country", "name": "Australia"},
   "availableService": [
     {"@type": "MedicalTherapy", "name": "Naturopathic consultation"},
-    {"@type": "MedicalTest", "name": "Functional testing"},
-    {"@type": "MedicalTherapy", "name": "Herbal medicine"},
-    {"@type": "MedicalTherapy", "name": "Nutritional supplements"},
     {"@type": "MedicalTherapy", "name": "Dietary and lifestyle advice"}
   ],
   "founder": {
     "@type": "Person",
     "name": "Kohei Iguchi",
-    "jobTitle": "Naturopath & Medical Herbalist",
+    "jobTitle": "Naturopath",
     "hasCredential": "BNatMed, BSc"
   }
 }
@@ -61,12 +58,12 @@
   "mainEntity": [
     {"@type": "Question", "name": "Do you treat children and babies?", "acceptedAnswer": {"@type": "Answer", "text": "Absolutely. Children are far more likely to suffer from eczema than adults, so many of our patients are little ones. Kohei has treated many children over the years with a great success rate, and always guides parents through every step."}},
     {"@type": "Question", "name": "How does the free discovery session work?", "acceptedAnswer": {"@type": "Answer", "text": "It's a relaxed 15-minute conversation to chat about your current skin issue and how Kohei may be able to help, so you can feel confident before deciding to book an initial consultation. No pressure, no obligation."}},
-    {"@type": "Question", "name": "How does a naturopath treat eczema differently to a dermatologist?", "acceptedAnswer": {"@type": "Answer", "text": "The core difference comes down to philosophy: symptom management vs root-cause investigation. A dermatologist can offer excellent diagnostics and medications that improve symptoms quickly, but these can mask the problem without addressing what's driving it. As naturopaths we investigate the internal balance, and through herbal medicine, nutrition, and dietary and lifestyle adjustments we work to restore it."}},
+    {"@type": "Question", "name": "How does a naturopath treat eczema differently to a dermatologist?", "acceptedAnswer": {"@type": "Answer", "text": "The core difference comes down to philosophy: symptom management vs root-cause investigation. A dermatologist can offer excellent diagnostics and medications that improve symptoms quickly, but these can mask the problem without addressing what's driving it. As naturopaths we investigate the internal balance, and through nutrition, dietary and lifestyle adjustments we work to restore it."}},
     {"@type": "Question", "name": "Can I keep taking my current medication?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Naturopathic care is complementary and works alongside your existing care. Kohei will never tell you to stop a prescribed medication without your wish to and a conversation with your doctor first. Many patients find that, as their health improves, they can wean off medications at a comfortable pace."}},
     {"@type": "Question", "name": "How long until I see results?", "acceptedAnswer": {"@type": "Answer", "text": "Every case and individual is unique, so timeframes vary. Some people notice changes within weeks; deeper, lasting change takes longer. After your initial consultation you'll receive a tailored Estimated Progress Timeline so you know what to expect."}},
     {"@type": "Question", "name": "What happens during a first consultation?", "acceptedAnswer": {"@type": "Answer", "text": "The initial consultation is 75 minutes. You'll complete a health questionnaire beforehand, then talk through your history, lifestyle and diet in depth to understand your triggers and root cause. You'll get a temporary plan to start, and a fully personalised treatment plan the following week."}},
     {"@type": "Question", "name": "What are the advantages of online consultations?", "acceptedAnswer": {"@type": "Answer", "text": "Have your consultation from the comfort of home, avoid the traffic and the drive across town, save on fuel and transport costs, and cut your carbon footprint. There's no difference in effectiveness — with over a decade treating patients in-clinic and online, Kohei can help whether you're in town or halfway across the world."}},
-    {"@type": "Question", "name": "Can I see Kohei if I'm not in Australia or New Zealand?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Kohei sees patients from all over the world via online consultations. Access to certain products or tests may vary by location, but he works with many international dispensaries and service providers to make sure everyone gets the care they need."}}
+    {"@type": "Question", "name": "Can I see Kohei if I'm not in Australia or New Zealand?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Kohei sees patients from all over the world via online consultations. Consultations are delivered by secure video, so where you live is not a barrier."}}
   ]
 }
 </script>
@@ -415,7 +412,7 @@
   .mcta .book{background:#fff;color:var(--navy)}
 
   /* conditions note */
-  .cond-note{text-align:center;margin-top:30px;font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--sand)}
+  .cond-sub{margin:58px 0 22px;max-width:56ch}.cond-sub h3{font-family:var(--display);font-weight:400;color:var(--navy);font-size:clamp(1.5rem,2.6vw,2rem);margin:12px 0 8px;line-height:1.12}.cond-sub p{color:var(--muted);font-size:.98rem}.cond-grid-sub{grid-template-columns:repeat(4,1fr)}.cond-grid-sub .cond{background:var(--bg-soft)}.cond-grid-sub .cond h3{font-size:1.25rem}.cond-grid-sub .cond p{font-size:.92rem}@media(max-width:1080px){.cond-grid-sub{grid-template-columns:repeat(2,1fr)}}@media(max-width:640px){.cond-grid-sub{grid-template-columns:1fr}}.cond-note{text-align:center;margin-top:30px;font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--sand)}
 
   /* how-it-works + stepping-stones section backgrounds */
   .flow-sec{background:var(--bg-soft)}
@@ -449,7 +446,7 @@
   .creds span{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--sage);border:1px solid var(--line);background:var(--paper);border-radius:30px;padding:7px 13px}
 
   /* contact form (booking) */
-  .book-form{display:grid;grid-template-columns:1fr 1fr;gap:14px;position:relative;z-index:2}
+  .bf-status{margin-top:14px;font-size:.92rem;line-height:1.5;padding:11px 14px;border-radius:10px;border:1px solid transparent}.bf-status.ok{background:rgba(159,192,163,.16);border-color:rgba(159,192,163,.5);color:#DFF0E2}.bf-status.err{background:rgba(194,163,117,.15);border-color:rgba(194,163,117,.5);color:#F0E2CB}.book-form{display:grid;grid-template-columns:1fr 1fr;gap:14px;position:relative;z-index:2}
   .book-form .full{grid-column:1/-1}
   .field label{display:block;font-family:var(--mono);font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--sage-bright);margin-bottom:7px}
   .field input,.field select,.field textarea{width:100%;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.2);border-radius:12px;padding:13px 15px;color:#fff;font-family:var(--body);font-size:15px;transition:border-color .3s,background .3s}
@@ -760,7 +757,7 @@
     <div class="intro-copy">
       <span class="eyebrow reveal">A little about me</span>
       <h2 class="reveal d1">Kohei Iguchi <span class="intro-creds">BNatMed, BSc</span></h2>
-      <p class="reveal d1">I’m a qualified Naturopath and Medical Herbalist with over 10 years of clinical experience treating skin conditions. I have a special interest in treating patients with eczema, as I’ve experienced severe eczema myself and I know how hard it can be. Natural medicine helped me get my life back — so now I’m dedicated to helping you find that same relief.</p>
+      <p class="reveal d1">I’m a qualified Naturopath with over 10 years of clinical experience treating skin conditions. I have a special interest in treating patients with eczema, as I’ve experienced severe eczema myself and I know how hard it can be. Natural medicine helped me get my life back — so now I’m dedicated to helping you find that same relief.</p>
     </div>
   </div>
 </section>
@@ -845,12 +842,12 @@
         <h3>Acne</h3><p>By supporting hormonal balance, gut health, microbial balance, dietary triggers and lifestyle factors.</p><span class="more">Learn more →</span></a>
       <a class="cond reveal d2" href="/conditions/skin-infections">
         <span class="cic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="6"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5.2 5.2l2 2M16.8 16.8l2 2M18.8 5.2l-2 2M7.2 16.8l-2 2" stroke-linecap="round"/></svg></span>
-        <h3>Skin infections</h3><p>By providing natural antimicrobial support and addressing the underlying immune imbalance that lets infections take hold.</p><span class="more">Learn more →</span></a>
+        <h3>Skin infections</h3><p>By looking at the underlying immune imbalance that lets infections take hold, and the terrain that keeps them coming back.</p><span class="more">Learn more →</span></a>
       <a class="cond reveal d3" href="/conditions/rosacea">
         <span class="cic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4c3 2.5 5 5.5 5 8.5a5 5 0 0 1-10 0C7 9.5 9 6.5 12 4z"/><path d="M9.5 13.5c1 1 4 1 5 0" opacity=".7"/></svg></span>
         <h3>Rosacea</h3><p>By identifying and addressing microbial imbalance, digestive issues, dietary triggers and lifestyle factors.</p><span class="more">Learn more →</span></a>
     </div>
-    <p class="cond-note reveal">Select any condition to read Kohei’s full approach.</p>
+    <div class="cond-sub reveal"><span class="eyebrow">Beyond skin</span><h3>Whole-body health</h3><p>Skin is the focus here, but the systems underneath it rarely stay in their lane. These are the other areas Kohei consults on.</p></div><div class="cond-grid cond-grid-sub"><a class="cond reveal" href="/conditions/gut-health"><span class="cic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3v4.5a4.5 4.5 0 0 0 4.5 4.5h0A4.5 4.5 0 0 1 18 16.5V21"/><path d="M6 7h4M6 11h5M13 17h5M12 21h6" opacity=".65"/></svg></span><h3>Gut &amp; digestive health</h3><p>Bloating, irregularity or discomfort after eating — building a picture of how your digestion is actually working.</p><span class="more">Learn more →</span></a><a class="cond reveal d1" href="/conditions/hormones"><span class="cic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3.2"/><path d="M12 2v4M12 18v4M4.5 7.5l3.4 2M16.1 14.5l3.4 2M4.5 16.5l3.4-2M16.1 9.5l3.4-2"/></svg></span><h3>Hormones &amp; women’s health</h3><p>Cycle changes, PMS and perimenopause, looked at alongside sleep, stress, digestion and energy.</p><span class="more">Learn more →</span></a><a class="cond reveal d2" href="/conditions/fatigue"><span class="cic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v9l5.5 3.2"/><circle cx="12" cy="12" r="9"/></svg></span><h3>Fatigue &amp; energy</h3><p>For when rest stops fixing it — narrowing down what is actually driving the tiredness.</p><span class="more">Learn more →</span></a><a class="cond reveal d3" href="/conditions/stress-sleep"><span class="cic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.2 8.2 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/><path d="M15.5 4.2l.9 1.9 1.9.9-1.9.9-.9 1.9-.9-1.9-1.9-.9 1.9-.9z" opacity=".7"/></svg></span><h3>Stress &amp; sleep</h3><p>A busy head at night, 3am waking, wired-then-flat days — working on what keeps the cycle going.</p><span class="more">Learn more →</span></a></div><p class="cond-note reveal">Select any condition to read Kohei’s full approach.</p>
   </div>
 </section>
 
@@ -883,7 +880,7 @@
         <span class="jwm">03</span>
         <div class="jhead"><span class="jic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-6.5-4.2-6.5-9A3.5 3.5 0 0 1 12 7.5 3.5 3.5 0 0 1 18.5 11c0 4.8-6.5 9-6.5 9z"/></svg></span><span class="jn">Step 03</span></div>
         <h3>Treating the underlying cause</h3>
-        <p><b>Once the inflammation has settled, we address the root of your condition</b> — because permanently avoiding allergens isn’t solving anything. We find what caused those sensitivities in the first place and bring it back to balance, with natural remedies that restore gut function, hormones, detox pathways, your microbiome, stress response and skin integrity.</p>
+        <p><b>Once the inflammation has settled, we address the root of your condition</b> — because permanently avoiding allergens isn’t solving anything. We look for what caused those sensitivities in the first place, and work on the underlying picture — digestion, hormones, the microbiome, stress response and skin integrity.</p>
       </article>
       <article class="jstep reveal d1">
         <span class="jwm">04</span>
@@ -906,7 +903,7 @@
   <div class="wrap">
     <div class="story-grid">
       <div class="story-media reveal">
-        <div class="main"><img src="assets/kohei-microscope.jpg" alt="Kohei Iguchi performing live blood analysis at Waterwell Clinic"  loading="lazy" decoding="async" /></div>
+        <div class="main"><img src="assets/kohei-microscope.jpg" alt="Kohei Iguchi at work in the Waterwell Clinic consulting room"  loading="lazy" decoding="async" /></div>
         <div class="stack"><img src="assets/credentials.jpg" alt="Kohei Iguchi's qualifications, Bachelor of Natural Medicine"  loading="lazy" decoding="async" /></div>
       </div>
       <div class="story-copy">
@@ -919,13 +916,11 @@
         </div>
         <div class="signoff reveal d3">
           <div class="nm">Kohei Iguchi</div>
-          <div class="cr">BNatMed, BSc · Qualified &amp; Accredited Naturopath &amp; Medical Herbalist</div>
+          <div class="cr">BNatMed, BSc · Qualified Naturopath</div>
           <div class="creds">
             <span>Qualified Naturopath</span>
-            <span>Medical Herbalist</span>
-            <span>Live Blood Analyst</span>
             <span>10+ years’ practice</span>
-            <span>Reg. MNMHNZ</span>
+            <span>Consults by secure video</span>
           </div>
         </div>
       </div>
@@ -946,7 +941,7 @@
     <div class="stones">
       <div class="stone reveal"><div class="node">1</div><h3>Free discovery session</h3><p>A relaxed 15-minute conversation to ask anything about the consultations, the treatment process and how I can help you. No pressure, no obligations — just your peace of mind.</p><span class="meta">15 min · Free</span></div>
       <div class="stone reveal d1"><div class="node">2</div><h3>Initial consultation</h3><p>A comprehensive 75-minute appointment to uncover the triggers and root cause of your skin condition. We assess your history, diet, lifestyle, mental-emotional health and much more — a completely holistic view.</p><span class="meta">75 min · By video</span></div>
-      <div class="stone reveal d2"><div class="node">3</div><h3>Your tailored plan</h3><p>A treatment plan created only for you — herbal medicine, nutrition, and dietary and lifestyle support. No two plans are ever the same, because everyone is unique.</p><span class="meta">Individual</span></div>
+      <div class="stone reveal d2"><div class="node">3</div><h3>Your tailored plan</h3><p>A plan created only for you — nutrition, dietary and lifestyle support. No two plans are ever the same, because everyone is unique.</p><span class="meta">Individual</span></div>
       <div class="stone reveal d3"><div class="node">4</div><h3>Review &amp; progress</h3><p>We track your progress together and adjust as your body responds — so you can see and feel the change over time. As your skin improves, the plan evolves with you.</p><span class="meta">Ongoing</span></div>
     </div>
   </div>
@@ -961,10 +956,10 @@
     </div>
     <div class="svc-list">
       <div class="svc reveal"><div class="sn">01</div><div><h3>Naturopathic consultation</h3><p>A detailed, holistic consultation to find the root cause and build complete, individual care built just for you.</p></div></div>
-      <div class="svc reveal d1"><div class="sn">02</div><div><h3>Functional tests</h3><p>Gut microbiome mapping, allergy and intolerance panels, hormone (DUTCH) tests, organic acids, heavy metals and more — proven laboratory tests for the answers you need.</p></div></div>
-      <div class="svc reveal"><div class="sn">03</div><div><h3>Herbal medicine</h3><p>GMP-approved, sustainably sourced, high-quality medicinal herbs as capsules, powders or tablets — traditional medicine used to its full potential in the modern world.</p></div></div>
-      <div class="svc reveal d1"><div class="sn">04</div><div><h3>Nutritional supplements</h3><p>Prescription-only, practitioner-grade supplements chosen to address deficiencies and support your body’s own ability to heal. Quality, not quantity — just enough to nudge your body in the right direction.</p></div></div>
-      <div class="svc wide reveal"><div class="sn">05</div><div><h3>Dietary &amp; lifestyle advice</h3><p>Practical, realistic changes — step by step — that address the daily habits feeding into how your skin and body behave.</p></div></div>
+      <div class="svc reveal d1"><div class="sn">02</div><div><h3>Investigation</h3><p>Where it helps, we look deeper than symptoms — building a picture of what is actually driving your skin, rather than guessing.</p></div></div>
+      
+      <div class="svc reveal"><div class="sn">03</div><div><h3>Review &amp; adjustment</h3><p>We track how things are going together and adjust as your body responds, so the plan keeps pace with you rather than sitting still.</p></div></div>
+      <div class="svc reveal d1"><div class="sn">04</div><div><h3>Dietary &amp; lifestyle advice</h3><p>Practical, realistic changes — step by step — that address the daily habits feeding into how your skin and body behave.</p></div></div>
     </div>
   </div>
 </section>
@@ -981,7 +976,8 @@
         <h2>Book a free discovery call.</h2>
         <p>Pick a time straight off Kohei’s calendar — a relaxed conversation about your skin and how we can help, no obligation, no back-and-forth emails.</p>
         <!-- [CONFIRM CAL.COM URL] -->
-        <a class="btn" href="https://cal.com/waterwell/discovery" target="_blank" rel="noopener">Book your free call <span class="arrow">→</span></a>
+        <!-- [SWAP WHEN CAL.COM LANDS] restore href="https://cal.com/<kohei>/discovery" target="_blank" rel="noopener" once the real calLink is confirmed. The old href 404s — verified 3 Aug 2026. -->
+<a class="btn" href="#visit">Book your free call <span class="arrow">→</span></a>
         <p class="bc-fallback">Trouble booking? Email <a href="mailto:info@waterwellclinic.co.nz">info@waterwellclinic.co.nz</a> and we’ll sort a time.</p>
       </div>
       <div class="bc-embed">
@@ -1029,12 +1025,12 @@
       <div class="faq-list reveal d1">
         <div class="faq-item"><button class="faq-q">Do you treat children and babies?<span class="ic"></span></button><div class="faq-a"><p>Absolutely. Children are far more likely to suffer from eczema than adults, so many of our patients are little ones. Kohei has treated many children over the years, with a great success rate, and always guides parents through every step.</p></div></div>
         <div class="faq-item"><button class="faq-q">How does the free discovery session work?<span class="ic"></span></button><div class="faq-a"><p>It’s a relaxed 15-minute conversation to chat about your current skin issue and how I may be able to help — so you can feel confident before deciding to book an initial consultation. No pressure, no obligation.</p></div></div>
-        <div class="faq-item"><button class="faq-q">How does a naturopath treat eczema differently to a dermatologist?<span class="ic"></span></button><div class="faq-a"><p>The core difference comes down to philosophy: symptom management vs root-cause investigation. A dermatologist can offer excellent diagnostics and medications that improve symptoms quickly, but these can mask the problem without addressing what’s driving it. As naturopaths we investigate the internal balance — and through herbal medicine, nutrition, and dietary and lifestyle adjustments, we work to restore it.</p></div></div>
+        <div class="faq-item"><button class="faq-q">How does a naturopath treat eczema differently to a dermatologist?<span class="ic"></span></button><div class="faq-a"><p>The core difference comes down to philosophy: symptom management vs root-cause investigation. A dermatologist can offer excellent diagnostics and medications that improve symptoms quickly, but these can mask the problem without addressing what’s driving it. As naturopaths we investigate the internal balance — and through nutrition, dietary and lifestyle adjustments, we work to restore it.</p></div></div>
         <div class="faq-item"><button class="faq-q">Can I keep taking my current medication?<span class="ic"></span></button><div class="faq-a"><p>Yes. Naturopathic care is complementary — it works alongside your existing care. Kohei will never tell you to stop a prescribed medication without your wish to and a conversation with your doctor first. Many patients find that, as their health improves, they can wean off medications at a comfortable pace.</p></div></div>
         <div class="faq-item"><button class="faq-q">How long until I see results?<span class="ic"></span></button><div class="faq-a"><p>Every case and every individual is unique, so timeframes vary. Some people notice changes within weeks; deeper, lasting change takes longer. After your initial consultation you’ll receive a tailored Estimated Progress Timeline, so you know roughly what to expect.</p></div></div>
         <div class="faq-item"><button class="faq-q">What happens during a first consultation?<span class="ic"></span></button><div class="faq-a"><p>The initial consultation is 75 minutes. You’ll complete a health questionnaire beforehand, then we talk through your history, lifestyle and diet in depth to understand your triggers and root cause. You’ll get a temporary plan to get started, and a fully personalised treatment plan the following week.</p></div></div>
         <div class="faq-item"><button class="faq-q">What are the advantages of online consultations?<span class="ic"></span></button><div class="faq-a"><p>Have your consultation from the comfort of your own home — grab your favourite drink, settle on the couch, and we begin with a click. You avoid the traffic and the drive across town, save on fuel and public-transport costs, and cut your carbon footprint. And there’s no difference in effectiveness: with over a decade treating patients in-clinic and online, Kohei can help you whether you’re in town or halfway across the world.</p></div></div>
-        <div class="faq-item"><button class="faq-q">Can I see Kohei if I’m not in Australia or New Zealand?<span class="ic"></span></button><div class="faq-a"><p>Yes! Kohei sees patients from all over the world via online consultations. Access to certain products or tests may vary depending on where you live, but Kohei works with many international dispensaries and service providers to make sure everyone gets the care they need.</p></div></div>
+        <div class="faq-item"><button class="faq-q">Can I see Kohei if I’m not in Australia or New Zealand?<span class="ic"></span></button><div class="faq-a"><p>Yes! Kohei sees patients from all over the world via online consultations. Consultations are delivered by secure video, so where you live is not a barrier.</p></div></div>
       </div>
     </div>
   </div>
@@ -1066,6 +1062,10 @@
             <option value="Acne">Acne</option>
             <option value="Chronic urticaria / allergies">Urticaria / allergies</option>
             <option value="Another skin condition">Another skin condition</option>
+            <option value="Gut &amp; digestive health">Gut &amp; digestive health</option>
+            <option value="Hormones &amp; women’s health">Hormones &amp; women’s health</option>
+            <option value="Fatigue &amp; energy">Fatigue &amp; energy</option>
+            <option value="Stress &amp; sleep">Stress &amp; sleep</option>
             <option value="Something else">Something else</option>
           </select>
         </div>
@@ -1082,13 +1082,13 @@
 <footer>
   <div class="wrap">
     <div class="foot-grid">
-      <div><div class="logo-w"><img src="assets/logo.png" alt="Waterwell Clinic" /></div><p class="tag">Naturopathy and medical herbalism for skin health — in Sydney, Australia &amp; worldwide. Treating the root cause — eczema, psoriasis, acne and topical steroid withdrawal — from the inside out.</p>
-        <div class="foot-badges"><span>Reg. MNMHNZ</span><span>10+ years</span><span>100% online</span></div></div>
+      <div><div class="logo-w"><img src="assets/logo.png" alt="Waterwell Clinic" /></div><p class="tag">Naturopathic care for skin health — online, right across Australia. Treating the root cause — eczema, psoriasis, acne and topical steroid withdrawal — from the inside out.</p>
+        <div class="foot-badges"><span>10+ years</span><span>100% online</span></div></div>
       <div><h4>Explore</h4><ul><li><a href="#conditions">Conditions treated</a></li><li><a href="#how">How it works</a></li><li><a href="#story">My eczema story</a></li><li><a href="#services">Services</a></li><li><a href="/blog">Articles</a></li></ul></div>
-      <div><h4>Visit &amp; book</h4><ul><li><a href="mailto:info@waterwellclinic.co.nz">info@waterwellclinic.co.nz</a></li><li>Online consultations by video</li><li>Australia &amp; worldwide</li><li><a href="#visit">Book a free session →</a></li><li><a href="/">Main site</a></li></ul></div>
+      <div><h4>Visit &amp; book</h4><ul><li><a href="mailto:info@waterwellclinic.co.nz">info@waterwellclinic.co.nz</a></li><li>Online consultations by video</li><li>Australia &amp; worldwide</li><li><a href="#visit">Book a free session →</a></li><li><a href="/">Main site</a></li><li><a href="/privacy">Privacy policy</a></li><li><a href="/code-of-conduct">Code of Conduct &amp; complaints</a></li></ul></div>
     </div>
     <div class="foot-bottom">
-      <span>© <span id="yr"></span> Waterwell Clinic. Kohei Iguchi — BNatMed, BSc, Qualified &amp; Accredited Naturopath &amp; Medical Herbalist.</span>
+      <span>© <span id="yr"></span> Waterwell Clinic. Kohei Iguchi — BNatMed, BSc, Qualified Naturopath.</span>
       <span class="disc">Information on this site is general in nature and not a substitute for individual medical advice. Always consult a qualified health professional about your specific condition.</span>
     </div>
   </div>
@@ -1157,25 +1157,6 @@
     });
   });
 
-  // before/after compare slider
-  (function(){
-    const c = document.getElementById('cmp'); if(!c) return;
-    const after = c.querySelector('.after-img'), div = document.getElementById('cmp-div'), handle = document.getElementById('cmp-handle');
-    let dragging = false;
-    const setPos = x => {
-      const r = c.getBoundingClientRect();
-      let p = Math.max(2, Math.min(98, ((x - r.left)/r.width)*100));
-      after.style.clipPath = `inset(0 0 0 ${p}%)`; div.style.left = p+'%'; handle.style.left = p+'%';
-    };
-    const start = () => dragging = true;
-    const end = () => dragging = false;
-    const move = e => { if(!dragging) return; const x = e.touches ? e.touches[0].clientX : e.clientX; setPos(x); };
-    c.addEventListener('mousedown', e => {start(); setPos(e.clientX);});
-    c.addEventListener('touchstart', e => {start(); setPos(e.touches[0].clientX);}, {passive:true});
-    window.addEventListener('mousemove', move); window.addEventListener('touchmove', move, {passive:true});
-    window.addEventListener('mouseup', end); window.addEventListener('touchend', end);
-  })();
-
   // result hover/tap reveal
   document.querySelectorAll('.rcard').forEach(card => {
     const pill = card.querySelector('.pill');
@@ -1197,16 +1178,95 @@
   })();
 
   // booking form → composes an email (no backend needed; swap the handler for Web3Forms to capture leads server-side)
+  // Booking form — server-side capture + conversion signal.
+  // Replaced the old mailto: handoff on 3 Aug 2026: it lost leads whenever no
+  // mail client was configured, and a mailto: navigation cannot fire a
+  // conversion, so the account could never record one. See
+  // tools/fix_booking_conversion.py for the full reasoning.
   (function(){
     const f = document.getElementById('bookform'); if(!f) return;
-    f.addEventListener('submit', e => {
+
+    // ⚠ PLACEHOLDER — set the real Web3Forms access key here.
+    // While it stays as-is the form falls back to mailto, so behaviour never
+    // regresses. Do NOT add a `ccemail` field: Web3Forms free rejects it with
+    // HTTP 400 and the submission dies invisibly. Test against production.
+    const WEB3FORMS_KEY = 'REPLACE_WITH_WEB3FORMS_ACCESS_KEY';
+    const KEY_SET = /^[0-9a-f-]{30,}$/i.test(WEB3FORMS_KEY);
+
+    const status = document.createElement('p');
+    status.className = 'bf-status';
+    status.setAttribute('role','status');
+    status.setAttribute('aria-live','polite');
+    status.hidden = true;
+    f.appendChild(status);
+
+    function say(msg, ok){
+      status.textContent = msg;
+      status.hidden = false;
+      status.classList.toggle('ok', !!ok);
+      status.classList.toggle('err', !ok);
+    }
+
+    function mailtoFallback(name, body, subject){
+      window.location.href = 'mailto:info@waterwellclinic.co.nz?subject='
+        + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+    }
+
+    f.addEventListener('submit', async e => {
       e.preventDefault();
       const name = f.name.value.trim(), email = f.email.value.trim();
-      if(!name){ f.name.focus(); return; }
-      if(!email){ f.email.focus(); return; }
-      const body = `Name: ${name}\nEmail: ${email}\nMain concern: ${f.concern.value}\nBased in: ${f.where.value || '—'}\n\n${f.msg.value || ''}`.trim();
-      const subject = `Free discovery session — ${name} (${f.concern.value})`;
-      window.location.href = `mailto:info@waterwellclinic.co.nz?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      if(!name){ f.name.focus(); say('Please add your name so Kohei knows who to reply to.', false); return; }
+      if(!email){ f.email.focus(); say('Please add an email address for the reply.', false); return; }
+
+      const concern = f.concern.value;
+      const body = ('Name: ' + name + '\nEmail: ' + email + '\nMain concern: ' + concern
+        + '\nBased in: ' + (f.where.value || '—') + '\n\n' + (f.msg.value || '')).trim();
+      const subject = 'Free discovery session — ' + name + ' (' + concern + ')';
+
+      if(!KEY_SET){ mailtoFallback(name, body, subject); return; }
+
+      const btn = f.querySelector('[type="submit"]');
+      const label = btn ? btn.textContent : '';
+      if(btn){ btn.disabled = true; btn.textContent = 'Sending…'; }
+      say('Sending…', true);
+
+      try {
+        const res = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: {'Content-Type':'application/json', 'Accept':'application/json'},
+          body: JSON.stringify({
+            access_key: WEB3FORMS_KEY,
+            subject: subject,
+            from_name: 'Waterwell website',
+            name: name,
+            email: email,
+            concern: concern,
+            based_in: f.where.value || '',
+            message: f.msg.value || '',
+            page: location.pathname
+          })
+        });
+        const data = await res.json().catch(() => ({}));
+        if(res.ok && data.success){
+          f.reset();
+          say('Thanks — that’s come through. Kohei usually replies within one working day.', true);
+          // Conversion signal. Import this as the Google Ads conversion once
+          // GA4/GTM is wired — this is the event that has never existed.
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({event:'generate_lead', form:'discovery_session', concern:concern});
+          if(typeof gtag === 'function'){
+            gtag('event','generate_lead',{form:'discovery_session', concern:concern});
+          }
+        } else {
+          say('That didn’t send — opening your email instead.', false);
+          mailtoFallback(name, body, subject);
+        }
+      } catch(err){
+        say('That didn’t send — opening your email instead.', false);
+        mailtoFallback(name, body, subject);
+      } finally {
+        if(btn){ btn.disabled = false; btn.textContent = label; }
+      }
     });
   })();
 

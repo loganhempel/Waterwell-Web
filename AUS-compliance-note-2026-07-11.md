@@ -1,3 +1,10 @@
+> **⚠ SUPERSEDED — DO NOT USE. 3 August 2026.**
+> This note assumes Kohei is a **NZ-based** naturopath delivering cross-border telehealth into Australia.
+> He has since **relocated to Australia**. That assumption was load-bearing, and two of this note's
+> *requirements* (state NZ registration; disclose delivery from New Zealand) are now **false statements**
+> and would breach ACL s.18/s.29.
+> **Use `AUS-compliance-note-2026-08-03.md` instead.**
+
 # Waterwell Naturopath — Australian Advertising Compliance Note
 
 **Date:** 11 July 2026
