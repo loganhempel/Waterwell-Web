@@ -1,23 +1,63 @@
 # Waterwell Naturopath (Kohei Iguchi) — Source of Truth
-Updated: 2026-07-20
+Updated: 2026-08-03
+
+## ⚠ Premise change — read first
+**Kohei has relocated to Australia and practises from there.** This invalidates
+`AUS-compliance-note-2026-07-11.md` at the premise — that note is banner-marked
+SUPERSEDED. Use **`AUS-compliance-note-2026-08-03.md` (v2)**. Two things v1
+*required* (state NZ registration; disclose delivery from New Zealand) are now
+false statements under ACL s.18/s.29.
+
+**Blocking unknown: which Australian state/territory.** The National Code of
+Conduct is administered per jurisdiction and the complaints body differs. This
+blocks `code-of-conduct.html` and part of the AU landing-page checklist.
 
 ## Canonical
-- **Website:** this folder (git repo → github.com/loganhempel/Waterwell-Web). `index.html`, `nz.html`, `au.html` (11 Jul) reflect the virtual-first / Australia move. `AUS-compliance-note-2026-07-11.md` governs AU page claims. `wordpress-booking-snippet/` ready to install.
-- **Google Ads:** `gads-build-2026-07-16/` — 5 campaigns (NZ Brand / NZ Online Naturopath / NZ Skin Conditions / AU Online Naturopath / AU Skin Conditions) / 24 ad groups / **441 unique terms (expanded 20 Jul, up from 224)**, all phrase+exact paired, zero broad. Adds Gut & Digestive Health, Hormones & Women's Health, Fatigue & Energy, and Stress & Sleep ad groups (NZ + AU); splits Skin Conditions into all 6 condition pages (Eczema / TSW / Psoriasis / Acne / Rosacea / Skin Infections) on both sides; adds a General Naturopathy AU ad group with city-modified AU terms (Sydney/Melbourne/Brisbane/Perth/Adelaide). **20 Jul: every ad group's RSA copy rewritten from scratch** — the account previously recycled the same handful of headlines/descriptions across nearly all 24 groups; each group now has genuinely distinct copy grounded in real differentiators (dual Naturopath+Medical Herbalist qualification, 32 five-star reviews, functional/lab testing posted to the door, works alongside the patient's GP). AU copy re-audited against `AUS-compliance-note-2026-07-11.md` — no goods references, no outcome/testimonial claims, no serious-condition claims, no detox language, explicit "delivered online from NZ" / NZ-registered framing throughout. Sheet: https://docs.google.com/spreadsheets/d/19a2IUjy0NERVSLm8VxndInU5ULN-8OAqgRQZ0qYMZHA/edit — original pre-expansion JSON backed up to `Google Ads Buildout 2026-07-05/_backups/waterwell.backup-pre-2026-07-20-expansion.json`. See `gads-build-2026-07-16/README.md`.
-- Prior builds kept as history: `gads-split-2026-07-12/` (first AU/NZ split, hand-built) and `gads-build-2026-07-05/` (original NZ-only JSON pipeline build) + `relaunch-2026-06/` (LAUNCH-PACKAGE-GOOGLE.md 4 Jul).
-- June report: `Waterwell-June-Report-2026.pdf` (best month on record — 10 enquiries).
+- **Website:** this folder (git → github.com/loganhempel/Waterwell-Web).
+  `index.html`, `nz.html`, `au.html` + **10** `conditions/` pages (6 skin,
+  4 whole-body added 3 Aug). `privacy.html` and `code-of-conduct.html` exist
+  but **are NOT deployable** — 7 NEEDS-KOHEI placeholders between them.
+- **Google Ads:** `gads-build-2026-08-03/` — 5 campaigns / 24 ad groups /
+  878 keyword rows / 407 unique terms. Source of truth is
+  `~/Client Work/Google Ads Buildout 2026-07-05/data/waterwell.json`.
+  Regenerate artefacts with `build_master_csv.py` + `build_workbooks.py`.
+- **Kohei's review pack:** `Waterwell-Ad-Copy-FOR-KOHEI-2026-08-03.html` —
+  tall format, one line per row, live char counts. The 20 Jul sheet was WIDE
+  and he could not widen columns past H, so **his 12 comments were never a
+  complete review.** Send the HTML, not a sheet.
+- Prior builds kept as history: `gads-build-2026-07-16/`, `gads-split-2026-07-12/`,
+  `gads-build-2026-07-05/`, `relaunch-2026-06/`.
+- June report: `Waterwell-June-Report-2026.pdf` (best month on record, 10 enquiries).
 
-## AU page status (12 Jul)
-`au.html` remediated against the compliance note §5 — see `AU-REMEDIATION-2026-07-12.md` (+ dated audit screenshots in root). NEEDS-KOHEI: AUD pricing, AU privacy policy, §6 sign-offs. ⚠ AU-only extra gate: the six `/conditions/` pages linked from au.html are un-audited AU click-paths — audit or de-link before AU campaigns unpause. Cal.com URL still a placeholder.
+## Tooling (all in tools/, all gated — they fail loudly rather than silently no-op)
+- `build_conditions.py` — the 10 condition pages, with an AU compliance gate
+- `build_ad_review_pack.py` — Kohei's tall CSV + branded HTML from the JSON
+- `remediate_au.py [--check]` — au.html compliance pass / audit
+- `build_legal.py` — privacy + code-of-conduct pages
+- `add_wholebody_section.py`, `fix_booking_conversion.py` — one-shot site patches
+- `build_geo.py`, `build_blog.py` — pre-existing
+
+## Ad-group → landing page (all 24 now have a real destination)
+Brand / Online Naturopath / General Naturopathy → `/nz` or `/au` (correct).
+Every condition ad group, both geos → its own `conditions/` page.
 
 ## Gates before spend
-1. **WordPress admin access from Kohei** (chase drafted 12 Jul) → wire thank-you redirect → GA4 `generate_lead` → import to Ads. Audit found $470 / 1,282 clicks / 0 recorded conversions — Gravity Forms never fired an event.
-2. Test conversion end-to-end before any budget.
-3. Cal.com one-click booking added.
-4. Billing confirmed.
-
-## Next action
-Build the Aus+NZ campaign split plan (geo, currency, landing pages nz.html/au.html, compliance-safe AU copy), then launch once tracking verified.
+1. **Conversion tracking.** Audit found $470 / 1,282 clicks / 0 conversions.
+   TWO root causes: (a) Gravity Forms never fired; (b) **the site's own booking
+   form was a `mailto:` handoff, which cannot fire a conversion at all** —
+   fixed 3 Aug, now a Web3Forms POST + `generate_lead`, but **needs a real
+   Web3Forms access key**; until then it falls back to mailto. Never add
+   `ccemail` (HTTP 400 on free, kills the submission invisibly).
+2. WordPress admin access from Kohei (chase drafted 12 Jul, still open).
+3. Cal.com link — `cal.com/waterwell/discovery` **404s** (verified 3 Aug).
+   CTA repointed at `#visit`; swap back when the real calLink lands.
+4. Which Australian state (see above).
+5. Privacy policy live — now a HARD gate, not "low urgency": naturopaths are
+   health service providers and the Privacy Act small-business exemption does
+   not apply to them.
+6. Google telemedicine/LegitScript question — riskier now he is AU-based.
+7. Billing confirmed.
 
 ## Note
-Folder renamed from `waterwell-preview` 12 Jul (git + Vercel links unaffected — all inside the folder).
+Folder renamed from `waterwell-preview` 12 Jul. `build_conditions.py` still had
+the stale path until 3 Aug.
