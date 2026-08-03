@@ -29,6 +29,25 @@ blocks `code-of-conduct.html` and part of the AU landing-page checklist.
   `gads-build-2026-07-05/`, `relaunch-2026-06/`.
 - June report: `Waterwell-June-Report-2026.pdf` (best month on record, 10 enquiries).
 
+## ⚠ index.html is the master — nz.html and au.html are GENERATED
+Never hand-edit `nz.html` or `au.html`. Edit `index.html`, then run
+`python3 tools/build_geo.py`.
+
+**AU compliance is part of generation** (moved there 3 Aug). It used to be a
+post-hoc patch applied to the generated au.html, while `index.html` still
+contained every banned pattern — so re-running the generator silently
+reintroduced all of them. That is how the 12 Jul remediation was lost.
+`build_geo.py` now applies the 20 AU compliance edits during generation and
+**refuses to write au.html if anything banned survives**, auditing visible copy
+*and* JSON-LD (structured data was a blind spot: "medical herbalism" had
+survived in the MedicalClinic description).
+
+Content that is legitimate in NZ — herbal medicine, supplements, testimonials,
+MNMHNZ — stays on index/nz and is stripped only for AU.
+
+`remediate_au.py` is now **audit-only** (`--check`); its patch mode refuses to
+run, so there is one source of truth.
+
 ## Tooling (all in tools/, all gated — they fail loudly rather than silently no-op)
 - `build_conditions.py` — the 10 condition pages, with an AU compliance gate
 - `build_ad_review_pack.py` — Kohei's tall CSV + branded HTML from the JSON
