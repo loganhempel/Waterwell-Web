@@ -60,6 +60,22 @@ run, so there is one source of truth.
 Brand / Online Naturopath / General Naturopathy → `/nz` or `/au` (correct).
 Every condition ad group, both geos → its own `conditions/` page.
 
+
+## Concepts + section harvest (3 Aug)
+`concepts-2026-07-20/` holds the four 20 Jul landing-page concepts (Deep Current,
+The Dossier, Vitals, Root & Bloom), recovered from the session transcript after
+the scratchpad was lost. `SECTION-HARVEST.html` in that folder is the decision
+page: nine candidate sections, ranked, with the outcome recorded.
+
+**Ported into production:** A1 numbered conditions list (replaced the card grid,
+which was built for six conditions and had to carry ten) and C1 alternating
+zig-zag process path. A2 was already present. A3 / B3 / B2 / A4 / D1 were
+dropped — production already does each of those jobs as well or better.
+
+The concepts themselves are NOT production-ready: all four reference medical
+herbalism and none carry AU compliance treatment. Anything further must go
+through `index.html` and `build_geo.py`.
+
 ## Gates before spend
 1. **Conversion tracking.** Audit found $470 / 1,282 clicks / 0 conversions.
    TWO root causes: (a) Gravity Forms never fired; (b) **the site's own booking
