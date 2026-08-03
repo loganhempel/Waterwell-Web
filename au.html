@@ -688,7 +688,7 @@
   .tst .who{display:flex;align-items:center;gap:10px}
   .tst .who::before{content:attr(data-initial);width:26px;height:26px;border-radius:50%;background:var(--sage);color:#fff;font-family:var(--mono);font-size:10.5px;letter-spacing:0;text-transform:uppercase;display:flex;align-items:center;justify-content:center;flex:0 0 auto}
   .tst.big .who::before{background:rgba(255,255,255,.25)}
-/* craft pass: measured line-length caps (42-78ch target) */.sec-head p{max-width:64ch}.results .sec-head p{max-width:62ch}.jstep.lead .lead-copy p{max-width:66ch}.services .sec-head p{max-width:62ch}.tst p{max-width:52ch}/* craft pass: 40px minimum hit area on small links (visual size unchanged) */.nav-links a{padding-top:9px;padding-bottom:9px}footer li a,footer .foot-bottom a{display:inline-block;padding:9px 0}footer li{margin-bottom:5px}.loc a,.crow a{display:inline-block;padding:9px 0}/* craft pass 2 */.rcard .pill,.compare .lbl{background:rgba(78,97,81,.94)}p.disclaimer{max-width:70ch}.jstep.lead .lead-copy p{max-width:62ch}.sec-head p{max-width:62ch}.crow a,.r a,.loc a,.bc-fallback a,.bc-fallback-state a{display:inline-block;padding:10px 0}.foot-bottom a{display:inline-block;padding:8px 0}/* craft pass 3 */.compare .lbl.r{background:rgba(78,97,81,.94)}.nav-inner a.brand{display:inline-flex;align-items:center;padding:6px 0}.nav-cta a.nav-phone{padding-top:2px;padding-bottom:2px}.form-note a{display:inline-block;padding:10px 0}/* fix: vc-pill sits on navy inside .bento-feature — --sage-text is a cream-background token and measured 2.19:1 there. --sage-bright is 5.83:1. */.bento-feature .vc-pill{color:var(--sage-bright)}@media(max-width:860px){.cnd-row{grid-template-columns:34px minmax(0,1fr) 22px}.cnd-row .cnum{grid-column:1;grid-row:1}.cnd-row .cname{grid-column:2;grid-row:1}.cnd-row .carr{grid-column:3;grid-row:1;align-self:center;opacity:1;transform:none}.cnd-row .cnote{grid-column:2/-1;grid-row:2;margin-top:2px}}</style>
+/* craft pass: measured line-length caps (42-78ch target) */.sec-head p{max-width:64ch}.results .sec-head p{max-width:62ch}.jstep.lead .lead-copy p{max-width:66ch}.services .sec-head p{max-width:62ch}.tst p{max-width:52ch}/* craft pass: 40px minimum hit area on small links (visual size unchanged) */.nav-links a{padding-top:9px;padding-bottom:9px}footer li a,footer .foot-bottom a{display:inline-block;padding:9px 0}footer li{margin-bottom:5px}.loc a,.crow a{display:inline-block;padding:9px 0}/* craft pass 2 */.rcard .pill,.compare .lbl{background:rgba(78,97,81,.94)}p.disclaimer{max-width:70ch}.jstep.lead .lead-copy p{max-width:62ch}.sec-head p{max-width:62ch}.crow a,.r a,.loc a,.bc-fallback a,.bc-fallback-state a{display:inline-block;padding:10px 0}.foot-bottom a{display:inline-block;padding:8px 0}/* craft pass 3 */.compare .lbl.r{background:rgba(78,97,81,.94)}.nav-inner a.brand{display:inline-flex;align-items:center;padding:6px 0}.nav-cta a.nav-phone{padding-top:2px;padding-bottom:2px}.form-note a{display:inline-block;padding:10px 0}/* fix: vc-pill sits on navy inside .bento-feature — --sage-text is a cream-background token and measured 2.19:1 there. --sage-bright is 5.83:1. */.bento-feature .vc-pill{color:var(--sage-bright)}@media(max-width:860px){.cnd-row{grid-template-columns:34px minmax(0,1fr) 22px}.cnd-row .cnum{grid-column:1;grid-row:1}.cnd-row .cname{grid-column:2;grid-row:1}.cnd-row .carr{grid-column:3;grid-row:1;align-self:center;opacity:1;transform:none}.cnd-row .cnote{grid-column:2/-1;grid-row:2;margin-top:2px}}/* agent batch 1 */.sec-cta{margin-top:52px;display:flex;align-items:center;gap:22px;flex-wrap:wrap}.sec-cta-note{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--sage-text)}.flow-sec .sec-cta-note{color:var(--sage-text)}@media(max-width:640px){.sec-cta{margin-top:36px;gap:14px}.sec-cta .btn{width:100%;justify-content:center}}.mcta a.book{flex:1;white-space:nowrap}@media(max-width:980px){body{padding-bottom:76px}}</style>
 </head>
 <body>
 <div class="progress" id="progress"></div>
@@ -893,6 +893,10 @@
         <p><b>Your journey isn’t over when treatment ends — some say that’s where it truly begins.</b> You’ll use everything you’ve learned to hold your progress, and we provide a maintenance plan and check in from time to time, so you never slip back to where you started.</p>
       </article>
     </div>
+    <div class="sec-cta reveal">
+      <a class="btn btn-primary" href="#visit">Book a free 15-minute call <span class="arrow">→</span></a>
+      <span class="sec-cta-note">15 mins · free · no obligation — just a conversation</span>
+    </div>
   </div>
 </section>
 
@@ -965,7 +969,10 @@
 <!-- TESTIMONIALS -->
 
 <!-- BOOK A CALL — Cal.com discovery call -->
-<section class="book-cta" id="book-call">
+<!-- HIDDEN 3 Aug: promises a calendar that does not exist. cal.com/waterwell/discovery
+     404s (see SOURCE-OF-TRUTH gate 3). Remove the hidden attribute and restore the
+     real calLink to bring this back — nothing else needs changing. -->
+<section class="book-cta" id="book-call" hidden>
   <div class="wrap">
     <div class="book-cta-card reveal">
       <div class="bc-left">
@@ -1050,24 +1057,25 @@
         </div>
       </div>
       <form class="book-form" id="bookform" novalidate>
-        <div class="field"><label for="bf-name">Your name</label><input id="bf-name" name="name" type="text" placeholder="First &amp; last name" required /></div>
-        <div class="field"><label for="bf-email">Email</label><input id="bf-email" name="email" type="email" placeholder="you@example.com" required /></div>
+        <div class="field"><label for="bf-name">Your name</label><input id="bf-name" name="name" type="text" placeholder="First &amp; last name" autocomplete="name" required /></div>
+        <div class="field"><label for="bf-email">Email</label><input id="bf-email" name="email" type="email" placeholder="you@example.com" autocomplete="email" inputmode="email" required /></div>
         <div class="field"><label for="bf-concern">Main concern</label>
           <select id="bf-concern" name="concern">
+            <option value="" selected>Select one…</option>
             <option value="Eczema">Eczema</option>
             <option value="Topical Steroid Withdrawal">Topical Steroid Withdrawal</option>
             <option value="Psoriasis">Psoriasis</option>
             <option value="Acne">Acne</option>
-            <option value="Chronic urticaria / allergies">Urticaria / allergies</option>
-            <option value="Another skin condition">Another skin condition</option>
+            <option value="Rosacea">Rosacea</option>
+            <option value="Skin infections">Skin infections (incl. chronic urticaria)</option>
             <option value="Gut &amp; digestive health">Gut &amp; digestive health</option>
             <option value="Hormones &amp; women’s health">Hormones &amp; women’s health</option>
             <option value="Fatigue &amp; energy">Fatigue &amp; energy</option>
             <option value="Stress &amp; sleep">Stress &amp; sleep</option>
+            <option value="Another skin condition">Another skin condition</option>
             <option value="Something else">Something else</option>
           </select>
         </div>
-        <div class="field"><label for="bf-where">Where are you based?</label><input id="bf-where" name="where" type="text" placeholder="e.g. Melbourne, VIC" /></div>
         <div class="field full"><label for="bf-msg">Anything you’d like Kohei to know? <span style="text-transform:none;letter-spacing:0;color:rgba(159,192,163,.85)">(optional)</span></label><textarea id="bf-msg" name="msg" placeholder="A little about your situation and what you’ve tried…"></textarea></div>
         <button class="btn btn-primary full" style="background:#fff;color:var(--navy)" type="submit">Request my free session <span class="arrow">→</span></button>
         <p class="form-note">No obligation. Prefer to write directly? <a href="mailto:info@waterwellclinic.co.nz">info@waterwellclinic.co.nz</a></p>
@@ -1094,8 +1102,7 @@
 
 <!-- STICKY MOBILE CTA -->
 <div class="mcta" id="mcta">
-  <a class="call" href="mailto:info@waterwellclinic.co.nz">Email</a>
-  <a class="book" href="#visit">Book free online session</a>
+  <a class="book" href="#visit">Book a free 15-minute call</a>
 </div>
 
 <script>
@@ -1196,7 +1203,8 @@
     status.setAttribute('role','status');
     status.setAttribute('aria-live','polite');
     status.hidden = true;
-    f.appendChild(status);
+    const _sub = f.querySelector('[type="submit"]');
+    if (_sub) f.insertBefore(status, _sub); else f.appendChild(status);
 
     function say(msg, ok){
       status.textContent = msg;
@@ -1215,10 +1223,12 @@
       const name = f.name.value.trim(), email = f.email.value.trim();
       if(!name){ f.name.focus(); say('Please add your name so Kohei knows who to reply to.', false); return; }
       if(!email){ f.email.focus(); say('Please add an email address for the reply.', false); return; }
+      if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)){ f.email.focus();
+        say('That email address does not look right — check it and try again.', false); return; }
 
       const concern = f.concern.value;
       const body = ('Name: ' + name + '\nEmail: ' + email + '\nMain concern: ' + concern
-        + '\nBased in: ' + (f.where.value || '—') + '\n\n' + (f.msg.value || '')).trim();
+        + '\n\n' + (f.msg.value || '')).trim();
       const subject = 'Free discovery session — ' + name + ' (' + concern + ')';
 
       if(!KEY_SET){ mailtoFallback(name, body, subject); return; }
@@ -1239,7 +1249,6 @@
             name: name,
             email: email,
             concern: concern,
-            based_in: f.where.value || '',
             message: f.msg.value || '',
             page: location.pathname
           })
@@ -1308,5 +1317,6 @@
   })();
 
 </script>
+<!-- agent-batch1 -->
 </body>
 </html>
