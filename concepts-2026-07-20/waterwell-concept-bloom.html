@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Waterwell — Concept: Root &amp; Bloom</title>
+<style>
+:root{ --navy:#0E3A64; --cream:#F4EEE4; --navy-soft:rgba(14,58,100,.08); }
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  background:var(--cream); color:var(--navy);
+  font-family:-apple-system,"Helvetica Neue",Arial,sans-serif;
+  overflow-x:hidden;
+}
+::selection{background:var(--navy);color:var(--cream)}
+a:focus-visible{outline:2px solid var(--navy);outline-offset:3px;border-radius:100px}
+@media (prefers-reduced-motion: reduce){
+  .blob,.hero-blob{animation:none}
+}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1080px;margin:0 auto;padding:0 32px}
+.serif{font-family:Georgia,"Iowan Old Style",serif;font-style:italic;font-weight:400}
+.eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;opacity:.55;font-weight:600}
+
+/* floating blobs, ambient */
+.blobfield{position:fixed;inset:0;z-index:-1;overflow:hidden}
+.blob{position:absolute;border-radius:42% 58% 63% 37% / 41% 44% 56% 59%;background:var(--navy);opacity:.06;animation:drift 22s ease-in-out infinite}
+.blob.b1{width:520px;height:520px;top:-140px;left:-160px;animation-delay:0s}
+.blob.b2{width:380px;height:380px;top:60vh;right:-140px;animation-delay:-6s;opacity:.05}
+.blob.b3{width:300px;height:300px;top:140vh;left:10vw;animation-delay:-11s;opacity:.05}
+.blob.b4{width:420px;height:420px;top:220vh;right:-100px;animation-delay:-3s;opacity:.05}
+@keyframes drift{
+  0%,100%{border-radius:42% 58% 63% 37% / 41% 44% 56% 59%;transform:translate(0,0) rotate(0deg)}
+  33%{border-radius:63% 37% 42% 58% / 58% 42% 58% 42%;transform:translate(30px,-20px) rotate(8deg)}
+  66%{border-radius:38% 62% 55% 45% / 45% 55% 45% 55%;transform:translate(-20px,26px) rotate(-6deg)}
+}
+
+/* nav */
+nav{display:flex;justify-content:space-between;align-items:center;padding:30px 32px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:15px}
+.leaf{width:20px;height:20px}
+.navcta{border:1.5px solid var(--navy);border-radius:100px;padding:10px 20px;font-size:13px;font-weight:600}
+
+/* hero */
+.hero{padding:60px 32px 120px;text-align:center;position:relative}
+.hero-blob{width:min(620px,84vw);height:min(620px,84vw);margin:0 auto -60px;border-radius:44% 56% 65% 35% / 43% 47% 53% 57%;background:var(--navy);position:relative;display:flex;align-items:center;justify-content:center;animation:drift 18s ease-in-out infinite}
+.hero-blob-inner{color:var(--cream);max-width:70%}
+.hero-blob-inner .eyebrow{color:var(--cream);opacity:.65;margin-bottom:14px}
+.hero-blob-inner h1{font-size:clamp(28px,4.4vw,46px);line-height:1.15}
+.hero-under{max-width:520px;margin:70px auto 0}
+.hero-under p{font-size:17px;line-height:1.7;opacity:.75;margin-bottom:30px}
+.cta-pill{display:inline-flex;align-items:center;gap:10px;background:var(--navy);color:var(--cream);padding:16px 30px;border-radius:100px;font-weight:600;font-size:14.5px}
+
+/* underline accent */
+.hand-underline{position:relative;display:inline-block}
+.hand-underline svg{position:absolute;left:0;bottom:-8px;width:100%;height:10px}
+
+/* belief */
+.belief{padding:100px 32px;text-align:center;position:relative}
+.belief .eyebrow{margin-bottom:22px}
+.belief h2{font-size:clamp(26px,3.6vw,42px);max-width:680px;margin:0 auto;line-height:1.4}
+.belief h2 .serif{color:var(--navy)}
+
+/* conditions — scattered organic cards */
+.garden{padding:60px 32px 120px}
+.garden-head{text-align:center;margin-bottom:70px}
+.garden-head .eyebrow{margin-bottom:16px}
+.garden-head h2{font-size:clamp(28px,3.8vw,44px)}
+.leaf-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:26px;max-width:960px;margin:0 auto}
+.leaf-card{
+  width:280px;padding:34px 26px;background:rgba(14,58,100,.045);
+  border-radius:38% 62% 34% 66% / 62% 44% 56% 38%;
+  text-align:center;transition:.3s ease;
+}
+.leaf-card:nth-child(2n){border-radius:62% 38% 66% 34% / 38% 56% 44% 62%;margin-top:34px}
+.leaf-card:nth-child(3n){margin-top:-16px}
+.leaf-card:hover{background:var(--navy);color:var(--cream);transform:translateY(-6px)}
+.leaf-card .ic{width:34px;height:34px;margin:0 auto 16px}
+.leaf-card h4{font-size:18px;margin-bottom:10px;font-weight:700}
+.leaf-card p{font-size:13px;opacity:.7;line-height:1.6}
+
+/* winding path */
+.path-section{padding:80px 32px 120px;max-width:760px;margin:0 auto}
+.path-head{text-align:center;margin-bottom:80px}
+.path-head .eyebrow{margin-bottom:16px}
+.path-head h2{font-size:clamp(28px,3.8vw,44px)}
+.wind{position:relative}
+.wind-node{display:flex;align-items:flex-start;gap:28px;margin-bottom:70px;position:relative}
+.wind-node:nth-child(even){flex-direction:row-reverse;text-align:right}
+.wind-node:last-child{margin-bottom:0}
+.node-dot{
+  width:52px;height:52px;flex:0 0 auto;border-radius:60% 40% 55% 45% / 45% 55% 40% 60%;
+  background:var(--navy);color:var(--cream);display:flex;align-items:center;justify-content:center;font-weight:700;
+}
+.wind-node h4{font-size:19px;margin-bottom:8px}
+.wind-node p{font-size:14px;opacity:.7;line-height:1.65;max-width:400px}
+
+/* story */
+.story{padding:100px 32px;display:flex;justify-content:center;align-items:center;gap:70px;flex-wrap:wrap}
+.story-blob{
+  width:280px;height:280px;border-radius:63% 37% 42% 58% / 45% 55% 45% 55%;
+  background:var(--navy);flex:0 0 auto;display:flex;align-items:center;justify-content:center;
+  color:var(--cream);text-align:center;padding:20px;
+}
+.story-blob span{font-size:12px;opacity:.6;letter-spacing:.08em;text-transform:uppercase}
+.story-copy{max-width:440px}
+.story-copy .eyebrow{margin-bottom:16px}
+.story-copy blockquote{font-size:24px;margin-bottom:20px;line-height:1.4}
+.story-copy p{font-size:15px;opacity:.72;line-height:1.7}
+
+/* close */
+.close{padding:120px 32px;text-align:center}
+.close-blob{width:min(520px,84vw);margin:0 auto;padding:70px 40px;border-radius:48% 52% 60% 40% / 40% 48% 52% 60%;background:var(--navy);color:var(--cream)}
+.close h2{font-size:clamp(30px,4.4vw,48px);margin-bottom:18px}
+.close p{opacity:.7;margin-bottom:30px;font-size:14.5px}
+
+footer{padding:40px 32px;text-align:center;font-size:13px;opacity:.55}
+
+@media(max-width:720px){
+  .story{flex-direction:column;text-align:center}
+  .wind-node,.wind-node:nth-child(even){flex-direction:row;text-align:left}
+  .hero-blob{width:min(400px,78vw);height:min(400px,78vw);margin-bottom:-30px}
+  .story-blob{width:220px;height:220px}
+}
+</style>
+</head>
+<body>
+
+<div class="blobfield">
+  <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div><div class="blob b4"></div>
+</div>
+
+<nav>
+  <div class="brand">
+    <svg class="leaf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 20c8-1 13-6 14-14-8 1-13 6-14 14z"/><path d="M5 19c3-3 5.5-6 8-11"/></svg>
+    Waterwell
+  </div>
+  <a href="#book" class="navcta">Book a call</a>
+</nav>
+
+<section class="hero">
+  <div class="hero-blob">
+    <div class="hero-blob-inner">
+      <div class="eyebrow">Naturopathy · Online</div>
+      <h1>Grown back<br>to balance,<br><span class="serif">from the root.</span></h1>
+    </div>
+  </div>
+  <div class="hero-under">
+    <p>Gentle, root-cause naturopathy and medical herbalism for eczema, psoriasis, acne and rosacea — wherever you're calling from.</p>
+    <a href="#book" class="cta-pill">Free 15-min discovery call →</a>
+  </div>
+</section>
+
+<section class="belief">
+  <div class="eyebrow">Our belief</div>
+  <h2>Your skin is a <span class="hand-underline serif">reflection<svg viewBox="0 0 200 10"><path d="M2 7 Q50 1 100 6 T198 5" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg></span> — not the root. We listen for what's underneath, and help the body find its own way back.</h2>
+</section>
+
+<section class="garden">
+  <div class="garden-head">
+    <div class="eyebrow">What we treat</div>
+    <h2>Six conditions,<br>one way in.</h2>
+  </div>
+  <div class="leaf-grid">
+    <div class="leaf-card"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="12" r="8"/></svg><h4>Eczema</h4><p>Triggers, causes, and rebalancing the gut and immune system.</p></div>
+    <div class="leaf-card"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2-7 4 14 2-7h6"/></svg><h4>TSW</h4><p>Nervous-system support through the withdrawal process.</p></div>
+    <div class="leaf-card"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M4 20c8-1 13-6 14-14"/></svg><h4>Psoriasis</h4><p>Gut and liver function, calming the autoimmune response.</p></div>
+    <div class="leaf-card"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="9"/></svg><h4>Acne</h4><p>Hormonal balance, gut health and dietary triggers.</p></div>
+    <div class="leaf-card"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M6 18c0-6 3-11 6-14 3 3 6 8 6 14a6 6 0 01-12 0z"/></svg><h4>Skin Infections</h4><p>Natural antimicrobial support, immune-imbalance repair.</p></div>
+    <div class="leaf-card"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/></svg><h4>Rosacea</h4><p>Microbial, digestive and lifestyle triggers, addressed together.</p></div>
+  </div>
+</section>
+
+<section class="path-section" id="stones">
+  <div class="path-head">
+    <div class="eyebrow">The Stepping Stones</div>
+    <h2>A calm path forward.</h2>
+  </div>
+  <div class="wind">
+    <div class="wind-node"><div class="node-dot">01</div><div><h4>Free Discovery Session</h4><p>15 minutes, no cost — a conversation about what's going on and how we can help.</p></div></div>
+    <div class="wind-node"><div class="node-dot">02</div><div><h4>Initial Consultation</h4><p>75 minutes, taking in your history, diet, lifestyle and mental-emotional health.</p></div></div>
+    <div class="wind-node"><div class="node-dot">03</div><div><h4>Your Tailored Plan</h4><p>Herbal medicine, nutrition and lifestyle support, built for you specifically.</p></div></div>
+    <div class="wind-node"><div class="node-dot">04</div><div><h4>Review &amp; Progress</h4><p>Tracked and adjusted together as your body responds, for as long as it takes.</p></div></div>
+  </div>
+</section>
+
+<section class="story">
+  <div class="story-blob"><span>Portrait — Kohei Iguchi, BNatMed, BSc</span></div>
+  <div class="story-copy">
+    <div class="eyebrow">My Eczema Story</div>
+    <blockquote class="serif">"Eczema is not just a skin condition. It's an internal condition. I know, because I have suffered from it myself."</blockquote>
+    <p>Before becoming a naturopath, Kohei was covered head to toe in eczema — severe enough to resign from his job. Through nutritional, dietary and lifestyle support, his skin recovered. Today he's the founder and director of Waterwell, helping others find the same relief.</p>
+  </div>
+</section>
+
+<section class="close" id="book">
+  <div class="close-blob">
+    <h2>Let's find<br>the root together.</h2>
+    <p>Fifteen minutes, no cost, no commitment.</p>
+    <a href="#" class="cta-pill" style="background:var(--cream);color:var(--navy)">Book your free call →</a>
+  </div>
+</section>
+
+<footer>Waterwell Clinic — info@waterwellclinic.co.nz</footer>
+
+</body>
+</html>

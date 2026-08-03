@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Waterwell — Concept: The Dossier</title>
+<style>
+:root{ --navy:#0E3A64; --cream:#F4EEE4; --line:rgba(14,58,100,.22); --soft:rgba(14,58,100,.62); }
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  background:var(--cream); color:var(--navy);
+  font-family:Georgia,"Iowan Old Style","Times New Roman",serif;
+  font-size:16px; line-height:1.6;
+}
+::selection{background:var(--navy);color:var(--cream)}
+a:focus-visible{outline:2px solid var(--navy);outline-offset:3px;border-radius:2px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 40px}
+a{color:inherit}
+.sc{font-family:-apple-system,Arial,sans-serif;text-transform:uppercase;letter-spacing:.16em;font-size:10.5px;font-weight:700}
+
+/* grain */
+body::before{
+  content:'';position:fixed;inset:0;pointer-events:none;z-index:200;opacity:.045;mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* masthead */
+.masthead{border-bottom:1.5px solid var(--navy);padding:22px 0 16px}
+.masthead .row1{display:flex;justify-content:space-between;align-items:baseline}
+.masthead h1{font-size:15px;letter-spacing:.32em;font-weight:400}
+.masthead .row2{display:flex;justify-content:space-between;margin-top:10px}
+
+/* progress rule */
+#scrollrule{position:fixed;top:0;left:0;height:2px;background:var(--navy);z-index:201;width:0%}
+
+/* hero */
+.hero{padding:90px 0 70px;display:grid;grid-template-columns:1.4fr 1fr;gap:70px;border-bottom:1px solid var(--line)}
+.hero .kicker{margin-bottom:26px;color:var(--soft)}
+.hero h2{font-size:clamp(38px,5.2vw,74px);line-height:1.04;letter-spacing:-.01em;text-wrap:balance}
+.hero .dek{margin-top:26px;font-size:18px;font-style:italic;max-width:520px;color:var(--soft)}
+.pull{border-left:2px solid var(--navy);padding-left:24px;align-self:end}
+.pull .num{font-family:-apple-system,sans-serif;font-size:11px;letter-spacing:.1em;color:var(--soft);margin-bottom:10px}
+.pull .stat{font-size:52px;font-weight:400;line-height:1}
+.pull .cap{margin-top:8px;font-size:13px;color:var(--soft);font-style:italic}
+
+/* contents / TOC */
+.toc{padding:60px 0;border-bottom:1px solid var(--line)}
+.toc .sc{margin-bottom:26px;display:block;color:var(--soft)}
+.toc-row{display:flex;align-items:baseline;gap:10px;padding:14px 0;font-size:20px}
+.toc-row .name{white-space:nowrap}
+.toc-row .dots{flex:1;border-bottom:1px dotted var(--line);transform:translateY(-6px)}
+.toc-row .no{font-family:-apple-system,sans-serif;font-size:12px;color:var(--soft)}
+
+/* belief — drop cap + 2 col */
+.belief{padding:90px 0;border-bottom:1px solid var(--line)}
+.belief .sc{display:block;margin-bottom:30px;color:var(--soft)}
+.belief-cols{columns:2;column-gap:56px;font-size:18px;line-height:1.75}
+.belief-cols p{margin-bottom:18px}
+.dropcap{float:left;font-size:88px;line-height:.75;padding:6px 10px 0 0;font-weight:400}
+.bigquote{font-size:30px;font-style:italic;line-height:1.4;margin:26px 0;break-inside:avoid}
+
+/* case files — clippings */
+.cases{padding:90px 0;border-bottom:1px solid var(--line)}
+.cases .sc{display:block;margin-bottom:36px;color:var(--soft)}
+.case-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.case{border:1px solid var(--line);padding:22px 20px;background:rgba(14,58,100,.02);transition:transform .2s ease, box-shadow .2s ease}
+.case:nth-child(even){transform:rotate(-.6deg)}
+.case:nth-child(odd){transform:rotate(.5deg)}
+.case:hover{transform:rotate(0) translateY(-4px);box-shadow:0 14px 30px -18px rgba(14,58,100,.35)}
+.case .tag{font-family:-apple-system,sans-serif;font-size:9.5px;letter-spacing:.14em;color:var(--soft);border:1px solid var(--line);display:inline-block;padding:2px 7px;margin-bottom:12px}
+.case h4{font-size:21px;margin-bottom:8px}
+.case p{font-size:13.5px;color:var(--soft);line-height:1.55}
+
+/* process — footnote style */
+.process{padding:90px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:.8fr 1.2fr;gap:70px}
+.process h2{font-size:clamp(30px,3.6vw,44px);line-height:1.1}
+.process .sc{display:block;margin-bottom:18px;color:var(--soft)}
+.fnote{display:flex;gap:18px;padding:20px 0;border-top:1px solid var(--line)}
+.fnote:first-child{border-top:none}
+.fnote sup{font-size:13px;color:var(--soft);font-family:-apple-system,sans-serif}
+.fnote h5{font-size:18px;margin-bottom:6px}
+.fnote p{font-size:14px;color:var(--soft);max-width:440px}
+
+/* author bio */
+.author{padding:100px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:.7fr 1.3fr;gap:60px;align-items:center}
+.author-frame{aspect-ratio:3/4;border:1px solid var(--line);position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;background:rgba(14,58,100,.04)}
+.author-frame::before,.author-frame::after{content:'';position:absolute;width:16px;height:16px}
+.author-frame::before{top:14px;left:14px;border-top:1px solid var(--navy);border-left:1px solid var(--navy)}
+.author-frame::after{bottom:14px;right:14px;border-bottom:1px solid var(--navy);border-right:1px solid var(--navy)}
+.author-frame .initial{font-family:Georgia,serif;font-size:64px;color:rgba(14,58,100,.5);line-height:1}
+.author-frame span{font-family:-apple-system,sans-serif;font-size:11px;color:var(--soft);letter-spacing:.1em}
+.author .sc{display:block;margin-bottom:16px;color:var(--soft)}
+.author blockquote{font-size:26px;font-style:italic;line-height:1.4;margin-bottom:22px}
+.author p{font-size:15px;color:var(--soft);max-width:480px}
+
+/* colophon */
+.colophon{padding:50px 0;display:flex;justify-content:space-between;font-family:-apple-system,sans-serif;font-size:11px;color:var(--soft);letter-spacing:.04em}
+
+@media(max-width:860px){
+  .hero,.process,.author{grid-template-columns:1fr}
+  .belief-cols{columns:1}
+  .case-grid{grid-template-columns:1fr 1fr}
+  .masthead .row1,.masthead .row2{flex-direction:column;align-items:flex-start;gap:6px}
+  .masthead .row1{gap:4px}
+  .colophon .wrap{flex-direction:column;align-items:flex-start;gap:6px}
+}
+</style>
+</head>
+<body>
+<div id="scrollrule"></div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="row1">
+      <h1>WATERWELL</h1>
+      <div class="sc">No. I — Skin &amp; Root Cause</div>
+    </div>
+    <div class="row2 sc">
+      <span>Naturopathy &amp; Medical Herbalism</span>
+      <span>Online — NZ · Australia · Worldwide</span>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap" style="display:contents">
+    <div>
+      <div class="kicker sc">Feature — Vol. I</div>
+      <h2>On the skin<br>as a record<br>of the whole body.</h2>
+      <p class="dek">A case for treating eczema, psoriasis and rosacea from the inside — by Waterwell Clinic, founder Kohei Iguchi.</p>
+    </div>
+    <div class="pull">
+      <div class="num">FIG. 01</div>
+      <div class="stat">75<span style="font-size:22px">min</span></div>
+      <div class="cap">Length of the initial consultation — history, diet, lifestyle, and the story behind the symptom.</div>
+    </div>
+  </div>
+</section>
+
+<section class="toc">
+  <div class="wrap">
+    <span class="sc">Contents — Conditions Treated</span>
+    <div class="toc-row"><span class="name">Eczema</span><span class="dots"></span><span class="no">01</span></div>
+    <div class="toc-row"><span class="name">Topical Steroid Withdrawal</span><span class="dots"></span><span class="no">02</span></div>
+    <div class="toc-row"><span class="name">Psoriasis</span><span class="dots"></span><span class="no">03</span></div>
+    <div class="toc-row"><span class="name">Acne</span><span class="dots"></span><span class="no">04</span></div>
+    <div class="toc-row"><span class="name">Skin Infections</span><span class="dots"></span><span class="no">05</span></div>
+    <div class="toc-row"><span class="name">Rosacea</span><span class="dots"></span><span class="no">06</span></div>
+  </div>
+</section>
+
+<section class="belief">
+  <div class="wrap">
+    <span class="sc">Editorial — Our Belief</span>
+    <div class="belief-cols">
+      <p><span class="dropcap">E</span>very health challenge has a path forward, and your skin is no exception. Conditions like eczema and dermatitis are rarely just skin-deep; they are often a reflection of an internal system asking for balance.</p>
+      <p class="bigquote">"By deeply listening to your story, we work together to address the root causes — and gently guide the body back to its natural state."</p>
+      <p>Comprehensive consultations, functional testing, and over a decade of clinical experience combine to identify what's actually driving the condition — not just what's visible on the surface.</p>
+      <p>The goal was never symptom suppression. It's a body strong enough to tolerate its own triggers again, maintained long after the treatment ends.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cases">
+  <div class="wrap">
+    <span class="sc">Case Files</span>
+    <div class="case-grid">
+      <div class="case"><div class="tag">CASE 01</div><h4>Eczema</h4><p>Understanding triggers and rebalancing the gut and immune system.</p></div>
+      <div class="case"><div class="tag">CASE 02</div><h4>TSW</h4><p>Addressing nervous-system disruption from steroid use.</p></div>
+      <div class="case"><div class="tag">CASE 03</div><h4>Psoriasis</h4><p>Gut and liver function work to calm the autoimmune response.</p></div>
+      <div class="case"><div class="tag">CASE 04</div><h4>Acne</h4><p>Hormonal balance, gut health and dietary triggers.</p></div>
+      <div class="case"><div class="tag">CASE 05</div><h4>Skin Infections</h4><p>Natural antimicrobial support, immune-imbalance repair.</p></div>
+      <div class="case"><div class="tag">CASE 06</div><h4>Rosacea</h4><p>Microbial imbalance and digestive triggers, addressed together.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="process">
+  <div class="wrap" style="display:contents">
+    <div>
+      <span class="sc">Method</span>
+      <h2>The Stepping Stones</h2>
+    </div>
+    <div>
+      <div class="fnote"><sup>01</sup><div><h5>Free Discovery Session</h5><p>15 minutes, no cost. A conversation about the process and how it applies to you.</p></div></div>
+      <div class="fnote"><sup>02</sup><div><h5>Initial Consultation</h5><p>75 minutes — history, diet, lifestyle and mental-emotional health, taken as one whole.</p></div></div>
+      <div class="fnote"><sup>03</sup><div><h5>Your Tailored Plan</h5><p>Herbal medicine, nutrition and lifestyle support, built specifically for the case in front of us.</p></div></div>
+      <div class="fnote"><sup>04</sup><div><h5>Review &amp; Progress</h5><p>Tracked and adjusted together as the body responds, for as long as it takes.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="author">
+  <div class="wrap" style="display:contents">
+    <div class="author-frame"><div class="initial">K.I.</div><span>PORTRAIT — K. IGUCHI</span></div>
+    <div>
+      <span class="sc">About the Practitioner</span>
+      <blockquote>"Eczema is not just a skin condition. It's an internal condition. I know, because I have suffered from it myself."</blockquote>
+      <p>Before becoming a naturopath, Kohei was covered head to toe in eczema — severe enough to resign from his job. Through nutritional, dietary and lifestyle support, his skin recovered. That experience became his lifelong practice, and today he's the founder and director of Waterwell Clinic — BNatMed, BSc.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="colophon">
+  <div class="wrap" style="display:flex;justify-content:space-between;width:100%">
+    <span>Published digitally by Waterwell Clinic</span>
+    <span>info@waterwellclinic.co.nz</span>
+  </div>
+</footer>
+
+<script>
+window.addEventListener('scroll', ()=>{
+  const h = document.documentElement;
+  const pct = (h.scrollTop) / (h.scrollHeight - h.clientHeight) * 100;
+  document.getElementById('scrollrule').style.width = pct + '%';
+});
+</script>
+</body>
+</html>
