@@ -286,9 +286,7 @@
   .jstep.lead .lead-badge{display:flex;flex-direction:column;align-items:center;gap:12px}
 
   /* THE STEPPING STONES — connected horizontal journey */
-  .stones{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;position:relative;margin-top:8px}
-  .stones::before{content:'';position:absolute;top:27px;left:11%;right:11%;height:2px;background:linear-gradient(90deg,var(--sage-bright),var(--sand));opacity:.55;z-index:0}
-  .stone{position:relative;z-index:1}
+  /* C1 zig-zag path (ported from Root & Bloom 3 Aug) */.stones{position:relative;margin-top:26px;max-width:940px;margin-left:auto;margin-right:auto;display:flex;flex-direction:column;gap:0}.stones::before{content:'';position:absolute;top:14px;bottom:14px;left:50%;width:2px;transform:translateX(-1px);background:linear-gradient(180deg,var(--sage-bright),var(--sand));opacity:.45;z-index:0}.stone{position:relative;z-index:1;width:calc(50% - 46px);padding:26px 0 34px}.stone:nth-child(odd){align-self:flex-start;text-align:right;padding-right:8px}.stone:nth-child(even){align-self:flex-end;text-align:left;padding-left:8px}.stone .node{position:absolute;top:26px}.stone:nth-child(odd) .node{right:-74px}.stone:nth-child(even) .node{left:-74px}.stone::after{content:'';position:absolute;top:53px;width:32px;height:1px;background:var(--line)}.stone:nth-child(odd)::after{right:-42px}.stone:nth-child(even)::after{left:-42px}.stone:last-child{padding-bottom:6px}
   .stone .node{width:56px;height:56px;border-radius:50%;background:var(--paper);border:1px solid var(--line);box-shadow:var(--shadow-soft);color:var(--navy);font-family:var(--display);font-size:1.5rem;display:flex;align-items:center;justify-content:center;transition:transform .45s cubic-bezier(.16,1,.3,1),background .45s,color .45s}
   .stone:hover .node{transform:translateY(-4px);background:var(--navy);color:#fff}
   .stone h3{font-size:1.32rem;margin:24px 0 10px}
@@ -421,7 +419,29 @@
   .mcta .book{background:#fff;color:var(--navy)}
 
   /* conditions note */
-  .cond-sub{margin:58px 0 22px;max-width:56ch}.cond-sub h3{font-family:var(--display);font-weight:400;color:var(--navy);font-size:clamp(1.5rem,2.6vw,2rem);margin:12px 0 8px;line-height:1.12}.cond-sub p{color:var(--muted);font-size:.98rem}.cond-grid-sub{grid-template-columns:repeat(4,1fr)}.cond-grid-sub .cond{background:var(--bg-soft)}.cond-grid-sub .cond h3{font-size:1.25rem}.cond-grid-sub .cond p{font-size:.92rem}@media(max-width:1080px){.cond-grid-sub{grid-template-columns:repeat(2,1fr)}}@media(max-width:640px){.cond-grid-sub{grid-template-columns:1fr}}.cond-note{text-align:center;margin-top:30px;font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--sand)}
+  .cond-sub{margin:58px 0 22px;max-width:56ch}.cond-sub h3{font-family:var(--display);font-weight:400;color:var(--navy);font-size:clamp(1.5rem,2.6vw,2rem);margin:12px 0 8px;line-height:1.12}.cond-sub p{color:var(--muted);font-size:.98rem}.cond-grid-sub{grid-template-columns:repeat(4,1fr)}.cond-grid-sub .cond{background:var(--bg-soft)}.cond-grid-sub .cond h3{font-size:1.25rem}.cond-grid-sub .cond p{font-size:.92rem}@media(max-width:1080px){.cond-grid-sub{grid-template-columns:repeat(2,1fr)}}@media(max-width:640px){.cond-grid-sub{grid-template-columns:1fr}}
+  /* A1 — numbered conditions list (ported from the Deep Current concept 3 Aug) */
+  .cond-list{border-top:1px solid var(--line)}
+  .clgroup{display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;padding:34px 0 12px}
+  .clgroup-2{padding-top:52px;border-top:1px solid var(--line);margin-top:16px}
+  .cltag{font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--sage);font-weight:700}
+  .clnote{font-size:.92rem;color:var(--muted)}
+  .cnd-row{display:grid;grid-template-columns:44px minmax(0,1fr) minmax(0,1fr) 28px;align-items:baseline;
+    gap:18px;padding:20px 14px 20px 4px;border-bottom:1px solid var(--line);
+    transition:background .35s var(--ease),padding-left .35s var(--ease)}
+  .cnd-row:hover{background:rgba(14,58,100,.045);padding-left:16px}
+  .cnum{font-family:var(--mono);font-size:.78rem;color:var(--sand);letter-spacing:.06em}
+  .cname{font-family:var(--display);font-size:clamp(1.35rem,2.5vw,1.9rem);color:var(--navy);line-height:1.12}
+  .cnote{font-size:.92rem;color:var(--muted);line-height:1.5}
+  .carr{color:var(--sand);opacity:0;transform:translateX(-6px);transition:opacity .3s,transform .3s var(--ease);text-align:right}
+  .cnd-row:hover .carr{opacity:1;transform:translateX(0)}
+  .cnd-row:focus-visible{outline:2.5px solid var(--sage);outline-offset:2px;border-radius:8px}
+  @media(max-width:860px){
+    .cnd-row{grid-template-columns:34px minmax(0,1fr) 22px;gap:12px;padding:17px 8px 17px 2px}
+    .cnote{grid-column:2/4;font-size:.88rem;margin-top:2px}
+    .carr{opacity:1;transform:none}
+  }
+.cond-note{text-align:center;margin-top:30px;font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--sand)}
 
   /* how-it-works + stepping-stones section backgrounds */
   .flow-sec{background:var(--bg-soft)}
@@ -499,9 +519,7 @@
     .journey{grid-template-columns:1fr}
     .jstep.lead{grid-template-columns:1fr;text-align:left;padding:32px 28px}
     .jstep.lead .lead-badge{flex-direction:row;justify-content:flex-start}
-    .stones{gap:0}
-    .stones::before{display:none}
-    .stone{padding:22px 0;border-bottom:1px solid var(--line)}
+    .stones{gap:0;max-width:none}.stones::before{display:none}.stone,.stone:nth-child(odd),.stone:nth-child(even){width:100%;align-self:stretch;text-align:left;padding:22px 0;border-bottom:1px solid var(--line)}.stone::after{display:none}.stone .node,.stone:nth-child(odd) .node,.stone:nth-child(even) .node{position:static;right:auto;left:auto}
     .stone:last-child{border-bottom:0}
     .stone h3{margin:16px 0 8px}
     .stone .meta{margin-top:12px}
@@ -838,29 +856,9 @@
   <div class="wrap">
     <div class="sec-head reveal">
       <span class="eyebrow">Our specialties</span>
-      <h2>Skin conditions, supported from the inside out.</h2>
+      <h2>Ten conditions, one root-cause approach.</h2>
     </div>
-    <div class="cond-grid">
-      <a class="cond feature reveal" href="/conditions/eczema">
-        <span class="cic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 18 0"/><path d="M6.5 12a5.5 5.5 0 0 1 11 0"/><circle cx="12" cy="12" r="1.6" fill="currentColor" stroke="none"/></svg></span>
-        <h3>Eczema</h3><p>By understanding the type(s) of eczema, your individual triggers and causes, and rebalancing the gut and immune system.</p><span class="more">Learn more →</span></a>
-      <a class="cond reveal d1" href="/conditions/tsw">
-        <span class="cic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg></span>
-        <h3>Topical Steroid Withdrawal</h3><p>By addressing the nervous-system disruption caused by steroid use, and managing the eczema that prompted the steroids in the first place.</p><span class="more">Learn more →</span></a>
-      <a class="cond reveal d2" href="/conditions/psoriasis">
-        <span class="cic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><rect x="3.5" y="3.5" width="11" height="11" rx="2.5"/><rect x="9.5" y="9.5" width="11" height="11" rx="2.5"/></svg></span>
-        <h3>Psoriasis</h3><p>By looking at gut and liver function to slowly calm the autoimmune condition driving it.</p><span class="more">Learn more →</span></a>
-      <a class="cond reveal d1" href="/conditions/acne">
-        <span class="cic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><circle cx="9" cy="10" r="1" fill="currentColor" stroke="none"/><circle cx="15" cy="11" r="1" fill="currentColor" stroke="none"/><circle cx="12" cy="15" r="1" fill="currentColor" stroke="none"/></svg></span>
-        <h3>Acne</h3><p>By supporting hormonal balance, gut health, microbial balance, dietary triggers and lifestyle factors.</p><span class="more">Learn more →</span></a>
-      <a class="cond reveal d2" href="/conditions/skin-infections">
-        <span class="cic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="6"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5.2 5.2l2 2M16.8 16.8l2 2M18.8 5.2l-2 2M7.2 16.8l-2 2" stroke-linecap="round"/></svg></span>
-        <h3>Skin infections</h3><p>By looking at the underlying immune imbalance that lets infections take hold, and the terrain that keeps them coming back.</p><span class="more">Learn more →</span></a>
-      <a class="cond reveal d3" href="/conditions/rosacea">
-        <span class="cic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4c3 2.5 5 5.5 5 8.5a5 5 0 0 1-10 0C7 9.5 9 6.5 12 4z"/><path d="M9.5 13.5c1 1 4 1 5 0" opacity=".7"/></svg></span>
-        <h3>Rosacea</h3><p>By identifying and addressing microbial imbalance, digestive issues, dietary triggers and lifestyle factors.</p><span class="more">Learn more →</span></a>
-    </div>
-    <div class="cond-sub reveal"><span class="eyebrow">Beyond skin</span><h3>Whole-body health</h3><p>Skin is the focus here, but the systems underneath it rarely stay in their lane. These are the other areas Kohei consults on.</p></div><div class="cond-grid cond-grid-sub"><a class="cond reveal" href="/conditions/gut-health"><span class="cic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3v4.5a4.5 4.5 0 0 0 4.5 4.5h0A4.5 4.5 0 0 1 18 16.5V21"/><path d="M6 7h4M6 11h5M13 17h5M12 21h6" opacity=".65"/></svg></span><h3>Gut &amp; digestive health</h3><p>Bloating, irregularity or discomfort after eating — building a picture of how your digestion is actually working.</p><span class="more">Learn more →</span></a><a class="cond reveal d1" href="/conditions/hormones"><span class="cic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3.2"/><path d="M12 2v4M12 18v4M4.5 7.5l3.4 2M16.1 14.5l3.4 2M4.5 16.5l3.4-2M16.1 9.5l3.4-2"/></svg></span><h3>Hormones &amp; women’s health</h3><p>Cycle changes, PMS and perimenopause, looked at alongside sleep, stress, digestion and energy.</p><span class="more">Learn more →</span></a><a class="cond reveal d2" href="/conditions/fatigue"><span class="cic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v9l5.5 3.2"/><circle cx="12" cy="12" r="9"/></svg></span><h3>Fatigue &amp; energy</h3><p>For when rest stops fixing it — narrowing down what is actually driving the tiredness.</p><span class="more">Learn more →</span></a><a class="cond reveal d3" href="/conditions/stress-sleep"><span class="cic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.2 8.2 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/><path d="M15.5 4.2l.9 1.9 1.9.9-1.9.9-.9 1.9-.9-1.9-1.9-.9 1.9-.9z" opacity=".7"/></svg></span><h3>Stress &amp; sleep</h3><p>A busy head at night, 3am waking, wired-then-flat days — working on what keeps the cycle going.</p><span class="more">Learn more →</span></a></div><p class="cond-note reveal">Select any condition to read Kohei’s full approach.</p>
+    <div class="cond-list"><div class="clgroup reveal"><span class="cltag">Skin conditions</span></div><a class="cnd-row reveal" href="/conditions/eczema"><span class="cnum">01</span><span class="cname">Eczema</span><span class="cnote">Type, triggers, and rebalancing the gut and immune system</span><span class="carr" aria-hidden="true">→</span></a><a class="cnd-row reveal" href="/conditions/tsw"><span class="cnum">02</span><span class="cname">Topical Steroid Withdrawal</span><span class="cnote">Nervous-system support through the withdrawal process</span><span class="carr" aria-hidden="true">→</span></a><a class="cnd-row reveal" href="/conditions/psoriasis"><span class="cnum">03</span><span class="cname">Psoriasis</span><span class="cnote">Gut and liver function, calming the autoimmune response</span><span class="carr" aria-hidden="true">→</span></a><a class="cnd-row reveal" href="/conditions/acne"><span class="cnum">04</span><span class="cname">Acne</span><span class="cnote">Hormonal balance, gut health, microbial and dietary triggers</span><span class="carr" aria-hidden="true">→</span></a><a class="cnd-row reveal" href="/conditions/skin-infections"><span class="cnum">05</span><span class="cname">Skin infections</span><span class="cnote">The immune imbalance underneath, and the terrain that keeps it returning</span><span class="carr" aria-hidden="true">→</span></a><a class="cnd-row reveal" href="/conditions/rosacea"><span class="cnum">06</span><span class="cname">Rosacea</span><span class="cnote">Microbial imbalance, digestive triggers and lifestyle factors</span><span class="carr" aria-hidden="true">→</span></a><div class="clgroup clgroup-2 reveal"><span class="cltag">Whole-body health</span><span class="clnote">Skin is the focus, but the systems underneath it rarely stay in their lane.</span></div><a class="cnd-row reveal" href="/conditions/gut-health"><span class="cnum">07</span><span class="cname">Gut &amp; digestive health</span><span class="cnote">Bloating, irregularity and discomfort after eating</span><span class="carr" aria-hidden="true">→</span></a><a class="cnd-row reveal" href="/conditions/hormones"><span class="cnum">08</span><span class="cname">Hormones &amp; women’s health</span><span class="cnote">Cycles, PMS and perimenopause, alongside sleep and stress</span><span class="carr" aria-hidden="true">→</span></a><a class="cnd-row reveal" href="/conditions/fatigue"><span class="cnum">09</span><span class="cname">Fatigue &amp; energy</span><span class="cnote">For when rest has stopped fixing it</span><span class="carr" aria-hidden="true">→</span></a><a class="cnd-row reveal" href="/conditions/stress-sleep"><span class="cnum">10</span><span class="cname">Stress &amp; sleep</span><span class="cnote">A busy head at night, 3am waking, wired-then-flat days</span><span class="carr" aria-hidden="true">→</span></a></div><p class="cond-note reveal">Select any condition to read Kohei’s full approach.</p>
   </div>
 </section>
 
