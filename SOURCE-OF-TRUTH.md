@@ -76,6 +76,30 @@ The concepts themselves are NOT production-ready: all four reference medical
 herbalism and none carry AU compliance treatment. Anything further must go
 through `index.html` and `build_geo.py`.
 
+
+## Craft pass (3 Aug) — measured, not eyeballed
+A Playwright audit of every section produced the fix list; all 16 pages now
+measure clean: **0 WCAG AA contrast failures, 0 tap targets under 40px, 0 images
+without intrinsic dimensions, 0 JS errors, no horizontal scroll at 390px.**
+
+Two accessible text tokens were added because `--sage` (3.25:1) and `--sand`
+(2.07:1) were used as the colour for eyebrows, meta pills, step numbers and star
+ratings across every section, and both fail AA for small text:
+- `--sage-text:#5A715D` (4.60:1)
+- `--sand-text:#7E694C` (4.54:1)
+
+**The brand tokens are unchanged.** `--sage` and `--sand` still drive every
+decorative use — icons, rules, gradients, borders, large display type. Only
+small text moved. Before/After pills were white on brand sage (3.75:1) and are
+now on #4E6151 (6.66:1).
+
+The same tokens were pushed into `build_conditions.py`, `build_legal.py` and
+`blog.html` so the whole site is consistent.
+
+⚠ `tools/build_blog.py` cannot run — it reads `/tmp/ww_posts.json`, which is
+gone. `blog.html` was patched directly. Rebuild that data source before touching
+the blog again.
+
 ## Gates before spend
 1. **Conversion tracking.** Audit found $470 / 1,282 clicks / 0 conversions.
    TWO root causes: (a) Gravity Forms never fired; (b) **the site's own booking

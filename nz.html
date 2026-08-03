@@ -87,7 +87,7 @@
     --ink:#21303B;
     --muted:#5E6B73;
     --line:#E2D9C9;
-    --sage:#6E8B72;
+    --sage:#6E8B72;--sage-text:#5A715D;--sand-text:#7E694C;
     --sage-bright:#9FC0A3;
     --sand:#C2A375;
     --sky:#CFE0F0;
@@ -138,7 +138,7 @@
   img{display:block;max-width:100%}
   .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
 
-  .eyebrow{font-family:var(--mono);font-weight:500;font-size:11.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--sage);display:inline-flex;align-items:center;gap:11px}
+  .eyebrow{font-family:var(--mono);font-weight:500;font-size:11.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--sage-text);display:inline-flex;align-items:center;gap:11px}
   .eyebrow::before{content:"";width:24px;height:1px;background:var(--sage);display:inline-block}
 
   /* buttons */
@@ -188,7 +188,7 @@
   .hero .sub{font-size:1rem;color:var(--ink);max-width:42ch;margin-bottom:30px}
   .hero-actions{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
   .reassure{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-top:16px;display:flex;align-items:center;gap:8px}
-  .reassure b{color:var(--sage);font-weight:500}
+  .reassure b{color:var(--sage-text);font-weight:500}
 
   .portrait{position:relative}
   /* ambient aura behind the portrait — soft brand light, gives the photo a place to sit */
@@ -203,7 +203,7 @@
   .portrait .frame img{width:100%;height:100%;object-fit:cover;object-position:84% 30%}
   .portrait .badge{position:absolute;z-index:4;bottom:24px;left:-26px;background:rgba(255,255,255,.82);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.7);border-radius:18px;padding:15px 19px;box-shadow:var(--shadow-lg), var(--hair);max-width:235px;animation:floaty 6s ease-in-out infinite}
   @keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
-  .portrait .badge .star{color:var(--sand);font-size:14px;letter-spacing:1px}
+  .portrait .badge .star{color:var(--sand-text);font-size:14px;letter-spacing:1px}
   .portrait .badge b{font-family:var(--display);font-size:1.45rem;color:var(--navy);display:block;line-height:1;margin-top:2px}
   .portrait .badge small{font-size:11px;color:var(--muted);line-height:1.35;display:block;margin-top:3px}
   .droplet-bg{position:absolute;z-index:1;right:-58px;top:34px;width:420px;color:var(--navy);opacity:.13}
@@ -218,7 +218,7 @@
   .trust .item:not(:first-child)::before{content:"";position:absolute;left:0;top:2px;bottom:2px;width:1px;background:var(--line)}
   .trust .item b{font-family:var(--display);font-size:2.4rem;color:var(--navy);display:block;line-height:.95;letter-spacing:-.01em}
   .trust .item b .count{font-size:inherit;color:inherit;display:inline;margin-top:0}
-  .trust .item .stars{color:var(--sand);font-size:.95rem;letter-spacing:1px;display:block;line-height:1}
+  .trust .item .stars{color:var(--sand-text);font-size:.95rem;letter-spacing:1px;display:block;line-height:1}
   .trust .item span{font-size:12.5px;color:var(--muted);display:block;margin-top:9px;line-height:1.4}
 
   section{position:relative}
@@ -232,7 +232,7 @@
   .virtual-card{background:var(--paper);border:1px solid var(--line);border-radius:24px;padding:48px;display:grid;grid-template-columns:1.02fr .98fr;gap:52px;align-items:center;box-shadow:var(--shadow-soft);position:relative;overflow:hidden}
   .virtual-card .wm{position:absolute;right:-30px;top:-40px;width:200px;color:var(--navy);opacity:.05;pointer-events:none}
   .vc-left .eyebrow{margin-bottom:16px}
-  .vc-pill{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--sage);background:rgba(110,139,114,.1);border-radius:30px;padding:6px 14px;margin-bottom:18px}
+  .vc-pill{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--sage-text);background:rgba(110,139,114,.1);border-radius:30px;padding:6px 14px;margin-bottom:18px}
   .vc-pill .dot{width:7px;height:7px;border-radius:50%;background:var(--sage);box-shadow:0 0 0 0 rgba(110,139,114,.5);animation:livepip 2.4s infinite}
   @keyframes livepip{0%{box-shadow:0 0 0 0 rgba(110,139,114,.5)}70%{box-shadow:0 0 0 7px rgba(110,139,114,0)}100%{box-shadow:0 0 0 0 rgba(110,139,114,0)}}
   .vc-left h2{font-size:clamp(1.75rem,3.1vw,2.55rem);font-weight:400;line-height:1.1;margin-bottom:16px}
@@ -255,7 +255,7 @@
   .cond-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
   .cond{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:30px 28px;transition:transform .45s cubic-bezier(.16,1,.3,1),box-shadow .45s,border-color .45s;position:relative;overflow:hidden}
   .cond:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:transparent}
-  .cond .idx{font-family:var(--mono);font-size:.8rem;color:var(--sand);letter-spacing:.08em}
+  .cond .idx{font-family:var(--mono);font-size:.8rem;color:var(--sand-text);letter-spacing:.08em}
   .cond h3{font-size:1.42rem;margin:13px 0 9px}
   .cond p{font-size:.95rem;color:var(--muted);line-height:1.55}
   .cond.feature{background:var(--sage);color:#fff;border-color:transparent}
@@ -269,7 +269,7 @@
   .jstep .jhead{display:flex;align-items:center;gap:16px;margin-bottom:16px}
   .jstep .jic{width:52px;height:52px;border-radius:15px;background:var(--bg);color:var(--sage);display:flex;align-items:center;justify-content:center;flex:0 0 auto}
   .jstep .jic svg{width:26px;height:26px}
-  .jstep .jn{font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--sand)}
+  .jstep .jn{font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--sand-text)}
   .jstep h3{font-size:1.5rem;line-height:1.1;margin-bottom:11px}
   .jstep p{font-size:1rem;color:var(--muted);line-height:1.6;position:relative;z-index:1;max-width:52ch}
   .jstep p b{color:var(--ink);font-weight:600}
@@ -291,7 +291,7 @@
   .stone:hover .node{transform:translateY(-4px);background:var(--navy);color:#fff}
   .stone h3{font-size:1.32rem;margin:24px 0 10px}
   .stone p{font-size:.95rem;color:var(--muted);line-height:1.55}
-  .stone .meta{margin-top:16px;display:inline-block;font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--sage);border:1px solid var(--line);border-radius:30px;padding:5px 13px}
+  .stone .meta{margin-top:16px;display:inline-block;font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--sage-text);border:1px solid var(--line);border-radius:30px;padding:5px 13px}
 
   /* story */
   .story{background:var(--bg-soft)}
@@ -321,7 +321,7 @@
   .compare-copy .eyebrow{margin-bottom:14px}
   .compare-copy h3{font-size:1.7rem;font-weight:400;margin-bottom:12px}
   .compare-copy p{color:var(--muted);font-size:1rem}
-  .compare-copy .hint{font-family:var(--mono);font-size:11px;letter-spacing:.1em;color:var(--sage);text-transform:uppercase;margin-top:18px;display:inline-flex;align-items:center;gap:8px}
+  .compare-copy .hint{font-family:var(--mono);font-size:11px;letter-spacing:.1em;color:var(--sage-text);text-transform:uppercase;margin-top:18px;display:inline-flex;align-items:center;gap:8px}
 
   .ba-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:8px}
   .rcard{position:relative;border-radius:16px;overflow:hidden;box-shadow:var(--shadow-soft);aspect-ratio:4/3;cursor:pointer;background:#222}
@@ -354,14 +354,14 @@
   .rating-band{display:inline-flex;align-items:center;gap:16px;background:var(--paper);border:1px solid var(--line);border-radius:44px;padding:12px 22px;box-shadow:var(--shadow-soft);margin-bottom:40px}
   .rating-band .rb-score{font-family:var(--display);font-size:1.7rem;color:var(--navy);line-height:1}
   .rating-band .rb-mid{display:flex;flex-direction:column;gap:3px}
-  .rating-band .rb-stars{color:var(--sand);letter-spacing:2px;font-size:14px;line-height:1}
+  .rating-band .rb-stars{color:var(--sand-text);letter-spacing:2px;font-size:14px;line-height:1}
   .rating-band .rb-sub{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
   .rating-band .rb-g{display:inline-flex;align-items:center;gap:7px;padding-left:16px;border-left:1px solid var(--line);font-weight:700;font-size:13px;color:var(--ink)}
   .rating-band .rb-g svg{width:17px;height:17px;flex:0 0 auto}
   .tst-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
   .tst{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:34px 32px;position:relative}
   .tst .q{font-family:var(--display);position:absolute;top:14px;right:26px;font-size:4rem;color:var(--line);line-height:1}
-  .tst .stars{color:var(--sand);letter-spacing:2px;font-size:14px;margin-bottom:14px}
+  .tst .stars{color:var(--sand-text);letter-spacing:2px;font-size:14px;margin-bottom:14px}
   .tst p{font-size:1.02rem;color:var(--ink);line-height:1.6;position:relative;z-index:2}
   .tst .who{margin-top:18px;font-family:var(--mono);font-size:11.5px;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
   .tst.big{grid-column:span 3;background:var(--sage);color:#fff;border-color:transparent}
@@ -389,7 +389,7 @@
   .visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:46px}
   .loc{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:34px 32px}
   .loc h3{font-size:1.5rem;margin-bottom:5px}
-  .loc .days{font-family:var(--mono);font-size:10.5px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--sage);margin-bottom:18px;display:inline-block}
+  .loc .days{font-family:var(--mono);font-size:10.5px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--sage-text);margin-bottom:18px;display:inline-block}
   .loc address{font-style:normal;color:var(--muted);line-height:1.6;font-size:.98rem}
   .loc .host{font-size:13px;color:var(--muted);margin-top:12px;padding-top:12px;border-top:1px solid var(--line)}
   .booking{background:var(--navy);color:#fff;border-radius:22px;padding:54px;margin-top:24px;display:grid;grid-template-columns:1fr 1.12fr;gap:48px;align-items:center;position:relative;overflow:hidden}
@@ -424,16 +424,16 @@
   .cond-list{border-top:1px solid var(--line)}
   .clgroup{display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;padding:34px 0 12px}
   .clgroup-2{padding-top:52px;border-top:1px solid var(--line);margin-top:16px}
-  .cltag{font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--sage);font-weight:700}
+  .cltag{font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--sage-text);font-weight:700}
   .clnote{font-size:.92rem;color:var(--muted)}
   .cnd-row{display:grid;grid-template-columns:44px minmax(0,1fr) minmax(0,1fr) 28px;align-items:baseline;
     gap:18px;padding:20px 14px 20px 4px;border-bottom:1px solid var(--line);
     transition:background .35s var(--ease),padding-left .35s var(--ease)}
   .cnd-row:hover{background:rgba(14,58,100,.045);padding-left:16px}
-  .cnum{font-family:var(--mono);font-size:.78rem;color:var(--sand);letter-spacing:.06em}
+  .cnum{font-family:var(--mono);font-size:.78rem;color:var(--sand-text);letter-spacing:.06em}
   .cname{font-family:var(--display);font-size:clamp(1.35rem,2.5vw,1.9rem);color:var(--navy);line-height:1.12}
   .cnote{font-size:.92rem;color:var(--muted);line-height:1.5}
-  .carr{color:var(--sand);opacity:0;transform:translateX(-6px);transition:opacity .3s,transform .3s var(--ease);text-align:right}
+  .carr{color:var(--sand-text);opacity:0;transform:translateX(-6px);transition:opacity .3s,transform .3s var(--ease);text-align:right}
   .cnd-row:hover .carr{opacity:1;transform:translateX(0)}
   .cnd-row:focus-visible{outline:2.5px solid var(--sage);outline-offset:2px;border-radius:8px}
   @media(max-width:860px){
@@ -441,18 +441,18 @@
     .cnote{grid-column:2/4;font-size:.88rem;margin-top:2px}
     .carr{opacity:1;transform:none}
   }
-.cond-note{text-align:center;margin-top:30px;font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--sand)}
+.cond-note{text-align:center;margin-top:30px;font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--sand-text)}
 
   /* how-it-works + stepping-stones section backgrounds */
   .flow-sec{background:var(--bg-soft)}
 
   /* about (below hero) */
-  .intro{padding:66px 0 6px}
+  .intro{padding:76px 0 24px}
   .intro-inner{display:grid;grid-template-columns:auto 1fr;gap:42px;align-items:center;max-width:940px;margin:0 auto}
   .intro-photo img{width:156px;height:156px;border-radius:50%;object-fit:cover;object-position:84% 28%;box-shadow:var(--shadow-soft);border:4px solid var(--paper)}
   .intro-copy .eyebrow{margin-bottom:14px}
   .intro-copy h2{font-size:clamp(1.7rem,2.6vw,2.2rem);display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
-  .intro-creds{font-family:var(--mono);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--sage);font-weight:600}
+  .intro-creds{font-family:var(--mono);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--sage-text);font-weight:600}
   .intro-copy p{color:var(--muted);margin-top:14px;font-size:1.06rem;line-height:1.62;max-width:62ch}
 
   /* nav active section */
@@ -466,13 +466,13 @@
   .cond::after{content:"";position:absolute;left:0;top:0;height:3px;width:0;background:var(--sage);transition:width .5s cubic-bezier(.16,1,.3,1)}
   .cond:hover::after{width:100%}
   .cond.feature::after{display:none}
-  .cond .more{display:inline-flex;align-items:center;gap:7px;margin-top:18px;font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--sage);font-weight:600;transition:gap .35s cubic-bezier(.16,1,.3,1)}
+  .cond .more{display:inline-flex;align-items:center;gap:7px;margin-top:18px;font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--sage-text);font-weight:600;transition:gap .35s cubic-bezier(.16,1,.3,1)}
   .cond:hover .more{gap:13px}
   .cond.feature .more{color:#fff}
 
   /* credential pills (story) */
   .creds{display:flex;flex-wrap:wrap;gap:9px;margin-top:24px}
-  .creds span{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--sage);border:1px solid var(--line);background:var(--paper);border-radius:30px;padding:7px 13px}
+  .creds span{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--sage-text);border:1px solid var(--line);background:var(--paper);border-radius:30px;padding:7px 13px}
 
   /* contact form (booking) */
   .bf-status{margin-top:14px;font-size:.92rem;line-height:1.5;padding:11px 14px;border-radius:10px;border:1px solid transparent}.bf-status.ok{background:rgba(159,192,163,.16);border-color:rgba(159,192,163,.5);color:#DFF0E2}.bf-status.err{background:rgba(194,163,117,.15);border-color:rgba(194,163,117,.5);color:#F0E2CB}.book-form{display:grid;grid-template-columns:1fr 1fr;gap:14px;position:relative;z-index:2}
@@ -546,7 +546,7 @@
   }
 
   /* book a call — Cal.com discovery-call CTA */
-  .book-cta{padding:20px 0 96px}
+  .book-cta{padding:76px 0 96px}
   .book-cta-card{background:var(--paper);border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow-soft);display:grid;grid-template-columns:.92fr 1.08fr;overflow:hidden}
   .bc-left{background:var(--navy);color:#fff;padding:56px 50px;display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden}
   .bc-left .wm{position:absolute;right:-30px;bottom:-40px;width:200px;color:var(--sage-bright);opacity:.08;pointer-events:none}
@@ -606,7 +606,7 @@
   .rating-band{box-shadow:var(--shadow-soft), var(--hair)}
 
   /* --- BENTO: "Completely online" --- */
-  .virtual{padding:34px 0 40px}
+  .virtual{padding:76px 0 84px}
   .bento{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
   .bento-cell{position:relative;border-radius:var(--r);padding:30px 30px;border:1px solid var(--line);
     background:linear-gradient(180deg,#ffffff,#fbf7ef);box-shadow:var(--shadow-soft), var(--hair);overflow:hidden;
@@ -697,7 +697,7 @@
   .tst .who{display:flex;align-items:center;gap:10px}
   .tst .who::before{content:attr(data-initial);width:26px;height:26px;border-radius:50%;background:var(--sage);color:#fff;font-family:var(--mono);font-size:10.5px;letter-spacing:0;text-transform:uppercase;display:flex;align-items:center;justify-content:center;flex:0 0 auto}
   .tst.big .who::before{background:rgba(255,255,255,.25)}
-</style>
+/* craft pass: measured line-length caps (42-78ch target) */.sec-head p{max-width:64ch}.results .sec-head p{max-width:62ch}.jstep.lead .lead-copy p{max-width:66ch}.services .sec-head p{max-width:62ch}.tst p{max-width:52ch}/* craft pass: 40px minimum hit area on small links (visual size unchanged) */.nav-links a{padding-top:9px;padding-bottom:9px}footer li a,footer .foot-bottom a{display:inline-block;padding:9px 0}footer li{margin-bottom:5px}.loc a,.crow a{display:inline-block;padding:9px 0}/* craft pass 2 */.rcard .pill,.compare .lbl{background:rgba(78,97,81,.94)}p.disclaimer{max-width:70ch}.jstep.lead .lead-copy p{max-width:62ch}.sec-head p{max-width:62ch}.crow a,.r a,.loc a,.bc-fallback a,.bc-fallback-state a{display:inline-block;padding:10px 0}.foot-bottom a{display:inline-block;padding:8px 0}/* craft pass 3 */.compare .lbl.r{background:rgba(78,97,81,.94)}.nav-inner a.brand{display:inline-flex;align-items:center;padding:6px 0}.nav-cta a.nav-phone{padding-top:2px;padding-bottom:2px}.form-note a{display:inline-block;padding:10px 0}</style>
 </head>
 <body>
 <div class="progress" id="progress"></div>
@@ -705,7 +705,7 @@
 <!-- NAV -->
 <header class="nav" id="nav">
   <div class="wrap nav-inner">
-    <a class="brand" href="#top" aria-label="Waterwell Clinic"><img src="assets/logo.png" alt="Waterwell Clinic" /></a>
+    <a class="brand" href="#top" aria-label="Waterwell Clinic"><img src="assets/logo.png" alt="Waterwell Clinic" / width="400" height="96"></a>
     <nav class="nav-links">
       <a href="#online">Online</a>
       <a href="#conditions">Conditions</a>
@@ -765,7 +765,7 @@
           <path style="--l:90" d="M22 72 C40 64 60 80 80 70" opacity=".55"/>
           <path style="--l:90" d="M24 100 C40 92 60 108 78 98" opacity=".55"/>
         </svg>
-        <div class="frame"><img src="assets/kohei-hero.jpg" alt="Kohei Iguchi, naturopath at Waterwell Clinic" /></div>
+        <div class="frame"><img src="assets/kohei-hero.jpg" alt="Kohei Iguchi, naturopath at Waterwell Clinic" / width="1200" height="1500"></div>
         <div class="badge">
           <span class="star">★★★★★</span>
           <b>Independently rated</b>
@@ -784,7 +784,7 @@
 <!-- ABOUT (below hero) -->
 <section class="intro">
   <div class="wrap intro-inner">
-    <div class="intro-photo reveal"><img src="assets/kohei-hero.jpg" alt="Kohei Iguchi, naturopath at Waterwell Clinic" loading="lazy" decoding="async" /></div>
+    <div class="intro-photo reveal"><img src="assets/kohei-hero.jpg" alt="Kohei Iguchi, naturopath at Waterwell Clinic" loading="lazy" decoding="async" / width="1200" height="1500"></div>
     <div class="intro-copy">
       <span class="eyebrow reveal">A little about me</span>
       <h2 class="reveal d1">Kohei Iguchi <span class="intro-creds">BNatMed, BSc</span></h2>
@@ -914,8 +914,8 @@
   <div class="wrap">
     <div class="story-grid">
       <div class="story-media reveal">
-        <div class="main"><img src="assets/kohei-microscope.jpg" alt="Kohei Iguchi performing live blood analysis at Waterwell Clinic"  loading="lazy" decoding="async" /></div>
-        <div class="stack"><img src="assets/credentials.jpg" alt="Kohei Iguchi's qualifications, Bachelor of Natural Medicine"  loading="lazy" decoding="async" /></div>
+        <div class="main"><img src="assets/kohei-microscope.jpg" alt="Kohei Iguchi performing live blood analysis at Waterwell Clinic"  loading="lazy" decoding="async" / width="1200" height="900"></div>
+        <div class="stack"><img src="assets/credentials.jpg" alt="Kohei Iguchi's qualifications, Bachelor of Natural Medicine"  loading="lazy" decoding="async" / width="1200" height="900"></div>
       </div>
       <div class="story-copy">
         <span class="eyebrow reveal">My eczema story</span>
@@ -952,8 +952,8 @@
 
     <div class="compare-wrap reveal">
       <div class="compare" id="cmp">
-        <img class="before-img" src="assets/ba-acne-before.jpg" alt="Before — facial acne"  loading="lazy" decoding="async" />
-        <img class="after-img"  src="assets/ba-acne-after.jpg"  alt="After — facial acne"  loading="lazy" decoding="async" />
+        <img class="before-img" src="assets/ba-acne-before.jpg" alt="Before — facial acne"  loading="lazy" decoding="async" / width="900" height="1200">
+        <img class="after-img"  src="assets/ba-acne-after.jpg"  alt="After — facial acne"  loading="lazy" decoding="async" / width="900" height="1200">
         <span class="lbl l">Before</span><span class="lbl r">After</span>
         <div class="divider" id="cmp-div"></div>
         <div class="handle" id="cmp-handle">⟺</div>
@@ -967,9 +967,9 @@
     </div>
 
     <div class="ba-grid">
-      <div class="rcard reveal" data-reveal><img class="after-l" src="assets/ba-hand-after.jpg" alt="After — hand eczema" loading="lazy" decoding="async" /><img class="before-l" src="assets/ba-hand-before.jpg" alt="Before — hand eczema" loading="lazy" decoding="async" /><span class="pill">After</span><div class="cap"><b>Hand eczema</b><span>Adult · hover or tap for before</span></div></div>
-      <div class="rcard reveal d1" data-reveal><img class="after-l" src="assets/ba-baby-body-after.jpg" alt="After — infant body eczema" loading="lazy" decoding="async" /><img class="before-l" src="assets/ba-baby-body-before.jpg" alt="Before — infant body eczema" loading="lazy" decoding="async" /><span class="pill">After</span><div class="cap"><b>Infant body eczema</b><span>Child · hover or tap for before</span></div></div>
-      <div class="rcard reveal d2" data-reveal><img class="after-l" src="assets/ba-baby-face-after.jpg" alt="After — baby facial eczema" loading="lazy" decoding="async" /><img class="before-l" src="assets/ba-baby-face-before.jpg" alt="Before — baby facial eczema" loading="lazy" decoding="async" /><span class="pill">After</span><div class="cap"><b>Facial eczema</b><span>Infant · hover or tap for before</span></div></div>
+      <div class="rcard reveal" data-reveal><img class="after-l" src="assets/ba-hand-after.jpg" alt="After — hand eczema" loading="lazy" decoding="async" / width="900" height="1200"><img class="before-l" src="assets/ba-hand-before.jpg" alt="Before — hand eczema" loading="lazy" decoding="async" / width="900" height="1200"><span class="pill">After</span><div class="cap"><b>Hand eczema</b><span>Adult · hover or tap for before</span></div></div>
+      <div class="rcard reveal d1" data-reveal><img class="after-l" src="assets/ba-baby-body-after.jpg" alt="After — infant body eczema" loading="lazy" decoding="async" / width="900" height="1200"><img class="before-l" src="assets/ba-baby-body-before.jpg" alt="Before — infant body eczema" loading="lazy" decoding="async" / width="900" height="1200"><span class="pill">After</span><div class="cap"><b>Infant body eczema</b><span>Child · hover or tap for before</span></div></div>
+      <div class="rcard reveal d2" data-reveal><img class="after-l" src="assets/ba-baby-face-after.jpg" alt="After — baby facial eczema" loading="lazy" decoding="async" / width="900" height="1200"><img class="before-l" src="assets/ba-baby-face-before.jpg" alt="Before — baby facial eczema" loading="lazy" decoding="async" / width="900" height="1200"><span class="pill">After</span><div class="cap"><b>Facial eczema</b><span>Infant · hover or tap for before</span></div></div>
     </div>
     <p class="disclaimer">Real patient results, shared with permission. Every case is unique and individual results will vary.</p>
   </div>
@@ -1143,7 +1143,7 @@
 <footer>
   <div class="wrap">
     <div class="foot-grid">
-      <div><div class="logo-w"><img src="assets/logo.png" alt="Waterwell Clinic" /></div><p class="tag">Naturopathy and medical herbalism for skin health — online, New Zealand &amp; worldwide. Treating the root cause — eczema, psoriasis, acne and topical steroid withdrawal — from the inside out.</p>
+      <div><div class="logo-w"><img src="assets/logo.png" alt="Waterwell Clinic" / width="400" height="96"></div><p class="tag">Naturopathy and medical herbalism for skin health — online, New Zealand &amp; worldwide. Treating the root cause — eczema, psoriasis, acne and topical steroid withdrawal — from the inside out.</p>
         <div class="foot-badges"><span>Reg. MNMHNZ</span><span>★ 5.0 · 32 Google reviews</span><span>MoneyHub — Best Naturopath, Auckland 2024</span><span>10+ years</span><span>100% online</span></div></div>
       <div><h4>Explore</h4><ul><li><a href="#conditions">Conditions treated</a></li><li><a href="#how">How it works</a></li><li><a href="#story">My eczema story</a></li><li><a href="#results">Patient results</a></li><li><a href="#services">Services</a></li><li><a href="/blog">Articles</a></li></ul></div>
       <div><h4>Visit &amp; book</h4><ul><li><a href="mailto:info@waterwellclinic.co.nz">info@waterwellclinic.co.nz</a></li><li>Online consultations by video</li><li>New Zealand &amp; worldwide</li><li><a href="#visit">Book a free session →</a></li><li><a href="/">Main site</a></li><li><a href="/privacy">Privacy policy</a></li><li><a href="/code-of-conduct">Code of Conduct &amp; complaints</a></li></ul></div>
