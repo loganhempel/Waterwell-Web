@@ -13,3 +13,6 @@ relaunch-2026-06/
 .claude/
 Waterwell-June-Report*
 tools/
+
+# Impeccable critique snapshots — internal design notes, not for the public repo
+.impeccable/
