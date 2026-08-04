@@ -420,7 +420,7 @@
   .clgroup-2{padding-top:52px;border-top:1px solid var(--line);margin-top:16px}
   .cltag{font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--sage-text);font-weight:700}
   .clnote{font-size:.92rem;color:var(--muted)}
-  .cnd-row{display:grid;grid-template-columns:44px minmax(0,1fr) minmax(0,1fr) 28px;align-items:baseline;
+  .cnd-row{display:grid;grid-template-columns:44px minmax(0,.72fr) minmax(0,1fr) 28px;align-items:baseline;
     gap:18px;padding:20px 14px 20px 4px;border-bottom:1px solid var(--line);
     transition:background .35s var(--ease),padding-left .35s var(--ease)}
   .cnd-row:hover{background:rgba(14,58,100,.045);padding-left:16px}
@@ -472,8 +472,8 @@
   .bf-status{margin-top:14px;font-size:.92rem;line-height:1.5;padding:11px 14px;border-radius:10px;border:1px solid transparent}.bf-status.ok{background:rgba(159,192,163,.16);border-color:rgba(159,192,163,.5);color:#DFF0E2}.bf-status.err{background:rgba(194,163,117,.15);border-color:rgba(194,163,117,.5);color:#F0E2CB}.book-form{display:grid;grid-template-columns:1fr 1fr;gap:14px;position:relative;z-index:2}
   .book-form .full{grid-column:1/-1}
   .field label{display:block;font-family:var(--mono);font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--sage-bright);margin-bottom:7px}
-  .field input,.field select,.field textarea{width:100%;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.2);border-radius:12px;padding:13px 15px;color:#fff;font-family:var(--body);font-size:15px;transition:border-color .3s,background .3s}
-  .field input::placeholder,.field textarea::placeholder{color:rgba(255,255,255,.42)}
+  .field input,.field select,.field textarea{width:100%;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.55);border-radius:12px;padding:13px 15px;color:#fff;font-family:var(--body);font-size:15px;transition:border-color .3s,background .3s}
+  .field input::placeholder,.field textarea::placeholder{color:rgba(255,255,255,.68)}
   .field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--sage-bright);background:rgba(255,255,255,.11)}
   .field select{appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%239FC0A3' stroke-width='1.6' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 15px center}
   .field select option{color:#111}
@@ -957,7 +957,7 @@
 </section>
 
 <!-- APPROACH -->
-<section class="pad" id="approach">
+<section class="pad" id="approach" style="background:var(--bg-soft)">
   <div class="wrap">
     <div class="sec-head reveal">
       <span class="eyebrow">The stepping stones</span>
