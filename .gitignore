@@ -5,6 +5,7 @@ package-lock.json
 package.json
 
 # Internal / sensitive — never push to this PUBLIC repo
+SOURCE-OF-TRUTH.md
 enquiry-data-2026-07-01/
 HANDOFF.md
 Waterwell_DigitalConsult_Strategy.md
