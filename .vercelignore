@@ -1,0 +1,39 @@
+# Internal working material — must never be served on the public site.
+# The repo is public, so these files were fetchable at waterwell-web.vercel.app/<path>
+# until this file existed. Keep this list in step with .gitignore's intent.
+
+# Google Ads builds: keyword lists, negatives, bid plans, launch gates
+gads-build-2026-07-05/
+gads-build-2026-07-16/
+gads-build-2026-08-03/
+gads-split-2026-07-12/
+
+# Ad copy drafts and review packs
+Waterwell-Ad-Copy-FOR-KOHEI-2026-07-29.csv
+Waterwell-Ad-Copy-FOR-KOHEI-2026-07-29.html
+Waterwell-Ad-Copy-FOR-KOHEI-2026-08-03.csv
+Waterwell-Ad-Copy-FOR-KOHEI-2026-08-03.html
+Waterwell-Ad-Copy-REWRITE-2026-07-20.csv
+Waterwell-Ad-Copy-REWRITE-2026-07-29.csv
+
+# Session artefacts, design concepts, audit screenshots
+session-2026-07-20/
+concepts-2026-07-20/
+au-audit-desktop-2026-07-12.png
+au-audit-mobile-2026-07-12.png
+
+# Internal notes and build documentation
+SOURCE-OF-TRUTH.md
+AU-REMEDIATION-2026-07-12.md
+AUS-compliance-note-2026-07-11.md
+AUS-compliance-note-2026-08-03.md
+README.md
+
+# Implementation kits — instructions for other platforms, not site content
+tracking-kit/
+wordpress-booking-snippet/
+
+# Local-only (already gitignored, belt and braces)
+tools/
+.claude/
+.impeccable/
