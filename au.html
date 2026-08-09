@@ -196,15 +196,6 @@
   .droplet-bg path:nth-child(2){animation-delay:.5s}.droplet-bg path:nth-child(3){animation-delay:.75s}.droplet-bg path:nth-child(4){animation-delay:1s}
   @keyframes draw{to{stroke-dashoffset:0}}
 
-  .trust{margin-top:74px;padding:30px 34px;display:grid;grid-template-columns:repeat(3,1fr);gap:24px;
-    background:linear-gradient(180deg,rgba(255,255,255,.66),rgba(255,255,255,.34));border:1px solid rgba(255,255,255,.7);
-    border-radius:var(--r);box-shadow:var(--shadow-soft), var(--hair)}
-  .trust .item{position:relative;padding-left:26px}
-  .trust .item:not(:first-child)::before{content:"";position:absolute;left:0;top:2px;bottom:2px;width:1px;background:var(--line)}
-  .trust .item b{font-family:var(--display);font-size:2.4rem;color:var(--navy);display:block;line-height:.95;letter-spacing:-.01em}
-  .trust .item b .count{font-size:inherit;color:inherit;display:inline;margin-top:0}
-  .trust .item .stars{color:var(--sand-text);font-size:.95rem;letter-spacing:1px;display:block;line-height:1}
-  .trust .item span{font-size:12.5px;color:var(--muted);display:block;margin-top:9px;line-height:1.4}
 
   section{position:relative}
   .pad{padding:96px 0}.skip-link{position:absolute;left:-9999px;top:0;z-index:200;background:var(--navy);color:#fff;padding:12px 18px;border-radius:0 0 8px 0;font-weight:700;text-decoration:none;display:inline-block;min-height:44px;line-height:20px}.skip-link:focus{left:0}h2.story-h2{font:inherit;letter-spacing:inherit;text-transform:inherit;margin:0}.pad-lg{padding:120px 0}
@@ -478,9 +469,9 @@
   .foot-badges span{font-family:var(--mono);font-size:9px;letter-spacing:.11em;text-transform:uppercase;color:rgba(255,255,255,.6);border:1px solid rgba(255,255,255,.16);border-radius:30px;padding:6px 12px}
 
   /* reveal */
-  .reveal{opacity:0;transform:translateY(26px);transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1)}
+  .reveal{opacity:0;transform:translateY(14px);transition:opacity .45s cubic-bezier(.16,1,.3,1),transform .45s cubic-bezier(.16,1,.3,1)}
   .reveal.in{opacity:1;transform:none}
-  .reveal.d1{transition-delay:.08s}.reveal.d2{transition-delay:.16s}.reveal.d3{transition-delay:.24s}.reveal.d4{transition-delay:.32s}
+  .reveal.d1{transition-delay:.04s}.reveal.d2{transition-delay:.08s}.reveal.d3{transition-delay:.12s}.reveal.d4{transition-delay:.16s}
 
   @media(prefers-reduced-motion:reduce){
     .droplet-bg path,.portrait .badge{animation:none!important}
@@ -498,7 +489,6 @@
     .intro-inner{grid-template-columns:1fr;justify-items:center;text-align:center;gap:22px}
     .intro-copy h2{justify-content:center}
     .portrait{max-width:380px;margin:10px auto 0}
-    .trust{grid-template-columns:repeat(2,1fr);gap:28px}
     .cond-grid,.svc-list,.stones,.tst-grid,.visit-grid{grid-template-columns:1fr}
     .ba-grid{grid-template-columns:1fr}
     .journey{grid-template-columns:1fr;gap:14px}
@@ -648,9 +638,10 @@
     background:linear-gradient(180deg,rgba(255,255,255,.7),rgba(255,255,255,.4));border:1px solid rgba(255,255,255,.7);box-shadow:var(--shadow-soft), var(--hair)}
   .story .creds span{background:var(--paper);box-shadow:var(--shadow-soft)}
 
-  /* --- SCROLL CHOREOGRAPHY: heavier, blurred fade-up + parallax --- */
-  .reveal{filter:blur(5px);transition:opacity 1s var(--ease),transform 1s var(--ease),filter 1s var(--ease)}
-  .reveal.in{filter:none}
+  /* --- SCROLL CHOREOGRAPHY: fade-up + parallax ---
+     No blur transition: it kept text unreadable for most of the reveal and
+     read as lag. Duration is the perceived-latency budget — keep it short. */
+  .reveal{transition:opacity .45s var(--ease),transform .45s var(--ease)}
   [data-parallax]{will-change:transform}
 
   @media(prefers-reduced-motion:reduce){
@@ -662,7 +653,6 @@
   /* responsive overrides for the redesign layer — must follow the base rules above to win the cascade */
   @media(max-width:980px){
     .hero{padding:120px 0 72px}
-    .trust{grid-template-columns:repeat(2,1fr);padding:26px 24px;gap:22px}
     .hero-topo{opacity:.05}
     /* mobile nav = brand + burger only; the wide CTA (fixed) was overflowing the viewport.
        Booking stays reachable via the drawer + sticky bottom CTA. */
@@ -670,10 +660,6 @@
   }
   @media(max-width:560px){
     .hero{padding:104px 0 60px}
-    .trust{grid-template-columns:1fr;gap:0;padding:22px 22px}
-    .trust .item{padding:18px 0}
-    .trust .item:not(:first-child){border-top:1px solid var(--line)}
-    .trust .item:not(:first-child)::before{display:none}
     .story blockquote{padding-left:22px}
     .story .narrative{padding-left:22px}
   }
@@ -763,11 +749,6 @@
         <div class="frame"><img src="assets/kohei-hero.jpg" alt="Kohei Iguchi, naturopath at Waterwell Clinic" width="1600" height="434"></div>
         
       </div>
-    </div>
-    <div class="trust">
-      <div class="item reveal"><b><span class="count" data-to="10">0</span>+</b><span>Years of clinical experience</span></div>
-      <div class="item reveal d1"><b>75 min</b><span>Length of an initial consultation</span></div>
-      <div class="item reveal d2"><b>100%</b><span>Online · treating patients worldwide</span></div>
     </div>
   </div>
 </section>
@@ -1097,18 +1078,8 @@
   drawer.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setDrawer(false)));
 
   // reveals
-  const io = new IntersectionObserver((es) => es.forEach(e => { if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} }), {threshold:0.12, rootMargin:'0px 0px -8% 0px'});
+  const io = new IntersectionObserver((es) => es.forEach(e => { if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} }), {threshold:0.02, rootMargin:'0px 0px 10% 0px'});
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
-
-  // count-up
-  const cio = new IntersectionObserver((es) => es.forEach(e => {
-    if (!e.isIntersecting) return; const el = e.target, to = +el.dataset.to; cio.unobserve(el);
-    if (reduce){ el.textContent = to; return; }
-    let s = null; const dur = 1300;
-    const tick = t => { if(!s)s=t; const p=Math.min(1,(t-s)/dur); el.textContent = Math.round(to*(1-Math.pow(1-p,3))); if(p<1) requestAnimationFrame(tick); };
-    requestAnimationFrame(tick);
-  }), {threshold:0.6});
-  document.querySelectorAll('.count').forEach(el => cio.observe(el));
 
   // FAQ accordion (accessible)
   document.querySelectorAll('.faq-item').forEach(item => {
