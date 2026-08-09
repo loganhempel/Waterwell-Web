@@ -141,7 +141,7 @@
   .eyebrow::before{content:"";width:24px;height:1px;background:var(--sage);display:inline-block}
 
   /* buttons */
-  .btn{display:inline-flex;align-items:center;gap:9px;font-family:var(--body);font-weight:700;font-size:14.5px;letter-spacing:.01em;padding:15px 28px;border-radius:40px;cursor:pointer;border:1px solid transparent;transition:transform .35s cubic-bezier(.16,1,.3,1),background .3s,color .3s,box-shadow .3s}
+  .btn{display:inline-flex;align-items:center;gap:9px;font-family:var(--body);font-weight:700;font-size:14.5px;letter-spacing:.01em;padding:15px 28px;border-radius:40px;cursor:pointer;border:1px solid transparent;transition:transform .18s cubic-bezier(.16,1,.3,1),background .2s,color .2s,box-shadow .2s}
   .btn-primary{background:var(--navy);color:#fff;box-shadow:var(--shadow-soft)}
   .btn-primary:hover{background:var(--navy-deep);transform:translateY(-2px);box-shadow:var(--shadow)}
   .btn-ghost{background:transparent;color:var(--navy);border-color:var(--navy)}
@@ -248,7 +248,7 @@
 
   /* ============ HOW IT WORKS — the journey ============ */
   .journey{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
-  .jstep{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:34px 34px 32px;position:relative;overflow:hidden;transition:transform .5s cubic-bezier(.16,1,.3,1),box-shadow .5s,border-color .5s}
+  .jstep{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:34px 34px 32px;position:relative;overflow:hidden;transition:transform .2s cubic-bezier(.16,1,.3,1),box-shadow .5s,border-color .5s}
   .jstep:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:transparent}
   .jstep .jwm{position:absolute;top:-18px;right:6px;font-family:var(--display);font-size:9rem;line-height:1;color:var(--navy);opacity:.05;pointer-events:none;font-style:italic}
   .jstep .jhead{display:flex;align-items:center;gap:16px;margin-bottom:16px}
@@ -594,7 +594,7 @@
   .bento{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
   .bento-cell{position:relative;border-radius:var(--r);padding:30px 30px;border:1px solid var(--line);
     background:linear-gradient(180deg,#ffffff,#fbf7ef);box-shadow:var(--shadow-soft), var(--hair);overflow:hidden;
-    transition:transform .55s var(--ease),box-shadow .55s var(--ease)}
+    transition:transform .2s var(--ease),box-shadow .2s var(--ease)}
   .bento-cell:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
   /* feature cell (navy statement + CTA) */
   .bento-feature{grid-column:span 7;grid-row:span 2;background:var(--navy);border-color:transparent;color:#fff;
@@ -651,6 +651,14 @@
      No blur transition: it kept text unreadable for most of the reveal and
      read as lag. Duration is the perceived-latency budget — keep it short. */
   .reveal{transition:opacity .45s var(--ease),transform .45s var(--ease)}
+
+  /* Every hover-lift card also carries .reveal, and .reveal is declared after
+     .jstep/.bento-cell at the same specificity — so it silently won the cascade
+     and their hover feedback ran at the reveal's duration, never their own.
+     (Before 10 Aug that meant a 1s transition with a blur.) Two classes beats
+     one, so this restores fast hover while keeping the slower opacity fade. */
+  .jstep.reveal, .bento-cell.reveal{
+    transition:transform .2s var(--ease),box-shadow .2s var(--ease),opacity .45s var(--ease)}
   [data-parallax]{will-change:transform}
 
   @media(prefers-reduced-motion:reduce){
@@ -724,6 +732,7 @@
 <!-- HERO -->
 <main id="main">
 <!-- HERO -->
+<!-- HERO -->
 <section class="hero" id="top">
   <!-- ambient depth layer: topographic contour motif (echoes the droplet logo) + soft brand light -->
   <div class="hero-amb" aria-hidden="true">
@@ -788,6 +797,23 @@
   </div>
 </section>
 
+<!-- APPROACH — the stepping stones -->
+<section class="pad" id="approach">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">The stepping stones</span>
+      <h2>A calm, considered path towards your desired results.</h2>
+      <p>Sometimes you just need reassurance when you’re putting your health in someone else’s hands. Here’s exactly what working together looks like.</p>
+    </div>
+    <div class="stones">
+      <div class="stone reveal"><div class="node">1</div><h3>Free discovery session</h3><p>A relaxed 15-minute conversation to ask anything about the consultations, the treatment process and how I can help you. No pressure, no obligations — just your peace of mind.</p><span class="meta">15 min · Free</span></div>
+      <div class="stone reveal d1"><div class="node">2</div><h3>Initial consultation</h3><p>A comprehensive 75-minute appointment to uncover the triggers and root cause of your skin condition. We assess your history, diet, lifestyle, mental-emotional health and much more — a completely holistic view.</p><span class="meta">75 min · By video</span></div>
+      <div class="stone reveal d2"><div class="node">3</div><h3>Your tailored plan</h3><p>A treatment plan created only for you — herbal medicine, nutrition, and dietary and lifestyle support. No two plans are ever the same, because everyone is unique.</p><span class="meta">Individual</span></div>
+      <div class="stone reveal d3"><div class="node">4</div><h3>Review &amp; progress</h3><p>We track your progress together and adjust as your body responds — so you can see and feel the change over time. As your skin improves, the plan evolves with you.</p><span class="meta">Ongoing</span></div>
+    </div>
+  </div>
+</section>
+
 <!-- HOW IT WORKS — the journey -->
 <section class="pad flow-sec" id="how">
   <div class="wrap">
@@ -835,23 +861,6 @@
     <div class="sec-cta reveal">
       <a class="btn btn-primary" href="#visit">Book a free discovery session <span class="arrow">→</span></a>
       <span class="sec-cta-note">15 mins · free · no obligation — just a conversation</span>
-    </div>
-  </div>
-</section>
-
-<!-- APPROACH — the stepping stones -->
-<section class="pad" id="approach">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <span class="eyebrow">The stepping stones</span>
-      <h2>A calm, considered path towards your desired results.</h2>
-      <p>Sometimes you just need reassurance when you’re putting your health in someone else’s hands. Here’s exactly what working together looks like.</p>
-    </div>
-    <div class="stones">
-      <div class="stone reveal"><div class="node">1</div><h3>Free discovery session</h3><p>A relaxed 15-minute conversation to ask anything about the consultations, the treatment process and how I can help you. No pressure, no obligations — just your peace of mind.</p><span class="meta">15 min · Free</span></div>
-      <div class="stone reveal d1"><div class="node">2</div><h3>Initial consultation</h3><p>A comprehensive 75-minute appointment to uncover the triggers and root cause of your skin condition. We assess your history, diet, lifestyle, mental-emotional health and much more — a completely holistic view.</p><span class="meta">75 min · By video</span></div>
-      <div class="stone reveal d2"><div class="node">3</div><h3>Your tailored plan</h3><p>A treatment plan created only for you — herbal medicine, nutrition, and dietary and lifestyle support. No two plans are ever the same, because everyone is unique.</p><span class="meta">Individual</span></div>
-      <div class="stone reveal d3"><div class="node">4</div><h3>Review &amp; progress</h3><p>We track your progress together and adjust as your body responds — so you can see and feel the change over time. As your skin improves, the plan evolves with you.</p><span class="meta">Ongoing</span></div>
     </div>
   </div>
 </section>
@@ -1292,17 +1301,13 @@
     });
   })();
 
-  // magnetic primary CTAs — subtle pull toward the cursor (motion-safe, fine pointer only)
-  if (!reduce && window.matchMedia('(pointer:fine)').matches){
-    document.querySelectorAll('.btn-primary').forEach(btn => {
-      btn.addEventListener('mousemove', e => {
-        const r = btn.getBoundingClientRect();
-        const mx = e.clientX - (r.left + r.width/2), my = e.clientY - (r.top + r.height/2);
-        btn.style.transform = `translate(${(mx*0.16).toFixed(1)}px, ${(my*0.26 - 2).toFixed(1)}px)`;
-      });
-      btn.addEventListener('mouseleave', () => { btn.style.transform = ''; });
-    });
-  }
+  // Magnetic CTAs removed 10 Aug — they felt sticky, and the cause was a
+  // conflict rather than the idea: .btn transitions transform over .35s, so
+  // rewriting transform on every mousemove made the button chase the cursor a
+  // third of a second behind. The inline transform also overrode the
+  // .btn-primary:hover translateY(-2px) lift, so the clean hover never showed.
+  // The CSS hover is the interaction now. Don't reintroduce a JS transform on
+  // .btn without first removing transform from that transition.
 
 
 </script>
