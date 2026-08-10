@@ -17,12 +17,12 @@
 <meta property="og:title" content="Online Naturopathy &amp; Skin Health in Australia — Waterwell Clinic" />
 <meta property="og:description" content="Root-cause, natural treatment for eczema, psoriasis, acne and TSW — consulting online right across Australia. Book a free discovery session." />
 <meta property="og:url" content="https://waterwellclinic.co.nz/au" />
-<meta property="og:image" content="https://waterwellclinic.co.nz/assets/kohei-hero.jpg" />
+<meta property="og:image" content="https://waterwellclinic.co.nz/assets/og-cover.jpg" />
 <meta property="og:site_name" content="Waterwell Clinic" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Online Naturopathy &amp; Skin Health in Australia — Waterwell Clinic" />
 <meta name="twitter:description" content="Root-cause, natural treatment for eczema, psoriasis, acne &amp; TSW — online across Australia. Free 15-minute discovery session." />
-<meta name="twitter:image" content="https://waterwellclinic.co.nz/assets/kohei-hero.jpg" />
+<meta name="twitter:image" content="https://waterwellclinic.co.nz/assets/og-cover.jpg" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/instrument-serif-normal-400-latin.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/manrope-normal-300_800-latin.woff2" />
 <!-- Structured data: clinic + practitioner + reviews + FAQ (SEO / rich results) -->
@@ -34,7 +34,7 @@
   "url": "https://waterwellclinic.co.nz/au",
   "description": "Online naturopathic care for skin health — root-cause treatment for eczema, topical steroid withdrawal, psoriasis, acne, skin infections and rosacea, consulting online across New Zealand, Australia and worldwide.",
   "email": "info@waterwellclinic.co.nz",
-  "image": "https://waterwellclinic.co.nz/assets/kohei-hero.jpg",
+  "image": "https://waterwellclinic.co.nz/assets/og-cover.jpg",
   "medicalSpecialty": "Dermatology",
   "priceRange": "$$",
   "areaServed": {"@type": "Country", "name": "Australia"},
@@ -95,7 +95,11 @@
     --mono:'Manrope',-apple-system,'Segoe UI',sans-serif;
   }
   *{box-sizing:border-box;margin:0;padding:0}
-  html{scroll-behavior:smooth}
+  /* Native smooth scrolling scales its duration with distance, so the primary
+     CTA (10,000px down) took 1044ms of gliding to arrive. Anchor scrolling is
+     handled in JS at a fixed duration instead — this must stay `auto` or the
+     browser would animate our own scrollTo calls a second time. */
+  html{scroll-behavior:auto}
   body{font-family:var(--body);color:var(--ink);line-height:1.62;font-size:17px;-webkit-font-smoothing:antialiased;overflow-x:hidden;
     background:
       radial-gradient(120% 80% at 88% -8%, rgba(207,224,240,.55), transparent 46%),
@@ -200,7 +204,11 @@
     background:#e9e2d6;box-shadow:var(--shadow-lg), 0 0 0 1px rgba(14,58,100,.08), inset 0 2px 0 rgba(255,255,255,.5)}
   /* thin machined ring around the frame for a hardware-set feel */
   .portrait .frame::after{content:"";position:absolute;inset:8px;border-radius:200px 200px 16px 16px;border:1px solid rgba(255,255,255,.35);pointer-events:none;z-index:3}
-  .portrait .frame img{width:100%;height:100%;object-fit:cover;object-position:84% 30%}
+  /* Carousel: the three crops are already framed to 4:5, so no object-position
+     hunting and no upscaling — the old 1600x434 banner was blown up 133%. */
+  .portrait .frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+    object-position:center;opacity:0;transition:opacity .7s var(--ease)}
+  .portrait .frame img.on{opacity:1}
   .portrait .badge{position:absolute;z-index:4;bottom:24px;left:-26px;background:rgba(255,255,255,.82);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.7);border-radius:18px;padding:15px 19px;box-shadow:var(--shadow-lg), var(--hair);max-width:235px;animation:floaty 6s ease-in-out infinite}
   @keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
   .portrait .badge .star{color:var(--sand-text);font-size:14px;letter-spacing:1px}
@@ -440,7 +448,6 @@
   /* about (below hero) */
   .intro{padding:76px 0 24px}
   .intro-inner{display:grid;grid-template-columns:auto 1fr;gap:42px;align-items:center;max-width:940px;margin:0 auto}
-  .intro-photo img{width:156px;height:156px;border-radius:50%;object-fit:cover;object-position:84% 28%;box-shadow:var(--shadow-soft);border:4px solid var(--paper)}
   .intro-copy .eyebrow{margin-bottom:14px}
   .intro-copy h2{font-size:clamp(1.7rem,2.6vw,2.2rem);display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
   .intro-creds{font-family:var(--mono);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--sage-text);font-weight:600}
@@ -778,7 +785,14 @@
           <path style="--l:90" d="M22 72 C40 64 60 80 80 70" opacity=".55"/>
           <path style="--l:90" d="M24 100 C40 92 60 108 78 98" opacity=".55"/>
         </svg>
-        <div class="frame"><img src="assets/kohei-hero.jpg" alt="Kohei Iguchi, naturopath at Waterwell Clinic" width="1600" height="434"></div>
+        <div class="frame" id="hero-frame">
+          <img class="on" src="assets/kohei-hero-1.jpg" width="924" height="1155" fetchpriority="high"
+               alt="Kohei Iguchi examining a sample at Waterwell Clinic">
+          <img data-src="assets/kohei-hero-2.jpg" width="924" height="1155" aria-hidden="true"
+               alt="Kohei Iguchi explaining a treatment plan during a consultation">
+          <img data-src="assets/kohei-hero-3.jpg" width="924" height="1155" aria-hidden="true"
+               alt="Kohei Iguchi in consultation with a patient">
+        </div>
         
       </div>
     </div>
@@ -1236,6 +1250,44 @@
     });
   })();
 
+  // Fixed-duration anchor scrolling. Chrome's native smooth scroll gets slower
+  // the further it travels, and ten links point at #visit ~10,000px down, so
+  // the main CTA felt like a long slide rather than a jump. Same easing at any
+  // distance: near links stay gentle, far ones stop dragging.
+  (function(){
+    const DUR = 560;
+    const ease = t => t < .5 ? 4*t*t*t : 1 - Math.pow(-2*t + 2, 3)/2;
+    const navEl = document.querySelector('header.nav');
+    document.addEventListener('click', e => {
+      const a = e.target.closest('a[href^="#"]');
+      if(!a) return;
+      const id = a.getAttribute('href').slice(1);
+      const el = id && document.getElementById(id);
+      if(!el) return;
+      e.preventDefault();
+      const start = scrollY;
+      const offset = navEl ? navEl.getBoundingClientRect().height : 0;
+      const max = document.documentElement.scrollHeight - innerHeight;
+      const dest = Math.max(0, Math.min(el.getBoundingClientRect().top + start - offset, max));
+      const dist = dest - start;
+      // preventDefault() also cancels the browser's focus move, which would
+      // silently break the skip link. Reproduce it explicitly.
+      const done = () => {
+        history.replaceState(null, '', '#' + id);
+        if(!el.hasAttribute('tabindex')) el.setAttribute('tabindex', '-1');
+        el.focus({preventScroll:true});
+      };
+      if(reduce || Math.abs(dist) < 2){ scrollTo(0, dest); done(); return; }
+      let t0 = null;
+      requestAnimationFrame(function step(t){
+        if(!t0) t0 = t;
+        const p = Math.min(1, (t - t0)/DUR);
+        scrollTo(0, start + dist*ease(p));
+        p < 1 ? requestAnimationFrame(step) : done();
+      });
+    });
+  })();
+
   // Rotating hero banners — restored 10 Aug. One element: fade out, swap the
   // copy, fade back in, so the messages never ghost over each other.
   (function(){
@@ -1255,8 +1307,25 @@
        lead:'Personalised, natural treatment from a naturopath who has been exactly where you are.'},
     ];
 
+    // The portrait carousel runs off the same index as the copy, so message and
+    // image always match and one set of dots drives both.
+    const shots = [...document.querySelectorAll('#hero-frame img')];
+    // Images 2 and 3 sit in the viewport, so loading="lazy" would not defer
+    // them — they'd compete with the LCP image. Attach them after load instead.
+    const hydrate = () => shots.forEach(im => {
+      if (im.dataset.src && !im.src) { im.src = im.dataset.src; }
+    });
+    if (document.readyState === 'complete') hydrate();
+    else addEventListener('load', hydrate, {once:true});
+
     let i = 0, timer = null;
-    const paint = () => dots.forEach((d,k) => d.setAttribute('aria-selected', String(k===i)));
+    const paint = () => {
+      dots.forEach((d,k) => d.setAttribute('aria-selected', String(k===i)));
+      shots.forEach((im,k) => {
+        im.classList.toggle('on', k===i);
+        im.setAttribute('aria-hidden', String(k!==i));
+      });
+    };
 
     // The three headlines do not wrap to the same number of lines, so without
     // a reserved height the CTAs below jump every time the message changes.
