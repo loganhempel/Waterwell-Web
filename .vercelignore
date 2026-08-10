@@ -40,3 +40,6 @@ tools/
 
 # Client voice-note transcripts — commercial terms, never serve these
 *-TRANSCRIPT.txt
+
+# Archived site versions — internal Ads material, never serve
+_versions/

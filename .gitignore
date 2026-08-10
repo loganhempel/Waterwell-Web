@@ -19,3 +19,7 @@ tools/
 
 # Impeccable critique snapshots — internal design notes, not for the public repo
 .impeccable/
+
+# Archived site versions — contain Google Ads keyword/negative/RSA exports
+# and a client plan xlsx. This repo is PUBLIC.
+_versions/

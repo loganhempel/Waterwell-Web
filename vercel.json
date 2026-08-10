@@ -1,4 +1,31 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/",
+      "has": [{ "type": "host", "value": "nz.waterwellclinic.com" }],
+      "destination": "/nz"
+    },
+    {
+      "source": "/",
+      "has": [{ "type": "host", "value": "au.waterwellclinic.com" }],
+      "destination": "/au"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/nz",
+      "has": [{ "type": "host", "value": "waterwellclinic.com" }],
+      "destination": "https://nz.waterwellclinic.com/",
+      "permanent": true
+    },
+    {
+      "source": "/au",
+      "has": [{ "type": "host", "value": "waterwellclinic.com" }],
+      "destination": "https://au.waterwellclinic.com/",
+      "permanent": true
+    }
+  ]
 }
