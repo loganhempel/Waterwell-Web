@@ -28,7 +28,7 @@
   .btn .arrow{transition:transform .35s var(--ease)} .btn:hover .arrow{transform:translateX(4px)}
   header.nav{position:fixed;inset:0 0 auto 0;z-index:100;padding:18px 0;background:rgba(244,238,228,.9);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
   .nav-inner{display:flex;align-items:center;justify-content:space-between;gap:24px}
-  .brand img{height:28px}
+  .brand img{height:28px;width:auto;max-width:none;object-fit:contain;flex:none}
   .nav-back{font-family:var(--mono);font-size:12px;letter-spacing:.06em;color:var(--muted);font-weight:600} .nav-back:hover{color:var(--navy)}
   .bhero{padding:150px 0 30px;background:linear-gradient(180deg,var(--bg-soft),var(--bg))}
   .bhero h1{font-size:clamp(2.6rem,6vw,4.2rem);margin-top:14px}
@@ -51,7 +51,7 @@
   footer .disc{display:block;max-width:70ch;margin:14px auto 0;color:rgba(255,255,255,.5);line-height:1.5}
   @media(max-width:900px){.post-grid{grid-template-columns:1fr 1fr}}
   @media(max-width:620px){.post-grid{grid-template-columns:1fr}.cta-inner{padding:40px 26px}}
-.nav-back{display:inline-block;padding:12px 0}footer a{display:inline-block;padding:11px 0}.brand{display:inline-flex;align-items:center;padding:7px 0}.skip-link{position:absolute;left:-9999px;top:0;z-index:200;background:#0E3A64;color:#fff;padding:12px 18px;border-radius:0 0 8px 0;font-weight:700;text-decoration:none;display:inline-block;min-height:44px;line-height:20px}.skip-link:focus{left:0}.brand-fix{display:inline-flex;align-items:center;min-height:44px}.brand-fix img{width:auto;height:30px;max-width:200px}</style>
+.nav-back{display:inline-block;padding:12px 0}footer a{display:inline-block;padding:11px 0}.brand{display:inline-flex;align-items:center;padding:7px 0}.skip-link{position:absolute;left:-9999px;top:0;z-index:200;background:#0E3A64;color:#fff;padding:12px 18px;border-radius:0 0 8px 0;font-weight:700;text-decoration:none;display:inline-block;min-height:44px;line-height:20px}.skip-link:focus{left:0}.brand-fix{display:inline-flex;align-items:center;min-height:44px}.brand-fix img{width:auto;height:30px;max-width:none;object-fit:contain;flex:none}</style>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>

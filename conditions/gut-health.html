@@ -36,7 +36,7 @@
   .btn .arrow{transition:transform .35s var(--ease)} .btn:hover .arrow{transform:translateX(4px)}
   header.nav{position:fixed;inset:0 0 auto 0;z-index:100;padding:18px 0;background:rgba(244,238,228,.9);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
   .nav-inner{display:flex;align-items:center;justify-content:space-between;gap:24px}
-  .brand img{height:28px}
+  .brand img{height:28px;width:auto;max-width:none;object-fit:contain;flex:none}
   .nav-back{font-family:var(--mono);font-size:12px;letter-spacing:.06em;color:var(--muted);font-weight:600}
   .nav-back:hover{color:var(--navy)}
   .chero{padding:150px 0 40px;background:linear-gradient(180deg,var(--bg-soft),var(--bg))}
@@ -80,6 +80,24 @@
 }
 .skip-link{position:absolute;left:-9999px;top:0;z-index:200;background:var(--navy);color:#fff;padding:12px 18px;border-radius:0 0 8px 0;font-weight:700;text-decoration:none;display:inline-block;min-height:44px;line-height:20px}
 .skip-link:focus{left:0}
+/* Phone header: at full logo width the CTA was pushed off-screen. The
+   back-link is dropped (the logo already links home) so the conversion
+   button always stays in view. Must come last — the tap-target pass
+   sets .nav-back{display:inline-block} as a plain rule above. */
+.cta-short{display:none}
+@media(max-width:600px){
+  .nav-inner{gap:10px}
+  .brand img{height:22px}
+  .nav-back{display:none}
+  .nav-cta-btn{font-size:13px;padding:11px 14px}
+  .cta-long{display:none}
+  .cta-short{display:inline}
+}
+@media(max-width:380px){
+  .nav-inner{gap:8px}
+  .brand img{height:19px}
+  .nav-cta-btn{font-size:12px;padding:10px 12px}
+}
 </style>
 </head>
 <body>
@@ -87,7 +105,7 @@
 <header class="nav"><div class="wrap nav-inner">
   <a class="brand" href="/" aria-label="Waterwell Clinic — home"><img src="/assets/logo.png" alt="Waterwell Clinic" width="1500" height="162"></a>
   <a class="nav-back" href="/#conditions">← All conditions</a>
-  <a class="btn btn-primary nav-cta-btn" href="/#visit">Free discovery session <span class="arrow">→</span></a>
+  <a class="btn btn-primary nav-cta-btn" href="/#visit"><span class="cta-long">Free discovery session</span><span class="cta-short">Book free call</span> <span class="arrow">→</span></a>
 </div></header>
 
 <main id="main">
