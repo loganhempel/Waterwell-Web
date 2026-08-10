@@ -732,6 +732,95 @@
   .pad{padding:68px 0}
   .pad-lg{padding:84px 0}
 }
+
+/* ================================================================
+   MOBILE REPAIR PASS — 10 Aug 2026
+   Appended last on purpose: media queries carry no extra specificity,
+   so a phone rule placed before a plain rule loses to it. Everything
+   here has to sit at the end of the sheet to take effect.
+   ================================================================ */
+@media(max-width:980px){
+
+  /* --- Nav --------------------------------------------------- */
+  /* Section headings were legible straight through the scrolled bar —
+     .9 alpha plus blur does not stop 2rem navy display type. Raising it
+     to .98 is enough; giving the bar an always-on background instead
+     drew a visible seam across the hero. */
+  header.nav.scrolled{background:rgba(244,238,228,.98)}
+  .brand img{height:26px}
+
+  /* "ONLINE NATUROPATHY & SKIN HEALTH · NZ & AUSTRALIA" cannot fit one
+     line on a phone; balance it instead of orphaning "AUSTRALIA". */
+  .hero .eyebrow{text-wrap:balance}
+
+  /* There was no scroll-margin anywhere in the file, so every anchor
+     jump parked its target underneath the fixed bar. */
+  section[id],div[id]{scroll-margin-top:76px}
+
+  /* --- Hero portrait: was collapsing to 0x0 on every phone ---- */
+  /* .portrait's only sizing child (.frame) resolves to fit-content, and
+     every <img> inside .frame is position:absolute — so fit-content
+     measured zero and the entire photo carousel rendered at 0x0. The
+     badge, absolutely positioned against that zero-size box, escaped
+     and landed on top of the "See how it works" button. */
+  .portrait{width:100%;max-width:330px;margin:24px auto 0}
+  .portrait .frame{width:100%}
+
+  /* Badge back into normal flow, below the photo, as its own card. */
+  .portrait .badge{position:static;width:100%;max-width:none;margin:16px 0 0;
+    padding:13px 16px;border-radius:16px;background:var(--paper);
+    backdrop-filter:none;border:1px solid var(--line);box-shadow:var(--hair);
+    animation:none;display:grid;grid-template-columns:auto 1fr;
+    column-gap:10px;align-items:center}
+  .portrait .badge .star{grid-column:1;grid-row:1;font-size:13px}
+  .portrait .badge b{grid-column:2;grid-row:1;font-size:1.05rem;margin-top:0}
+  .portrait .badge small{grid-column:1/-1;grid-row:2;margin-top:4px}
+
+  /* --- Proof cards ------------------------------------------- */
+  /* "hover or tap" is meaningless on a touch device. */
+  .rcard .rc-hint::after{content:" · hover for before"}
+}
+
+@media(hover:none){
+  .rcard .rc-hint::after{content:" · tap for before"}
+}
+
+@media(max-width:640px){
+
+  /* --- Hero rhythm ------------------------------------------- */
+  /* 725px of unbroken text pushed the portrait completely below the
+     fold. Tightened so the photo enters the first screen. */
+  .hero{padding:100px 0 40px}
+  .hero-grid{gap:0}
+  .hero h1{font-size:clamp(2.35rem,10.4vw,3.2rem);line-height:1.03;margin-top:16px}
+  .hero .lead{margin:16px 0 12px;max-width:none}
+  .hero .sub{font-size:.97rem;margin-bottom:22px;max-width:none}
+  .hero-dots{margin-top:0}
+
+  /* CTAs were 290px and 177px — two ragged widths stacked on top of
+     each other. Full-bleed and equal reads as one deliberate stack. */
+  .hero-actions{flex-direction:column;align-items:stretch;gap:10px;width:100%}
+  .hero-actions .btn{width:100%;justify-content:center}
+
+  /* Separators as pseudo-elements so a wrap can never strand a "·"
+     at the head of the second line. */
+  .reassure{flex-wrap:wrap;gap:0 8px;row-gap:6px;margin-top:18px}
+  .reassure span{display:inline-flex;align-items:center;gap:8px}
+  .reassure span+span::before{content:"·";opacity:.5}
+}
+
+@media(max-width:560px){
+  /* The 3-up proof grid went 3col -> 1col at 980 -> back to 2col at 560,
+     which handed the smallest screen 168px-wide before/after cards. The
+     proof section is the strongest asset on the page; give it the width. */
+  .ba-grid{grid-template-columns:1fr;gap:14px}
+
+  /* "just a conversation" is the phrase that forced the second line,
+     and "no obligation" already carries it. */
+  .reassure .ra-last{display:none}
+
+  .brand img{height:24px}
+}
 </style>
 </head>
 <body>
@@ -798,7 +887,7 @@
           <a class="btn btn-primary" href="#visit">Book a free discovery session <span class="arrow">→</span></a>
           <a class="btn btn-ghost" href="#how">See how it works</a>
         </div>
-        <div class="reassure reveal d4"><b>15 mins</b> · <b>free</b> · <b>no obligation</b> · just a conversation</div>
+        <div class="reassure reveal d4"><span><b>15 mins</b></span><span><b>free</b></span><span><b>no obligation</b></span><span class="ra-last">just a conversation</span></div>
       </div>
       <div class="portrait reveal d2">
         <svg class="droplet-bg" viewBox="0 0 100 130" fill="none" stroke="currentColor" stroke-width="1.1" aria-hidden="true">
@@ -940,9 +1029,9 @@
     </div>
 
     <div class="ba-grid">
-      <div class="rcard reveal" data-reveal><img class="after-l" src="assets/ba-hand-after.jpg" alt="After — hand eczema" loading="lazy" decoding="async" width="960" height="935"><img class="before-l" src="assets/ba-hand-before.jpg" alt="Before — hand eczema" loading="lazy" decoding="async" width="960" height="935"><span class="pill">After</span><div class="cap"><b>Hand eczema</b><span>Adult · hover or tap for before</span></div></div>
-      <div class="rcard reveal d1" data-reveal><img class="after-l" src="assets/ba-baby-body-after.jpg" alt="After — infant body eczema" loading="lazy" decoding="async" width="960" height="935"><img class="before-l" src="assets/ba-baby-body-before.jpg" alt="Before — infant body eczema" loading="lazy" decoding="async" width="960" height="935"><span class="pill">After</span><div class="cap"><b>Infant body eczema</b><span>Child · hover or tap for before</span></div></div>
-      <div class="rcard reveal d2" data-reveal><img class="after-l" src="assets/ba-baby-face-after.jpg" alt="After — baby facial eczema" loading="lazy" decoding="async" width="960" height="935"><img class="before-l" src="assets/ba-baby-face-before.jpg" alt="Before — baby facial eczema" loading="lazy" decoding="async" width="960" height="935"><span class="pill">After</span><div class="cap"><b>Facial eczema</b><span>Infant · hover or tap for before</span></div></div>
+      <div class="rcard reveal" data-reveal><img class="after-l" src="assets/ba-hand-after.jpg" alt="After — hand eczema" loading="lazy" decoding="async" width="960" height="935"><img class="before-l" src="assets/ba-hand-before.jpg" alt="Before — hand eczema" loading="lazy" decoding="async" width="960" height="935"><span class="pill">After</span><div class="cap"><b>Hand eczema</b><span class="rc-hint">Adult</span></div></div>
+      <div class="rcard reveal d1" data-reveal><img class="after-l" src="assets/ba-baby-body-after.jpg" alt="After — infant body eczema" loading="lazy" decoding="async" width="960" height="935"><img class="before-l" src="assets/ba-baby-body-before.jpg" alt="Before — infant body eczema" loading="lazy" decoding="async" width="960" height="935"><span class="pill">After</span><div class="cap"><b>Infant body eczema</b><span class="rc-hint">Child</span></div></div>
+      <div class="rcard reveal d2" data-reveal><img class="after-l" src="assets/ba-baby-face-after.jpg" alt="After — baby facial eczema" loading="lazy" decoding="async" width="960" height="935"><img class="before-l" src="assets/ba-baby-face-before.jpg" alt="Before — baby facial eczema" loading="lazy" decoding="async" width="960" height="935"><span class="pill">After</span><div class="cap"><b>Facial eczema</b><span class="rc-hint">Infant</span></div></div>
     </div>
     <div class="sec-cta reveal">
       <a class="btn btn-ghost" href="#visit">Book a free discovery session <span class="arrow">→</span></a>
@@ -1205,7 +1294,16 @@
     const y = window.scrollY, h = document.documentElement.scrollHeight - window.innerHeight;
     nav.classList.toggle('scrolled', y > 30);
     progress.style.transform = 'scaleX(' + (h>0 ? (y/h) : 0) + ')';
-    mcta.classList.toggle('show', y > window.innerHeight*0.9);
+    // Show the sticky CTA once past the hero, but retract it over the booking
+    // form and the footer — it points at #visit, so sitting on top of #visit is
+    // both redundant and covers the last two fields.
+    const visit = document.getElementById('visit');
+    let hideBar = false;
+    if (visit){
+      const r = visit.getBoundingClientRect();
+      hideBar = r.top < window.innerHeight * 0.75;
+    }
+    mcta.classList.toggle('show', y > window.innerHeight*0.9 && !hideBar);
     if (!ticking){ ticking = true; requestAnimationFrame(() => { applyParallax(y); ticking = false; }); }
   }
   window.addEventListener('scroll', scrollUI, {passive:true}); scrollUI();

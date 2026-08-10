@@ -37,3 +37,6 @@ wordpress-booking-snippet/
 tools/
 .claude/
 .impeccable/
+
+# Client voice-note transcripts — commercial terms, never serve these
+*-TRANSCRIPT.txt
