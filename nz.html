@@ -753,6 +753,74 @@
   .pad-lg{padding:84px 0}
 }
 
+
+/* ================================================================
+   #how — "the stepping stones" as a meandering path, and
+   #approach — "a clear path" as a horizontal accordion.
+   Kohei's 11 Aug review. Placed AFTER .reveal on purpose: .reveal
+   declares a transition at one-class specificity, so a component rule
+   earlier in the sheet loses its own timings to it.
+   ================================================================ */
+.meander{position:relative;margin-top:40px}
+.mpath{position:absolute;left:50%;top:0;height:100%;width:min(62%,560px);
+  transform:translateX(-50%);color:var(--sage);opacity:.28;pointer-events:none}
+.msteps{list-style:none;margin:0;padding:0;display:grid;gap:26px;position:relative;z-index:1}
+.mstep{position:relative;width:min(53%,480px);padding:30px 34px 28px 44px;
+  background:linear-gradient(180deg,#ffffff,#fbf7ef);
+  border:1px solid var(--line);box-shadow:var(--shadow-soft),var(--hair);
+  transition:opacity .45s cubic-bezier(.16,1,.3,1),transform .45s cubic-bezier(.16,1,.3,1),box-shadow .3s cubic-bezier(.16,1,.3,1)}
+/* One long sweep on opposite corners, mirrored per side, so the two columns
+   lean into each other instead of repeating the same silhouette. */
+.mstep:nth-child(odd){justify-self:start;border-radius:64px 24px 64px 24px}
+.mstep:nth-child(even){justify-self:end;border-radius:24px 64px 24px 64px;padding:30px 44px 28px 34px}
+.mstep:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.mstep .mwm{position:absolute;top:-10px;font-family:var(--display);font-style:italic;
+  font-size:6rem;line-height:1;color:var(--navy);opacity:.05;pointer-events:none}
+.mstep:nth-child(odd) .mwm{right:24px}
+.mstep:nth-child(even) .mwm{left:24px}
+.mstep .mnode{position:absolute;top:28px;width:54px;height:54px;border-radius:50%;
+  background:var(--paper);border:1px solid var(--line);box-shadow:var(--shadow-soft);
+  display:flex;align-items:center;justify-content:center;color:var(--sage)}
+.mstep .mnode svg{width:24px;height:24px}
+.mstep:nth-child(odd) .mnode{right:-27px}
+.mstep:nth-child(even) .mnode{left:-27px}
+.mstep .jn{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--sand-text);margin-bottom:9px}
+.mstep h3{font-size:1.4rem;line-height:1.14;margin-bottom:10px}
+.mstep p{font-size:.97rem;color:var(--muted);line-height:1.6;max-width:44ch}
+.mstep p b{color:var(--ink);font-weight:600}
+
+.hacc{display:flex;gap:14px;margin-top:34px;align-items:flex-start}
+.hitem{flex:1 1 0;min-width:0;background:linear-gradient(180deg,#ffffff,#fbf7ef);
+  border:1px solid var(--line);border-radius:22px;overflow:hidden;
+  box-shadow:var(--shadow-soft),var(--hair);
+  transition:flex-grow .5s cubic-bezier(.16,1,.3,1),box-shadow .3s,border-color .3s}
+.hitem.is-open{flex-grow:3.6;border-color:transparent;box-shadow:var(--shadow)}
+.hhead{margin:0;font-size:inherit;font-weight:inherit}
+.hbtn{width:100%;display:flex;flex-direction:column;align-items:flex-start;gap:13px;
+  padding:24px 22px 18px;background:none;border:0;cursor:pointer;text-align:left;
+  font:inherit;color:inherit}
+.hbtn:focus-visible{outline:2px solid var(--sage);outline-offset:-4px;border-radius:20px}
+.hic{width:48px;height:48px;border-radius:14px;background:var(--bg);color:var(--sage);
+  display:flex;align-items:center;justify-content:center;flex:none;
+  transition:background .35s,color .35s}
+.hic svg{width:24px;height:24px}
+.hitem.is-open .hic{background:var(--navy);color:var(--sage-bright)}
+/* Reserve two lines so a title that wraps does not leave the collapsed cards
+   at different heights to the ones that do not. */
+.htitle{font-family:var(--display);font-size:1.14rem;line-height:1.2;color:var(--navy);min-height:2.4em}
+.hnum{font-family:var(--mono);font-size:10.5px;letter-spacing:.16em;color:var(--sand-text)}
+/* 0fr -> 1fr collapses real height without a magic max-height, and it works
+   unchanged when the row stacks into a vertical accordion on phones. */
+.hpanel{display:grid;grid-template-rows:0fr;opacity:0;padding:0 22px;
+  transition:grid-template-rows .45s cubic-bezier(.16,1,.3,1),opacity .3s}
+.hpanel>.hpanel-in{overflow:hidden;min-height:0}
+.hitem.is-open .hpanel{grid-template-rows:1fr;opacity:1;transition-delay:0s,.12s}
+.hpanel p{font-size:.96rem;color:var(--muted);line-height:1.6;max-width:44ch;padding-bottom:2px}
+.hmeta{margin-top:14px;display:inline-block;font-family:var(--mono);font-size:10.5px;
+  letter-spacing:.1em;text-transform:uppercase;color:var(--sage-text);
+  border:1px solid var(--line);border-radius:30px;padding:5px 13px;margin-bottom:24px}
+
 /* ================================================================
    MOBILE REPAIR PASS — 10 Aug 2026
    Appended last on purpose: media queries carry no extra specificity,
@@ -839,6 +907,28 @@
   .hero-ticks .ra-last{display:none}
 
   .brand img{height:24px}
+}
+
+/* --- 11 Aug: the two rebuilt sections on phones -------------------- */
+@media(max-width:860px){
+  /* The meander needs two columns to read as a meander; below this it is
+     just a list, so the spine goes rather than wander behind full-width cards. */
+  .mpath{display:none}
+  .msteps{gap:14px}
+  .mstep,.mstep:nth-child(odd),.mstep:nth-child(even){width:100%;justify-self:stretch;
+    border-radius:26px;padding:26px 24px}
+  .mstep .mnode,.mstep:nth-child(odd) .mnode,.mstep:nth-child(even) .mnode{
+    position:static;margin-bottom:14px;width:46px;height:46px}
+  .mstep .mwm,.mstep:nth-child(odd) .mwm,.mstep:nth-child(even) .mwm{
+    left:auto;right:18px;top:-6px;font-size:4.4rem}
+  .mstep h3{font-size:1.26rem}
+
+  /* Horizontal accordion becomes a normal vertical one. */
+  .hacc{flex-direction:column;gap:10px}
+  .hitem,.hitem.is-open{flex:none}
+  .hbtn{flex-direction:row;align-items:center;gap:14px;padding:18px 20px}
+  .hic{width:42px;height:42px}
+  .htitle{flex:1;min-width:0}
 }
 </style>
 </head>
@@ -1011,42 +1101,50 @@
       <h2>From flare-ups to the skin that you feel comfortable in.</h2>
       <p>No guesswork — five considered steps that take you from where you are now to skin that looks after itself.</p>
     </div>
-    <div class="journey">
-      <article class="jstep lead reveal">
-        <span class="jwm">01</span>
-        <div class="lead-badge">
-          <span class="jic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.6-4.6"/></svg></span>
-        </div>
-        <div class="lead-copy">
-          <span class="jn">Step 01 · Where we begin</span>
-          <h3>Identifying your skin condition</h3>
-          <p><b>Getting this right matters more than anything else</b> — start in the wrong direction and you lose time, effort and money. Consultations, functional testing and over a decade of clinical experience pinpoint what’s driving it.</p>
-        </div>
-      </article>
-      <article class="jstep reveal d1">
-        <span class="jwm">02</span>
-        <div class="jhead"><span class="jic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 15c2 0 2.5-4 4.5-4s2.5 4 4.5 4 2.5-6 4.5-6 2.5 6 4.5 6"/><path d="M3 20h18" opacity=".5"/></svg></span><span class="jn">Step 02</span></div>
+    <div class="meander">
+      <!-- Decorative spine. preserveAspectRatio="none" lets it stretch to
+           whatever height the steps end up at, so it never has to be kept in
+           sync with their measured heights. -->
+      <svg class="mpath" viewBox="0 0 100 1000" preserveAspectRatio="none" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true">
+        <path d="M50 0 C 12 105, 88 145, 50 250 C 12 355, 88 395, 50 500 C 12 605, 88 645, 50 750 C 12 855, 76 915, 50 1000"/>
+      </svg>
+      <ol class="msteps">
+      <li class="mstep reveal" data-reveal>
+        <span class="mwm" aria-hidden="true">01</span>
+        <span class="mnode" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.6-4.6"/></svg></span>
+        <span class="jn">Step 01 · Where we begin</span>
+        <h3>Identifying your skin condition</h3>
+        <p><b>Getting this right matters more than anything else</b> — start in the wrong direction and you lose time, effort and money. Consultations, functional testing and over a decade of clinical experience pinpoint what’s driving it.</p>
+      </li>
+      <li class="mstep reveal" data-reveal>
+        <span class="mwm" aria-hidden="true">02</span>
+        <span class="mnode" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 15c2 0 2.5-4 4.5-4s2.5 4 4.5 4 2.5-6 4.5-6 2.5 6 4.5 6"/><path d="M3 20h18" opacity=".5"/></svg></span>
+        <span class="jn">Step 02</span>
         <h3>Removing the obstacles</h3>
         <p><b>Food and environmental sensitivities are like speed bumps</b> — they quietly fuel inflammation, leaving little room to heal. Reducing them first is what makes the rest of the plan worth doing.</p>
-      </article>
-      <article class="jstep reveal d2">
-        <span class="jwm">03</span>
-        <div class="jhead"><span class="jic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-6.5-4.2-6.5-9A3.5 3.5 0 0 1 12 7.5 3.5 3.5 0 0 1 18.5 11c0 4.8-6.5 9-6.5 9z"/></svg></span><span class="jn">Step 03</span></div>
+      </li>
+      <li class="mstep reveal" data-reveal>
+        <span class="mwm" aria-hidden="true">03</span>
+        <span class="mnode" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-6.5-4.2-6.5-9A3.5 3.5 0 0 1 12 7.5 3.5 3.5 0 0 1 18.5 11c0 4.8-6.5 9-6.5 9z"/></svg></span>
+        <span class="jn">Step 03</span>
         <h3>Treating the underlying cause</h3>
         <p><b>Once inflammation settles, we address the root of your condition</b> — permanently avoiding allergens isn’t solving anything. We find what caused those sensitivities, using natural remedies that support gut function, hormones, detox pathways and the microbiome.</p>
-      </article>
-      <article class="jstep reveal d1">
-        <span class="jwm">04</span>
-        <div class="jhead"><span class="jic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12a8 8 0 1 1-2.3-5.6"/><path d="M20 4v4h-4"/></svg></span><span class="jn">Step 04</span></div>
+      </li>
+      <li class="mstep reveal" data-reveal>
+        <span class="mwm" aria-hidden="true">04</span>
+        <span class="mnode" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12a8 8 0 1 1-2.3-5.6"/><path d="M20 4v4h-4"/></svg></span>
+        <span class="jn">Step 04</span>
         <h3>Reintroduction</h3>
         <p><b>True health isn’t avoiding your triggers — it’s being strong enough to tolerate them.</b> Once symptoms have eased and the cause is addressed, we gently reintroduce those foods and habits.</p>
-      </article>
-      <article class="jstep reveal d2">
-        <span class="jwm">05</span>
-        <div class="jhead"><span class="jic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2-5 3 10 2-5h7"/></svg></span><span class="jn">Step 05</span></div>
+      </li>
+      <li class="mstep reveal" data-reveal>
+        <span class="mwm" aria-hidden="true">05</span>
+        <span class="mnode" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2-5 3 10 2-5h7"/></svg></span>
+        <span class="jn">Step 05</span>
         <h3>Maintenance</h3>
         <p><b>Your journey isn’t over when treatment ends — some say that’s where it truly begins.</b> You’ll use what you’ve learned to hold your progress, with a maintenance plan and occasional check-ins.</p>
-      </article>
+      </li>
+      </ol>
     </div>
     <div class="sec-cta reveal">
       <a class="btn btn-primary" href="#visit">Book a free discovery session <span class="arrow">→</span></a>
@@ -1063,12 +1161,48 @@
       <h2>A calm, considered path towards your desired results.</h2>
       <p>Sometimes you just need reassurance when you’re putting your health in someone else’s hands. Here’s exactly what working together looks like.</p>
     </div>
-    <div class="stones">
-      <div class="stone reveal"><div class="node">1</div><h3>Free discovery session</h3><p>A relaxed 15-minute conversation to ask anything about the consultations, the treatment process and how I can help you. No pressure, no obligations — just your peace of mind.</p><span class="meta">15 min · Free</span></div>
-      <div class="stone reveal d1"><div class="node">2</div><h3>Initial consultation</h3><p>A comprehensive 75-minute appointment to uncover the triggers and root cause of your skin condition. We assess your history, diet, lifestyle, mental-emotional health and much more — a completely holistic view.</p><span class="meta">75 min · By video</span></div>
-      <div class="stone reveal d2"><div class="node">3</div><h3>Your tailored plan</h3><p>A treatment plan created only for you — herbal medicine, nutrition, and dietary and lifestyle support. No two plans are ever the same, because everyone is unique.</p><span class="meta">Individual</span></div>
-      <div class="stone reveal d3"><div class="node">4</div><h3>Review &amp; progress</h3><p>We track your progress together and adjust as your body responds — so you can see and feel the change over time. As your skin improves, the plan evolves with you.</p><span class="meta">Ongoing</span></div>
-    </div>
+    <div class="hacc" id="hacc">
+        <div class="hitem is-open">
+          <h3 class="hhead"><button type="button" class="hbtn" id="hb-1" aria-expanded="true" aria-controls="hp-1">
+            <span class="hic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
+            <span class="htitle">Free discovery session</span>
+            <span class="hnum" aria-hidden="true">01</span>
+          </button></h3>
+          <div class="hpanel" id="hp-1" role="region" aria-labelledby="hb-1"><div class="hpanel-in">
+            <p>A relaxed 15-minute conversation to ask anything about the consultations, the treatment process and how I can help you. No pressure, no obligations — just your peace of mind.</p><span class="hmeta">15 min · Free</span>
+          </div></div>
+        </div>
+        <div class="hitem">
+          <h3 class="hhead"><button type="button" class="hbtn" id="hb-2" aria-expanded="false" aria-controls="hp-2">
+            <span class="hic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3v5a4 4 0 0 0 8 0V3"/><path d="M12 12v3a5 5 0 0 0 5 5 3 3 0 0 0 3-3v-2"/><circle cx="20" cy="13" r="1.6"/></svg></span>
+            <span class="htitle">Initial consultation</span>
+            <span class="hnum" aria-hidden="true">02</span>
+          </button></h3>
+          <div class="hpanel" id="hp-2" role="region" aria-labelledby="hb-2"><div class="hpanel-in">
+            <p>A comprehensive 75-minute appointment to uncover the triggers and root cause of your skin condition. We assess your history, diet, lifestyle, mental-emotional health and much more — a completely holistic view.</p><span class="hmeta">75 min · By video</span>
+          </div></div>
+        </div>
+        <div class="hitem">
+          <h3 class="hhead"><button type="button" class="hbtn" id="hb-3" aria-expanded="false" aria-controls="hp-3">
+            <span class="hic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h9l4 4v14a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h4"/></svg></span>
+            <span class="htitle">Your tailored plan</span>
+            <span class="hnum" aria-hidden="true">03</span>
+          </button></h3>
+          <div class="hpanel" id="hp-3" role="region" aria-labelledby="hb-3"><div class="hpanel-in">
+            <p>A treatment plan created only for you — herbal medicine, nutrition, and dietary and lifestyle support. No two plans are ever the same, because everyone is unique.</p><span class="hmeta">Individual</span>
+          </div></div>
+        </div>
+        <div class="hitem">
+          <h3 class="hhead"><button type="button" class="hbtn" id="hb-4" aria-expanded="false" aria-controls="hp-4">
+            <span class="hic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l5-5 4 3 5-7"/><path d="M15 8h4v4"/></svg></span>
+            <span class="htitle">Review &amp; progress</span>
+            <span class="hnum" aria-hidden="true">04</span>
+          </button></h3>
+          <div class="hpanel" id="hp-4" role="region" aria-labelledby="hb-4"><div class="hpanel-in">
+            <p>We track your progress together and adjust as your body responds — so you can see and feel the change over time. As your skin improves, the plan evolves with you.</p><span class="hmeta">Ongoing</span>
+          </div></div>
+        </div>
+      </div>
   </div>
 </section>
 
@@ -1449,6 +1583,35 @@
     // While it stays as-is the form falls back to mailto, so behaviour never
     // regresses. Do NOT add a `ccemail` field: Web3Forms free rejects it with
     // HTTP 400 and the submission dies invisibly. Test against production.
+
+  // ---------- CLEAR PATH — horizontal accordion, one open at a time ----------
+  (function(){
+    const acc = document.getElementById('hacc');
+    if(!acc) return;
+    const items = [...acc.querySelectorAll('.hitem')];
+    const wide  = () => matchMedia('(min-width:861px)').matches;
+    const set = (target, on) => {
+      target.classList.toggle('is-open', on);
+      target.querySelector('.hbtn').setAttribute('aria-expanded', String(on));
+    };
+    items.forEach((it, idx) => {
+      it.querySelector('.hbtn').addEventListener('click', () => {
+        const wasOpen = it.classList.contains('is-open');
+        // Laid out horizontally there is no sensible "all shut" state — the row
+        // would collapse to four blank columns — so a click on the open panel
+        // is a no-op there, and a normal toggle once it has stacked.
+        if (wasOpen && wide()) return;
+        items.forEach(o => set(o, o === it && !wasOpen));
+      });
+      it.querySelector('.hbtn').addEventListener('keydown', e => {
+        const d = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
+        if(!d) return;
+        e.preventDefault();
+        items[(idx + d + items.length) % items.length].querySelector('.hbtn').focus();
+      });
+    });
+  })();
+
     // Kohei's VA sizes appointment reminders off this. Without it, reminders
     // default to Australian time and international patients get the wrong hour.
     // Intl gives the IANA zone directly; the field stays readonly so it cannot
