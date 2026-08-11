@@ -6,9 +6,9 @@
 <title>Online Eczema &amp; Skin-Health Naturopath in Australia | Waterwell Clinic</title>
 <meta name="description" content="Root-cause naturopathy for eczema, psoriasis, acne and topical steroid withdrawal — consulting online right across Australia. Book a free discovery session with Kohei Iguchi." />
 <meta name="theme-color" content="#0E3A64" />
-<link rel="canonical" href="https://au.waterwellclinic.com/" />
-<link rel="alternate" hreflang="en-nz" href="https://nz.waterwellclinic.com/" />
-<link rel="alternate" hreflang="en-au" href="https://au.waterwellclinic.com/" />
+<link rel="canonical" href="https://waterwellclinic.com/au" />
+<link rel="alternate" hreflang="en-nz" href="https://waterwellclinic.com/nz" />
+<link rel="alternate" hreflang="en-au" href="https://waterwellclinic.com/au" />
 <link rel="alternate" hreflang="x-default" href="https://waterwellclinic.com/" />
 <!-- inline SVG droplet favicon — no file needed, always on-brand -->
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 130'%3E%3Crect width='100' height='130' rx='22' fill='%23F4EEE4'/%3E%3Cpath d='M50 18 C50 18 82 58 82 84 A32 32 0 1 1 18 84 C18 58 50 18 50 18 Z' fill='%230E3A64'/%3E%3Cpath d='M34 92 c8 5 24 5 32 0' fill='none' stroke='%239FC0A3' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E" />
@@ -16,7 +16,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Online Naturopathy &amp; Skin Health in Australia — Waterwell Clinic" />
 <meta property="og:description" content="Root-cause, natural treatment for eczema, psoriasis, acne and TSW — consulting online right across Australia. Book a free discovery session." />
-<meta property="og:url" content="https://au.waterwellclinic.com/" />
+<meta property="og:url" content="https://waterwellclinic.com/au" />
 <meta property="og:image" content="https://waterwellclinic.com/assets/og-cover.jpg" />
 <meta property="og:site_name" content="Waterwell Clinic" />
 <meta name="twitter:card" content="summary_large_image" />
@@ -31,7 +31,7 @@
   "@context": "https://schema.org",
   "@type": "MedicalClinic",
   "name": "Waterwell Clinic",
-  "url": "https://au.waterwellclinic.com/",
+  "url": "https://waterwellclinic.com/au",
   "description": "Online naturopathic care for skin health — root-cause treatment for eczema, topical steroid withdrawal, psoriasis, acne, skin infections and rosacea, consulting online across New Zealand, Australia and worldwide.",
   "email": "info@waterwellclinic.co.nz",
   "image": "https://waterwellclinic.com/assets/og-cover.jpg",
@@ -55,7 +55,7 @@
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Do you treat children and babies?", "acceptedAnswer": {"@type": "Answer", "text": "Absolutely. Children are far more likely to suffer from eczema than adults, so many of our patients are little ones. Children get eczema far more often than adults, so a large share of the practice is little ones. Kohei works through it with the parent as much as the child, so you know what you are doing and why at every stage."}},
+    {"@type": "Question", "name": "Do you treat children and babies?", "acceptedAnswer": {"@type": "Answer", "text": "Absolutely. Children are far more likely to suffer from eczema than adults, so many of our patients are little ones. Kohei works through it with the parent as much as the child, so you know what you are doing and why at every stage."}},
     {"@type": "Question", "name": "How does the free discovery session work?", "acceptedAnswer": {"@type": "Answer", "text": "It's a relaxed 15-minute conversation to chat about your current skin issue and how Kohei may be able to help, so you can feel confident before deciding to book an initial consultation. No pressure, no obligation."}},
     {"@type": "Question", "name": "How does a naturopath treat eczema differently to a dermatologist?", "acceptedAnswer": {"@type": "Answer", "text": "The core difference comes down to philosophy: symptom management vs root-cause investigation. A dermatologist can offer excellent diagnostics and medications that improve symptoms quickly, but these can mask the problem without addressing what's driving it. As naturopaths we investigate the internal balance, and through nutrition, dietary and lifestyle adjustments we work to restore it."}},
     {"@type": "Question", "name": "Can I keep taking my current medication?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Naturopathic care is complementary and works alongside your existing care. Kohei will never tell you to stop a prescribed medication without your wish to and a conversation with your doctor first. Many patients find that, as their health improves, they can wean off medications at a comfortable pace."}},
@@ -204,8 +204,16 @@
   #online .bento-feature p{max-width:56ch}
   #online .bento-feature .wm{margin:0}
   .hero-actions{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
-  .reassure{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-top:16px;display:flex;align-items:center;gap:8px}
-  .reassure b{color:var(--sage-text);font-weight:500}
+  .hero-ticks{list-style:none;margin-top:18px;display:grid;gap:9px}
+  .hero-ticks li{display:grid;grid-template-columns:auto 1fr;align-items:start;gap:10px;
+    font-size:.94rem;line-height:1.4;color:var(--muted)}
+  /* The tick is drawn, not a glyph — a text checkmark sits on the baseline and
+     reads as punctuation next to a wrapping line. */
+  .hero-ticks .tk{width:17px;height:17px;border-radius:50%;margin-top:2px;
+    background:rgba(78,97,81,.13);position:relative;flex:none}
+  .hero-ticks .tk::after{content:"";position:absolute;left:5px;top:5px;width:6px;height:3px;
+    border-left:1.6px solid var(--sage-text);border-bottom:1.6px solid var(--sage-text);
+    transform:rotate(-45deg)}
 
   .portrait{position:relative}
   /* ambient aura behind the portrait — soft brand light, gives the photo a place to sit */
@@ -261,6 +269,12 @@
   .promise .eyebrow{color:var(--sage-bright)}.promise .eyebrow::before{background:var(--sage-bright)}
   .promise h2{color:#fff;font-size:clamp(1.9rem,3.7vw,3rem);font-weight:400;font-style:italic;max-width:18ch;margin:22px auto 0;line-height:1.18}
   .promise p{color:rgba(255,255,255,.72);max-width:52ch;margin:26px auto 0;font-size:1.05rem}
+  /* Two-tier quote (Kohei, 11 Aug): the short line carries the section, the
+     longer one steps down to secondary so it reads as support, not a rival. */
+  .promise h2.promise-lead{font-size:clamp(2.4rem,5.4vw,4rem);max-width:14ch}
+  .promise p.promise-2nd{color:rgba(255,255,255,.88);font-style:italic;
+    font-family:var(--display);font-size:clamp(1.25rem,2.2vw,1.6rem);
+    line-height:1.32;max-width:26ch;margin-top:22px}
   .promise .dwave{display:block;margin:0 auto 4px;color:var(--sage-bright)}
 
   /* conditions */
@@ -317,8 +331,12 @@
   .story p{color:var(--ink);margin-bottom:16px;font-size:1.02rem}
   .story p .hl{color:var(--navy);font-weight:600}
   .signoff{margin-top:26px}
-  .signoff .nm{font-family:var(--display);font-size:1.25rem;color:var(--navy)}
-  .signoff .cr{font-family:var(--mono);font-size:11.5px;color:var(--muted);letter-spacing:.04em;margin-top:3px}
+  /* Name and qualifications sit inline. baseline alignment keeps the mono
+     credential string optically level with the display name rather than
+     centred against its much taller cap height. */
+  .signoff .nmline{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 12px}
+  .signoff .nm{font-family:var(--display);font-size:1.5rem;color:var(--navy)}
+  .signoff .cr{font-family:var(--mono);font-size:11.5px;color:var(--muted);letter-spacing:.04em}
 
   /* results */
   .results{background:var(--bg)}
@@ -358,7 +376,8 @@
   .svc:nth-child(even){padding-left:48px;border-left:1px solid rgba(255,255,255,.14)}
   .svc.wide{grid-column:1/-1;padding-right:0;border-left:0}
   .svc.wide p{max-width:64ch}
-  .svc .sn{font-family:var(--mono);font-size:.85rem;color:var(--sage-bright)}
+  .svc .sn{color:var(--sage-bright);display:block;margin-top:2px}
+  .svc .sn svg{display:block}
   .svc h3{color:#fff;font-size:1.4rem;margin-bottom:8px}
   .svc p{color:rgba(255,255,255,.7);font-size:.95rem;line-height:1.55}
 
@@ -482,6 +501,9 @@
   .cond.feature .more{color:#fff}
 
   /* credential pills (story) */
+  .pre-note{margin-top:14px;font-size:.93rem;line-height:1.5;color:rgba(255,255,255,.72);
+    padding-left:14px;border-left:2px solid rgba(159,192,163,.5)}
+  .pre-note b{color:rgba(255,255,255,.92);font-weight:500}
   .creds{display:flex;flex-wrap:wrap;gap:9px;margin-top:24px}
   .creds span{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--sage-text);border:1px solid var(--line);background:var(--paper);border-radius:30px;padding:7px 13px}
 
@@ -603,7 +625,6 @@
   .hero h1{font-size:clamp(3rem,6.6vw,5.4rem);line-height:.98;letter-spacing:-.02em;margin-top:20px}
   .hero .lead{font-size:clamp(1.08rem,1.7vw,1.28rem);margin-top:22px}
   .hero-copy{min-width:0}
-  .reassure{flex-wrap:wrap;row-gap:5px}
   /* long eyebrows (esp. the hero's) were nowrap inline-flex ~469px wide, forcing the whole
      document past narrow viewports. Let them wrap; on desktop they still sit on one line. */
   .eyebrow{flex-wrap:wrap;max-width:100%}
@@ -669,8 +690,7 @@
     background:linear-gradient(var(--line),transparent)}
   .story .narrative p{margin-bottom:22px}
   .story p .hl{color:var(--navy);font-weight:700;background:linear-gradient(180deg,transparent 62%, rgba(159,192,163,.42) 62%);padding:0 2px;border-radius:2px}
-  .story .signoff{margin-top:30px;padding:24px 26px;border-radius:var(--r);
-    background:linear-gradient(180deg,rgba(255,255,255,.7),rgba(255,255,255,.4));border:1px solid rgba(255,255,255,.7);box-shadow:var(--shadow-soft), var(--hair)}
+  .story .signoff{margin-top:30px;padding:22px 0 0;border-top:1px solid var(--line)}
   .story .creds span{background:var(--paper);box-shadow:var(--shadow-soft)}
 
   /* --- SCROLL CHOREOGRAPHY: fade-up + parallax ---
@@ -795,9 +815,8 @@
 
   /* Separators as pseudo-elements so a wrap can never strand a "·"
      at the head of the second line. */
-  .reassure{flex-wrap:wrap;gap:0 8px;row-gap:6px;margin-top:18px}
-  .reassure span{display:inline-flex;align-items:center;gap:8px}
-  .reassure span+span::before{content:"·";opacity:.5}
+  .hero-ticks{margin-top:16px;gap:8px}
+  .hero-ticks li{font-size:.9rem}
 }
 
 @media(max-width:560px){
@@ -808,7 +827,7 @@
 
   /* "just a conversation" is the phrase that forced the second line,
      and "no obligation" already carries it. */
-  .reassure .ra-last{display:none}
+  .hero-ticks .ra-last{display:none}
 
   .brand img{height:24px}
 }
@@ -824,13 +843,14 @@
     <a class="brand" href="#top" aria-label="Waterwell Clinic"><img src="assets/logo.png" alt="Waterwell Clinic" width="1500" height="162"></a>
     <nav class="nav-links">
       <a href="#conditions">Conditions</a>
+      <a href="#services">Services</a>
+      <a href="#story">About Kohei</a>
       <a href="#how">How it works</a>
       <a href="#results">Results</a>
-      <a href="#story">About Kohei</a>
       
     </nav>
     <div class="nav-cta">
-      <a class="nav-phone" href="https://nz.waterwellclinic.com/" style="text-align:right">NZ site ↗<span>Switch region</span></a>
+      <a class="nav-phone" href="/nz" style="text-align:right">NZ site ↗<span>Switch region</span></a>
       <a class="nav-phone" href="mailto:info@waterwellclinic.co.nz">Email the clinic<span>Online · Australia</span></a>
       <a class="btn btn-primary" href="#visit" style="white-space:nowrap">Free discovery session <span class="arrow">→</span></a>
     </div>
@@ -838,15 +858,13 @@
   </div>
 </header>
 <div class="drawer" id="drawer">
-  <a href="#conditions">Conditions</a><a href="#how">How it works</a><a href="#results">Results</a><a href="#story">About Kohei</a>
+  <a href="#conditions">Conditions</a><a href="#services">Services</a><a href="#story">About Kohei</a><a href="#how">How it works</a><a href="#results">Results</a>
   
-  <a href="https://nz.waterwellclinic.com/">Viewing Australia · see New Zealand →</a>
+  <a href="/nz">Viewing Australia · see New Zealand →</a>
   <a class="btn btn-primary" href="#visit">Book a free discovery session →</a>
 </div>
 
-<!-- HERO -->
 <main id="main">
-<!-- HERO -->
 <!-- HERO -->
 <section class="hero" id="top">
   <!-- ambient depth layer: topographic contour motif (echoes the droplet logo) + soft brand light -->
@@ -878,20 +896,18 @@
           <a class="btn btn-primary" href="#visit">Book a free discovery session <span class="arrow">→</span></a>
           <a class="btn btn-ghost" href="#how">See how it works</a>
         </div>
-        <div class="reassure reveal d4"><span><b>15 mins</b></span><span><b>free</b></span><span><b>no obligation</b></span><span class="ra-last">just a conversation</span></div>
+        <ul class="hero-ticks reveal d4">
+          <li><span class="tk" aria-hidden="true"></span>Free 15-minute discovery session</li>
+          <li><span class="tk" aria-hidden="true"></span>Comprehensive naturopathic consultation</li>
+          <li class="ra-last"><span class="tk" aria-hidden="true"></span>Consultations worldwide by secure video</li>
+        </ul>
       </div>
       <div class="portrait reveal d2">
-        <svg class="droplet-bg" viewBox="0 0 100 130" fill="none" stroke="currentColor" stroke-width="1.1" aria-hidden="true">
-          <path style="--l:360" d="M50 4 C50 4 88 52 88 82 A38 38 0 1 1 12 82 C12 52 50 4 50 4 Z"/>
-          <path style="--l:90" d="M26 86 C40 78 60 94 76 84" opacity=".7"/>
-          <path style="--l:90" d="M22 72 C40 64 60 80 80 70" opacity=".55"/>
-          <path style="--l:90" d="M24 100 C40 92 60 108 78 98" opacity=".55"/>
-        </svg>
         <div class="frame" id="hero-frame">
-          <img class="on" src="assets/kohei-hero-1.jpg" width="924" height="1155" fetchpriority="high"
-               alt="Kohei Iguchi explaining a treatment plan during a consultation">
-          <img data-src="assets/kohei-hero-2.jpg" width="924" height="1155" aria-hidden="true"
+          <img class="on" src="assets/kohei-hero-2.jpg" width="924" height="1155" fetchpriority="high"
                alt="A patient during a consultation at Waterwell Clinic">
+          <img data-src="assets/kohei-hero-1.jpg" width="924" height="1155" aria-hidden="true"
+               alt="Kohei Iguchi explaining a treatment plan during a consultation">
           <img data-src="assets/kohei-hero-3.jpg" width="924" height="1155" aria-hidden="true"
                alt="A blood pressure reading being taken during a health assessment">
         </div>
@@ -906,45 +922,72 @@
   <div class="wrap">
     <div class="sec-head reveal">
       <span class="eyebrow">Our specialties</span>
-      <h2>Ten conditions, one root-cause approach.</h2>
+      <h2>Skin conditions, treated at the root.</h2>
     </div>
-    <div class="cond-list"><div class="clgroup reveal"><span class="cltag">Skin conditions</span></div><a class="cnd-row reveal" href="/conditions/eczema"><span class="cnum">01</span><span class="cname">Eczema</span><span class="cnote">Type, triggers, and rebalancing the gut and immune system</span><span class="carr" aria-hidden="true">→</span></a><a class="cnd-row reveal" href="/conditions/tsw"><span class="cnum">02</span><span class="cname">Topical Steroid Withdrawal</span><span class="cnote">Nervous-system support through the withdrawal process</span><span class="carr" aria-hidden="true">→</span></a><a class="cnd-row reveal" href="/conditions/psoriasis"><span class="cnum">03</span><span class="cname">Psoriasis</span><span class="cnote">Gut and liver function, calming the autoimmune response</span><span class="carr" aria-hidden="true">→</span></a><a class="cnd-row reveal" href="/conditions/acne"><span class="cnum">04</span><span class="cname">Acne</span><span class="cnote">Hormonal balance, gut health, microbial and dietary triggers</span><span class="carr" aria-hidden="true">→</span></a><a class="cnd-row reveal" href="/conditions/skin-infections"><span class="cnum">05</span><span class="cname">Skin infections</span><span class="cnote">The immune imbalance underneath, and the terrain that keeps it returning</span><span class="carr" aria-hidden="true">→</span></a><a class="cnd-row reveal" href="/conditions/rosacea"><span class="cnum">06</span><span class="cname">Rosacea</span><span class="cnote">Microbial imbalance, digestive triggers and lifestyle factors</span><span class="carr" aria-hidden="true">→</span></a><div class="clgroup clgroup-2 reveal"><span class="cltag">Whole-body health</span><span class="clnote">Skin is the focus, but the systems underneath it rarely stay in their lane.</span></div><a class="cnd-row reveal" href="/conditions/gut-health"><span class="cnum">07</span><span class="cname">Gut &amp; digestive health</span><span class="cnote">Bloating, irregularity and discomfort after eating</span><span class="carr" aria-hidden="true">→</span></a><a class="cnd-row reveal" href="/conditions/hormones"><span class="cnum">08</span><span class="cname">Hormones &amp; women’s health</span><span class="cnote">Cycles, PMS and perimenopause, alongside sleep and stress</span><span class="carr" aria-hidden="true">→</span></a><a class="cnd-row reveal" href="/conditions/fatigue"><span class="cnum">09</span><span class="cname">Fatigue &amp; energy</span><span class="cnote">For when rest has stopped fixing it</span><span class="carr" aria-hidden="true">→</span></a><a class="cnd-row reveal" href="/conditions/stress-sleep"><span class="cnum">10</span><span class="cname">Stress &amp; sleep</span><span class="cnote">A busy head at night, 3am waking, wired-then-flat days</span><span class="carr" aria-hidden="true">→</span></a></div><p class="cond-note reveal">Select any condition to read Kohei’s full approach.</p>
+    <div class="cond-list"><div class="clgroup reveal"><span class="cltag">Skin conditions</span></div><a class="cnd-row reveal" href="/conditions/eczema"><span class="cnum">01</span><span class="cname">Eczema</span><span class="cnote">Type, triggers, and rebalancing the gut and immune system</span><span class="carr" aria-hidden="true">→</span></a><a class="cnd-row reveal" href="/conditions/tsw"><span class="cnum">02</span><span class="cname">Topical Steroid Withdrawal</span><span class="cnote">Nervous-system support through the withdrawal process</span><span class="carr" aria-hidden="true">→</span></a><a class="cnd-row reveal" href="/conditions/psoriasis"><span class="cnum">03</span><span class="cname">Psoriasis</span><span class="cnote">Gut and liver function, calming the autoimmune response</span><span class="carr" aria-hidden="true">→</span></a><a class="cnd-row reveal" href="/conditions/acne"><span class="cnum">04</span><span class="cname">Acne</span><span class="cnote">Hormonal balance, gut health, microbial and dietary triggers</span><span class="carr" aria-hidden="true">→</span></a><a class="cnd-row reveal" href="/conditions/skin-infections"><span class="cnum">05</span><span class="cname">Skin infections</span><span class="cnote">The immune imbalance underneath, and the terrain that keeps it returning</span><span class="carr" aria-hidden="true">→</span></a><a class="cnd-row reveal" href="/conditions/rosacea"><span class="cnum">06</span><span class="cname">Rosacea</span><span class="cnote">Microbial imbalance, digestive triggers and lifestyle factors</span><span class="carr" aria-hidden="true">→</span></a></div><p class="cond-note reveal">Select any condition to read Kohei’s full approach.</p>
   </div>
 </section>
 
-<!-- BELIEF -->
-<section class="promise">
-  <div class="wrap">
-    <svg class="dwave" width="34" height="44" viewBox="0 0 34 44" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M17 2 C17 2 31 19 31 29 A14 14 0 1 1 3 29 C3 19 17 2 17 2 Z"/></svg>
-    <span class="eyebrow">Our belief · Wellness from within</span>
-    <h2>“Every health challenge has a path forward — and your skin is no exception.”</h2>
-    <p>Conditions like eczema and dermatitis are rarely just skin-deep; they’re often a reflection of an internal system asking for balance. By deeply listening to your story and taking a comprehensive, holistic approach, we work together to address the root causes and gently guide your body back to its natural state of harmony.</p>
-  </div>
-</section>
-
-<!-- APPROACH — the stepping stones -->
-<section class="pad" id="approach">
+<!-- SERVICES — tools behind the treatment -->
+<section class="pad services" id="services">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="eyebrow">The stepping stones</span>
-      <h2>A calm, considered path towards your desired results.</h2>
-      <p>Sometimes you just need reassurance when you’re putting your health in someone else’s hands. Here’s exactly what working together looks like.</p>
+      <span class="eyebrow">What treatment involves</span>
+      <h2>The tools behind the treatment.</h2>
+      <p>Every plan is built from your case, not a template. These are the methods Kohei draws on to put it together.</p>
     </div>
-    <div class="stones">
-      <div class="stone reveal"><div class="node">1</div><h3>Free discovery session</h3><p>A relaxed 15-minute conversation to ask anything about the consultations, the treatment process and how I can help you. No pressure, no obligations — just your peace of mind.</p><span class="meta">15 min · Free</span></div>
-      <div class="stone reveal d1"><div class="node">2</div><h3>Initial consultation</h3><p>A comprehensive 75-minute appointment to uncover the triggers and root cause of your skin condition. We assess your history, diet, lifestyle, mental-emotional health and much more — a completely holistic view.</p><span class="meta">75 min · By video</span></div>
-      <div class="stone reveal d2"><div class="node">3</div><h3>Your tailored plan</h3><p>A plan created only for you — nutrition, dietary and lifestyle support. No two plans are ever the same, because everyone is unique.</p><span class="meta">Individual</span></div>
-      <div class="stone reveal d3"><div class="node">4</div><h3>Review &amp; progress</h3><p>We track your progress together and adjust as your body responds — so you can see and feel the change over time. As your skin improves, the plan evolves with you.</p><span class="meta">Ongoing</span></div>
+    <div class="svc-list">
+      <div class="svc reveal">
+        <span class="sn"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3v5a4 4 0 0 0 8 0V3"/><path d="M12 12v3a5 5 0 0 0 5 5 3 3 0 0 0 3-3v-2"/><circle cx="20" cy="13" r="1.6"/></svg></span>
+        <div><h3>Naturopathic consultation</h3><p>A long-form appointment that goes through your history, diet, lifestyle and mental-emotional health — the whole picture, not just the skin.</p></div>
+      </div>
+      
+      
+      
+      <div class="svc wide reveal">
+        <span class="sn"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17c3.5 0 3.5-4 7-4s3.5 4 7 4 3.5-2 4-2.6"/><path d="M3 11c3.5 0 3.5-4 7-4s3.5 4 7 4 3.5-2 4-2.6"/></svg></span>
+        <div><h3>Dietary and lifestyle advice</h3><p>The part that holds everything else in place. Practical, specific changes to how you eat, sleep, move and manage stress — built around the life you actually have, so they last past the treatment plan.</p></div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- HOW IT WORKS — the journey -->
+<!-- STORY — Kohei's eczema story -->
+<section class="pad story" id="story">
+  <div class="wrap">
+    <div class="story-grid">
+      <div class="story-media reveal">
+        <div class="main"><img src="assets/kohei-microscope.jpg" alt="Kohei Iguchi at work in the Waterwell Clinic consulting room" loading="lazy" decoding="async" width="1600" height="1066"></div>
+        <div class="stack"><img src="assets/credentials.jpg" alt="Kohei Iguchi's qualifications, Bachelor of Natural Medicine" loading="lazy" decoding="async" width="1200" height="800"></div>
+      </div>
+      <div class="story-copy">
+        <h2 class="eyebrow story-h2 reveal">My eczema story</h2>
+        <blockquote class="reveal d1">“Eczema is not just a skin condition. It’s an internal condition. I know, because I have suffered from it myself.”</blockquote>
+        <div class="narrative">
+          <p class="reveal d1">Before I became a naturopath, I was covered head to toe in eczema. It grew so severe I had to resign from my job, and was <span class="hl">bed-ridden for nearly five months</span> — living on steroids and antibiotics, in constant pain from dry, weeping, itchy skin. It can only be described as agonising, torturous and hopeless.</p>
+          <p class="reveal d2">When the steroids stopped and every medical avenue was exhausted, a naturopath took me through a consultation that changed everything. A year and a half later, through nutritional, dietary and lifestyle support, my skin had settled. That experience became my lifelong passion for natural medicine.</p>
+          <p class="reveal d2">Today I’m the founder and director of Waterwell — a holistic skin clinic on a mission to care for people going through the same hardship I did, or to help others avoid it altogether.</p>
+        </div>
+        <div class="signoff reveal d3">
+          <p class="nmline"><span class="nm">Kohei Iguchi</span><span class="cr">BNatMed, BSc, MATMS</span></p>
+          <div class="creds">
+            <span>Qualified Naturopath</span>
+            <span>10 years’ practice</span>
+            <span>Hundreds of skin patients treated</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STEPPING STONES — the journey -->
 <section class="pad flow-sec" id="how">
   <div class="wrap">
     <div class="sec-head reveal" style="max-width:760px">
-      <h2>A clear path from flare-ups to healthy skin.</h2>
-      <p>No jargon, no guesswork — five considered steps that take you from where you are now to skin that looks after itself.</p>
+      <span class="eyebrow">The stepping stones</span>
+      <h2>From flare-ups to the skin that you feel comfortable in.</h2>
+      <p>No guesswork — five considered steps that take you from where you are now to skin that looks after itself.</p>
     </div>
     <div class="journey">
       <article class="jstep lead reveal">
@@ -990,37 +1033,35 @@
   </div>
 </section>
 
+<!-- CLEAR PATH — what working together is -->
+<section class="pad" id="approach">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">A clear path</span>
+      <h2>A calm, considered path towards your desired results.</h2>
+      <p>Sometimes you just need reassurance when you’re putting your health in someone else’s hands. Here’s exactly what working together looks like.</p>
+    </div>
+    <div class="stones">
+      <div class="stone reveal"><div class="node">1</div><h3>Free discovery session</h3><p>A relaxed 15-minute conversation to ask anything about the consultations, the treatment process and how I can help you. No pressure, no obligations — just your peace of mind.</p><span class="meta">15 min · Free</span></div>
+      <div class="stone reveal d1"><div class="node">2</div><h3>Initial consultation</h3><p>A comprehensive 75-minute appointment to uncover the triggers and root cause of your skin condition. We assess your history, diet, lifestyle, mental-emotional health and much more — a completely holistic view.</p><span class="meta">75 min · By video</span></div>
+      <div class="stone reveal d2"><div class="node">3</div><h3>Your tailored plan</h3><p>A plan created only for you — nutrition, dietary and lifestyle support. No two plans are ever the same, because everyone is unique.</p><span class="meta">Individual</span></div>
+      <div class="stone reveal d3"><div class="node">4</div><h3>Review &amp; progress</h3><p>We track your progress together and adjust as your body responds — so you can see and feel the change over time. As your skin improves, the plan evolves with you.</p><span class="meta">Ongoing</span></div>
+    </div>
+  </div>
+</section>
+
 <!-- RESULTS -->
 
 <!-- TESTIMONIALS -->
 
-<!-- STORY — Kohei's eczema story -->
-<section class="pad story" id="story">
+<!-- BELIEF -->
+<section class="promise">
   <div class="wrap">
-    <div class="story-grid">
-      <div class="story-media reveal">
-        <div class="main"><img src="assets/kohei-microscope.jpg" alt="Kohei Iguchi at work in the Waterwell Clinic consulting room" loading="lazy" decoding="async" width="1600" height="1066"></div>
-        <div class="stack"><img src="assets/credentials.jpg" alt="Kohei Iguchi's qualifications, Bachelor of Natural Medicine" loading="lazy" decoding="async" width="1200" height="800"></div>
-      </div>
-      <div class="story-copy">
-        <h2 class="eyebrow story-h2 reveal">My eczema story</h2>
-        <blockquote class="reveal d1">“Eczema is not just a skin condition. It’s an internal condition. I know, because I have suffered from it myself.”</blockquote>
-        <div class="narrative">
-          <p class="reveal d1">Before I became a naturopath, I was covered head to toe in eczema. It grew so severe I had to resign from my job, and was <span class="hl">bed-ridden for nearly five months</span> — living on steroids and antibiotics, in constant pain from dry, weeping, itchy skin. It can only be described as agonising, torturous and hopeless.</p>
-          <p class="reveal d2">When the steroids stopped and every medical avenue was exhausted, a naturopath took me through a consultation that changed everything. A year and a half later, through nutritional, dietary and lifestyle support, my skin had settled. That experience became my lifelong passion for natural medicine.</p>
-          <p class="reveal d2">Today I’m the founder and director of Waterwell — a holistic skin clinic on a mission to care for people going through the same hardship I did, or to help others avoid it altogether.</p>
-        </div>
-        <div class="signoff reveal d3">
-          <div class="nm">Kohei Iguchi</div>
-          <div class="cr">BNatMed, BSc · Qualified Naturopath</div>
-          <div class="creds">
-            <span>Qualified Naturopath</span>
-            <span>10+ years’ practice</span>
-            <span>Consults by secure video</span>
-          </div>
-        </div>
-      </div>
-    </div>
+    <svg class="dwave" width="34" height="44" viewBox="0 0 34 44" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M17 2 C17 2 31 19 31 29 A14 14 0 1 1 3 29 C3 19 17 2 17 2 Z"/></svg>
+    <span class="eyebrow">Our belief</span>
+    <h2 class="promise-lead">“Wellness from within.”</h2>
+    <p class="promise-2nd">“Every health challenge has a path forward — and your skin is no exception.”</p>
+    <p>Conditions like eczema and dermatitis are rarely just skin-deep; they’re often a reflection of an internal system asking for balance. By deeply listening to your story and taking a comprehensive, holistic approach, we work together to address the root causes and gently guide your body back to its natural state of harmony.</p>
   </div>
 </section>
 
@@ -1045,6 +1086,16 @@
         <b>Available anywhere in the world</b>
         <span class="bt">In town or halfway across the globe — distance is never a barrier to being seen.</span>
       </div>
+      <div class="bento-cell bento-b reveal d2">
+        <span class="vc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17h16M6 17V9.5L7.8 5h8.4L18 9.5V17"/><circle cx="8" cy="17" r="1.6"/><circle cx="16" cy="17" r="1.6"/><path d="M6 11h12"/></svg></span>
+        <b>No traffic, no waiting room</b>
+        <span class="bt">Nothing to drive to and nowhere to park — your appointment starts on time, from wherever you are.</span>
+      </div>
+      <div class="bento-cell bento-b reveal d3">
+        <span class="vc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-5.7 7-11a7 7 0 1 0-14 0c0 5.3 7 11 7 11z"/><path d="M9.5 10.5c1.5 1.2 3.5 1.2 5 0"/></svg></span>
+        <b>Lower travel costs and emissions</b>
+        <span class="bt">No fuel, no fares, no time off work — and a lighter footprint for every appointment.</span>
+      </div>
     </div>
   </div>
 </section>
@@ -1060,7 +1111,7 @@
         <a class="btn btn-ghost" style="margin-top:24px" href="#visit">Book a free discovery session →</a>
       </div>
       <div class="faq-list reveal d1">
-        <div class="faq-item"><button class="faq-q">Do you treat children and babies?<span class="ic"></span></button><div class="faq-a"><p>Absolutely. Children are far more likely to suffer from eczema than adults, so many of our patients are little ones. Children get eczema far more often than adults, so a large share of the practice is little ones. Kohei works through it with the parent as much as the child, so you know what you are doing and why at every stage.</p></div></div>
+        <div class="faq-item"><button class="faq-q">Do you treat children and babies?<span class="ic"></span></button><div class="faq-a"><p>Absolutely. Children are far more likely to suffer from eczema than adults, so many of our patients are little ones. Kohei works through it with the parent as much as the child, so you know what you are doing and why at every stage.</p></div></div>
         <div class="faq-item"><button class="faq-q">How does the free discovery session work?<span class="ic"></span></button><div class="faq-a"><p>It’s a relaxed 15-minute conversation to chat about your current skin issue and how I may be able to help — so you can feel confident before deciding to book an initial consultation. No pressure, no obligation.</p></div></div>
         <div class="faq-item"><button class="faq-q">How does a naturopath treat eczema differently to a dermatologist?<span class="ic"></span></button><div class="faq-a"><p>The core difference comes down to philosophy: symptom management vs root-cause investigation. A dermatologist can offer excellent diagnostics and medications that improve symptoms quickly, but these can mask the problem without addressing what’s driving it. As naturopaths we investigate the internal balance — and through nutrition, dietary and lifestyle adjustments, we work to restore it.</p></div></div>
         <div class="faq-item"><button class="faq-q">Can I keep taking my current medication?<span class="ic"></span></button><div class="faq-a"><p>Yes. Naturopathic care is complementary — it works alongside your existing care. Kohei will never tell you to stop a prescribed medication without your wish to and a conversation with your doctor first. Many patients find that, as their health improves, they can wean off medications at a comfortable pace.</p></div></div>
@@ -1127,6 +1178,7 @@
       <div style="position:relative;z-index:2">
         <h3>Let’s begin.</h3>
         <p>Start with a free 15-minute discovery session — no commitment, just a conversation about your skin and how I can help. Tell me a little below and I’ll be in touch.</p>
+        <p class="pre-note">Before we meet you’re welcome to send <b>photos of your skin</b> and a <b>completed health questionnaire</b>, so we can spend the session talking rather than gathering background. I’ll send the questionnaire when we book.</p>
         <div class="crow" style="margin-top:30px">
           <div class="r"><span>Email &amp; enquiries</span><b style="font-size:1.1rem">info@waterwellclinic.co.nz</b></div>
           <div class="r"><span>Consulting</span><b>Online · worldwide</b></div>
@@ -1154,6 +1206,8 @@
             <option value="Something else">Something else</option>
           </select>
         </div>
+        <div class="field"><label for="bf-city">Your city</label><input id="bf-city" name="city" type="text" placeholder="Your nearest city" autocomplete="address-level2" required /></div>
+        <div class="field"><label for="bf-tz">Time zone <span style="text-transform:none;letter-spacing:0;color:rgba(159,192,163,.85)">(so reminders arrive at the right hour)</span></label><input id="bf-tz" name="timezone" type="text" placeholder="Detected automatically" readonly /></div>
         <div class="field full"><label for="bf-msg">Anything you’d like Kohei to know? <span style="text-transform:none;letter-spacing:0;color:rgba(159,192,163,.85)">(optional)</span></label><textarea id="bf-msg" name="msg" placeholder="A little about your situation and what you’ve tried…"></textarea></div>
         <button class="btn btn-primary full" style="background:#fff;color:var(--navy)" type="submit">Request my free discovery session <span class="arrow">→</span></button>
         <p class="form-note">No obligation. Prefer to write directly? <a href="mailto:info@waterwellclinic.co.nz">info@waterwellclinic.co.nz</a></p>
@@ -1301,6 +1355,17 @@
     // While it stays as-is the form falls back to mailto, so behaviour never
     // regresses. Do NOT add a `ccemail` field: Web3Forms free rejects it with
     // HTTP 400 and the submission dies invisibly. Test against production.
+    // Kohei's VA sizes appointment reminders off this. Without it, reminders
+    // default to Australian time and international patients get the wrong hour.
+    // Intl gives the IANA zone directly; the field stays readonly so it cannot
+    // disagree with the browser, and only opens up if detection fails.
+    (function(){
+      const tz = document.getElementById('bf-tz');
+      if(!tz) return;
+      try { tz.value = Intl.DateTimeFormat().resolvedOptions().timeZone || ''; } catch(e){}
+      if(!tz.value){ tz.removeAttribute('readonly'); tz.placeholder = 'e.g. Australia/Melbourne'; }
+    })();
+
     const WEB3FORMS_KEY = 'REPLACE_WITH_WEB3FORMS_ACCESS_KEY';
     const KEY_SET = /^[0-9a-f-]{30,}$/i.test(WEB3FORMS_KEY);
 
@@ -1457,13 +1522,18 @@
     else addEventListener('load', hydrate, {once:true});
 
     let i = 0, timer = null;
-    const paint = () => {
+    // Kohei, 11 Aug: the lower copy lagged the image. paint() used to swap the
+    // dots AND the photo the instant go() fired, while the headline and lead
+    // waited out the 380ms fade — so the picture changed under copy that still
+    // belonged to the previous message. Split them: the dots are a control and
+    // should answer a click immediately, the photo belongs with the copy.
+    const paintDots = () =>
       dots.forEach((d,k) => d.setAttribute('aria-selected', String(k===i)));
-      shots.forEach((im,k) => {
-        im.classList.toggle('on', k===i);
-        im.setAttribute('aria-hidden', String(k!==i));
-      });
-    };
+    const paintShot = () => shots.forEach((im,k) => {
+      im.classList.toggle('on', k===i);
+      im.setAttribute('aria-hidden', String(k!==i));
+    });
+    const paint = () => { paintDots(); paintShot(); };
 
     // The three headlines do not wrap to the same number of lines, so without
     // a reserved height the CTAs below jump every time the message changes.
@@ -1496,11 +1566,12 @@
     const go = n => {
       n = (n + MSG.length) % MSG.length;
       if(n === i) return;
-      i = n; paint();
-      if(reduce){ h1.innerHTML = MSG[i].h1; lead.textContent = MSG[i].lead; return; }
+      i = n; paintDots();
+      if(reduce){ paintShot(); h1.innerHTML = MSG[i].h1; lead.textContent = MSG[i].lead; return; }
       rot.classList.add('fading');
       setTimeout(() => {
         h1.innerHTML = MSG[i].h1; lead.textContent = MSG[i].lead;
+        paintShot();
         rot.classList.remove('fading');
       }, 380);
     };
