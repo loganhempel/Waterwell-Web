@@ -921,6 +921,85 @@
   .hic{width:42px;height:42px}
   .htitle{flex:1;min-width:0}
 }
+
+/* ================================================================
+   SCROLL MOTION — 12 Aug 2026
+   Native scroll-driven animation, behind @supports and a
+   reduced-motion guard. Deliberately NOT JavaScript: this site was
+   once reported as "laggy", and the cause was reveal animations
+   gating content, not frame rate. These run on the compositor and
+   cost nothing on the main thread.
+
+   Hard rule applied throughout: nothing here may delay text becoming
+   readable. Every target is either decorative (a spine, a watermark,
+   an icon) or a child of an element whose own reveal already ran.
+   Body copy is never the thing being animated, and every range is
+   finished well before the element reaches the middle of the screen.
+   ================================================================ */
+@media (prefers-reduced-motion: no-preference){
+  @supports (animation-timeline: view()){
+
+    /* The spine draws itself as you travel down the stepping stones. */
+    .mpath path{stroke-dasharray:1;stroke-dashoffset:1;
+      animation:ww-draw linear both;
+      animation-timeline:view();animation-range:entry 15% cover 65%}
+    @keyframes ww-draw{to{stroke-dashoffset:0}}
+
+    /* Nodes arrive on the spine just after it reaches them. */
+    .mstep .mnode{animation:ww-pop linear both;
+      animation-timeline:view();animation-range:entry 25% entry 95%}
+    @keyframes ww-pop{from{transform:scale(.55);opacity:0}to{transform:scale(1);opacity:1}}
+
+    /* Watermark numerals drift against the scroll for a little depth.
+       Deliberately NOT will-change: promoting these was measured and made it
+       worse (p95 28ms -> 38ms at 6x throttle). Extra compositor layers cost
+       more here than the repaints they save. */
+    .mstep .mwm{animation:ww-drift linear both;
+      animation-timeline:view();animation-range:cover}
+    @keyframes ww-drift{from{transform:translateY(20px)}to{transform:translateY(-20px)}}
+
+    /* Section eyebrow rules draw out from the left. */
+    .eyebrow::before{transform-origin:left center;
+      animation:ww-rule linear both;
+      animation-timeline:view();animation-range:entry 30% entry 85%}
+    @keyframes ww-rule{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+
+    /* Service icons settle in, staggered for free — each one is timed off
+       its own position in the viewport, not a fixed per-item delay. */
+    .svc .sn{animation:ww-rise linear both;
+      animation-timeline:view();animation-range:entry 20% entry 80%}
+    @keyframes ww-rise{from{transform:translateY(12px) scale(.8);opacity:0}
+                       to{transform:none;opacity:1}}
+
+    /* Condition numerals slide in ahead of their row. */
+    .cnd-row .cnum{animation:ww-slide linear both;
+      animation-timeline:view();animation-range:entry 20% entry 75%}
+    @keyframes ww-slide{from{transform:translateX(-10px);opacity:0}to{transform:none;opacity:1}}
+
+    /* A slow push on the proof photography, and on the story portraits.
+       Small numbers on purpose — these sit next to text that has to stay
+       comfortable to read. */
+    .rcard img{animation:ww-push linear both;
+      animation-timeline:view();animation-range:entry 0% cover 28%}
+    @keyframes ww-push{from{transform:scale(1.045)}to{transform:scale(1)}}
+
+    .story-media .main img{animation:ww-para linear both;
+      animation-timeline:view();animation-range:cover}
+    @keyframes ww-para{from{transform:translateY(-14px)}to{transform:translateY(14px)}}
+    .story-media .stack img{animation:ww-para-2 linear both;
+      animation-timeline:view();animation-range:cover}
+    @keyframes ww-para-2{from{transform:translateY(16px)}to{transform:translateY(-16px)}}
+
+    /* The belief quote gains a touch of scale as it takes the screen. */
+    .promise-lead{animation:ww-quote linear both;
+      animation-timeline:view();animation-range:entry 20% cover 45%}
+    @keyframes ww-quote{from{transform:translateY(16px);opacity:.5}to{transform:none;opacity:1}}
+
+    /* Accordion icons lift in as the row arrives. */
+    .hic{animation:ww-rise linear both;
+      animation-timeline:view();animation-range:entry 25% entry 85%}
+  }
+}
 </style>
 </head>
 <body>
@@ -1084,7 +1163,7 @@
            whatever height the steps end up at, so it never has to be kept in
            sync with their measured heights. -->
       <svg class="mpath" viewBox="0 0 100 1000" preserveAspectRatio="none" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true">
-        <path d="M50 0 C 12 105, 88 145, 50 250 C 12 355, 88 395, 50 500 C 12 605, 88 645, 50 750 C 12 855, 76 915, 50 1000"/>
+        <path pathLength="1" d="M50 0 C 12 105, 88 145, 50 250 C 12 355, 88 395, 50 500 C 12 605, 88 645, 50 750 C 12 855, 76 915, 50 1000"/>
       </svg>
       <ol class="msteps">
       <li class="mstep reveal" data-reveal>

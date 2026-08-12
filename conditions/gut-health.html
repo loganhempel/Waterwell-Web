@@ -137,6 +137,16 @@
   @media(max-width:460px){.pb-row{grid-template-columns:1fr;gap:10px}
     .pb-row li{grid-template-columns:auto 1fr;align-items:center;gap:6px 14px;padding:15px 16px}
     .pb-ic{grid-row:1/3} .pb-row li b{align-self:end} .pb-m{align-self:start}}
+  @media (prefers-reduced-motion: no-preference){
+    @supports (animation-timeline: view()){
+      .pb-row li{animation:pb-in linear both;
+        animation-timeline:view();animation-range:entry 15% entry 80%}
+      @keyframes pb-in{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+      .path-brief .eyebrow::before{transform-origin:left center;animation:pb-rule linear both;
+        animation-timeline:view();animation-range:entry 30% entry 85%}
+      @keyframes pb-rule{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+    }
+  }
 </style>
 </head>
 <body>
