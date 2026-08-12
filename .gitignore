@@ -23,3 +23,7 @@ tools/
 # Archived site versions — contain Google Ads keyword/negative/RSA exports
 # and a client plan xlsx. This repo is PUBLIC.
 _versions/
+
+# Client-facing deliverables — sent directly, never served from the site
+Waterwell-Update-for-Kohei.*
+Waterwell-Build-Summary-for-Kohei.*
