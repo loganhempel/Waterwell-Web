@@ -240,7 +240,6 @@
   .droplet-bg path:nth-child(2){animation-delay:.5s}.droplet-bg path:nth-child(3){animation-delay:.75s}.droplet-bg path:nth-child(4){animation-delay:1s}
   @keyframes draw{to{stroke-dashoffset:0}}
 
-
   section{position:relative}
   .pad{padding:96px 0}.skip-link{position:absolute;left:-9999px;top:0;z-index:200;background:var(--navy);color:#fff;padding:12px 18px;border-radius:0 0 8px 0;font-weight:700;text-decoration:none;display:inline-block;min-height:44px;line-height:20px}.skip-link:focus{left:0}h2.story-h2{font:inherit;letter-spacing:inherit;text-transform:inherit;margin:0}.pad-lg{padding:120px 0}
   .sec-head{max-width:680px;margin-bottom:52px}
@@ -289,35 +288,11 @@
 
   /* ============ HOW IT WORKS — the journey ============ */
   .journey{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
-  .jstep{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:34px 34px 32px;position:relative;overflow:hidden;transition:transform .2s cubic-bezier(.16,1,.3,1),box-shadow .5s,border-color .5s}
-  .jstep:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:transparent}
-  .jstep .jwm{position:absolute;top:-18px;right:6px;font-family:var(--display);font-size:9rem;line-height:1;color:var(--navy);opacity:.05;pointer-events:none;font-style:italic}
-  .jstep .jhead{display:flex;align-items:center;gap:16px;margin-bottom:16px}
-  .jstep .jic{width:52px;height:52px;border-radius:15px;background:var(--bg);color:var(--sage);display:flex;align-items:center;justify-content:center;flex:0 0 auto}
-  .jstep .jic svg{width:26px;height:26px}
-  .jstep .jn{font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--sand-text)}
-  .jstep h3{font-size:1.5rem;line-height:1.1;margin-bottom:11px}
-  .jstep p{font-size:1rem;color:var(--muted);line-height:1.6;position:relative;z-index:1;max-width:52ch}
-  .jstep p b{color:var(--ink);font-weight:600}
   /* first step = full-width navy "start here" card */
   .jstep.lead{grid-column:1/-1;background:var(--navy);border-color:transparent;display:grid;grid-template-columns:auto 1fr;gap:36px;align-items:center;padding:40px 44px}
-  .jstep.lead:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
-  .jstep.lead .jwm{color:#fff;opacity:.07;font-size:11rem;top:-30px}
-  .jstep.lead .jic{width:64px;height:64px;border-radius:18px;background:rgba(159,192,163,.16);color:var(--sage-bright)}
-  .jstep.lead .jic svg{width:32px;height:32px}
-  .jstep.lead .jn{color:var(--sage-bright)}
-  .jstep.lead h3{color:#fff;font-size:1.85rem;margin:8px 0 12px}
-  .jstep.lead p{color:rgba(255,255,255,.78);max-width:64ch;font-size:1.06rem}
-  .jstep.lead p b{color:#fff}
-  .jstep.lead .lead-badge{display:flex;flex-direction:column;align-items:center;gap:12px}
 
   /* THE STEPPING STONES — connected horizontal journey */
-  /* C1 zig-zag path (ported from Root & Bloom 3 Aug) */.stones{position:relative;margin-top:26px;max-width:940px;margin-left:auto;margin-right:auto;display:flex;flex-direction:column;gap:0}.stones::before{content:'';position:absolute;top:14px;bottom:14px;left:50%;width:2px;transform:translateX(-1px);background:linear-gradient(180deg,var(--sage-bright),var(--sand));opacity:.45;z-index:0}.stone{position:relative;z-index:1;width:calc(50% - 46px);padding:26px 0 34px}.stone:nth-child(odd){align-self:flex-start;text-align:right;padding-right:8px}.stone:nth-child(even){align-self:flex-end;text-align:left;padding-left:8px}.stone .node{position:absolute;top:26px}.stone:nth-child(odd) .node{right:-74px}.stone:nth-child(even) .node{left:-74px}.stone::after{content:'';position:absolute;top:53px;width:32px;height:1px;background:var(--line)}.stone:nth-child(odd)::after{right:-42px}.stone:nth-child(even)::after{left:-42px}.stone:last-child{padding-bottom:6px}
-  .stone .node{width:56px;height:56px;border-radius:50%;background:var(--paper);border:1px solid var(--line);box-shadow:var(--shadow-soft);color:var(--navy);font-family:var(--display);font-size:1.5rem;display:flex;align-items:center;justify-content:center;transition:transform .45s cubic-bezier(.16,1,.3,1),background .45s,color .45s}
-  .stone:hover .node{transform:translateY(-4px);background:var(--navy);color:#fff}
-  .stone h3{font-size:1.32rem;margin:24px 0 10px}
-  .stone p{font-size:.95rem;color:var(--muted);line-height:1.55}
-  .stone .meta{margin-top:16px;display:inline-block;font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--sage-text);border:1px solid var(--line);border-radius:30px;padding:5px 13px}
+  /* C1 zig-zag path (ported from Root & Bloom 3 Aug) */.stones{position:relative;margin-top:26px;max-width:940px;margin-left:auto;margin-right:auto;display:flex;flex-direction:column;gap:0}
 
   /* story */
   .story{background:var(--bg-soft)}
@@ -546,15 +521,8 @@
     .intro-inner{grid-template-columns:1fr;justify-items:center;text-align:center;gap:22px}
     .intro-copy h2{justify-content:center}
     .portrait{max-width:380px;margin:10px auto 0}
-    .cond-grid,.svc-list,.stones,.tst-grid,.visit-grid{grid-template-columns:1fr}
+    .cond-grid,.svc-list,.tst-grid,.visit-grid{grid-template-columns:1fr}
     .ba-grid{grid-template-columns:1fr}
-    .journey{grid-template-columns:1fr;gap:14px}
-    .jstep.lead{grid-template-columns:1fr;text-align:left;padding:32px 28px}
-    .jstep.lead .lead-badge{flex-direction:row;justify-content:flex-start}
-    .stones{gap:0;max-width:none}.stones::before{display:none}.stone,.stone:nth-child(odd),.stone:nth-child(even){width:100%;align-self:stretch;text-align:left;padding:22px 0;border-bottom:1px solid var(--line)}.stone::after{display:none}.stone .node,.stone:nth-child(odd) .node,.stone:nth-child(even) .node{position:static;right:auto;left:auto}
-    .stone:last-child{border-bottom:0}
-    .stone h3{margin:16px 0 8px}
-    .stone .meta{margin-top:12px}
     .svc:nth-child(even){padding-left:0;border-left:0}.svc:nth-child(odd){padding-right:0}
     .tst.big{grid-column:span 1}
     .story-media .stack{position:relative;right:0;bottom:0;width:60%;margin:-30px 0 0 auto;border-width:5px}
@@ -632,7 +600,7 @@
   .btn-primary:hover{background:linear-gradient(180deg,#0f426f,var(--navy-deep))}
 
   /* --- shared card depth (base cards only; navy/sage modifiers keep their fill via specificity) --- */
-  .cond,.jstep,.tst,.loc{background:linear-gradient(180deg,#ffffff,#fbf7ef);box-shadow:var(--shadow-soft), var(--hair)}
+  .cond,.tst,.loc{background:linear-gradient(180deg,#ffffff,#fbf7ef);box-shadow:var(--shadow-soft), var(--hair)}
   .virtual-card,.book-cta-card{box-shadow:var(--shadow-lg), var(--hair)}
   .rating-band{box-shadow:var(--shadow-soft), var(--hair)}
 
@@ -731,19 +699,17 @@
   .tst .who{display:flex;align-items:center;gap:10px}
   .tst .who::before{content:attr(data-initial);width:26px;height:26px;border-radius:50%;background:var(--sage);color:#fff;font-family:var(--mono);font-size:10.5px;letter-spacing:0;text-transform:uppercase;display:flex;align-items:center;justify-content:center;flex:0 0 auto}
   .tst.big .who::before{background:rgba(255,255,255,.25)}
-/* craft pass: measured line-length caps (42-78ch target) */.sec-head p{max-width:64ch}.results .sec-head p{max-width:62ch}.jstep.lead .lead-copy p{max-width:66ch}.services .sec-head p{max-width:62ch}.tst p{max-width:52ch}/* craft pass: 40px minimum hit area on small links (visual size unchanged) */.nav-links a{padding-top:9px;padding-bottom:9px}footer li a,footer .foot-bottom a{display:inline-block;padding:9px 0}footer li{margin-bottom:5px}.loc a,.crow a{display:inline-block;padding:9px 0}/* craft pass 2 */.rcard .pill,.compare .lbl{background:rgba(78,97,81,.94)}p.disclaimer{max-width:70ch}.jstep.lead .lead-copy p{max-width:62ch}.sec-head p{max-width:62ch}.crow a,.r a,.loc a,.bc-fallback a,.bc-fallback-state a{display:inline-block;padding:10px 0}.foot-bottom a{display:inline-block;padding:8px 0}/* craft pass 3 */.compare .lbl.r{background:rgba(78,97,81,.94)}.nav-inner a.brand{display:inline-flex;align-items:center;padding:6px 0}.nav-cta a.nav-phone{padding-top:2px;padding-bottom:2px}.form-note a{display:inline-block;padding:10px 0}/* fix: vc-pill sits on navy inside .bento-feature — --sage-text is a cream-background token and measured 2.19:1 there. --sage-bright is 5.83:1. */.bento-feature .vc-pill{color:var(--sage-bright)}@media(max-width:860px){.cnd-row{grid-template-columns:34px minmax(0,1fr) 22px}.cnd-row .cnum{grid-column:1;grid-row:1}.cnd-row .cname{grid-column:2;grid-row:1}.cnd-row .carr{grid-column:3;grid-row:1;align-self:center;opacity:1;transform:none}.cnd-row .cnote{grid-column:2/-1;grid-row:2;margin-top:2px}}/* agent batch 1 */.sec-cta{margin-top:52px;display:flex;align-items:center;gap:22px;flex-wrap:wrap}.sec-cta-note{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--sage-text)}.flow-sec .sec-cta-note{color:var(--sage-text)}@media(max-width:640px){.sec-cta{margin-top:36px;gap:14px}.sec-cta .btn{width:100%;justify-content:center}}.mcta a.book{flex:1;white-space:nowrap}@media(max-width:980px){body{padding-bottom:76px}}/* distill 3 Aug: vertical rhythm, appended so it wins the cascade */
+/* craft pass: measured line-length caps (42-78ch target) */.sec-head p{max-width:64ch}.results .sec-head p{max-width:62ch}.services .sec-head p{max-width:62ch}.tst p{max-width:52ch}/* craft pass: 40px minimum hit area on small links (visual size unchanged) */.nav-links a{padding-top:9px;padding-bottom:9px}footer li a,footer .foot-bottom a{display:inline-block;padding:9px 0}footer li{margin-bottom:5px}.loc a,.crow a{display:inline-block;padding:9px 0}/* craft pass 2 */.rcard .pill,.compare .lbl{background:rgba(78,97,81,.94)}p.disclaimer{max-width:70ch}.sec-head p{max-width:62ch}.crow a,.r a,.loc a,.bc-fallback a,.bc-fallback-state a{display:inline-block;padding:10px 0}.foot-bottom a{display:inline-block;padding:8px 0}/* craft pass 3 */.compare .lbl.r{background:rgba(78,97,81,.94)}.nav-inner a.brand{display:inline-flex;align-items:center;padding:6px 0}.nav-cta a.nav-phone{padding-top:2px;padding-bottom:2px}.form-note a{display:inline-block;padding:10px 0}/* fix: vc-pill sits on navy inside .bento-feature — --sage-text is a cream-background token and measured 2.19:1 there. --sage-bright is 5.83:1. */.bento-feature .vc-pill{color:var(--sage-bright)}@media(max-width:860px){.cnd-row{grid-template-columns:34px minmax(0,1fr) 22px}.cnd-row .cnum{grid-column:1;grid-row:1}.cnd-row .cname{grid-column:2;grid-row:1}.cnd-row .carr{grid-column:3;grid-row:1;align-self:center;opacity:1;transform:none}.cnd-row .cnote{grid-column:2/-1;grid-row:2;margin-top:2px}}/* agent batch 1 */.sec-cta{margin-top:52px;display:flex;align-items:center;gap:22px;flex-wrap:wrap}.sec-cta-note{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--sage-text)}.flow-sec .sec-cta-note{color:var(--sage-text)}@media(max-width:640px){.sec-cta{margin-top:36px;gap:14px}.sec-cta .btn{width:100%;justify-content:center}}.mcta a.book{flex:1;white-space:nowrap}@media(max-width:980px){body{padding-bottom:76px}}/* distill 3 Aug: vertical rhythm, appended so it wins the cascade */
 @media(max-width:640px){
   .pad{padding:44px 0}
   .pad-lg{padding:56px 0}
   .hero{padding:96px 0 44px}
-  .journey{gap:12px}
   .story .story-grid{gap:26px}
 }
 @media(min-width:641px) and (max-width:980px){
   .pad{padding:68px 0}
   .pad-lg{padding:84px 0}
 }
-
 
 /* ================================================================
    #how — "the stepping stones" as a meandering path, and
