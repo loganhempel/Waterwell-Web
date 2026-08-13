@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Internal working material is kept off the deployment by .vercelignore
+# rather than by robots, which only asks politely.
+
+Sitemap: https://waterwellclinic.com/sitemap.xml

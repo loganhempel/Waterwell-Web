@@ -147,6 +147,24 @@
       @keyframes pb-rule{from{transform:scaleX(0)}to{transform:scaleX(1)}}
     }
   }
+
+  .cta-form{margin-top:26px;text-align:left;display:grid;gap:12px}
+  .cta-form .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .cta-form label{display:block;font-family:var(--mono);font-size:10.5px;
+    letter-spacing:.12em;text-transform:uppercase;color:var(--sage-bright);margin-bottom:6px}
+  .cta-form input,.cta-form textarea{width:100%;font:inherit;font-size:15px;
+    padding:13px 15px;border:1px solid rgba(255,255,255,.45);border-radius:12px;
+    background:var(--paper);color:var(--ink);box-sizing:border-box}
+  .cta-form textarea{min-height:88px;resize:vertical}
+  .cta-form input:focus,.cta-form textarea:focus{outline:2px solid var(--sage);
+    outline-offset:1px;border-color:transparent}
+  .cta-form button{width:100%;justify-content:center;margin-top:2px}
+  .cta-form .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+  .cta-form .fnote{font-size:.86rem;color:rgba(255,255,255,.75);margin:0}
+  .cta-form .msg{font-size:.9rem;margin:0;min-height:1.2em}
+  .cta-form .msg.ok{color:var(--sage-bright)} .cta-form .msg.err{color:#ffb4a2}
+  @media(max-width:560px){ .cta-form .row{grid-template-columns:1fr} }
+
 </style>
 </head>
 <body>
@@ -189,8 +207,31 @@
 <section class="cta"><div class="wrap"><div class="cta-inner">
   <h2>Not sure if we can help with your psoriasis?</h2>
   <p>Start with a free 15-minute discovery session — no commitment, just a conversation about what’s going on and whether Kohei is the right fit.</p>
-  <a class="btn btn-primary" href="/#visit">Book a free discovery session <span class="arrow">→</span></a>
   <div class="reassure">15 mins · no cost · no commitment · just a conversation</div>
+
+  <form class="cta-form" id="cform" novalidate>
+    <div class="hp" aria-hidden="true"><label for="cf-web">Website</label>
+      <input id="cf-web" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+    <div class="row">
+      <div><label for="cf-name">Your name</label>
+        <input id="cf-name" name="name" type="text" autocomplete="name" required></div>
+      <div><label for="cf-email">Email</label>
+        <input id="cf-email" name="email" type="email" autocomplete="email" inputmode="email" required></div>
+    </div>
+    <div class="row">
+      <div><label for="cf-city">Your city</label>
+        <input id="cf-city" name="city" type="text" placeholder="Your nearest city" autocomplete="address-level2" required></div>
+      <div><label for="cf-tz">Time zone</label>
+        <input id="cf-tz" name="timezone" type="text" placeholder="Detected automatically" readonly></div>
+    </div>
+    <div><label for="cf-msg">Anything you’d like Kohei to know? (optional)</label>
+      <textarea id="cf-msg" name="msg" placeholder="A little about your situation and what you’ve tried…"></textarea></div>
+    <p class="fnote">You’re welcome to send photos of your skin and a completed health
+      questionnaire before we meet — I’ll send the questionnaire once we book.</p>
+    <button class="btn btn-primary" type="submit">Request my free discovery session <span class="arrow">→</span></button>
+    <p class="msg" id="cf-msg-out" role="status" aria-live="polite"></p>
+  </form>
+
 </div></div></section>
 
 <!-- agent-batch3: browse links moved BELOW the ask. They were nine outbound
@@ -221,5 +262,62 @@
     onScroll();
   })();
 </script>
+
+<script>
+(function(){
+  var f = document.getElementById('cform'); if(!f) return;
+  var KEY = 'REPLACE_WITH_WEB3FORMS_ACCESS_KEY';
+  var SET = /^[0-9a-f-]{30,}$/i.test(KEY);
+  var CONDITION = 'Psoriasis';
+  var out = document.getElementById('cf-msg-out');
+  var tz = document.getElementById('cf-tz');
+  try { tz.value = Intl.DateTimeFormat().resolvedOptions().timeZone || ''; } catch(e){}
+  if(!tz.value){ tz.removeAttribute('readonly'); tz.placeholder = 'e.g. Australia/Melbourne'; }
+
+  function say(t, ok){ out.textContent = t; out.className = 'msg ' + (ok ? 'ok' : 'err'); }
+
+  f.addEventListener('submit', async function(e){
+    e.preventDefault();
+    // Honeypot. Report success so a bot does not learn to retry, send nothing.
+    if(f.website && f.website.value.trim()){ f.reset(); say('Thanks \u2014 that\u2019s come through.', true); return; }
+    var name = f.name.value.trim(), email = f.email.value.trim(), city = f.city.value.trim();
+    if(!name){ f.name.focus(); return say('Please add your name so Kohei knows who to reply to.', false); }
+    if(!email){ f.email.focus(); return say('Please add an email address for the reply.', false); }
+    if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)){ f.email.focus(); return say('That email address does not look right \u2014 check it and try again.', false); }
+    if(!city){ f.city.focus(); return say('Please add your city so appointment times arrive in your timezone.', false); }
+
+    var subject = 'Free discovery session \u2014 ' + name + ' (' + CONDITION + ')';
+    var body = 'Name: ' + name + '\nEmail: ' + email + '\nCity: ' + city
+      + '\nTime zone: ' + (tz.value || 'not detected')
+      + '\nEnquiry from: ' + CONDITION + ' page\n\n' + (f.msg.value || '');
+
+    if(!SET){
+      // No access key yet. mailto cannot be tracked and loses most people, so
+      // say plainly what is happening rather than pretending it was sent.
+      location.href = 'mailto:info@waterwellclinic.co.nz?subject=' + encodeURIComponent(subject)
+        + '&body=' + encodeURIComponent(body.trim());
+      say('Opening your email app \u2014 if nothing happens, email info@waterwellclinic.co.nz directly.', true);
+      return;
+    }
+    var btn = f.querySelector('[type=submit]'), label = btn ? btn.innerHTML : '';
+    if(btn){ btn.disabled = true; btn.textContent = 'Sending\u2026'; }
+    say('Sending\u2026', true);
+    try {
+      var res = await fetch('https://api.web3forms.com/submit', {
+        method:'POST', headers:{'Content-Type':'application/json','Accept':'application/json'},
+        body: JSON.stringify({ access_key: KEY, subject: subject, from_name: 'Waterwell website',
+          name: name, email: email, city: city, timezone: tz.value,
+          condition: CONDITION, message: f.msg.value || '' })
+      });
+      var j = await res.json();
+      if(j.success){ f.reset(); say('Thanks \u2014 that\u2019s come through. Kohei will be in touch.', true); }
+      else { say('That did not send. Please email info@waterwellclinic.co.nz directly.', false); }
+    } catch(err){
+      say('That did not send. Please email info@waterwellclinic.co.nz directly.', false);
+    } finally { if(btn){ btn.disabled = false; btn.innerHTML = label; } }
+  });
+})();
+</script>
+
 </body>
 </html>
