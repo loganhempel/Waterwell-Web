@@ -1008,6 +1008,33 @@
    34px grid column, so the existing desktop and phone rules are untouched. */
 .cnd-row .cnum svg{width:22px;height:22px;display:block;color:var(--sage);transition:color .25s}
 .cnd-row:hover .cnum svg{color:var(--navy)}
+
+  /* Kohei's own eczema photographs inside #story. Deliberately small and inset —
+     they belong to the narrative, not to a gallery. Composited onto --bg-soft at
+     export, so the cut-outs sit flush on the section background. */
+  .skin-shots{margin:0 0 24px;max-width:340px}
+  .ss-pair{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  .ss-pair img{width:100%;height:auto;display:block;border-radius:10px;
+    border:1px solid var(--line);background:var(--bg-soft)}
+  .skin-shots figcaption{margin-top:9px;font-family:var(--mono);font-size:10.5px;
+    letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+  @media(max-width:560px){ .skin-shots{max-width:none} }
+
+  /* #online bento: with five cards the 12-col grid left the whole bottom-right
+     quadrant empty and the right edge ragged. Cards 2-3 fill the column beside
+     the feature (5 cols each, matching its 7), cards 4-6 split the bottom row
+     three ways (4 cols each). Desktop only — the <=980 rules own the rest. */
+  @media(min-width:981px){
+    .bento .bento-cell:nth-child(2),
+    .bento .bento-cell:nth-child(3){grid-column:span 5}
+    .bento .bento-cell:nth-child(n+4){grid-column:span 4}
+  }
+
+  /* Tablet: the 2-col bento leaves an odd fifth card stranded at half width.
+     Let the last one run the full row so the block stays square. */
+  @media(min-width:561px) and (max-width:980px){
+    .bento .bento-cell:last-child{grid-column:1/-1}
+  }
 </style>
 </head>
 <body>
@@ -1124,6 +1151,15 @@
         <blockquote class="reveal d1">“Eczema is not just a skin condition. It’s an internal condition. I know, because I have suffered from it myself.”</blockquote>
         <div class="narrative">
           <p class="reveal d1">Before I became a naturopath, I was covered head to toe in eczema. It grew so severe I had to resign from my job, and was <span class="hl">bed-ridden for nearly five months</span> — living on steroids and antibiotics, in constant pain from dry, weeping, itchy skin. It can only be described as agonising, torturous and hopeless.</p>
+          <figure class="skin-shots reveal d2">
+            <div class="ss-pair">
+              <img src="assets/kohei-eczema-front.jpg" width="700" height="933" loading="lazy" decoding="async"
+                   alt="Kohei Iguchi's chest and torso covered in widespread inflamed eczema">
+              <img src="assets/kohei-eczema-back.jpg" width="700" height="933" loading="lazy" decoding="async"
+                   alt="Kohei Iguchi's back covered in widespread inflamed eczema">
+            </div>
+            <figcaption>Kohei&#8217;s own skin, during the period described above.</figcaption>
+          </figure>
           <p class="reveal d2">When the steroids stopped and every medical avenue was exhausted, a naturopath took me through a consultation that changed everything. A year and a half later, through nutritional, dietary and lifestyle support, my skin was <span class="hl">99.9% eczema-free</span>. That experience became my lifelong passion for natural medicine.</p>
           <p class="reveal d2">Today I’m the founder and director of Waterwell — a holistic skin clinic on a mission to care for people going through the same hardship I did, or to help others avoid it altogether.</p>
         </div>
@@ -1284,6 +1320,9 @@
         <div class="svc-a"><p>Used to correct specific deficiencies and support the systems underneath the skin — never as a blanket prescription.</p></div>
       </div>
       
+      
+      
+      
       <div class="svc-item">
         <button class="svc-q" type="button"><span class="sn"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17c3.5 0 3.5-4 7-4s3.5 4 7 4 3.5-2 4-2.6"/><path d="M3 11c3.5 0 3.5-4 7-4s3.5 4 7 4 3.5-2 4-2.6"/></svg></span><span class="svc-t">Dietary and lifestyle advice</span><span class="ic"></span></button>
         <div class="svc-a"><p>The part that holds everything else in place. Practical, specific changes to how you eat, sleep, move and manage stress — built around the life you actually have, so they last past the treatment plan.</p></div>
@@ -1391,7 +1430,12 @@
         <b>Lower travel costs and emissions</b>
         <span class="bt">No fuel, no fares, no time off work — and a lighter footprint for every appointment.</span>
       </div>
-    </div>
+    
+      <div class="bento-cell bento-b reveal d4">
+        <span class="vc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9h16M4 15h16"/><path d="m17.5 4.5 3 3-3 3"/></svg></span>
+        <b>Just as effective as in person</b>
+        <span class="bt">Kohei has treated patients both in clinic and online for over a decade — being on video changes nothing about the depth of the care.</span>
+      </div></div>
   </div>
 </section>
 
