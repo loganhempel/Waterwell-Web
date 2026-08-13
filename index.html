@@ -353,13 +353,45 @@
   .services{background:var(--navy);color:#fff}
   .services .sec-head h2{color:#fff}.services .sec-head p{color:rgba(255,255,255,.7)}
   .services .eyebrow{color:var(--sage-bright)}.services .eyebrow::before{background:var(--sage-bright)}
-  .svc-list{display:grid;grid-template-columns:repeat(2,1fr);gap:0}
-  .svc{padding:30px 34px 30px 0;border-top:1px solid rgba(255,255,255,.14);display:grid;grid-template-columns:auto 1fr;gap:24px;align-items:start;transition:background .4s}
-  .svc:hover{background:rgba(255,255,255,.03)}
-  .svc:nth-child(odd){padding-right:48px}
-  .svc:nth-child(even){padding-left:48px;border-left:1px solid rgba(255,255,255,.14)}
-  .svc.wide{grid-column:1/-1;padding-right:0;border-left:0}
-  .svc.wide p{max-width:64ch}
+  
+  
+  
+  
+  
+  
+  
+
+  /* Services accordion — same interaction as the FAQ, tuned for the navy band.
+     Replaced the 2-col grid 14 Aug: on AU the compliance gate strips three of
+     the five items, which left the grid visibly lopsided. */
+  .svc-list{border-top:1px solid rgba(255,255,255,.16);max-width:900px}
+  .svc-item{border-bottom:1px solid rgba(255,255,255,.16)}
+  .svc-q{width:100%;text-align:left;background:none;border:0;cursor:pointer;padding:24px 0;
+    display:flex;align-items:center;gap:18px;font-family:var(--display);font-weight:400;
+    font-size:1.32rem;color:#fff;transition:color .3s}
+  .svc-q .svc-t{flex:1 1 auto}
+  .svc-q:hover{color:var(--sage-bright)}
+  .svc-q .sn{flex:0 0 auto;color:var(--sage-bright);display:block;line-height:0}
+  .svc-q .sn svg{display:block;width:24px;height:24px}
+  .svc-q .ic{flex:0 0 auto;width:26px;height:26px;border-radius:50%;
+    border:1px solid rgba(255,255,255,.55);position:relative;transition:background .3s,border-color .3s}
+  .svc-q .ic::before,.svc-q .ic::after{content:'';position:absolute;background:#fff;transition:.35s;top:50%;left:50%}
+  .svc-q .ic::before{width:11px;height:1.5px;transform:translate(-50%,-50%)}
+  .svc-q .ic::after{width:1.5px;height:11px;transform:translate(-50%,-50%)}
+  .svc-item.open .svc-q .ic{background:#fff;border-color:#fff}
+  .svc-item.open .svc-q .ic::before,.svc-item.open .svc-q .ic::after{background:var(--navy)}
+  .svc-item.open .svc-q .ic::after{transform:translate(-50%,-50%) scaleY(0)}
+  .svc-a{display:grid;grid-template-rows:0fr;overflow:hidden;
+    transition:grid-template-rows .45s cubic-bezier(.16,1,.3,1)}
+  .svc-a>*{min-height:0;overflow:hidden}
+  .svc-item.open .svc-a{grid-template-rows:1fr}
+  .svc-a p{color:rgba(255,255,255,.72);font-size:1rem;line-height:1.6;max-width:62ch;
+    padding-bottom:0;padding-left:42px}
+  .svc-item.open .svc-a p{padding-bottom:24px}
+  @media(max-width:560px){
+    .svc-q{font-size:1.14rem;gap:14px;padding:20px 0}
+    .svc-a p{padding-left:0;font-size:.96rem}
+  }
   .svc .sn{color:var(--sage-bright);display:block;margin-top:2px}
   .svc .sn svg{display:block}
   .svc h3{color:#fff;font-size:1.4rem;margin-bottom:8px}
@@ -1052,12 +1084,12 @@
       </div>
       <div class="portrait reveal d2">
         <div class="frame" id="hero-frame">
-          <img class="on" src="assets/kohei-hero-2.jpg" width="924" height="1155" fetchpriority="high"
+          <img class="on" src="assets/hero-skin-adult.jpg" width="1200" height="1500" fetchpriority="high"
+               alt="A woman holding her forearm, where the skin is red and irritated">
+          <img data-src="assets/hero-skin-child.jpg" width="1200" height="1500" aria-hidden="true"
+               alt="A young child scratching irritated skin on her arm">
+          <img data-src="assets/kohei-hero-2.jpg" width="924" height="1155" aria-hidden="true"
                alt="A patient during a consultation at Waterwell Clinic">
-          <img data-src="assets/kohei-hero-1.jpg" width="924" height="1155" aria-hidden="true"
-               alt="Kohei Iguchi explaining a treatment plan during a consultation">
-          <img data-src="assets/kohei-hero-3.jpg" width="924" height="1155" aria-hidden="true"
-               alt="A blood pressure reading being taken during a health assessment">
         </div>
         <!--AU:cut--><div class="badge">
           <span class="star">★★★★★</span>
@@ -1231,25 +1263,31 @@
       <p>Every plan is built from your case, not a template. These are the methods Kohei draws on to put it together.</p>
     </div>
     <div class="svc-list">
-      <div class="svc reveal">
-        <span class="sn"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3v5a4 4 0 0 0 8 0V3"/><path d="M12 12v3a5 5 0 0 0 5 5 3 3 0 0 0 3-3v-2"/><circle cx="20" cy="13" r="1.6"/></svg></span>
-        <div><h3>Naturopathic consultation</h3><p>A long-form appointment that goes through your history, diet, lifestyle and mental-emotional health — the whole picture, not just the skin.</p></div>
+      <div class="svc-item open">
+        <button class="svc-q" type="button"><span class="sn"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3v5a4 4 0 0 0 8 0V3"/><path d="M12 12v3a5 5 0 0 0 5 5 3 3 0 0 0 3-3v-2"/><circle cx="20" cy="13" r="1.6"/></svg></span><span class="svc-t">Naturopathic consultation</span><span class="ic"></span></button>
+        <div class="svc-a"><p>A long-form appointment that goes through your history, diet, lifestyle and mental-emotional health — the whole picture, not just the skin.</p></div>
       </div>
-      <!--AU:cut--><div class="svc reveal d1">
-        <span class="sn"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3h6M10 3v6.2L5.6 18a2.2 2.2 0 0 0 1.9 3.2h9a2.2 2.2 0 0 0 1.9-3.2L14 9.2V3"/><path d="M7.4 15h9.2"/></svg></span>
-        <div><h3>Functional tests</h3><p>Where the picture is unclear, targeted testing takes the guesswork out of what is actually driving the condition.</p></div>
-      </div><!--/AU:cut-->
-      <!--AU:cut--><div class="svc reveal">
-        <span class="sn"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21c0-6 3.4-9.6 8-10.4C20 16 16.6 20 12 21z"/><path d="M12 21C12 15 8.6 11.4 4 10.6 4 16 7.4 20 12 21z"/><path d="M12 21v-6"/></svg></span>
-        <div><h3>Herbal medicine</h3><p>Individually prescribed herbal formulas, chosen for your case and adjusted as your body responds.</p></div>
-      </div><!--/AU:cut-->
-      <!--AU:cut--><div class="svc reveal d1">
-        <span class="sn"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="8.5" width="17" height="12" rx="6"/><path d="M12 8.5v12"/><path d="M7.2 5.2h9.6"/></svg></span>
-        <div><h3>Nutritional supplements</h3><p>Used to correct specific deficiencies and support the systems underneath the skin — never as a blanket prescription.</p></div>
-      </div><!--/AU:cut-->
-      <div class="svc wide reveal">
-        <span class="sn"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17c3.5 0 3.5-4 7-4s3.5 4 7 4 3.5-2 4-2.6"/><path d="M3 11c3.5 0 3.5-4 7-4s3.5 4 7 4 3.5-2 4-2.6"/></svg></span>
-        <div><h3>Dietary and lifestyle advice</h3><p>The part that holds everything else in place. Practical, specific changes to how you eat, sleep, move and manage stress — built around the life you actually have, so they last past the treatment plan.</p></div>
+      <!--AU:cut-->
+      <div class="svc-item">
+        <button class="svc-q" type="button"><span class="sn"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3h6M10 3v6.2L5.6 18a2.2 2.2 0 0 0 1.9 3.2h9a2.2 2.2 0 0 0 1.9-3.2L14 9.2V3"/><path d="M7.4 15h9.2"/></svg></span><span class="svc-t">Functional tests</span><span class="ic"></span></button>
+        <div class="svc-a"><p>Where the picture is unclear, targeted testing takes the guesswork out of what is actually driving the condition.</p></div>
+      </div>
+      <!--/AU:cut-->
+      <!--AU:cut-->
+      <div class="svc-item">
+        <button class="svc-q" type="button"><span class="sn"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21c0-6 3.4-9.6 8-10.4C20 16 16.6 20 12 21z"/><path d="M12 21C12 15 8.6 11.4 4 10.6 4 16 7.4 20 12 21z"/><path d="M12 21v-6"/></svg></span><span class="svc-t">Herbal medicine</span><span class="ic"></span></button>
+        <div class="svc-a"><p>Individually prescribed herbal formulas, chosen for your case and adjusted as your body responds.</p></div>
+      </div>
+      <!--/AU:cut-->
+      <!--AU:cut-->
+      <div class="svc-item">
+        <button class="svc-q" type="button"><span class="sn"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="8.5" width="17" height="12" rx="6"/><path d="M12 8.5v12"/><path d="M7.2 5.2h9.6"/></svg></span><span class="svc-t">Nutritional supplements</span><span class="ic"></span></button>
+        <div class="svc-a"><p>Used to correct specific deficiencies and support the systems underneath the skin — never as a blanket prescription.</p></div>
+      </div>
+      <!--/AU:cut-->
+      <div class="svc-item">
+        <button class="svc-q" type="button"><span class="sn"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17c3.5 0 3.5-4 7-4s3.5 4 7 4 3.5-2 4-2.6"/><path d="M3 11c3.5 0 3.5-4 7-4s3.5 4 7 4 3.5-2 4-2.6"/></svg></span><span class="svc-t">Dietary and lifestyle advice</span><span class="ic"></span></button>
+        <div class="svc-a"><p>The part that holds everything else in place. Practical, specific changes to how you eat, sleep, move and manage stress — built around the life you actually have, so they last past the treatment plan.</p></div>
       </div>
     </div>
   </div>
@@ -1563,16 +1601,27 @@
   const io = new IntersectionObserver((es) => es.forEach(e => { if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} }), {threshold:0.02, rootMargin:'0px 0px 10% 0px'});
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
-  // FAQ accordion (accessible)
-  document.querySelectorAll('.faq-item').forEach(item => {
-    const q = item.querySelector('.faq-q'), a = item.querySelector('.faq-a');
-    q.setAttribute('aria-expanded','false');
-    q.addEventListener('click', () => {
-      const open = item.classList.contains('open');
-      document.querySelectorAll('.faq-item.open').forEach(o => { o.classList.remove('open'); o.querySelector('.faq-q').setAttribute('aria-expanded','false'); });
-      if (!open){ item.classList.add('open'); q.setAttribute('aria-expanded','true'); }
+  // Accordions (accessible). Scoped per list, so opening a service cannot
+  // close an FAQ. One panel open at a time within a list.
+  function initAccordion(listSel, itemCls, qCls){
+    document.querySelectorAll(listSel).forEach(list => {
+      list.querySelectorAll('.' + itemCls).forEach(item => {
+        const q = item.querySelector('.' + qCls);
+        if (!q) return;
+        q.setAttribute('aria-expanded', item.classList.contains('open') ? 'true' : 'false');
+        q.addEventListener('click', () => {
+          const isOpen = item.classList.contains('open');
+          list.querySelectorAll('.' + itemCls + '.open').forEach(o => {
+            o.classList.remove('open');
+            o.querySelector('.' + qCls).setAttribute('aria-expanded','false');
+          });
+          if (!isOpen){ item.classList.add('open'); q.setAttribute('aria-expanded','true'); }
+        });
+      });
     });
-  });
+  }
+  initAccordion('.faq-list', 'faq-item', 'faq-q');
+  initAccordion('.svc-list', 'svc-item', 'svc-q');
 
   // before/after compare slider
   (function(){
