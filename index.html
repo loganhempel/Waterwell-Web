@@ -1117,6 +1117,8 @@
                alt="A young child scratching irritated skin on her arm">
           <img data-src="assets/kohei-hero-2.jpg" width="924" height="1155" aria-hidden="true"
                alt="A patient during a consultation at Waterwell Clinic">
+          <img data-src="assets/hero-patient-2.jpg" width="1200" height="1500" aria-hidden="true"
+               alt="A woman smiling in the consulting room at Waterwell Clinic">
         </div>
         <!--AU:cut--><div class="badge">
           <span class="star">★★★★★</span>
@@ -1946,10 +1948,17 @@
     // should answer a click immediately, the photo belongs with the copy.
     const paintDots = () =>
       dots.forEach((d,k) => d.setAttribute('aria-selected', String(k===i)));
-    const paintShot = () => shots.forEach((im,k) => {
-      im.classList.toggle('on', k===i);
-      im.setAttribute('aria-hidden', String(k!==i));
-    });
+    // MSG and shots are authored separately and drifted once: a fourth message
+    // shipped against three photos, so slide 4 rendered no image at all. Wrap the
+    // index so a future mismatch degrades to a repeated photo, never a blank.
+    const paintShot = () => {
+      if (!shots.length) return;
+      const active = i % shots.length;
+      shots.forEach((im,k) => {
+        im.classList.toggle('on', k===active);
+        im.setAttribute('aria-hidden', String(k!==active));
+      });
+    };
     const paint = () => { paintDots(); paintShot(); };
 
     // The three headlines do not wrap to the same number of lines, so without
