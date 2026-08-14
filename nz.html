@@ -1101,10 +1101,10 @@
         <div class="frame" id="hero-frame">
           <img class="on" src="assets/hero-skin-adult.jpg" width="1200" height="1500" fetchpriority="high"
                alt="A woman holding her forearm, where the skin is red and irritated">
+          <img data-src="assets/hero-discovery.jpg" width="1200" height="1500" aria-hidden="true"
+               alt="Kohei Iguchi talking with a patient across the consulting-room desk">
           <img data-src="assets/hero-skin-child.jpg" width="1200" height="1500" aria-hidden="true"
                alt="A young child scratching irritated skin on her arm">
-          <img data-src="assets/kohei-hero-2.jpg" width="924" height="1155" aria-hidden="true"
-               alt="A patient during a consultation at Waterwell Clinic">
           <img data-src="assets/hero-og-globe.jpg" width="1200" height="1500" aria-hidden="true"
                alt="A globe, representing online consultations worldwide">
         </div>
@@ -1515,7 +1515,6 @@
           </select>
         </div>
         <div class="field"><label for="bf-city">Your city</label><input id="bf-city" name="city" type="text" placeholder="Your nearest city" autocomplete="address-level2" required /></div>
-        <div class="field"><label for="bf-tz">Time zone <span style="text-transform:none;letter-spacing:0;color:rgba(159,192,163,.85)">(so reminders arrive at the right hour)</span></label><input id="bf-tz" name="timezone" type="text" placeholder="Detected automatically" readonly /></div>
         <div class="field full"><label for="bf-msg">Anything you’d like Kohei to know? <span style="text-transform:none;letter-spacing:0;color:rgba(159,192,163,.85)">(optional)</span></label><textarea id="bf-msg" name="msg" placeholder="A little about your situation and what you’ve tried…"></textarea></div>
         <button class="btn btn-primary full" style="background:#fff;color:var(--navy)" type="submit">Send my enquiry <span class="arrow">→</span></button>
         <p class="form-note">No obligation. Prefer to write directly? <a href="mailto:info@waterwellclinic.co.nz">info@waterwellclinic.co.nz</a></p>
@@ -1696,16 +1695,9 @@
 
 
 
-    // Kohei's VA sizes appointment reminders off this. Without it, reminders
-    // default to Australian time and international patients get the wrong hour.
-    // Intl gives the IANA zone directly; the field stays readonly so it cannot
-    // disagree with the browser, and only opens up if detection fails.
-    (function(){
-      const tz = document.getElementById('bf-tz');
-      if(!tz) return;
-      try { tz.value = Intl.DateTimeFormat().resolvedOptions().timeZone || ''; } catch(e){}
-      if(!tz.value){ tz.removeAttribute('readonly'); tz.placeholder = 'e.g. Australia/Melbourne'; }
-    })();
+    // Time zone field removed 14 Aug on Kohei's instruction — reception works
+    // the hour out from the city, so the extra readonly box was one field of
+    // friction for information they already had.
 
     const WEB3FORMS_KEY = 'REPLACE_WITH_WEB3FORMS_ACCESS_KEY';
     const KEY_SET = /^[0-9a-f-]{30,}$/i.test(WEB3FORMS_KEY);
@@ -1743,10 +1735,17 @@
       if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)){ f.email.focus();
         say('That email address does not look right — check it and try again.', false); return; }
 
+      // The form is novalidate, so every required field needs its own check —
+      // city was collected but never validated and never sent, so it reached
+      // neither the mailto body nor the Web3Forms payload. Fixed 14 Aug.
+      const city = f.city.value.trim();
+      if(!city){ f.city.focus(); say('Please add your city so Kohei can offer a sensible time.', false); return; }
+
       const concern = f.concern.value;
-      const body = ('Name: ' + name + '\nEmail: ' + email + '\nMain concern: ' + concern
+      const body = ('Name: ' + name + '\nEmail: ' + email + '\nCity: ' + city
+        + '\nEnquiry: ' + (concern || 'Not specified')
         + '\n\n' + (f.msg.value || '')).trim();
-      const subject = 'Free discovery session — ' + name + ' (' + concern + ')';
+      const subject = 'Website enquiry — ' + name + (concern ? ' (' + concern + ')' : '');
 
       if(!KEY_SET){ mailtoFallback(name, body, subject); return; }
 
@@ -1765,6 +1764,7 @@
             from_name: 'Waterwell website',
             name: name,
             email: email,
+            city: city,
             concern: concern,
             message: f.msg.value || '',
             page: location.pathname
@@ -1842,18 +1842,24 @@
     const dots = [...document.querySelectorAll('#hero-dots button')];
     if(!rot || !h1 || !lead) return;
 
+    // Kohei, 14 Aug: the four messages and their photographs now mirror the old
+    // site's rotator slide for slide — skin comfort, discovery session, root
+    // cause, worldwide. Slides 1, 2 and 4 carry the old site's own wording.
+    // The order here IS the order of the images in #hero-frame; changing one
+    // without the other is what desynced them in August.
     const MSG = [
       // Kohei's preferred headline, carried over from the old site (11 Aug).
       {h1:'Don’t feel comfortable in your <em class="sheen">own skin</em>?',
        lead:'We offer holistic, natural treatment for chronic skin conditions — so you can feel confident again.'},
-      {h1:'Wellness from <em class="sheen">within</em>.',
-       lead:'Frustrated by skin problems that keep coming back? There is a reason — and a way through it.'},
+      // Old site slide rs-9, paired with its own photograph.
+      {h1:'Unsure whether naturopathic treatment is <em class="sheen">right for you</em>?',
+       lead:'Take advantage of our free 15-minute discovery session to understand how we can help, and ask any burning questions before committing to an initial consultation.'},
+      // Kohei's wording, 14 Aug. Pairs with the child.
       {h1:'Relief starts <em class="sheen">inside</em>.',
-       lead:'Eczema, psoriasis, acne and topical steroid withdrawal — treated at the root cause, not just the surface.'},
-      // Slide 4 pairs with the globe, the image the old site ran under
-      // "No matter where you are, we can help." Copy follows the picture.
-      {h1:'Treated from <em class="sheen">anywhere</em>.',
-       lead:'Every consultation happens by secure video, so wherever you are in the world, the same root-cause care reaches you.'},
+       lead:'Your skin tells the story of what’s happening inside, and our treatments are designed to treat from the root.'},
+      // Old site slide rs-11, restored to its original wording. Pairs with the globe.
+      {h1:'No matter where you are, <em class="sheen">we can help</em>.',
+       lead:'Our clinic treats patients globally, whether you are in Australia or the UK, through comprehensive online consultations.'},
     ];
 
     // The portrait carousel runs off the same index as the copy, so message and

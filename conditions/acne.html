@@ -221,8 +221,6 @@
     <div class="row">
       <div><label for="cf-city">Your city</label>
         <input id="cf-city" name="city" type="text" placeholder="Your nearest city" autocomplete="address-level2" required></div>
-      <div><label for="cf-tz">Time zone</label>
-        <input id="cf-tz" name="timezone" type="text" placeholder="Detected automatically" readonly></div>
     </div>
     <div><label for="cf-msg">Anything you’d like Kohei to know? (optional)</label>
       <textarea id="cf-msg" name="msg" placeholder="A little about your situation and what you’ve tried…"></textarea></div>
@@ -270,9 +268,8 @@
   var SET = /^[0-9a-f-]{30,}$/i.test(KEY);
   var CONDITION = 'Acne';
   var out = document.getElementById('cf-msg-out');
-  var tz = document.getElementById('cf-tz');
-  try { tz.value = Intl.DateTimeFormat().resolvedOptions().timeZone || ''; } catch(e){}
-  if(!tz.value){ tz.removeAttribute('readonly'); tz.placeholder = 'e.g. Australia/Melbourne'; }
+  // Time zone field removed 14 Aug on Kohei's instruction — reception works
+  // the hour out from the city.
 
   function say(t, ok){ out.textContent = t; out.className = 'msg ' + (ok ? 'ok' : 'err'); }
 
@@ -284,11 +281,10 @@
     if(!name){ f.name.focus(); return say('Please add your name so Kohei knows who to reply to.', false); }
     if(!email){ f.email.focus(); return say('Please add an email address for the reply.', false); }
     if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)){ f.email.focus(); return say('That email address does not look right \u2014 check it and try again.', false); }
-    if(!city){ f.city.focus(); return say('Please add your city so appointment times arrive in your timezone.', false); }
+    if(!city){ f.city.focus(); return say('Please add your city so Kohei can offer a sensible time.', false); }
 
-    var subject = 'Free discovery session \u2014 ' + name + ' (' + CONDITION + ')';
+    var subject = 'Website enquiry \u2014 ' + name + ' (' + CONDITION + ')';
     var body = 'Name: ' + name + '\nEmail: ' + email + '\nCity: ' + city
-      + '\nTime zone: ' + (tz.value || 'not detected')
       + '\nEnquiry from: ' + CONDITION + ' page\n\n' + (f.msg.value || '');
 
     if(!SET){
@@ -306,7 +302,7 @@
       var res = await fetch('https://api.web3forms.com/submit', {
         method:'POST', headers:{'Content-Type':'application/json','Accept':'application/json'},
         body: JSON.stringify({ access_key: KEY, subject: subject, from_name: 'Waterwell website',
-          name: name, email: email, city: city, timezone: tz.value,
+          name: name, email: email, city: city,
           condition: CONDITION, message: f.msg.value || '' })
       });
       var j = await res.json();
