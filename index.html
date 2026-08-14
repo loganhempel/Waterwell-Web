@@ -280,9 +280,7 @@
   /* Two-tier quote (Kohei, 11 Aug): the short line carries the section, the
      longer one steps down to secondary so it reads as support, not a rival. */
   .promise h2.promise-lead{font-size:clamp(2.4rem,5.4vw,4rem);max-width:14ch}
-  .promise p.promise-2nd{color:rgba(255,255,255,.88);font-style:italic;
-    font-family:var(--display);font-size:clamp(1.25rem,2.2vw,1.6rem);
-    line-height:1.32;max-width:26ch;margin-top:22px}
+  .promise p
   .promise .dwave{display:block;margin:0 auto 4px;color:var(--sage-bright)}
 
   /* conditions */
@@ -786,37 +784,10 @@
 .mstep h3{font-size:1.4rem;line-height:1.14;margin-bottom:10px}
 .mstep p{font-size:.97rem;color:var(--muted);line-height:1.6;max-width:44ch}
 .mstep p b{color:var(--ink);font-weight:600}
-
-.hacc{display:flex;gap:14px;margin-top:34px;align-items:flex-start}
-.hitem{flex:1 1 0;min-width:0;background:linear-gradient(180deg,#ffffff,#fbf7ef);
-  border:1px solid var(--line);border-radius:22px;overflow:hidden;
-  box-shadow:var(--shadow-soft),var(--hair);
-  transition:flex-grow .5s cubic-bezier(.16,1,.3,1),box-shadow .3s,border-color .3s}
-.hitem.is-open{flex-grow:3.6;border-color:transparent;box-shadow:var(--shadow)}
-.hhead{margin:0;font-size:inherit;font-weight:inherit}
-.hbtn{width:100%;display:flex;flex-direction:column;align-items:flex-start;gap:13px;
-  padding:24px 22px 18px;background:none;border:0;cursor:pointer;text-align:left;
-  font:inherit;color:inherit}
-.hbtn:focus-visible{outline:2px solid var(--sage);outline-offset:-4px;border-radius:20px}
-.hic{width:48px;height:48px;border-radius:14px;background:var(--bg);color:var(--sage);
-  display:flex;align-items:center;justify-content:center;flex:none;
-  transition:background .35s,color .35s}
-.hic svg{width:24px;height:24px}
-.hitem.is-open .hic{background:var(--navy);color:var(--sage-bright)}
 /* Reserve two lines so a title that wraps does not leave the collapsed cards
    at different heights to the ones that do not. */
-.htitle{font-family:var(--display);font-size:1.14rem;line-height:1.2;color:var(--navy);min-height:2.4em}
-.hnum{font-family:var(--mono);font-size:10.5px;letter-spacing:.16em;color:var(--sand-text)}
 /* 0fr -> 1fr collapses real height without a magic max-height, and it works
    unchanged when the row stacks into a vertical accordion on phones. */
-.hpanel{display:grid;grid-template-rows:0fr;opacity:0;padding:0 22px;
-  transition:grid-template-rows .45s cubic-bezier(.16,1,.3,1),opacity .3s}
-.hpanel>.hpanel-in{overflow:hidden;min-height:0}
-.hitem.is-open .hpanel{grid-template-rows:1fr;opacity:1;transition-delay:0s,.12s}
-.hpanel p{font-size:.96rem;color:var(--muted);line-height:1.6;max-width:44ch;padding-bottom:2px}
-.hmeta{margin-top:14px;display:inline-block;font-family:var(--mono);font-size:10.5px;
-  letter-spacing:.1em;text-transform:uppercase;color:var(--sage-text);
-  border:1px solid var(--line);border-radius:30px;padding:5px 13px;margin-bottom:24px}
 
 /* ================================================================
    MOBILE REPAIR PASS — 10 Aug 2026
@@ -921,11 +892,6 @@
   .mstep h3{font-size:1.26rem}
 
   /* Horizontal accordion becomes a normal vertical one. */
-  .hacc{flex-direction:column;gap:10px}
-  .hitem,.hitem.is-open{flex:none}
-  .hbtn{flex-direction:row;align-items:center;gap:14px;padding:18px 20px}
-  .hic{width:42px;height:42px}
-  .htitle{flex:1;min-width:0}
 }
 
 /* ================================================================
@@ -1002,8 +968,6 @@
     @keyframes ww-quote{from{transform:translateY(16px);opacity:.5}to{transform:none;opacity:1}}
 
     /* Accordion icons lift in as the row arrives. */
-    .hic{animation:ww-rise linear both;
-      animation-timeline:view();animation-range:entry 25% entry 85%}
   }
 }
 
@@ -1023,20 +987,45 @@
     letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
   @media(max-width:560px){ .skin-shots{max-width:none} }
 
-  /* #online bento: with five cards the 12-col grid left the whole bottom-right
-     quadrant empty and the right edge ragged. Cards 2-3 fill the column beside
-     the feature (5 cols each, matching its 7), cards 4-6 split the bottom row
-     three ways (4 cols each). Desktop only — the <=980 rules own the rest. */
-  @media(min-width:981px){
-    .bento .bento-cell:nth-child(2),
-    .bento .bento-cell:nth-child(3){grid-column:span 5}
-    .bento .bento-cell:nth-child(n+4){grid-column:span 4}
+  /* #approach — Kohei, 14 Aug: "rather than those boxes ... a horizontal line
+     that goes across almost like a timeline". Replaces the boxed accordion.
+     No cards, no step numbers; the rule runs behind the nodes. */
+  .tline{list-style:none;margin:44px 0 0;padding:0;display:grid;
+    grid-template-columns:repeat(4,1fr);gap:34px;position:relative}
+  .tline::before{content:"";position:absolute;left:0;right:0;top:23px;height:1px;
+    background:linear-gradient(90deg,transparent,var(--line) 6%,var(--line) 94%,transparent)}
+  .tstep{position:relative;padding-right:10px}
+  .tstep .tnode{position:relative;z-index:1;width:46px;height:46px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;background:var(--bg-soft);
+    border:1px solid var(--line);color:var(--sage-text);margin-bottom:20px}
+  .tstep .tnode svg{width:21px;height:21px;display:block}
+  .tstep h3{font-family:var(--display);font-weight:400;font-size:1.3rem;color:var(--navy);
+    line-height:1.16;margin:0 0 9px}
+  .tstep p{color:var(--muted);font-size:.95rem;line-height:1.6;margin:0}
+  .tstep .tmeta{display:inline-block;margin-top:12px;font-family:var(--mono);font-size:10.5px;
+    letter-spacing:.12em;text-transform:uppercase;color:var(--sage-text)}
+  @media(max-width:980px){
+    .tline{grid-template-columns:repeat(2,1fr);gap:38px 30px}
+    .tline::before{display:none}
+  }
+  @media(max-width:560px){
+    /* Back to the vertical rail Kohei liked, rather than a cramped 2-up. */
+    .tline{grid-template-columns:1fr;gap:0;padding-left:34px}
+    .tline::before{display:block;left:22px;right:auto;top:8px;bottom:8px;width:1px;height:auto;
+      background:linear-gradient(180deg,var(--line),transparent)}
+    .tstep{padding:0 0 30px}
+    .tstep .tnode{position:absolute;left:-34px;top:0;width:44px;height:44px;margin:0}
+    .tstep h3{margin-top:8px}
   }
 
-  /* Tablet: the 2-col bento leaves an odd fifth card stranded at half width.
-     Let the last one run the full row so the block stays square. */
-  @media(min-width:561px) and (max-width:980px){
-    .bento .bento-cell:last-child{grid-column:1/-1}
+  /* #online — Kohei, 14 Aug: "could we possibly have the blue box spanning right
+     across the website and then just having those four smaller boxes underneath
+     it just lined up". Feature runs full width; the cards form one even row
+     beneath it. Overrides the 12-col spans declared earlier in the sheet. */
+  @media(min-width:981px){
+    .bento{grid-template-columns:repeat(4,1fr)}
+    .bento .bento-feature{grid-column:1/-1;grid-row:auto}
+    .bento .bento-b{grid-column:span 1}
   }
 </style>
 </head>
@@ -1247,50 +1236,33 @@
       <h2>A calm, considered path towards your desired results.</h2>
       <p>Sometimes you just need reassurance when you’re putting your health in someone else’s hands. Here’s exactly what working together looks like.</p>
     </div>
-    <div class="hacc" id="hacc">
-        <div class="hitem is-open">
-          <h3 class="hhead"><button type="button" class="hbtn" id="hb-1" aria-expanded="true" aria-controls="hp-1">
-            <span class="hic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
-            <span class="htitle">Free discovery session</span>
-            <span class="hnum" aria-hidden="true">01</span>
-          </button></h3>
-          <div class="hpanel" id="hp-1" role="region" aria-labelledby="hb-1"><div class="hpanel-in">
-            <p>A relaxed 15-minute conversation to ask anything about the consultations, the treatment process and how I can help you. No pressure, no obligations — just your peace of mind.</p><span class="hmeta">15 min · Free</span>
-          </div></div>
-        </div>
-        <div class="hitem">
-          <h3 class="hhead"><button type="button" class="hbtn" id="hb-2" aria-expanded="false" aria-controls="hp-2">
-            <span class="hic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3v5a4 4 0 0 0 8 0V3"/><path d="M12 12v3a5 5 0 0 0 5 5 3 3 0 0 0 3-3v-2"/><circle cx="20" cy="13" r="1.6"/></svg></span>
-            <span class="htitle">Initial consultation</span>
-            <span class="hnum" aria-hidden="true">02</span>
-          </button></h3>
-          <div class="hpanel" id="hp-2" role="region" aria-labelledby="hb-2"><div class="hpanel-in">
-            <p>A comprehensive 75-minute appointment to uncover the triggers and root cause of your skin condition. We assess your history, diet, lifestyle, mental-emotional health and much more — a completely holistic view.</p><span class="hmeta">75 min · By video</span>
-          </div></div>
-        </div>
-        <div class="hitem">
-          <h3 class="hhead"><button type="button" class="hbtn" id="hb-3" aria-expanded="false" aria-controls="hp-3">
-            <span class="hic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h9l4 4v14a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h4"/></svg></span>
-            <span class="htitle">Your tailored plan</span>
-            <span class="hnum" aria-hidden="true">03</span>
-          </button></h3>
-          <div class="hpanel" id="hp-3" role="region" aria-labelledby="hb-3"><div class="hpanel-in">
-            <p>A treatment plan created only for you — herbal medicine, nutrition, and dietary and lifestyle support. No two plans are ever the same, because everyone is unique.</p><span class="hmeta">Individual</span>
-          </div></div>
-        </div>
-        <div class="hitem">
-          <h3 class="hhead"><button type="button" class="hbtn" id="hb-4" aria-expanded="false" aria-controls="hp-4">
-            <span class="hic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l5-5 4 3 5-7"/><path d="M15 8h4v4"/></svg></span>
-            <span class="htitle">Review &amp; progress</span>
-            <span class="hnum" aria-hidden="true">04</span>
-          </button></h3>
-          <div class="hpanel" id="hp-4" role="region" aria-labelledby="hb-4"><div class="hpanel-in">
-            <p>We track your progress together and adjust as your body responds — so you can see and feel the change over time. As your skin improves, the plan evolves with you.</p><span class="hmeta">Ongoing</span>
-          </div></div>
-        </div>
-      </div>
-  </div>
-</section>
+    <ol class="tline">
+      <li class="tstep reveal" data-reveal>
+        <span class="tnode" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
+        <h3>Free discovery session</h3>
+        <p>A relaxed 15-minute conversation to ask anything about the consultations, the treatment process and how I can help you. No pressure, no obligations — just your peace of mind.</p>
+        <span class="tmeta">15 min · Free</span>
+      </li>
+      <li class="tstep reveal" data-reveal>
+        <span class="tnode" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3v5a4 4 0 0 0 8 0V3"/><path d="M12 12v3a5 5 0 0 0 5 5 3 3 0 0 0 3-3v-2"/><circle cx="20" cy="13" r="1.6"/></svg></span>
+        <h3>Initial consultation</h3>
+        <p>A comprehensive 75-minute appointment to uncover the triggers and root cause of your skin condition. We assess your history, diet, lifestyle, mental-emotional health and much more — a completely holistic view.</p>
+        <span class="tmeta">75 min · By video</span>
+      </li>
+      <li class="tstep reveal" data-reveal>
+        <span class="tnode" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h9l4 4v14a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h4"/></svg></span>
+        <h3>Your tailored plan</h3>
+        <p>A treatment plan created only for you — herbal medicine, nutrition, and dietary and lifestyle support. No two plans are ever the same, because everyone is unique.</p>
+        <span class="tmeta">Individual</span>
+      </li>
+      <li class="tstep reveal" data-reveal>
+        <span class="tnode" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l5-5 4 3 5-7"/><path d="M15 8h4v4"/></svg></span>
+        <h3>Review &amp; progress</h3>
+        <p>We track your progress together and adjust as your body responds — so you can see and feel the change over time. As your skin improves, the plan evolves with you.</p>
+        <span class="tmeta">Ongoing</span>
+      </li>
+    </ol>
+  </section>
 
 <!-- SERVICES — tools behind the treatment -->
 <section class="pad services" id="services">
@@ -1412,8 +1384,7 @@
     <svg class="dwave" width="34" height="44" viewBox="0 0 34 44" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M17 2 C17 2 31 19 31 29 A14 14 0 1 1 3 29 C3 19 17 2 17 2 Z"/></svg>
     <span class="eyebrow">Our belief</span>
     <h2 class="promise-lead">“Wellness from within.”</h2>
-    <p class="promise-2nd">“Every health challenge has a path forward — and your skin is no exception.”</p>
-    <p>Conditions like eczema and dermatitis are rarely just skin-deep; they’re often a reflection of an internal system asking for balance. By deeply listening to your story and taking a comprehensive, holistic approach, we work together to address the root causes and gently guide your body back to its natural state of harmony.</p>
+    <p>Every health challenge has a path forward — and your skin is no exception. Conditions like eczema and dermatitis are rarely just skin-deep; they’re often a reflection of an internal system asking for balance. By deeply listening to your story and taking a comprehensive, holistic approach, we work together to address the root causes and gently guide your body back to its natural state of harmony.</p>
   </div>
 </section>
 
@@ -1448,12 +1419,6 @@
         <b>Lower travel costs and emissions</b>
         <span class="bt">No fuel, no fares, no time off work — and a lighter footprint for every appointment.</span>
       </div>
-    
-      <div class="bento-cell bento-b reveal d4">
-        <span class="vc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9h16M4 15h16"/><path d="m17.5 4.5 3 3-3 3"/></svg></span>
-        <b>Just as effective as in person</b>
-        <span class="bt">Kohei has treated patients both in clinic and online for over a decade — being on video changes nothing about the depth of the care.</span>
-      </div></div>
   </div>
 </section>
 
@@ -1534,7 +1499,7 @@
       <svg class="wm" viewBox="0 0 100 130" fill="none" stroke="#9FC0A3" stroke-width="2" aria-hidden="true" style="position:absolute;right:-24px;bottom:-44px;width:220px;opacity:.12"><path d="M50 4 C50 4 88 52 88 82 A38 38 0 1 1 12 82 C12 52 50 4 50 4 Z"/></svg>
       <div style="position:relative;z-index:2">
         <h3>Let’s begin.</h3>
-        <p>Start with a free 15-minute discovery session — no commitment, just a conversation about your skin and how I can help. Tell me a little below and I’ll be in touch.</p>
+        <p>Book an initial consultation, ask about a free 15-minute discovery session, or just send a question. Tell me a little below and I’ll be in touch.</p>
         <p class="pre-note">Before we meet you’re welcome to send <b>photos of your skin</b> and a <b>completed health questionnaire</b>, so we can spend the session talking rather than gathering background. I’ll send the questionnaire when we book.</p>
         <div class="crow" style="margin-top:30px">
           <div class="r"><span>Email &amp; enquiries</span><b style="font-size:1.1rem">info@waterwellclinic.co.nz</b></div>
@@ -1546,9 +1511,11 @@
         <div class="hp-field" aria-hidden="true"><label for="bf-website">Website</label><input id="bf-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
         <div class="field"><label for="bf-name">Your name</label><input id="bf-name" name="name" type="text" placeholder="First &amp; last name" autocomplete="name" required /></div>
         <div class="field"><label for="bf-email">Email</label><input id="bf-email" name="email" type="email" placeholder="you@example.com" autocomplete="email" inputmode="email" required /></div>
-        <div class="field"><label for="bf-concern">Main concern</label>
+        <div class="field"><label for="bf-concern">Enquiry</label>
           <select id="bf-concern" name="concern">
             <option value="" selected>Select one…</option>
+            <option value="Discovery session enquiry">Discovery session enquiry</option>
+            <option value="Initial consultation booking">Initial consultation booking</option>
             <option value="Eczema">Eczema</option>
             <option value="Topical Steroid Withdrawal">Topical Steroid Withdrawal</option>
             <option value="Psoriasis">Psoriasis</option>
@@ -1566,7 +1533,7 @@
         <div class="field"><label for="bf-city">Your city</label><input id="bf-city" name="city" type="text" placeholder="Your nearest city" autocomplete="address-level2" required /></div>
         <div class="field"><label for="bf-tz">Time zone <span style="text-transform:none;letter-spacing:0;color:rgba(159,192,163,.85)">(so reminders arrive at the right hour)</span></label><input id="bf-tz" name="timezone" type="text" placeholder="Detected automatically" readonly /></div>
         <div class="field full"><label for="bf-msg">Anything you’d like Kohei to know? <span style="text-transform:none;letter-spacing:0;color:rgba(159,192,163,.85)">(optional)</span></label><textarea id="bf-msg" name="msg" placeholder="A little about your situation and what you’ve tried…"></textarea></div>
-        <button class="btn btn-primary full" style="background:#fff;color:var(--navy)" type="submit">Request my free discovery session <span class="arrow">→</span></button>
+        <button class="btn btn-primary full" style="background:#fff;color:var(--navy)" type="submit">Send my enquiry <span class="arrow">→</span></button>
         <p class="form-note">No obligation. Prefer to write directly? <a href="mailto:info@waterwellclinic.co.nz">info@waterwellclinic.co.nz</a></p>
       </form>
     </div>
@@ -1743,33 +1710,7 @@
     // regresses. Do NOT add a `ccemail` field: Web3Forms free rejects it with
     // HTTP 400 and the submission dies invisibly. Test against production.
 
-  // ---------- CLEAR PATH — horizontal accordion, one open at a time ----------
-  (function(){
-    const acc = document.getElementById('hacc');
-    if(!acc) return;
-    const items = [...acc.querySelectorAll('.hitem')];
-    const wide  = () => matchMedia('(min-width:861px)').matches;
-    const set = (target, on) => {
-      target.classList.toggle('is-open', on);
-      target.querySelector('.hbtn').setAttribute('aria-expanded', String(on));
-    };
-    items.forEach((it, idx) => {
-      it.querySelector('.hbtn').addEventListener('click', () => {
-        const wasOpen = it.classList.contains('is-open');
-        // Laid out horizontally there is no sensible "all shut" state — the row
-        // would collapse to four blank columns — so a click on the open panel
-        // is a no-op there, and a normal toggle once it has stacked.
-        if (wasOpen && wide()) return;
-        items.forEach(o => set(o, o === it && !wasOpen));
-      });
-      it.querySelector('.hbtn').addEventListener('keydown', e => {
-        const d = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
-        if(!d) return;
-        e.preventDefault();
-        items[(idx + d + items.length) % items.length].querySelector('.hbtn').focus();
-      });
-    });
-  })();
+
 
     // Kohei's VA sizes appointment reminders off this. Without it, reminders
     // default to Australian time and international patients get the wrong hour.
