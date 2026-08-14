@@ -111,7 +111,7 @@ Carried from v1, with two additions at the end.
 - **Outcome testimonials generally** ("cured my IBS in 3 sessions") — unsubstantiable efficacy claims under the National Code, misleading-conduct bait under ACL s.18.
 - **Cure/treat/prevent claims for serious conditions** (restricted representations): diabetes, rheumatoid arthritis, depression, heart disease. [TGA — Restricted and prohibited representations](https://www.tga.gov.au/products/regulations-all-products/advertising/applying-advertising-code/restricted-and-prohibited-representations-advertising)
 - **Prohibited representations — never:** cancer, STIs, HIV/AIDS, hepatitis C, mental illness. Zero references in any AU-facing asset.
-- **Before/after implications** — transformation arcs, "from chronic fatigue to full energy in 8 weeks", case-study narratives, before/after imagery.
+- **Before/after implications** — transformation arcs, "from chronic fatigue to full energy in 8 weeks", case-study narratives. **🔄 AMENDED 14 Aug 2026 — before/after *imagery* is no longer banned outright, see §Amendment below.**
 - **"Detox" claims** — "detox programs", "cleanse your liver", "flush toxins". Unsubstantiable, usually implies goods, and pattern-matches Google's unproven-claims filters.
 - **Anti-medicine positioning** — "natural alternative to medication", drug names, "get off your meds".
 - **Guarantees and speed claims** — "results guaranteed", "feel better in 2 weeks", "works where doctors failed".
@@ -130,7 +130,7 @@ The landing page is legally part of the ad — TGA and Google both treat it that
 - [ ] Zero testimonials with clinical outcomes or product mentions; ideally zero testimonials
 - [ ] No serious-condition claims; no cancer/mental illness/STI/hep C references at all
 - [ ] No "detox/cleanse/toxins" language
-- [ ] No before/after stories, imagery, or "results in X weeks" framing
+- [ ] No before/after **stories** or "results in X weeks" framing. Before/after **imagery** is permitted under the 14 Aug amendment, subject to the four conditions there.
 - [ ] **🔄 CHANGED — no "delivered from New Zealand" disclosure.** v1 required this. It is now a false statement. Remove it wherever it appears.
 - [ ] **🔄 CHANGED — credentials block must not claim NZ *registration*.** Qualifications-held framing only, or silence.
 - [ ] **🆕 No NZ location framing anywhere on the AU page** — footer address, "NZ-wide", NZ phone number presented as the clinic line, NZ imagery captioned as the practice
@@ -181,3 +181,50 @@ Every box, verifiable, no exceptions.
 5. **Kohei's insurance and association status post-relocation** — flagged in §6, not researched, his to answer.
 6. **Whether he is still lawfully able to hold NZ patients** — outside advertising compliance, but it is upstream of the entire NZ campaign. His to confirm.
 7. **The Code instrument** — Therapeutic Goods (Advertising) Code 2021 is current as of this research. The "new code from 1 April 2026" that surfaces in searches is **New Zealand's ASA code**, not Australia's. Don't confuse them.
+
+---
+
+## Amendment — 14 August 2026: before/after imagery on the AU page
+
+**Change:** `#results` (the drag-to-compare slider and the three before/after
+cards) is now published on `au.html`. It was previously wrapped in `AU:cut`.
+`#testimonials` remains cut.
+
+**Who decided:** Kohei. His 6 July "Website update notes" say — *"seems like
+before and after photos can be posted as long as staging is consistent and clear
+clinical treatment is disclosed. So let's keep the selected Before and After
+photos."* Relayed again by Logan on 14 August. It is his practice and his
+exposure, and he has evidently researched it.
+
+**Why v2's blanket ban was over-cautious.** v2 listed before/after imagery under
+"never". That was a conservative posture, not a statutory prohibition:
+
+- **TGA** governs advertising of therapeutic *goods*. The AU page names no goods
+  (the gate enforces this), so the Advertising Code — including its before/after
+  rules at s.30 — is not engaged by these photographs.
+- **AHPRA's** testimonial and before/after restrictions bind *registered*
+  practitioners. Naturopathy is unregistered; he is not an AHPRA practitioner.
+- What **does** bind is the **National Code of Conduct** ("must not make claims
+  about the efficacy of treatment that cannot be substantiated") and **ACL
+  s.18/s.29** (misleading conduct). A before/after photograph *is* an efficacy
+  claim, so it must be genuine, representative, and not imply a typical result.
+
+**The four conditions this is permitted under** — two are Kohei's, two follow
+from the National Code and ACL:
+
+1. Consistent staging — each pair shown in the same framing.
+2. The clinical treatment behind the result is disclosed.
+3. Patient permission, with identifying features masked.
+4. An explicit "individual results will vary" statement in the same block.
+
+All four are carried by the expanded `p.disclaimer` in `#results`.
+
+**Still not permitted on AU:** outcome testimonials, quantified results
+("99.9% clear"), timeframe claims, and any before/after presented alongside a
+named product.
+
+**⚠ Unverified by me:** that the photographs are genuinely his patients, that
+permission is on file, and that the "over months rather than a single
+appointment" characterisation is accurate for every case shown. The disclaimer
+asserts all three. Kohei should confirm before launch — the substantiation
+burden under the National Code sits with him, not with the page.
