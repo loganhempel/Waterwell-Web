@@ -31,3 +31,6 @@ Waterwell-Build-Summary-for-Kohei.*
 # Outstanding legal questions for the client — internal, never publish
 LEGAL-NEEDS-KOHEI.md
 Website update notes*.docx
+
+# Vercel CLI link data — this repo is PUBLIC, keep project/org ids out of it
+.vercel/
