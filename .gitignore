@@ -7,6 +7,11 @@ package.json
 # Internal / sensitive — never push to this PUBLIC repo
 Kohei-voicenote-*-TRANSCRIPT.txt
 *-TRANSCRIPT.txt
+# The source recordings themselves. Client audio; this repo is PUBLIC.
+*.m4a
+*.mp3
+*.mov
+*.mp4
 SOURCE-OF-TRUTH.md
 enquiry-data-2026-07-01/
 HANDOFF.md

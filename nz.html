@@ -1026,30 +1026,53 @@
      the right edge. Below 1000px the timeline stacks, so the panel becomes an
      ordinary image above the steps instead of a backdrop they would sit on. */
   #approach{position:relative;overflow:hidden}
-  .tphoto{position:absolute;right:0;top:6%;bottom:6%;width:min(33%,470px);z-index:0;
-    border-radius:24px 0 0 24px;overflow:hidden;box-shadow:var(--shadow)}
-  .tphoto img{width:100%;height:100%;object-fit:cover;object-position:72% 10%}
-  /* Only the left edge is veiled — enough for the timeline rule to run into the
-     photograph without a hard seam, while the photograph still reads as a
-     photograph. An even wash across the whole panel erased it entirely. */
+  /* 20 Aug — Kohei asked for the photograph flush to the top, bottom and right
+     edges of the section rather than floating in a rounded panel. It stays a
+     child of .wrap so the STACKED mobile order (heading, photo, timeline) is
+     untouched; calc(50% - 50vw) walks its right edge out to the viewport, and
+     -96px top and bottom cancels .pad's padding. Above 1000px .pad is always
+     96px, so those two numbers are exact rather than approximate. */
+  .tphoto{position:absolute;right:calc(50% - 50vw);top:-96px;bottom:-96px;
+    width:min(43vw,640px);z-index:0;overflow:hidden}
+  .tphoto img{width:100%;height:100%;object-fit:cover;object-position:72% 12%}
+  /* Two veils. The vertical one is the one he asked for: nothing across the top
+     third, ramping to .72 by the time it is behind step 4's words — 28% of the
+     photograph still showing, which is the "faded a bit" he described. The
+     horizontal one is a narrow feather so the left edge does not butt into the
+     beige as a hard seam, and so the section heading (whose right edge parks at
+     708px between 1000 and 1200) never sits on bare photograph. */
   .tphoto::after{content:"";position:absolute;inset:0;
-    background:linear-gradient(90deg,var(--bg) 0%,rgba(244,238,228,.62) 20%,rgba(244,238,228,.12) 52%,rgba(244,238,228,0) 78%)}
+    background:linear-gradient(180deg,rgba(244,238,228,0) 0%,rgba(244,238,228,0) 30%,rgba(244,238,228,.30) 42%,rgba(244,238,228,.60) 51%,rgba(244,238,228,.72) 58%,rgba(244,238,228,.74) 100%),
+               linear-gradient(90deg,var(--bg) 0%,rgba(244,238,228,.72) 8%,rgba(244,238,228,.24) 20%,rgba(244,238,228,0) 38%)}
+  /* Tiered so the photograph's left edge clears the section heading at every
+     width down to the 1000px stack point. Measured, not estimated. */
+  @media(max-width:1360px){.tphoto{width:38vw}}
+  @media(max-width:1240px){.tphoto{width:34vw}}
+  @media(max-width:1080px){.tphoto{width:30vw}}
   #approach .wrap{position:relative;z-index:1}
   .tstep-on-photo h3,.tstep-on-photo p,.tstep-on-photo .tmeta{position:relative}
-  .tstep-on-photo{background:rgba(255,255,255,.86);backdrop-filter:blur(12px) saturate(1.08);
-    border:1px solid rgba(255,255,255,.7);border-radius:18px;padding:22px 22px 24px;
-    margin:-22px -14px 0 -6px;box-shadow:var(--shadow)}
-  .tstep-on-photo .tnode{background:#fff}
+  /* The white box is gone at his request. --muted measures 4.76:1 on the flat
+     beige — no headroom — so through the veil step 4's paragraph fails AA at
+     every alpha up to .90. Its body copy and meta move to --ink (8.7:1 measured
+     through the veil). Steps 1-3 keep --muted and --sage-text. */
+  .tstep-on-photo{background:none;backdrop-filter:none;border:0;border-radius:0;
+    padding:0;margin:0;box-shadow:none}
+  .tstep-on-photo p,.tstep-on-photo .tmeta{color:var(--ink)}
   @media(max-width:1000px){
     .tphoto{position:static;width:auto;border-radius:20px;margin:0 0 34px;aspect-ratio:16/9;box-shadow:var(--shadow)}
     .tphoto::after{display:none}
     .tphoto img{object-position:60% 28%}
-    .tstep-on-photo{background:none;backdrop-filter:none;border:0;border-radius:0;
-      padding:0;margin:0;box-shadow:none}
+    /* stacked: the words are back on flat beige, so the palette goes back too */
+    .tstep-on-photo p{color:var(--muted)}
+    .tstep-on-photo .tmeta{color:var(--sage-text)}
   }
 
-  /* The band under "the tools behind the treatment" */
-  .svc-band{margin:46px 0 0;border-radius:22px;overflow:hidden;box-shadow:var(--shadow);
+  /* The band under "the tools behind the treatment" — 20 Aug, out of its box
+     and flush to the bottom and both sides of the navy section. The section's
+     bottom padding is zeroed rather than cancelled with a negative margin, so
+     this holds at all three .pad breakpoints instead of only above 980px. */
+  #services{padding-bottom:0;overflow:hidden}
+  .svc-band{margin:56px calc(50% - 50vw) 0;border-radius:0;overflow:hidden;box-shadow:none;
     aspect-ratio:1800/500}
   .svc-band img{width:100%;height:100%;object-fit:cover;object-position:50% 30%}
   @media(max-width:700px){.svc-band{aspect-ratio:16/9;margin-top:34px}}
@@ -1062,8 +1085,8 @@
      sits under the four advantages, which run across the bright right-hand side
      of the photograph where white text would otherwise fail contrast. */
   .online-shot::after{content:"";position:absolute;inset:0;
-    background:linear-gradient(180deg,rgba(7,34,61,0) 40%,rgba(7,34,61,.52) 78%,rgba(7,34,61,.72) 100%),
-               linear-gradient(96deg,rgba(7,34,61,.94) 0%,rgba(7,34,61,.86) 38%,rgba(10,42,73,.5) 72%,rgba(10,42,73,.3) 100%)}
+    background:linear-gradient(180deg,rgba(7,34,61,0) 42%,rgba(7,34,61,.46) 78%,rgba(7,34,61,.64) 100%),
+               linear-gradient(96deg,rgba(7,34,61,.86) 0%,rgba(7,34,61,.76) 38%,rgba(10,42,73,.40) 72%,rgba(10,42,73,.20) 100%)}
   .online-inner{position:relative;z-index:1;padding:88px 28px 84px}
   .online-copy{max-width:56ch}
   .online-copy h2{color:#fff;font-size:clamp(1.9rem,3.4vw,2.8rem);line-height:1.08;margin-bottom:15px}
@@ -1097,10 +1120,12 @@
   .pod-copy h2{font-size:clamp(2.2rem,4.4vw,3.4rem);margin:14px 0 14px}
   .pod-copy p{color:var(--muted);font-size:1.05rem;max-width:50ch}
   .pod-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
-  .pod-art{background:var(--paper);border:1px solid var(--line);border-radius:24px;
-    padding:46px 42px;box-shadow:var(--shadow-soft);display:flex;align-items:center;justify-content:center}
-  .pod-art img{width:100%;max-width:380px;height:auto}
-  @media(max-width:860px){.pod-grid{grid-template-columns:1fr;gap:34px}.pod-art{padding:34px 26px}}
+  /* 20 Aug: "the logo there just looks a bit odd being in a white box" — the
+     lockup is a transparent PNG in the same navy ink as the type, so it sits
+     on the section's own background with nothing behind it. */
+  .pod-art{display:flex;align-items:center;justify-content:center}
+  .pod-art img{width:100%;max-width:410px;height:auto}
+  @media(max-width:860px){.pod-grid{grid-template-columns:1fr;gap:34px}}
   /* ── Header capacity, 20 Aug ─────────────────────────────────────────────
      The nav gained two destinations (Articles, Podcast) and a longer strapline
      under "Email the clinic". Measured at 1440 the booking button ran past the
@@ -1503,10 +1528,9 @@
       <div class="pod-copy reveal">
         <span class="eyebrow">The podcast</span>
         <h2>Ripple.</h2>
-        <p>Long-form conversations with practitioners, clinicians, educators and innovators about the parts of health that rarely fit inside a fifteen-minute appointment &mdash; hosted by Kohei.</p>
+        <p>The Ripple Podcast, hosted by Kohei himself, aims to share natural medicine insights beyond the clinical setting, making actionable wellness information accessible to everyone. Kohei interviews practitioners, industry leaders, educators and innovators at the forefront of health and wellbeing, with each episode designed to inspire positive health &ldquo;ripples&rdquo; in listeners&rsquo; lives.</p>
         <div class="pod-actions">
           <a class="btn btn-primary" href="/podcast">All episodes <span class="arrow">&rarr;</span></a>
-          <a class="btn btn-ghost" href="https://open.spotify.com/show/4iODvgHaViRGBeEFj4rJxT" target="_blank" rel="noopener">Listen on Spotify</a>
         </div>
       </div>
       <div class="pod-art reveal d1">
