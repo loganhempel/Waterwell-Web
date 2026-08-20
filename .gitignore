@@ -34,3 +34,12 @@ Website update notes*.docx
 
 # Vercel CLI link data — this repo is PUBLIC, keep project/org ids out of it
 .vercel/
+
+# Full-size photo originals from the client (19 Aug drop) plus licensed stock
+# masters pulled from his Drive. The site serves the processed crops in
+# assets/; the originals are large and, in the stock case, licensed to Kohei —
+# neither belongs in a PUBLIC repo.
+assets/incoming/
+
+# Drafted client emails — internal, sent from Gmail, never served
+replies/

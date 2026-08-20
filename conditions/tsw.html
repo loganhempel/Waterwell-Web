@@ -147,6 +147,14 @@
       @keyframes pb-rule{from{transform:scaleX(0)}to{transform:scaleX(1)}}
     }
   }
+  /* Kohei's own patient photographs, 19 Aug. The before/after pairs arrive as
+     one labelled 16:9 image, so they need no slider — he asked for "just the
+     picture". */
+  .cond-shot{margin:34px 0 0}
+  .cond-shot img{width:100%;height:auto;border-radius:20px;box-shadow:var(--shadow);
+    border:1px solid var(--line);background:var(--paper)}
+  .cond-shot figcaption{margin-top:12px;font-size:.86rem;color:var(--muted);line-height:1.5}
+  .cond-shot .vary{display:block;font-size:.8rem;color:var(--muted);opacity:.85;margin-top:3px}
 
   .cta-form{margin-top:26px;text-align:left;display:grid;gap:12px}
   .cta-form .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
@@ -189,6 +197,11 @@
     <h2>The Waterwell approach</h2>
     <p>We address the nervous-system disruption caused by long-term steroid use, and work on the underlying eczema that prompted the steroids in the first place. Through nutrition, dietary and lifestyle support we work on inflammation, your cortisol response and the skin’s integrity. It isn’t a quick fix, but guided care can help smooth the ups and downs along the way.</p>
   </div>
+  <figure class="cond-shot">
+    <img src="/assets/conditions/tsw-ba.jpg" alt="A Waterwell patient going through topical steroid withdrawal, before and after." loading="lazy" decoding="async"
+         width="1600" height="900">
+    <figcaption>A Waterwell patient going through topical steroid withdrawal, before and after.<span class="vary">Shared with the patient’s permission. Every case is different and individual results vary.</span></figcaption>
+  </figure>
 </div></section>
 
 <!-- CLEAR PATH — condensed. Kohei asked for a brief version of the homepage

@@ -50,12 +50,6 @@
     "name": "Kohei Iguchi",
     "jobTitle": "Naturopath & Medical Herbalist",
     "hasCredential": "BNatMed, BSc"
-  },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "5.0",
-    "reviewCount": "32",
-    "bestRating": "5"
   }
 }
 </script>
@@ -302,7 +296,7 @@
   .story{background:var(--bg-soft)}
   .story-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:64px;align-items:center}
   .story-media{position:relative}
-  .story-media .main{border-radius:18px;overflow:hidden;box-shadow:var(--shadow);aspect-ratio:4/3}
+  .story-media .main{border-radius:18px;overflow:hidden;box-shadow:var(--shadow);aspect-ratio:3/4}
   .story-media .main img{width:100%;height:100%;object-fit:cover}
   .story-media .stack{position:absolute;right:-22px;bottom:-34px;width:46%;border-radius:14px;overflow:hidden;border:6px solid var(--bg-soft);box-shadow:var(--shadow);background:var(--bg-soft)}
   .story-media .stack img{width:100%;height:auto;display:block;object-fit:contain}
@@ -1007,11 +1001,14 @@
   }
   @media(max-width:560px){
     /* Back to the vertical rail Kohei liked, rather than a cramped 2-up. */
-    .tline{grid-template-columns:1fr;gap:0;padding-left:34px}
+    /* The rail needs to clear the text: the node is 44px wide and used to be
+       offset only 34px, so its right-hand 10px sat on top of every heading —
+       "Free discovery session" rendered as "ree discovery session". */
+    .tline{grid-template-columns:1fr;gap:0;padding-left:58px}
     .tline::before{display:block;left:22px;right:auto;top:8px;bottom:8px;width:1px;height:auto;
       background:linear-gradient(180deg,var(--line),transparent)}
     .tstep{padding:0 0 30px}
-    .tstep .tnode{position:absolute;left:-34px;top:0;width:44px;height:44px;margin:0}
+    .tstep .tnode{position:absolute;left:-58px;top:0;width:44px;height:44px;margin:0}
     .tstep h3{margin-top:8px}
   }
 
@@ -1023,6 +1020,126 @@
     .bento{grid-template-columns:repeat(4,1fr)}
     .bento .bento-feature{grid-column:1/-1;grid-row:auto}
     .bento .bento-b{grid-column:span 1}
+  }
+  /* ── Kohei's 19 Aug photographs ──────────────────────────────────────── */
+  /* "A clear path": the photograph sits behind the fourth step and bleeds off
+     the right edge. Below 1000px the timeline stacks, so the panel becomes an
+     ordinary image above the steps instead of a backdrop they would sit on. */
+  #approach{position:relative;overflow:hidden}
+  .tphoto{position:absolute;right:0;top:6%;bottom:6%;width:min(33%,470px);z-index:0;
+    border-radius:24px 0 0 24px;overflow:hidden;box-shadow:var(--shadow)}
+  .tphoto img{width:100%;height:100%;object-fit:cover;object-position:72% 10%}
+  /* Only the left edge is veiled — enough for the timeline rule to run into the
+     photograph without a hard seam, while the photograph still reads as a
+     photograph. An even wash across the whole panel erased it entirely. */
+  .tphoto::after{content:"";position:absolute;inset:0;
+    background:linear-gradient(90deg,var(--bg) 0%,rgba(244,238,228,.62) 20%,rgba(244,238,228,.12) 52%,rgba(244,238,228,0) 78%)}
+  #approach .wrap{position:relative;z-index:1}
+  .tstep-on-photo h3,.tstep-on-photo p,.tstep-on-photo .tmeta{position:relative}
+  .tstep-on-photo{background:rgba(255,255,255,.86);backdrop-filter:blur(12px) saturate(1.08);
+    border:1px solid rgba(255,255,255,.7);border-radius:18px;padding:22px 22px 24px;
+    margin:-22px -14px 0 -6px;box-shadow:var(--shadow)}
+  .tstep-on-photo .tnode{background:#fff}
+  @media(max-width:1000px){
+    .tphoto{position:static;width:auto;border-radius:20px;margin:0 0 34px;aspect-ratio:16/9;box-shadow:var(--shadow)}
+    .tphoto::after{display:none}
+    .tphoto img{object-position:60% 28%}
+    .tstep-on-photo{background:none;backdrop-filter:none;border:0;border-radius:0;
+      padding:0;margin:0;box-shadow:none}
+  }
+
+  /* The band under "the tools behind the treatment" */
+  .svc-band{margin:46px 0 0;border-radius:22px;overflow:hidden;box-shadow:var(--shadow);
+    aspect-ratio:1800/500}
+  .svc-band img{width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+  @media(max-width:700px){.svc-band{aspect-ratio:16/9;margin-top:34px}}
+
+  /* "Completely online" — full-bleed photograph, copy held to the left */
+  .virtual{position:relative;padding:0;margin:76px 0 84px;isolation:isolate}
+  .online-shot{position:absolute;inset:0;z-index:0;overflow:hidden}
+  .online-shot img{width:100%;height:100%;object-fit:cover;object-position:70% 55%}
+  /* Two layers: the horizontal wash holds the headline column, the vertical one
+     sits under the four advantages, which run across the bright right-hand side
+     of the photograph where white text would otherwise fail contrast. */
+  .online-shot::after{content:"";position:absolute;inset:0;
+    background:linear-gradient(180deg,rgba(7,34,61,0) 40%,rgba(7,34,61,.52) 78%,rgba(7,34,61,.72) 100%),
+               linear-gradient(96deg,rgba(7,34,61,.94) 0%,rgba(7,34,61,.86) 38%,rgba(10,42,73,.5) 72%,rgba(10,42,73,.3) 100%)}
+  .online-inner{position:relative;z-index:1;padding:88px 28px 84px}
+  .online-copy{max-width:56ch}
+  .online-copy h2{color:#fff;font-size:clamp(1.9rem,3.4vw,2.8rem);line-height:1.08;margin-bottom:15px}
+  .online-copy p{color:rgba(255,255,255,.82);font-size:1.06rem;max-width:46ch;margin-bottom:28px}
+  .online-copy .vc-pill{background:rgba(255,255,255,.13);color:#DCEBDD}
+  .online-copy .btn-primary{background:#fff;color:var(--navy)}
+  .online-copy .btn-primary:hover{background:var(--sage-bright,#DCEBDD);color:var(--navy-deep)}
+  .online-pts{list-style:none;margin:44px 0 0;padding:0;display:grid;
+    grid-template-columns:repeat(4,1fr);gap:22px}
+  .online-pts li{display:flex;align-items:center;gap:13px;min-width:0}
+  .online-pts b{color:#fff;font-size:.97rem;font-weight:600;line-height:1.35}
+  .online-pts .vc-ic{background:rgba(255,255,255,.12);color:#fff;width:44px;height:44px;border-radius:12px}
+  @media(max-width:1000px){.online-pts{grid-template-columns:repeat(2,1fr)}}
+  /* On a phone the copy fills the whole section, so a wash dark enough to keep
+     white text legible left the photograph at 8-14% visible — effectively
+     deleted, which is the opposite of what Kohei asked for. Below 620px the
+     photograph becomes its own band at the top of the section and the copy sits
+     on solid navy underneath it: the picture is genuinely visible, and the text
+     is on a flat background rather than fighting a bright laptop. */
+  @media(max-width:620px){
+    .virtual{margin:56px 0 64px;background:var(--navy-ink)}
+    .online-shot{position:static;height:auto;aspect-ratio:16/10}
+    .online-shot::after{background:linear-gradient(180deg,rgba(7,34,61,0) 55%,rgba(7,34,61,.55) 88%,var(--navy-ink) 100%)}
+    .online-inner{padding:30px 22px 58px}
+    .online-pts{grid-template-columns:1fr;gap:16px;margin-top:34px}
+  }
+
+  /* Ripple */
+  .podband{background:var(--bg-soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .pod-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+  .pod-copy h2{font-size:clamp(2.2rem,4.4vw,3.4rem);margin:14px 0 14px}
+  .pod-copy p{color:var(--muted);font-size:1.05rem;max-width:50ch}
+  .pod-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+  .pod-art{background:var(--paper);border:1px solid var(--line);border-radius:24px;
+    padding:46px 42px;box-shadow:var(--shadow-soft);display:flex;align-items:center;justify-content:center}
+  .pod-art img{width:100%;max-width:380px;height:auto}
+  @media(max-width:860px){.pod-grid{grid-template-columns:1fr;gap:34px}.pod-art{padding:34px 26px}}
+  /* ── Header capacity, 20 Aug ─────────────────────────────────────────────
+     The nav gained two destinations (Articles, Podcast) and a longer strapline
+     under "Email the clinic". Measured at 1440 the booking button ran past the
+     viewport edge and was clipped; it already overhung the 1120px wrap by 75px
+     before today, so there was no headroom left to spend.
+
+     Measured widths at full size: brand 278, links 637, email block 243,
+     button 243 — 1520px of content including the wrap's padding. Rather than
+     drop any of the destinations Kohei asked for, the bar sheds weight in
+     stages, and hands over to the burger earlier than it used to.
+
+       >= 1520   everything
+       1181-1519 the "Email the clinic" block steps aside (the address is in
+                 the footer and on every condition page; the booking button,
+                 which is what people actually click, stays) and below 1400 the
+                 links tighten a step
+       <= 1180   burger + drawer, which carries every link
+
+     If you add another nav item, re-measure. There is no slack left. */
+  header.nav .wrap{max-width:1400px}
+  .nav-links{gap:20px}
+  .nav-cta{gap:16px}
+  @media(max-width:1599px){ .nav-phone{display:none} }
+  @media(max-width:1400px){
+    .nav-links{gap:14px}
+    .nav-links a{font-size:13px}
+    .brand img{height:26px}
+  }
+  @media(max-width:1180px){
+    /* Links move into the drawer; the booking button stays in the bar, exactly
+       as it did at the old 980px hand-over. Hiding it here would leave 981-1180
+       with no call to action at all — the sticky bottom bar only appears at
+       980 and below. */
+    .nav-links{display:none}
+    .burger{display:flex}
+    /* With the links and the email block both gone, space-between is left
+       distributing three items across the whole bar and the booking button ends
+       up marooned in the middle of it. Push it over to sit beside the burger. */
+    .nav-cta{margin-left:auto}
   }
 </style>
 </head>
@@ -1041,6 +1158,8 @@
       <a href="#results">Results</a>
       <a href="#story">About Kohei</a>
       <a href="#online">Online</a>
+      <a href="/blog">Articles</a>
+      <a href="/podcast">Podcast</a>
     </nav>
     <div class="nav-cta">
       <a class="nav-phone" href="/au" style="text-align:right">AU site ↗<span>Switch region</span></a>
@@ -1053,6 +1172,7 @@
 <div class="drawer" id="drawer">
   <a href="#conditions">Conditions</a><a href="#how">How it works</a><a href="#services">Services</a><a href="#results">Results</a><a href="#story">About Kohei</a>
   <a href="#online">Online care</a>
+  <a href="/blog">Articles</a><a href="/podcast">Podcast</a>
   <a href="/au">Viewing New Zealand · see Australia →</a>
   <a class="btn btn-primary" href="#visit">Book a free discovery session →</a>
 </div>
@@ -1091,18 +1211,13 @@
           <a class="btn btn-primary" href="#visit">Book a free discovery session <span class="arrow">→</span></a>
           <a class="btn btn-ghost" href="#how">See how it works</a>
         </div>
-        <ul class="hero-ticks reveal d4">
-          <li><span class="tk" aria-hidden="true"></span>Free 15-minute discovery session</li>
-          <li><span class="tk" aria-hidden="true"></span>Comprehensive naturopathic consultation</li>
-          <li class="ra-last"><span class="tk" aria-hidden="true"></span>Live blood screening</li>
-        </ul>
       </div>
       <div class="portrait reveal d2">
         <div class="frame" id="hero-frame">
           <img class="on" src="assets/hero-skin-adult.jpg" width="1200" height="1500" fetchpriority="high"
                alt="A woman holding her forearm, where the skin is red and irritated">
           <img data-src="assets/hero-discovery.jpg" width="1200" height="1500" aria-hidden="true"
-               alt="Kohei Iguchi talking with a patient across the consulting-room desk">
+               alt="Kohei Iguchi in an online consultation at his laptop">
           <img data-src="assets/hero-skin-child.jpg" width="1200" height="1500" aria-hidden="true"
                alt="A young child scratching irritated skin on her arm">
           <img data-src="assets/hero-og-globe.jpg" width="1200" height="1500" aria-hidden="true"
@@ -1134,7 +1249,7 @@
   <div class="wrap">
     <div class="story-grid">
       <div class="story-media reveal">
-        <div class="main"><img src="assets/kohei-microscope.jpg" alt="Kohei Iguchi performing live blood analysis at Waterwell Clinic" loading="lazy" decoding="async" width="1600" height="1066"></div>
+        <div class="main"><img src="assets/kohei-portrait.jpg" alt="Kohei Iguchi, naturopath and founder of Waterwell Clinic" loading="lazy" decoding="async" width="1200" height="1600"></div>
         <div class="stack"><img src="assets/credentials.jpg" alt="Kohei Iguchi's qualifications, Bachelor of Natural Medicine" loading="lazy" decoding="async" width="1200" height="800"></div>
       </div>
       <div class="story-copy">
@@ -1228,12 +1343,16 @@
 </section>
 
 <!-- CLEAR PATH — what working together is -->
-<section class="pad" id="approach">
+<section class="pad has-photo" id="approach">
   <div class="wrap">
     <div class="sec-head reveal">
       <span class="eyebrow">A clear path</span>
       <h2>A calm, considered path towards your desired results.</h2>
       <p>Sometimes you just need reassurance when you’re putting your health in someone else’s hands. Here’s exactly what working together looks like.</p>
+    </div>
+    <div class="tphoto" aria-hidden="true">
+      <img src="assets/approach-considered.jpg" alt="" loading="lazy" decoding="async"
+           width="1100" height="1467">
     </div>
     <ol class="tline">
       <li class="tstep reveal" data-reveal>
@@ -1254,14 +1373,15 @@
         <p>A treatment plan created only for you — herbal medicine, nutrition, and dietary and lifestyle support. No two plans are ever the same, because everyone is unique.</p>
         <span class="tmeta">Individual</span>
       </li>
-      <li class="tstep reveal" data-reveal>
+      <li class="tstep tstep-on-photo reveal" data-reveal>
         <span class="tnode" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l5-5 4 3 5-7"/><path d="M15 8h4v4"/></svg></span>
         <h3>Review &amp; progress</h3>
         <p>We track your progress together and adjust as your body responds — so you can see and feel the change over time. As your skin improves, the plan evolves with you.</p>
         <span class="tmeta">Ongoing</span>
       </li>
     </ol>
-  </section>
+  </div>
+</section>
 
 <!-- SERVICES — tools behind the treatment -->
 <section class="pad services" id="services">
@@ -1294,14 +1414,15 @@
         <div class="svc-a"><p>Used to correct specific deficiencies and support the systems underneath the skin — never as a blanket prescription.</p></div>
       </div>
       
-      
-      
-      
       <div class="svc-item">
         <button class="svc-q" type="button"><span class="sn"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17c3.5 0 3.5-4 7-4s3.5 4 7 4 3.5-2 4-2.6"/><path d="M3 11c3.5 0 3.5-4 7-4s3.5 4 7 4 3.5-2 4-2.6"/></svg></span><span class="svc-t">Dietary and lifestyle advice</span><span class="ic"></span></button>
         <div class="svc-a"><p>The part that holds everything else in place. Practical, specific changes to how you eat, sleep, move and manage stress — built around the life you actually have, so they last past the treatment plan.</p></div>
       </div>
     </div>
+    <figure class="svc-band reveal">
+      <img src="assets/services-band.jpg" alt="Reference books on nutrition and healing foods on Kohei's desk"
+           loading="lazy" decoding="async" width="1800" height="660">
+    </figure>
   </div>
 </section>
 
@@ -1343,24 +1464,6 @@
 </section>
 
 
-<!-- TESTIMONIALS -->
-<section class="pad" id="testimonials">
-  <div class="wrap">
-    <div class="sec-head reveal" style="max-width:720px"><span class="eyebrow">In their words</span><h2>Health, handed back.</h2></div>
-    <div class="rating-band reveal">
-      <span class="rb-score">5.0</span>
-      <span class="rb-mid"><span class="rb-stars">★★★★★</span><span class="rb-sub">Averaged across every review</span></span>
-      <span class="rb-g"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M23.5 12.3c0-.8-.1-1.6-.2-2.3H12v4.5h6.4a5.5 5.5 0 0 1-2.4 3.6v3h3.9c2.3-2.1 3.6-5.2 3.6-8.8z"/><path fill="#34A853" d="M12 24c3.2 0 6-1.1 8-2.9l-3.9-3c-1.1.7-2.5 1.2-4.1 1.2-3.1 0-5.8-2.1-6.7-5H1.3v3.1A12 12 0 0 0 12 24z"/><path fill="#FBBC05" d="M5.3 14.3a7.2 7.2 0 0 1 0-4.6V6.6H1.3a12 12 0 0 0 0 10.8l4-3.1z"/><path fill="#EA4335" d="M12 4.8c1.8 0 3.3.6 4.6 1.8l3.4-3.4A12 12 0 0 0 12 0 12 12 0 0 0 1.3 6.6l4 3.1C6.2 6.9 8.9 4.8 12 4.8z"/></svg>32 Google reviews</span>
-    </div>
-    <div class="tst-grid">
-      <div class="tst big reveal"><div class="q">“</div><p>I cannot thank you enough, Kohei. You have given a healthy quality of life back to my daughter. She had her first full night’s sleep without scratching since this all started — it just goes to show how much everyone needs to know about the wonderful work you do.</p><div class="who" data-initial="MO">— M.O., mother of an eczema patient</div></div>
-      <div class="tst reveal d1"><div class="q">“</div><div class="stars">★★★★★</div><p>I had chronic urticaria and was on two antihistamines and a steroid. Kohei listened, prescribed supplements and dietary and lifestyle changes — I’ve stopped the steroid and one antihistamine, and the urticaria is completely gone.</p><div class="who" data-initial="VA">— V.A.</div></div>
-      <div class="tst reveal d2"><div class="q">“</div><div class="stars">★★★★★</div><p>The 15-minute GP consult is so frustrating. Kohei is kind, considerate and — with his background in psychology — clued in on both the emotional and physical side of your diagnosis. He takes his time and is thorough. I’m very grateful to have found him.</p><div class="who" data-initial="SR">— S.R., chronic fatigue &amp; migraines</div></div>
-      <div class="tst reveal d3"><div class="q">“</div><div class="stars">★★★★★</div><p>He was gentle and non-judgmental, listening to my journey and everything I’d tried. We put a plan in place immediately and I’ve responded really well. If you want someone you can instantly trust to explain what your body needs, contact Kohei.</p><div class="who" data-initial="SS">— S.S., respiratory &amp; immune</div></div>
-    </div>
-  </div>
-</section>
-
 
 <!-- BELIEF -->
 <section class="promise">
@@ -1374,35 +1477,42 @@
 
 <!-- VIRTUAL CARE -->
 <section class="virtual" id="online">
+  <div class="online-shot">
+    <img src="assets/online-backdrop.jpg" alt="" loading="lazy" decoding="async" width="2000" height="875">
+  </div>
+  <div class="wrap online-inner">
+    <div class="online-copy reveal">
+      <span class="vc-pill"><span class="dot"></span> 100% online</span>
+      <h2>Completely online &mdash; and better for it.</h2>
+      <p>Every consultation happens by secure video, so the same in-depth, root-cause care reaches you wherever you are.</p>
+      <a class="btn btn-primary" href="#visit">Book a free discovery session <span class="arrow">&rarr;</span></a>
+    </div>
+    <ul class="online-pts reveal d1">
+      <li><span class="vc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7M5 10v9h14v-9M10 19v-5h4v5"/></svg></span><b>From the comfort of home</b></li>
+      <li><span class="vc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18"/></svg></span><b>Available anywhere in the world</b></li>
+      <li><span class="vc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17h16M6 17V9.5L7.8 5h8.4L18 9.5V17"/><circle cx="8" cy="17" r="1.6"/><circle cx="16" cy="17" r="1.6"/><path d="M6 11h12"/></svg></span><b>No traffic, no waiting room</b></li>
+      <li><span class="vc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-5.7 7-11a7 7 0 1 0-14 0c0 5.3 7 11 7 11z"/><path d="M9.5 10.5c1.5 1.2 3.5 1.2 5 0"/></svg></span><b>Lower travel costs and emissions</b></li>
+    </ul>
+  </div>
+</section>
+
+<!-- RIPPLE PODCAST -->
+<section class="pad podband" id="podcast">
   <div class="wrap">
-    <div class="bento">
-      <div class="bento-cell bento-feature reveal">
-        <svg class="wm" viewBox="0 0 100 130" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M50 4 C50 4 88 52 88 82 A38 38 0 1 1 12 82 C12 52 50 4 50 4 Z"/></svg>
-        <span class="vc-pill"><span class="dot"></span> 100% online</span>
-        <h2>Completely online — and better for it.</h2>
-        <p>Every consultation happens by secure video, so the same in-depth, root-cause care reaches you wherever you are. No waiting rooms, no travel — just genuine help, on your terms.</p>
-        <a class="btn btn-primary" href="#visit">Book a free discovery session <span class="arrow">→</span></a>
+    <div class="pod-grid">
+      <div class="pod-copy reveal">
+        <span class="eyebrow">The podcast</span>
+        <h2>Ripple.</h2>
+        <p>Long-form conversations with practitioners, clinicians, educators and innovators about the parts of health that rarely fit inside a fifteen-minute appointment &mdash; hosted by Kohei.</p>
+        <div class="pod-actions">
+          <a class="btn btn-primary" href="/podcast">All episodes <span class="arrow">&rarr;</span></a>
+          <a class="btn btn-ghost" href="https://open.spotify.com/show/4iODvgHaViRGBeEFj4rJxT" target="_blank" rel="noopener">Listen on Spotify</a>
+        </div>
       </div>
-      <div class="bento-cell bento-b reveal">
-        <span class="vc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7M5 10v9h14v-9M10 19v-5h4v5"/></svg></span>
-        <b>From the comfort of home</b>
-        <span class="bt">Grab your favourite drink, settle into your own couch, and we begin with a click.</span>
+      <div class="pod-art reveal d1">
+        <img src="assets/podcast/ripple-landscape.png" alt="Ripple &mdash; the natural health podcast" loading="lazy" decoding="async" width="1200" height="436">
       </div>
-      <div class="bento-cell bento-b reveal d1">
-        <span class="vc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18"/></svg></span>
-        <b>Available anywhere in the world</b>
-        <span class="bt">In town or halfway across the globe — distance is never a barrier to being seen.</span>
-      </div>
-      <div class="bento-cell bento-b reveal d2">
-        <span class="vc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17h16M6 17V9.5L7.8 5h8.4L18 9.5V17"/><circle cx="8" cy="17" r="1.6"/><circle cx="16" cy="17" r="1.6"/><path d="M6 11h12"/></svg></span>
-        <b>No traffic, no waiting room</b>
-        <span class="bt">Nothing to drive to and nowhere to park — your appointment starts on time, from wherever you are.</span>
-      </div>
-      <div class="bento-cell bento-b reveal d3">
-        <span class="vc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-5.7 7-11a7 7 0 1 0-14 0c0 5.3 7 11 7 11z"/><path d="M9.5 10.5c1.5 1.2 3.5 1.2 5 0"/></svg></span>
-        <b>Lower travel costs and emissions</b>
-        <span class="bt">No fuel, no fares, no time off work — and a lighter footprint for every appointment.</span>
-      </div>
+    </div>
   </div>
 </section>
 
@@ -1484,7 +1594,6 @@
       <div style="position:relative;z-index:2">
         <h3>Let’s begin.</h3>
         <p>Book an initial consultation, ask about a free 15-minute discovery session, or just send a question. Tell me a little below and I’ll be in touch.</p>
-        <p class="pre-note">Before we meet you’re welcome to send <b>photos of your skin</b> and a <b>completed health questionnaire</b>, so we can spend the session talking rather than gathering background. I’ll send the questionnaire when we book.</p>
         <div class="crow" style="margin-top:30px">
           <div class="r"><span>Email &amp; enquiries</span><b style="font-size:1.1rem">info@waterwellclinic.co.nz</b></div>
           <div class="r"><span>Consulting</span><b>Online · worldwide</b></div>
@@ -1514,10 +1623,10 @@
             <option value="Something else">Something else</option>
           </select>
         </div>
-        <div class="field"><label for="bf-city">Your city</label><input id="bf-city" name="city" type="text" placeholder="Your nearest city" autocomplete="address-level2" required /></div>
+        <div class="field"><label for="bf-city">Your city</label><input id="bf-city" name="city" type="text" placeholder="Your nearest city" autocomplete="address-level2" required /><input type="hidden" id="bf-tz" name="timezone" value=""></div>
         <div class="field full"><label for="bf-msg">Anything you’d like Kohei to know? <span style="text-transform:none;letter-spacing:0;color:rgba(159,192,163,.85)">(optional)</span></label><textarea id="bf-msg" name="msg" placeholder="A little about your situation and what you’ve tried…"></textarea></div>
         <button class="btn btn-primary full" style="background:#fff;color:var(--navy)" type="submit">Send my enquiry <span class="arrow">→</span></button>
-        <p class="form-note">No obligation. Prefer to write directly? <a href="mailto:info@waterwellclinic.co.nz">info@waterwellclinic.co.nz</a></p>
+        <p class="form-note">Prefer to write directly? <a href="mailto:info@waterwellclinic.co.nz">info@waterwellclinic.co.nz</a></p>
       </form>
     </div>
   </div>
@@ -1530,8 +1639,8 @@
   <div class="wrap">
     <div class="foot-grid">
       <div><div class="logo-w"><img src="assets/logo.png" alt="Waterwell Clinic" width="1500" height="162"></div><p class="tag">Naturopathy and medical herbalism for skin health — online, New Zealand &amp; worldwide. Treating the root cause — eczema, psoriasis, acne and topical steroid withdrawal — from the inside out.</p>
-        <div class="foot-badges"><span>Member, ATMS</span><span>★ 5.0 · 32 Google reviews</span><span>MoneyHub — Best Naturopath, Auckland 2024</span><span>10+ years</span><span>100% online</span></div></div>
-      <div><h4>Explore</h4><ul><li><a href="#conditions">Conditions treated</a></li><li><a href="#how">How it works</a></li><li><a href="#story">My eczema story</a></li><li><a href="#results">Patient results</a></li><li><a href="/blog">Articles</a></li></ul></div>
+        <div class="foot-badges"><span>Member, ATMS</span><span>MoneyHub — Best Naturopath, Auckland 2024</span><span>10+ years</span><span>100% online</span></div></div>
+      <div><h4>Explore</h4><ul><li><a href="#conditions">Conditions treated</a></li><li><a href="#how">How it works</a></li><li><a href="#story">My eczema story</a></li><li><a href="#results">Patient results</a></li><li><a href="/blog">Articles</a></li><li><a href="/podcast">Ripple podcast</a></li></ul></div>
       <div><h4>Visit &amp; book</h4><ul><li><a href="mailto:info@waterwellclinic.co.nz">info@waterwellclinic.co.nz</a></li><li>Online consultations by video</li><li>New Zealand &amp; worldwide</li><li><a href="#visit">Book a free discovery session →</a></li><li><a href="/">Main site</a></li><li><a href="/privacy">Privacy policy</a></li><li><a href="/code-of-conduct">Code of Conduct &amp; complaints</a></li></ul></div>
     </div>
     <div class="foot-bottom">
@@ -1548,6 +1657,16 @@
 
 <script>
   document.getElementById('yr').textContent = new Date().getFullYear();
+  // Time zone travels with the city field so reception never has to work it
+  // out, and the patient is never asked for it. Silent if unsupported.
+  try {
+    const tzEl = document.getElementById('bf-tz');
+    if (tzEl) {
+      const zone = Intl.DateTimeFormat().resolvedOptions().timeZone || '';
+      const local = new Date().toLocaleTimeString([], {hour:'2-digit', minute:'2-digit'});
+      tzEl.value = zone ? `${zone} (their local time ${local})` : '';
+    }
+  } catch (e) {}
   const nav = document.getElementById('nav'), progress = document.getElementById('progress'), mcta = document.getElementById('mcta');
   // ── Analytics ─────────────────────────────────────────────────────────
   // Set GA4_ID to the measurement ID (G-XXXXXXXXXX) and the tag loads itself,
@@ -1695,9 +1814,13 @@
 
 
 
-    // Time zone field removed 14 Aug on Kohei's instruction — reception works
-    // the hour out from the city, so the extra readonly box was one field of
-    // friction for information they already had.
+    // Time zone, 14 → 20 Aug. On 14 Aug Kohei asked for the visible readonly
+    // time-zone box to go, since reception can work the hour out from the city.
+    // On 17 Aug he asked why "your city" was still there, saying he thought the
+    // section that "automatically pulls up the time zone was good". Both hold:
+    // the patient is asked for the city and nothing else, and the browser's own
+    // time zone rides along in a hidden field, so reception gets the answer
+    // without anyone typing it. Filled at load; see the #bf-tz block above.
 
     const WEB3FORMS_KEY = 'REPLACE_WITH_WEB3FORMS_ACCESS_KEY';
     const KEY_SET = /^[0-9a-f-]{30,}$/i.test(WEB3FORMS_KEY);
@@ -1742,7 +1865,9 @@
       if(!city){ f.city.focus(); say('Please add your city so Kohei can offer a sensible time.', false); return; }
 
       const concern = f.concern.value;
+      const tz = (f.timezone && f.timezone.value) || '';
       const body = ('Name: ' + name + '\nEmail: ' + email + '\nCity: ' + city
+        + (tz ? '\nTime zone: ' + tz : '')
         + '\nEnquiry: ' + (concern || 'Not specified')
         + '\n\n' + (f.msg.value || '')).trim();
       const subject = 'Website enquiry — ' + name + (concern ? ' (' + concern + ')' : '');
@@ -1765,6 +1890,7 @@
             name: name,
             email: email,
             city: city,
+            timezone: tz,
             concern: concern,
             message: f.msg.value || '',
             page: location.pathname
@@ -1851,8 +1977,12 @@
       // Kohei's preferred headline, carried over from the old site (11 Aug).
       {h1:'Don’t feel comfortable in your <em class="sheen">own skin</em>?',
        lead:'We offer holistic, natural treatment for chronic skin conditions — so you can feel confident again.'},
-      // Old site slide rs-9, paired with its own photograph.
-      {h1:'Unsure whether naturopathic treatment is <em class="sheen">right for you</em>?',
+      // Old site slide rs-9, paired with its own photograph. The old site's
+      // full headline — "Unsure whether naturopathic treatment is right for
+      // you?" — ran to four lines at display size, and the rotator reserves the
+      // TALLEST message, so it left a 230px void under every other slide.
+      // Trimmed to two lines; the old wording survives verbatim in the lead.
+      {h1:'Unsure if naturopathy is <em class="sheen">right for you</em>?',
        lead:'Take advantage of our free 15-minute discovery session to understand how we can help, and ask any burning questions before committing to an initial consultation.'},
       // Kohei's wording, 14 Aug. Pairs with the child.
       {h1:'Relief starts <em class="sheen">inside</em>.',

@@ -52,3 +52,9 @@ Waterwell-Build-Summary-for-Kohei.*
 LEGAL-NEEDS-KOHEI.md
 Website update notes*.docx
 Kohei-voicenote-*-TRANSCRIPT.txt
+
+# Source snapshots the generators read (not site content)
+content/
+
+# Full-size originals; the site serves the processed crops in assets/
+assets/incoming/
