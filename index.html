@@ -205,13 +205,8 @@
   /* #online sat 47px right of the 148px grid every other section aligns to,
      because the feature card's padding pushed its heading in. Centre the card's
      content so the section reads as centred on the page, like #belief. */
-  #online .bento-feature{text-align:center}
-  #online .bento-feature > *{margin-left:auto;margin-right:auto}
-  #online .bento-feature p{max-width:56ch}
   #online .bento-feature .wm{margin:0}
   .hero-actions{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
-  .hero-ticks{list-style:none;margin-top:18px;display:grid;gap:9px}
-  .hero-ticks li{display:grid;grid-template-columns:auto 1fr;align-items:start;gap:10px;
     font-size:.94rem;line-height:1.4;color:var(--muted)}
   /* The tick is drawn, not a glyph — a text checkmark sits on the baseline and
      reads as punctuation next to a wrapping line. */
@@ -390,18 +385,8 @@
   .svc p{color:rgba(255,255,255,.7);font-size:.95rem;line-height:1.55}
 
   /* testimonials */
-  .rating-band{display:inline-flex;align-items:center;gap:16px;background:var(--paper);border:1px solid var(--line);border-radius:44px;padding:12px 22px;box-shadow:var(--shadow-soft);margin-bottom:40px}
-  .rating-band .rb-score{font-family:var(--display);font-size:1.7rem;color:var(--navy);line-height:1}
-  .rating-band .rb-mid{display:flex;flex-direction:column;gap:3px}
-  .rating-band .rb-stars{color:var(--sand-text);letter-spacing:2px;font-size:14px;line-height:1}
-  .rating-band .rb-sub{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
-  .rating-band .rb-g{display:inline-flex;align-items:center;gap:7px;padding-left:16px;border-left:1px solid var(--line);font-weight:700;font-size:13px;color:var(--ink)}
-  .rating-band .rb-g svg{width:17px;height:17px;flex:0 0 auto}
-  .tst-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-  .tst{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:34px 32px;position:relative}
   .tst .q{font-family:var(--display);position:absolute;top:14px;right:26px;font-size:4rem;color:var(--line);line-height:1}
   .tst .stars{color:var(--sand-text);letter-spacing:2px;font-size:14px;margin-bottom:14px}
-  .tst p{font-size:1.02rem;color:var(--ink);line-height:1.6;position:relative;z-index:2}
   .tst .who{margin-top:18px;font-family:var(--mono);font-size:11.5px;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
   .tst.big{grid-column:span 3;background:var(--sage);color:#fff;border-color:transparent}
   .tst.big .q{color:rgba(255,255,255,.22)}
@@ -509,9 +494,7 @@
   .cond.feature .more{color:#fff}
 
   /* credential pills (story) */
-  .pre-note{margin-top:14px;font-size:.93rem;line-height:1.5;color:rgba(255,255,255,.72);
     padding-left:14px;border-left:2px solid rgba(159,192,163,.5)}
-  .pre-note b{color:rgba(255,255,255,.92);font-weight:500}
   .creds{display:flex;flex-wrap:wrap;gap:9px;margin-top:24px}
   .creds span{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--sage-text);border:1px solid var(--line);background:var(--paper);border-radius:30px;padding:7px 13px}
 
@@ -570,8 +553,6 @@
     .pad,.results,.services,.faq{padding:64px 0}.promise{padding:70px 0}
     .compare{aspect-ratio:4/5}
     .ba-grid{grid-template-columns:1fr 1fr;gap:12px}
-    .rating-band{flex-wrap:wrap;justify-content:center;text-align:center;gap:12px}
-    .rating-band .rb-g{padding-left:0;border-left:0}
     .book-form{grid-template-columns:1fr}
     .bc-embed{padding:16px}
     .bc-embed-inner{min-height:440px}
@@ -634,28 +615,19 @@
   /* --- shared card depth (base cards only; navy/sage modifiers keep their fill via specificity) --- */
   .cond,.tst,.loc{background:linear-gradient(180deg,#ffffff,#fbf7ef);box-shadow:var(--shadow-soft), var(--hair)}
   .virtual-card,.book-cta-card{box-shadow:var(--shadow-lg), var(--hair)}
-  .rating-band{box-shadow:var(--shadow-soft), var(--hair)}
 
   /* --- BENTO: "Completely online" --- */
   .virtual{padding:76px 0 84px}
-  .bento{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
-  .bento-cell{position:relative;border-radius:var(--r);padding:30px 30px;border:1px solid var(--line);
     background:linear-gradient(180deg,#ffffff,#fbf7ef);box-shadow:var(--shadow-soft), var(--hair);overflow:hidden;
     transition:transform .2s var(--ease),box-shadow .2s var(--ease)}
-  .bento-cell:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
   /* feature cell (navy statement + CTA) */
-  .bento-feature{grid-column:span 7;grid-row:span 2;background:var(--navy);border-color:transparent;color:#fff;
     display:flex;flex-direction:column;justify-content:center;padding:46px 46px}
-  .bento-feature::after{content:"";position:absolute;inset:0;pointer-events:none;
     background:radial-gradient(70% 90% at 100% 0%, rgba(159,192,163,.18), transparent 55%)}
   .bento-feature .vc-pill{margin-bottom:18px;position:relative;z-index:1;align-self:flex-start;width:fit-content}
-  .bento-feature h2{color:#fff;font-size:clamp(1.7rem,3vw,2.5rem);line-height:1.1;margin-bottom:14px;position:relative;z-index:1}
-  .bento-feature p{color:rgba(255,255,255,.78);max-width:44ch;margin-bottom:28px;font-size:1.04rem;position:relative;z-index:1}
   .bento-feature .btn{align-self:flex-start;background:#fff;color:var(--navy);position:relative;z-index:1;box-shadow:var(--shadow-soft)}
   .bento-feature .btn:hover{background:var(--sage-bright);color:var(--navy-deep)}
   .bento-feature .wm{position:absolute;right:-34px;bottom:-46px;width:220px;color:var(--sage-bright);opacity:.14;pointer-events:none;z-index:0}
   /* brand tile — worldwide/water motif, adds visual variety to the grid */
-  .bento-tile{grid-column:span 5;grid-row:span 2;padding:0;border-color:transparent;
     background:radial-gradient(120% 120% at 20% 10%, #14508a, var(--navy) 42%, var(--navy-ink))}
   .bento-tile .tw{position:absolute;inset:0;color:#9FC0A3;opacity:.5}
   .bento-tile .tw svg{width:100%;height:100%}
@@ -667,15 +639,9 @@
   .bento-tile .drip path{stroke-dasharray:var(--l);stroke-dashoffset:var(--l)}
   .bento-tile.in .drip path{animation:topoDraw 2s var(--ease) .3s forwards}
   /* benefit cells */
-  .bento-b{grid-column:span 3}
   .bento-b .vc-ic{margin-bottom:16px}
-  .bento-b b{font-family:var(--display);font-weight:400;font-size:1.22rem;color:var(--navy);display:block;margin-bottom:6px;line-height:1.15}
   .bento-b .bt{font-size:.93rem;color:var(--muted);line-height:1.56;display:block}
   @media(max-width:980px){
-    .bento{grid-template-columns:repeat(2,1fr)}
-    .bento-feature{grid-column:1/-1;grid-row:auto;padding:36px 30px}
-    .bento-tile{grid-column:1/-1;grid-row:auto;min-height:200px}
-    .bento-b{grid-column:span 1}
   }
   @media(max-width:560px){.bento{grid-template-columns:1fr}.bento-b{grid-column:1/-1}}
 
@@ -854,8 +820,6 @@
 
   /* Separators as pseudo-elements so a wrap can never strand a "·"
      at the head of the second line. */
-  .hero-ticks{margin-top:16px;gap:8px}
-  .hero-ticks li{font-size:.9rem}
 }
 
 @media(max-width:560px){
@@ -1020,9 +984,6 @@
      it just lined up". Feature runs full width; the cards form one even row
      beneath it. Overrides the 12-col spans declared earlier in the sheet. */
   @media(min-width:981px){
-    .bento{grid-template-columns:repeat(4,1fr)}
-    .bento .bento-feature{grid-column:1/-1;grid-row:auto}
-    .bento .bento-b{grid-column:span 1}
   }
   /* ── Kohei's 19 Aug photographs ──────────────────────────────────────── */
   /* "A clear path": the photograph sits behind the fourth step and bleeds off
