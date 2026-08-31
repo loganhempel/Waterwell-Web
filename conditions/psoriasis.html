@@ -194,6 +194,14 @@
   @media(max-width:560px){ .cta-form .row{grid-template-columns:1fr} }
 
 </style>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-83M8D2WPX4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function(){ dataLayer.push(arguments); };
+  gtag('js', new Date());
+  gtag('config', 'G-83M8D2WPX4');
+</script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -352,7 +360,17 @@ addEventListener('keydown',function(e){if(e.key==='Escape'&&d.classList.contains
           condition: CONDITION, message: f.msg.value || '' })
       });
       var j = await res.json();
-      if(j.success){ f.reset(); say('Thanks \u2014 that\u2019s come through. Kohei will be in touch.', true); }
+      if(j.success){
+        f.reset(); say('Thanks \u2014 that\u2019s come through. Kohei will be in touch.', true);
+        // Conversion signal. This is the event imported into Google Ads. Ten of the
+        // twelve ad destinations are these pages, so without it most paid enquiries
+        // are invisible to bidding.
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({event:'generate_lead', form:'discovery_session', concern:CONDITION});
+        if(typeof gtag === 'function'){
+          gtag('event','generate_lead',{form:'discovery_session', concern:CONDITION});
+        }
+      }
       else { say('That did not send. Please email info@waterwellclinic.co.nz directly.', false); }
     } catch(err){
       say('That did not send. Please email info@waterwellclinic.co.nz directly.', false);
