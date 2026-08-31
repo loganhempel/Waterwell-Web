@@ -883,6 +883,14 @@
   .hero .sub{font-size:.97rem;margin-bottom:22px;max-width:none}
   .hero-dots{margin-top:0}
 
+  /* 31 Aug: the mobile hero measured 1267px against an 844px screen — the
+     portrait alone was 413px and the secondary paragraph 126px, so the CTAs
+     sat off the first screen entirely. Both go on phones; the headline, the
+     lead and the two buttons carry the hero on their own and it now fits.
+     Desktop keeps both. */
+  #hero-frame{display:none}
+  .hero .sub{display:none}
+
   /* CTAs were 290px and 177px — two ragged widths stacked on top of
      each other. Full-bleed and equal reads as one deliberate stack. */
   .hero-actions{flex-direction:column;align-items:stretch;gap:10px;width:100%}
@@ -2078,9 +2086,17 @@
     const shots = [...document.querySelectorAll('#hero-frame img')];
     // Images 2 and 3 sit in the viewport, so loading="lazy" would not defer
     // them — they'd compete with the LCP image. Attach them after load instead.
-    const hydrate = () => shots.forEach(im => {
-      if (im.dataset.src && !im.src) { im.src = im.dataset.src; }
-    });
+    // 31 Aug: the portrait is display:none on phones, so hydrating slides 2-4
+    // would download three images nobody can see. offsetParent is null exactly
+    // when an ancestor is display:none, which is the condition we want.
+    const frameVisible = () => {
+      const f = document.getElementById('hero-frame');
+      return !!f && f.offsetParent !== null;
+    };
+    const hydrate = () => {
+      if (!frameVisible()) return;
+      shots.forEach(im => { if (im.dataset.src && !im.src) { im.src = im.dataset.src; } });
+    };
     if (document.readyState === 'complete') hydrate();
     else addEventListener('load', hydrate, {once:true});
 
@@ -2149,7 +2165,10 @@
     // Re-measure once the display face is actually swapped in — measuring
     // against the fallback font gives the wrong line count.
     if (document.fonts && document.fonts.ready) document.fonts.ready.then(sizeRotator);
-    let rz; addEventListener('resize', () => { clearTimeout(rz); rz = setTimeout(sizeRotator, 150); });
+    let rz; addEventListener('resize', () => {
+      clearTimeout(rz);
+      rz = setTimeout(() => { sizeRotator(); hydrate(); }, 150);
+    });
     const go = n => {
       n = (n + MSG.length) % MSG.length;
       if(n === i) return;
