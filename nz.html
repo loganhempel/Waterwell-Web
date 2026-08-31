@@ -1765,6 +1765,13 @@
     window.dataLayer = window.dataLayer || [];
     window.gtag = function(){ dataLayer.push(arguments); };
     gtag('js', new Date());
+    // Health data. The privacy policy states there is no remarketing or Customer
+    // Match on this site, and the AU compliance note prohibits both on health
+    // campaigns. GA4 ships with ads personalisation ON (npa=0), so it is turned
+    // off explicitly here. Conversion import into Google Ads is unaffected —
+    // this stops audience building, not measurement.
+    gtag('set', 'allow_google_signals', false);
+    gtag('set', 'allow_ad_personalization_signals', false);
     gtag('config', GA4_ID);
   }
 
