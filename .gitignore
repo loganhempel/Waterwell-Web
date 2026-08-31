@@ -48,3 +48,13 @@ assets/incoming/
 
 # Drafted client emails — internal, sent from Gmail, never served
 replies/
+
+# Google Ads builds — keyword/negative/RSA exports, budgets, compliance notes and the
+# client-ask list. Never belonged in a PUBLIC repo. Globbed so a new dated folder is
+# covered automatically. (Earlier builds are already in history — removing those needs
+# a rewrite, which is Logan's call.)
+gads-build-*/
+gads-split-*/
+AUS-compliance-note-*.md
+AU-REMEDIATION-*.md
+Waterwell-Ad-Copy-*

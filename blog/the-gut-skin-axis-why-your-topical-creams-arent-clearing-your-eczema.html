@@ -33,6 +33,28 @@
   .btn .arrow{transition:transform .35s var(--ease)} .btn:hover .arrow{transform:translateX(4px)}
   header.nav{position:fixed;inset:0 0 auto 0;z-index:100;padding:18px 0;background:rgba(244,238,228,.9);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
   .nav-inner{display:flex;align-items:center;justify-content:space-between;gap:24px}
+  /* 24 Aug: these pages had no menu at all, and .nav-back is hidden below
+     680px, so a phone visitor who opened an article could only get back via the
+     wordmark. Same drawer as the homepage, with absolute links. */
+  .burger{display:none;flex-direction:column;justify-content:center;align-items:center;gap:5px;background:none;border:0;cursor:pointer;padding:6px;min-width:44px;min-height:44px}
+  .burger span{width:24px;height:2px;background:var(--navy);transition:.3s}
+  .burger[aria-expanded="true"] span{background:#fff}
+  .burger[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  .burger[aria-expanded="true"] span:nth-child(2){opacity:0}
+  .burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+  .drawer{position:fixed;inset:0;z-index:99;background:var(--navy);transform:translateY(-100%);transition:transform .55s cubic-bezier(.77,0,.175,1);display:flex;flex-direction:column;justify-content:flex-start;
+    padding:calc(env(safe-area-inset-top,0px) + 84px) 26px calc(env(safe-area-inset-bottom,0px) + 26px);gap:0;
+    overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain}
+  .drawer.open{transform:translateY(0)}
+  .drawer a{color:#fff;font-family:var(--display);font-size:clamp(21px,5.9vw,30px);padding:clamp(7px,1.6vw,11px) 0;border-bottom:1px solid rgba(255,255,255,.12);text-decoration:none}
+  .drawer .btn{margin-top:22px;align-self:stretch;width:100%;justify-content:center;text-align:center}
+  body.drawer-open{overflow:hidden}
+  /* The header had no width left — the documented gotcha. Measured at 375px
+     with the burger added: brand ends at 201, the CTA runs 225->357, and the
+     burger landed at x=381, entirely past the right edge and untappable. The
+     homepage solves this the same way: once the burger appears the header CTA
+     goes, because the drawer carries "Book a free discovery session" itself. */
+  @media(max-width:980px){.burger{display:flex}header.nav .nav-cta-btn{display:none}}
   .brand img{height:28px;width:auto;max-width:none;object-fit:contain;flex:none}
   .nav-back{font-family:var(--mono);font-size:12px;letter-spacing:.06em;color:var(--muted);font-weight:600} .nav-back:hover{color:var(--navy)}
   .bhero{padding:150px 0 30px;background:linear-gradient(180deg,var(--bg-soft),var(--bg))}
@@ -149,7 +171,12 @@
   <a class="brand brand-fix" href="/" aria-label="Waterwell Clinic — home"><img src="/assets/logo.png" alt="Waterwell Clinic" width="1500" height="162"></a>
   <a class="nav-back" href="/blog">← All articles</a>
   <a class="btn btn-primary nav-cta-btn" href="/#visit" style="white-space:nowrap"><span class="cta-long">Free discovery session</span><span class="cta-short">Book free call</span> <span class="arrow">→</span></a>
+  <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
 </div></header>
+<div class="drawer" id="drawer">
+  <a href="/#conditions">Conditions</a><a href="/#how">How it works</a><a href="/#services">Services</a><a href="/#results">Results</a><a href="/#story">About Kohei</a><a href="/#online">Online care</a><a href="/blog">Articles</a><a href="/podcast">Podcast</a>
+  <a class="btn btn-primary" href="/#visit">Book a free discovery session →</a>
+</div>
 <main id="main">
 
 <section class="a-hero">
@@ -254,6 +281,12 @@
   <p style="margin-top:10px"><a href="/">Home</a> · <a href="/blog">Articles</a> · <a href="/podcast">Podcast</a> · <a href="/privacy">Privacy</a> · <a href="mailto:info@waterwellclinic.co.nz">info@waterwellclinic.co.nz</a></p>
   <span class="disc">Information in these articles is general in nature and is not a substitute for individual medical advice. Always consult a qualified health professional about your specific condition.</span>
 </div></footer>
-<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();
+(function(){var b=document.getElementById('burger'),d=document.getElementById('drawer');
+if(!b||!d)return;b.setAttribute('aria-expanded','false');b.setAttribute('aria-controls','drawer');
+var set=function(o){d.classList.toggle('open',o);b.setAttribute('aria-expanded',o);document.body.classList.toggle('drawer-open',o);if(o)d.scrollTop=0;};
+b.addEventListener('click',function(){set(!d.classList.contains('open'));});
+d.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){set(false);});});
+addEventListener('keydown',function(e){if(e.key==='Escape'&&d.classList.contains('open')){set(false);b.focus();}});})();</script>
 </body>
 </html>

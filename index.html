@@ -168,10 +168,36 @@
   .nav-phone span{display:block;font-family:var(--mono);font-size:9.5px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
   .burger{display:none;flex-direction:column;justify-content:center;align-items:center;gap:5px;background:none;border:0;cursor:pointer;padding:6px;min-width:44px;min-height:44px}
   .burger span{width:24px;height:2px;background:var(--navy);transition:.3s}
-  .drawer{position:fixed;inset:0;z-index:99;background:var(--navy);transform:translateY(-100%);transition:transform .55s cubic-bezier(.77,0,.175,1);display:flex;flex-direction:column;justify-content:center;padding:40px;gap:6px}
+  /* 24 Aug, Kohei: "the menu button ... just looks very clunky."
+     Measured before the fix, on a 375x667 phone: justify-content:center with
+     the default visible overflow pushed the first link to y=-50 (clipped off
+     the top) and ran the booking CTA 596->717 against a 667px viewport, with no
+     way to scroll to it. On 360x640 it was -64 and 704. The panel also had no
+     close control — the burger sits beneath it — and the CTA hugged the left
+     edge, wrapping its arrow onto a second line.
+     Now: a scrollable column anchored to the top, inside the safe area, with a
+     tighter pitch so all nine items fit a 640px screen without scrolling at
+     all, a full-width centred CTA, and a real close button. */
+  .drawer{position:fixed;inset:0;z-index:99;background:var(--navy);transform:translateY(-100%);transition:transform .55s cubic-bezier(.77,0,.175,1);display:flex;flex-direction:column;justify-content:flex-start;
+    padding:calc(env(safe-area-inset-top,0px) + 84px) 26px calc(env(safe-area-inset-bottom,0px) + 26px);gap:0;
+    overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain}
   .drawer.open{transform:translateY(0)}
-  .drawer a{color:#fff;font-family:var(--display);font-size:30px;padding:11px 0;border-bottom:1px solid rgba(255,255,255,.12)}
-  .drawer .btn{margin-top:26px;align-self:flex-start}
+  .drawer a{color:#fff;font-family:var(--display);font-size:clamp(21px,5.9vw,30px);padding:clamp(7px,1.6vw,11px) 0;border-bottom:1px solid rgba(255,255,255,.12)}
+  .drawer .btn{margin-top:22px;align-self:stretch;width:100%;justify-content:center;text-align:center}
+  /* THE close control, and the real reason the menu felt broken. The burger is
+     NOT behind the panel — header.nav is z-index 100 against the drawer's 99,
+     so it stays on top and stays tappable. But .burger span is var(--navy) and
+     the drawer's background is var(--navy), so once the panel opened the only
+     way out of the menu was an invisible navy-on-navy control. Verified with
+     elementFromPoint: the burger was reachable the whole time, just unseeable.
+     White bars while open, folded into an X so it reads as "close". */
+  .burger[aria-expanded="true"] span{background:#fff}
+  .burger[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  .burger[aria-expanded="true"] span:nth-child(2){opacity:0}
+  .burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+  /* Holding the page still behind the panel. Without this the body scrolls
+     under the menu on iOS, which is most of what "clunky" describes. */
+  body.drawer-open{overflow:hidden}
 
   /* hero */
   .hero{position:relative;padding:168px 0 88px;overflow:hidden}
@@ -187,7 +213,15 @@
      specificity and was silently winning — the fade was .45s, not what this
      rule said. Two classes beats one. The JS swap timeout must match this
      number or the copy changes while still on screen. */
-  .hero-rotator, .hero-rotator.reveal{transition:opacity .38s cubic-bezier(.16,1,.3,1),transform .38s cubic-bezier(.16,1,.3,1)}
+  /* 24 Aug: min-height joins the transition. The rotator used to reserve the
+     TALLEST message for every message, which on a 390px screen left 28-97px of
+     dead space under the copy depending on the slide — the block below jumped
+     by up to 69px every 4.3s. Now each message carries its own height and the
+     container glides between them over the same 380ms as the fade. */
+  .hero-rotator, .hero-rotator.reveal{transition:opacity .38s cubic-bezier(.16,1,.3,1),transform .38s cubic-bezier(.16,1,.3,1),min-height .38s cubic-bezier(.16,1,.3,1)}
+  @media(prefers-reduced-motion:reduce){
+    .hero-rotator, .hero-rotator.reveal{transition:none}
+  }
   .hero-rotator.fading{opacity:0;transform:translateY(10px)}
   /* Dots are real buttons: the original used 26x3px <i> elements, which are
      neither keyboard-reachable nor anywhere near the 40px tap-target floor.
@@ -548,6 +582,11 @@
     .nav-links,.nav-phone{display:none}
     .burger{display:flex}
     .hero-grid,.story-grid,.booking,.foot-grid,.faq-grid,.compare-wrap,.virtual-card,.book-cta-card{grid-template-columns:1fr}
+    /* 24 Aug, Kohei: the "drag to slide" line "needs to go up further where the
+       slider is". Stacked, .compare-copy rendered 473px BELOW the slider it
+       describes, so on a phone you met the photographs with no cue that they
+       drag. Reordered above the slider on mobile only; desktop is untouched. */
+    .compare-copy{order:-1}
     .virtual-card{padding:34px 26px;gap:30px}.virtual .wm{display:none}
     .hero{padding-top:128px}
     .intro-inner{grid-template-columns:1fr;justify-items:center;text-align:center;gap:22px}
@@ -871,6 +910,14 @@
   .brand img{height:24px}
 }
 
+/* 24 Aug: at 320px the wordmark measured 241px and pushed the burger to a right
+   edge of 329 — 9px off the screen, so the menu could not be opened at all on
+   the narrowest phones. Pre-existing; found by the width sweep, not by Kohei. */
+@media(max-width:360px){
+  .brand img{height:21px}
+  header.nav .nav-inner{gap:12px}
+}
+
 /* --- 11 Aug: the two rebuilt sections on phones -------------------- */
 @media(max-width:860px){
   /* The meander needs two columns to read as a meander; below this it is
@@ -1190,7 +1237,7 @@
       <a href="/podcast">Podcast</a>
     </nav>
     <div class="nav-cta">
-      <a class="nav-phone" href="mailto:info@waterwellclinic.co.nz">Email the clinic<span>New Zealand, Australia &amp; worldwide</span></a>
+      <a class="nav-phone" href="mailto:info@waterwellclinic.co.nz">Email the clinic<span>Australia, New Zealand &amp; worldwide</span></a>
       <a class="btn btn-primary" href="#visit">Free discovery session <span class="arrow">→</span></a>
     </div>
     <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
@@ -1663,10 +1710,10 @@
 <footer>
   <div class="wrap">
     <div class="foot-grid">
-      <div><div class="logo-w"><img src="assets/logo.png" alt="Waterwell Clinic" width="1500" height="162"></div><p class="tag">Naturopathy and medical herbalism for skin health — online, New Zealand &amp; worldwide. Treating the root cause — eczema, psoriasis, acne and topical steroid withdrawal — from the inside out.</p>
-        <div class="foot-badges"><span>Member, ATMS</span><!--AU:cut--><span>MoneyHub — Best Naturopath, Auckland 2024</span><!--/AU:cut--><span>10+ years</span><span>100% online</span></div></div>
+      <div><div class="logo-w"><img src="assets/logo.png" alt="Waterwell Clinic" width="1500" height="162"></div><p class="tag">Naturopathy and medical herbalism for skin health — online, Australia, New Zealand &amp; worldwide. Treating the root cause — eczema, psoriasis, acne and topical steroid withdrawal — from the inside out.</p>
+        <div class="foot-badges"><span>Qualified Naturopath</span><span>10 years&#8217; practice</span><span>Hundreds of skin patients treated</span></div></div>
       <div><h4>Explore</h4><ul><li><a href="#conditions">Conditions treated</a></li><li><a href="#how">How it works</a></li><li><a href="#story">My eczema story</a></li><!--AU:cut--><li><a href="#results">Patient results</a></li><!--/AU:cut--><li><a href="/blog">Articles</a></li><li><a href="/podcast">Ripple podcast</a></li></ul></div>
-      <div><h4>Visit &amp; book</h4><ul><li><a href="mailto:info@waterwellclinic.co.nz">info@waterwellclinic.co.nz</a></li><li>Online consultations by video</li><li>New Zealand &amp; worldwide</li><li><a href="#visit">Book a free discovery session →</a></li><li><a href="/privacy">Privacy policy</a></li><li><a href="/code-of-conduct">Code of Conduct &amp; complaints</a></li></ul></div>
+      <div><h4>Visit &amp; book</h4><ul><li><a href="mailto:info@waterwellclinic.co.nz">info@waterwellclinic.co.nz</a></li><li>Online consultations by video</li><li>Australia, New Zealand &amp; worldwide</li><li><a href="#visit">Book a free discovery session →</a></li><li><a href="/privacy">Privacy policy</a></li><li><a href="/code-of-conduct">Code of Conduct &amp; complaints</a></li></ul></div>
     </div>
     <div class="foot-bottom">
       <span>© <span id="yr"></span> Waterwell Clinic. Kohei Iguchi — BNatMed, BSc, Qualified Naturopath &amp; Medical Herbalist.</span>
@@ -1748,9 +1795,19 @@
   // mobile drawer
   const burger = document.getElementById('burger'), drawer = document.getElementById('drawer');
   burger.setAttribute('aria-expanded','false'); burger.setAttribute('aria-controls','drawer');
-  const setDrawer = open => { drawer.classList.toggle('open', open); burger.setAttribute('aria-expanded', open); };
+  // 24 Aug: the panel scrolls, so the page behind it must not. Escape closes
+  // it, the X closes it, and the burger still toggles it.
+  const setDrawer = open => {
+    drawer.classList.toggle('open', open);
+    burger.setAttribute('aria-expanded', open);
+    document.body.classList.toggle('drawer-open', open);
+    if (open) drawer.scrollTop = 0;
+  };
   burger.addEventListener('click', () => setDrawer(!drawer.classList.contains('open')));
   drawer.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setDrawer(false)));
+  addEventListener('keydown', e => {
+    if (e.key === 'Escape' && drawer.classList.contains('open')) { setDrawer(false); burger.focus(); }
+  });
 
   // reveals
   const io = new IntersectionObserver((es) => es.forEach(e => { if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} }), {threshold:0.02, rootMargin:'0px 0px 10% 0px'});
@@ -2049,9 +2106,20 @@
     };
     const paint = () => { paintDots(); paintShot(); };
 
-    // The three headlines do not wrap to the same number of lines, so without
-    // a reserved height the CTAs below jump every time the message changes.
-    // Measure all three off-screen and hold the tallest.
+    // The messages do not wrap to the same number of lines, so without a
+    // reserved height the CTAs below jump every time the message changes.
+    //
+    // 24 Aug, Kohei on mobile: "it looks very glitchy ... a lot of overlapping."
+    // Holding the TALLEST height for every message was the cause. Measured at
+    // 390px wide: the reserve is 239px and the slack under the copy runs 28px
+    // (slide 2), 56px (slide 1), 97px (slide 3) — so slide 3 sat above a 97px
+    // hole and the block below moved by up to 69px every 4.3s.
+    //
+    // Each message now keeps its OWN height. HEIGHTS[i] is applied as the copy
+    // is swapped, inside the existing fade, and min-height is transitioned at
+    // the same 380ms — so the container glides to fit instead of reserving a
+    // void. Re-measured on resize and once the display face has loaded.
+    const HEIGHTS = [];
     const sizeRotator = () => {
       const clone = rot.cloneNode(true);
       clone.classList.remove('fading');
@@ -2064,13 +2132,19 @@
                             'left:-9999px;top:0;min-height:0;width:' + rot.offsetWidth + 'px';
       rot.parentNode.appendChild(clone);
       const ch1 = clone.querySelector('h1'), clead = clone.querySelector('p');
-      let max = 0;
+      HEIGHTS.length = 0;
       MSG.forEach(m => {
         ch1.innerHTML = m.h1; clead.textContent = m.lead;
-        max = Math.max(max, clone.offsetHeight);
+        HEIGHTS.push(clone.offsetHeight);
       });
       clone.remove();
-      rot.style.minHeight = max + 'px';
+      // Applied without a transition on first paint, so the hero does not
+      // animate its own height on load.
+      const prev = rot.style.transition;
+      rot.style.transition = 'none';
+      rot.style.minHeight = HEIGHTS[i] + 'px';
+      void rot.offsetHeight;
+      rot.style.transition = prev;
     };
     sizeRotator();
     // Re-measure once the display face is actually swapped in — measuring
@@ -2081,11 +2155,19 @@
       n = (n + MSG.length) % MSG.length;
       if(n === i) return;
       i = n; paintDots();
-      if(reduce){ paintShot(); h1.innerHTML = MSG[i].h1; lead.textContent = MSG[i].lead; return; }
+      // The height moves with the copy, not before it: setting it here (rather
+      // than at the top of the fade) means the container is already the right
+      // size the moment the new message becomes visible.
+      if(reduce){
+        paintShot(); h1.innerHTML = MSG[i].h1; lead.textContent = MSG[i].lead;
+        if(HEIGHTS[i]) rot.style.minHeight = HEIGHTS[i] + 'px';
+        return;
+      }
       rot.classList.add('fading');
       setTimeout(() => {
         h1.innerHTML = MSG[i].h1; lead.textContent = MSG[i].lead;
         paintShot();
+        if(HEIGHTS[i]) rot.style.minHeight = HEIGHTS[i] + 'px';
         rot.classList.remove('fading');
       }, 380);
     };

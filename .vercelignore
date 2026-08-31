@@ -3,10 +3,9 @@
 # until this file existed. Keep this list in step with .gitignore's intent.
 
 # Google Ads builds: keyword lists, negatives, bid plans, launch gates
-gads-build-2026-07-05/
-gads-build-2026-07-16/
-gads-build-2026-08-03/
-gads-split-2026-07-12/
+# Glob, not dated lines — a new build folder must never need a manual edit here.
+gads-build-*/
+gads-split-*/
 
 # Ad copy drafts and review packs
 Waterwell-Ad-Copy-FOR-KOHEI-2026-07-29.csv
