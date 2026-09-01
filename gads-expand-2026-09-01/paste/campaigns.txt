@@ -1,0 +1,6 @@
+Campaign	Campaign Daily Budget	Campaign Type	Status	Bid Strategy Type
+WW | NZ | Brand 2026	2.00	Search	Paused	Maximize clicks
+WW | NZ | Online Naturopath	10.00	Search	Paused	Maximize clicks
+WW | NZ | Skin Conditions	12.00	Search	Paused	Maximize clicks
+WW | AU | Online Naturopath	1.00	Search	Paused	Maximize clicks
+WW | AU | Skin Conditions	1.00	Search	Paused	Maximize clicks

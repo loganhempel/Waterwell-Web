@@ -1,0 +1,7290 @@
+{
+ "client": "Waterwell Naturopath",
+ "currency": "NZD",
+ "geo": [
+  "NZ campaigns: New Zealand \u2014 Presence only (nationwide, online-first practice)",
+  "AU campaigns: Australia \u2014 Presence only (telehealth from NZ, no AU physical presence)"
+ ],
+ "geo_notes": "Kohei practises FROM AUSTRALIA (confirmed 3 Aug 2026). NZ campaigns serve NZ residents; AU campaigns serve Australian residents. Presence only on both \u2014 never 'presence or interest'. No remarketing, no Customer Match, no health-interest audiences on ANY campaign (Google personalised-advertising policy for medical conditions). 'naturopath near me' stays OUT as a keyword \u2014 the practice is not in-clinic.",
+ "account_notes": "Account 1256973392 (NZD). CONVERSION TRACKING IS DEAD \u2014 verified on production 22 Aug 2026: GA4_ID is an empty string and WEB3FORMS_KEY is the literal placeholder, so every enquiry falls back to mailto: and nothing is recorded. Nothing may launch until that is fixed. Search only, Display and Search Partners OFF. Phrase + exact, zero broad. Testimonials and review aggregates are OUT IN BOTH GEOS since 20 Aug. AU copy is additionally governed by AUS-compliance-note-2026-08-03.md (v2).",
+ "inputs_to_confirm": [
+  "WordPress admin access from Kohei to wire thank-you redirect -> GA4 generate_lead -> import to Ads (LAUNCH-GATES.md gate 1)",
+  "Test conversion end-to-end verified in the Ads UI before any spend",
+  "Cal.com one-click booking live on both nz.html and au.html",
+  "Billing confirmed on the account",
+  "AU-only: au.html + six /conditions/ pages pass the AUS-compliance-note-2026-07-11.md section 5 checklist (currently fails per AU-REMEDIATION-2026-07-12.md) before AU campaigns unpause",
+  "AU-only: Kohei confirms in writing he holds no Ahpra registration in any profession",
+  "AU-only: Google telemedicine-certification question resolved (policy confirmation, clean ad review, or LegitScript)",
+  "AU-only: Kohei signs off on the compliance note",
+  "Confirm daily budget split across NZ (larger, tracking is closer to fixed) vs AU (smaller, gated harder)"
+ ],
+ "shared_negative_lists": {
+  "Junk & Informational": [
+   "free",
+   "jobs",
+   "job",
+   "career",
+   "careers",
+   "course",
+   "courses",
+   "class",
+   "classes",
+   "training",
+   "become a naturopath",
+   "school",
+   "degree",
+   "diploma",
+   "certificate",
+   "university",
+   "salary",
+   "wage",
+   "what is",
+   "definition",
+   "meaning",
+   "wikipedia",
+   "wiki",
+   "reddit",
+   "forum",
+   "quora",
+   "pdf"
+  ],
+  "Not Our Service": [
+   "doctor appointment",
+   "see a doctor",
+   "find a doctor",
+   "gp near me",
+   "find a gp",
+   "gp appointment",
+   "gp clinic",
+   "dermatologist",
+   "pharmacy",
+   "chemist",
+   "prescription",
+   "buy medication",
+   "medication side effects",
+   "cheap medication",
+   "buy cream",
+   "best cream",
+   "cream for eczema",
+   "eczema cream",
+   "buy ointment",
+   "best ointment",
+   "buy steroid cream",
+   "best steroid cream",
+   "steroid cream price",
+   "steroid cream side effects",
+   "dupixent",
+   "cure",
+   "detox",
+   "cleanse"
+  ]
+ },
+ "extensions": {
+  "NZ": {
+   "sitelinks": [
+    [
+     "Book a Free 15-Min Call",
+     "A short call to ask questions",
+     "Then book if it suits",
+     "https://waterwellclinic.com/nz#visit"
+    ],
+    [
+     "Book an Initial Consult",
+     "The full naturopathy appointment",
+     "By secure video, NZ-wide",
+     "https://waterwellclinic.com/nz#visit"
+    ],
+    [
+     "Skin Health",
+     "Eczema, TSW, psoriasis, acne",
+     "Rosacea and skin infections",
+     "https://waterwellclinic.com/nz#conditions"
+    ],
+    [
+     "Gut, Hormones & Energy",
+     "Digestion, cycle, fatigue",
+     "Whole-body naturopathy",
+     "https://waterwellclinic.com/conditions/gut-health"
+    ],
+    [
+     "Meet Kohei",
+     "BNatMed, BSc, MATMS",
+     "10+ years in natural health",
+     "https://waterwellclinic.com/nz#story"
+    ],
+    [
+     "How It Works",
+     "Consults by secure video",
+     "One practitioner, every visit",
+     "https://waterwellclinic.com/nz#how"
+    ]
+   ],
+   "callouts": [
+    "Qualified Naturopath",
+    "Personalised Plans",
+    "Root-Cause Approach",
+    "10+ Years Experience",
+    "Consults By Secure Video",
+    "Online, NZ-Wide",
+    "Same Practitioner",
+    "Works Alongside Your GP"
+   ],
+   "snippets": {
+    "header": "Services",
+    "values": [
+     "Naturopathy",
+     "Herbal Medicine",
+     "Skin Health",
+     "Gut Health",
+     "Hormone Support",
+     "Functional Testing"
+    ]
+   }
+  },
+  "AU": {
+   "sitelinks": [
+    [
+     "Book a Free 15-Min Chat",
+     "A short call to ask questions",
+     "Then book if it suits",
+     "https://waterwellclinic.com/au#visit"
+    ],
+    [
+     "Book a Full Consultation",
+     "The complete appointment",
+     "By secure video",
+     "https://waterwellclinic.com/au#visit"
+    ],
+    [
+     "Skin Health",
+     "Eczema, TSW, psoriasis, acne",
+     "Rosacea and skin concerns",
+     "https://waterwellclinic.com/au#conditions"
+    ],
+    [
+     "Gut, Hormones & Energy",
+     "Digestion, cycle, fatigue",
+     "Whole-body naturopathy",
+     "https://waterwellclinic.com/conditions/gut-health"
+    ],
+    [
+     "Meet Kohei",
+     "BNatMed, BSc, MATMS",
+     "10+ years in natural health",
+     "https://waterwellclinic.com/au#story"
+    ],
+    [
+     "How It Works",
+     "Consultations by secure video",
+     "One practitioner, every visit",
+     "https://waterwellclinic.com/au#how"
+    ]
+   ],
+   "callouts": [
+    "Qualified Naturopath",
+    "Personalised Plans",
+    "A Root-Cause Approach",
+    "10+ Years Experience",
+    "Consults By Secure Video",
+    "Online, Australia-Wide",
+    "Same Practitioner",
+    "Complements Your GP Care"
+   ],
+   "snippets": {
+    "header": "Services",
+    "values": [
+     "Naturopathy",
+     "Skin Health",
+     "Gut Health",
+     "Hormone Support",
+     "Energy & Fatigue",
+     "Sleep & Stress"
+    ]
+   }
+  }
+ },
+ "campaigns": [
+  {
+   "name": "WW | NZ | Brand 2026",
+   "type": "Search",
+   "daily_budget_nzd": 2.0,
+   "budget_note": "RECOMMENDED - confirm with Kohei",
+   "bid_strategy": "Maximise Clicks, max-CPC cap ~$1.50",
+   "networks": "Google Search only (Search Partners OFF, Display OFF)",
+   "locations": [
+    "New Zealand \u2014 Presence only"
+   ],
+   "ad_schedule": "Mon-Sun, all hours",
+   "campaign_negative_lists": [
+    "Junk & Informational"
+   ],
+   "ad_groups": [
+    {
+     "name": "Brand - Waterwell",
+     "theme": "Branded / practitioner-name searches",
+     "final_url": "https://waterwellclinic.com/nz",
+     "keywords": [
+      {
+       "keyword": "waterwell clinic",
+       "match": "phrase"
+      },
+      {
+       "keyword": "waterwell clinic",
+       "match": "exact"
+      },
+      {
+       "keyword": "waterwell naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "waterwell naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "waterwell clinic naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "waterwell clinic naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "kohei iguchi",
+       "match": "phrase"
+      },
+      {
+       "keyword": "kohei iguchi",
+       "match": "exact"
+      },
+      {
+       "keyword": "kohei iguchi naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "kohei iguchi naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "waterwellclinic.co.nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "waterwellclinic.co.nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "waterwell naturopathy",
+       "match": "phrase"
+      },
+      {
+       "keyword": "waterwell naturopathy",
+       "match": "exact"
+      },
+      {
+       "keyword": "waterwell clinic nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "waterwell clinic nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "kohei iguchi medical herbalist",
+       "match": "phrase"
+      },
+      {
+       "keyword": "kohei iguchi medical herbalist",
+       "match": "exact"
+      },
+      {
+       "keyword": "kohei naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "kohei naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "kohei iguchi clinic",
+       "match": "phrase"
+      },
+      {
+       "keyword": "kohei iguchi clinic",
+       "match": "exact"
+      },
+      {
+       "keyword": "waterwell skin clinic",
+       "match": "phrase"
+      },
+      {
+       "keyword": "waterwell skin clinic",
+       "match": "exact"
+      },
+      {
+       "keyword": "waterwell clinic booking",
+       "match": "phrase"
+      },
+      {
+       "keyword": "waterwell clinic booking",
+       "match": "exact"
+      },
+      {
+       "keyword": "waterwell clinic consultation",
+       "match": "phrase"
+      },
+      {
+       "keyword": "waterwell clinic consultation",
+       "match": "exact"
+      }
+     ],
+     "negatives": [
+      "jobs",
+      "careers"
+     ],
+     "rsa": {
+      "headlines": [
+       "Waterwell Clinic",
+       "Waterwell Naturopath",
+       "Kohei Iguchi, Naturopath",
+       "Skin, Gut, Hormones & Energy",
+       "Root-Cause Naturopathy",
+       "Tests Posted To Your Door",
+       "75-Min Initial Consultation",
+       "One Practitioner, Every Visit",
+       "Works Alongside Your GP",
+       "Free 15-Minute Chat First",
+       "Herbal Formulas Made For You",
+       "Waterwell, NZ-Wide",
+       "Book With Waterwell",
+       "See Consultation Options",
+       "Book Your Consultation"
+      ],
+      "descriptions": [
+       "Waterwell Clinic. Kohei Iguchi's naturopathy practice for skin, gut, hormones and energy.",
+       "A 75-minute initial consultation that looks for the cause, not another thing to manage.",
+       "A free 15-minute discovery session first, or book the full consultation.",
+       "Naturopathy that works alongside your GP and current medication, not against it."
+      ],
+      "paths": [
+       "waterwell",
+       "clinic"
+      ],
+      "pinning_notes": "Pos1 pin: 'Waterwell Clinic'. Rest unpinned."
+     }
+    }
+   ],
+   "budget_ladder": {
+    "stage1": 2.0,
+    "stage2": 2.0,
+    "stage3": 2.0
+   },
+   "status": "Paused"
+  },
+  {
+   "name": "WW | NZ | Online Naturopath",
+   "type": "Search",
+   "daily_budget_nzd": 10.0,
+   "budget_note": "RECOMMENDED - confirm with Kohei; expanded 18-07 pass (deeper keywords + full copy rewrite)",
+   "bid_strategy": "Maximise Clicks, max-CPC cap ~$3.50; move to Max Conversions after 15-20 tracked conversions",
+   "networks": "Google Search only (Search Partners OFF, Display OFF)",
+   "locations": [
+    "New Zealand \u2014 Presence only"
+   ],
+   "ad_schedule": "Mon-Sun, all hours at launch",
+   "campaign_negative_lists": [
+    "Junk & Informational",
+    "Not Our Service"
+   ],
+   "ad_groups": [
+    {
+     "name": "Online Naturopath Consult",
+     "theme": "Direct online-naturopath-consult intent",
+     "final_url": "https://waterwellclinic.com/nz",
+     "keywords": [
+      {
+       "keyword": "online naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "online naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "online naturopath nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "online naturopath nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "online naturopath new zealand",
+       "match": "phrase"
+      },
+      {
+       "keyword": "online naturopath new zealand",
+       "match": "exact"
+      },
+      {
+       "keyword": "online naturopath consult",
+       "match": "phrase"
+      },
+      {
+       "keyword": "online naturopath consult",
+       "match": "exact"
+      },
+      {
+       "keyword": "online naturopath consultation",
+       "match": "phrase"
+      },
+      {
+       "keyword": "online naturopath consultation",
+       "match": "exact"
+      },
+      {
+       "keyword": "online naturopath appointment",
+       "match": "phrase"
+      },
+      {
+       "keyword": "online naturopath appointment",
+       "match": "exact"
+      },
+      {
+       "keyword": "online naturopath booking",
+       "match": "phrase"
+      },
+      {
+       "keyword": "online naturopath booking",
+       "match": "exact"
+      },
+      {
+       "keyword": "book naturopath online",
+       "match": "phrase"
+      },
+      {
+       "keyword": "book naturopath online",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath online",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath online",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath online nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath online nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath online consultation",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath online consultation",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopathy online",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopathy online",
+       "match": "exact"
+      },
+      {
+       "keyword": "online naturopathy consultation",
+       "match": "phrase"
+      },
+      {
+       "keyword": "online naturopathy consultation",
+       "match": "exact"
+      },
+      {
+       "keyword": "virtual naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "virtual naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "virtual naturopath nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "virtual naturopath nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "virtual naturopath consultation",
+       "match": "phrase"
+      },
+      {
+       "keyword": "virtual naturopath consultation",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath video consult",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath video consult",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath video consultation",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath video consultation",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath video call",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath video call",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath zoom consultation",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath zoom consultation",
+       "match": "exact"
+      },
+      {
+       "keyword": "online consultation naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "online consultation naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "telehealth naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "telehealth naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "telehealth naturopath nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "telehealth naturopath nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "remote naturopath consultation",
+       "match": "phrase"
+      },
+      {
+       "keyword": "remote naturopath consultation",
+       "match": "exact"
+      },
+      {
+       "keyword": "online naturopathic consultation",
+       "match": "phrase"
+      },
+      {
+       "keyword": "online naturopathic consultation",
+       "match": "exact"
+      },
+      {
+       "keyword": "online natural health consultation",
+       "match": "phrase"
+      },
+      {
+       "keyword": "online natural health consultation",
+       "match": "exact"
+      },
+      {
+       "keyword": "natural health consultation online",
+       "match": "phrase"
+      },
+      {
+       "keyword": "natural health consultation online",
+       "match": "exact"
+      },
+      {
+       "keyword": "best online naturopath nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "best online naturopath nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "qualified naturopath online",
+       "match": "phrase"
+      },
+      {
+       "keyword": "qualified naturopath online",
+       "match": "exact"
+      },
+      {
+       "keyword": "see a naturopath online",
+       "match": "phrase"
+      },
+      {
+       "keyword": "see a naturopath online",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath from home",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath from home",
+       "match": "exact"
+      },
+      {
+       "keyword": "online naturopath session",
+       "match": "phrase"
+      },
+      {
+       "keyword": "online naturopath session",
+       "match": "exact"
+      },
+      {
+       "keyword": "book online naturopath appointment",
+       "match": "phrase"
+      },
+      {
+       "keyword": "book online naturopath appointment",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath appointment online nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath appointment online nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath consultation via video",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath consultation via video",
+       "match": "exact"
+      },
+      {
+       "keyword": "online naturopath enquiry",
+       "match": "phrase"
+      },
+      {
+       "keyword": "online naturopath enquiry",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath phone consultation",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath phone consultation",
+       "match": "exact"
+      },
+      {
+       "keyword": "digital naturopath consultation",
+       "match": "phrase"
+      },
+      {
+       "keyword": "digital naturopath consultation",
+       "match": "exact"
+      },
+      {
+       "keyword": "trusted online naturopath nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "trusted online naturopath nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "experienced online naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "experienced online naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "online naturopath cost nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "online naturopath cost nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath consultation price nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath consultation price nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath functional testing nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath functional testing nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath lab tests online",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath lab tests online",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath initial consultation nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath initial consultation nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath consultation nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath consultation nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopathic doctor nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopathic doctor nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopathic practitioner nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopathic practitioner nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "natural medicine practitioner nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "natural medicine practitioner nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopathic consultation",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopathic consultation",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath cost nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath cost nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath prices nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath prices nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath consultation cost",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath consultation cost",
+       "match": "exact"
+      },
+      {
+       "keyword": "affordable naturopath nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "affordable naturopath nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "speak to a naturopath online",
+       "match": "phrase"
+      },
+      {
+       "keyword": "speak to a naturopath online",
+       "match": "exact"
+      },
+      {
+       "keyword": "talk to a naturopath online",
+       "match": "phrase"
+      },
+      {
+       "keyword": "talk to a naturopath online",
+       "match": "exact"
+      },
+      {
+       "keyword": "consult a naturopath online",
+       "match": "phrase"
+      },
+      {
+       "keyword": "consult a naturopath online",
+       "match": "exact"
+      },
+      {
+       "keyword": "book a naturopath consultation",
+       "match": "phrase"
+      },
+      {
+       "keyword": "book a naturopath consultation",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath discovery call",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath discovery call",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath second opinion",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath second opinion",
+       "match": "exact"
+      },
+      {
+       "keyword": "family naturopath nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "family naturopath nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath for kids nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath for kids nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "childrens naturopath nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "childrens naturopath nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "paediatric naturopath nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "paediatric naturopath nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "functional testing naturopath nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "functional testing naturopath nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "functional medicine testing nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "functional medicine testing nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath health plan nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath health plan nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath consult",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath consult",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath appointment",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath appointment",
+       "match": "exact"
+      },
+      {
+       "keyword": "see a naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "see a naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath booking",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath booking",
+       "match": "exact"
+      },
+      {
+       "keyword": "video naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "video naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath session",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath session",
+       "match": "exact"
+      },
+      {
+       "keyword": "book a naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "book a naturopath",
+       "match": "exact"
+      }
+     ],
+     "negatives": [
+      "free",
+      "jobs",
+      "job",
+      "career",
+      "careers",
+      "course",
+      "courses",
+      "class",
+      "classes",
+      "training",
+      "become a naturopath",
+      "school",
+      "degree",
+      "diploma",
+      "certificate",
+      "university",
+      "salary",
+      "wage",
+      "what is",
+      "definition",
+      "meaning",
+      "wikipedia",
+      "wiki",
+      "reddit",
+      "forum",
+      "quora",
+      "pdf",
+      "doctor appointment",
+      "see a doctor",
+      "find a doctor",
+      "gp near me",
+      "find a gp",
+      "gp appointment",
+      "gp clinic",
+      "pharmacy",
+      "chemist",
+      "prescription",
+      "buy medication",
+      "cheap medication",
+      "cream",
+      "ointment"
+     ],
+     "rsa": {
+      "headlines": [
+       "Online Naturopath NZ",
+       "Online Naturopath Consultation",
+       "Told Your Bloods Are Normal",
+       "Tired Of Managing Symptoms",
+       "Find The Root Cause",
+       "Lab Testing, Done At Home",
+       "Consults By Secure Video",
+       "Same Practitioner Each Time",
+       "Your GP Stays In The Loop",
+       "Start With A Free 15 Mins",
+       "Individually Prescribed Herbs",
+       "Online Naturopath, NZ-Wide",
+       "Book A Naturopath Consult",
+       "See What's Actually Wrong",
+       "Book Your First Session"
+      ],
+      "descriptions": [
+       "Still no answers after normal bloods? A 75-minute consultation that looks for the cause.",
+       "Functional testing posted to your door, then a plan built on your actual results.",
+       "Start with a free 15-minute session, or go straight to a full consultation.",
+       "Works alongside the medical care you already have. Nothing is replaced."
+      ],
+      "paths": [
+       "online",
+       "naturopath"
+      ],
+      "pinning_notes": "Pos1 pin: 'Online Naturopath NZ'. Rest unpinned."
+     }
+    },
+    {
+     "name": "General Naturopathy",
+     "theme": "NZ-wide + city-modified naturopath demand (bare terms + volume lever)",
+     "final_url": "https://waterwellclinic.com/nz",
+     "keywords": [
+      {
+       "keyword": "naturopath nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath new zealand",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath new zealand",
+       "match": "exact"
+      },
+      {
+       "keyword": "best naturopath nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "best naturopath nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath auckland",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath auckland",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath wellington",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath wellington",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath christchurch",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath christchurch",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath hamilton",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath hamilton",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath tauranga",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath tauranga",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath dunedin",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath dunedin",
+       "match": "exact"
+      },
+      {
+       "keyword": "holistic health practitioner nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "holistic health practitioner nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "natural health practitioner nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "natural health practitioner nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "qualified naturopath nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "qualified naturopath nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "registered naturopath nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "registered naturopath nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath napier",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath napier",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath palmerston north",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath palmerston north",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath rotorua",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath rotorua",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath nelson",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath nelson",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath invercargill",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath invercargill",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath appointment nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath appointment nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "natural health clinic nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "natural health clinic nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "holistic naturopath nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "holistic naturopath nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath specialising in skin",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath specialising in skin",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath whangarei",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath whangarei",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath new plymouth",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath new plymouth",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath whanganui",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath whanganui",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath gisborne",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath gisborne",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath taupo",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath taupo",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath queenstown",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath queenstown",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath timaru",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath timaru",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath blenheim",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath blenheim",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath masterton",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath masterton",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath hastings",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath hastings",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath lower hutt",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath lower hutt",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath porirua",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath porirua",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath kapiti",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath kapiti",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath north shore",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath north shore",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath hawkes bay",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath hawkes bay",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath bay of plenty",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath bay of plenty",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath waikato",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath waikato",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath otago",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath otago",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopathy nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopathy nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopathic medicine nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopathic medicine nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "natural therapies nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "natural therapies nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "holistic health nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "holistic health nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopathy",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopathy",
+       "match": "exact"
+      },
+      {
+       "keyword": "natural health",
+       "match": "phrase"
+      },
+      {
+       "keyword": "natural health",
+       "match": "exact"
+      },
+      {
+       "keyword": "natural medicine",
+       "match": "phrase"
+      },
+      {
+       "keyword": "natural medicine",
+       "match": "exact"
+      },
+      {
+       "keyword": "holistic practitioner",
+       "match": "phrase"
+      },
+      {
+       "keyword": "holistic practitioner",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath consultation",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath consultation",
+       "match": "exact"
+      }
+     ],
+     "negatives": [
+      "free",
+      "jobs",
+      "job",
+      "career",
+      "careers",
+      "course",
+      "courses",
+      "class",
+      "classes",
+      "training",
+      "become a naturopath",
+      "school",
+      "degree",
+      "diploma",
+      "certificate",
+      "university",
+      "salary",
+      "wage",
+      "what is",
+      "definition",
+      "meaning",
+      "wikipedia",
+      "wiki",
+      "reddit",
+      "forum",
+      "quora",
+      "pdf",
+      "doctor appointment",
+      "see a doctor",
+      "find a doctor",
+      "gp near me",
+      "find a gp",
+      "gp appointment",
+      "gp clinic",
+      "pharmacy",
+      "chemist",
+      "prescription",
+      "buy medication",
+      "cheap medication",
+      "cream",
+      "ointment"
+     ],
+     "rsa": {
+      "headlines": [
+       "Naturopath NZ",
+       "Naturopath Consultation Online",
+       "No Good Naturopath Near You?",
+       "Answers, Not Another Symptom",
+       "Whole-Body, Not Just The Bit",
+       "Test Kits Sent Out To You",
+       "Fully Online Consultations",
+       "No Waitlist, Book Direct",
+       "Alongside Your Doctor's Care",
+       "Your First Call Is Free",
+       "Herbs Chosen For Your Case",
+       "Naturopath Across NZ",
+       "Book A Naturopathy Session",
+       "Get To The Cause",
+       "Book Your Consult Today"
+      ],
+      "descriptions": [
+       "No decent naturopath nearby? Consultations run by video, so location stops mattering.",
+       "Gut, skin, hormones, sleep and energy, looked at together rather than one at a time.",
+       "A free 15-minute discovery session first, or book the full consultation.",
+       "Works alongside the medical care you already have. Nothing is replaced."
+      ],
+      "paths": [
+       "naturopath",
+       "nz"
+      ],
+      "pinning_notes": "Pos1 pin: 'Naturopath NZ'. Rest unpinned."
+     }
+    },
+    {
+     "name": "Herbal Medicine",
+     "theme": "Medical-herbalist head-term (a named service on site)",
+     "final_url": "https://waterwellclinic.com/nz",
+     "keywords": [
+      {
+       "keyword": "medical herbalist",
+       "match": "phrase"
+      },
+      {
+       "keyword": "medical herbalist",
+       "match": "exact"
+      },
+      {
+       "keyword": "medical herbalist nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "medical herbalist nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "online medical herbalist",
+       "match": "phrase"
+      },
+      {
+       "keyword": "online medical herbalist",
+       "match": "exact"
+      },
+      {
+       "keyword": "herbalist nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "herbalist nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "online herbalist",
+       "match": "phrase"
+      },
+      {
+       "keyword": "online herbalist",
+       "match": "exact"
+      },
+      {
+       "keyword": "herbal medicine nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "herbal medicine nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "herbal medicine consultation",
+       "match": "phrase"
+      },
+      {
+       "keyword": "herbal medicine consultation",
+       "match": "exact"
+      },
+      {
+       "keyword": "online herbal medicine consultation",
+       "match": "phrase"
+      },
+      {
+       "keyword": "online herbal medicine consultation",
+       "match": "exact"
+      },
+      {
+       "keyword": "herbalist consultation nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "herbalist consultation nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "western herbal medicine nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "western herbal medicine nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "herbal medicine practitioner nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "herbal medicine practitioner nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "registered medical herbalist nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "registered medical herbalist nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "qualified herbalist nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "qualified herbalist nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "herbalist for skin conditions",
+       "match": "phrase"
+      },
+      {
+       "keyword": "herbalist for skin conditions",
+       "match": "exact"
+      },
+      {
+       "keyword": "herbal medicine for skin nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "herbal medicine for skin nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "prescribed herbal medicine nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "prescribed herbal medicine nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "custom herbal formula nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "custom herbal formula nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "herbal medicine online nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "herbal medicine online nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "herbalist",
+       "match": "phrase"
+      },
+      {
+       "keyword": "herbalist",
+       "match": "exact"
+      },
+      {
+       "keyword": "herbal medicine",
+       "match": "phrase"
+      },
+      {
+       "keyword": "herbal medicine",
+       "match": "exact"
+      },
+      {
+       "keyword": "herbal remedies",
+       "match": "phrase"
+      },
+      {
+       "keyword": "herbal remedies",
+       "match": "exact"
+      },
+      {
+       "keyword": "herbal consultation",
+       "match": "phrase"
+      },
+      {
+       "keyword": "herbal consultation",
+       "match": "exact"
+      },
+      {
+       "keyword": "herbal practitioner",
+       "match": "phrase"
+      },
+      {
+       "keyword": "herbal practitioner",
+       "match": "exact"
+      }
+     ],
+     "negatives": [
+      "free",
+      "jobs",
+      "job",
+      "career",
+      "careers",
+      "course",
+      "courses",
+      "class",
+      "classes",
+      "training",
+      "become a herbalist",
+      "school",
+      "degree",
+      "diploma",
+      "certificate",
+      "university",
+      "salary",
+      "wage",
+      "what is",
+      "definition",
+      "meaning",
+      "wikipedia",
+      "wiki",
+      "reddit",
+      "forum",
+      "quora",
+      "pdf",
+      "buy herbs",
+      "buy herbal",
+      "herbal supplements",
+      "herbal tea",
+      "herbal tincture",
+      "shop",
+      "stockist",
+      "wholesale",
+      "supplier",
+      "dispensary",
+      "doctor appointment",
+      "see a doctor",
+      "find a doctor",
+      "pharmacy",
+      "chemist",
+      "prescription"
+     ],
+     "rsa": {
+      "headlines": [
+       "Medical Herbalist NZ",
+       "Online Herbal Medicine",
+       "Not Another Off-Shelf Bottle",
+       "Tried Every Supplement Going",
+       "Formulas Made For You",
+       "Answers From Actual Testing",
+       "A Full 75-Minute Appointment",
+       "Your Case, Not A Protocol",
+       "Keeps Your Doctor Informed",
+       "Free 15-Min Discovery Call",
+       "Made Up For Your Case",
+       "Herbal Medicine, NZ-Wide",
+       "Book A Herbal Consult",
+       "Get Your Own Formula",
+       "Speak To A Herbalist"
+      ],
+      "descriptions": [
+       "Individually prescribed herbal formulas, chosen for your case, not pulled off a shelf.",
+       "Your formula is adjusted as your body responds, not repeated on autopilot.",
+       "Start with a free 15-minute session, or go straight to a full consultation.",
+       "Works alongside the medical care you already have. Nothing is replaced."
+      ],
+      "paths": [
+       "herbal",
+       "medicine"
+      ],
+      "pinning_notes": "Pos1 pin: 'Medical Herbalist NZ'. Rest unpinned."
+     }
+    }
+   ],
+   "budget_ladder": {
+    "stage1": 10.0,
+    "stage2": 14.0,
+    "stage3": 14.0
+   },
+   "status": "Paused"
+  },
+  {
+   "name": "WW | NZ | Skin Conditions",
+   "type": "Search",
+   "daily_budget_nzd": 12.0,
+   "budget_note": "RECOMMENDED - confirm with Kohei; up from $10 (07-12) with condition split into 6 groups",
+   "bid_strategy": "Maximise Clicks, max-CPC cap ~$3.50; move to Max Conversions after 15-20 tracked conversions",
+   "networks": "Google Search only (Search Partners OFF, Display OFF)",
+   "locations": [
+    "New Zealand \u2014 Presence only"
+   ],
+   "ad_schedule": "Mon-Sun, all hours",
+   "campaign_negative_lists": [
+    "Junk & Informational",
+    "Not Our Service"
+   ],
+   "ad_groups": [
+    {
+     "name": "Eczema",
+     "theme": "Eczema-specific naturopathy",
+     "final_url": "https://waterwellclinic.com/conditions/eczema",
+     "keywords": [
+      {
+       "keyword": "naturopath for eczema",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath for eczema",
+       "match": "exact"
+      },
+      {
+       "keyword": "eczema natural treatment",
+       "match": "phrase"
+      },
+      {
+       "keyword": "eczema natural treatment",
+       "match": "exact"
+      },
+      {
+       "keyword": "online eczema specialist",
+       "match": "phrase"
+      },
+      {
+       "keyword": "online eczema specialist",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath eczema online",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath eczema online",
+       "match": "exact"
+      },
+      {
+       "keyword": "natural eczema help",
+       "match": "phrase"
+      },
+      {
+       "keyword": "natural eczema help",
+       "match": "exact"
+      },
+      {
+       "keyword": "eczema naturopath nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "eczema naturopath nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "natural remedies for eczema",
+       "match": "phrase"
+      },
+      {
+       "keyword": "natural remedies for eczema",
+       "match": "exact"
+      },
+      {
+       "keyword": "eczema support naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "eczema support naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "gut-skin eczema naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "gut-skin eczema naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "eczema flare up help",
+       "match": "phrase"
+      },
+      {
+       "keyword": "eczema flare up help",
+       "match": "exact"
+      },
+      {
+       "keyword": "baby eczema naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "baby eczema naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "eczema diet naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "eczema diet naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "eczema naturopath cost nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "eczema naturopath cost nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "eczema consultation price nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "eczema consultation price nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "why wont my eczema go away",
+       "match": "phrase"
+      },
+      {
+       "keyword": "why wont my eczema go away",
+       "match": "exact"
+      },
+      {
+       "keyword": "eczema keeps coming back",
+       "match": "phrase"
+      },
+      {
+       "keyword": "eczema keeps coming back",
+       "match": "exact"
+      },
+      {
+       "keyword": "eczema gut health connection",
+       "match": "phrase"
+      },
+      {
+       "keyword": "eczema gut health connection",
+       "match": "exact"
+      },
+      {
+       "keyword": "leaky gut eczema naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "leaky gut eczema naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "registered naturopath eczema nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "registered naturopath eczema nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "medical herbalist eczema nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "medical herbalist eczema nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "childhood eczema naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "childhood eczema naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "adult eczema naturopath nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "adult eczema naturopath nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "eczema trigger naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "eczema trigger naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "eczema immune naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "eczema immune naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "best online eczema naturopath nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "best online eczema naturopath nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "eczema naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "eczema naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "eczema specialist nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "eczema specialist nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "eczema help nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "eczema help nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "eczema treatment nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "eczema treatment nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "dyshidrotic eczema naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "dyshidrotic eczema naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "hand eczema naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "hand eczema naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "scalp eczema naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "scalp eczema naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "eczema in children naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "eczema in children naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "toddler eczema naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "toddler eczema naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "severe eczema naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "severe eczema naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "chronic eczema naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "chronic eczema naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "eczema and food naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "eczema and food naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "eczema diet plan nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "eczema diet plan nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "herbal medicine for eczema nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "herbal medicine for eczema nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "eczema help",
+       "match": "phrase"
+      },
+      {
+       "keyword": "eczema help",
+       "match": "exact"
+      },
+      {
+       "keyword": "eczema treatment",
+       "match": "phrase"
+      },
+      {
+       "keyword": "eczema treatment",
+       "match": "exact"
+      },
+      {
+       "keyword": "eczema specialist",
+       "match": "phrase"
+      },
+      {
+       "keyword": "eczema specialist",
+       "match": "exact"
+      },
+      {
+       "keyword": "eczema diet",
+       "match": "phrase"
+      },
+      {
+       "keyword": "eczema diet",
+       "match": "exact"
+      },
+      {
+       "keyword": "eczema causes",
+       "match": "phrase"
+      },
+      {
+       "keyword": "eczema causes",
+       "match": "exact"
+      },
+      {
+       "keyword": "help with eczema",
+       "match": "phrase"
+      },
+      {
+       "keyword": "help with eczema",
+       "match": "exact"
+      },
+      {
+       "keyword": "eczema support",
+       "match": "phrase"
+      },
+      {
+       "keyword": "eczema support",
+       "match": "exact"
+      },
+      {
+       "keyword": "natural eczema treatment",
+       "match": "phrase"
+      },
+      {
+       "keyword": "natural eczema treatment",
+       "match": "exact"
+      }
+     ],
+     "negatives": [
+      "free",
+      "jobs",
+      "job",
+      "career",
+      "careers",
+      "course",
+      "courses",
+      "class",
+      "classes",
+      "training",
+      "become a naturopath",
+      "school",
+      "degree",
+      "diploma",
+      "certificate",
+      "university",
+      "salary",
+      "wage",
+      "what is",
+      "definition",
+      "meaning",
+      "wikipedia",
+      "wiki",
+      "reddit",
+      "forum",
+      "quora",
+      "pdf",
+      "doctor appointment",
+      "see a doctor",
+      "find a doctor",
+      "gp near me",
+      "find a gp",
+      "gp appointment",
+      "gp clinic",
+      "pharmacy",
+      "chemist",
+      "prescription",
+      "buy medication",
+      "cheap medication",
+      "cream",
+      "ointment"
+     ],
+     "rsa": {
+      "headlines": [
+       "Naturopath For Eczema",
+       "Eczema Naturopath Online",
+       "Itching That Wakes You At 3am",
+       "Flares That Keep Coming Back",
+       "Eczema Starts On The Inside",
+       "Test First, Then Treat",
+       "Private, Secure Video Calls",
+       "One-On-One, Start To Finish",
+       "Works With Your Doctor",
+       "Start With A Free Chat",
+       "Not A Shelf Supplement",
+       "Eczema Support, NZ-Wide",
+       "Book An Eczema Consult",
+       "Treat The Cause, Not The Flare",
+       "Start Your Eczema Plan"
+      ],
+      "descriptions": [
+       "Steroid creams calm the flare. They don't touch whatever keeps causing it.",
+       "Kohei was once head to toe in eczema himself. He treats the gut and immune drivers.",
+       "A free 15-minute discovery session first, or book the full consultation.",
+       "Works alongside the medical care you already have. Nothing is replaced."
+      ],
+      "paths": [
+       "online",
+       "eczema"
+      ],
+      "pinning_notes": "Pos1 pin: 'Naturopath For Eczema'. Rest unpinned."
+     }
+    },
+    {
+     "name": "Topical Steroid Withdrawal",
+     "theme": "TSW / red skin syndrome",
+     "final_url": "https://waterwellclinic.com/conditions/tsw",
+     "keywords": [
+      {
+       "keyword": "topical steroid withdrawal help",
+       "match": "phrase"
+      },
+      {
+       "keyword": "topical steroid withdrawal help",
+       "match": "exact"
+      },
+      {
+       "keyword": "tsw naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "tsw naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "tsw naturopath nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "tsw naturopath nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "steroid withdrawal skin support",
+       "match": "phrase"
+      },
+      {
+       "keyword": "steroid withdrawal skin support",
+       "match": "exact"
+      },
+      {
+       "keyword": "tsw natural treatment",
+       "match": "phrase"
+      },
+      {
+       "keyword": "tsw natural treatment",
+       "match": "exact"
+      },
+      {
+       "keyword": "tsw recovery support",
+       "match": "phrase"
+      },
+      {
+       "keyword": "tsw recovery support",
+       "match": "exact"
+      },
+      {
+       "keyword": "red skin syndrome naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "red skin syndrome naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "topical steroid withdrawal naturopath nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "topical steroid withdrawal naturopath nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "tsw support online",
+       "match": "phrase"
+      },
+      {
+       "keyword": "tsw support online",
+       "match": "exact"
+      },
+      {
+       "keyword": "tsw naturopath cost nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "tsw naturopath cost nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "tsw flare naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "tsw flare naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "red skin syndrome support nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "red skin syndrome support nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "steroid cream withdrawal naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "steroid cream withdrawal naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "tsw gut health naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "tsw gut health naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "tsw immune support naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "tsw immune support naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "tsw recovery naturopath nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "tsw recovery naturopath nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath for skin after steroids",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath for skin after steroids",
+       "match": "exact"
+      },
+      {
+       "keyword": "tsw naturopath online consultation",
+       "match": "phrase"
+      },
+      {
+       "keyword": "tsw naturopath online consultation",
+       "match": "exact"
+      },
+      {
+       "keyword": "registered naturopath tsw nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "registered naturopath tsw nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath for tsw",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath for tsw",
+       "match": "exact"
+      },
+      {
+       "keyword": "tsw help nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "tsw help nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "tsw specialist nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "tsw specialist nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "steroid withdrawal naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "steroid withdrawal naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "coming off steroid cream",
+       "match": "phrase"
+      },
+      {
+       "keyword": "coming off steroid cream",
+       "match": "exact"
+      },
+      {
+       "keyword": "red skin syndrome",
+       "match": "phrase"
+      },
+      {
+       "keyword": "red skin syndrome",
+       "match": "exact"
+      },
+      {
+       "keyword": "tsw diet naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "tsw diet naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "tsw skin support",
+       "match": "phrase"
+      },
+      {
+       "keyword": "tsw skin support",
+       "match": "exact"
+      },
+      {
+       "keyword": "tsw help",
+       "match": "phrase"
+      },
+      {
+       "keyword": "tsw help",
+       "match": "exact"
+      },
+      {
+       "keyword": "tsw support",
+       "match": "phrase"
+      },
+      {
+       "keyword": "tsw support",
+       "match": "exact"
+      },
+      {
+       "keyword": "tsw treatment",
+       "match": "phrase"
+      },
+      {
+       "keyword": "tsw treatment",
+       "match": "exact"
+      },
+      {
+       "keyword": "tsw recovery",
+       "match": "phrase"
+      },
+      {
+       "keyword": "tsw recovery",
+       "match": "exact"
+      },
+      {
+       "keyword": "topical steroid withdrawal",
+       "match": "phrase"
+      },
+      {
+       "keyword": "topical steroid withdrawal",
+       "match": "exact"
+      },
+      {
+       "keyword": "steroid withdrawal",
+       "match": "phrase"
+      },
+      {
+       "keyword": "steroid withdrawal",
+       "match": "exact"
+      }
+     ],
+     "negatives": [
+      "free",
+      "jobs",
+      "job",
+      "career",
+      "careers",
+      "course",
+      "courses",
+      "class",
+      "classes",
+      "training",
+      "become a naturopath",
+      "school",
+      "degree",
+      "diploma",
+      "certificate",
+      "university",
+      "salary",
+      "wage",
+      "what is",
+      "definition",
+      "meaning",
+      "wikipedia",
+      "wiki",
+      "reddit",
+      "forum",
+      "quora",
+      "pdf",
+      "doctor appointment",
+      "see a doctor",
+      "find a doctor",
+      "gp near me",
+      "find a gp",
+      "gp appointment",
+      "gp clinic",
+      "pharmacy",
+      "chemist",
+      "prescription",
+      "buy medication",
+      "cheap medication",
+      "buy steroid cream",
+      "best steroid cream",
+      "steroid cream price"
+     ],
+     "rsa": {
+      "headlines": [
+       "TSW Naturopath",
+       "Topical Steroid Withdrawal",
+       "Worse Since Stopping Steroids",
+       "Red, Burning, Shedding Skin",
+       "TSW Is A Process, Not A Flare",
+       "Lab Work Without The Clinic",
+       "Consult From Your Own Home",
+       "Time To Tell It Properly",
+       "Fits Around Your GP's Care",
+       "A Free First Conversation",
+       "Herbs Matched To Your Case",
+       "TSW Support, NZ-Wide",
+       "Book A TSW Consult",
+       "Get Real TSW Support",
+       "Start Your TSW Plan"
+      ],
+      "descriptions": [
+       "Topical steroid withdrawal is brutal, and badly understood. You don't have to guess.",
+       "Kohei came off long-term steroids himself. Support that takes TSW seriously.",
+       "Start with a free 15-minute session, or go straight to a full consultation.",
+       "Naturopathy that works alongside your GP and current medication, not against it."
+      ],
+      "paths": [
+       "online",
+       "tsw"
+      ],
+      "pinning_notes": "Pos1 pin: 'TSW Naturopath'. Rest unpinned."
+     }
+    },
+    {
+     "name": "Psoriasis",
+     "theme": "Psoriasis-specific naturopathy",
+     "final_url": "https://waterwellclinic.com/conditions/psoriasis",
+     "keywords": [
+      {
+       "keyword": "naturopath for psoriasis",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath for psoriasis",
+       "match": "exact"
+      },
+      {
+       "keyword": "psoriasis natural treatment",
+       "match": "phrase"
+      },
+      {
+       "keyword": "psoriasis natural treatment",
+       "match": "exact"
+      },
+      {
+       "keyword": "online psoriasis naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "online psoriasis naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "psoriasis naturopath nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "psoriasis naturopath nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "natural remedies for psoriasis",
+       "match": "phrase"
+      },
+      {
+       "keyword": "natural remedies for psoriasis",
+       "match": "exact"
+      },
+      {
+       "keyword": "psoriasis flare up naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "psoriasis flare up naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "scalp psoriasis naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "scalp psoriasis naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "psoriasis naturopath cost nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "psoriasis naturopath cost nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "why does my psoriasis flare up",
+       "match": "phrase"
+      },
+      {
+       "keyword": "why does my psoriasis flare up",
+       "match": "exact"
+      },
+      {
+       "keyword": "psoriasis diet naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "psoriasis diet naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "psoriasis gut health naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "psoriasis gut health naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "psoriasis immune naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "psoriasis immune naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "plaque psoriasis naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "plaque psoriasis naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "guttate psoriasis naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "guttate psoriasis naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "psoriasis trigger naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "psoriasis trigger naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "best online psoriasis naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "best online psoriasis naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "registered naturopath psoriasis",
+       "match": "phrase"
+      },
+      {
+       "keyword": "registered naturopath psoriasis",
+       "match": "exact"
+      },
+      {
+       "keyword": "psoriasis naturopath consultation nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "psoriasis naturopath consultation nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "psoriasis naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "psoriasis naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "psoriasis help nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "psoriasis help nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "psoriasis treatment nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "psoriasis treatment nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "psoriasis specialist nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "psoriasis specialist nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath for scalp psoriasis",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath for scalp psoriasis",
+       "match": "exact"
+      },
+      {
+       "keyword": "inverse psoriasis naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "inverse psoriasis naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "nail psoriasis naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "nail psoriasis naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "psoriasis diet plan nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "psoriasis diet plan nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "herbal medicine for psoriasis nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "herbal medicine for psoriasis nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "psoriasis help",
+       "match": "phrase"
+      },
+      {
+       "keyword": "psoriasis help",
+       "match": "exact"
+      },
+      {
+       "keyword": "psoriasis treatment",
+       "match": "phrase"
+      },
+      {
+       "keyword": "psoriasis treatment",
+       "match": "exact"
+      },
+      {
+       "keyword": "psoriasis diet",
+       "match": "phrase"
+      },
+      {
+       "keyword": "psoriasis diet",
+       "match": "exact"
+      },
+      {
+       "keyword": "psoriasis specialist",
+       "match": "phrase"
+      },
+      {
+       "keyword": "psoriasis specialist",
+       "match": "exact"
+      },
+      {
+       "keyword": "psoriasis causes",
+       "match": "phrase"
+      },
+      {
+       "keyword": "psoriasis causes",
+       "match": "exact"
+      },
+      {
+       "keyword": "help with psoriasis",
+       "match": "phrase"
+      },
+      {
+       "keyword": "help with psoriasis",
+       "match": "exact"
+      },
+      {
+       "keyword": "natural psoriasis treatment",
+       "match": "phrase"
+      },
+      {
+       "keyword": "natural psoriasis treatment",
+       "match": "exact"
+      }
+     ],
+     "negatives": [
+      "free",
+      "jobs",
+      "job",
+      "career",
+      "careers",
+      "course",
+      "courses",
+      "class",
+      "classes",
+      "training",
+      "become a naturopath",
+      "school",
+      "degree",
+      "diploma",
+      "certificate",
+      "university",
+      "salary",
+      "wage",
+      "what is",
+      "definition",
+      "meaning",
+      "wikipedia",
+      "wiki",
+      "reddit",
+      "forum",
+      "quora",
+      "pdf",
+      "doctor appointment",
+      "see a doctor",
+      "find a doctor",
+      "gp near me",
+      "find a gp",
+      "gp appointment",
+      "gp clinic",
+      "pharmacy",
+      "chemist",
+      "prescription",
+      "buy medication",
+      "cheap medication",
+      "cream",
+      "ointment"
+     ],
+     "rsa": {
+      "headlines": [
+       "Naturopath For Psoriasis",
+       "Psoriasis Naturopath Online",
+       "Plaques That Never Fully Go",
+       "Flares With No Clear Trigger",
+       "Psoriasis Is An Immune Signal",
+       "Your Results, Your Plan",
+       "Online Video Appointments",
+       "Seen As A Whole Person",
+       "Alongside Your Current Care",
+       "Talk First, Free Of Charge",
+       "A Formula Built For You",
+       "Psoriasis Support, NZ-Wide",
+       "Book A Psoriasis Consult",
+       "Calm The Driver, Not The Skin",
+       "Start Your Psoriasis Plan"
+      ],
+      "descriptions": [
+       "Psoriasis is immune-driven. Calming the skin without calming the driver never holds.",
+       "Diet, gut and immune factors looked at together, then tested where it's unclear.",
+       "A free 15-minute discovery session first, or book the full consultation.",
+       "Works alongside the medical care you already have. Nothing is replaced."
+      ],
+      "paths": [
+       "online",
+       "psoriasis"
+      ],
+      "pinning_notes": "Pos1 pin: 'Naturopath For Psoriasis'. Rest unpinned."
+     }
+    },
+    {
+     "name": "Acne",
+     "theme": "Acne / hormonal acne naturopathy",
+     "final_url": "https://waterwellclinic.com/conditions/acne",
+     "keywords": [
+      {
+       "keyword": "naturopath for acne",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath for acne",
+       "match": "exact"
+      },
+      {
+       "keyword": "natural acne treatment",
+       "match": "phrase"
+      },
+      {
+       "keyword": "natural acne treatment",
+       "match": "exact"
+      },
+      {
+       "keyword": "hormonal acne naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "hormonal acne naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "acne naturopath nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "acne naturopath nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "online acne specialist naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "online acne specialist naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "adult acne natural treatment",
+       "match": "phrase"
+      },
+      {
+       "keyword": "adult acne natural treatment",
+       "match": "exact"
+      },
+      {
+       "keyword": "acne diet naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "acne diet naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "acne naturopath cost nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "acne naturopath cost nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "why wont my acne clear up",
+       "match": "phrase"
+      },
+      {
+       "keyword": "why wont my acne clear up",
+       "match": "exact"
+      },
+      {
+       "keyword": "cystic acne naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "cystic acne naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "teenage acne naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "teenage acne naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "hormonal acne naturopath nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "hormonal acne naturopath nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "acne gut health naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "acne gut health naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "pcos acne naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "pcos acne naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "best online acne naturopath nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "best online acne naturopath nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "registered naturopath acne",
+       "match": "phrase"
+      },
+      {
+       "keyword": "registered naturopath acne",
+       "match": "exact"
+      },
+      {
+       "keyword": "acne naturopath consultation nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "acne naturopath consultation nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "period acne naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "period acne naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath for hormonal acne",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath for hormonal acne",
+       "match": "exact"
+      },
+      {
+       "keyword": "acne naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "acne naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "acne help nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "acne help nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "acne treatment nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "acne treatment nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "acne specialist nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "acne specialist nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath for teenage acne",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath for teenage acne",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath for cystic acne",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath for cystic acne",
+       "match": "exact"
+      },
+      {
+       "keyword": "back acne naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "back acne naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "chin acne naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "chin acne naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "acne diet plan nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "acne diet plan nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "herbal medicine for acne nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "herbal medicine for acne nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "acne help",
+       "match": "phrase"
+      },
+      {
+       "keyword": "acne help",
+       "match": "exact"
+      },
+      {
+       "keyword": "acne treatment",
+       "match": "phrase"
+      },
+      {
+       "keyword": "acne treatment",
+       "match": "exact"
+      },
+      {
+       "keyword": "acne diet",
+       "match": "phrase"
+      },
+      {
+       "keyword": "acne diet",
+       "match": "exact"
+      },
+      {
+       "keyword": "acne specialist",
+       "match": "phrase"
+      },
+      {
+       "keyword": "acne specialist",
+       "match": "exact"
+      },
+      {
+       "keyword": "hormonal acne",
+       "match": "phrase"
+      },
+      {
+       "keyword": "hormonal acne",
+       "match": "exact"
+      },
+      {
+       "keyword": "adult acne",
+       "match": "phrase"
+      },
+      {
+       "keyword": "adult acne",
+       "match": "exact"
+      },
+      {
+       "keyword": "cystic acne",
+       "match": "phrase"
+      },
+      {
+       "keyword": "cystic acne",
+       "match": "exact"
+      },
+      {
+       "keyword": "help with acne",
+       "match": "phrase"
+      },
+      {
+       "keyword": "help with acne",
+       "match": "exact"
+      },
+      {
+       "keyword": "acne causes",
+       "match": "phrase"
+      },
+      {
+       "keyword": "acne causes",
+       "match": "exact"
+      }
+     ],
+     "negatives": [
+      "free",
+      "jobs",
+      "job",
+      "career",
+      "careers",
+      "course",
+      "courses",
+      "class",
+      "classes",
+      "training",
+      "become a naturopath",
+      "school",
+      "degree",
+      "diploma",
+      "certificate",
+      "university",
+      "salary",
+      "wage",
+      "what is",
+      "definition",
+      "meaning",
+      "wikipedia",
+      "wiki",
+      "reddit",
+      "forum",
+      "quora",
+      "pdf",
+      "doctor appointment",
+      "see a doctor",
+      "find a doctor",
+      "gp near me",
+      "find a gp",
+      "gp appointment",
+      "gp clinic",
+      "pharmacy",
+      "chemist",
+      "prescription",
+      "buy medication",
+      "cheap medication",
+      "cream",
+      "ointment"
+     ],
+     "rsa": {
+      "headlines": [
+       "Naturopath For Acne",
+       "Hormonal Acne Naturopath",
+       "Adult Acne That Won't Clear",
+       "Breakouts On A Monthly Cycle",
+       "Acne Is A Hormone & Gut Signal",
+       "Guesswork Taken Out",
+       "No Travel, No Waiting Room",
+       "Continuity, Every Appointment",
+       "Your Doctor Stays Involved",
+       "Free Intro Call Available",
+       "Adjusted As Your Body Responds",
+       "Acne Support, NZ-Wide",
+       "Book An Acne Consult",
+       "Clear It From The Inside",
+       "Start Your Acne Plan"
+      ],
+      "descriptions": [
+       "Adult acne is rarely about your face wash. Usually it's hormones and gut.",
+       "Hormone and gut testing posted out, then a plan built on what it actually shows.",
+       "Start with a free 15-minute session, or go straight to a full consultation.",
+       "Works alongside the medical care you already have. Nothing is replaced."
+      ],
+      "paths": [
+       "online",
+       "acne"
+      ],
+      "pinning_notes": "Pos1 pin: 'Naturopath For Acne'. Rest unpinned."
+     }
+    },
+    {
+     "name": "Rosacea",
+     "theme": "Rosacea-specific naturopathy",
+     "final_url": "https://waterwellclinic.com/conditions/rosacea",
+     "keywords": [
+      {
+       "keyword": "naturopath for rosacea",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath for rosacea",
+       "match": "exact"
+      },
+      {
+       "keyword": "rosacea natural treatment",
+       "match": "phrase"
+      },
+      {
+       "keyword": "rosacea natural treatment",
+       "match": "exact"
+      },
+      {
+       "keyword": "rosacea naturopath nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "rosacea naturopath nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "natural remedies for rosacea",
+       "match": "phrase"
+      },
+      {
+       "keyword": "natural remedies for rosacea",
+       "match": "exact"
+      },
+      {
+       "keyword": "online rosacea naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "online rosacea naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "rosacea naturopath cost nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "rosacea naturopath cost nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "what triggers rosacea flare ups",
+       "match": "phrase"
+      },
+      {
+       "keyword": "what triggers rosacea flare ups",
+       "match": "exact"
+      },
+      {
+       "keyword": "rosacea diet naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "rosacea diet naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "rosacea gut health naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "rosacea gut health naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "facial redness naturopath nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "facial redness naturopath nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "best online rosacea naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "best online rosacea naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "registered naturopath rosacea",
+       "match": "phrase"
+      },
+      {
+       "keyword": "registered naturopath rosacea",
+       "match": "exact"
+      },
+      {
+       "keyword": "rosacea flare naturopath nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "rosacea flare naturopath nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "rosacea immune naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "rosacea immune naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "rosacea naturopath consultation",
+       "match": "phrase"
+      },
+      {
+       "keyword": "rosacea naturopath consultation",
+       "match": "exact"
+      },
+      {
+       "keyword": "calm rosacea naturally naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "calm rosacea naturally naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "rosacea naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "rosacea naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "rosacea help nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "rosacea help nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "rosacea treatment nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "rosacea treatment nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "rosacea specialist nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "rosacea specialist nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath for facial redness",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath for facial redness",
+       "match": "exact"
+      },
+      {
+       "keyword": "rosacea diet plan nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "rosacea diet plan nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "flushing naturopath nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "flushing naturopath nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "herbal medicine for rosacea nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "herbal medicine for rosacea nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "rosacea help",
+       "match": "phrase"
+      },
+      {
+       "keyword": "rosacea help",
+       "match": "exact"
+      },
+      {
+       "keyword": "rosacea treatment",
+       "match": "phrase"
+      },
+      {
+       "keyword": "rosacea treatment",
+       "match": "exact"
+      },
+      {
+       "keyword": "rosacea diet",
+       "match": "phrase"
+      },
+      {
+       "keyword": "rosacea diet",
+       "match": "exact"
+      },
+      {
+       "keyword": "rosacea specialist",
+       "match": "phrase"
+      },
+      {
+       "keyword": "rosacea specialist",
+       "match": "exact"
+      },
+      {
+       "keyword": "rosacea triggers",
+       "match": "phrase"
+      },
+      {
+       "keyword": "rosacea triggers",
+       "match": "exact"
+      },
+      {
+       "keyword": "help with rosacea",
+       "match": "phrase"
+      },
+      {
+       "keyword": "help with rosacea",
+       "match": "exact"
+      },
+      {
+       "keyword": "natural rosacea treatment",
+       "match": "phrase"
+      },
+      {
+       "keyword": "natural rosacea treatment",
+       "match": "exact"
+      }
+     ],
+     "negatives": [
+      "free",
+      "jobs",
+      "job",
+      "career",
+      "careers",
+      "course",
+      "courses",
+      "class",
+      "classes",
+      "training",
+      "become a naturopath",
+      "school",
+      "degree",
+      "diploma",
+      "certificate",
+      "university",
+      "salary",
+      "wage",
+      "what is",
+      "definition",
+      "meaning",
+      "wikipedia",
+      "wiki",
+      "reddit",
+      "forum",
+      "quora",
+      "pdf",
+      "doctor appointment",
+      "see a doctor",
+      "find a doctor",
+      "gp near me",
+      "find a gp",
+      "gp appointment",
+      "gp clinic",
+      "pharmacy",
+      "chemist",
+      "prescription",
+      "buy medication",
+      "cheap medication",
+      "cream",
+      "ointment"
+     ],
+     "rsa": {
+      "headlines": [
+       "Naturopath For Rosacea",
+       "Rosacea Naturopath Online",
+       "Redness That Flares At Random",
+       "Flushing You Can't Predict",
+       "Find Your Rosacea Triggers",
+       "Tested, Not Assumed",
+       "Appointments That Fit Work",
+       "The Same Face Each Time",
+       "With Your GP, Not Against",
+       "First Conversation Is Free",
+       "Custom Herbal Prescribing",
+       "Rosacea Support, NZ-Wide",
+       "Book A Rosacea Consult",
+       "Find What Sets It Off",
+       "Start Your Rosacea Plan"
+      ],
+      "descriptions": [
+       "Rosacea flares have triggers. Most people are never shown how to find theirs.",
+       "Gut, diet and trigger factors mapped properly, rather than managing the redness.",
+       "A free 15-minute discovery session first, or book the full consultation.",
+       "Naturopathy that works alongside your GP and current medication, not against it."
+      ],
+      "paths": [
+       "online",
+       "rosacea"
+      ],
+      "pinning_notes": "Pos1 pin: 'Naturopath For Rosacea'. Rest unpinned."
+     }
+    },
+    {
+     "name": "Skin Infections",
+     "theme": "Recurring skin infections / general skin support",
+     "final_url": "https://waterwellclinic.com/conditions/skin-infections",
+     "keywords": [
+      {
+       "keyword": "naturopath for skin infections",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath for skin infections",
+       "match": "exact"
+      },
+      {
+       "keyword": "recurring skin infections naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "recurring skin infections naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "natural skin infection support",
+       "match": "phrase"
+      },
+      {
+       "keyword": "natural skin infection support",
+       "match": "exact"
+      },
+      {
+       "keyword": "skin infection naturopath nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "skin infection naturopath nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath chronic urticaria",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath chronic urticaria",
+       "match": "exact"
+      },
+      {
+       "keyword": "skin infection naturopath cost nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "skin infection naturopath cost nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "why do i keep getting skin infections",
+       "match": "phrase"
+      },
+      {
+       "keyword": "why do i keep getting skin infections",
+       "match": "exact"
+      },
+      {
+       "keyword": "recurring boils naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "recurring boils naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "immune system skin naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "immune system skin naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "chronic hives naturopath nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "chronic hives naturopath nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "best online skin naturopath nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "best online skin naturopath nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "registered naturopath skin infections",
+       "match": "phrase"
+      },
+      {
+       "keyword": "registered naturopath skin infections",
+       "match": "exact"
+      },
+      {
+       "keyword": "recurring skin infection naturopath nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "recurring skin infection naturopath nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "skin infection gut health naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "skin infection gut health naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "staph skin naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "staph skin naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath immune skin support",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath immune skin support",
+       "match": "exact"
+      },
+      {
+       "keyword": "skin infection naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "skin infection naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath for hives",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath for hives",
+       "match": "exact"
+      },
+      {
+       "keyword": "hives naturopath nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "hives naturopath nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "recurring hives naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "recurring hives naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "chronic urticaria naturopath nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "chronic urticaria naturopath nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath for itchy skin",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath for itchy skin",
+       "match": "exact"
+      },
+      {
+       "keyword": "itchy skin naturopath nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "itchy skin naturopath nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "fungal skin naturopath nz",
+       "match": "phrase"
+      },
+      {
+       "keyword": "fungal skin naturopath nz",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath for folliculitis",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath for folliculitis",
+       "match": "exact"
+      },
+      {
+       "keyword": "chronic hives",
+       "match": "phrase"
+      },
+      {
+       "keyword": "chronic hives",
+       "match": "exact"
+      },
+      {
+       "keyword": "recurring hives",
+       "match": "phrase"
+      },
+      {
+       "keyword": "recurring hives",
+       "match": "exact"
+      },
+      {
+       "keyword": "hives help",
+       "match": "phrase"
+      },
+      {
+       "keyword": "hives help",
+       "match": "exact"
+      },
+      {
+       "keyword": "hives treatment",
+       "match": "phrase"
+      },
+      {
+       "keyword": "hives treatment",
+       "match": "exact"
+      },
+      {
+       "keyword": "urticaria help",
+       "match": "phrase"
+      },
+      {
+       "keyword": "urticaria help",
+       "match": "exact"
+      },
+      {
+       "keyword": "itchy skin help",
+       "match": "phrase"
+      },
+      {
+       "keyword": "itchy skin help",
+       "match": "exact"
+      },
+      {
+       "keyword": "recurring boils",
+       "match": "phrase"
+      },
+      {
+       "keyword": "recurring boils",
+       "match": "exact"
+      },
+      {
+       "keyword": "skin infection help",
+       "match": "phrase"
+      },
+      {
+       "keyword": "skin infection help",
+       "match": "exact"
+      }
+     ],
+     "negatives": [
+      "free",
+      "jobs",
+      "job",
+      "career",
+      "careers",
+      "course",
+      "courses",
+      "class",
+      "classes",
+      "training",
+      "become a naturopath",
+      "school",
+      "degree",
+      "diploma",
+      "certificate",
+      "university",
+      "salary",
+      "wage",
+      "what is",
+      "definition",
+      "meaning",
+      "wikipedia",
+      "wiki",
+      "reddit",
+      "forum",
+      "quora",
+      "pdf",
+      "doctor appointment",
+      "see a doctor",
+      "find a doctor",
+      "gp near me",
+      "find a gp",
+      "gp appointment",
+      "gp clinic",
+      "pharmacy",
+      "chemist",
+      "prescription",
+      "buy medication",
+      "cheap medication",
+      "cream",
+      "ointment"
+     ],
+     "rsa": {
+      "headlines": [
+       "Naturopath For Skin Infections",
+       "Chronic Hives Naturopath",
+       "Infections That Keep Returning",
+       "Hives With No Known Cause",
+       "Recurring Is An Immune Signal",
+       "Evidence Before Advice",
+       "Seen Properly, Not Rushed",
+       "Your History Actually Heard",
+       "Supports Your Medical Care",
+       "A Free Chat Before You Book",
+       "Herbal Medicine, Personalised",
+       "Skin Support, NZ-Wide",
+       "Book A Skin Consult",
+       "Stop The Cycle Repeating",
+       "Start Your Skin Plan"
+      ],
+      "descriptions": [
+       "Skin infections and hives that keep returning are a signal, not bad luck.",
+       "Immune and gut testing posted out, so recurring problems get looked at properly.",
+       "Start with a free 15-minute session, or go straight to a full consultation.",
+       "Works alongside the medical care you already have. Nothing is replaced."
+      ],
+      "paths": [
+       "online",
+       "skin"
+      ],
+      "pinning_notes": "Pos1 pin: 'Naturopath For Skin Infections'. Rest unpinned."
+     }
+    }
+   ],
+   "budget_ladder": {
+    "stage1": 12.0,
+    "stage2": 16.0,
+    "stage3": 16.0
+   },
+   "status": "Paused"
+  },
+  {
+   "name": "WW | AU | Online Naturopath",
+   "type": "Search",
+   "daily_budget_nzd": 0.0,
+   "budget_note": "RECOMMENDED - confirm with Kohei; PAUSED until AUS-compliance-note gates green.",
+   "bid_strategy": "Maximise Clicks, max-CPC cap ~$3.50 NZD",
+   "networks": "Google Search only (Search Partners OFF, Display OFF)",
+   "locations": [
+    "Australia \u2014 Presence only"
+   ],
+   "ad_schedule": "Mon-Sun, all hours",
+   "campaign_negative_lists": [
+    "Junk & Informational",
+    "Not Our Service"
+   ],
+   "ad_groups": [
+    {
+     "name": "Online Naturopath Consult AU",
+     "theme": "Direct online-naturopath-consult intent, AU",
+     "final_url": "https://waterwellclinic.com/au",
+     "keywords": [
+      {
+       "keyword": "online naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "online naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "online naturopath australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "online naturopath australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "online naturopath consult",
+       "match": "phrase"
+      },
+      {
+       "keyword": "online naturopath consult",
+       "match": "exact"
+      },
+      {
+       "keyword": "online naturopath consultation",
+       "match": "phrase"
+      },
+      {
+       "keyword": "online naturopath consultation",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath online",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath online",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath online australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath online australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath online consultation",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath online consultation",
+       "match": "exact"
+      },
+      {
+       "keyword": "virtual naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "virtual naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "virtual naturopath australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "virtual naturopath australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "telehealth naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "telehealth naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "telehealth naturopath australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "telehealth naturopath australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath video consultation",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath video consultation",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath video call",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath video call",
+       "match": "exact"
+      },
+      {
+       "keyword": "book naturopath online",
+       "match": "phrase"
+      },
+      {
+       "keyword": "book naturopath online",
+       "match": "exact"
+      },
+      {
+       "keyword": "see a naturopath online",
+       "match": "phrase"
+      },
+      {
+       "keyword": "see a naturopath online",
+       "match": "exact"
+      },
+      {
+       "keyword": "online naturopathic consultation",
+       "match": "phrase"
+      },
+      {
+       "keyword": "online naturopathic consultation",
+       "match": "exact"
+      },
+      {
+       "keyword": "qualified naturopath online",
+       "match": "phrase"
+      },
+      {
+       "keyword": "qualified naturopath online",
+       "match": "exact"
+      },
+      {
+       "keyword": "best online naturopath australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "best online naturopath australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath consultation online australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath consultation online australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "online naturopath session australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "online naturopath session australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath telehealth booking australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath telehealth booking australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "online naturopath cost australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "online naturopath cost australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath consultation price australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath consultation price australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "registered naturopath online australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "registered naturopath online australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath zoom consultation",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath zoom consultation",
+       "match": "exact"
+      },
+      {
+       "keyword": "video naturopath appointment australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "video naturopath appointment australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "book a naturopath appointment online",
+       "match": "phrase"
+      },
+      {
+       "keyword": "book a naturopath appointment online",
+       "match": "exact"
+      },
+      {
+       "keyword": "online holistic health consultation australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "online holistic health consultation australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "initial naturopath consultation australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "initial naturopath consultation australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "holistic naturopath online australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "holistic naturopath online australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "online naturopath for australians",
+       "match": "phrase"
+      },
+      {
+       "keyword": "online naturopath for australians",
+       "match": "exact"
+      },
+      {
+       "keyword": "natural health practitioner online australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "natural health practitioner online australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath consultation",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath consultation",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopathic consultation australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopathic consultation australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopathic practitioner australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopathic practitioner australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopathic doctor australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopathic doctor australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "natural medicine practitioner australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "natural medicine practitioner australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath cost australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath cost australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath prices australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath prices australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "affordable naturopath australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "affordable naturopath australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "speak to a naturopath online",
+       "match": "phrase"
+      },
+      {
+       "keyword": "speak to a naturopath online",
+       "match": "exact"
+      },
+      {
+       "keyword": "talk to a naturopath online",
+       "match": "phrase"
+      },
+      {
+       "keyword": "talk to a naturopath online",
+       "match": "exact"
+      },
+      {
+       "keyword": "consult a naturopath online",
+       "match": "phrase"
+      },
+      {
+       "keyword": "consult a naturopath online",
+       "match": "exact"
+      },
+      {
+       "keyword": "book a naturopath consultation",
+       "match": "phrase"
+      },
+      {
+       "keyword": "book a naturopath consultation",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath discovery call",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath discovery call",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath appointment australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath appointment australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "family naturopath australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "family naturopath australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath for kids australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath for kids australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "childrens naturopath australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "childrens naturopath australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "paediatric naturopath australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "paediatric naturopath australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "functional testing naturopath australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "functional testing naturopath australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "functional medicine testing australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "functional medicine testing australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath consult",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath consult",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath appointment",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath appointment",
+       "match": "exact"
+      },
+      {
+       "keyword": "see a naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "see a naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath booking",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath booking",
+       "match": "exact"
+      },
+      {
+       "keyword": "video naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "video naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath session",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath session",
+       "match": "exact"
+      },
+      {
+       "keyword": "book a naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "book a naturopath",
+       "match": "exact"
+      }
+     ],
+     "negatives": [
+      "free",
+      "jobs",
+      "job",
+      "career",
+      "careers",
+      "course",
+      "courses",
+      "class",
+      "classes",
+      "training",
+      "become a naturopath",
+      "school",
+      "degree",
+      "diploma",
+      "certificate",
+      "university",
+      "salary",
+      "wage",
+      "what is",
+      "definition",
+      "meaning",
+      "wikipedia",
+      "wiki",
+      "reddit",
+      "forum",
+      "quora",
+      "pdf",
+      "doctor appointment",
+      "see a doctor",
+      "find a doctor",
+      "gp near me",
+      "find a gp",
+      "gp appointment",
+      "gp clinic",
+      "pharmacy",
+      "chemist",
+      "prescription",
+      "buy medication",
+      "cheap medication",
+      "cream",
+      "ointment",
+      "medicare",
+      "bulk billing",
+      "rebate",
+      "health fund"
+     ],
+     "rsa": {
+      "headlines": [
+       "Online Naturopath Australia",
+       "Naturopath Consultation Online",
+       "Told Your Bloods Are Normal",
+       "Tired Of Managing Symptoms",
+       "Find The Root Cause",
+       "Tests Posted To Your Door",
+       "75-Min Initial Consultation",
+       "One Practitioner, Every Visit",
+       "Works Alongside Your GP",
+       "Free 15-Minute Chat First",
+       "Herbal Formulas Made For You",
+       "Online Naturopath, AU-Wide",
+       "Book A Naturopath Consult",
+       "See What's Actually Wrong",
+       "Book Your First Session"
+      ],
+      "descriptions": [
+       "Still no answers after normal bloods? A 75-minute consultation that looks for the cause.",
+       "Functional testing posted to your door, then a plan built on your actual results.",
+       "A free 15-minute discovery session first, or book the full consultation.",
+       "Naturopathy that works alongside your GP and current medication, not against it."
+      ],
+      "paths": [
+       "australia",
+       "online"
+      ],
+      "pinning_notes": "Pos1 pin: 'Online Naturopath Australia'. Rest unpinned."
+     }
+    },
+    {
+     "name": "General Naturopathy AU",
+     "theme": "City-modified + general AU naturopath demand",
+     "final_url": "https://waterwellclinic.com/au",
+     "keywords": [
+      {
+       "keyword": "naturopath sydney",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath sydney",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath melbourne",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath melbourne",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath brisbane",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath brisbane",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath adelaide",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath adelaide",
+       "match": "exact"
+      },
+      {
+       "keyword": "holistic health practitioner australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "holistic health practitioner australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath canberra",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath canberra",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath gold coast",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath gold coast",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath hobart",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath hobart",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath darwin",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath darwin",
+       "match": "exact"
+      },
+      {
+       "keyword": "whole body naturopath australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "whole body naturopath australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath consultation australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath consultation australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath newcastle",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath newcastle",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath wollongong",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath wollongong",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath sunshine coast",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath sunshine coast",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath geelong",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath geelong",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath townsville",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath townsville",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath cairns",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath cairns",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath toowoomba",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath toowoomba",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath ballarat",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath ballarat",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath bendigo",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath bendigo",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath central coast",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath central coast",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath byron bay",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath byron bay",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath launceston",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath launceston",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath nsw",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath nsw",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath victoria",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath victoria",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath queensland",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath queensland",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopathy australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopathy australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopathic medicine australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopathic medicine australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "natural therapies australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "natural therapies australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "holistic health australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "holistic health australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopathy",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopathy",
+       "match": "exact"
+      },
+      {
+       "keyword": "natural health",
+       "match": "phrase"
+      },
+      {
+       "keyword": "natural health",
+       "match": "exact"
+      },
+      {
+       "keyword": "natural medicine",
+       "match": "phrase"
+      },
+      {
+       "keyword": "natural medicine",
+       "match": "exact"
+      },
+      {
+       "keyword": "holistic practitioner",
+       "match": "phrase"
+      },
+      {
+       "keyword": "holistic practitioner",
+       "match": "exact"
+      }
+     ],
+     "negatives": [
+      "free",
+      "jobs",
+      "job",
+      "career",
+      "careers",
+      "course",
+      "courses",
+      "class",
+      "classes",
+      "training",
+      "become a naturopath",
+      "school",
+      "degree",
+      "diploma",
+      "certificate",
+      "university",
+      "salary",
+      "wage",
+      "what is",
+      "definition",
+      "meaning",
+      "wikipedia",
+      "wiki",
+      "reddit",
+      "forum",
+      "quora",
+      "pdf",
+      "doctor appointment",
+      "see a doctor",
+      "find a doctor",
+      "gp near me",
+      "find a gp",
+      "gp appointment",
+      "gp clinic",
+      "pharmacy",
+      "chemist",
+      "prescription",
+      "buy medication",
+      "cheap medication",
+      "cream",
+      "ointment",
+      "medicare",
+      "bulk billing",
+      "rebate",
+      "health fund"
+     ],
+     "rsa": {
+      "headlines": [
+       "Naturopath Australia",
+       "Online Naturopath Consult",
+       "No Good Naturopath Near You?",
+       "Answers, Not Another Symptom",
+       "Whole-Body, Not Just The Bit",
+       "Lab Testing, Done At Home",
+       "Consults By Secure Video",
+       "Same Practitioner Each Time",
+       "Your GP Stays In The Loop",
+       "Start With A Free 15 Mins",
+       "Individually Prescribed Herbs",
+       "Naturopath Across Australia",
+       "Book A Naturopathy Session",
+       "Get To The Cause",
+       "Book Your Consult Today"
+      ],
+      "descriptions": [
+       "No decent naturopath nearby? Consultations run by video, so location stops mattering.",
+       "Gut, skin, hormones, sleep and energy, looked at together rather than one at a time.",
+       "Start with a free 15-minute session, or go straight to a full consultation.",
+       "Works alongside the medical care you already have. Nothing is replaced."
+      ],
+      "paths": [
+       "australia",
+       "naturopath"
+      ],
+      "pinning_notes": "Pos1 pin: 'Naturopath Australia'. Rest unpinned."
+     }
+    },
+    {
+     "name": "Herbal Medicine AU",
+     "theme": "Medical-herbalist head-term (a named service on site)",
+     "final_url": "https://waterwellclinic.com/au",
+     "keywords": [
+      {
+       "keyword": "medical herbalist",
+       "match": "phrase"
+      },
+      {
+       "keyword": "medical herbalist",
+       "match": "exact"
+      },
+      {
+       "keyword": "medical herbalist australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "medical herbalist australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "online medical herbalist",
+       "match": "phrase"
+      },
+      {
+       "keyword": "online medical herbalist",
+       "match": "exact"
+      },
+      {
+       "keyword": "herbalist australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "herbalist australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "online herbalist",
+       "match": "phrase"
+      },
+      {
+       "keyword": "online herbalist",
+       "match": "exact"
+      },
+      {
+       "keyword": "herbal medicine australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "herbal medicine australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "herbal medicine consultation",
+       "match": "phrase"
+      },
+      {
+       "keyword": "herbal medicine consultation",
+       "match": "exact"
+      },
+      {
+       "keyword": "online herbal medicine consultation",
+       "match": "phrase"
+      },
+      {
+       "keyword": "online herbal medicine consultation",
+       "match": "exact"
+      },
+      {
+       "keyword": "herbalist consultation australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "herbalist consultation australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "western herbal medicine australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "western herbal medicine australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "herbal medicine practitioner australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "herbal medicine practitioner australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "qualified herbalist australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "qualified herbalist australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "registered herbalist australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "registered herbalist australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "herbalist for skin conditions",
+       "match": "phrase"
+      },
+      {
+       "keyword": "herbalist for skin conditions",
+       "match": "exact"
+      },
+      {
+       "keyword": "herbal medicine for skin",
+       "match": "phrase"
+      },
+      {
+       "keyword": "herbal medicine for skin",
+       "match": "exact"
+      },
+      {
+       "keyword": "herbal medicine online australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "herbal medicine online australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "herbalist",
+       "match": "phrase"
+      },
+      {
+       "keyword": "herbalist",
+       "match": "exact"
+      },
+      {
+       "keyword": "herbal medicine",
+       "match": "phrase"
+      },
+      {
+       "keyword": "herbal medicine",
+       "match": "exact"
+      },
+      {
+       "keyword": "herbal remedies",
+       "match": "phrase"
+      },
+      {
+       "keyword": "herbal remedies",
+       "match": "exact"
+      },
+      {
+       "keyword": "herbal consultation",
+       "match": "phrase"
+      },
+      {
+       "keyword": "herbal consultation",
+       "match": "exact"
+      },
+      {
+       "keyword": "herbal practitioner",
+       "match": "phrase"
+      },
+      {
+       "keyword": "herbal practitioner",
+       "match": "exact"
+      }
+     ],
+     "negatives": [
+      "free",
+      "jobs",
+      "job",
+      "career",
+      "careers",
+      "course",
+      "courses",
+      "class",
+      "classes",
+      "training",
+      "become a herbalist",
+      "school",
+      "degree",
+      "diploma",
+      "certificate",
+      "university",
+      "salary",
+      "wage",
+      "what is",
+      "definition",
+      "meaning",
+      "wikipedia",
+      "wiki",
+      "reddit",
+      "forum",
+      "quora",
+      "pdf",
+      "buy herbs",
+      "buy herbal",
+      "herbal supplements",
+      "herbal tea",
+      "herbal tincture",
+      "shop",
+      "stockist",
+      "wholesale",
+      "supplier",
+      "dispensary",
+      "doctor appointment",
+      "see a doctor",
+      "find a doctor",
+      "pharmacy",
+      "chemist",
+      "prescription",
+      "medicare",
+      "bulk billing",
+      "rebate",
+      "health fund"
+     ],
+     "rsa": {
+      "headlines": [
+       "Medical Herbalist Australia",
+       "Online Herbal Medicine",
+       "Not Another Off-Shelf Bottle",
+       "Tried Every Supplement Going",
+       "Formulas Made For You",
+       "Real Testing Behind The Plan",
+       "Video Consults From Home",
+       "A Plan Built Around You",
+       "Sits Beside Your GP's Plan",
+       "15 Free Minutes To Start",
+       "Formulas Adjusted As You Go",
+       "Herbal Medicine, AU-Wide",
+       "Book A Herbal Consult",
+       "Get Your Own Formula",
+       "Speak To A Herbalist"
+      ],
+      "descriptions": [
+       "Individually prescribed herbal formulas, chosen for your case, not pulled off a shelf.",
+       "Your formula is adjusted as your body responds, not repeated on autopilot.",
+       "Start with a free 15-minute session, or go straight to a full consultation.",
+       "Works alongside the medical care you already have. Nothing is replaced."
+      ],
+      "paths": [
+       "herbal",
+       "australia"
+      ],
+      "pinning_notes": "Pos1 pin: 'Medical Herbalist Australia'. Rest unpinned."
+     }
+    }
+   ],
+   "budget_ladder": {
+    "stage1": 0.0,
+    "stage2": 0.0,
+    "stage3": 6.0
+   },
+   "status": "Paused"
+  },
+  {
+   "name": "WW | AU | Skin Conditions",
+   "type": "Search",
+   "daily_budget_nzd": 0.0,
+   "budget_note": "RECOMMENDED - confirm with Kohei; PAUSED until AUS-compliance-note gates green.",
+   "bid_strategy": "Maximise Clicks, max-CPC cap ~$3.50 NZD",
+   "networks": "Google Search only (Search Partners OFF, Display OFF)",
+   "locations": [
+    "Australia \u2014 Presence only"
+   ],
+   "ad_schedule": "Mon-Sun, all hours",
+   "campaign_negative_lists": [
+    "Junk & Informational",
+    "Not Our Service"
+   ],
+   "ad_groups": [
+    {
+     "name": "Eczema AU",
+     "theme": "Eczema AU",
+     "final_url": "https://waterwellclinic.com/conditions/eczema",
+     "keywords": [
+      {
+       "keyword": "naturopath for eczema",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath for eczema",
+       "match": "exact"
+      },
+      {
+       "keyword": "eczema naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "eczema naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath for eczema australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath for eczema australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "eczema naturopath online",
+       "match": "phrase"
+      },
+      {
+       "keyword": "eczema naturopath online",
+       "match": "exact"
+      },
+      {
+       "keyword": "eczema natural treatment",
+       "match": "phrase"
+      },
+      {
+       "keyword": "eczema natural treatment",
+       "match": "exact"
+      },
+      {
+       "keyword": "natural eczema help",
+       "match": "phrase"
+      },
+      {
+       "keyword": "natural eczema help",
+       "match": "exact"
+      },
+      {
+       "keyword": "online eczema specialist",
+       "match": "phrase"
+      },
+      {
+       "keyword": "online eczema specialist",
+       "match": "exact"
+      },
+      {
+       "keyword": "eczema naturopath online australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "eczema naturopath online australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "natural remedies for eczema australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "natural remedies for eczema australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "eczema support naturopath australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "eczema support naturopath australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "eczema naturopath cost australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "eczema naturopath cost australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "why wont my eczema go away",
+       "match": "phrase"
+      },
+      {
+       "keyword": "why wont my eczema go away",
+       "match": "exact"
+      },
+      {
+       "keyword": "eczema gut health connection australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "eczema gut health connection australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "eczema flare up naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "eczema flare up naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "adult eczema naturopath australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "adult eczema naturopath australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "registered naturopath eczema australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "registered naturopath eczema australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "eczema telehealth australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "eczema telehealth australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath for chronic eczema",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath for chronic eczema",
+       "match": "exact"
+      },
+      {
+       "keyword": "best online naturopath for eczema",
+       "match": "phrase"
+      },
+      {
+       "keyword": "best online naturopath for eczema",
+       "match": "exact"
+      },
+      {
+       "keyword": "eczema naturopath consultation australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "eczema naturopath consultation australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "eczema specialist australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "eczema specialist australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "eczema help australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "eczema help australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "eczema treatment australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "eczema treatment australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "hand eczema naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "hand eczema naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "dyshidrotic eczema naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "dyshidrotic eczema naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "scalp eczema naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "scalp eczema naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "eczema in children naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "eczema in children naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "toddler eczema naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "toddler eczema naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "baby eczema naturopath australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "baby eczema naturopath australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "childhood eczema naturopath australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "childhood eczema naturopath australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "severe eczema naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "severe eczema naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "eczema diet naturopath australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "eczema diet naturopath australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "herbal medicine for eczema",
+       "match": "phrase"
+      },
+      {
+       "keyword": "herbal medicine for eczema",
+       "match": "exact"
+      },
+      {
+       "keyword": "eczema help",
+       "match": "phrase"
+      },
+      {
+       "keyword": "eczema help",
+       "match": "exact"
+      },
+      {
+       "keyword": "eczema treatment",
+       "match": "phrase"
+      },
+      {
+       "keyword": "eczema treatment",
+       "match": "exact"
+      },
+      {
+       "keyword": "eczema specialist",
+       "match": "phrase"
+      },
+      {
+       "keyword": "eczema specialist",
+       "match": "exact"
+      },
+      {
+       "keyword": "eczema diet",
+       "match": "phrase"
+      },
+      {
+       "keyword": "eczema diet",
+       "match": "exact"
+      },
+      {
+       "keyword": "eczema causes",
+       "match": "phrase"
+      },
+      {
+       "keyword": "eczema causes",
+       "match": "exact"
+      },
+      {
+       "keyword": "help with eczema",
+       "match": "phrase"
+      },
+      {
+       "keyword": "help with eczema",
+       "match": "exact"
+      },
+      {
+       "keyword": "eczema support",
+       "match": "phrase"
+      },
+      {
+       "keyword": "eczema support",
+       "match": "exact"
+      },
+      {
+       "keyword": "natural eczema treatment",
+       "match": "phrase"
+      },
+      {
+       "keyword": "natural eczema treatment",
+       "match": "exact"
+      }
+     ],
+     "negatives": [
+      "free",
+      "jobs",
+      "job",
+      "career",
+      "careers",
+      "course",
+      "courses",
+      "class",
+      "classes",
+      "training",
+      "become a naturopath",
+      "school",
+      "degree",
+      "diploma",
+      "certificate",
+      "university",
+      "salary",
+      "wage",
+      "what is",
+      "definition",
+      "meaning",
+      "wikipedia",
+      "wiki",
+      "reddit",
+      "forum",
+      "quora",
+      "pdf",
+      "doctor appointment",
+      "see a doctor",
+      "find a doctor",
+      "gp near me",
+      "find a gp",
+      "gp appointment",
+      "gp clinic",
+      "pharmacy",
+      "chemist",
+      "prescription",
+      "buy medication",
+      "cheap medication",
+      "cream",
+      "ointment",
+      "medicare",
+      "bulk billing",
+      "rebate",
+      "health fund"
+     ],
+     "rsa": {
+      "headlines": [
+       "Naturopath For Eczema",
+       "Eczema Naturopath Online",
+       "Itching That Wakes You At 3am",
+       "Flares That Keep Coming Back",
+       "Eczema Starts On The Inside",
+       "Testing, Not Trial And Error",
+       "Book Online, Meet Online",
+       "Not A Template Plan",
+       "Complements Your GP Care",
+       "Book A Free 15-Min Chat",
+       "Herbal Medicine, Prescribed",
+       "Eczema Support, AU-Wide",
+       "Book An Eczema Consult",
+       "Treat The Cause, Not The Flare",
+       "Start Your Eczema Plan"
+      ],
+      "descriptions": [
+       "Steroid creams calm the flare. They don't touch whatever keeps causing it.",
+       "Eczema is looked at from the gut and immune side, not only the skin.",
+       "A free 15-minute discovery session first, or book the full consultation.",
+       "Naturopathy that works alongside your GP and current medication, not against it."
+      ],
+      "paths": [
+       "australia",
+       "eczema"
+      ],
+      "pinning_notes": "Pos1 pin: 'Naturopath For Eczema'. Rest unpinned."
+     }
+    },
+    {
+     "name": "TSW AU",
+     "theme": "TSW AU",
+     "final_url": "https://waterwellclinic.com/conditions/tsw",
+     "keywords": [
+      {
+       "keyword": "tsw naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "tsw naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "topical steroid withdrawal help",
+       "match": "phrase"
+      },
+      {
+       "keyword": "topical steroid withdrawal help",
+       "match": "exact"
+      },
+      {
+       "keyword": "topical steroid withdrawal support",
+       "match": "phrase"
+      },
+      {
+       "keyword": "topical steroid withdrawal support",
+       "match": "exact"
+      },
+      {
+       "keyword": "tsw natural treatment",
+       "match": "phrase"
+      },
+      {
+       "keyword": "tsw natural treatment",
+       "match": "exact"
+      },
+      {
+       "keyword": "steroid withdrawal skin support",
+       "match": "phrase"
+      },
+      {
+       "keyword": "steroid withdrawal skin support",
+       "match": "exact"
+      },
+      {
+       "keyword": "tsw support australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "tsw support australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "tsw recovery support australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "tsw recovery support australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "red skin syndrome naturopath australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "red skin syndrome naturopath australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "topical steroid withdrawal naturopath australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "topical steroid withdrawal naturopath australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "tsw naturopath australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "tsw naturopath australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "topical steroid withdrawal telehealth",
+       "match": "phrase"
+      },
+      {
+       "keyword": "topical steroid withdrawal telehealth",
+       "match": "exact"
+      },
+      {
+       "keyword": "tsw flare naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "tsw flare naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "steroid cream withdrawal naturopath australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "steroid cream withdrawal naturopath australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "tsw naturopath consultation",
+       "match": "phrase"
+      },
+      {
+       "keyword": "tsw naturopath consultation",
+       "match": "exact"
+      },
+      {
+       "keyword": "red skin syndrome support australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "red skin syndrome support australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "tsw naturopath online australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "tsw naturopath online australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath experienced with tsw",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath experienced with tsw",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath for tsw australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath for tsw australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "tsw help australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "tsw help australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "tsw specialist australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "tsw specialist australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "steroid withdrawal naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "steroid withdrawal naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "coming off steroid cream",
+       "match": "phrase"
+      },
+      {
+       "keyword": "coming off steroid cream",
+       "match": "exact"
+      },
+      {
+       "keyword": "red skin syndrome",
+       "match": "phrase"
+      },
+      {
+       "keyword": "red skin syndrome",
+       "match": "exact"
+      },
+      {
+       "keyword": "tsw diet naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "tsw diet naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "tsw skin support",
+       "match": "phrase"
+      },
+      {
+       "keyword": "tsw skin support",
+       "match": "exact"
+      },
+      {
+       "keyword": "tsw help",
+       "match": "phrase"
+      },
+      {
+       "keyword": "tsw help",
+       "match": "exact"
+      },
+      {
+       "keyword": "tsw support",
+       "match": "phrase"
+      },
+      {
+       "keyword": "tsw support",
+       "match": "exact"
+      },
+      {
+       "keyword": "tsw treatment",
+       "match": "phrase"
+      },
+      {
+       "keyword": "tsw treatment",
+       "match": "exact"
+      },
+      {
+       "keyword": "tsw recovery",
+       "match": "phrase"
+      },
+      {
+       "keyword": "tsw recovery",
+       "match": "exact"
+      },
+      {
+       "keyword": "topical steroid withdrawal",
+       "match": "phrase"
+      },
+      {
+       "keyword": "topical steroid withdrawal",
+       "match": "exact"
+      },
+      {
+       "keyword": "steroid withdrawal",
+       "match": "phrase"
+      },
+      {
+       "keyword": "steroid withdrawal",
+       "match": "exact"
+      }
+     ],
+     "negatives": [
+      "free",
+      "jobs",
+      "job",
+      "career",
+      "careers",
+      "course",
+      "courses",
+      "class",
+      "classes",
+      "training",
+      "become a naturopath",
+      "school",
+      "degree",
+      "diploma",
+      "certificate",
+      "university",
+      "salary",
+      "wage",
+      "what is",
+      "definition",
+      "meaning",
+      "wikipedia",
+      "wiki",
+      "reddit",
+      "forum",
+      "quora",
+      "pdf",
+      "doctor appointment",
+      "see a doctor",
+      "find a doctor",
+      "gp near me",
+      "find a gp",
+      "gp appointment",
+      "gp clinic",
+      "pharmacy",
+      "chemist",
+      "prescription",
+      "buy medication",
+      "cheap medication",
+      "medicare",
+      "bulk billing",
+      "rebate",
+      "health fund",
+      "buy steroid cream",
+      "best steroid cream",
+      "steroid cream price"
+     ],
+     "rsa": {
+      "headlines": [
+       "TSW Naturopath",
+       "Topical Steroid Withdrawal",
+       "Worse Since Stopping Steroids",
+       "Red, Burning, Shedding Skin",
+       "TSW Is A Process, Not A Flare",
+       "Answers From Actual Testing",
+       "A Full 75-Minute Appointment",
+       "Your Case, Not A Protocol",
+       "Keeps Your Doctor Informed",
+       "Free 15-Min Discovery Call",
+       "Made Up For Your Case",
+       "TSW Support, AU-Wide",
+       "Book A TSW Consult",
+       "Get Real TSW Support",
+       "Start Your TSW Plan"
+      ],
+      "descriptions": [
+       "Topical steroid withdrawal is brutal, and badly understood. You don't have to guess.",
+       "Unhurried support for topical steroid withdrawal, at the pace your skin sets.",
+       "Start with a free 15-minute session, or go straight to a full consultation.",
+       "Works alongside the medical care you already have. Nothing is replaced."
+      ],
+      "paths": [
+       "australia",
+       "tsw"
+      ],
+      "pinning_notes": "Pos1 pin: 'TSW Naturopath'. Rest unpinned."
+     }
+    },
+    {
+     "name": "Psoriasis AU",
+     "theme": "Psoriasis AU",
+     "final_url": "https://waterwellclinic.com/conditions/psoriasis",
+     "keywords": [
+      {
+       "keyword": "naturopath for psoriasis",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath for psoriasis",
+       "match": "exact"
+      },
+      {
+       "keyword": "psoriasis natural treatment australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "psoriasis natural treatment australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "psoriasis naturopath online",
+       "match": "phrase"
+      },
+      {
+       "keyword": "psoriasis naturopath online",
+       "match": "exact"
+      },
+      {
+       "keyword": "natural remedies for psoriasis australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "natural remedies for psoriasis australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "psoriasis naturopath cost australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "psoriasis naturopath cost australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "psoriasis flare up naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "psoriasis flare up naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "psoriasis immune connection australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "psoriasis immune connection australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "registered naturopath psoriasis australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "registered naturopath psoriasis australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "psoriasis telehealth naturopath australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "psoriasis telehealth naturopath australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "scalp psoriasis naturopath australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "scalp psoriasis naturopath australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "psoriasis naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "psoriasis naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "psoriasis help australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "psoriasis help australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "psoriasis treatment australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "psoriasis treatment australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "psoriasis specialist australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "psoriasis specialist australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "psoriasis diet naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "psoriasis diet naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "psoriasis gut health naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "psoriasis gut health naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "plaque psoriasis naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "plaque psoriasis naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "guttate psoriasis naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "guttate psoriasis naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "psoriasis trigger naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "psoriasis trigger naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath for scalp psoriasis",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath for scalp psoriasis",
+       "match": "exact"
+      },
+      {
+       "keyword": "why does my psoriasis flare up",
+       "match": "phrase"
+      },
+      {
+       "keyword": "why does my psoriasis flare up",
+       "match": "exact"
+      },
+      {
+       "keyword": "herbal medicine for psoriasis",
+       "match": "phrase"
+      },
+      {
+       "keyword": "herbal medicine for psoriasis",
+       "match": "exact"
+      },
+      {
+       "keyword": "psoriasis help",
+       "match": "phrase"
+      },
+      {
+       "keyword": "psoriasis help",
+       "match": "exact"
+      },
+      {
+       "keyword": "psoriasis treatment",
+       "match": "phrase"
+      },
+      {
+       "keyword": "psoriasis treatment",
+       "match": "exact"
+      },
+      {
+       "keyword": "psoriasis diet",
+       "match": "phrase"
+      },
+      {
+       "keyword": "psoriasis diet",
+       "match": "exact"
+      },
+      {
+       "keyword": "psoriasis specialist",
+       "match": "phrase"
+      },
+      {
+       "keyword": "psoriasis specialist",
+       "match": "exact"
+      },
+      {
+       "keyword": "psoriasis causes",
+       "match": "phrase"
+      },
+      {
+       "keyword": "psoriasis causes",
+       "match": "exact"
+      },
+      {
+       "keyword": "help with psoriasis",
+       "match": "phrase"
+      },
+      {
+       "keyword": "help with psoriasis",
+       "match": "exact"
+      },
+      {
+       "keyword": "natural psoriasis treatment",
+       "match": "phrase"
+      },
+      {
+       "keyword": "natural psoriasis treatment",
+       "match": "exact"
+      }
+     ],
+     "negatives": [
+      "free",
+      "jobs",
+      "job",
+      "career",
+      "careers",
+      "course",
+      "courses",
+      "class",
+      "classes",
+      "training",
+      "become a naturopath",
+      "school",
+      "degree",
+      "diploma",
+      "certificate",
+      "university",
+      "salary",
+      "wage",
+      "what is",
+      "definition",
+      "meaning",
+      "wikipedia",
+      "wiki",
+      "reddit",
+      "forum",
+      "quora",
+      "pdf",
+      "doctor appointment",
+      "see a doctor",
+      "find a doctor",
+      "gp near me",
+      "find a gp",
+      "gp appointment",
+      "gp clinic",
+      "pharmacy",
+      "chemist",
+      "prescription",
+      "buy medication",
+      "cheap medication",
+      "cream",
+      "ointment",
+      "medicare",
+      "bulk billing",
+      "rebate",
+      "health fund"
+     ],
+     "rsa": {
+      "headlines": [
+       "Naturopath For Psoriasis",
+       "Psoriasis Naturopath Online",
+       "Plaques That Never Fully Go",
+       "Flares With No Clear Trigger",
+       "Psoriasis Is An Immune Signal",
+       "Test First, Then Treat",
+       "Private, Secure Video Calls",
+       "One-On-One, Start To Finish",
+       "Works With Your Doctor",
+       "Start With A Free Chat",
+       "Not A Shelf Supplement",
+       "Psoriasis Support, AU-Wide",
+       "Book A Psoriasis Consult",
+       "Calm The Driver, Not The Skin",
+       "Start Your Psoriasis Plan"
+      ],
+      "descriptions": [
+       "Psoriasis is immune-driven. Calming the skin without calming the driver never holds.",
+       "Diet, gut and immune factors looked at together, then tested where it's unclear.",
+       "A free 15-minute discovery session first, or book the full consultation.",
+       "Works alongside the medical care you already have. Nothing is replaced."
+      ],
+      "paths": [
+       "australia",
+       "psoriasis"
+      ],
+      "pinning_notes": "Pos1 pin: 'Naturopath For Psoriasis'. Rest unpinned."
+     }
+    },
+    {
+     "name": "Acne AU",
+     "theme": "Acne AU",
+     "final_url": "https://waterwellclinic.com/conditions/acne",
+     "keywords": [
+      {
+       "keyword": "naturopath for acne",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath for acne",
+       "match": "exact"
+      },
+      {
+       "keyword": "natural acne treatment australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "natural acne treatment australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "hormonal acne naturopath australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "hormonal acne naturopath australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "acne naturopath online australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "acne naturopath online australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "adult acne naturopath australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "adult acne naturopath australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "acne naturopath cost australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "acne naturopath cost australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "hormonal acne naturopath online",
+       "match": "phrase"
+      },
+      {
+       "keyword": "hormonal acne naturopath online",
+       "match": "exact"
+      },
+      {
+       "keyword": "cystic acne naturopath australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "cystic acne naturopath australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "acne telehealth naturopath australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "acne telehealth naturopath australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "registered naturopath acne australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "registered naturopath acne australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath for hormonal acne australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath for hormonal acne australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "acne naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "acne naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "acne help australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "acne help australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "acne treatment australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "acne treatment australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "acne specialist australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "acne specialist australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "acne diet naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "acne diet naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "acne gut health naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "acne gut health naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "back acne naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "back acne naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "teenage acne naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "teenage acne naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "pcos acne naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "pcos acne naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "period acne naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "period acne naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath for cystic acne",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath for cystic acne",
+       "match": "exact"
+      },
+      {
+       "keyword": "why wont my acne clear up",
+       "match": "phrase"
+      },
+      {
+       "keyword": "why wont my acne clear up",
+       "match": "exact"
+      },
+      {
+       "keyword": "herbal medicine for acne",
+       "match": "phrase"
+      },
+      {
+       "keyword": "herbal medicine for acne",
+       "match": "exact"
+      },
+      {
+       "keyword": "acne help",
+       "match": "phrase"
+      },
+      {
+       "keyword": "acne help",
+       "match": "exact"
+      },
+      {
+       "keyword": "acne treatment",
+       "match": "phrase"
+      },
+      {
+       "keyword": "acne treatment",
+       "match": "exact"
+      },
+      {
+       "keyword": "acne diet",
+       "match": "phrase"
+      },
+      {
+       "keyword": "acne diet",
+       "match": "exact"
+      },
+      {
+       "keyword": "acne specialist",
+       "match": "phrase"
+      },
+      {
+       "keyword": "acne specialist",
+       "match": "exact"
+      },
+      {
+       "keyword": "hormonal acne",
+       "match": "phrase"
+      },
+      {
+       "keyword": "hormonal acne",
+       "match": "exact"
+      },
+      {
+       "keyword": "adult acne",
+       "match": "phrase"
+      },
+      {
+       "keyword": "adult acne",
+       "match": "exact"
+      },
+      {
+       "keyword": "cystic acne",
+       "match": "phrase"
+      },
+      {
+       "keyword": "cystic acne",
+       "match": "exact"
+      },
+      {
+       "keyword": "help with acne",
+       "match": "phrase"
+      },
+      {
+       "keyword": "help with acne",
+       "match": "exact"
+      },
+      {
+       "keyword": "acne causes",
+       "match": "phrase"
+      },
+      {
+       "keyword": "acne causes",
+       "match": "exact"
+      }
+     ],
+     "negatives": [
+      "free",
+      "jobs",
+      "job",
+      "career",
+      "careers",
+      "course",
+      "courses",
+      "class",
+      "classes",
+      "training",
+      "become a naturopath",
+      "school",
+      "degree",
+      "diploma",
+      "certificate",
+      "university",
+      "salary",
+      "wage",
+      "what is",
+      "definition",
+      "meaning",
+      "wikipedia",
+      "wiki",
+      "reddit",
+      "forum",
+      "quora",
+      "pdf",
+      "doctor appointment",
+      "see a doctor",
+      "find a doctor",
+      "gp near me",
+      "find a gp",
+      "gp appointment",
+      "gp clinic",
+      "pharmacy",
+      "chemist",
+      "prescription",
+      "buy medication",
+      "cheap medication",
+      "cream",
+      "ointment",
+      "medicare",
+      "bulk billing",
+      "rebate",
+      "health fund"
+     ],
+     "rsa": {
+      "headlines": [
+       "Naturopath For Acne",
+       "Hormonal Acne Naturopath",
+       "Adult Acne That Won't Clear",
+       "Breakouts On A Monthly Cycle",
+       "Acne Is A Hormone & Gut Signal",
+       "Lab Work Without The Clinic",
+       "Consult From Your Own Home",
+       "Time To Tell It Properly",
+       "Fits Around Your GP's Care",
+       "A Free First Conversation",
+       "Herbs Matched To Your Case",
+       "Acne Support, AU-Wide",
+       "Book An Acne Consult",
+       "Clear It From The Inside",
+       "Start Your Acne Plan"
+      ],
+      "descriptions": [
+       "Adult acne is rarely about your face wash. Usually it's hormones and gut.",
+       "Hormone and gut testing posted out, then a plan built on what it actually shows.",
+       "Start with a free 15-minute session, or go straight to a full consultation.",
+       "Naturopathy that works alongside your GP and current medication, not against it."
+      ],
+      "paths": [
+       "australia",
+       "acne"
+      ],
+      "pinning_notes": "Pos1 pin: 'Naturopath For Acne'. Rest unpinned."
+     }
+    },
+    {
+     "name": "Rosacea AU",
+     "theme": "Rosacea AU",
+     "final_url": "https://waterwellclinic.com/conditions/rosacea",
+     "keywords": [
+      {
+       "keyword": "naturopath for rosacea",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath for rosacea",
+       "match": "exact"
+      },
+      {
+       "keyword": "rosacea natural treatment australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "rosacea natural treatment australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "rosacea naturopath online",
+       "match": "phrase"
+      },
+      {
+       "keyword": "rosacea naturopath online",
+       "match": "exact"
+      },
+      {
+       "keyword": "rosacea trigger naturopath australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "rosacea trigger naturopath australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "rosacea flare up naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "rosacea flare up naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "rosacea naturopath cost australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "rosacea naturopath cost australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "registered naturopath rosacea australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "registered naturopath rosacea australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "rosacea telehealth naturopath australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "rosacea telehealth naturopath australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "facial redness naturopath australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "facial redness naturopath australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "rosacea naturopath consultation",
+       "match": "phrase"
+      },
+      {
+       "keyword": "rosacea naturopath consultation",
+       "match": "exact"
+      },
+      {
+       "keyword": "rosacea naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "rosacea naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "rosacea help australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "rosacea help australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "rosacea treatment australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "rosacea treatment australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "rosacea specialist australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "rosacea specialist australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "rosacea diet naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "rosacea diet naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "rosacea gut health naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "rosacea gut health naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "rosacea immune naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "rosacea immune naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath for facial redness",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath for facial redness",
+       "match": "exact"
+      },
+      {
+       "keyword": "what triggers rosacea flare ups",
+       "match": "phrase"
+      },
+      {
+       "keyword": "what triggers rosacea flare ups",
+       "match": "exact"
+      },
+      {
+       "keyword": "herbal medicine for rosacea",
+       "match": "phrase"
+      },
+      {
+       "keyword": "herbal medicine for rosacea",
+       "match": "exact"
+      },
+      {
+       "keyword": "rosacea help",
+       "match": "phrase"
+      },
+      {
+       "keyword": "rosacea help",
+       "match": "exact"
+      },
+      {
+       "keyword": "rosacea treatment",
+       "match": "phrase"
+      },
+      {
+       "keyword": "rosacea treatment",
+       "match": "exact"
+      },
+      {
+       "keyword": "rosacea diet",
+       "match": "phrase"
+      },
+      {
+       "keyword": "rosacea diet",
+       "match": "exact"
+      },
+      {
+       "keyword": "rosacea specialist",
+       "match": "phrase"
+      },
+      {
+       "keyword": "rosacea specialist",
+       "match": "exact"
+      },
+      {
+       "keyword": "rosacea triggers",
+       "match": "phrase"
+      },
+      {
+       "keyword": "rosacea triggers",
+       "match": "exact"
+      },
+      {
+       "keyword": "help with rosacea",
+       "match": "phrase"
+      },
+      {
+       "keyword": "help with rosacea",
+       "match": "exact"
+      },
+      {
+       "keyword": "natural rosacea treatment",
+       "match": "phrase"
+      },
+      {
+       "keyword": "natural rosacea treatment",
+       "match": "exact"
+      }
+     ],
+     "negatives": [
+      "free",
+      "jobs",
+      "job",
+      "career",
+      "careers",
+      "course",
+      "courses",
+      "class",
+      "classes",
+      "training",
+      "become a naturopath",
+      "school",
+      "degree",
+      "diploma",
+      "certificate",
+      "university",
+      "salary",
+      "wage",
+      "what is",
+      "definition",
+      "meaning",
+      "wikipedia",
+      "wiki",
+      "reddit",
+      "forum",
+      "quora",
+      "pdf",
+      "doctor appointment",
+      "see a doctor",
+      "find a doctor",
+      "gp near me",
+      "find a gp",
+      "gp appointment",
+      "gp clinic",
+      "pharmacy",
+      "chemist",
+      "prescription",
+      "buy medication",
+      "cheap medication",
+      "cream",
+      "ointment",
+      "medicare",
+      "bulk billing",
+      "rebate",
+      "health fund"
+     ],
+     "rsa": {
+      "headlines": [
+       "Naturopath For Rosacea",
+       "Rosacea Naturopath Online",
+       "Redness That Flares At Random",
+       "Flushing You Can't Predict",
+       "Find Your Rosacea Triggers",
+       "Your Results, Your Plan",
+       "Online Video Appointments",
+       "Seen As A Whole Person",
+       "Alongside Your Current Care",
+       "Talk First, Free Of Charge",
+       "A Formula Built For You",
+       "Rosacea Support, AU-Wide",
+       "Book A Rosacea Consult",
+       "Find What Sets It Off",
+       "Start Your Rosacea Plan"
+      ],
+      "descriptions": [
+       "Rosacea flares have triggers. Most people are never shown how to find theirs.",
+       "Gut, diet and trigger factors mapped properly, rather than managing the redness.",
+       "A free 15-minute discovery session first, or book the full consultation.",
+       "Works alongside the medical care you already have. Nothing is replaced."
+      ],
+      "paths": [
+       "australia",
+       "rosacea"
+      ],
+      "pinning_notes": "Pos1 pin: 'Naturopath For Rosacea'. Rest unpinned."
+     }
+    },
+    {
+     "name": "Skin Infections AU",
+     "theme": "Recurring skin concerns AU",
+     "final_url": "https://waterwellclinic.com/conditions/skin-infections",
+     "keywords": [
+      {
+       "keyword": "naturopath for skin infections australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath for skin infections australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "recurring skin infections naturopath online",
+       "match": "phrase"
+      },
+      {
+       "keyword": "recurring skin infections naturopath online",
+       "match": "exact"
+      },
+      {
+       "keyword": "natural skin infection support australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "natural skin infection support australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath chronic urticaria",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath chronic urticaria",
+       "match": "exact"
+      },
+      {
+       "keyword": "recurring skin infections naturopath australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "recurring skin infections naturopath australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "chronic hives naturopath australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "chronic hives naturopath australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "immune support skin naturopath australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "immune support skin naturopath australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "skin infection naturopath cost australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "skin infection naturopath cost australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "registered naturopath skin infections australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "registered naturopath skin infections australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "recurring urticaria naturopath online",
+       "match": "phrase"
+      },
+      {
+       "keyword": "recurring urticaria naturopath online",
+       "match": "exact"
+      },
+      {
+       "keyword": "skin infection naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "skin infection naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath for hives",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath for hives",
+       "match": "exact"
+      },
+      {
+       "keyword": "hives naturopath australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "hives naturopath australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "recurring boils naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "recurring boils naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "fungal skin naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "fungal skin naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath for folliculitis",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath for folliculitis",
+       "match": "exact"
+      },
+      {
+       "keyword": "naturopath for itchy skin",
+       "match": "phrase"
+      },
+      {
+       "keyword": "naturopath for itchy skin",
+       "match": "exact"
+      },
+      {
+       "keyword": "itchy skin naturopath australia",
+       "match": "phrase"
+      },
+      {
+       "keyword": "itchy skin naturopath australia",
+       "match": "exact"
+      },
+      {
+       "keyword": "staph skin naturopath",
+       "match": "phrase"
+      },
+      {
+       "keyword": "staph skin naturopath",
+       "match": "exact"
+      },
+      {
+       "keyword": "why do i keep getting skin infections",
+       "match": "phrase"
+      },
+      {
+       "keyword": "why do i keep getting skin infections",
+       "match": "exact"
+      },
+      {
+       "keyword": "chronic hives",
+       "match": "phrase"
+      },
+      {
+       "keyword": "chronic hives",
+       "match": "exact"
+      },
+      {
+       "keyword": "recurring hives",
+       "match": "phrase"
+      },
+      {
+       "keyword": "recurring hives",
+       "match": "exact"
+      },
+      {
+       "keyword": "hives help",
+       "match": "phrase"
+      },
+      {
+       "keyword": "hives help",
+       "match": "exact"
+      },
+      {
+       "keyword": "hives treatment",
+       "match": "phrase"
+      },
+      {
+       "keyword": "hives treatment",
+       "match": "exact"
+      },
+      {
+       "keyword": "urticaria help",
+       "match": "phrase"
+      },
+      {
+       "keyword": "urticaria help",
+       "match": "exact"
+      },
+      {
+       "keyword": "itchy skin help",
+       "match": "phrase"
+      },
+      {
+       "keyword": "itchy skin help",
+       "match": "exact"
+      },
+      {
+       "keyword": "skin infection help",
+       "match": "phrase"
+      },
+      {
+       "keyword": "skin infection help",
+       "match": "exact"
+      }
+     ],
+     "negatives": [
+      "free",
+      "jobs",
+      "job",
+      "career",
+      "careers",
+      "course",
+      "courses",
+      "class",
+      "classes",
+      "training",
+      "become a naturopath",
+      "school",
+      "degree",
+      "diploma",
+      "certificate",
+      "university",
+      "salary",
+      "wage",
+      "what is",
+      "definition",
+      "meaning",
+      "wikipedia",
+      "wiki",
+      "reddit",
+      "forum",
+      "quora",
+      "pdf",
+      "doctor appointment",
+      "see a doctor",
+      "find a doctor",
+      "gp near me",
+      "find a gp",
+      "gp appointment",
+      "gp clinic",
+      "pharmacy",
+      "chemist",
+      "prescription",
+      "buy medication",
+      "cheap medication",
+      "cream",
+      "ointment",
+      "medicare",
+      "bulk billing",
+      "rebate",
+      "health fund"
+     ],
+     "rsa": {
+      "headlines": [
+       "Naturopath For Skin Infections",
+       "Chronic Hives Naturopath",
+       "Infections That Keep Returning",
+       "Hives With No Known Cause",
+       "Recurring Is An Immune Signal",
+       "Guesswork Taken Out",
+       "No Travel, No Waiting Room",
+       "Continuity, Every Appointment",
+       "Your Doctor Stays Involved",
+       "Free Intro Call Available",
+       "Adjusted As Your Body Responds",
+       "Skin Support, AU-Wide",
+       "Book A Skin Consult",
+       "Stop The Cycle Repeating",
+       "Start Your Skin Plan"
+      ],
+      "descriptions": [
+       "Skin infections and hives that keep returning are a signal, not bad luck.",
+       "Immune and gut testing posted out, so recurring problems get looked at properly.",
+       "Start with a free 15-minute session, or go straight to a full consultation.",
+       "Works alongside the medical care you already have. Nothing is replaced."
+      ],
+      "paths": [
+       "australia",
+       "skin"
+      ],
+      "pinning_notes": "Pos1 pin: 'Naturopath For Skin Infections'. Rest unpinned."
+     }
+    }
+   ],
+   "budget_ladder": {
+    "stage1": 0.0,
+    "stage2": 0.0,
+    "stage3": 8.0
+   },
+   "status": "Paused"
+  }
+ ]
+}

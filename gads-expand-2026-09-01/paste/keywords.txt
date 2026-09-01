@@ -1,0 +1,1361 @@
+Campaign	Ad Group	Keyword	Match Type	Status
+WW | NZ | Brand 2026	Brand - Waterwell	kohei iguchi	Phrase	Enabled
+WW | NZ | Brand 2026	Brand - Waterwell	kohei iguchi	Exact	Enabled
+WW | NZ | Brand 2026	Brand - Waterwell	kohei iguchi clinic	Phrase	Enabled
+WW | NZ | Brand 2026	Brand - Waterwell	kohei iguchi clinic	Exact	Enabled
+WW | NZ | Brand 2026	Brand - Waterwell	kohei iguchi medical herbalist	Phrase	Enabled
+WW | NZ | Brand 2026	Brand - Waterwell	kohei iguchi medical herbalist	Exact	Enabled
+WW | NZ | Brand 2026	Brand - Waterwell	kohei iguchi naturopath	Phrase	Enabled
+WW | NZ | Brand 2026	Brand - Waterwell	kohei iguchi naturopath	Exact	Enabled
+WW | NZ | Brand 2026	Brand - Waterwell	kohei naturopath	Phrase	Enabled
+WW | NZ | Brand 2026	Brand - Waterwell	kohei naturopath	Exact	Enabled
+WW | NZ | Brand 2026	Brand - Waterwell	waterwell clinic	Phrase	Enabled
+WW | NZ | Brand 2026	Brand - Waterwell	waterwell clinic	Exact	Enabled
+WW | NZ | Brand 2026	Brand - Waterwell	waterwell clinic booking	Phrase	Enabled
+WW | NZ | Brand 2026	Brand - Waterwell	waterwell clinic booking	Exact	Enabled
+WW | NZ | Brand 2026	Brand - Waterwell	waterwell clinic consultation	Phrase	Enabled
+WW | NZ | Brand 2026	Brand - Waterwell	waterwell clinic consultation	Exact	Enabled
+WW | NZ | Brand 2026	Brand - Waterwell	waterwell clinic naturopath	Phrase	Enabled
+WW | NZ | Brand 2026	Brand - Waterwell	waterwell clinic naturopath	Exact	Enabled
+WW | NZ | Brand 2026	Brand - Waterwell	waterwell clinic nz	Phrase	Enabled
+WW | NZ | Brand 2026	Brand - Waterwell	waterwell clinic nz	Exact	Enabled
+WW | NZ | Brand 2026	Brand - Waterwell	waterwell naturopath	Phrase	Enabled
+WW | NZ | Brand 2026	Brand - Waterwell	waterwell naturopath	Exact	Enabled
+WW | NZ | Brand 2026	Brand - Waterwell	waterwell naturopathy	Phrase	Enabled
+WW | NZ | Brand 2026	Brand - Waterwell	waterwell naturopathy	Exact	Enabled
+WW | NZ | Brand 2026	Brand - Waterwell	waterwell skin clinic	Phrase	Enabled
+WW | NZ | Brand 2026	Brand - Waterwell	waterwell skin clinic	Exact	Enabled
+WW | NZ | Brand 2026	Brand - Waterwell	waterwellclinic.co.nz	Phrase	Enabled
+WW | NZ | Brand 2026	Brand - Waterwell	waterwellclinic.co.nz	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	affordable naturopath nz	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	affordable naturopath nz	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	best online naturopath nz	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	best online naturopath nz	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	book a naturopath	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	book a naturopath	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	book a naturopath consultation	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	book a naturopath consultation	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	book naturopath online	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	book naturopath online	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	book online naturopath appointment	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	book online naturopath appointment	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	childrens naturopath nz	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	childrens naturopath nz	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	consult a naturopath online	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	consult a naturopath online	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	digital naturopath consultation	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	digital naturopath consultation	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	experienced online naturopath	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	experienced online naturopath	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	family naturopath nz	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	family naturopath nz	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	functional medicine testing nz	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	functional medicine testing nz	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	functional testing naturopath nz	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	functional testing naturopath nz	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	natural health consultation online	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	natural health consultation online	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	natural medicine practitioner nz	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	natural medicine practitioner nz	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	naturopath appointment	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	naturopath appointment	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	naturopath appointment online nz	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	naturopath appointment online nz	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	naturopath booking	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	naturopath booking	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	naturopath consult	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	naturopath consult	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	naturopath consultation cost	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	naturopath consultation cost	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	naturopath consultation nz	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	naturopath consultation nz	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	naturopath consultation price nz	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	naturopath consultation price nz	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	naturopath consultation via video	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	naturopath consultation via video	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	naturopath cost nz	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	naturopath cost nz	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	naturopath discovery call	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	naturopath discovery call	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	naturopath for kids nz	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	naturopath for kids nz	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	naturopath from home	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	naturopath from home	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	naturopath functional testing nz	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	naturopath functional testing nz	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	naturopath health plan nz	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	naturopath health plan nz	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	naturopath initial consultation nz	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	naturopath initial consultation nz	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	naturopath lab tests online	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	naturopath lab tests online	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	naturopath online	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	naturopath online	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	naturopath online consultation	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	naturopath online consultation	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	naturopath online nz	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	naturopath online nz	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	naturopath phone consultation	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	naturopath phone consultation	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	naturopath prices nz	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	naturopath prices nz	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	naturopath second opinion	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	naturopath second opinion	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	naturopath session	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	naturopath session	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	naturopath video call	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	naturopath video call	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	naturopath video consult	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	naturopath video consult	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	naturopath video consultation	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	naturopath video consultation	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	naturopath zoom consultation	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	naturopath zoom consultation	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	naturopathic consultation	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	naturopathic consultation	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	naturopathic doctor nz	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	naturopathic doctor nz	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	naturopathic practitioner nz	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	naturopathic practitioner nz	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	naturopathy online	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	naturopathy online	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	online consultation naturopath	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	online consultation naturopath	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	online natural health consultation	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	online natural health consultation	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	online naturopath	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	online naturopath	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	online naturopath appointment	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	online naturopath appointment	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	online naturopath booking	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	online naturopath booking	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	online naturopath consult	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	online naturopath consult	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	online naturopath consultation	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	online naturopath consultation	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	online naturopath cost nz	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	online naturopath cost nz	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	online naturopath enquiry	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	online naturopath enquiry	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	online naturopath new zealand	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	online naturopath new zealand	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	online naturopath nz	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	online naturopath nz	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	online naturopath session	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	online naturopath session	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	online naturopathic consultation	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	online naturopathic consultation	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	online naturopathy consultation	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	online naturopathy consultation	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	paediatric naturopath nz	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	paediatric naturopath nz	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	qualified naturopath online	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	qualified naturopath online	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	remote naturopath consultation	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	remote naturopath consultation	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	see a naturopath	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	see a naturopath	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	see a naturopath online	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	see a naturopath online	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	speak to a naturopath online	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	speak to a naturopath online	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	talk to a naturopath online	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	talk to a naturopath online	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	telehealth naturopath	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	telehealth naturopath	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	telehealth naturopath nz	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	telehealth naturopath nz	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	trusted online naturopath nz	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	trusted online naturopath nz	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	video naturopath	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	video naturopath	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	virtual naturopath	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	virtual naturopath	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	virtual naturopath consultation	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	virtual naturopath consultation	Exact	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	virtual naturopath nz	Phrase	Enabled
+WW | NZ | Online Naturopath	Online Naturopath Consult	virtual naturopath nz	Exact	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	best naturopath nz	Phrase	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	best naturopath nz	Exact	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	holistic health nz	Phrase	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	holistic health nz	Exact	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	holistic health practitioner nz	Phrase	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	holistic health practitioner nz	Exact	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	holistic naturopath nz	Phrase	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	holistic naturopath nz	Exact	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	holistic practitioner	Phrase	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	holistic practitioner	Exact	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	natural health	Phrase	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	natural health	Exact	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	natural health clinic nz	Phrase	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	natural health clinic nz	Exact	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	natural health practitioner nz	Phrase	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	natural health practitioner nz	Exact	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	natural medicine	Phrase	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	natural medicine	Exact	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	natural therapies nz	Phrase	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	natural therapies nz	Exact	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath	Phrase	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath	Exact	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath appointment nz	Phrase	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath appointment nz	Exact	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath auckland	Phrase	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath auckland	Exact	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath bay of plenty	Phrase	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath bay of plenty	Exact	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath blenheim	Phrase	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath blenheim	Exact	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath christchurch	Phrase	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath christchurch	Exact	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath consultation	Phrase	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath consultation	Exact	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath dunedin	Phrase	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath dunedin	Exact	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath gisborne	Phrase	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath gisborne	Exact	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath hamilton	Phrase	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath hamilton	Exact	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath hastings	Phrase	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath hastings	Exact	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath hawkes bay	Phrase	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath hawkes bay	Exact	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath invercargill	Phrase	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath invercargill	Exact	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath kapiti	Phrase	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath kapiti	Exact	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath lower hutt	Phrase	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath lower hutt	Exact	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath masterton	Phrase	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath masterton	Exact	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath napier	Phrase	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath napier	Exact	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath nelson	Phrase	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath nelson	Exact	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath new plymouth	Phrase	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath new plymouth	Exact	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath new zealand	Phrase	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath new zealand	Exact	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath north shore	Phrase	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath north shore	Exact	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath nz	Phrase	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath nz	Exact	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath otago	Phrase	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath otago	Exact	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath palmerston north	Phrase	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath palmerston north	Exact	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath porirua	Phrase	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath porirua	Exact	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath queenstown	Phrase	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath queenstown	Exact	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath rotorua	Phrase	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath rotorua	Exact	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath specialising in skin	Phrase	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath specialising in skin	Exact	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath taupo	Phrase	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath taupo	Exact	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath tauranga	Phrase	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath tauranga	Exact	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath timaru	Phrase	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath timaru	Exact	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath waikato	Phrase	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath waikato	Exact	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath wellington	Phrase	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath wellington	Exact	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath whanganui	Phrase	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath whanganui	Exact	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath whangarei	Phrase	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopath whangarei	Exact	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopathic medicine nz	Phrase	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopathic medicine nz	Exact	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopathy	Phrase	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopathy	Exact	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopathy nz	Phrase	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	naturopathy nz	Exact	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	qualified naturopath nz	Phrase	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	qualified naturopath nz	Exact	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	registered naturopath nz	Phrase	Enabled
+WW | NZ | Online Naturopath	General Naturopathy	registered naturopath nz	Exact	Enabled
+WW | NZ | Online Naturopath	Herbal Medicine	custom herbal formula nz	Phrase	Enabled
+WW | NZ | Online Naturopath	Herbal Medicine	custom herbal formula nz	Exact	Enabled
+WW | NZ | Online Naturopath	Herbal Medicine	herbal consultation	Phrase	Enabled
+WW | NZ | Online Naturopath	Herbal Medicine	herbal consultation	Exact	Enabled
+WW | NZ | Online Naturopath	Herbal Medicine	herbal medicine	Phrase	Enabled
+WW | NZ | Online Naturopath	Herbal Medicine	herbal medicine	Exact	Enabled
+WW | NZ | Online Naturopath	Herbal Medicine	herbal medicine consultation	Phrase	Enabled
+WW | NZ | Online Naturopath	Herbal Medicine	herbal medicine consultation	Exact	Enabled
+WW | NZ | Online Naturopath	Herbal Medicine	herbal medicine for skin nz	Phrase	Enabled
+WW | NZ | Online Naturopath	Herbal Medicine	herbal medicine for skin nz	Exact	Enabled
+WW | NZ | Online Naturopath	Herbal Medicine	herbal medicine nz	Phrase	Enabled
+WW | NZ | Online Naturopath	Herbal Medicine	herbal medicine nz	Exact	Enabled
+WW | NZ | Online Naturopath	Herbal Medicine	herbal medicine online nz	Phrase	Enabled
+WW | NZ | Online Naturopath	Herbal Medicine	herbal medicine online nz	Exact	Enabled
+WW | NZ | Online Naturopath	Herbal Medicine	herbal medicine practitioner nz	Phrase	Enabled
+WW | NZ | Online Naturopath	Herbal Medicine	herbal medicine practitioner nz	Exact	Enabled
+WW | NZ | Online Naturopath	Herbal Medicine	herbal practitioner	Phrase	Enabled
+WW | NZ | Online Naturopath	Herbal Medicine	herbal practitioner	Exact	Enabled
+WW | NZ | Online Naturopath	Herbal Medicine	herbal remedies	Phrase	Enabled
+WW | NZ | Online Naturopath	Herbal Medicine	herbal remedies	Exact	Enabled
+WW | NZ | Online Naturopath	Herbal Medicine	herbalist	Phrase	Enabled
+WW | NZ | Online Naturopath	Herbal Medicine	herbalist	Exact	Enabled
+WW | NZ | Online Naturopath	Herbal Medicine	herbalist consultation nz	Phrase	Enabled
+WW | NZ | Online Naturopath	Herbal Medicine	herbalist consultation nz	Exact	Enabled
+WW | NZ | Online Naturopath	Herbal Medicine	herbalist for skin conditions	Phrase	Enabled
+WW | NZ | Online Naturopath	Herbal Medicine	herbalist for skin conditions	Exact	Enabled
+WW | NZ | Online Naturopath	Herbal Medicine	herbalist nz	Phrase	Enabled
+WW | NZ | Online Naturopath	Herbal Medicine	herbalist nz	Exact	Enabled
+WW | NZ | Online Naturopath	Herbal Medicine	medical herbalist	Phrase	Enabled
+WW | NZ | Online Naturopath	Herbal Medicine	medical herbalist	Exact	Enabled
+WW | NZ | Online Naturopath	Herbal Medicine	medical herbalist nz	Phrase	Enabled
+WW | NZ | Online Naturopath	Herbal Medicine	medical herbalist nz	Exact	Enabled
+WW | NZ | Online Naturopath	Herbal Medicine	online herbal medicine consultation	Phrase	Enabled
+WW | NZ | Online Naturopath	Herbal Medicine	online herbal medicine consultation	Exact	Enabled
+WW | NZ | Online Naturopath	Herbal Medicine	online herbalist	Phrase	Enabled
+WW | NZ | Online Naturopath	Herbal Medicine	online herbalist	Exact	Enabled
+WW | NZ | Online Naturopath	Herbal Medicine	online medical herbalist	Phrase	Enabled
+WW | NZ | Online Naturopath	Herbal Medicine	online medical herbalist	Exact	Enabled
+WW | NZ | Online Naturopath	Herbal Medicine	prescribed herbal medicine nz	Phrase	Enabled
+WW | NZ | Online Naturopath	Herbal Medicine	prescribed herbal medicine nz	Exact	Enabled
+WW | NZ | Online Naturopath	Herbal Medicine	qualified herbalist nz	Phrase	Enabled
+WW | NZ | Online Naturopath	Herbal Medicine	qualified herbalist nz	Exact	Enabled
+WW | NZ | Online Naturopath	Herbal Medicine	registered medical herbalist nz	Phrase	Enabled
+WW | NZ | Online Naturopath	Herbal Medicine	registered medical herbalist nz	Exact	Enabled
+WW | NZ | Online Naturopath	Herbal Medicine	western herbal medicine nz	Phrase	Enabled
+WW | NZ | Online Naturopath	Herbal Medicine	western herbal medicine nz	Exact	Enabled
+WW | NZ | Skin Conditions	Eczema	adult eczema naturopath nz	Phrase	Enabled
+WW | NZ | Skin Conditions	Eczema	adult eczema naturopath nz	Exact	Enabled
+WW | NZ | Skin Conditions	Eczema	baby eczema naturopath	Phrase	Enabled
+WW | NZ | Skin Conditions	Eczema	baby eczema naturopath	Exact	Enabled
+WW | NZ | Skin Conditions	Eczema	best online eczema naturopath nz	Phrase	Enabled
+WW | NZ | Skin Conditions	Eczema	best online eczema naturopath nz	Exact	Enabled
+WW | NZ | Skin Conditions	Eczema	childhood eczema naturopath	Phrase	Enabled
+WW | NZ | Skin Conditions	Eczema	childhood eczema naturopath	Exact	Enabled
+WW | NZ | Skin Conditions	Eczema	chronic eczema naturopath	Phrase	Enabled
+WW | NZ | Skin Conditions	Eczema	chronic eczema naturopath	Exact	Enabled
+WW | NZ | Skin Conditions	Eczema	dyshidrotic eczema naturopath	Phrase	Enabled
+WW | NZ | Skin Conditions	Eczema	dyshidrotic eczema naturopath	Exact	Enabled
+WW | NZ | Skin Conditions	Eczema	eczema and food naturopath	Phrase	Enabled
+WW | NZ | Skin Conditions	Eczema	eczema and food naturopath	Exact	Enabled
+WW | NZ | Skin Conditions	Eczema	eczema causes	Phrase	Enabled
+WW | NZ | Skin Conditions	Eczema	eczema causes	Exact	Enabled
+WW | NZ | Skin Conditions	Eczema	eczema consultation price nz	Phrase	Enabled
+WW | NZ | Skin Conditions	Eczema	eczema consultation price nz	Exact	Enabled
+WW | NZ | Skin Conditions	Eczema	eczema diet	Phrase	Enabled
+WW | NZ | Skin Conditions	Eczema	eczema diet	Exact	Enabled
+WW | NZ | Skin Conditions	Eczema	eczema diet naturopath	Phrase	Enabled
+WW | NZ | Skin Conditions	Eczema	eczema diet naturopath	Exact	Enabled
+WW | NZ | Skin Conditions	Eczema	eczema diet plan nz	Phrase	Enabled
+WW | NZ | Skin Conditions	Eczema	eczema diet plan nz	Exact	Enabled
+WW | NZ | Skin Conditions	Eczema	eczema flare up help	Phrase	Enabled
+WW | NZ | Skin Conditions	Eczema	eczema flare up help	Exact	Enabled
+WW | NZ | Skin Conditions	Eczema	eczema gut health connection	Phrase	Enabled
+WW | NZ | Skin Conditions	Eczema	eczema gut health connection	Exact	Enabled
+WW | NZ | Skin Conditions	Eczema	eczema help	Phrase	Enabled
+WW | NZ | Skin Conditions	Eczema	eczema help	Exact	Enabled
+WW | NZ | Skin Conditions	Eczema	eczema help nz	Phrase	Enabled
+WW | NZ | Skin Conditions	Eczema	eczema help nz	Exact	Enabled
+WW | NZ | Skin Conditions	Eczema	eczema immune naturopath	Phrase	Enabled
+WW | NZ | Skin Conditions	Eczema	eczema immune naturopath	Exact	Enabled
+WW | NZ | Skin Conditions	Eczema	eczema in children naturopath	Phrase	Enabled
+WW | NZ | Skin Conditions	Eczema	eczema in children naturopath	Exact	Enabled
+WW | NZ | Skin Conditions	Eczema	eczema keeps coming back	Phrase	Enabled
+WW | NZ | Skin Conditions	Eczema	eczema keeps coming back	Exact	Enabled
+WW | NZ | Skin Conditions	Eczema	eczema natural treatment	Phrase	Enabled
+WW | NZ | Skin Conditions	Eczema	eczema natural treatment	Exact	Enabled
+WW | NZ | Skin Conditions	Eczema	eczema naturopath	Phrase	Enabled
+WW | NZ | Skin Conditions	Eczema	eczema naturopath	Exact	Enabled
+WW | NZ | Skin Conditions	Eczema	eczema naturopath cost nz	Phrase	Enabled
+WW | NZ | Skin Conditions	Eczema	eczema naturopath cost nz	Exact	Enabled
+WW | NZ | Skin Conditions	Eczema	eczema naturopath nz	Phrase	Enabled
+WW | NZ | Skin Conditions	Eczema	eczema naturopath nz	Exact	Enabled
+WW | NZ | Skin Conditions	Eczema	eczema specialist	Phrase	Enabled
+WW | NZ | Skin Conditions	Eczema	eczema specialist	Exact	Enabled
+WW | NZ | Skin Conditions	Eczema	eczema specialist nz	Phrase	Enabled
+WW | NZ | Skin Conditions	Eczema	eczema specialist nz	Exact	Enabled
+WW | NZ | Skin Conditions	Eczema	eczema support	Phrase	Enabled
+WW | NZ | Skin Conditions	Eczema	eczema support	Exact	Enabled
+WW | NZ | Skin Conditions	Eczema	eczema support naturopath	Phrase	Enabled
+WW | NZ | Skin Conditions	Eczema	eczema support naturopath	Exact	Enabled
+WW | NZ | Skin Conditions	Eczema	eczema treatment	Phrase	Enabled
+WW | NZ | Skin Conditions	Eczema	eczema treatment	Exact	Enabled
+WW | NZ | Skin Conditions	Eczema	eczema treatment nz	Phrase	Enabled
+WW | NZ | Skin Conditions	Eczema	eczema treatment nz	Exact	Enabled
+WW | NZ | Skin Conditions	Eczema	eczema trigger naturopath	Phrase	Enabled
+WW | NZ | Skin Conditions	Eczema	eczema trigger naturopath	Exact	Enabled
+WW | NZ | Skin Conditions	Eczema	gut-skin eczema naturopath	Phrase	Enabled
+WW | NZ | Skin Conditions	Eczema	gut-skin eczema naturopath	Exact	Enabled
+WW | NZ | Skin Conditions	Eczema	hand eczema naturopath	Phrase	Enabled
+WW | NZ | Skin Conditions	Eczema	hand eczema naturopath	Exact	Enabled
+WW | NZ | Skin Conditions	Eczema	help with eczema	Phrase	Enabled
+WW | NZ | Skin Conditions	Eczema	help with eczema	Exact	Enabled
+WW | NZ | Skin Conditions	Eczema	herbal medicine for eczema nz	Phrase	Enabled
+WW | NZ | Skin Conditions	Eczema	herbal medicine for eczema nz	Exact	Enabled
+WW | NZ | Skin Conditions	Eczema	leaky gut eczema naturopath	Phrase	Enabled
+WW | NZ | Skin Conditions	Eczema	leaky gut eczema naturopath	Exact	Enabled
+WW | NZ | Skin Conditions	Eczema	medical herbalist eczema nz	Phrase	Enabled
+WW | NZ | Skin Conditions	Eczema	medical herbalist eczema nz	Exact	Enabled
+WW | NZ | Skin Conditions	Eczema	natural eczema help	Phrase	Enabled
+WW | NZ | Skin Conditions	Eczema	natural eczema help	Exact	Enabled
+WW | NZ | Skin Conditions	Eczema	natural eczema treatment	Phrase	Enabled
+WW | NZ | Skin Conditions	Eczema	natural eczema treatment	Exact	Enabled
+WW | NZ | Skin Conditions	Eczema	natural remedies for eczema	Phrase	Enabled
+WW | NZ | Skin Conditions	Eczema	natural remedies for eczema	Exact	Enabled
+WW | NZ | Skin Conditions	Eczema	naturopath eczema online	Phrase	Enabled
+WW | NZ | Skin Conditions	Eczema	naturopath eczema online	Exact	Enabled
+WW | NZ | Skin Conditions	Eczema	naturopath for eczema	Phrase	Enabled
+WW | NZ | Skin Conditions	Eczema	naturopath for eczema	Exact	Enabled
+WW | NZ | Skin Conditions	Eczema	online eczema specialist	Phrase	Enabled
+WW | NZ | Skin Conditions	Eczema	online eczema specialist	Exact	Enabled
+WW | NZ | Skin Conditions	Eczema	registered naturopath eczema nz	Phrase	Enabled
+WW | NZ | Skin Conditions	Eczema	registered naturopath eczema nz	Exact	Enabled
+WW | NZ | Skin Conditions	Eczema	scalp eczema naturopath	Phrase	Enabled
+WW | NZ | Skin Conditions	Eczema	scalp eczema naturopath	Exact	Enabled
+WW | NZ | Skin Conditions	Eczema	severe eczema naturopath	Phrase	Enabled
+WW | NZ | Skin Conditions	Eczema	severe eczema naturopath	Exact	Enabled
+WW | NZ | Skin Conditions	Eczema	toddler eczema naturopath	Phrase	Enabled
+WW | NZ | Skin Conditions	Eczema	toddler eczema naturopath	Exact	Enabled
+WW | NZ | Skin Conditions	Eczema	why wont my eczema go away	Phrase	Enabled
+WW | NZ | Skin Conditions	Eczema	why wont my eczema go away	Exact	Enabled
+WW | NZ | Skin Conditions	Topical Steroid Withdrawal	coming off steroid cream	Phrase	Enabled
+WW | NZ | Skin Conditions	Topical Steroid Withdrawal	coming off steroid cream	Exact	Enabled
+WW | NZ | Skin Conditions	Topical Steroid Withdrawal	naturopath for skin after steroids	Phrase	Enabled
+WW | NZ | Skin Conditions	Topical Steroid Withdrawal	naturopath for skin after steroids	Exact	Enabled
+WW | NZ | Skin Conditions	Topical Steroid Withdrawal	naturopath for tsw	Phrase	Enabled
+WW | NZ | Skin Conditions	Topical Steroid Withdrawal	naturopath for tsw	Exact	Enabled
+WW | NZ | Skin Conditions	Topical Steroid Withdrawal	red skin syndrome	Phrase	Enabled
+WW | NZ | Skin Conditions	Topical Steroid Withdrawal	red skin syndrome	Exact	Enabled
+WW | NZ | Skin Conditions	Topical Steroid Withdrawal	red skin syndrome naturopath	Phrase	Enabled
+WW | NZ | Skin Conditions	Topical Steroid Withdrawal	red skin syndrome naturopath	Exact	Enabled
+WW | NZ | Skin Conditions	Topical Steroid Withdrawal	red skin syndrome support nz	Phrase	Enabled
+WW | NZ | Skin Conditions	Topical Steroid Withdrawal	red skin syndrome support nz	Exact	Enabled
+WW | NZ | Skin Conditions	Topical Steroid Withdrawal	registered naturopath tsw nz	Phrase	Enabled
+WW | NZ | Skin Conditions	Topical Steroid Withdrawal	registered naturopath tsw nz	Exact	Enabled
+WW | NZ | Skin Conditions	Topical Steroid Withdrawal	steroid cream withdrawal naturopath	Phrase	Enabled
+WW | NZ | Skin Conditions	Topical Steroid Withdrawal	steroid cream withdrawal naturopath	Exact	Enabled
+WW | NZ | Skin Conditions	Topical Steroid Withdrawal	steroid withdrawal	Phrase	Enabled
+WW | NZ | Skin Conditions	Topical Steroid Withdrawal	steroid withdrawal	Exact	Enabled
+WW | NZ | Skin Conditions	Topical Steroid Withdrawal	steroid withdrawal naturopath	Phrase	Enabled
+WW | NZ | Skin Conditions	Topical Steroid Withdrawal	steroid withdrawal naturopath	Exact	Enabled
+WW | NZ | Skin Conditions	Topical Steroid Withdrawal	steroid withdrawal skin support	Phrase	Enabled
+WW | NZ | Skin Conditions	Topical Steroid Withdrawal	steroid withdrawal skin support	Exact	Enabled
+WW | NZ | Skin Conditions	Topical Steroid Withdrawal	topical steroid withdrawal	Phrase	Enabled
+WW | NZ | Skin Conditions	Topical Steroid Withdrawal	topical steroid withdrawal	Exact	Enabled
+WW | NZ | Skin Conditions	Topical Steroid Withdrawal	topical steroid withdrawal help	Phrase	Enabled
+WW | NZ | Skin Conditions	Topical Steroid Withdrawal	topical steroid withdrawal help	Exact	Enabled
+WW | NZ | Skin Conditions	Topical Steroid Withdrawal	topical steroid withdrawal naturopath nz	Phrase	Enabled
+WW | NZ | Skin Conditions	Topical Steroid Withdrawal	topical steroid withdrawal naturopath nz	Exact	Enabled
+WW | NZ | Skin Conditions	Topical Steroid Withdrawal	tsw diet naturopath	Phrase	Enabled
+WW | NZ | Skin Conditions	Topical Steroid Withdrawal	tsw diet naturopath	Exact	Enabled
+WW | NZ | Skin Conditions	Topical Steroid Withdrawal	tsw flare naturopath	Phrase	Enabled
+WW | NZ | Skin Conditions	Topical Steroid Withdrawal	tsw flare naturopath	Exact	Enabled
+WW | NZ | Skin Conditions	Topical Steroid Withdrawal	tsw gut health naturopath	Phrase	Enabled
+WW | NZ | Skin Conditions	Topical Steroid Withdrawal	tsw gut health naturopath	Exact	Enabled
+WW | NZ | Skin Conditions	Topical Steroid Withdrawal	tsw help	Phrase	Enabled
+WW | NZ | Skin Conditions	Topical Steroid Withdrawal	tsw help	Exact	Enabled
+WW | NZ | Skin Conditions	Topical Steroid Withdrawal	tsw help nz	Phrase	Enabled
+WW | NZ | Skin Conditions	Topical Steroid Withdrawal	tsw help nz	Exact	Enabled
+WW | NZ | Skin Conditions	Topical Steroid Withdrawal	tsw immune support naturopath	Phrase	Enabled
+WW | NZ | Skin Conditions	Topical Steroid Withdrawal	tsw immune support naturopath	Exact	Enabled
+WW | NZ | Skin Conditions	Topical Steroid Withdrawal	tsw natural treatment	Phrase	Enabled
+WW | NZ | Skin Conditions	Topical Steroid Withdrawal	tsw natural treatment	Exact	Enabled
+WW | NZ | Skin Conditions	Topical Steroid Withdrawal	tsw naturopath	Phrase	Enabled
+WW | NZ | Skin Conditions	Topical Steroid Withdrawal	tsw naturopath	Exact	Enabled
+WW | NZ | Skin Conditions	Topical Steroid Withdrawal	tsw naturopath cost nz	Phrase	Enabled
+WW | NZ | Skin Conditions	Topical Steroid Withdrawal	tsw naturopath cost nz	Exact	Enabled
+WW | NZ | Skin Conditions	Topical Steroid Withdrawal	tsw naturopath nz	Phrase	Enabled
+WW | NZ | Skin Conditions	Topical Steroid Withdrawal	tsw naturopath nz	Exact	Enabled
+WW | NZ | Skin Conditions	Topical Steroid Withdrawal	tsw naturopath online consultation	Phrase	Enabled
+WW | NZ | Skin Conditions	Topical Steroid Withdrawal	tsw naturopath online consultation	Exact	Enabled
+WW | NZ | Skin Conditions	Topical Steroid Withdrawal	tsw recovery	Phrase	Enabled
+WW | NZ | Skin Conditions	Topical Steroid Withdrawal	tsw recovery	Exact	Enabled
+WW | NZ | Skin Conditions	Topical Steroid Withdrawal	tsw recovery naturopath nz	Phrase	Enabled
+WW | NZ | Skin Conditions	Topical Steroid Withdrawal	tsw recovery naturopath nz	Exact	Enabled
+WW | NZ | Skin Conditions	Topical Steroid Withdrawal	tsw recovery support	Phrase	Enabled
+WW | NZ | Skin Conditions	Topical Steroid Withdrawal	tsw recovery support	Exact	Enabled
+WW | NZ | Skin Conditions	Topical Steroid Withdrawal	tsw skin support	Phrase	Enabled
+WW | NZ | Skin Conditions	Topical Steroid Withdrawal	tsw skin support	Exact	Enabled
+WW | NZ | Skin Conditions	Topical Steroid Withdrawal	tsw specialist nz	Phrase	Enabled
+WW | NZ | Skin Conditions	Topical Steroid Withdrawal	tsw specialist nz	Exact	Enabled
+WW | NZ | Skin Conditions	Topical Steroid Withdrawal	tsw support	Phrase	Enabled
+WW | NZ | Skin Conditions	Topical Steroid Withdrawal	tsw support	Exact	Enabled
+WW | NZ | Skin Conditions	Topical Steroid Withdrawal	tsw support online	Phrase	Enabled
+WW | NZ | Skin Conditions	Topical Steroid Withdrawal	tsw support online	Exact	Enabled
+WW | NZ | Skin Conditions	Topical Steroid Withdrawal	tsw treatment	Phrase	Enabled
+WW | NZ | Skin Conditions	Topical Steroid Withdrawal	tsw treatment	Exact	Enabled
+WW | NZ | Skin Conditions	Psoriasis	best online psoriasis naturopath	Phrase	Enabled
+WW | NZ | Skin Conditions	Psoriasis	best online psoriasis naturopath	Exact	Enabled
+WW | NZ | Skin Conditions	Psoriasis	guttate psoriasis naturopath	Phrase	Enabled
+WW | NZ | Skin Conditions	Psoriasis	guttate psoriasis naturopath	Exact	Enabled
+WW | NZ | Skin Conditions	Psoriasis	help with psoriasis	Phrase	Enabled
+WW | NZ | Skin Conditions	Psoriasis	help with psoriasis	Exact	Enabled
+WW | NZ | Skin Conditions	Psoriasis	herbal medicine for psoriasis nz	Phrase	Enabled
+WW | NZ | Skin Conditions	Psoriasis	herbal medicine for psoriasis nz	Exact	Enabled
+WW | NZ | Skin Conditions	Psoriasis	inverse psoriasis naturopath	Phrase	Enabled
+WW | NZ | Skin Conditions	Psoriasis	inverse psoriasis naturopath	Exact	Enabled
+WW | NZ | Skin Conditions	Psoriasis	nail psoriasis naturopath	Phrase	Enabled
+WW | NZ | Skin Conditions	Psoriasis	nail psoriasis naturopath	Exact	Enabled
+WW | NZ | Skin Conditions	Psoriasis	natural psoriasis treatment	Phrase	Enabled
+WW | NZ | Skin Conditions	Psoriasis	natural psoriasis treatment	Exact	Enabled
+WW | NZ | Skin Conditions	Psoriasis	natural remedies for psoriasis	Phrase	Enabled
+WW | NZ | Skin Conditions	Psoriasis	natural remedies for psoriasis	Exact	Enabled
+WW | NZ | Skin Conditions	Psoriasis	naturopath for psoriasis	Phrase	Enabled
+WW | NZ | Skin Conditions	Psoriasis	naturopath for psoriasis	Exact	Enabled
+WW | NZ | Skin Conditions	Psoriasis	naturopath for scalp psoriasis	Phrase	Enabled
+WW | NZ | Skin Conditions	Psoriasis	naturopath for scalp psoriasis	Exact	Enabled
+WW | NZ | Skin Conditions	Psoriasis	online psoriasis naturopath	Phrase	Enabled
+WW | NZ | Skin Conditions	Psoriasis	online psoriasis naturopath	Exact	Enabled
+WW | NZ | Skin Conditions	Psoriasis	plaque psoriasis naturopath	Phrase	Enabled
+WW | NZ | Skin Conditions	Psoriasis	plaque psoriasis naturopath	Exact	Enabled
+WW | NZ | Skin Conditions	Psoriasis	psoriasis causes	Phrase	Enabled
+WW | NZ | Skin Conditions	Psoriasis	psoriasis causes	Exact	Enabled
+WW | NZ | Skin Conditions	Psoriasis	psoriasis diet	Phrase	Enabled
+WW | NZ | Skin Conditions	Psoriasis	psoriasis diet	Exact	Enabled
+WW | NZ | Skin Conditions	Psoriasis	psoriasis diet naturopath	Phrase	Enabled
+WW | NZ | Skin Conditions	Psoriasis	psoriasis diet naturopath	Exact	Enabled
+WW | NZ | Skin Conditions	Psoriasis	psoriasis diet plan nz	Phrase	Enabled
+WW | NZ | Skin Conditions	Psoriasis	psoriasis diet plan nz	Exact	Enabled
+WW | NZ | Skin Conditions	Psoriasis	psoriasis flare up naturopath	Phrase	Enabled
+WW | NZ | Skin Conditions	Psoriasis	psoriasis flare up naturopath	Exact	Enabled
+WW | NZ | Skin Conditions	Psoriasis	psoriasis gut health naturopath	Phrase	Enabled
+WW | NZ | Skin Conditions	Psoriasis	psoriasis gut health naturopath	Exact	Enabled
+WW | NZ | Skin Conditions	Psoriasis	psoriasis help	Phrase	Enabled
+WW | NZ | Skin Conditions	Psoriasis	psoriasis help	Exact	Enabled
+WW | NZ | Skin Conditions	Psoriasis	psoriasis help nz	Phrase	Enabled
+WW | NZ | Skin Conditions	Psoriasis	psoriasis help nz	Exact	Enabled
+WW | NZ | Skin Conditions	Psoriasis	psoriasis immune naturopath	Phrase	Enabled
+WW | NZ | Skin Conditions	Psoriasis	psoriasis immune naturopath	Exact	Enabled
+WW | NZ | Skin Conditions	Psoriasis	psoriasis natural treatment	Phrase	Enabled
+WW | NZ | Skin Conditions	Psoriasis	psoriasis natural treatment	Exact	Enabled
+WW | NZ | Skin Conditions	Psoriasis	psoriasis naturopath	Phrase	Enabled
+WW | NZ | Skin Conditions	Psoriasis	psoriasis naturopath	Exact	Enabled
+WW | NZ | Skin Conditions	Psoriasis	psoriasis naturopath consultation nz	Phrase	Enabled
+WW | NZ | Skin Conditions	Psoriasis	psoriasis naturopath consultation nz	Exact	Enabled
+WW | NZ | Skin Conditions	Psoriasis	psoriasis naturopath cost nz	Phrase	Enabled
+WW | NZ | Skin Conditions	Psoriasis	psoriasis naturopath cost nz	Exact	Enabled
+WW | NZ | Skin Conditions	Psoriasis	psoriasis naturopath nz	Phrase	Enabled
+WW | NZ | Skin Conditions	Psoriasis	psoriasis naturopath nz	Exact	Enabled
+WW | NZ | Skin Conditions	Psoriasis	psoriasis specialist	Phrase	Enabled
+WW | NZ | Skin Conditions	Psoriasis	psoriasis specialist	Exact	Enabled
+WW | NZ | Skin Conditions	Psoriasis	psoriasis specialist nz	Phrase	Enabled
+WW | NZ | Skin Conditions	Psoriasis	psoriasis specialist nz	Exact	Enabled
+WW | NZ | Skin Conditions	Psoriasis	psoriasis treatment	Phrase	Enabled
+WW | NZ | Skin Conditions	Psoriasis	psoriasis treatment	Exact	Enabled
+WW | NZ | Skin Conditions	Psoriasis	psoriasis treatment nz	Phrase	Enabled
+WW | NZ | Skin Conditions	Psoriasis	psoriasis treatment nz	Exact	Enabled
+WW | NZ | Skin Conditions	Psoriasis	psoriasis trigger naturopath	Phrase	Enabled
+WW | NZ | Skin Conditions	Psoriasis	psoriasis trigger naturopath	Exact	Enabled
+WW | NZ | Skin Conditions	Psoriasis	registered naturopath psoriasis	Phrase	Enabled
+WW | NZ | Skin Conditions	Psoriasis	registered naturopath psoriasis	Exact	Enabled
+WW | NZ | Skin Conditions	Psoriasis	scalp psoriasis naturopath	Phrase	Enabled
+WW | NZ | Skin Conditions	Psoriasis	scalp psoriasis naturopath	Exact	Enabled
+WW | NZ | Skin Conditions	Psoriasis	why does my psoriasis flare up	Phrase	Enabled
+WW | NZ | Skin Conditions	Psoriasis	why does my psoriasis flare up	Exact	Enabled
+WW | NZ | Skin Conditions	Acne	acne causes	Phrase	Enabled
+WW | NZ | Skin Conditions	Acne	acne causes	Exact	Enabled
+WW | NZ | Skin Conditions	Acne	acne diet	Phrase	Enabled
+WW | NZ | Skin Conditions	Acne	acne diet	Exact	Enabled
+WW | NZ | Skin Conditions	Acne	acne diet naturopath	Phrase	Enabled
+WW | NZ | Skin Conditions	Acne	acne diet naturopath	Exact	Enabled
+WW | NZ | Skin Conditions	Acne	acne diet plan nz	Phrase	Enabled
+WW | NZ | Skin Conditions	Acne	acne diet plan nz	Exact	Enabled
+WW | NZ | Skin Conditions	Acne	acne gut health naturopath	Phrase	Enabled
+WW | NZ | Skin Conditions	Acne	acne gut health naturopath	Exact	Enabled
+WW | NZ | Skin Conditions	Acne	acne help	Phrase	Enabled
+WW | NZ | Skin Conditions	Acne	acne help	Exact	Enabled
+WW | NZ | Skin Conditions	Acne	acne help nz	Phrase	Enabled
+WW | NZ | Skin Conditions	Acne	acne help nz	Exact	Enabled
+WW | NZ | Skin Conditions	Acne	acne naturopath	Phrase	Enabled
+WW | NZ | Skin Conditions	Acne	acne naturopath	Exact	Enabled
+WW | NZ | Skin Conditions	Acne	acne naturopath consultation nz	Phrase	Enabled
+WW | NZ | Skin Conditions	Acne	acne naturopath consultation nz	Exact	Enabled
+WW | NZ | Skin Conditions	Acne	acne naturopath cost nz	Phrase	Enabled
+WW | NZ | Skin Conditions	Acne	acne naturopath cost nz	Exact	Enabled
+WW | NZ | Skin Conditions	Acne	acne naturopath nz	Phrase	Enabled
+WW | NZ | Skin Conditions	Acne	acne naturopath nz	Exact	Enabled
+WW | NZ | Skin Conditions	Acne	acne specialist	Phrase	Enabled
+WW | NZ | Skin Conditions	Acne	acne specialist	Exact	Enabled
+WW | NZ | Skin Conditions	Acne	acne specialist nz	Phrase	Enabled
+WW | NZ | Skin Conditions	Acne	acne specialist nz	Exact	Enabled
+WW | NZ | Skin Conditions	Acne	acne treatment	Phrase	Enabled
+WW | NZ | Skin Conditions	Acne	acne treatment	Exact	Enabled
+WW | NZ | Skin Conditions	Acne	acne treatment nz	Phrase	Enabled
+WW | NZ | Skin Conditions	Acne	acne treatment nz	Exact	Enabled
+WW | NZ | Skin Conditions	Acne	adult acne	Phrase	Enabled
+WW | NZ | Skin Conditions	Acne	adult acne	Exact	Enabled
+WW | NZ | Skin Conditions	Acne	adult acne natural treatment	Phrase	Enabled
+WW | NZ | Skin Conditions	Acne	adult acne natural treatment	Exact	Enabled
+WW | NZ | Skin Conditions	Acne	back acne naturopath	Phrase	Enabled
+WW | NZ | Skin Conditions	Acne	back acne naturopath	Exact	Enabled
+WW | NZ | Skin Conditions	Acne	best online acne naturopath nz	Phrase	Enabled
+WW | NZ | Skin Conditions	Acne	best online acne naturopath nz	Exact	Enabled
+WW | NZ | Skin Conditions	Acne	chin acne naturopath	Phrase	Enabled
+WW | NZ | Skin Conditions	Acne	chin acne naturopath	Exact	Enabled
+WW | NZ | Skin Conditions	Acne	cystic acne	Phrase	Enabled
+WW | NZ | Skin Conditions	Acne	cystic acne	Exact	Enabled
+WW | NZ | Skin Conditions	Acne	cystic acne naturopath	Phrase	Enabled
+WW | NZ | Skin Conditions	Acne	cystic acne naturopath	Exact	Enabled
+WW | NZ | Skin Conditions	Acne	help with acne	Phrase	Enabled
+WW | NZ | Skin Conditions	Acne	help with acne	Exact	Enabled
+WW | NZ | Skin Conditions	Acne	herbal medicine for acne nz	Phrase	Enabled
+WW | NZ | Skin Conditions	Acne	herbal medicine for acne nz	Exact	Enabled
+WW | NZ | Skin Conditions	Acne	hormonal acne	Phrase	Enabled
+WW | NZ | Skin Conditions	Acne	hormonal acne	Exact	Enabled
+WW | NZ | Skin Conditions	Acne	hormonal acne naturopath	Phrase	Enabled
+WW | NZ | Skin Conditions	Acne	hormonal acne naturopath	Exact	Enabled
+WW | NZ | Skin Conditions	Acne	hormonal acne naturopath nz	Phrase	Enabled
+WW | NZ | Skin Conditions	Acne	hormonal acne naturopath nz	Exact	Enabled
+WW | NZ | Skin Conditions	Acne	natural acne treatment	Phrase	Enabled
+WW | NZ | Skin Conditions	Acne	natural acne treatment	Exact	Enabled
+WW | NZ | Skin Conditions	Acne	naturopath for acne	Phrase	Enabled
+WW | NZ | Skin Conditions	Acne	naturopath for acne	Exact	Enabled
+WW | NZ | Skin Conditions	Acne	naturopath for cystic acne	Phrase	Enabled
+WW | NZ | Skin Conditions	Acne	naturopath for cystic acne	Exact	Enabled
+WW | NZ | Skin Conditions	Acne	naturopath for hormonal acne	Phrase	Enabled
+WW | NZ | Skin Conditions	Acne	naturopath for hormonal acne	Exact	Enabled
+WW | NZ | Skin Conditions	Acne	naturopath for teenage acne	Phrase	Enabled
+WW | NZ | Skin Conditions	Acne	naturopath for teenage acne	Exact	Enabled
+WW | NZ | Skin Conditions	Acne	online acne specialist naturopath	Phrase	Enabled
+WW | NZ | Skin Conditions	Acne	online acne specialist naturopath	Exact	Enabled
+WW | NZ | Skin Conditions	Acne	pcos acne naturopath	Phrase	Enabled
+WW | NZ | Skin Conditions	Acne	pcos acne naturopath	Exact	Enabled
+WW | NZ | Skin Conditions	Acne	period acne naturopath	Phrase	Enabled
+WW | NZ | Skin Conditions	Acne	period acne naturopath	Exact	Enabled
+WW | NZ | Skin Conditions	Acne	registered naturopath acne	Phrase	Enabled
+WW | NZ | Skin Conditions	Acne	registered naturopath acne	Exact	Enabled
+WW | NZ | Skin Conditions	Acne	teenage acne naturopath	Phrase	Enabled
+WW | NZ | Skin Conditions	Acne	teenage acne naturopath	Exact	Enabled
+WW | NZ | Skin Conditions	Acne	why wont my acne clear up	Phrase	Enabled
+WW | NZ | Skin Conditions	Acne	why wont my acne clear up	Exact	Enabled
+WW | NZ | Skin Conditions	Rosacea	best online rosacea naturopath	Phrase	Enabled
+WW | NZ | Skin Conditions	Rosacea	best online rosacea naturopath	Exact	Enabled
+WW | NZ | Skin Conditions	Rosacea	calm rosacea naturally naturopath	Phrase	Enabled
+WW | NZ | Skin Conditions	Rosacea	calm rosacea naturally naturopath	Exact	Enabled
+WW | NZ | Skin Conditions	Rosacea	facial redness naturopath nz	Phrase	Enabled
+WW | NZ | Skin Conditions	Rosacea	facial redness naturopath nz	Exact	Enabled
+WW | NZ | Skin Conditions	Rosacea	flushing naturopath nz	Phrase	Enabled
+WW | NZ | Skin Conditions	Rosacea	flushing naturopath nz	Exact	Enabled
+WW | NZ | Skin Conditions	Rosacea	help with rosacea	Phrase	Enabled
+WW | NZ | Skin Conditions	Rosacea	help with rosacea	Exact	Enabled
+WW | NZ | Skin Conditions	Rosacea	herbal medicine for rosacea nz	Phrase	Enabled
+WW | NZ | Skin Conditions	Rosacea	herbal medicine for rosacea nz	Exact	Enabled
+WW | NZ | Skin Conditions	Rosacea	natural remedies for rosacea	Phrase	Enabled
+WW | NZ | Skin Conditions	Rosacea	natural remedies for rosacea	Exact	Enabled
+WW | NZ | Skin Conditions	Rosacea	natural rosacea treatment	Phrase	Enabled
+WW | NZ | Skin Conditions	Rosacea	natural rosacea treatment	Exact	Enabled
+WW | NZ | Skin Conditions	Rosacea	naturopath for facial redness	Phrase	Enabled
+WW | NZ | Skin Conditions	Rosacea	naturopath for facial redness	Exact	Enabled
+WW | NZ | Skin Conditions	Rosacea	naturopath for rosacea	Phrase	Enabled
+WW | NZ | Skin Conditions	Rosacea	naturopath for rosacea	Exact	Enabled
+WW | NZ | Skin Conditions	Rosacea	online rosacea naturopath	Phrase	Enabled
+WW | NZ | Skin Conditions	Rosacea	online rosacea naturopath	Exact	Enabled
+WW | NZ | Skin Conditions	Rosacea	registered naturopath rosacea	Phrase	Enabled
+WW | NZ | Skin Conditions	Rosacea	registered naturopath rosacea	Exact	Enabled
+WW | NZ | Skin Conditions	Rosacea	rosacea diet	Phrase	Enabled
+WW | NZ | Skin Conditions	Rosacea	rosacea diet	Exact	Enabled
+WW | NZ | Skin Conditions	Rosacea	rosacea diet naturopath	Phrase	Enabled
+WW | NZ | Skin Conditions	Rosacea	rosacea diet naturopath	Exact	Enabled
+WW | NZ | Skin Conditions	Rosacea	rosacea diet plan nz	Phrase	Enabled
+WW | NZ | Skin Conditions	Rosacea	rosacea diet plan nz	Exact	Enabled
+WW | NZ | Skin Conditions	Rosacea	rosacea flare naturopath nz	Phrase	Enabled
+WW | NZ | Skin Conditions	Rosacea	rosacea flare naturopath nz	Exact	Enabled
+WW | NZ | Skin Conditions	Rosacea	rosacea gut health naturopath	Phrase	Enabled
+WW | NZ | Skin Conditions	Rosacea	rosacea gut health naturopath	Exact	Enabled
+WW | NZ | Skin Conditions	Rosacea	rosacea help	Phrase	Enabled
+WW | NZ | Skin Conditions	Rosacea	rosacea help	Exact	Enabled
+WW | NZ | Skin Conditions	Rosacea	rosacea help nz	Phrase	Enabled
+WW | NZ | Skin Conditions	Rosacea	rosacea help nz	Exact	Enabled
+WW | NZ | Skin Conditions	Rosacea	rosacea immune naturopath	Phrase	Enabled
+WW | NZ | Skin Conditions	Rosacea	rosacea immune naturopath	Exact	Enabled
+WW | NZ | Skin Conditions	Rosacea	rosacea natural treatment	Phrase	Enabled
+WW | NZ | Skin Conditions	Rosacea	rosacea natural treatment	Exact	Enabled
+WW | NZ | Skin Conditions	Rosacea	rosacea naturopath	Phrase	Enabled
+WW | NZ | Skin Conditions	Rosacea	rosacea naturopath	Exact	Enabled
+WW | NZ | Skin Conditions	Rosacea	rosacea naturopath consultation	Phrase	Enabled
+WW | NZ | Skin Conditions	Rosacea	rosacea naturopath consultation	Exact	Enabled
+WW | NZ | Skin Conditions	Rosacea	rosacea naturopath cost nz	Phrase	Enabled
+WW | NZ | Skin Conditions	Rosacea	rosacea naturopath cost nz	Exact	Enabled
+WW | NZ | Skin Conditions	Rosacea	rosacea naturopath nz	Phrase	Enabled
+WW | NZ | Skin Conditions	Rosacea	rosacea naturopath nz	Exact	Enabled
+WW | NZ | Skin Conditions	Rosacea	rosacea specialist	Phrase	Enabled
+WW | NZ | Skin Conditions	Rosacea	rosacea specialist	Exact	Enabled
+WW | NZ | Skin Conditions	Rosacea	rosacea specialist nz	Phrase	Enabled
+WW | NZ | Skin Conditions	Rosacea	rosacea specialist nz	Exact	Enabled
+WW | NZ | Skin Conditions	Rosacea	rosacea treatment	Phrase	Enabled
+WW | NZ | Skin Conditions	Rosacea	rosacea treatment	Exact	Enabled
+WW | NZ | Skin Conditions	Rosacea	rosacea treatment nz	Phrase	Enabled
+WW | NZ | Skin Conditions	Rosacea	rosacea treatment nz	Exact	Enabled
+WW | NZ | Skin Conditions	Rosacea	rosacea triggers	Phrase	Enabled
+WW | NZ | Skin Conditions	Rosacea	rosacea triggers	Exact	Enabled
+WW | NZ | Skin Conditions	Rosacea	what triggers rosacea flare ups	Phrase	Enabled
+WW | NZ | Skin Conditions	Rosacea	what triggers rosacea flare ups	Exact	Enabled
+WW | NZ | Skin Conditions	Skin Infections	best online skin naturopath nz	Phrase	Enabled
+WW | NZ | Skin Conditions	Skin Infections	best online skin naturopath nz	Exact	Enabled
+WW | NZ | Skin Conditions	Skin Infections	chronic hives	Phrase	Enabled
+WW | NZ | Skin Conditions	Skin Infections	chronic hives	Exact	Enabled
+WW | NZ | Skin Conditions	Skin Infections	chronic hives naturopath nz	Phrase	Enabled
+WW | NZ | Skin Conditions	Skin Infections	chronic hives naturopath nz	Exact	Enabled
+WW | NZ | Skin Conditions	Skin Infections	chronic urticaria naturopath nz	Phrase	Enabled
+WW | NZ | Skin Conditions	Skin Infections	chronic urticaria naturopath nz	Exact	Enabled
+WW | NZ | Skin Conditions	Skin Infections	fungal skin naturopath nz	Phrase	Enabled
+WW | NZ | Skin Conditions	Skin Infections	fungal skin naturopath nz	Exact	Enabled
+WW | NZ | Skin Conditions	Skin Infections	hives help	Phrase	Enabled
+WW | NZ | Skin Conditions	Skin Infections	hives help	Exact	Enabled
+WW | NZ | Skin Conditions	Skin Infections	hives naturopath nz	Phrase	Enabled
+WW | NZ | Skin Conditions	Skin Infections	hives naturopath nz	Exact	Enabled
+WW | NZ | Skin Conditions	Skin Infections	hives treatment	Phrase	Enabled
+WW | NZ | Skin Conditions	Skin Infections	hives treatment	Exact	Enabled
+WW | NZ | Skin Conditions	Skin Infections	immune system skin naturopath	Phrase	Enabled
+WW | NZ | Skin Conditions	Skin Infections	immune system skin naturopath	Exact	Enabled
+WW | NZ | Skin Conditions	Skin Infections	itchy skin help	Phrase	Enabled
+WW | NZ | Skin Conditions	Skin Infections	itchy skin help	Exact	Enabled
+WW | NZ | Skin Conditions	Skin Infections	itchy skin naturopath nz	Phrase	Enabled
+WW | NZ | Skin Conditions	Skin Infections	itchy skin naturopath nz	Exact	Enabled
+WW | NZ | Skin Conditions	Skin Infections	natural skin infection support	Phrase	Enabled
+WW | NZ | Skin Conditions	Skin Infections	natural skin infection support	Exact	Enabled
+WW | NZ | Skin Conditions	Skin Infections	naturopath chronic urticaria	Phrase	Enabled
+WW | NZ | Skin Conditions	Skin Infections	naturopath chronic urticaria	Exact	Enabled
+WW | NZ | Skin Conditions	Skin Infections	naturopath for folliculitis	Phrase	Enabled
+WW | NZ | Skin Conditions	Skin Infections	naturopath for folliculitis	Exact	Enabled
+WW | NZ | Skin Conditions	Skin Infections	naturopath for hives	Phrase	Enabled
+WW | NZ | Skin Conditions	Skin Infections	naturopath for hives	Exact	Enabled
+WW | NZ | Skin Conditions	Skin Infections	naturopath for itchy skin	Phrase	Enabled
+WW | NZ | Skin Conditions	Skin Infections	naturopath for itchy skin	Exact	Enabled
+WW | NZ | Skin Conditions	Skin Infections	naturopath for skin infections	Phrase	Enabled
+WW | NZ | Skin Conditions	Skin Infections	naturopath for skin infections	Exact	Enabled
+WW | NZ | Skin Conditions	Skin Infections	naturopath immune skin support	Phrase	Enabled
+WW | NZ | Skin Conditions	Skin Infections	naturopath immune skin support	Exact	Enabled
+WW | NZ | Skin Conditions	Skin Infections	recurring boils	Phrase	Enabled
+WW | NZ | Skin Conditions	Skin Infections	recurring boils	Exact	Enabled
+WW | NZ | Skin Conditions	Skin Infections	recurring boils naturopath	Phrase	Enabled
+WW | NZ | Skin Conditions	Skin Infections	recurring boils naturopath	Exact	Enabled
+WW | NZ | Skin Conditions	Skin Infections	recurring hives	Phrase	Enabled
+WW | NZ | Skin Conditions	Skin Infections	recurring hives	Exact	Enabled
+WW | NZ | Skin Conditions	Skin Infections	recurring hives naturopath	Phrase	Enabled
+WW | NZ | Skin Conditions	Skin Infections	recurring hives naturopath	Exact	Enabled
+WW | NZ | Skin Conditions	Skin Infections	recurring skin infection naturopath nz	Phrase	Enabled
+WW | NZ | Skin Conditions	Skin Infections	recurring skin infection naturopath nz	Exact	Enabled
+WW | NZ | Skin Conditions	Skin Infections	recurring skin infections naturopath	Phrase	Enabled
+WW | NZ | Skin Conditions	Skin Infections	recurring skin infections naturopath	Exact	Enabled
+WW | NZ | Skin Conditions	Skin Infections	registered naturopath skin infections	Phrase	Enabled
+WW | NZ | Skin Conditions	Skin Infections	registered naturopath skin infections	Exact	Enabled
+WW | NZ | Skin Conditions	Skin Infections	skin infection gut health naturopath	Phrase	Enabled
+WW | NZ | Skin Conditions	Skin Infections	skin infection gut health naturopath	Exact	Enabled
+WW | NZ | Skin Conditions	Skin Infections	skin infection help	Phrase	Enabled
+WW | NZ | Skin Conditions	Skin Infections	skin infection help	Exact	Enabled
+WW | NZ | Skin Conditions	Skin Infections	skin infection naturopath	Phrase	Enabled
+WW | NZ | Skin Conditions	Skin Infections	skin infection naturopath	Exact	Enabled
+WW | NZ | Skin Conditions	Skin Infections	skin infection naturopath cost nz	Phrase	Enabled
+WW | NZ | Skin Conditions	Skin Infections	skin infection naturopath cost nz	Exact	Enabled
+WW | NZ | Skin Conditions	Skin Infections	skin infection naturopath nz	Phrase	Enabled
+WW | NZ | Skin Conditions	Skin Infections	skin infection naturopath nz	Exact	Enabled
+WW | NZ | Skin Conditions	Skin Infections	staph skin naturopath	Phrase	Enabled
+WW | NZ | Skin Conditions	Skin Infections	staph skin naturopath	Exact	Enabled
+WW | NZ | Skin Conditions	Skin Infections	urticaria help	Phrase	Enabled
+WW | NZ | Skin Conditions	Skin Infections	urticaria help	Exact	Enabled
+WW | NZ | Skin Conditions	Skin Infections	why do i keep getting skin infections	Phrase	Enabled
+WW | NZ | Skin Conditions	Skin Infections	why do i keep getting skin infections	Exact	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	affordable naturopath australia	Phrase	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	affordable naturopath australia	Exact	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	best online naturopath australia	Phrase	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	best online naturopath australia	Exact	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	book a naturopath	Phrase	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	book a naturopath	Exact	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	book a naturopath appointment online	Phrase	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	book a naturopath appointment online	Exact	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	book a naturopath consultation	Phrase	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	book a naturopath consultation	Exact	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	book naturopath online	Phrase	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	book naturopath online	Exact	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	childrens naturopath australia	Phrase	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	childrens naturopath australia	Exact	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	consult a naturopath online	Phrase	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	consult a naturopath online	Exact	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	family naturopath australia	Phrase	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	family naturopath australia	Exact	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	functional medicine testing australia	Phrase	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	functional medicine testing australia	Exact	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	functional testing naturopath australia	Phrase	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	functional testing naturopath australia	Exact	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	holistic naturopath online australia	Phrase	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	holistic naturopath online australia	Exact	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	initial naturopath consultation australia	Phrase	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	initial naturopath consultation australia	Exact	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	natural health practitioner online australia	Phrase	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	natural health practitioner online australia	Exact	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	natural medicine practitioner australia	Phrase	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	natural medicine practitioner australia	Exact	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	naturopath appointment	Phrase	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	naturopath appointment	Exact	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	naturopath appointment australia	Phrase	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	naturopath appointment australia	Exact	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	naturopath booking	Phrase	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	naturopath booking	Exact	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	naturopath consult	Phrase	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	naturopath consult	Exact	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	naturopath consultation	Phrase	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	naturopath consultation	Exact	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	naturopath consultation online australia	Phrase	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	naturopath consultation online australia	Exact	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	naturopath consultation price australia	Phrase	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	naturopath consultation price australia	Exact	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	naturopath cost australia	Phrase	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	naturopath cost australia	Exact	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	naturopath discovery call	Phrase	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	naturopath discovery call	Exact	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	naturopath for kids australia	Phrase	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	naturopath for kids australia	Exact	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	naturopath online	Phrase	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	naturopath online	Exact	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	naturopath online australia	Phrase	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	naturopath online australia	Exact	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	naturopath online consultation	Phrase	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	naturopath online consultation	Exact	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	naturopath prices australia	Phrase	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	naturopath prices australia	Exact	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	naturopath session	Phrase	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	naturopath session	Exact	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	naturopath telehealth booking australia	Phrase	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	naturopath telehealth booking australia	Exact	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	naturopath video call	Phrase	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	naturopath video call	Exact	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	naturopath video consultation	Phrase	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	naturopath video consultation	Exact	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	naturopath zoom consultation	Phrase	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	naturopath zoom consultation	Exact	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	naturopathic consultation australia	Phrase	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	naturopathic consultation australia	Exact	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	naturopathic doctor australia	Phrase	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	naturopathic doctor australia	Exact	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	naturopathic practitioner australia	Phrase	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	naturopathic practitioner australia	Exact	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	online holistic health consultation australia	Phrase	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	online holistic health consultation australia	Exact	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	online naturopath	Phrase	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	online naturopath	Exact	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	online naturopath australia	Phrase	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	online naturopath australia	Exact	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	online naturopath consult	Phrase	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	online naturopath consult	Exact	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	online naturopath consultation	Phrase	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	online naturopath consultation	Exact	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	online naturopath cost australia	Phrase	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	online naturopath cost australia	Exact	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	online naturopath for australians	Phrase	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	online naturopath for australians	Exact	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	online naturopath session australia	Phrase	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	online naturopath session australia	Exact	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	online naturopathic consultation	Phrase	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	online naturopathic consultation	Exact	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	paediatric naturopath australia	Phrase	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	paediatric naturopath australia	Exact	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	qualified naturopath online	Phrase	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	qualified naturopath online	Exact	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	registered naturopath online australia	Phrase	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	registered naturopath online australia	Exact	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	see a naturopath	Phrase	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	see a naturopath	Exact	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	see a naturopath online	Phrase	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	see a naturopath online	Exact	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	speak to a naturopath online	Phrase	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	speak to a naturopath online	Exact	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	talk to a naturopath online	Phrase	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	talk to a naturopath online	Exact	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	telehealth naturopath	Phrase	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	telehealth naturopath	Exact	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	telehealth naturopath australia	Phrase	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	telehealth naturopath australia	Exact	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	video naturopath	Phrase	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	video naturopath	Exact	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	video naturopath appointment australia	Phrase	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	video naturopath appointment australia	Exact	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	virtual naturopath	Phrase	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	virtual naturopath	Exact	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	virtual naturopath australia	Phrase	Enabled
+WW | AU | Online Naturopath	Online Naturopath Consult AU	virtual naturopath australia	Exact	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	holistic health australia	Phrase	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	holistic health australia	Exact	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	holistic health practitioner australia	Phrase	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	holistic health practitioner australia	Exact	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	holistic practitioner	Phrase	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	holistic practitioner	Exact	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	natural health	Phrase	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	natural health	Exact	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	natural medicine	Phrase	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	natural medicine	Exact	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	natural therapies australia	Phrase	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	natural therapies australia	Exact	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	naturopath	Phrase	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	naturopath	Exact	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	naturopath adelaide	Phrase	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	naturopath adelaide	Exact	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	naturopath ballarat	Phrase	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	naturopath ballarat	Exact	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	naturopath bendigo	Phrase	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	naturopath bendigo	Exact	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	naturopath brisbane	Phrase	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	naturopath brisbane	Exact	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	naturopath byron bay	Phrase	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	naturopath byron bay	Exact	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	naturopath cairns	Phrase	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	naturopath cairns	Exact	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	naturopath canberra	Phrase	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	naturopath canberra	Exact	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	naturopath central coast	Phrase	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	naturopath central coast	Exact	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	naturopath consultation australia	Phrase	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	naturopath consultation australia	Exact	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	naturopath darwin	Phrase	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	naturopath darwin	Exact	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	naturopath geelong	Phrase	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	naturopath geelong	Exact	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	naturopath gold coast	Phrase	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	naturopath gold coast	Exact	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	naturopath hobart	Phrase	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	naturopath hobart	Exact	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	naturopath launceston	Phrase	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	naturopath launceston	Exact	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	naturopath melbourne	Phrase	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	naturopath melbourne	Exact	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	naturopath newcastle	Phrase	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	naturopath newcastle	Exact	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	naturopath nsw	Phrase	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	naturopath nsw	Exact	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	naturopath queensland	Phrase	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	naturopath queensland	Exact	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	naturopath sunshine coast	Phrase	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	naturopath sunshine coast	Exact	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	naturopath sydney	Phrase	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	naturopath sydney	Exact	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	naturopath toowoomba	Phrase	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	naturopath toowoomba	Exact	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	naturopath townsville	Phrase	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	naturopath townsville	Exact	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	naturopath victoria	Phrase	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	naturopath victoria	Exact	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	naturopath wollongong	Phrase	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	naturopath wollongong	Exact	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	naturopathic medicine australia	Phrase	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	naturopathic medicine australia	Exact	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	naturopathy	Phrase	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	naturopathy	Exact	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	naturopathy australia	Phrase	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	naturopathy australia	Exact	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	whole body naturopath australia	Phrase	Enabled
+WW | AU | Online Naturopath	General Naturopathy AU	whole body naturopath australia	Exact	Enabled
+WW | AU | Online Naturopath	Herbal Medicine AU	herbal consultation	Phrase	Enabled
+WW | AU | Online Naturopath	Herbal Medicine AU	herbal consultation	Exact	Enabled
+WW | AU | Online Naturopath	Herbal Medicine AU	herbal medicine	Phrase	Enabled
+WW | AU | Online Naturopath	Herbal Medicine AU	herbal medicine	Exact	Enabled
+WW | AU | Online Naturopath	Herbal Medicine AU	herbal medicine australia	Phrase	Enabled
+WW | AU | Online Naturopath	Herbal Medicine AU	herbal medicine australia	Exact	Enabled
+WW | AU | Online Naturopath	Herbal Medicine AU	herbal medicine consultation	Phrase	Enabled
+WW | AU | Online Naturopath	Herbal Medicine AU	herbal medicine consultation	Exact	Enabled
+WW | AU | Online Naturopath	Herbal Medicine AU	herbal medicine for skin	Phrase	Enabled
+WW | AU | Online Naturopath	Herbal Medicine AU	herbal medicine for skin	Exact	Enabled
+WW | AU | Online Naturopath	Herbal Medicine AU	herbal medicine online australia	Phrase	Enabled
+WW | AU | Online Naturopath	Herbal Medicine AU	herbal medicine online australia	Exact	Enabled
+WW | AU | Online Naturopath	Herbal Medicine AU	herbal medicine practitioner australia	Phrase	Enabled
+WW | AU | Online Naturopath	Herbal Medicine AU	herbal medicine practitioner australia	Exact	Enabled
+WW | AU | Online Naturopath	Herbal Medicine AU	herbal practitioner	Phrase	Enabled
+WW | AU | Online Naturopath	Herbal Medicine AU	herbal practitioner	Exact	Enabled
+WW | AU | Online Naturopath	Herbal Medicine AU	herbal remedies	Phrase	Enabled
+WW | AU | Online Naturopath	Herbal Medicine AU	herbal remedies	Exact	Enabled
+WW | AU | Online Naturopath	Herbal Medicine AU	herbalist	Phrase	Enabled
+WW | AU | Online Naturopath	Herbal Medicine AU	herbalist	Exact	Enabled
+WW | AU | Online Naturopath	Herbal Medicine AU	herbalist australia	Phrase	Enabled
+WW | AU | Online Naturopath	Herbal Medicine AU	herbalist australia	Exact	Enabled
+WW | AU | Online Naturopath	Herbal Medicine AU	herbalist consultation australia	Phrase	Enabled
+WW | AU | Online Naturopath	Herbal Medicine AU	herbalist consultation australia	Exact	Enabled
+WW | AU | Online Naturopath	Herbal Medicine AU	herbalist for skin conditions	Phrase	Enabled
+WW | AU | Online Naturopath	Herbal Medicine AU	herbalist for skin conditions	Exact	Enabled
+WW | AU | Online Naturopath	Herbal Medicine AU	medical herbalist	Phrase	Enabled
+WW | AU | Online Naturopath	Herbal Medicine AU	medical herbalist	Exact	Enabled
+WW | AU | Online Naturopath	Herbal Medicine AU	medical herbalist australia	Phrase	Enabled
+WW | AU | Online Naturopath	Herbal Medicine AU	medical herbalist australia	Exact	Enabled
+WW | AU | Online Naturopath	Herbal Medicine AU	online herbal medicine consultation	Phrase	Enabled
+WW | AU | Online Naturopath	Herbal Medicine AU	online herbal medicine consultation	Exact	Enabled
+WW | AU | Online Naturopath	Herbal Medicine AU	online herbalist	Phrase	Enabled
+WW | AU | Online Naturopath	Herbal Medicine AU	online herbalist	Exact	Enabled
+WW | AU | Online Naturopath	Herbal Medicine AU	online medical herbalist	Phrase	Enabled
+WW | AU | Online Naturopath	Herbal Medicine AU	online medical herbalist	Exact	Enabled
+WW | AU | Online Naturopath	Herbal Medicine AU	qualified herbalist australia	Phrase	Enabled
+WW | AU | Online Naturopath	Herbal Medicine AU	qualified herbalist australia	Exact	Enabled
+WW | AU | Online Naturopath	Herbal Medicine AU	registered herbalist australia	Phrase	Enabled
+WW | AU | Online Naturopath	Herbal Medicine AU	registered herbalist australia	Exact	Enabled
+WW | AU | Online Naturopath	Herbal Medicine AU	western herbal medicine australia	Phrase	Enabled
+WW | AU | Online Naturopath	Herbal Medicine AU	western herbal medicine australia	Exact	Enabled
+WW | AU | Skin Conditions	Eczema AU	adult eczema naturopath australia	Phrase	Enabled
+WW | AU | Skin Conditions	Eczema AU	adult eczema naturopath australia	Exact	Enabled
+WW | AU | Skin Conditions	Eczema AU	baby eczema naturopath australia	Phrase	Enabled
+WW | AU | Skin Conditions	Eczema AU	baby eczema naturopath australia	Exact	Enabled
+WW | AU | Skin Conditions	Eczema AU	best online naturopath for eczema	Phrase	Enabled
+WW | AU | Skin Conditions	Eczema AU	best online naturopath for eczema	Exact	Enabled
+WW | AU | Skin Conditions	Eczema AU	childhood eczema naturopath australia	Phrase	Enabled
+WW | AU | Skin Conditions	Eczema AU	childhood eczema naturopath australia	Exact	Enabled
+WW | AU | Skin Conditions	Eczema AU	dyshidrotic eczema naturopath	Phrase	Enabled
+WW | AU | Skin Conditions	Eczema AU	dyshidrotic eczema naturopath	Exact	Enabled
+WW | AU | Skin Conditions	Eczema AU	eczema causes	Phrase	Enabled
+WW | AU | Skin Conditions	Eczema AU	eczema causes	Exact	Enabled
+WW | AU | Skin Conditions	Eczema AU	eczema diet	Phrase	Enabled
+WW | AU | Skin Conditions	Eczema AU	eczema diet	Exact	Enabled
+WW | AU | Skin Conditions	Eczema AU	eczema diet naturopath australia	Phrase	Enabled
+WW | AU | Skin Conditions	Eczema AU	eczema diet naturopath australia	Exact	Enabled
+WW | AU | Skin Conditions	Eczema AU	eczema flare up naturopath	Phrase	Enabled
+WW | AU | Skin Conditions	Eczema AU	eczema flare up naturopath	Exact	Enabled
+WW | AU | Skin Conditions	Eczema AU	eczema gut health connection australia	Phrase	Enabled
+WW | AU | Skin Conditions	Eczema AU	eczema gut health connection australia	Exact	Enabled
+WW | AU | Skin Conditions	Eczema AU	eczema help	Phrase	Enabled
+WW | AU | Skin Conditions	Eczema AU	eczema help	Exact	Enabled
+WW | AU | Skin Conditions	Eczema AU	eczema help australia	Phrase	Enabled
+WW | AU | Skin Conditions	Eczema AU	eczema help australia	Exact	Enabled
+WW | AU | Skin Conditions	Eczema AU	eczema in children naturopath	Phrase	Enabled
+WW | AU | Skin Conditions	Eczema AU	eczema in children naturopath	Exact	Enabled
+WW | AU | Skin Conditions	Eczema AU	eczema natural treatment	Phrase	Enabled
+WW | AU | Skin Conditions	Eczema AU	eczema natural treatment	Exact	Enabled
+WW | AU | Skin Conditions	Eczema AU	eczema naturopath	Phrase	Enabled
+WW | AU | Skin Conditions	Eczema AU	eczema naturopath	Exact	Enabled
+WW | AU | Skin Conditions	Eczema AU	eczema naturopath consultation australia	Phrase	Enabled
+WW | AU | Skin Conditions	Eczema AU	eczema naturopath consultation australia	Exact	Enabled
+WW | AU | Skin Conditions	Eczema AU	eczema naturopath cost australia	Phrase	Enabled
+WW | AU | Skin Conditions	Eczema AU	eczema naturopath cost australia	Exact	Enabled
+WW | AU | Skin Conditions	Eczema AU	eczema naturopath online	Phrase	Enabled
+WW | AU | Skin Conditions	Eczema AU	eczema naturopath online	Exact	Enabled
+WW | AU | Skin Conditions	Eczema AU	eczema naturopath online australia	Phrase	Enabled
+WW | AU | Skin Conditions	Eczema AU	eczema naturopath online australia	Exact	Enabled
+WW | AU | Skin Conditions	Eczema AU	eczema specialist	Phrase	Enabled
+WW | AU | Skin Conditions	Eczema AU	eczema specialist	Exact	Enabled
+WW | AU | Skin Conditions	Eczema AU	eczema specialist australia	Phrase	Enabled
+WW | AU | Skin Conditions	Eczema AU	eczema specialist australia	Exact	Enabled
+WW | AU | Skin Conditions	Eczema AU	eczema support	Phrase	Enabled
+WW | AU | Skin Conditions	Eczema AU	eczema support	Exact	Enabled
+WW | AU | Skin Conditions	Eczema AU	eczema support naturopath australia	Phrase	Enabled
+WW | AU | Skin Conditions	Eczema AU	eczema support naturopath australia	Exact	Enabled
+WW | AU | Skin Conditions	Eczema AU	eczema telehealth australia	Phrase	Enabled
+WW | AU | Skin Conditions	Eczema AU	eczema telehealth australia	Exact	Enabled
+WW | AU | Skin Conditions	Eczema AU	eczema treatment	Phrase	Enabled
+WW | AU | Skin Conditions	Eczema AU	eczema treatment	Exact	Enabled
+WW | AU | Skin Conditions	Eczema AU	eczema treatment australia	Phrase	Enabled
+WW | AU | Skin Conditions	Eczema AU	eczema treatment australia	Exact	Enabled
+WW | AU | Skin Conditions	Eczema AU	hand eczema naturopath	Phrase	Enabled
+WW | AU | Skin Conditions	Eczema AU	hand eczema naturopath	Exact	Enabled
+WW | AU | Skin Conditions	Eczema AU	help with eczema	Phrase	Enabled
+WW | AU | Skin Conditions	Eczema AU	help with eczema	Exact	Enabled
+WW | AU | Skin Conditions	Eczema AU	herbal medicine for eczema	Phrase	Enabled
+WW | AU | Skin Conditions	Eczema AU	herbal medicine for eczema	Exact	Enabled
+WW | AU | Skin Conditions	Eczema AU	natural eczema help	Phrase	Enabled
+WW | AU | Skin Conditions	Eczema AU	natural eczema help	Exact	Enabled
+WW | AU | Skin Conditions	Eczema AU	natural eczema treatment	Phrase	Enabled
+WW | AU | Skin Conditions	Eczema AU	natural eczema treatment	Exact	Enabled
+WW | AU | Skin Conditions	Eczema AU	natural remedies for eczema australia	Phrase	Enabled
+WW | AU | Skin Conditions	Eczema AU	natural remedies for eczema australia	Exact	Enabled
+WW | AU | Skin Conditions	Eczema AU	naturopath for chronic eczema	Phrase	Enabled
+WW | AU | Skin Conditions	Eczema AU	naturopath for chronic eczema	Exact	Enabled
+WW | AU | Skin Conditions	Eczema AU	naturopath for eczema	Phrase	Enabled
+WW | AU | Skin Conditions	Eczema AU	naturopath for eczema	Exact	Enabled
+WW | AU | Skin Conditions	Eczema AU	naturopath for eczema australia	Phrase	Enabled
+WW | AU | Skin Conditions	Eczema AU	naturopath for eczema australia	Exact	Enabled
+WW | AU | Skin Conditions	Eczema AU	online eczema specialist	Phrase	Enabled
+WW | AU | Skin Conditions	Eczema AU	online eczema specialist	Exact	Enabled
+WW | AU | Skin Conditions	Eczema AU	registered naturopath eczema australia	Phrase	Enabled
+WW | AU | Skin Conditions	Eczema AU	registered naturopath eczema australia	Exact	Enabled
+WW | AU | Skin Conditions	Eczema AU	scalp eczema naturopath	Phrase	Enabled
+WW | AU | Skin Conditions	Eczema AU	scalp eczema naturopath	Exact	Enabled
+WW | AU | Skin Conditions	Eczema AU	severe eczema naturopath	Phrase	Enabled
+WW | AU | Skin Conditions	Eczema AU	severe eczema naturopath	Exact	Enabled
+WW | AU | Skin Conditions	Eczema AU	toddler eczema naturopath	Phrase	Enabled
+WW | AU | Skin Conditions	Eczema AU	toddler eczema naturopath	Exact	Enabled
+WW | AU | Skin Conditions	Eczema AU	why wont my eczema go away	Phrase	Enabled
+WW | AU | Skin Conditions	Eczema AU	why wont my eczema go away	Exact	Enabled
+WW | AU | Skin Conditions	TSW AU	coming off steroid cream	Phrase	Enabled
+WW | AU | Skin Conditions	TSW AU	coming off steroid cream	Exact	Enabled
+WW | AU | Skin Conditions	TSW AU	naturopath experienced with tsw	Phrase	Enabled
+WW | AU | Skin Conditions	TSW AU	naturopath experienced with tsw	Exact	Enabled
+WW | AU | Skin Conditions	TSW AU	naturopath for tsw australia	Phrase	Enabled
+WW | AU | Skin Conditions	TSW AU	naturopath for tsw australia	Exact	Enabled
+WW | AU | Skin Conditions	TSW AU	red skin syndrome	Phrase	Enabled
+WW | AU | Skin Conditions	TSW AU	red skin syndrome	Exact	Enabled
+WW | AU | Skin Conditions	TSW AU	red skin syndrome naturopath australia	Phrase	Enabled
+WW | AU | Skin Conditions	TSW AU	red skin syndrome naturopath australia	Exact	Enabled
+WW | AU | Skin Conditions	TSW AU	red skin syndrome support australia	Phrase	Enabled
+WW | AU | Skin Conditions	TSW AU	red skin syndrome support australia	Exact	Enabled
+WW | AU | Skin Conditions	TSW AU	steroid cream withdrawal naturopath australia	Phrase	Enabled
+WW | AU | Skin Conditions	TSW AU	steroid cream withdrawal naturopath australia	Exact	Enabled
+WW | AU | Skin Conditions	TSW AU	steroid withdrawal	Phrase	Enabled
+WW | AU | Skin Conditions	TSW AU	steroid withdrawal	Exact	Enabled
+WW | AU | Skin Conditions	TSW AU	steroid withdrawal naturopath	Phrase	Enabled
+WW | AU | Skin Conditions	TSW AU	steroid withdrawal naturopath	Exact	Enabled
+WW | AU | Skin Conditions	TSW AU	steroid withdrawal skin support	Phrase	Enabled
+WW | AU | Skin Conditions	TSW AU	steroid withdrawal skin support	Exact	Enabled
+WW | AU | Skin Conditions	TSW AU	topical steroid withdrawal	Phrase	Enabled
+WW | AU | Skin Conditions	TSW AU	topical steroid withdrawal	Exact	Enabled
+WW | AU | Skin Conditions	TSW AU	topical steroid withdrawal help	Phrase	Enabled
+WW | AU | Skin Conditions	TSW AU	topical steroid withdrawal help	Exact	Enabled
+WW | AU | Skin Conditions	TSW AU	topical steroid withdrawal naturopath australia	Phrase	Enabled
+WW | AU | Skin Conditions	TSW AU	topical steroid withdrawal naturopath australia	Exact	Enabled
+WW | AU | Skin Conditions	TSW AU	topical steroid withdrawal support	Phrase	Enabled
+WW | AU | Skin Conditions	TSW AU	topical steroid withdrawal support	Exact	Enabled
+WW | AU | Skin Conditions	TSW AU	topical steroid withdrawal telehealth	Phrase	Enabled
+WW | AU | Skin Conditions	TSW AU	topical steroid withdrawal telehealth	Exact	Enabled
+WW | AU | Skin Conditions	TSW AU	tsw diet naturopath	Phrase	Enabled
+WW | AU | Skin Conditions	TSW AU	tsw diet naturopath	Exact	Enabled
+WW | AU | Skin Conditions	TSW AU	tsw flare naturopath	Phrase	Enabled
+WW | AU | Skin Conditions	TSW AU	tsw flare naturopath	Exact	Enabled
+WW | AU | Skin Conditions	TSW AU	tsw help	Phrase	Enabled
+WW | AU | Skin Conditions	TSW AU	tsw help	Exact	Enabled
+WW | AU | Skin Conditions	TSW AU	tsw help australia	Phrase	Enabled
+WW | AU | Skin Conditions	TSW AU	tsw help australia	Exact	Enabled
+WW | AU | Skin Conditions	TSW AU	tsw natural treatment	Phrase	Enabled
+WW | AU | Skin Conditions	TSW AU	tsw natural treatment	Exact	Enabled
+WW | AU | Skin Conditions	TSW AU	tsw naturopath	Phrase	Enabled
+WW | AU | Skin Conditions	TSW AU	tsw naturopath	Exact	Enabled
+WW | AU | Skin Conditions	TSW AU	tsw naturopath australia	Phrase	Enabled
+WW | AU | Skin Conditions	TSW AU	tsw naturopath australia	Exact	Enabled
+WW | AU | Skin Conditions	TSW AU	tsw naturopath consultation	Phrase	Enabled
+WW | AU | Skin Conditions	TSW AU	tsw naturopath consultation	Exact	Enabled
+WW | AU | Skin Conditions	TSW AU	tsw naturopath online australia	Phrase	Enabled
+WW | AU | Skin Conditions	TSW AU	tsw naturopath online australia	Exact	Enabled
+WW | AU | Skin Conditions	TSW AU	tsw recovery	Phrase	Enabled
+WW | AU | Skin Conditions	TSW AU	tsw recovery	Exact	Enabled
+WW | AU | Skin Conditions	TSW AU	tsw recovery support australia	Phrase	Enabled
+WW | AU | Skin Conditions	TSW AU	tsw recovery support australia	Exact	Enabled
+WW | AU | Skin Conditions	TSW AU	tsw skin support	Phrase	Enabled
+WW | AU | Skin Conditions	TSW AU	tsw skin support	Exact	Enabled
+WW | AU | Skin Conditions	TSW AU	tsw specialist australia	Phrase	Enabled
+WW | AU | Skin Conditions	TSW AU	tsw specialist australia	Exact	Enabled
+WW | AU | Skin Conditions	TSW AU	tsw support	Phrase	Enabled
+WW | AU | Skin Conditions	TSW AU	tsw support	Exact	Enabled
+WW | AU | Skin Conditions	TSW AU	tsw support australia	Phrase	Enabled
+WW | AU | Skin Conditions	TSW AU	tsw support australia	Exact	Enabled
+WW | AU | Skin Conditions	TSW AU	tsw treatment	Phrase	Enabled
+WW | AU | Skin Conditions	TSW AU	tsw treatment	Exact	Enabled
+WW | AU | Skin Conditions	Psoriasis AU	guttate psoriasis naturopath	Phrase	Enabled
+WW | AU | Skin Conditions	Psoriasis AU	guttate psoriasis naturopath	Exact	Enabled
+WW | AU | Skin Conditions	Psoriasis AU	help with psoriasis	Phrase	Enabled
+WW | AU | Skin Conditions	Psoriasis AU	help with psoriasis	Exact	Enabled
+WW | AU | Skin Conditions	Psoriasis AU	herbal medicine for psoriasis	Phrase	Enabled
+WW | AU | Skin Conditions	Psoriasis AU	herbal medicine for psoriasis	Exact	Enabled
+WW | AU | Skin Conditions	Psoriasis AU	natural psoriasis treatment	Phrase	Enabled
+WW | AU | Skin Conditions	Psoriasis AU	natural psoriasis treatment	Exact	Enabled
+WW | AU | Skin Conditions	Psoriasis AU	natural remedies for psoriasis australia	Phrase	Enabled
+WW | AU | Skin Conditions	Psoriasis AU	natural remedies for psoriasis australia	Exact	Enabled
+WW | AU | Skin Conditions	Psoriasis AU	naturopath for psoriasis	Phrase	Enabled
+WW | AU | Skin Conditions	Psoriasis AU	naturopath for psoriasis	Exact	Enabled
+WW | AU | Skin Conditions	Psoriasis AU	naturopath for scalp psoriasis	Phrase	Enabled
+WW | AU | Skin Conditions	Psoriasis AU	naturopath for scalp psoriasis	Exact	Enabled
+WW | AU | Skin Conditions	Psoriasis AU	plaque psoriasis naturopath	Phrase	Enabled
+WW | AU | Skin Conditions	Psoriasis AU	plaque psoriasis naturopath	Exact	Enabled
+WW | AU | Skin Conditions	Psoriasis AU	psoriasis causes	Phrase	Enabled
+WW | AU | Skin Conditions	Psoriasis AU	psoriasis causes	Exact	Enabled
+WW | AU | Skin Conditions	Psoriasis AU	psoriasis diet	Phrase	Enabled
+WW | AU | Skin Conditions	Psoriasis AU	psoriasis diet	Exact	Enabled
+WW | AU | Skin Conditions	Psoriasis AU	psoriasis diet naturopath	Phrase	Enabled
+WW | AU | Skin Conditions	Psoriasis AU	psoriasis diet naturopath	Exact	Enabled
+WW | AU | Skin Conditions	Psoriasis AU	psoriasis flare up naturopath	Phrase	Enabled
+WW | AU | Skin Conditions	Psoriasis AU	psoriasis flare up naturopath	Exact	Enabled
+WW | AU | Skin Conditions	Psoriasis AU	psoriasis gut health naturopath	Phrase	Enabled
+WW | AU | Skin Conditions	Psoriasis AU	psoriasis gut health naturopath	Exact	Enabled
+WW | AU | Skin Conditions	Psoriasis AU	psoriasis help	Phrase	Enabled
+WW | AU | Skin Conditions	Psoriasis AU	psoriasis help	Exact	Enabled
+WW | AU | Skin Conditions	Psoriasis AU	psoriasis help australia	Phrase	Enabled
+WW | AU | Skin Conditions	Psoriasis AU	psoriasis help australia	Exact	Enabled
+WW | AU | Skin Conditions	Psoriasis AU	psoriasis immune connection australia	Phrase	Enabled
+WW | AU | Skin Conditions	Psoriasis AU	psoriasis immune connection australia	Exact	Enabled
+WW | AU | Skin Conditions	Psoriasis AU	psoriasis natural treatment australia	Phrase	Enabled
+WW | AU | Skin Conditions	Psoriasis AU	psoriasis natural treatment australia	Exact	Enabled
+WW | AU | Skin Conditions	Psoriasis AU	psoriasis naturopath	Phrase	Enabled
+WW | AU | Skin Conditions	Psoriasis AU	psoriasis naturopath	Exact	Enabled
+WW | AU | Skin Conditions	Psoriasis AU	psoriasis naturopath cost australia	Phrase	Enabled
+WW | AU | Skin Conditions	Psoriasis AU	psoriasis naturopath cost australia	Exact	Enabled
+WW | AU | Skin Conditions	Psoriasis AU	psoriasis naturopath online	Phrase	Enabled
+WW | AU | Skin Conditions	Psoriasis AU	psoriasis naturopath online	Exact	Enabled
+WW | AU | Skin Conditions	Psoriasis AU	psoriasis specialist	Phrase	Enabled
+WW | AU | Skin Conditions	Psoriasis AU	psoriasis specialist	Exact	Enabled
+WW | AU | Skin Conditions	Psoriasis AU	psoriasis specialist australia	Phrase	Enabled
+WW | AU | Skin Conditions	Psoriasis AU	psoriasis specialist australia	Exact	Enabled
+WW | AU | Skin Conditions	Psoriasis AU	psoriasis telehealth naturopath australia	Phrase	Enabled
+WW | AU | Skin Conditions	Psoriasis AU	psoriasis telehealth naturopath australia	Exact	Enabled
+WW | AU | Skin Conditions	Psoriasis AU	psoriasis treatment	Phrase	Enabled
+WW | AU | Skin Conditions	Psoriasis AU	psoriasis treatment	Exact	Enabled
+WW | AU | Skin Conditions	Psoriasis AU	psoriasis treatment australia	Phrase	Enabled
+WW | AU | Skin Conditions	Psoriasis AU	psoriasis treatment australia	Exact	Enabled
+WW | AU | Skin Conditions	Psoriasis AU	psoriasis trigger naturopath	Phrase	Enabled
+WW | AU | Skin Conditions	Psoriasis AU	psoriasis trigger naturopath	Exact	Enabled
+WW | AU | Skin Conditions	Psoriasis AU	registered naturopath psoriasis australia	Phrase	Enabled
+WW | AU | Skin Conditions	Psoriasis AU	registered naturopath psoriasis australia	Exact	Enabled
+WW | AU | Skin Conditions	Psoriasis AU	scalp psoriasis naturopath australia	Phrase	Enabled
+WW | AU | Skin Conditions	Psoriasis AU	scalp psoriasis naturopath australia	Exact	Enabled
+WW | AU | Skin Conditions	Psoriasis AU	why does my psoriasis flare up	Phrase	Enabled
+WW | AU | Skin Conditions	Psoriasis AU	why does my psoriasis flare up	Exact	Enabled
+WW | AU | Skin Conditions	Acne AU	acne causes	Phrase	Enabled
+WW | AU | Skin Conditions	Acne AU	acne causes	Exact	Enabled
+WW | AU | Skin Conditions	Acne AU	acne diet	Phrase	Enabled
+WW | AU | Skin Conditions	Acne AU	acne diet	Exact	Enabled
+WW | AU | Skin Conditions	Acne AU	acne diet naturopath	Phrase	Enabled
+WW | AU | Skin Conditions	Acne AU	acne diet naturopath	Exact	Enabled
+WW | AU | Skin Conditions	Acne AU	acne gut health naturopath	Phrase	Enabled
+WW | AU | Skin Conditions	Acne AU	acne gut health naturopath	Exact	Enabled
+WW | AU | Skin Conditions	Acne AU	acne help	Phrase	Enabled
+WW | AU | Skin Conditions	Acne AU	acne help	Exact	Enabled
+WW | AU | Skin Conditions	Acne AU	acne help australia	Phrase	Enabled
+WW | AU | Skin Conditions	Acne AU	acne help australia	Exact	Enabled
+WW | AU | Skin Conditions	Acne AU	acne naturopath	Phrase	Enabled
+WW | AU | Skin Conditions	Acne AU	acne naturopath	Exact	Enabled
+WW | AU | Skin Conditions	Acne AU	acne naturopath cost australia	Phrase	Enabled
+WW | AU | Skin Conditions	Acne AU	acne naturopath cost australia	Exact	Enabled
+WW | AU | Skin Conditions	Acne AU	acne naturopath online australia	Phrase	Enabled
+WW | AU | Skin Conditions	Acne AU	acne naturopath online australia	Exact	Enabled
+WW | AU | Skin Conditions	Acne AU	acne specialist	Phrase	Enabled
+WW | AU | Skin Conditions	Acne AU	acne specialist	Exact	Enabled
+WW | AU | Skin Conditions	Acne AU	acne specialist australia	Phrase	Enabled
+WW | AU | Skin Conditions	Acne AU	acne specialist australia	Exact	Enabled
+WW | AU | Skin Conditions	Acne AU	acne telehealth naturopath australia	Phrase	Enabled
+WW | AU | Skin Conditions	Acne AU	acne telehealth naturopath australia	Exact	Enabled
+WW | AU | Skin Conditions	Acne AU	acne treatment	Phrase	Enabled
+WW | AU | Skin Conditions	Acne AU	acne treatment	Exact	Enabled
+WW | AU | Skin Conditions	Acne AU	acne treatment australia	Phrase	Enabled
+WW | AU | Skin Conditions	Acne AU	acne treatment australia	Exact	Enabled
+WW | AU | Skin Conditions	Acne AU	adult acne	Phrase	Enabled
+WW | AU | Skin Conditions	Acne AU	adult acne	Exact	Enabled
+WW | AU | Skin Conditions	Acne AU	adult acne naturopath australia	Phrase	Enabled
+WW | AU | Skin Conditions	Acne AU	adult acne naturopath australia	Exact	Enabled
+WW | AU | Skin Conditions	Acne AU	back acne naturopath	Phrase	Enabled
+WW | AU | Skin Conditions	Acne AU	back acne naturopath	Exact	Enabled
+WW | AU | Skin Conditions	Acne AU	cystic acne	Phrase	Enabled
+WW | AU | Skin Conditions	Acne AU	cystic acne	Exact	Enabled
+WW | AU | Skin Conditions	Acne AU	cystic acne naturopath australia	Phrase	Enabled
+WW | AU | Skin Conditions	Acne AU	cystic acne naturopath australia	Exact	Enabled
+WW | AU | Skin Conditions	Acne AU	help with acne	Phrase	Enabled
+WW | AU | Skin Conditions	Acne AU	help with acne	Exact	Enabled
+WW | AU | Skin Conditions	Acne AU	herbal medicine for acne	Phrase	Enabled
+WW | AU | Skin Conditions	Acne AU	herbal medicine for acne	Exact	Enabled
+WW | AU | Skin Conditions	Acne AU	hormonal acne	Phrase	Enabled
+WW | AU | Skin Conditions	Acne AU	hormonal acne	Exact	Enabled
+WW | AU | Skin Conditions	Acne AU	hormonal acne naturopath australia	Phrase	Enabled
+WW | AU | Skin Conditions	Acne AU	hormonal acne naturopath australia	Exact	Enabled
+WW | AU | Skin Conditions	Acne AU	hormonal acne naturopath online	Phrase	Enabled
+WW | AU | Skin Conditions	Acne AU	hormonal acne naturopath online	Exact	Enabled
+WW | AU | Skin Conditions	Acne AU	natural acne treatment australia	Phrase	Enabled
+WW | AU | Skin Conditions	Acne AU	natural acne treatment australia	Exact	Enabled
+WW | AU | Skin Conditions	Acne AU	naturopath for acne	Phrase	Enabled
+WW | AU | Skin Conditions	Acne AU	naturopath for acne	Exact	Enabled
+WW | AU | Skin Conditions	Acne AU	naturopath for cystic acne	Phrase	Enabled
+WW | AU | Skin Conditions	Acne AU	naturopath for cystic acne	Exact	Enabled
+WW | AU | Skin Conditions	Acne AU	naturopath for hormonal acne australia	Phrase	Enabled
+WW | AU | Skin Conditions	Acne AU	naturopath for hormonal acne australia	Exact	Enabled
+WW | AU | Skin Conditions	Acne AU	pcos acne naturopath	Phrase	Enabled
+WW | AU | Skin Conditions	Acne AU	pcos acne naturopath	Exact	Enabled
+WW | AU | Skin Conditions	Acne AU	period acne naturopath	Phrase	Enabled
+WW | AU | Skin Conditions	Acne AU	period acne naturopath	Exact	Enabled
+WW | AU | Skin Conditions	Acne AU	registered naturopath acne australia	Phrase	Enabled
+WW | AU | Skin Conditions	Acne AU	registered naturopath acne australia	Exact	Enabled
+WW | AU | Skin Conditions	Acne AU	teenage acne naturopath	Phrase	Enabled
+WW | AU | Skin Conditions	Acne AU	teenage acne naturopath	Exact	Enabled
+WW | AU | Skin Conditions	Acne AU	why wont my acne clear up	Phrase	Enabled
+WW | AU | Skin Conditions	Acne AU	why wont my acne clear up	Exact	Enabled
+WW | AU | Skin Conditions	Rosacea AU	facial redness naturopath australia	Phrase	Enabled
+WW | AU | Skin Conditions	Rosacea AU	facial redness naturopath australia	Exact	Enabled
+WW | AU | Skin Conditions	Rosacea AU	help with rosacea	Phrase	Enabled
+WW | AU | Skin Conditions	Rosacea AU	help with rosacea	Exact	Enabled
+WW | AU | Skin Conditions	Rosacea AU	herbal medicine for rosacea	Phrase	Enabled
+WW | AU | Skin Conditions	Rosacea AU	herbal medicine for rosacea	Exact	Enabled
+WW | AU | Skin Conditions	Rosacea AU	natural rosacea treatment	Phrase	Enabled
+WW | AU | Skin Conditions	Rosacea AU	natural rosacea treatment	Exact	Enabled
+WW | AU | Skin Conditions	Rosacea AU	naturopath for facial redness	Phrase	Enabled
+WW | AU | Skin Conditions	Rosacea AU	naturopath for facial redness	Exact	Enabled
+WW | AU | Skin Conditions	Rosacea AU	naturopath for rosacea	Phrase	Enabled
+WW | AU | Skin Conditions	Rosacea AU	naturopath for rosacea	Exact	Enabled
+WW | AU | Skin Conditions	Rosacea AU	registered naturopath rosacea australia	Phrase	Enabled
+WW | AU | Skin Conditions	Rosacea AU	registered naturopath rosacea australia	Exact	Enabled
+WW | AU | Skin Conditions	Rosacea AU	rosacea diet	Phrase	Enabled
+WW | AU | Skin Conditions	Rosacea AU	rosacea diet	Exact	Enabled
+WW | AU | Skin Conditions	Rosacea AU	rosacea diet naturopath	Phrase	Enabled
+WW | AU | Skin Conditions	Rosacea AU	rosacea diet naturopath	Exact	Enabled
+WW | AU | Skin Conditions	Rosacea AU	rosacea flare up naturopath	Phrase	Enabled
+WW | AU | Skin Conditions	Rosacea AU	rosacea flare up naturopath	Exact	Enabled
+WW | AU | Skin Conditions	Rosacea AU	rosacea gut health naturopath	Phrase	Enabled
+WW | AU | Skin Conditions	Rosacea AU	rosacea gut health naturopath	Exact	Enabled
+WW | AU | Skin Conditions	Rosacea AU	rosacea help	Phrase	Enabled
+WW | AU | Skin Conditions	Rosacea AU	rosacea help	Exact	Enabled
+WW | AU | Skin Conditions	Rosacea AU	rosacea help australia	Phrase	Enabled
+WW | AU | Skin Conditions	Rosacea AU	rosacea help australia	Exact	Enabled
+WW | AU | Skin Conditions	Rosacea AU	rosacea immune naturopath	Phrase	Enabled
+WW | AU | Skin Conditions	Rosacea AU	rosacea immune naturopath	Exact	Enabled
+WW | AU | Skin Conditions	Rosacea AU	rosacea natural treatment australia	Phrase	Enabled
+WW | AU | Skin Conditions	Rosacea AU	rosacea natural treatment australia	Exact	Enabled
+WW | AU | Skin Conditions	Rosacea AU	rosacea naturopath	Phrase	Enabled
+WW | AU | Skin Conditions	Rosacea AU	rosacea naturopath	Exact	Enabled
+WW | AU | Skin Conditions	Rosacea AU	rosacea naturopath consultation	Phrase	Enabled
+WW | AU | Skin Conditions	Rosacea AU	rosacea naturopath consultation	Exact	Enabled
+WW | AU | Skin Conditions	Rosacea AU	rosacea naturopath cost australia	Phrase	Enabled
+WW | AU | Skin Conditions	Rosacea AU	rosacea naturopath cost australia	Exact	Enabled
+WW | AU | Skin Conditions	Rosacea AU	rosacea naturopath online	Phrase	Enabled
+WW | AU | Skin Conditions	Rosacea AU	rosacea naturopath online	Exact	Enabled
+WW | AU | Skin Conditions	Rosacea AU	rosacea specialist	Phrase	Enabled
+WW | AU | Skin Conditions	Rosacea AU	rosacea specialist	Exact	Enabled
+WW | AU | Skin Conditions	Rosacea AU	rosacea specialist australia	Phrase	Enabled
+WW | AU | Skin Conditions	Rosacea AU	rosacea specialist australia	Exact	Enabled
+WW | AU | Skin Conditions	Rosacea AU	rosacea telehealth naturopath australia	Phrase	Enabled
+WW | AU | Skin Conditions	Rosacea AU	rosacea telehealth naturopath australia	Exact	Enabled
+WW | AU | Skin Conditions	Rosacea AU	rosacea treatment	Phrase	Enabled
+WW | AU | Skin Conditions	Rosacea AU	rosacea treatment	Exact	Enabled
+WW | AU | Skin Conditions	Rosacea AU	rosacea treatment australia	Phrase	Enabled
+WW | AU | Skin Conditions	Rosacea AU	rosacea treatment australia	Exact	Enabled
+WW | AU | Skin Conditions	Rosacea AU	rosacea trigger naturopath australia	Phrase	Enabled
+WW | AU | Skin Conditions	Rosacea AU	rosacea trigger naturopath australia	Exact	Enabled
+WW | AU | Skin Conditions	Rosacea AU	rosacea triggers	Phrase	Enabled
+WW | AU | Skin Conditions	Rosacea AU	rosacea triggers	Exact	Enabled
+WW | AU | Skin Conditions	Rosacea AU	what triggers rosacea flare ups	Phrase	Enabled
+WW | AU | Skin Conditions	Rosacea AU	what triggers rosacea flare ups	Exact	Enabled
+WW | AU | Skin Conditions	Skin Infections AU	chronic hives	Phrase	Enabled
+WW | AU | Skin Conditions	Skin Infections AU	chronic hives	Exact	Enabled
+WW | AU | Skin Conditions	Skin Infections AU	chronic hives naturopath australia	Phrase	Enabled
+WW | AU | Skin Conditions	Skin Infections AU	chronic hives naturopath australia	Exact	Enabled
+WW | AU | Skin Conditions	Skin Infections AU	fungal skin naturopath	Phrase	Enabled
+WW | AU | Skin Conditions	Skin Infections AU	fungal skin naturopath	Exact	Enabled
+WW | AU | Skin Conditions	Skin Infections AU	hives help	Phrase	Enabled
+WW | AU | Skin Conditions	Skin Infections AU	hives help	Exact	Enabled
+WW | AU | Skin Conditions	Skin Infections AU	hives naturopath australia	Phrase	Enabled
+WW | AU | Skin Conditions	Skin Infections AU	hives naturopath australia	Exact	Enabled
+WW | AU | Skin Conditions	Skin Infections AU	hives treatment	Phrase	Enabled
+WW | AU | Skin Conditions	Skin Infections AU	hives treatment	Exact	Enabled
+WW | AU | Skin Conditions	Skin Infections AU	immune support skin naturopath australia	Phrase	Enabled
+WW | AU | Skin Conditions	Skin Infections AU	immune support skin naturopath australia	Exact	Enabled
+WW | AU | Skin Conditions	Skin Infections AU	itchy skin help	Phrase	Enabled
+WW | AU | Skin Conditions	Skin Infections AU	itchy skin help	Exact	Enabled
+WW | AU | Skin Conditions	Skin Infections AU	itchy skin naturopath australia	Phrase	Enabled
+WW | AU | Skin Conditions	Skin Infections AU	itchy skin naturopath australia	Exact	Enabled
+WW | AU | Skin Conditions	Skin Infections AU	natural skin infection support australia	Phrase	Enabled
+WW | AU | Skin Conditions	Skin Infections AU	natural skin infection support australia	Exact	Enabled
+WW | AU | Skin Conditions	Skin Infections AU	naturopath chronic urticaria	Phrase	Enabled
+WW | AU | Skin Conditions	Skin Infections AU	naturopath chronic urticaria	Exact	Enabled
+WW | AU | Skin Conditions	Skin Infections AU	naturopath for folliculitis	Phrase	Enabled
+WW | AU | Skin Conditions	Skin Infections AU	naturopath for folliculitis	Exact	Enabled
+WW | AU | Skin Conditions	Skin Infections AU	naturopath for hives	Phrase	Enabled
+WW | AU | Skin Conditions	Skin Infections AU	naturopath for hives	Exact	Enabled
+WW | AU | Skin Conditions	Skin Infections AU	naturopath for itchy skin	Phrase	Enabled
+WW | AU | Skin Conditions	Skin Infections AU	naturopath for itchy skin	Exact	Enabled
+WW | AU | Skin Conditions	Skin Infections AU	naturopath for skin infections australia	Phrase	Enabled
+WW | AU | Skin Conditions	Skin Infections AU	naturopath for skin infections australia	Exact	Enabled
+WW | AU | Skin Conditions	Skin Infections AU	recurring boils naturopath	Phrase	Enabled
+WW | AU | Skin Conditions	Skin Infections AU	recurring boils naturopath	Exact	Enabled
+WW | AU | Skin Conditions	Skin Infections AU	recurring hives	Phrase	Enabled
+WW | AU | Skin Conditions	Skin Infections AU	recurring hives	Exact	Enabled
+WW | AU | Skin Conditions	Skin Infections AU	recurring skin infections naturopath australia	Phrase	Enabled
+WW | AU | Skin Conditions	Skin Infections AU	recurring skin infections naturopath australia	Exact	Enabled
+WW | AU | Skin Conditions	Skin Infections AU	recurring skin infections naturopath online	Phrase	Enabled
+WW | AU | Skin Conditions	Skin Infections AU	recurring skin infections naturopath online	Exact	Enabled
+WW | AU | Skin Conditions	Skin Infections AU	recurring urticaria naturopath online	Phrase	Enabled
+WW | AU | Skin Conditions	Skin Infections AU	recurring urticaria naturopath online	Exact	Enabled
+WW | AU | Skin Conditions	Skin Infections AU	registered naturopath skin infections australia	Phrase	Enabled
+WW | AU | Skin Conditions	Skin Infections AU	registered naturopath skin infections australia	Exact	Enabled
+WW | AU | Skin Conditions	Skin Infections AU	skin infection help	Phrase	Enabled
+WW | AU | Skin Conditions	Skin Infections AU	skin infection help	Exact	Enabled
+WW | AU | Skin Conditions	Skin Infections AU	skin infection naturopath	Phrase	Enabled
+WW | AU | Skin Conditions	Skin Infections AU	skin infection naturopath	Exact	Enabled
+WW | AU | Skin Conditions	Skin Infections AU	skin infection naturopath cost australia	Phrase	Enabled
+WW | AU | Skin Conditions	Skin Infections AU	skin infection naturopath cost australia	Exact	Enabled
+WW | AU | Skin Conditions	Skin Infections AU	staph skin naturopath	Phrase	Enabled
+WW | AU | Skin Conditions	Skin Infections AU	staph skin naturopath	Exact	Enabled
+WW | AU | Skin Conditions	Skin Infections AU	urticaria help	Phrase	Enabled
+WW | AU | Skin Conditions	Skin Infections AU	urticaria help	Exact	Enabled
+WW | AU | Skin Conditions	Skin Infections AU	why do i keep getting skin infections	Phrase	Enabled
+WW | AU | Skin Conditions	Skin Infections AU	why do i keep getting skin infections	Exact	Enabled

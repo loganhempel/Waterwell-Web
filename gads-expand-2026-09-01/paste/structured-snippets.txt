@@ -1,0 +1,6 @@
+Campaign	Language	Header	Snippet Values
+WW | NZ | Brand 2026	English	Services	Naturopathy;Herbal Medicine;Skin Health;Gut Health;Hormone Support;Functional Testing
+WW | NZ | Online Naturopath	English	Services	Naturopathy;Herbal Medicine;Skin Health;Gut Health;Hormone Support;Functional Testing
+WW | NZ | Skin Conditions	English	Services	Naturopathy;Herbal Medicine;Skin Health;Gut Health;Hormone Support;Functional Testing
+WW | AU | Online Naturopath	English	Services	Naturopathy;Skin Health;Gut Health;Hormone Support;Energy & Fatigue;Sleep & Stress
+WW | AU | Skin Conditions	English	Services	Naturopathy;Skin Health;Gut Health;Hormone Support;Energy & Fatigue;Sleep & Stress

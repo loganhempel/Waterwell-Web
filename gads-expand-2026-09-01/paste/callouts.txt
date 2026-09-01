@@ -1,0 +1,41 @@
+Campaign	Callout text
+WW | NZ | Brand 2026	Qualified Naturopath
+WW | NZ | Brand 2026	Personalised Plans
+WW | NZ | Brand 2026	Root-Cause Approach
+WW | NZ | Brand 2026	10+ Years Experience
+WW | NZ | Brand 2026	Consults By Secure Video
+WW | NZ | Brand 2026	Online, NZ-Wide
+WW | NZ | Brand 2026	Same Practitioner
+WW | NZ | Brand 2026	Works Alongside Your GP
+WW | NZ | Online Naturopath	Qualified Naturopath
+WW | NZ | Online Naturopath	Personalised Plans
+WW | NZ | Online Naturopath	Root-Cause Approach
+WW | NZ | Online Naturopath	10+ Years Experience
+WW | NZ | Online Naturopath	Consults By Secure Video
+WW | NZ | Online Naturopath	Online, NZ-Wide
+WW | NZ | Online Naturopath	Same Practitioner
+WW | NZ | Online Naturopath	Works Alongside Your GP
+WW | NZ | Skin Conditions	Qualified Naturopath
+WW | NZ | Skin Conditions	Personalised Plans
+WW | NZ | Skin Conditions	Root-Cause Approach
+WW | NZ | Skin Conditions	10+ Years Experience
+WW | NZ | Skin Conditions	Consults By Secure Video
+WW | NZ | Skin Conditions	Online, NZ-Wide
+WW | NZ | Skin Conditions	Same Practitioner
+WW | NZ | Skin Conditions	Works Alongside Your GP
+WW | AU | Online Naturopath	Qualified Naturopath
+WW | AU | Online Naturopath	Personalised Plans
+WW | AU | Online Naturopath	A Root-Cause Approach
+WW | AU | Online Naturopath	10+ Years Experience
+WW | AU | Online Naturopath	Consults By Secure Video
+WW | AU | Online Naturopath	Online, Australia-Wide
+WW | AU | Online Naturopath	Same Practitioner
+WW | AU | Online Naturopath	Complements Your GP Care
+WW | AU | Skin Conditions	Qualified Naturopath
+WW | AU | Skin Conditions	Personalised Plans
+WW | AU | Skin Conditions	A Root-Cause Approach
+WW | AU | Skin Conditions	10+ Years Experience
+WW | AU | Skin Conditions	Consults By Secure Video
+WW | AU | Skin Conditions	Online, Australia-Wide
+WW | AU | Skin Conditions	Same Practitioner
+WW | AU | Skin Conditions	Complements Your GP Care

@@ -1,0 +1,514 @@
+"Waterwell Naturopath — NZ SEARCH BUILD, 1 Sep 2026"
+"3 campaigns | 10 ad groups | 377 unique terms | ""phrase"" = phrase match · [exact] = exact match · broad NOT used"
+"Extends the 22 Aug build. Every final URL verified on waterwellclinic.com. Ad groups aligned to the site: 6 skin + 4 whole-body condition pages, plus the three named services."
+
+CAMPAIGN MAP
+Campaign,Stage 1 daily $,Bid Strategy,Ad Group,Final URL,Unique terms,Kohei 20 Jul
+WW | NZ | Brand 2026,2.0,"Maximise Clicks, max-CPC cap ~$1.50",Brand - Waterwell,https://waterwellclinic.com/nz,14,
+
+
+WW | NZ | Online Naturopath,10.0,"Maximise Clicks, max-CPC cap ~$3.50; move to Max Conversions after 15-20 tracked conversions",Online Naturopath Consult,https://waterwellclinic.com/nz,74,
+,,,General Naturopathy,https://waterwellclinic.com/nz,50,
+,,,Herbal Medicine,https://waterwellclinic.com/nz,23,
+
+
+WW | NZ | Skin Conditions,12.0,"Maximise Clicks, max-CPC cap ~$3.50; move to Max Conversions after 15-20 tracked conversions",Eczema,https://waterwellclinic.com/conditions/eczema,47,
+,,,Topical Steroid Withdrawal,https://waterwellclinic.com/conditions/tsw,33,
+,,,Psoriasis,https://waterwellclinic.com/conditions/psoriasis,34,
+,,,Acne,https://waterwellclinic.com/conditions/acne,38,
+,,,Rosacea,https://waterwellclinic.com/conditions/rosacea,31,
+,,,Skin Infections,https://waterwellclinic.com/conditions/skin-infections,33,
+
+
+KEYWORDS — each targeted as BOTH phrase and exact
+Campaign,Ad Group,"Phrase match  ""...""",Exact match  [...],NEW 1 Sep?
+WW | NZ | Brand 2026,Brand - Waterwell,"""kohei iguchi""",[kohei iguchi],
+WW | NZ | Brand 2026,Brand - Waterwell,"""kohei iguchi clinic""",[kohei iguchi clinic],NEW
+WW | NZ | Brand 2026,Brand - Waterwell,"""kohei iguchi medical herbalist""",[kohei iguchi medical herbalist],
+WW | NZ | Brand 2026,Brand - Waterwell,"""kohei iguchi naturopath""",[kohei iguchi naturopath],
+WW | NZ | Brand 2026,Brand - Waterwell,"""kohei naturopath""",[kohei naturopath],NEW
+WW | NZ | Brand 2026,Brand - Waterwell,"""waterwell clinic""",[waterwell clinic],
+WW | NZ | Brand 2026,Brand - Waterwell,"""waterwell clinic booking""",[waterwell clinic booking],NEW
+WW | NZ | Brand 2026,Brand - Waterwell,"""waterwell clinic consultation""",[waterwell clinic consultation],NEW
+WW | NZ | Brand 2026,Brand - Waterwell,"""waterwell clinic naturopath""",[waterwell clinic naturopath],
+WW | NZ | Brand 2026,Brand - Waterwell,"""waterwell clinic nz""",[waterwell clinic nz],
+WW | NZ | Brand 2026,Brand - Waterwell,"""waterwell naturopath""",[waterwell naturopath],
+WW | NZ | Brand 2026,Brand - Waterwell,"""waterwell naturopathy""",[waterwell naturopathy],
+WW | NZ | Brand 2026,Brand - Waterwell,"""waterwell skin clinic""",[waterwell skin clinic],NEW
+WW | NZ | Brand 2026,Brand - Waterwell,"""waterwellclinic.co.nz""",[waterwellclinic.co.nz],
+
+
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""affordable naturopath nz""",[affordable naturopath nz],NEW
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""best online naturopath nz""",[best online naturopath nz],
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""book a naturopath""",[book a naturopath],NEW
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""book a naturopath consultation""",[book a naturopath consultation],NEW
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""book naturopath online""",[book naturopath online],
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""book online naturopath appointment""",[book online naturopath appointment],
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""childrens naturopath nz""",[childrens naturopath nz],NEW
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""consult a naturopath online""",[consult a naturopath online],NEW
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""digital naturopath consultation""",[digital naturopath consultation],
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""experienced online naturopath""",[experienced online naturopath],
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""family naturopath nz""",[family naturopath nz],NEW
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""functional medicine testing nz""",[functional medicine testing nz],NEW
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""functional testing naturopath nz""",[functional testing naturopath nz],NEW
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""natural health consultation online""",[natural health consultation online],
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""natural medicine practitioner nz""",[natural medicine practitioner nz],NEW
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""naturopath appointment""",[naturopath appointment],NEW
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""naturopath appointment online nz""",[naturopath appointment online nz],
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""naturopath booking""",[naturopath booking],NEW
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""naturopath consult""",[naturopath consult],NEW
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""naturopath consultation cost""",[naturopath consultation cost],NEW
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""naturopath consultation nz""",[naturopath consultation nz],NEW
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""naturopath consultation price nz""",[naturopath consultation price nz],
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""naturopath consultation via video""",[naturopath consultation via video],
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""naturopath cost nz""",[naturopath cost nz],NEW
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""naturopath discovery call""",[naturopath discovery call],NEW
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""naturopath for kids nz""",[naturopath for kids nz],NEW
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""naturopath from home""",[naturopath from home],
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""naturopath functional testing nz""",[naturopath functional testing nz],
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""naturopath health plan nz""",[naturopath health plan nz],NEW
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""naturopath initial consultation nz""",[naturopath initial consultation nz],
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""naturopath lab tests online""",[naturopath lab tests online],
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""naturopath online""",[naturopath online],
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""naturopath online consultation""",[naturopath online consultation],
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""naturopath online nz""",[naturopath online nz],
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""naturopath phone consultation""",[naturopath phone consultation],
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""naturopath prices nz""",[naturopath prices nz],NEW
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""naturopath second opinion""",[naturopath second opinion],NEW
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""naturopath session""",[naturopath session],NEW
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""naturopath video call""",[naturopath video call],
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""naturopath video consult""",[naturopath video consult],
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""naturopath video consultation""",[naturopath video consultation],
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""naturopath zoom consultation""",[naturopath zoom consultation],
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""naturopathic consultation""",[naturopathic consultation],NEW
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""naturopathic doctor nz""",[naturopathic doctor nz],NEW
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""naturopathic practitioner nz""",[naturopathic practitioner nz],NEW
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""naturopathy online""",[naturopathy online],
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""online consultation naturopath""",[online consultation naturopath],
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""online natural health consultation""",[online natural health consultation],
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""online naturopath""",[online naturopath],
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""online naturopath appointment""",[online naturopath appointment],
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""online naturopath booking""",[online naturopath booking],
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""online naturopath consult""",[online naturopath consult],
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""online naturopath consultation""",[online naturopath consultation],
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""online naturopath cost nz""",[online naturopath cost nz],
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""online naturopath enquiry""",[online naturopath enquiry],
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""online naturopath new zealand""",[online naturopath new zealand],
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""online naturopath nz""",[online naturopath nz],
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""online naturopath session""",[online naturopath session],
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""online naturopathic consultation""",[online naturopathic consultation],
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""online naturopathy consultation""",[online naturopathy consultation],
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""paediatric naturopath nz""",[paediatric naturopath nz],NEW
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""qualified naturopath online""",[qualified naturopath online],
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""remote naturopath consultation""",[remote naturopath consultation],
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""see a naturopath""",[see a naturopath],NEW
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""see a naturopath online""",[see a naturopath online],
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""speak to a naturopath online""",[speak to a naturopath online],NEW
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""talk to a naturopath online""",[talk to a naturopath online],NEW
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""telehealth naturopath""",[telehealth naturopath],
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""telehealth naturopath nz""",[telehealth naturopath nz],
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""trusted online naturopath nz""",[trusted online naturopath nz],
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""video naturopath""",[video naturopath],NEW
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""virtual naturopath""",[virtual naturopath],
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""virtual naturopath consultation""",[virtual naturopath consultation],
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""virtual naturopath nz""",[virtual naturopath nz],
+
+
+WW | NZ | Online Naturopath,General Naturopathy,"""best naturopath nz""",[best naturopath nz],
+WW | NZ | Online Naturopath,General Naturopathy,"""holistic health nz""",[holistic health nz],NEW
+WW | NZ | Online Naturopath,General Naturopathy,"""holistic health practitioner nz""",[holistic health practitioner nz],
+WW | NZ | Online Naturopath,General Naturopathy,"""holistic naturopath nz""",[holistic naturopath nz],
+WW | NZ | Online Naturopath,General Naturopathy,"""holistic practitioner""",[holistic practitioner],NEW
+WW | NZ | Online Naturopath,General Naturopathy,"""natural health""",[natural health],NEW
+WW | NZ | Online Naturopath,General Naturopathy,"""natural health clinic nz""",[natural health clinic nz],
+WW | NZ | Online Naturopath,General Naturopathy,"""natural health practitioner nz""",[natural health practitioner nz],
+WW | NZ | Online Naturopath,General Naturopathy,"""natural medicine""",[natural medicine],NEW
+WW | NZ | Online Naturopath,General Naturopathy,"""natural therapies nz""",[natural therapies nz],NEW
+WW | NZ | Online Naturopath,General Naturopathy,"""naturopath""",[naturopath],NEW
+WW | NZ | Online Naturopath,General Naturopathy,"""naturopath appointment nz""",[naturopath appointment nz],
+WW | NZ | Online Naturopath,General Naturopathy,"""naturopath auckland""",[naturopath auckland],
+WW | NZ | Online Naturopath,General Naturopathy,"""naturopath bay of plenty""",[naturopath bay of plenty],NEW
+WW | NZ | Online Naturopath,General Naturopathy,"""naturopath blenheim""",[naturopath blenheim],NEW
+WW | NZ | Online Naturopath,General Naturopathy,"""naturopath christchurch""",[naturopath christchurch],
+WW | NZ | Online Naturopath,General Naturopathy,"""naturopath consultation""",[naturopath consultation],NEW
+WW | NZ | Online Naturopath,General Naturopathy,"""naturopath dunedin""",[naturopath dunedin],
+WW | NZ | Online Naturopath,General Naturopathy,"""naturopath gisborne""",[naturopath gisborne],NEW
+WW | NZ | Online Naturopath,General Naturopathy,"""naturopath hamilton""",[naturopath hamilton],
+WW | NZ | Online Naturopath,General Naturopathy,"""naturopath hastings""",[naturopath hastings],NEW
+WW | NZ | Online Naturopath,General Naturopathy,"""naturopath hawkes bay""",[naturopath hawkes bay],NEW
+WW | NZ | Online Naturopath,General Naturopathy,"""naturopath invercargill""",[naturopath invercargill],
+WW | NZ | Online Naturopath,General Naturopathy,"""naturopath kapiti""",[naturopath kapiti],NEW
+WW | NZ | Online Naturopath,General Naturopathy,"""naturopath lower hutt""",[naturopath lower hutt],NEW
+WW | NZ | Online Naturopath,General Naturopathy,"""naturopath masterton""",[naturopath masterton],NEW
+WW | NZ | Online Naturopath,General Naturopathy,"""naturopath napier""",[naturopath napier],
+WW | NZ | Online Naturopath,General Naturopathy,"""naturopath nelson""",[naturopath nelson],
+WW | NZ | Online Naturopath,General Naturopathy,"""naturopath new plymouth""",[naturopath new plymouth],NEW
+WW | NZ | Online Naturopath,General Naturopathy,"""naturopath new zealand""",[naturopath new zealand],
+WW | NZ | Online Naturopath,General Naturopathy,"""naturopath north shore""",[naturopath north shore],NEW
+WW | NZ | Online Naturopath,General Naturopathy,"""naturopath nz""",[naturopath nz],
+WW | NZ | Online Naturopath,General Naturopathy,"""naturopath otago""",[naturopath otago],NEW
+WW | NZ | Online Naturopath,General Naturopathy,"""naturopath palmerston north""",[naturopath palmerston north],
+WW | NZ | Online Naturopath,General Naturopathy,"""naturopath porirua""",[naturopath porirua],NEW
+WW | NZ | Online Naturopath,General Naturopathy,"""naturopath queenstown""",[naturopath queenstown],NEW
+WW | NZ | Online Naturopath,General Naturopathy,"""naturopath rotorua""",[naturopath rotorua],
+WW | NZ | Online Naturopath,General Naturopathy,"""naturopath specialising in skin""",[naturopath specialising in skin],
+WW | NZ | Online Naturopath,General Naturopathy,"""naturopath taupo""",[naturopath taupo],NEW
+WW | NZ | Online Naturopath,General Naturopathy,"""naturopath tauranga""",[naturopath tauranga],
+WW | NZ | Online Naturopath,General Naturopathy,"""naturopath timaru""",[naturopath timaru],NEW
+WW | NZ | Online Naturopath,General Naturopathy,"""naturopath waikato""",[naturopath waikato],NEW
+WW | NZ | Online Naturopath,General Naturopathy,"""naturopath wellington""",[naturopath wellington],
+WW | NZ | Online Naturopath,General Naturopathy,"""naturopath whanganui""",[naturopath whanganui],NEW
+WW | NZ | Online Naturopath,General Naturopathy,"""naturopath whangarei""",[naturopath whangarei],NEW
+WW | NZ | Online Naturopath,General Naturopathy,"""naturopathic medicine nz""",[naturopathic medicine nz],NEW
+WW | NZ | Online Naturopath,General Naturopathy,"""naturopathy""",[naturopathy],NEW
+WW | NZ | Online Naturopath,General Naturopathy,"""naturopathy nz""",[naturopathy nz],NEW
+WW | NZ | Online Naturopath,General Naturopathy,"""qualified naturopath nz""",[qualified naturopath nz],
+WW | NZ | Online Naturopath,General Naturopathy,"""registered naturopath nz""",[registered naturopath nz],
+
+
+WW | NZ | Online Naturopath,Herbal Medicine,"""custom herbal formula nz""",[custom herbal formula nz],NEW
+WW | NZ | Online Naturopath,Herbal Medicine,"""herbal consultation""",[herbal consultation],NEW
+WW | NZ | Online Naturopath,Herbal Medicine,"""herbal medicine""",[herbal medicine],NEW
+WW | NZ | Online Naturopath,Herbal Medicine,"""herbal medicine consultation""",[herbal medicine consultation],NEW
+WW | NZ | Online Naturopath,Herbal Medicine,"""herbal medicine for skin nz""",[herbal medicine for skin nz],NEW
+WW | NZ | Online Naturopath,Herbal Medicine,"""herbal medicine nz""",[herbal medicine nz],NEW
+WW | NZ | Online Naturopath,Herbal Medicine,"""herbal medicine online nz""",[herbal medicine online nz],NEW
+WW | NZ | Online Naturopath,Herbal Medicine,"""herbal medicine practitioner nz""",[herbal medicine practitioner nz],NEW
+WW | NZ | Online Naturopath,Herbal Medicine,"""herbal practitioner""",[herbal practitioner],NEW
+WW | NZ | Online Naturopath,Herbal Medicine,"""herbal remedies""",[herbal remedies],NEW
+WW | NZ | Online Naturopath,Herbal Medicine,"""herbalist""",[herbalist],NEW
+WW | NZ | Online Naturopath,Herbal Medicine,"""herbalist consultation nz""",[herbalist consultation nz],NEW
+WW | NZ | Online Naturopath,Herbal Medicine,"""herbalist for skin conditions""",[herbalist for skin conditions],NEW
+WW | NZ | Online Naturopath,Herbal Medicine,"""herbalist nz""",[herbalist nz],NEW
+WW | NZ | Online Naturopath,Herbal Medicine,"""medical herbalist""",[medical herbalist],NEW
+WW | NZ | Online Naturopath,Herbal Medicine,"""medical herbalist nz""",[medical herbalist nz],NEW
+WW | NZ | Online Naturopath,Herbal Medicine,"""online herbal medicine consultation""",[online herbal medicine consultation],NEW
+WW | NZ | Online Naturopath,Herbal Medicine,"""online herbalist""",[online herbalist],NEW
+WW | NZ | Online Naturopath,Herbal Medicine,"""online medical herbalist""",[online medical herbalist],NEW
+WW | NZ | Online Naturopath,Herbal Medicine,"""prescribed herbal medicine nz""",[prescribed herbal medicine nz],NEW
+WW | NZ | Online Naturopath,Herbal Medicine,"""qualified herbalist nz""",[qualified herbalist nz],NEW
+WW | NZ | Online Naturopath,Herbal Medicine,"""registered medical herbalist nz""",[registered medical herbalist nz],NEW
+WW | NZ | Online Naturopath,Herbal Medicine,"""western herbal medicine nz""",[western herbal medicine nz],NEW
+
+
+WW | NZ | Skin Conditions,Eczema,"""adult eczema naturopath nz""",[adult eczema naturopath nz],
+WW | NZ | Skin Conditions,Eczema,"""baby eczema naturopath""",[baby eczema naturopath],
+WW | NZ | Skin Conditions,Eczema,"""best online eczema naturopath nz""",[best online eczema naturopath nz],
+WW | NZ | Skin Conditions,Eczema,"""childhood eczema naturopath""",[childhood eczema naturopath],
+WW | NZ | Skin Conditions,Eczema,"""chronic eczema naturopath""",[chronic eczema naturopath],NEW
+WW | NZ | Skin Conditions,Eczema,"""dyshidrotic eczema naturopath""",[dyshidrotic eczema naturopath],NEW
+WW | NZ | Skin Conditions,Eczema,"""eczema and food naturopath""",[eczema and food naturopath],NEW
+WW | NZ | Skin Conditions,Eczema,"""eczema causes""",[eczema causes],NEW
+WW | NZ | Skin Conditions,Eczema,"""eczema consultation price nz""",[eczema consultation price nz],
+WW | NZ | Skin Conditions,Eczema,"""eczema diet""",[eczema diet],NEW
+WW | NZ | Skin Conditions,Eczema,"""eczema diet naturopath""",[eczema diet naturopath],
+WW | NZ | Skin Conditions,Eczema,"""eczema diet plan nz""",[eczema diet plan nz],NEW
+WW | NZ | Skin Conditions,Eczema,"""eczema flare up help""",[eczema flare up help],
+WW | NZ | Skin Conditions,Eczema,"""eczema gut health connection""",[eczema gut health connection],
+WW | NZ | Skin Conditions,Eczema,"""eczema help""",[eczema help],NEW
+WW | NZ | Skin Conditions,Eczema,"""eczema help nz""",[eczema help nz],NEW
+WW | NZ | Skin Conditions,Eczema,"""eczema immune naturopath""",[eczema immune naturopath],
+WW | NZ | Skin Conditions,Eczema,"""eczema in children naturopath""",[eczema in children naturopath],NEW
+WW | NZ | Skin Conditions,Eczema,"""eczema keeps coming back""",[eczema keeps coming back],
+WW | NZ | Skin Conditions,Eczema,"""eczema natural treatment""",[eczema natural treatment],
+WW | NZ | Skin Conditions,Eczema,"""eczema naturopath""",[eczema naturopath],NEW
+WW | NZ | Skin Conditions,Eczema,"""eczema naturopath cost nz""",[eczema naturopath cost nz],
+WW | NZ | Skin Conditions,Eczema,"""eczema naturopath nz""",[eczema naturopath nz],
+WW | NZ | Skin Conditions,Eczema,"""eczema specialist""",[eczema specialist],NEW
+WW | NZ | Skin Conditions,Eczema,"""eczema specialist nz""",[eczema specialist nz],NEW
+WW | NZ | Skin Conditions,Eczema,"""eczema support""",[eczema support],NEW
+WW | NZ | Skin Conditions,Eczema,"""eczema support naturopath""",[eczema support naturopath],
+WW | NZ | Skin Conditions,Eczema,"""eczema treatment""",[eczema treatment],NEW
+WW | NZ | Skin Conditions,Eczema,"""eczema treatment nz""",[eczema treatment nz],NEW
+WW | NZ | Skin Conditions,Eczema,"""eczema trigger naturopath""",[eczema trigger naturopath],
+WW | NZ | Skin Conditions,Eczema,"""gut-skin eczema naturopath""",[gut-skin eczema naturopath],
+WW | NZ | Skin Conditions,Eczema,"""hand eczema naturopath""",[hand eczema naturopath],NEW
+WW | NZ | Skin Conditions,Eczema,"""help with eczema""",[help with eczema],NEW
+WW | NZ | Skin Conditions,Eczema,"""herbal medicine for eczema nz""",[herbal medicine for eczema nz],NEW
+WW | NZ | Skin Conditions,Eczema,"""leaky gut eczema naturopath""",[leaky gut eczema naturopath],
+WW | NZ | Skin Conditions,Eczema,"""medical herbalist eczema nz""",[medical herbalist eczema nz],
+WW | NZ | Skin Conditions,Eczema,"""natural eczema help""",[natural eczema help],
+WW | NZ | Skin Conditions,Eczema,"""natural eczema treatment""",[natural eczema treatment],NEW
+WW | NZ | Skin Conditions,Eczema,"""natural remedies for eczema""",[natural remedies for eczema],
+WW | NZ | Skin Conditions,Eczema,"""naturopath eczema online""",[naturopath eczema online],
+WW | NZ | Skin Conditions,Eczema,"""naturopath for eczema""",[naturopath for eczema],
+WW | NZ | Skin Conditions,Eczema,"""online eczema specialist""",[online eczema specialist],
+WW | NZ | Skin Conditions,Eczema,"""registered naturopath eczema nz""",[registered naturopath eczema nz],
+WW | NZ | Skin Conditions,Eczema,"""scalp eczema naturopath""",[scalp eczema naturopath],NEW
+WW | NZ | Skin Conditions,Eczema,"""severe eczema naturopath""",[severe eczema naturopath],NEW
+WW | NZ | Skin Conditions,Eczema,"""toddler eczema naturopath""",[toddler eczema naturopath],NEW
+WW | NZ | Skin Conditions,Eczema,"""why wont my eczema go away""",[why wont my eczema go away],
+
+
+WW | NZ | Skin Conditions,Topical Steroid Withdrawal,"""coming off steroid cream""",[coming off steroid cream],NEW
+WW | NZ | Skin Conditions,Topical Steroid Withdrawal,"""naturopath for skin after steroids""",[naturopath for skin after steroids],
+WW | NZ | Skin Conditions,Topical Steroid Withdrawal,"""naturopath for tsw""",[naturopath for tsw],NEW
+WW | NZ | Skin Conditions,Topical Steroid Withdrawal,"""red skin syndrome""",[red skin syndrome],NEW
+WW | NZ | Skin Conditions,Topical Steroid Withdrawal,"""red skin syndrome naturopath""",[red skin syndrome naturopath],
+WW | NZ | Skin Conditions,Topical Steroid Withdrawal,"""red skin syndrome support nz""",[red skin syndrome support nz],
+WW | NZ | Skin Conditions,Topical Steroid Withdrawal,"""registered naturopath tsw nz""",[registered naturopath tsw nz],
+WW | NZ | Skin Conditions,Topical Steroid Withdrawal,"""steroid cream withdrawal naturopath""",[steroid cream withdrawal naturopath],
+WW | NZ | Skin Conditions,Topical Steroid Withdrawal,"""steroid withdrawal""",[steroid withdrawal],NEW
+WW | NZ | Skin Conditions,Topical Steroid Withdrawal,"""steroid withdrawal naturopath""",[steroid withdrawal naturopath],NEW
+WW | NZ | Skin Conditions,Topical Steroid Withdrawal,"""steroid withdrawal skin support""",[steroid withdrawal skin support],
+WW | NZ | Skin Conditions,Topical Steroid Withdrawal,"""topical steroid withdrawal""",[topical steroid withdrawal],NEW
+WW | NZ | Skin Conditions,Topical Steroid Withdrawal,"""topical steroid withdrawal help""",[topical steroid withdrawal help],
+WW | NZ | Skin Conditions,Topical Steroid Withdrawal,"""topical steroid withdrawal naturopath nz""",[topical steroid withdrawal naturopath nz],
+WW | NZ | Skin Conditions,Topical Steroid Withdrawal,"""tsw diet naturopath""",[tsw diet naturopath],NEW
+WW | NZ | Skin Conditions,Topical Steroid Withdrawal,"""tsw flare naturopath""",[tsw flare naturopath],
+WW | NZ | Skin Conditions,Topical Steroid Withdrawal,"""tsw gut health naturopath""",[tsw gut health naturopath],
+WW | NZ | Skin Conditions,Topical Steroid Withdrawal,"""tsw help""",[tsw help],NEW
+WW | NZ | Skin Conditions,Topical Steroid Withdrawal,"""tsw help nz""",[tsw help nz],NEW
+WW | NZ | Skin Conditions,Topical Steroid Withdrawal,"""tsw immune support naturopath""",[tsw immune support naturopath],
+WW | NZ | Skin Conditions,Topical Steroid Withdrawal,"""tsw natural treatment""",[tsw natural treatment],
+WW | NZ | Skin Conditions,Topical Steroid Withdrawal,"""tsw naturopath""",[tsw naturopath],
+WW | NZ | Skin Conditions,Topical Steroid Withdrawal,"""tsw naturopath cost nz""",[tsw naturopath cost nz],
+WW | NZ | Skin Conditions,Topical Steroid Withdrawal,"""tsw naturopath nz""",[tsw naturopath nz],
+WW | NZ | Skin Conditions,Topical Steroid Withdrawal,"""tsw naturopath online consultation""",[tsw naturopath online consultation],
+WW | NZ | Skin Conditions,Topical Steroid Withdrawal,"""tsw recovery""",[tsw recovery],NEW
+WW | NZ | Skin Conditions,Topical Steroid Withdrawal,"""tsw recovery naturopath nz""",[tsw recovery naturopath nz],
+WW | NZ | Skin Conditions,Topical Steroid Withdrawal,"""tsw recovery support""",[tsw recovery support],
+WW | NZ | Skin Conditions,Topical Steroid Withdrawal,"""tsw skin support""",[tsw skin support],NEW
+WW | NZ | Skin Conditions,Topical Steroid Withdrawal,"""tsw specialist nz""",[tsw specialist nz],NEW
+WW | NZ | Skin Conditions,Topical Steroid Withdrawal,"""tsw support""",[tsw support],NEW
+WW | NZ | Skin Conditions,Topical Steroid Withdrawal,"""tsw support online""",[tsw support online],
+WW | NZ | Skin Conditions,Topical Steroid Withdrawal,"""tsw treatment""",[tsw treatment],NEW
+
+
+WW | NZ | Skin Conditions,Psoriasis,"""best online psoriasis naturopath""",[best online psoriasis naturopath],
+WW | NZ | Skin Conditions,Psoriasis,"""guttate psoriasis naturopath""",[guttate psoriasis naturopath],
+WW | NZ | Skin Conditions,Psoriasis,"""help with psoriasis""",[help with psoriasis],NEW
+WW | NZ | Skin Conditions,Psoriasis,"""herbal medicine for psoriasis nz""",[herbal medicine for psoriasis nz],NEW
+WW | NZ | Skin Conditions,Psoriasis,"""inverse psoriasis naturopath""",[inverse psoriasis naturopath],NEW
+WW | NZ | Skin Conditions,Psoriasis,"""nail psoriasis naturopath""",[nail psoriasis naturopath],NEW
+WW | NZ | Skin Conditions,Psoriasis,"""natural psoriasis treatment""",[natural psoriasis treatment],NEW
+WW | NZ | Skin Conditions,Psoriasis,"""natural remedies for psoriasis""",[natural remedies for psoriasis],
+WW | NZ | Skin Conditions,Psoriasis,"""naturopath for psoriasis""",[naturopath for psoriasis],
+WW | NZ | Skin Conditions,Psoriasis,"""naturopath for scalp psoriasis""",[naturopath for scalp psoriasis],NEW
+WW | NZ | Skin Conditions,Psoriasis,"""online psoriasis naturopath""",[online psoriasis naturopath],
+WW | NZ | Skin Conditions,Psoriasis,"""plaque psoriasis naturopath""",[plaque psoriasis naturopath],
+WW | NZ | Skin Conditions,Psoriasis,"""psoriasis causes""",[psoriasis causes],NEW
+WW | NZ | Skin Conditions,Psoriasis,"""psoriasis diet""",[psoriasis diet],NEW
+WW | NZ | Skin Conditions,Psoriasis,"""psoriasis diet naturopath""",[psoriasis diet naturopath],
+WW | NZ | Skin Conditions,Psoriasis,"""psoriasis diet plan nz""",[psoriasis diet plan nz],NEW
+WW | NZ | Skin Conditions,Psoriasis,"""psoriasis flare up naturopath""",[psoriasis flare up naturopath],
+WW | NZ | Skin Conditions,Psoriasis,"""psoriasis gut health naturopath""",[psoriasis gut health naturopath],
+WW | NZ | Skin Conditions,Psoriasis,"""psoriasis help""",[psoriasis help],NEW
+WW | NZ | Skin Conditions,Psoriasis,"""psoriasis help nz""",[psoriasis help nz],NEW
+WW | NZ | Skin Conditions,Psoriasis,"""psoriasis immune naturopath""",[psoriasis immune naturopath],
+WW | NZ | Skin Conditions,Psoriasis,"""psoriasis natural treatment""",[psoriasis natural treatment],
+WW | NZ | Skin Conditions,Psoriasis,"""psoriasis naturopath""",[psoriasis naturopath],NEW
+WW | NZ | Skin Conditions,Psoriasis,"""psoriasis naturopath consultation nz""",[psoriasis naturopath consultation nz],
+WW | NZ | Skin Conditions,Psoriasis,"""psoriasis naturopath cost nz""",[psoriasis naturopath cost nz],
+WW | NZ | Skin Conditions,Psoriasis,"""psoriasis naturopath nz""",[psoriasis naturopath nz],
+WW | NZ | Skin Conditions,Psoriasis,"""psoriasis specialist""",[psoriasis specialist],NEW
+WW | NZ | Skin Conditions,Psoriasis,"""psoriasis specialist nz""",[psoriasis specialist nz],NEW
+WW | NZ | Skin Conditions,Psoriasis,"""psoriasis treatment""",[psoriasis treatment],NEW
+WW | NZ | Skin Conditions,Psoriasis,"""psoriasis treatment nz""",[psoriasis treatment nz],NEW
+WW | NZ | Skin Conditions,Psoriasis,"""psoriasis trigger naturopath""",[psoriasis trigger naturopath],
+WW | NZ | Skin Conditions,Psoriasis,"""registered naturopath psoriasis""",[registered naturopath psoriasis],
+WW | NZ | Skin Conditions,Psoriasis,"""scalp psoriasis naturopath""",[scalp psoriasis naturopath],
+WW | NZ | Skin Conditions,Psoriasis,"""why does my psoriasis flare up""",[why does my psoriasis flare up],
+
+
+WW | NZ | Skin Conditions,Acne,"""acne causes""",[acne causes],NEW
+WW | NZ | Skin Conditions,Acne,"""acne diet""",[acne diet],NEW
+WW | NZ | Skin Conditions,Acne,"""acne diet naturopath""",[acne diet naturopath],
+WW | NZ | Skin Conditions,Acne,"""acne diet plan nz""",[acne diet plan nz],NEW
+WW | NZ | Skin Conditions,Acne,"""acne gut health naturopath""",[acne gut health naturopath],
+WW | NZ | Skin Conditions,Acne,"""acne help""",[acne help],NEW
+WW | NZ | Skin Conditions,Acne,"""acne help nz""",[acne help nz],NEW
+WW | NZ | Skin Conditions,Acne,"""acne naturopath""",[acne naturopath],NEW
+WW | NZ | Skin Conditions,Acne,"""acne naturopath consultation nz""",[acne naturopath consultation nz],
+WW | NZ | Skin Conditions,Acne,"""acne naturopath cost nz""",[acne naturopath cost nz],
+WW | NZ | Skin Conditions,Acne,"""acne naturopath nz""",[acne naturopath nz],
+WW | NZ | Skin Conditions,Acne,"""acne specialist""",[acne specialist],NEW
+WW | NZ | Skin Conditions,Acne,"""acne specialist nz""",[acne specialist nz],NEW
+WW | NZ | Skin Conditions,Acne,"""acne treatment""",[acne treatment],NEW
+WW | NZ | Skin Conditions,Acne,"""acne treatment nz""",[acne treatment nz],NEW
+WW | NZ | Skin Conditions,Acne,"""adult acne""",[adult acne],NEW
+WW | NZ | Skin Conditions,Acne,"""adult acne natural treatment""",[adult acne natural treatment],
+WW | NZ | Skin Conditions,Acne,"""back acne naturopath""",[back acne naturopath],NEW
+WW | NZ | Skin Conditions,Acne,"""best online acne naturopath nz""",[best online acne naturopath nz],
+WW | NZ | Skin Conditions,Acne,"""chin acne naturopath""",[chin acne naturopath],NEW
+WW | NZ | Skin Conditions,Acne,"""cystic acne""",[cystic acne],NEW
+WW | NZ | Skin Conditions,Acne,"""cystic acne naturopath""",[cystic acne naturopath],
+WW | NZ | Skin Conditions,Acne,"""help with acne""",[help with acne],NEW
+WW | NZ | Skin Conditions,Acne,"""herbal medicine for acne nz""",[herbal medicine for acne nz],NEW
+WW | NZ | Skin Conditions,Acne,"""hormonal acne""",[hormonal acne],NEW
+WW | NZ | Skin Conditions,Acne,"""hormonal acne naturopath""",[hormonal acne naturopath],
+WW | NZ | Skin Conditions,Acne,"""hormonal acne naturopath nz""",[hormonal acne naturopath nz],
+WW | NZ | Skin Conditions,Acne,"""natural acne treatment""",[natural acne treatment],
+WW | NZ | Skin Conditions,Acne,"""naturopath for acne""",[naturopath for acne],
+WW | NZ | Skin Conditions,Acne,"""naturopath for cystic acne""",[naturopath for cystic acne],NEW
+WW | NZ | Skin Conditions,Acne,"""naturopath for hormonal acne""",[naturopath for hormonal acne],
+WW | NZ | Skin Conditions,Acne,"""naturopath for teenage acne""",[naturopath for teenage acne],NEW
+WW | NZ | Skin Conditions,Acne,"""online acne specialist naturopath""",[online acne specialist naturopath],
+WW | NZ | Skin Conditions,Acne,"""pcos acne naturopath""",[pcos acne naturopath],
+WW | NZ | Skin Conditions,Acne,"""period acne naturopath""",[period acne naturopath],
+WW | NZ | Skin Conditions,Acne,"""registered naturopath acne""",[registered naturopath acne],
+WW | NZ | Skin Conditions,Acne,"""teenage acne naturopath""",[teenage acne naturopath],
+WW | NZ | Skin Conditions,Acne,"""why wont my acne clear up""",[why wont my acne clear up],
+
+
+WW | NZ | Skin Conditions,Rosacea,"""best online rosacea naturopath""",[best online rosacea naturopath],
+WW | NZ | Skin Conditions,Rosacea,"""calm rosacea naturally naturopath""",[calm rosacea naturally naturopath],
+WW | NZ | Skin Conditions,Rosacea,"""facial redness naturopath nz""",[facial redness naturopath nz],
+WW | NZ | Skin Conditions,Rosacea,"""flushing naturopath nz""",[flushing naturopath nz],NEW
+WW | NZ | Skin Conditions,Rosacea,"""help with rosacea""",[help with rosacea],NEW
+WW | NZ | Skin Conditions,Rosacea,"""herbal medicine for rosacea nz""",[herbal medicine for rosacea nz],NEW
+WW | NZ | Skin Conditions,Rosacea,"""natural remedies for rosacea""",[natural remedies for rosacea],
+WW | NZ | Skin Conditions,Rosacea,"""natural rosacea treatment""",[natural rosacea treatment],NEW
+WW | NZ | Skin Conditions,Rosacea,"""naturopath for facial redness""",[naturopath for facial redness],NEW
+WW | NZ | Skin Conditions,Rosacea,"""naturopath for rosacea""",[naturopath for rosacea],
+WW | NZ | Skin Conditions,Rosacea,"""online rosacea naturopath""",[online rosacea naturopath],
+WW | NZ | Skin Conditions,Rosacea,"""registered naturopath rosacea""",[registered naturopath rosacea],
+WW | NZ | Skin Conditions,Rosacea,"""rosacea diet""",[rosacea diet],NEW
+WW | NZ | Skin Conditions,Rosacea,"""rosacea diet naturopath""",[rosacea diet naturopath],
+WW | NZ | Skin Conditions,Rosacea,"""rosacea diet plan nz""",[rosacea diet plan nz],NEW
+WW | NZ | Skin Conditions,Rosacea,"""rosacea flare naturopath nz""",[rosacea flare naturopath nz],
+WW | NZ | Skin Conditions,Rosacea,"""rosacea gut health naturopath""",[rosacea gut health naturopath],
+WW | NZ | Skin Conditions,Rosacea,"""rosacea help""",[rosacea help],NEW
+WW | NZ | Skin Conditions,Rosacea,"""rosacea help nz""",[rosacea help nz],NEW
+WW | NZ | Skin Conditions,Rosacea,"""rosacea immune naturopath""",[rosacea immune naturopath],
+WW | NZ | Skin Conditions,Rosacea,"""rosacea natural treatment""",[rosacea natural treatment],
+WW | NZ | Skin Conditions,Rosacea,"""rosacea naturopath""",[rosacea naturopath],NEW
+WW | NZ | Skin Conditions,Rosacea,"""rosacea naturopath consultation""",[rosacea naturopath consultation],
+WW | NZ | Skin Conditions,Rosacea,"""rosacea naturopath cost nz""",[rosacea naturopath cost nz],
+WW | NZ | Skin Conditions,Rosacea,"""rosacea naturopath nz""",[rosacea naturopath nz],
+WW | NZ | Skin Conditions,Rosacea,"""rosacea specialist""",[rosacea specialist],NEW
+WW | NZ | Skin Conditions,Rosacea,"""rosacea specialist nz""",[rosacea specialist nz],NEW
+WW | NZ | Skin Conditions,Rosacea,"""rosacea treatment""",[rosacea treatment],NEW
+WW | NZ | Skin Conditions,Rosacea,"""rosacea treatment nz""",[rosacea treatment nz],NEW
+WW | NZ | Skin Conditions,Rosacea,"""rosacea triggers""",[rosacea triggers],NEW
+WW | NZ | Skin Conditions,Rosacea,"""what triggers rosacea flare ups""",[what triggers rosacea flare ups],
+
+
+WW | NZ | Skin Conditions,Skin Infections,"""best online skin naturopath nz""",[best online skin naturopath nz],
+WW | NZ | Skin Conditions,Skin Infections,"""chronic hives""",[chronic hives],NEW
+WW | NZ | Skin Conditions,Skin Infections,"""chronic hives naturopath nz""",[chronic hives naturopath nz],
+WW | NZ | Skin Conditions,Skin Infections,"""chronic urticaria naturopath nz""",[chronic urticaria naturopath nz],NEW
+WW | NZ | Skin Conditions,Skin Infections,"""fungal skin naturopath nz""",[fungal skin naturopath nz],NEW
+WW | NZ | Skin Conditions,Skin Infections,"""hives help""",[hives help],NEW
+WW | NZ | Skin Conditions,Skin Infections,"""hives naturopath nz""",[hives naturopath nz],NEW
+WW | NZ | Skin Conditions,Skin Infections,"""hives treatment""",[hives treatment],NEW
+WW | NZ | Skin Conditions,Skin Infections,"""immune system skin naturopath""",[immune system skin naturopath],
+WW | NZ | Skin Conditions,Skin Infections,"""itchy skin help""",[itchy skin help],NEW
+WW | NZ | Skin Conditions,Skin Infections,"""itchy skin naturopath nz""",[itchy skin naturopath nz],NEW
+WW | NZ | Skin Conditions,Skin Infections,"""natural skin infection support""",[natural skin infection support],
+WW | NZ | Skin Conditions,Skin Infections,"""naturopath chronic urticaria""",[naturopath chronic urticaria],
+WW | NZ | Skin Conditions,Skin Infections,"""naturopath for folliculitis""",[naturopath for folliculitis],NEW
+WW | NZ | Skin Conditions,Skin Infections,"""naturopath for hives""",[naturopath for hives],NEW
+WW | NZ | Skin Conditions,Skin Infections,"""naturopath for itchy skin""",[naturopath for itchy skin],NEW
+WW | NZ | Skin Conditions,Skin Infections,"""naturopath for skin infections""",[naturopath for skin infections],
+WW | NZ | Skin Conditions,Skin Infections,"""naturopath immune skin support""",[naturopath immune skin support],
+WW | NZ | Skin Conditions,Skin Infections,"""recurring boils""",[recurring boils],NEW
+WW | NZ | Skin Conditions,Skin Infections,"""recurring boils naturopath""",[recurring boils naturopath],
+WW | NZ | Skin Conditions,Skin Infections,"""recurring hives""",[recurring hives],NEW
+WW | NZ | Skin Conditions,Skin Infections,"""recurring hives naturopath""",[recurring hives naturopath],NEW
+WW | NZ | Skin Conditions,Skin Infections,"""recurring skin infection naturopath nz""",[recurring skin infection naturopath nz],
+WW | NZ | Skin Conditions,Skin Infections,"""recurring skin infections naturopath""",[recurring skin infections naturopath],
+WW | NZ | Skin Conditions,Skin Infections,"""registered naturopath skin infections""",[registered naturopath skin infections],
+WW | NZ | Skin Conditions,Skin Infections,"""skin infection gut health naturopath""",[skin infection gut health naturopath],
+WW | NZ | Skin Conditions,Skin Infections,"""skin infection help""",[skin infection help],NEW
+WW | NZ | Skin Conditions,Skin Infections,"""skin infection naturopath""",[skin infection naturopath],NEW
+WW | NZ | Skin Conditions,Skin Infections,"""skin infection naturopath cost nz""",[skin infection naturopath cost nz],
+WW | NZ | Skin Conditions,Skin Infections,"""skin infection naturopath nz""",[skin infection naturopath nz],
+WW | NZ | Skin Conditions,Skin Infections,"""staph skin naturopath""",[staph skin naturopath],
+WW | NZ | Skin Conditions,Skin Infections,"""urticaria help""",[urticaria help],NEW
+WW | NZ | Skin Conditions,Skin Infections,"""why do i keep getting skin infections""",[why do i keep getting skin infections],
+
+
+
+"AD COPY — RESPONSIVE SEARCH ADS (H<=30, D<=90)"
+Campaign,Ad Group,H1,H2,H3,H4,H5,H6,H7,H8,H9,H10,H11,H12,H13,H14,H15,D1,D2,D3,D4,Path1,Path2,Final URL,Pin plan
+WW | NZ | Brand 2026,Brand - Waterwell,Waterwell Clinic,Waterwell Naturopath,"Kohei Iguchi, Naturopath","Skin, Gut, Hormones & Energy",Root-Cause Naturopathy,Tests Posted To Your Door,75-Min Initial Consultation,"One Practitioner, Every Visit",Works Alongside Your GP,Free 15-Minute Chat First,Herbal Formulas Made For You,"Waterwell, NZ-Wide",Book With Waterwell,See Consultation Options,Book Your Consultation,"Waterwell Clinic. Kohei Iguchi's naturopathy practice for skin, gut, hormones and energy.","A 75-minute initial consultation that looks for the cause, not another thing to manage.","A free 15-minute discovery session first, or book the full consultation.","Naturopathy that works alongside your GP and current medication, not against it.",waterwell,clinic,https://waterwellclinic.com/nz,Pos1 pin: 'Waterwell Clinic'. Rest unpinned.
+
+
+WW | NZ | Online Naturopath,Online Naturopath Consult,Online Naturopath NZ,Online Naturopath Consultation,Told Your Bloods Are Normal,Tired Of Managing Symptoms,Find The Root Cause,"Lab Testing, Done At Home",Consults By Secure Video,Same Practitioner Each Time,Your GP Stays In The Loop,Start With A Free 15 Mins,Individually Prescribed Herbs,"Online Naturopath, NZ-Wide",Book A Naturopath Consult,See What's Actually Wrong,Book Your First Session,Still no answers after normal bloods? A 75-minute consultation that looks for the cause.,"Functional testing posted to your door, then a plan built on your actual results.","Start with a free 15-minute session, or go straight to a full consultation.",Works alongside the medical care you already have. Nothing is replaced.,online,naturopath,https://waterwellclinic.com/nz,Pos1 pin: 'Online Naturopath NZ'. Rest unpinned.
+
+
+WW | NZ | Online Naturopath,General Naturopathy,Naturopath NZ,Naturopath Consultation Online,No Good Naturopath Near You?,"Answers, Not Another Symptom","Whole-Body, Not Just The Bit",Test Kits Sent Out To You,Fully Online Consultations,"No Waitlist, Book Direct",Alongside Your Doctor's Care,Your First Call Is Free,Herbs Chosen For Your Case,Naturopath Across NZ,Book A Naturopathy Session,Get To The Cause,Book Your Consult Today,"No decent naturopath nearby? Consultations run by video, so location stops mattering.","Gut, skin, hormones, sleep and energy, looked at together rather than one at a time.","A free 15-minute discovery session first, or book the full consultation.",Works alongside the medical care you already have. Nothing is replaced.,naturopath,nz,https://waterwellclinic.com/nz,Pos1 pin: 'Naturopath NZ'. Rest unpinned.
+
+
+WW | NZ | Online Naturopath,Herbal Medicine,Medical Herbalist NZ,Online Herbal Medicine,Not Another Off-Shelf Bottle,Tried Every Supplement Going,Formulas Made For You,Answers From Actual Testing,A Full 75-Minute Appointment,"Your Case, Not A Protocol",Keeps Your Doctor Informed,Free 15-Min Discovery Call,Made Up For Your Case,"Herbal Medicine, NZ-Wide",Book A Herbal Consult,Get Your Own Formula,Speak To A Herbalist,"Individually prescribed herbal formulas, chosen for your case, not pulled off a shelf.","Your formula is adjusted as your body responds, not repeated on autopilot.","Start with a free 15-minute session, or go straight to a full consultation.",Works alongside the medical care you already have. Nothing is replaced.,herbal,medicine,https://waterwellclinic.com/nz,Pos1 pin: 'Medical Herbalist NZ'. Rest unpinned.
+
+
+WW | NZ | Skin Conditions,Eczema,Naturopath For Eczema,Eczema Naturopath Online,Itching That Wakes You At 3am,Flares That Keep Coming Back,Eczema Starts On The Inside,"Test First, Then Treat","Private, Secure Video Calls","One-On-One, Start To Finish",Works With Your Doctor,Start With A Free Chat,Not A Shelf Supplement,"Eczema Support, NZ-Wide",Book An Eczema Consult,"Treat The Cause, Not The Flare",Start Your Eczema Plan,Steroid creams calm the flare. They don't touch whatever keeps causing it.,Kohei was once head to toe in eczema himself. He treats the gut and immune drivers.,"A free 15-minute discovery session first, or book the full consultation.",Works alongside the medical care you already have. Nothing is replaced.,online,eczema,https://waterwellclinic.com/conditions/eczema,Pos1 pin: 'Naturopath For Eczema'. Rest unpinned.
+
+
+WW | NZ | Skin Conditions,Topical Steroid Withdrawal,TSW Naturopath,Topical Steroid Withdrawal,Worse Since Stopping Steroids,"Red, Burning, Shedding Skin","TSW Is A Process, Not A Flare",Lab Work Without The Clinic,Consult From Your Own Home,Time To Tell It Properly,Fits Around Your GP's Care,A Free First Conversation,Herbs Matched To Your Case,"TSW Support, NZ-Wide",Book A TSW Consult,Get Real TSW Support,Start Your TSW Plan,"Topical steroid withdrawal is brutal, and badly understood. You don't have to guess.",Kohei came off long-term steroids himself. Support that takes TSW seriously.,"Start with a free 15-minute session, or go straight to a full consultation.","Naturopathy that works alongside your GP and current medication, not against it.",online,tsw,https://waterwellclinic.com/conditions/tsw,Pos1 pin: 'TSW Naturopath'. Rest unpinned.
+
+
+WW | NZ | Skin Conditions,Psoriasis,Naturopath For Psoriasis,Psoriasis Naturopath Online,Plaques That Never Fully Go,Flares With No Clear Trigger,Psoriasis Is An Immune Signal,"Your Results, Your Plan",Online Video Appointments,Seen As A Whole Person,Alongside Your Current Care,"Talk First, Free Of Charge",A Formula Built For You,"Psoriasis Support, NZ-Wide",Book A Psoriasis Consult,"Calm The Driver, Not The Skin",Start Your Psoriasis Plan,Psoriasis is immune-driven. Calming the skin without calming the driver never holds.,"Diet, gut and immune factors looked at together, then tested where it's unclear.","A free 15-minute discovery session first, or book the full consultation.",Works alongside the medical care you already have. Nothing is replaced.,online,psoriasis,https://waterwellclinic.com/conditions/psoriasis,Pos1 pin: 'Naturopath For Psoriasis'. Rest unpinned.
+
+
+WW | NZ | Skin Conditions,Acne,Naturopath For Acne,Hormonal Acne Naturopath,Adult Acne That Won't Clear,Breakouts On A Monthly Cycle,Acne Is A Hormone & Gut Signal,Guesswork Taken Out,"No Travel, No Waiting Room","Continuity, Every Appointment",Your Doctor Stays Involved,Free Intro Call Available,Adjusted As Your Body Responds,"Acne Support, NZ-Wide",Book An Acne Consult,Clear It From The Inside,Start Your Acne Plan,Adult acne is rarely about your face wash. Usually it's hormones and gut.,"Hormone and gut testing posted out, then a plan built on what it actually shows.","Start with a free 15-minute session, or go straight to a full consultation.",Works alongside the medical care you already have. Nothing is replaced.,online,acne,https://waterwellclinic.com/conditions/acne,Pos1 pin: 'Naturopath For Acne'. Rest unpinned.
+
+
+WW | NZ | Skin Conditions,Rosacea,Naturopath For Rosacea,Rosacea Naturopath Online,Redness That Flares At Random,Flushing You Can't Predict,Find Your Rosacea Triggers,"Tested, Not Assumed",Appointments That Fit Work,The Same Face Each Time,"With Your GP, Not Against",First Conversation Is Free,Custom Herbal Prescribing,"Rosacea Support, NZ-Wide",Book A Rosacea Consult,Find What Sets It Off,Start Your Rosacea Plan,Rosacea flares have triggers. Most people are never shown how to find theirs.,"Gut, diet and trigger factors mapped properly, rather than managing the redness.","A free 15-minute discovery session first, or book the full consultation.","Naturopathy that works alongside your GP and current medication, not against it.",online,rosacea,https://waterwellclinic.com/conditions/rosacea,Pos1 pin: 'Naturopath For Rosacea'. Rest unpinned.
+
+
+WW | NZ | Skin Conditions,Skin Infections,Naturopath For Skin Infections,Chronic Hives Naturopath,Infections That Keep Returning,Hives With No Known Cause,Recurring Is An Immune Signal,Evidence Before Advice,"Seen Properly, Not Rushed",Your History Actually Heard,Supports Your Medical Care,A Free Chat Before You Book,"Herbal Medicine, Personalised","Skin Support, NZ-Wide",Book A Skin Consult,Stop The Cycle Repeating,Start Your Skin Plan,"Skin infections and hives that keep returning are a signal, not bad luck.","Immune and gut testing posted out, so recurring problems get looked at properly.","Start with a free 15-minute session, or go straight to a full consultation.",Works alongside the medical care you already have. Nothing is replaced.,online,skin,https://waterwellclinic.com/conditions/skin-infections,Pos1 pin: 'Naturopath For Skin Infections'. Rest unpinned.
+
+
+
+"NEGATIVE KEYWORDS — phrase match, per ad group"
+Campaign,Ad Group,Negatives (phrase match)
+WW | NZ | Brand 2026,Brand - Waterwell,"""jobs""; ""careers"""
+
+
+WW | NZ | Online Naturopath,Online Naturopath Consult,"""free""; ""jobs""; ""job""; ""career""; ""careers""; ""course""; ""courses""; ""class""; ""classes""; ""training""; ""become a naturopath""; ""school""; ""degree""; ""diploma""; ""certificate""; ""university""; ""salary""; ""wage""; ""what is""; ""definition""; ""meaning""; ""wikipedia""; ""wiki""; ""reddit""; ""forum""; ""quora""; ""pdf""; ""doctor appointment""; ""see a doctor""; ""find a doctor""; ""gp near me""; ""find a gp""; ""gp appointment""; ""gp clinic""; ""pharmacy""; ""chemist""; ""prescription""; ""buy medication""; ""cheap medication""; ""cream""; ""ointment"""
+
+
+WW | NZ | Online Naturopath,General Naturopathy,"""free""; ""jobs""; ""job""; ""career""; ""careers""; ""course""; ""courses""; ""class""; ""classes""; ""training""; ""become a naturopath""; ""school""; ""degree""; ""diploma""; ""certificate""; ""university""; ""salary""; ""wage""; ""what is""; ""definition""; ""meaning""; ""wikipedia""; ""wiki""; ""reddit""; ""forum""; ""quora""; ""pdf""; ""doctor appointment""; ""see a doctor""; ""find a doctor""; ""gp near me""; ""find a gp""; ""gp appointment""; ""gp clinic""; ""pharmacy""; ""chemist""; ""prescription""; ""buy medication""; ""cheap medication""; ""cream""; ""ointment"""
+
+
+WW | NZ | Online Naturopath,Herbal Medicine,"""free""; ""jobs""; ""job""; ""career""; ""careers""; ""course""; ""courses""; ""class""; ""classes""; ""training""; ""become a herbalist""; ""school""; ""degree""; ""diploma""; ""certificate""; ""university""; ""salary""; ""wage""; ""what is""; ""definition""; ""meaning""; ""wikipedia""; ""wiki""; ""reddit""; ""forum""; ""quora""; ""pdf""; ""buy herbs""; ""buy herbal""; ""herbal supplements""; ""herbal tea""; ""herbal tincture""; ""shop""; ""stockist""; ""wholesale""; ""supplier""; ""dispensary""; ""doctor appointment""; ""see a doctor""; ""find a doctor""; ""pharmacy""; ""chemist""; ""prescription"""
+
+
+WW | NZ | Skin Conditions,Eczema,"""free""; ""jobs""; ""job""; ""career""; ""careers""; ""course""; ""courses""; ""class""; ""classes""; ""training""; ""become a naturopath""; ""school""; ""degree""; ""diploma""; ""certificate""; ""university""; ""salary""; ""wage""; ""what is""; ""definition""; ""meaning""; ""wikipedia""; ""wiki""; ""reddit""; ""forum""; ""quora""; ""pdf""; ""doctor appointment""; ""see a doctor""; ""find a doctor""; ""gp near me""; ""find a gp""; ""gp appointment""; ""gp clinic""; ""pharmacy""; ""chemist""; ""prescription""; ""buy medication""; ""cheap medication""; ""cream""; ""ointment"""
+
+
+WW | NZ | Skin Conditions,Topical Steroid Withdrawal,"""free""; ""jobs""; ""job""; ""career""; ""careers""; ""course""; ""courses""; ""class""; ""classes""; ""training""; ""become a naturopath""; ""school""; ""degree""; ""diploma""; ""certificate""; ""university""; ""salary""; ""wage""; ""what is""; ""definition""; ""meaning""; ""wikipedia""; ""wiki""; ""reddit""; ""forum""; ""quora""; ""pdf""; ""doctor appointment""; ""see a doctor""; ""find a doctor""; ""gp near me""; ""find a gp""; ""gp appointment""; ""gp clinic""; ""pharmacy""; ""chemist""; ""prescription""; ""buy medication""; ""cheap medication""; ""buy steroid cream""; ""best steroid cream""; ""steroid cream price"""
+
+
+WW | NZ | Skin Conditions,Psoriasis,"""free""; ""jobs""; ""job""; ""career""; ""careers""; ""course""; ""courses""; ""class""; ""classes""; ""training""; ""become a naturopath""; ""school""; ""degree""; ""diploma""; ""certificate""; ""university""; ""salary""; ""wage""; ""what is""; ""definition""; ""meaning""; ""wikipedia""; ""wiki""; ""reddit""; ""forum""; ""quora""; ""pdf""; ""doctor appointment""; ""see a doctor""; ""find a doctor""; ""gp near me""; ""find a gp""; ""gp appointment""; ""gp clinic""; ""pharmacy""; ""chemist""; ""prescription""; ""buy medication""; ""cheap medication""; ""cream""; ""ointment"""
+
+
+WW | NZ | Skin Conditions,Acne,"""free""; ""jobs""; ""job""; ""career""; ""careers""; ""course""; ""courses""; ""class""; ""classes""; ""training""; ""become a naturopath""; ""school""; ""degree""; ""diploma""; ""certificate""; ""university""; ""salary""; ""wage""; ""what is""; ""definition""; ""meaning""; ""wikipedia""; ""wiki""; ""reddit""; ""forum""; ""quora""; ""pdf""; ""doctor appointment""; ""see a doctor""; ""find a doctor""; ""gp near me""; ""find a gp""; ""gp appointment""; ""gp clinic""; ""pharmacy""; ""chemist""; ""prescription""; ""buy medication""; ""cheap medication""; ""cream""; ""ointment"""
+
+
+WW | NZ | Skin Conditions,Rosacea,"""free""; ""jobs""; ""job""; ""career""; ""careers""; ""course""; ""courses""; ""class""; ""classes""; ""training""; ""become a naturopath""; ""school""; ""degree""; ""diploma""; ""certificate""; ""university""; ""salary""; ""wage""; ""what is""; ""definition""; ""meaning""; ""wikipedia""; ""wiki""; ""reddit""; ""forum""; ""quora""; ""pdf""; ""doctor appointment""; ""see a doctor""; ""find a doctor""; ""gp near me""; ""find a gp""; ""gp appointment""; ""gp clinic""; ""pharmacy""; ""chemist""; ""prescription""; ""buy medication""; ""cheap medication""; ""cream""; ""ointment"""
+
+
+WW | NZ | Skin Conditions,Skin Infections,"""free""; ""jobs""; ""job""; ""career""; ""careers""; ""course""; ""courses""; ""class""; ""classes""; ""training""; ""become a naturopath""; ""school""; ""degree""; ""diploma""; ""certificate""; ""university""; ""salary""; ""wage""; ""what is""; ""definition""; ""meaning""; ""wikipedia""; ""wiki""; ""reddit""; ""forum""; ""quora""; ""pdf""; ""doctor appointment""; ""see a doctor""; ""find a doctor""; ""gp near me""; ""find a gp""; ""gp appointment""; ""gp clinic""; ""pharmacy""; ""chemist""; ""prescription""; ""buy medication""; ""cheap medication""; ""cream""; ""ointment"""
+
+
+
+SHARED NEGATIVE LISTS (phrase match)
+Junk & Informational,"""free""; ""jobs""; ""job""; ""career""; ""careers""; ""course""; ""courses""; ""class""; ""classes""; ""training""; ""become a naturopath""; ""school""; ""degree""; ""diploma""; ""certificate""; ""university""; ""salary""; ""wage""; ""what is""; ""definition""; ""meaning""; ""wikipedia""; ""wiki""; ""reddit""; ""forum""; ""quora""; ""pdf"""
+Not Our Service,"""doctor appointment""; ""see a doctor""; ""find a doctor""; ""gp near me""; ""find a gp""; ""gp appointment""; ""gp clinic""; ""dermatologist""; ""pharmacy""; ""chemist""; ""prescription""; ""buy medication""; ""medication side effects""; ""cheap medication""; ""buy cream""; ""best cream""; ""cream for eczema""; ""eczema cream""; ""buy ointment""; ""best ointment""; ""buy steroid cream""; ""best steroid cream""; ""steroid cream price""; ""steroid cream side effects""; ""dupixent""; ""cure""; ""detox""; ""cleanse"""
+
+EXTENSIONS
+Type,Text,Desc 1,Desc 2,URL
+Sitelink,Book a Free 15-Min Call,A short call to ask questions,Then book if it suits,https://waterwellclinic.com/nz#visit
+Sitelink,Book an Initial Consult,The full naturopathy appointment,"By secure video, NZ-wide",https://waterwellclinic.com/nz#visit
+Sitelink,Skin Health,"Eczema, TSW, psoriasis, acne",Rosacea and skin infections,https://waterwellclinic.com/nz#conditions
+Sitelink,"Gut, Hormones & Energy","Digestion, cycle, fatigue",Whole-body naturopathy,https://waterwellclinic.com/conditions/gut-health
+Sitelink,Meet Kohei,"BNatMed, BSc, MATMS",10+ years in natural health,https://waterwellclinic.com/nz#story
+Sitelink,How It Works,Consults by secure video,"One practitioner, every visit",https://waterwellclinic.com/nz#how
+Callout,Qualified Naturopath,,,
+Callout,Personalised Plans,,,
+Callout,Root-Cause Approach,,,
+Callout,10+ Years Experience,,,
+Callout,Consults By Secure Video,,,
+Callout,"Online, NZ-Wide",,,
+Callout,Same Practitioner,,,
+Callout,Works Alongside Your GP,,,
+Snippet: Services,Naturopathy,,,
+Snippet: Services,Herbal Medicine,,,
+Snippet: Services,Skin Health,,,
+Snippet: Services,Gut Health,,,
+Snippet: Services,Hormone Support,,,
+Snippet: Services,Functional Testing,,,

@@ -1,0 +1,56 @@
+List,Keyword,Match Type
+Junk & Informational,free,Phrase
+Junk & Informational,jobs,Phrase
+Junk & Informational,job,Phrase
+Junk & Informational,career,Phrase
+Junk & Informational,careers,Phrase
+Junk & Informational,course,Phrase
+Junk & Informational,courses,Phrase
+Junk & Informational,class,Phrase
+Junk & Informational,classes,Phrase
+Junk & Informational,training,Phrase
+Junk & Informational,become a naturopath,Phrase
+Junk & Informational,school,Phrase
+Junk & Informational,degree,Phrase
+Junk & Informational,diploma,Phrase
+Junk & Informational,certificate,Phrase
+Junk & Informational,university,Phrase
+Junk & Informational,salary,Phrase
+Junk & Informational,wage,Phrase
+Junk & Informational,what is,Phrase
+Junk & Informational,definition,Phrase
+Junk & Informational,meaning,Phrase
+Junk & Informational,wikipedia,Phrase
+Junk & Informational,wiki,Phrase
+Junk & Informational,reddit,Phrase
+Junk & Informational,forum,Phrase
+Junk & Informational,quora,Phrase
+Junk & Informational,pdf,Phrase
+Not Our Service,doctor appointment,Phrase
+Not Our Service,see a doctor,Phrase
+Not Our Service,find a doctor,Phrase
+Not Our Service,gp near me,Phrase
+Not Our Service,find a gp,Phrase
+Not Our Service,gp appointment,Phrase
+Not Our Service,gp clinic,Phrase
+Not Our Service,dermatologist,Phrase
+Not Our Service,pharmacy,Phrase
+Not Our Service,chemist,Phrase
+Not Our Service,prescription,Phrase
+Not Our Service,buy medication,Phrase
+Not Our Service,medication side effects,Phrase
+Not Our Service,cheap medication,Phrase
+Not Our Service,buy cream,Phrase
+Not Our Service,best cream,Phrase
+Not Our Service,cream for eczema,Phrase
+Not Our Service,eczema cream,Phrase
+Not Our Service,buy ointment,Phrase
+Not Our Service,best ointment,Phrase
+Not Our Service,buy steroid cream,Phrase
+Not Our Service,best steroid cream,Phrase
+Not Our Service,steroid cream price,Phrase
+Not Our Service,steroid cream side effects,Phrase
+Not Our Service,dupixent,Phrase
+Not Our Service,cure,Phrase
+Not Our Service,detox,Phrase
+Not Our Service,cleanse,Phrase

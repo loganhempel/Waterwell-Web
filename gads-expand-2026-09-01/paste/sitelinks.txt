@@ -1,0 +1,31 @@
+Campaign	Sitelink text	Description line 1	Description line 2	Final URL
+WW | NZ | Brand 2026	Book a Free 15-Min Call	A short call to ask questions	Then book if it suits	https://waterwellclinic.com/nz#visit
+WW | NZ | Brand 2026	Book an Initial Consult	The full naturopathy appointment	By secure video, NZ-wide	https://waterwellclinic.com/nz#visit
+WW | NZ | Brand 2026	Skin Health	Eczema, TSW, psoriasis, acne	Rosacea and skin infections	https://waterwellclinic.com/nz#conditions
+WW | NZ | Brand 2026	Gut, Hormones & Energy	Digestion, cycle, fatigue	Whole-body naturopathy	https://waterwellclinic.com/conditions/gut-health
+WW | NZ | Brand 2026	Meet Kohei	BNatMed, BSc, MATMS	10+ years in natural health	https://waterwellclinic.com/nz#story
+WW | NZ | Brand 2026	How It Works	Consults by secure video	One practitioner, every visit	https://waterwellclinic.com/nz#how
+WW | NZ | Online Naturopath	Book a Free 15-Min Call	A short call to ask questions	Then book if it suits	https://waterwellclinic.com/nz#visit
+WW | NZ | Online Naturopath	Book an Initial Consult	The full naturopathy appointment	By secure video, NZ-wide	https://waterwellclinic.com/nz#visit
+WW | NZ | Online Naturopath	Skin Health	Eczema, TSW, psoriasis, acne	Rosacea and skin infections	https://waterwellclinic.com/nz#conditions
+WW | NZ | Online Naturopath	Gut, Hormones & Energy	Digestion, cycle, fatigue	Whole-body naturopathy	https://waterwellclinic.com/conditions/gut-health
+WW | NZ | Online Naturopath	Meet Kohei	BNatMed, BSc, MATMS	10+ years in natural health	https://waterwellclinic.com/nz#story
+WW | NZ | Online Naturopath	How It Works	Consults by secure video	One practitioner, every visit	https://waterwellclinic.com/nz#how
+WW | NZ | Skin Conditions	Book a Free 15-Min Call	A short call to ask questions	Then book if it suits	https://waterwellclinic.com/nz#visit
+WW | NZ | Skin Conditions	Book an Initial Consult	The full naturopathy appointment	By secure video, NZ-wide	https://waterwellclinic.com/nz#visit
+WW | NZ | Skin Conditions	Skin Health	Eczema, TSW, psoriasis, acne	Rosacea and skin infections	https://waterwellclinic.com/nz#conditions
+WW | NZ | Skin Conditions	Gut, Hormones & Energy	Digestion, cycle, fatigue	Whole-body naturopathy	https://waterwellclinic.com/conditions/gut-health
+WW | NZ | Skin Conditions	Meet Kohei	BNatMed, BSc, MATMS	10+ years in natural health	https://waterwellclinic.com/nz#story
+WW | NZ | Skin Conditions	How It Works	Consults by secure video	One practitioner, every visit	https://waterwellclinic.com/nz#how
+WW | AU | Online Naturopath	Book a Free 15-Min Chat	A short call to ask questions	Then book if it suits	https://waterwellclinic.com/au#visit
+WW | AU | Online Naturopath	Book a Full Consultation	The complete appointment	By secure video	https://waterwellclinic.com/au#visit
+WW | AU | Online Naturopath	Skin Health	Eczema, TSW, psoriasis, acne	Rosacea and skin concerns	https://waterwellclinic.com/au#conditions
+WW | AU | Online Naturopath	Gut, Hormones & Energy	Digestion, cycle, fatigue	Whole-body naturopathy	https://waterwellclinic.com/conditions/gut-health
+WW | AU | Online Naturopath	Meet Kohei	BNatMed, BSc, MATMS	10+ years in natural health	https://waterwellclinic.com/au#story
+WW | AU | Online Naturopath	How It Works	Consultations by secure video	One practitioner, every visit	https://waterwellclinic.com/au#how
+WW | AU | Skin Conditions	Book a Free 15-Min Chat	A short call to ask questions	Then book if it suits	https://waterwellclinic.com/au#visit
+WW | AU | Skin Conditions	Book a Full Consultation	The complete appointment	By secure video	https://waterwellclinic.com/au#visit
+WW | AU | Skin Conditions	Skin Health	Eczema, TSW, psoriasis, acne	Rosacea and skin concerns	https://waterwellclinic.com/au#conditions
+WW | AU | Skin Conditions	Gut, Hormones & Energy	Digestion, cycle, fatigue	Whole-body naturopathy	https://waterwellclinic.com/conditions/gut-health
+WW | AU | Skin Conditions	Meet Kohei	BNatMed, BSc, MATMS	10+ years in natural health	https://waterwellclinic.com/au#story
+WW | AU | Skin Conditions	How It Works	Consultations by secure video	One practitioner, every visit	https://waterwellclinic.com/au#how

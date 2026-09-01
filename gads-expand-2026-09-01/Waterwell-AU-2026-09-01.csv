@@ -1,0 +1,429 @@
+"Waterwell Naturopath — AU SEARCH BUILD, 1 Sep 2026"
+"2 campaigns | 9 ad groups | 303 unique terms | ""phrase"" = phrase match · [exact] = exact match · broad NOT used"
+"Extends the 22 Aug build. Every final URL verified on waterwellclinic.com. Ad groups aligned to the site: 6 skin + 4 whole-body condition pages, plus the three named services."
+
+CAMPAIGN MAP
+Campaign,Stage 1 daily $,Bid Strategy,Ad Group,Final URL,Unique terms,Kohei 20 Jul
+WW | AU | Online Naturopath,0.0,"Maximise Clicks, max-CPC cap ~$3.50 NZD",Online Naturopath Consult AU,https://waterwellclinic.com/au,59,
+,,,General Naturopathy AU,https://waterwellclinic.com/au,35,
+,,,Herbal Medicine AU,https://waterwellclinic.com/au,21,
+
+
+WW | AU | Skin Conditions,0.0,"Maximise Clicks, max-CPC cap ~$3.50 NZD",Eczema AU,https://waterwellclinic.com/conditions/eczema,41,
+,,,TSW AU,https://waterwellclinic.com/conditions/tsw,31,
+,,,Psoriasis AU,https://waterwellclinic.com/conditions/psoriasis,29,
+,,,Acne AU,https://waterwellclinic.com/conditions/acne,33,
+,,,Rosacea AU,https://waterwellclinic.com/conditions/rosacea,27,
+,,,Skin Infections AU,https://waterwellclinic.com/conditions/skin-infections,27,
+
+
+KEYWORDS — each targeted as BOTH phrase and exact
+Campaign,Ad Group,"Phrase match  ""...""",Exact match  [...],NEW 1 Sep?
+WW | AU | Online Naturopath,Online Naturopath Consult AU,"""affordable naturopath australia""",[affordable naturopath australia],NEW
+WW | AU | Online Naturopath,Online Naturopath Consult AU,"""best online naturopath australia""",[best online naturopath australia],
+WW | AU | Online Naturopath,Online Naturopath Consult AU,"""book a naturopath""",[book a naturopath],NEW
+WW | AU | Online Naturopath,Online Naturopath Consult AU,"""book a naturopath appointment online""",[book a naturopath appointment online],
+WW | AU | Online Naturopath,Online Naturopath Consult AU,"""book a naturopath consultation""",[book a naturopath consultation],NEW
+WW | AU | Online Naturopath,Online Naturopath Consult AU,"""book naturopath online""",[book naturopath online],
+WW | AU | Online Naturopath,Online Naturopath Consult AU,"""childrens naturopath australia""",[childrens naturopath australia],NEW
+WW | AU | Online Naturopath,Online Naturopath Consult AU,"""consult a naturopath online""",[consult a naturopath online],NEW
+WW | AU | Online Naturopath,Online Naturopath Consult AU,"""family naturopath australia""",[family naturopath australia],NEW
+WW | AU | Online Naturopath,Online Naturopath Consult AU,"""functional medicine testing australia""",[functional medicine testing australia],NEW
+WW | AU | Online Naturopath,Online Naturopath Consult AU,"""functional testing naturopath australia""",[functional testing naturopath australia],NEW
+WW | AU | Online Naturopath,Online Naturopath Consult AU,"""holistic naturopath online australia""",[holistic naturopath online australia],
+WW | AU | Online Naturopath,Online Naturopath Consult AU,"""initial naturopath consultation australia""",[initial naturopath consultation australia],
+WW | AU | Online Naturopath,Online Naturopath Consult AU,"""natural health practitioner online australia""",[natural health practitioner online australia],
+WW | AU | Online Naturopath,Online Naturopath Consult AU,"""natural medicine practitioner australia""",[natural medicine practitioner australia],NEW
+WW | AU | Online Naturopath,Online Naturopath Consult AU,"""naturopath appointment""",[naturopath appointment],NEW
+WW | AU | Online Naturopath,Online Naturopath Consult AU,"""naturopath appointment australia""",[naturopath appointment australia],NEW
+WW | AU | Online Naturopath,Online Naturopath Consult AU,"""naturopath booking""",[naturopath booking],NEW
+WW | AU | Online Naturopath,Online Naturopath Consult AU,"""naturopath consult""",[naturopath consult],NEW
+WW | AU | Online Naturopath,Online Naturopath Consult AU,"""naturopath consultation""",[naturopath consultation],NEW
+WW | AU | Online Naturopath,Online Naturopath Consult AU,"""naturopath consultation online australia""",[naturopath consultation online australia],
+WW | AU | Online Naturopath,Online Naturopath Consult AU,"""naturopath consultation price australia""",[naturopath consultation price australia],
+WW | AU | Online Naturopath,Online Naturopath Consult AU,"""naturopath cost australia""",[naturopath cost australia],NEW
+WW | AU | Online Naturopath,Online Naturopath Consult AU,"""naturopath discovery call""",[naturopath discovery call],NEW
+WW | AU | Online Naturopath,Online Naturopath Consult AU,"""naturopath for kids australia""",[naturopath for kids australia],NEW
+WW | AU | Online Naturopath,Online Naturopath Consult AU,"""naturopath online""",[naturopath online],
+WW | AU | Online Naturopath,Online Naturopath Consult AU,"""naturopath online australia""",[naturopath online australia],
+WW | AU | Online Naturopath,Online Naturopath Consult AU,"""naturopath online consultation""",[naturopath online consultation],
+WW | AU | Online Naturopath,Online Naturopath Consult AU,"""naturopath prices australia""",[naturopath prices australia],NEW
+WW | AU | Online Naturopath,Online Naturopath Consult AU,"""naturopath session""",[naturopath session],NEW
+WW | AU | Online Naturopath,Online Naturopath Consult AU,"""naturopath telehealth booking australia""",[naturopath telehealth booking australia],
+WW | AU | Online Naturopath,Online Naturopath Consult AU,"""naturopath video call""",[naturopath video call],
+WW | AU | Online Naturopath,Online Naturopath Consult AU,"""naturopath video consultation""",[naturopath video consultation],
+WW | AU | Online Naturopath,Online Naturopath Consult AU,"""naturopath zoom consultation""",[naturopath zoom consultation],
+WW | AU | Online Naturopath,Online Naturopath Consult AU,"""naturopathic consultation australia""",[naturopathic consultation australia],NEW
+WW | AU | Online Naturopath,Online Naturopath Consult AU,"""naturopathic doctor australia""",[naturopathic doctor australia],NEW
+WW | AU | Online Naturopath,Online Naturopath Consult AU,"""naturopathic practitioner australia""",[naturopathic practitioner australia],NEW
+WW | AU | Online Naturopath,Online Naturopath Consult AU,"""online holistic health consultation australia""",[online holistic health consultation australia],
+WW | AU | Online Naturopath,Online Naturopath Consult AU,"""online naturopath""",[online naturopath],
+WW | AU | Online Naturopath,Online Naturopath Consult AU,"""online naturopath australia""",[online naturopath australia],
+WW | AU | Online Naturopath,Online Naturopath Consult AU,"""online naturopath consult""",[online naturopath consult],
+WW | AU | Online Naturopath,Online Naturopath Consult AU,"""online naturopath consultation""",[online naturopath consultation],
+WW | AU | Online Naturopath,Online Naturopath Consult AU,"""online naturopath cost australia""",[online naturopath cost australia],
+WW | AU | Online Naturopath,Online Naturopath Consult AU,"""online naturopath for australians""",[online naturopath for australians],
+WW | AU | Online Naturopath,Online Naturopath Consult AU,"""online naturopath session australia""",[online naturopath session australia],
+WW | AU | Online Naturopath,Online Naturopath Consult AU,"""online naturopathic consultation""",[online naturopathic consultation],
+WW | AU | Online Naturopath,Online Naturopath Consult AU,"""paediatric naturopath australia""",[paediatric naturopath australia],NEW
+WW | AU | Online Naturopath,Online Naturopath Consult AU,"""qualified naturopath online""",[qualified naturopath online],
+WW | AU | Online Naturopath,Online Naturopath Consult AU,"""registered naturopath online australia""",[registered naturopath online australia],
+WW | AU | Online Naturopath,Online Naturopath Consult AU,"""see a naturopath""",[see a naturopath],NEW
+WW | AU | Online Naturopath,Online Naturopath Consult AU,"""see a naturopath online""",[see a naturopath online],
+WW | AU | Online Naturopath,Online Naturopath Consult AU,"""speak to a naturopath online""",[speak to a naturopath online],NEW
+WW | AU | Online Naturopath,Online Naturopath Consult AU,"""talk to a naturopath online""",[talk to a naturopath online],NEW
+WW | AU | Online Naturopath,Online Naturopath Consult AU,"""telehealth naturopath""",[telehealth naturopath],
+WW | AU | Online Naturopath,Online Naturopath Consult AU,"""telehealth naturopath australia""",[telehealth naturopath australia],
+WW | AU | Online Naturopath,Online Naturopath Consult AU,"""video naturopath""",[video naturopath],NEW
+WW | AU | Online Naturopath,Online Naturopath Consult AU,"""video naturopath appointment australia""",[video naturopath appointment australia],
+WW | AU | Online Naturopath,Online Naturopath Consult AU,"""virtual naturopath""",[virtual naturopath],
+WW | AU | Online Naturopath,Online Naturopath Consult AU,"""virtual naturopath australia""",[virtual naturopath australia],
+
+
+WW | AU | Online Naturopath,General Naturopathy AU,"""holistic health australia""",[holistic health australia],NEW
+WW | AU | Online Naturopath,General Naturopathy AU,"""holistic health practitioner australia""",[holistic health practitioner australia],
+WW | AU | Online Naturopath,General Naturopathy AU,"""holistic practitioner""",[holistic practitioner],NEW
+WW | AU | Online Naturopath,General Naturopathy AU,"""natural health""",[natural health],NEW
+WW | AU | Online Naturopath,General Naturopathy AU,"""natural medicine""",[natural medicine],NEW
+WW | AU | Online Naturopath,General Naturopathy AU,"""natural therapies australia""",[natural therapies australia],NEW
+WW | AU | Online Naturopath,General Naturopathy AU,"""naturopath""",[naturopath],NEW
+WW | AU | Online Naturopath,General Naturopathy AU,"""naturopath adelaide""",[naturopath adelaide],
+WW | AU | Online Naturopath,General Naturopathy AU,"""naturopath ballarat""",[naturopath ballarat],NEW
+WW | AU | Online Naturopath,General Naturopathy AU,"""naturopath bendigo""",[naturopath bendigo],NEW
+WW | AU | Online Naturopath,General Naturopathy AU,"""naturopath brisbane""",[naturopath brisbane],
+WW | AU | Online Naturopath,General Naturopathy AU,"""naturopath byron bay""",[naturopath byron bay],NEW
+WW | AU | Online Naturopath,General Naturopathy AU,"""naturopath cairns""",[naturopath cairns],NEW
+WW | AU | Online Naturopath,General Naturopathy AU,"""naturopath canberra""",[naturopath canberra],
+WW | AU | Online Naturopath,General Naturopathy AU,"""naturopath central coast""",[naturopath central coast],NEW
+WW | AU | Online Naturopath,General Naturopathy AU,"""naturopath consultation australia""",[naturopath consultation australia],
+WW | AU | Online Naturopath,General Naturopathy AU,"""naturopath darwin""",[naturopath darwin],
+WW | AU | Online Naturopath,General Naturopathy AU,"""naturopath geelong""",[naturopath geelong],NEW
+WW | AU | Online Naturopath,General Naturopathy AU,"""naturopath gold coast""",[naturopath gold coast],
+WW | AU | Online Naturopath,General Naturopathy AU,"""naturopath hobart""",[naturopath hobart],
+WW | AU | Online Naturopath,General Naturopathy AU,"""naturopath launceston""",[naturopath launceston],NEW
+WW | AU | Online Naturopath,General Naturopathy AU,"""naturopath melbourne""",[naturopath melbourne],
+WW | AU | Online Naturopath,General Naturopathy AU,"""naturopath newcastle""",[naturopath newcastle],NEW
+WW | AU | Online Naturopath,General Naturopathy AU,"""naturopath nsw""",[naturopath nsw],NEW
+WW | AU | Online Naturopath,General Naturopathy AU,"""naturopath queensland""",[naturopath queensland],NEW
+WW | AU | Online Naturopath,General Naturopathy AU,"""naturopath sunshine coast""",[naturopath sunshine coast],NEW
+WW | AU | Online Naturopath,General Naturopathy AU,"""naturopath sydney""",[naturopath sydney],
+WW | AU | Online Naturopath,General Naturopathy AU,"""naturopath toowoomba""",[naturopath toowoomba],NEW
+WW | AU | Online Naturopath,General Naturopathy AU,"""naturopath townsville""",[naturopath townsville],NEW
+WW | AU | Online Naturopath,General Naturopathy AU,"""naturopath victoria""",[naturopath victoria],NEW
+WW | AU | Online Naturopath,General Naturopathy AU,"""naturopath wollongong""",[naturopath wollongong],NEW
+WW | AU | Online Naturopath,General Naturopathy AU,"""naturopathic medicine australia""",[naturopathic medicine australia],NEW
+WW | AU | Online Naturopath,General Naturopathy AU,"""naturopathy""",[naturopathy],NEW
+WW | AU | Online Naturopath,General Naturopathy AU,"""naturopathy australia""",[naturopathy australia],NEW
+WW | AU | Online Naturopath,General Naturopathy AU,"""whole body naturopath australia""",[whole body naturopath australia],
+
+
+WW | AU | Online Naturopath,Herbal Medicine AU,"""herbal consultation""",[herbal consultation],NEW
+WW | AU | Online Naturopath,Herbal Medicine AU,"""herbal medicine""",[herbal medicine],NEW
+WW | AU | Online Naturopath,Herbal Medicine AU,"""herbal medicine australia""",[herbal medicine australia],NEW
+WW | AU | Online Naturopath,Herbal Medicine AU,"""herbal medicine consultation""",[herbal medicine consultation],NEW
+WW | AU | Online Naturopath,Herbal Medicine AU,"""herbal medicine for skin""",[herbal medicine for skin],NEW
+WW | AU | Online Naturopath,Herbal Medicine AU,"""herbal medicine online australia""",[herbal medicine online australia],NEW
+WW | AU | Online Naturopath,Herbal Medicine AU,"""herbal medicine practitioner australia""",[herbal medicine practitioner australia],NEW
+WW | AU | Online Naturopath,Herbal Medicine AU,"""herbal practitioner""",[herbal practitioner],NEW
+WW | AU | Online Naturopath,Herbal Medicine AU,"""herbal remedies""",[herbal remedies],NEW
+WW | AU | Online Naturopath,Herbal Medicine AU,"""herbalist""",[herbalist],NEW
+WW | AU | Online Naturopath,Herbal Medicine AU,"""herbalist australia""",[herbalist australia],NEW
+WW | AU | Online Naturopath,Herbal Medicine AU,"""herbalist consultation australia""",[herbalist consultation australia],NEW
+WW | AU | Online Naturopath,Herbal Medicine AU,"""herbalist for skin conditions""",[herbalist for skin conditions],NEW
+WW | AU | Online Naturopath,Herbal Medicine AU,"""medical herbalist""",[medical herbalist],NEW
+WW | AU | Online Naturopath,Herbal Medicine AU,"""medical herbalist australia""",[medical herbalist australia],NEW
+WW | AU | Online Naturopath,Herbal Medicine AU,"""online herbal medicine consultation""",[online herbal medicine consultation],NEW
+WW | AU | Online Naturopath,Herbal Medicine AU,"""online herbalist""",[online herbalist],NEW
+WW | AU | Online Naturopath,Herbal Medicine AU,"""online medical herbalist""",[online medical herbalist],NEW
+WW | AU | Online Naturopath,Herbal Medicine AU,"""qualified herbalist australia""",[qualified herbalist australia],NEW
+WW | AU | Online Naturopath,Herbal Medicine AU,"""registered herbalist australia""",[registered herbalist australia],NEW
+WW | AU | Online Naturopath,Herbal Medicine AU,"""western herbal medicine australia""",[western herbal medicine australia],NEW
+
+
+WW | AU | Skin Conditions,Eczema AU,"""adult eczema naturopath australia""",[adult eczema naturopath australia],
+WW | AU | Skin Conditions,Eczema AU,"""baby eczema naturopath australia""",[baby eczema naturopath australia],NEW
+WW | AU | Skin Conditions,Eczema AU,"""best online naturopath for eczema""",[best online naturopath for eczema],
+WW | AU | Skin Conditions,Eczema AU,"""childhood eczema naturopath australia""",[childhood eczema naturopath australia],NEW
+WW | AU | Skin Conditions,Eczema AU,"""dyshidrotic eczema naturopath""",[dyshidrotic eczema naturopath],NEW
+WW | AU | Skin Conditions,Eczema AU,"""eczema causes""",[eczema causes],NEW
+WW | AU | Skin Conditions,Eczema AU,"""eczema diet""",[eczema diet],NEW
+WW | AU | Skin Conditions,Eczema AU,"""eczema diet naturopath australia""",[eczema diet naturopath australia],NEW
+WW | AU | Skin Conditions,Eczema AU,"""eczema flare up naturopath""",[eczema flare up naturopath],
+WW | AU | Skin Conditions,Eczema AU,"""eczema gut health connection australia""",[eczema gut health connection australia],
+WW | AU | Skin Conditions,Eczema AU,"""eczema help""",[eczema help],NEW
+WW | AU | Skin Conditions,Eczema AU,"""eczema help australia""",[eczema help australia],NEW
+WW | AU | Skin Conditions,Eczema AU,"""eczema in children naturopath""",[eczema in children naturopath],NEW
+WW | AU | Skin Conditions,Eczema AU,"""eczema natural treatment""",[eczema natural treatment],
+WW | AU | Skin Conditions,Eczema AU,"""eczema naturopath""",[eczema naturopath],
+WW | AU | Skin Conditions,Eczema AU,"""eczema naturopath consultation australia""",[eczema naturopath consultation australia],
+WW | AU | Skin Conditions,Eczema AU,"""eczema naturopath cost australia""",[eczema naturopath cost australia],
+WW | AU | Skin Conditions,Eczema AU,"""eczema naturopath online""",[eczema naturopath online],
+WW | AU | Skin Conditions,Eczema AU,"""eczema naturopath online australia""",[eczema naturopath online australia],
+WW | AU | Skin Conditions,Eczema AU,"""eczema specialist""",[eczema specialist],NEW
+WW | AU | Skin Conditions,Eczema AU,"""eczema specialist australia""",[eczema specialist australia],NEW
+WW | AU | Skin Conditions,Eczema AU,"""eczema support""",[eczema support],NEW
+WW | AU | Skin Conditions,Eczema AU,"""eczema support naturopath australia""",[eczema support naturopath australia],
+WW | AU | Skin Conditions,Eczema AU,"""eczema telehealth australia""",[eczema telehealth australia],
+WW | AU | Skin Conditions,Eczema AU,"""eczema treatment""",[eczema treatment],NEW
+WW | AU | Skin Conditions,Eczema AU,"""eczema treatment australia""",[eczema treatment australia],NEW
+WW | AU | Skin Conditions,Eczema AU,"""hand eczema naturopath""",[hand eczema naturopath],NEW
+WW | AU | Skin Conditions,Eczema AU,"""help with eczema""",[help with eczema],NEW
+WW | AU | Skin Conditions,Eczema AU,"""herbal medicine for eczema""",[herbal medicine for eczema],NEW
+WW | AU | Skin Conditions,Eczema AU,"""natural eczema help""",[natural eczema help],
+WW | AU | Skin Conditions,Eczema AU,"""natural eczema treatment""",[natural eczema treatment],NEW
+WW | AU | Skin Conditions,Eczema AU,"""natural remedies for eczema australia""",[natural remedies for eczema australia],
+WW | AU | Skin Conditions,Eczema AU,"""naturopath for chronic eczema""",[naturopath for chronic eczema],
+WW | AU | Skin Conditions,Eczema AU,"""naturopath for eczema""",[naturopath for eczema],
+WW | AU | Skin Conditions,Eczema AU,"""naturopath for eczema australia""",[naturopath for eczema australia],
+WW | AU | Skin Conditions,Eczema AU,"""online eczema specialist""",[online eczema specialist],
+WW | AU | Skin Conditions,Eczema AU,"""registered naturopath eczema australia""",[registered naturopath eczema australia],
+WW | AU | Skin Conditions,Eczema AU,"""scalp eczema naturopath""",[scalp eczema naturopath],NEW
+WW | AU | Skin Conditions,Eczema AU,"""severe eczema naturopath""",[severe eczema naturopath],NEW
+WW | AU | Skin Conditions,Eczema AU,"""toddler eczema naturopath""",[toddler eczema naturopath],NEW
+WW | AU | Skin Conditions,Eczema AU,"""why wont my eczema go away""",[why wont my eczema go away],
+
+
+WW | AU | Skin Conditions,TSW AU,"""coming off steroid cream""",[coming off steroid cream],NEW
+WW | AU | Skin Conditions,TSW AU,"""naturopath experienced with tsw""",[naturopath experienced with tsw],
+WW | AU | Skin Conditions,TSW AU,"""naturopath for tsw australia""",[naturopath for tsw australia],NEW
+WW | AU | Skin Conditions,TSW AU,"""red skin syndrome""",[red skin syndrome],NEW
+WW | AU | Skin Conditions,TSW AU,"""red skin syndrome naturopath australia""",[red skin syndrome naturopath australia],
+WW | AU | Skin Conditions,TSW AU,"""red skin syndrome support australia""",[red skin syndrome support australia],
+WW | AU | Skin Conditions,TSW AU,"""steroid cream withdrawal naturopath australia""",[steroid cream withdrawal naturopath australia],
+WW | AU | Skin Conditions,TSW AU,"""steroid withdrawal""",[steroid withdrawal],NEW
+WW | AU | Skin Conditions,TSW AU,"""steroid withdrawal naturopath""",[steroid withdrawal naturopath],NEW
+WW | AU | Skin Conditions,TSW AU,"""steroid withdrawal skin support""",[steroid withdrawal skin support],
+WW | AU | Skin Conditions,TSW AU,"""topical steroid withdrawal""",[topical steroid withdrawal],NEW
+WW | AU | Skin Conditions,TSW AU,"""topical steroid withdrawal help""",[topical steroid withdrawal help],
+WW | AU | Skin Conditions,TSW AU,"""topical steroid withdrawal naturopath australia""",[topical steroid withdrawal naturopath australia],
+WW | AU | Skin Conditions,TSW AU,"""topical steroid withdrawal support""",[topical steroid withdrawal support],
+WW | AU | Skin Conditions,TSW AU,"""topical steroid withdrawal telehealth""",[topical steroid withdrawal telehealth],
+WW | AU | Skin Conditions,TSW AU,"""tsw diet naturopath""",[tsw diet naturopath],NEW
+WW | AU | Skin Conditions,TSW AU,"""tsw flare naturopath""",[tsw flare naturopath],
+WW | AU | Skin Conditions,TSW AU,"""tsw help""",[tsw help],NEW
+WW | AU | Skin Conditions,TSW AU,"""tsw help australia""",[tsw help australia],NEW
+WW | AU | Skin Conditions,TSW AU,"""tsw natural treatment""",[tsw natural treatment],
+WW | AU | Skin Conditions,TSW AU,"""tsw naturopath""",[tsw naturopath],
+WW | AU | Skin Conditions,TSW AU,"""tsw naturopath australia""",[tsw naturopath australia],
+WW | AU | Skin Conditions,TSW AU,"""tsw naturopath consultation""",[tsw naturopath consultation],
+WW | AU | Skin Conditions,TSW AU,"""tsw naturopath online australia""",[tsw naturopath online australia],
+WW | AU | Skin Conditions,TSW AU,"""tsw recovery""",[tsw recovery],NEW
+WW | AU | Skin Conditions,TSW AU,"""tsw recovery support australia""",[tsw recovery support australia],
+WW | AU | Skin Conditions,TSW AU,"""tsw skin support""",[tsw skin support],NEW
+WW | AU | Skin Conditions,TSW AU,"""tsw specialist australia""",[tsw specialist australia],NEW
+WW | AU | Skin Conditions,TSW AU,"""tsw support""",[tsw support],NEW
+WW | AU | Skin Conditions,TSW AU,"""tsw support australia""",[tsw support australia],
+WW | AU | Skin Conditions,TSW AU,"""tsw treatment""",[tsw treatment],NEW
+
+
+WW | AU | Skin Conditions,Psoriasis AU,"""guttate psoriasis naturopath""",[guttate psoriasis naturopath],NEW
+WW | AU | Skin Conditions,Psoriasis AU,"""help with psoriasis""",[help with psoriasis],NEW
+WW | AU | Skin Conditions,Psoriasis AU,"""herbal medicine for psoriasis""",[herbal medicine for psoriasis],NEW
+WW | AU | Skin Conditions,Psoriasis AU,"""natural psoriasis treatment""",[natural psoriasis treatment],NEW
+WW | AU | Skin Conditions,Psoriasis AU,"""natural remedies for psoriasis australia""",[natural remedies for psoriasis australia],
+WW | AU | Skin Conditions,Psoriasis AU,"""naturopath for psoriasis""",[naturopath for psoriasis],
+WW | AU | Skin Conditions,Psoriasis AU,"""naturopath for scalp psoriasis""",[naturopath for scalp psoriasis],NEW
+WW | AU | Skin Conditions,Psoriasis AU,"""plaque psoriasis naturopath""",[plaque psoriasis naturopath],NEW
+WW | AU | Skin Conditions,Psoriasis AU,"""psoriasis causes""",[psoriasis causes],NEW
+WW | AU | Skin Conditions,Psoriasis AU,"""psoriasis diet""",[psoriasis diet],NEW
+WW | AU | Skin Conditions,Psoriasis AU,"""psoriasis diet naturopath""",[psoriasis diet naturopath],NEW
+WW | AU | Skin Conditions,Psoriasis AU,"""psoriasis flare up naturopath""",[psoriasis flare up naturopath],
+WW | AU | Skin Conditions,Psoriasis AU,"""psoriasis gut health naturopath""",[psoriasis gut health naturopath],NEW
+WW | AU | Skin Conditions,Psoriasis AU,"""psoriasis help""",[psoriasis help],NEW
+WW | AU | Skin Conditions,Psoriasis AU,"""psoriasis help australia""",[psoriasis help australia],NEW
+WW | AU | Skin Conditions,Psoriasis AU,"""psoriasis immune connection australia""",[psoriasis immune connection australia],
+WW | AU | Skin Conditions,Psoriasis AU,"""psoriasis natural treatment australia""",[psoriasis natural treatment australia],
+WW | AU | Skin Conditions,Psoriasis AU,"""psoriasis naturopath""",[psoriasis naturopath],NEW
+WW | AU | Skin Conditions,Psoriasis AU,"""psoriasis naturopath cost australia""",[psoriasis naturopath cost australia],
+WW | AU | Skin Conditions,Psoriasis AU,"""psoriasis naturopath online""",[psoriasis naturopath online],
+WW | AU | Skin Conditions,Psoriasis AU,"""psoriasis specialist""",[psoriasis specialist],NEW
+WW | AU | Skin Conditions,Psoriasis AU,"""psoriasis specialist australia""",[psoriasis specialist australia],NEW
+WW | AU | Skin Conditions,Psoriasis AU,"""psoriasis telehealth naturopath australia""",[psoriasis telehealth naturopath australia],
+WW | AU | Skin Conditions,Psoriasis AU,"""psoriasis treatment""",[psoriasis treatment],NEW
+WW | AU | Skin Conditions,Psoriasis AU,"""psoriasis treatment australia""",[psoriasis treatment australia],NEW
+WW | AU | Skin Conditions,Psoriasis AU,"""psoriasis trigger naturopath""",[psoriasis trigger naturopath],NEW
+WW | AU | Skin Conditions,Psoriasis AU,"""registered naturopath psoriasis australia""",[registered naturopath psoriasis australia],
+WW | AU | Skin Conditions,Psoriasis AU,"""scalp psoriasis naturopath australia""",[scalp psoriasis naturopath australia],
+WW | AU | Skin Conditions,Psoriasis AU,"""why does my psoriasis flare up""",[why does my psoriasis flare up],NEW
+
+
+WW | AU | Skin Conditions,Acne AU,"""acne causes""",[acne causes],NEW
+WW | AU | Skin Conditions,Acne AU,"""acne diet""",[acne diet],NEW
+WW | AU | Skin Conditions,Acne AU,"""acne diet naturopath""",[acne diet naturopath],NEW
+WW | AU | Skin Conditions,Acne AU,"""acne gut health naturopath""",[acne gut health naturopath],NEW
+WW | AU | Skin Conditions,Acne AU,"""acne help""",[acne help],NEW
+WW | AU | Skin Conditions,Acne AU,"""acne help australia""",[acne help australia],NEW
+WW | AU | Skin Conditions,Acne AU,"""acne naturopath""",[acne naturopath],NEW
+WW | AU | Skin Conditions,Acne AU,"""acne naturopath cost australia""",[acne naturopath cost australia],
+WW | AU | Skin Conditions,Acne AU,"""acne naturopath online australia""",[acne naturopath online australia],
+WW | AU | Skin Conditions,Acne AU,"""acne specialist""",[acne specialist],NEW
+WW | AU | Skin Conditions,Acne AU,"""acne specialist australia""",[acne specialist australia],NEW
+WW | AU | Skin Conditions,Acne AU,"""acne telehealth naturopath australia""",[acne telehealth naturopath australia],
+WW | AU | Skin Conditions,Acne AU,"""acne treatment""",[acne treatment],NEW
+WW | AU | Skin Conditions,Acne AU,"""acne treatment australia""",[acne treatment australia],NEW
+WW | AU | Skin Conditions,Acne AU,"""adult acne""",[adult acne],NEW
+WW | AU | Skin Conditions,Acne AU,"""adult acne naturopath australia""",[adult acne naturopath australia],
+WW | AU | Skin Conditions,Acne AU,"""back acne naturopath""",[back acne naturopath],NEW
+WW | AU | Skin Conditions,Acne AU,"""cystic acne""",[cystic acne],NEW
+WW | AU | Skin Conditions,Acne AU,"""cystic acne naturopath australia""",[cystic acne naturopath australia],
+WW | AU | Skin Conditions,Acne AU,"""help with acne""",[help with acne],NEW
+WW | AU | Skin Conditions,Acne AU,"""herbal medicine for acne""",[herbal medicine for acne],NEW
+WW | AU | Skin Conditions,Acne AU,"""hormonal acne""",[hormonal acne],NEW
+WW | AU | Skin Conditions,Acne AU,"""hormonal acne naturopath australia""",[hormonal acne naturopath australia],
+WW | AU | Skin Conditions,Acne AU,"""hormonal acne naturopath online""",[hormonal acne naturopath online],
+WW | AU | Skin Conditions,Acne AU,"""natural acne treatment australia""",[natural acne treatment australia],
+WW | AU | Skin Conditions,Acne AU,"""naturopath for acne""",[naturopath for acne],
+WW | AU | Skin Conditions,Acne AU,"""naturopath for cystic acne""",[naturopath for cystic acne],NEW
+WW | AU | Skin Conditions,Acne AU,"""naturopath for hormonal acne australia""",[naturopath for hormonal acne australia],
+WW | AU | Skin Conditions,Acne AU,"""pcos acne naturopath""",[pcos acne naturopath],NEW
+WW | AU | Skin Conditions,Acne AU,"""period acne naturopath""",[period acne naturopath],NEW
+WW | AU | Skin Conditions,Acne AU,"""registered naturopath acne australia""",[registered naturopath acne australia],
+WW | AU | Skin Conditions,Acne AU,"""teenage acne naturopath""",[teenage acne naturopath],NEW
+WW | AU | Skin Conditions,Acne AU,"""why wont my acne clear up""",[why wont my acne clear up],NEW
+
+
+WW | AU | Skin Conditions,Rosacea AU,"""facial redness naturopath australia""",[facial redness naturopath australia],
+WW | AU | Skin Conditions,Rosacea AU,"""help with rosacea""",[help with rosacea],NEW
+WW | AU | Skin Conditions,Rosacea AU,"""herbal medicine for rosacea""",[herbal medicine for rosacea],NEW
+WW | AU | Skin Conditions,Rosacea AU,"""natural rosacea treatment""",[natural rosacea treatment],NEW
+WW | AU | Skin Conditions,Rosacea AU,"""naturopath for facial redness""",[naturopath for facial redness],NEW
+WW | AU | Skin Conditions,Rosacea AU,"""naturopath for rosacea""",[naturopath for rosacea],
+WW | AU | Skin Conditions,Rosacea AU,"""registered naturopath rosacea australia""",[registered naturopath rosacea australia],
+WW | AU | Skin Conditions,Rosacea AU,"""rosacea diet""",[rosacea diet],NEW
+WW | AU | Skin Conditions,Rosacea AU,"""rosacea diet naturopath""",[rosacea diet naturopath],NEW
+WW | AU | Skin Conditions,Rosacea AU,"""rosacea flare up naturopath""",[rosacea flare up naturopath],
+WW | AU | Skin Conditions,Rosacea AU,"""rosacea gut health naturopath""",[rosacea gut health naturopath],NEW
+WW | AU | Skin Conditions,Rosacea AU,"""rosacea help""",[rosacea help],NEW
+WW | AU | Skin Conditions,Rosacea AU,"""rosacea help australia""",[rosacea help australia],NEW
+WW | AU | Skin Conditions,Rosacea AU,"""rosacea immune naturopath""",[rosacea immune naturopath],NEW
+WW | AU | Skin Conditions,Rosacea AU,"""rosacea natural treatment australia""",[rosacea natural treatment australia],
+WW | AU | Skin Conditions,Rosacea AU,"""rosacea naturopath""",[rosacea naturopath],NEW
+WW | AU | Skin Conditions,Rosacea AU,"""rosacea naturopath consultation""",[rosacea naturopath consultation],
+WW | AU | Skin Conditions,Rosacea AU,"""rosacea naturopath cost australia""",[rosacea naturopath cost australia],
+WW | AU | Skin Conditions,Rosacea AU,"""rosacea naturopath online""",[rosacea naturopath online],
+WW | AU | Skin Conditions,Rosacea AU,"""rosacea specialist""",[rosacea specialist],NEW
+WW | AU | Skin Conditions,Rosacea AU,"""rosacea specialist australia""",[rosacea specialist australia],NEW
+WW | AU | Skin Conditions,Rosacea AU,"""rosacea telehealth naturopath australia""",[rosacea telehealth naturopath australia],
+WW | AU | Skin Conditions,Rosacea AU,"""rosacea treatment""",[rosacea treatment],NEW
+WW | AU | Skin Conditions,Rosacea AU,"""rosacea treatment australia""",[rosacea treatment australia],NEW
+WW | AU | Skin Conditions,Rosacea AU,"""rosacea trigger naturopath australia""",[rosacea trigger naturopath australia],
+WW | AU | Skin Conditions,Rosacea AU,"""rosacea triggers""",[rosacea triggers],NEW
+WW | AU | Skin Conditions,Rosacea AU,"""what triggers rosacea flare ups""",[what triggers rosacea flare ups],NEW
+
+
+WW | AU | Skin Conditions,Skin Infections AU,"""chronic hives""",[chronic hives],NEW
+WW | AU | Skin Conditions,Skin Infections AU,"""chronic hives naturopath australia""",[chronic hives naturopath australia],
+WW | AU | Skin Conditions,Skin Infections AU,"""fungal skin naturopath""",[fungal skin naturopath],NEW
+WW | AU | Skin Conditions,Skin Infections AU,"""hives help""",[hives help],NEW
+WW | AU | Skin Conditions,Skin Infections AU,"""hives naturopath australia""",[hives naturopath australia],NEW
+WW | AU | Skin Conditions,Skin Infections AU,"""hives treatment""",[hives treatment],NEW
+WW | AU | Skin Conditions,Skin Infections AU,"""immune support skin naturopath australia""",[immune support skin naturopath australia],
+WW | AU | Skin Conditions,Skin Infections AU,"""itchy skin help""",[itchy skin help],NEW
+WW | AU | Skin Conditions,Skin Infections AU,"""itchy skin naturopath australia""",[itchy skin naturopath australia],NEW
+WW | AU | Skin Conditions,Skin Infections AU,"""natural skin infection support australia""",[natural skin infection support australia],
+WW | AU | Skin Conditions,Skin Infections AU,"""naturopath chronic urticaria""",[naturopath chronic urticaria],
+WW | AU | Skin Conditions,Skin Infections AU,"""naturopath for folliculitis""",[naturopath for folliculitis],NEW
+WW | AU | Skin Conditions,Skin Infections AU,"""naturopath for hives""",[naturopath for hives],NEW
+WW | AU | Skin Conditions,Skin Infections AU,"""naturopath for itchy skin""",[naturopath for itchy skin],NEW
+WW | AU | Skin Conditions,Skin Infections AU,"""naturopath for skin infections australia""",[naturopath for skin infections australia],
+WW | AU | Skin Conditions,Skin Infections AU,"""recurring boils naturopath""",[recurring boils naturopath],NEW
+WW | AU | Skin Conditions,Skin Infections AU,"""recurring hives""",[recurring hives],NEW
+WW | AU | Skin Conditions,Skin Infections AU,"""recurring skin infections naturopath australia""",[recurring skin infections naturopath australia],
+WW | AU | Skin Conditions,Skin Infections AU,"""recurring skin infections naturopath online""",[recurring skin infections naturopath online],
+WW | AU | Skin Conditions,Skin Infections AU,"""recurring urticaria naturopath online""",[recurring urticaria naturopath online],
+WW | AU | Skin Conditions,Skin Infections AU,"""registered naturopath skin infections australia""",[registered naturopath skin infections australia],
+WW | AU | Skin Conditions,Skin Infections AU,"""skin infection help""",[skin infection help],NEW
+WW | AU | Skin Conditions,Skin Infections AU,"""skin infection naturopath""",[skin infection naturopath],NEW
+WW | AU | Skin Conditions,Skin Infections AU,"""skin infection naturopath cost australia""",[skin infection naturopath cost australia],
+WW | AU | Skin Conditions,Skin Infections AU,"""staph skin naturopath""",[staph skin naturopath],NEW
+WW | AU | Skin Conditions,Skin Infections AU,"""urticaria help""",[urticaria help],NEW
+WW | AU | Skin Conditions,Skin Infections AU,"""why do i keep getting skin infections""",[why do i keep getting skin infections],NEW
+
+
+
+"AD COPY — RESPONSIVE SEARCH ADS (H<=30, D<=90)"
+Campaign,Ad Group,H1,H2,H3,H4,H5,H6,H7,H8,H9,H10,H11,H12,H13,H14,H15,D1,D2,D3,D4,Path1,Path2,Final URL,Pin plan
+WW | AU | Online Naturopath,Online Naturopath Consult AU,Online Naturopath Australia,Naturopath Consultation Online,Told Your Bloods Are Normal,Tired Of Managing Symptoms,Find The Root Cause,Tests Posted To Your Door,75-Min Initial Consultation,"One Practitioner, Every Visit",Works Alongside Your GP,Free 15-Minute Chat First,Herbal Formulas Made For You,"Online Naturopath, AU-Wide",Book A Naturopath Consult,See What's Actually Wrong,Book Your First Session,Still no answers after normal bloods? A 75-minute consultation that looks for the cause.,"Functional testing posted to your door, then a plan built on your actual results.","A free 15-minute discovery session first, or book the full consultation.","Naturopathy that works alongside your GP and current medication, not against it.",australia,online,https://waterwellclinic.com/au,Pos1 pin: 'Online Naturopath Australia'. Rest unpinned.
+
+
+WW | AU | Online Naturopath,General Naturopathy AU,Naturopath Australia,Online Naturopath Consult,No Good Naturopath Near You?,"Answers, Not Another Symptom","Whole-Body, Not Just The Bit","Lab Testing, Done At Home",Consults By Secure Video,Same Practitioner Each Time,Your GP Stays In The Loop,Start With A Free 15 Mins,Individually Prescribed Herbs,Naturopath Across Australia,Book A Naturopathy Session,Get To The Cause,Book Your Consult Today,"No decent naturopath nearby? Consultations run by video, so location stops mattering.","Gut, skin, hormones, sleep and energy, looked at together rather than one at a time.","Start with a free 15-minute session, or go straight to a full consultation.",Works alongside the medical care you already have. Nothing is replaced.,australia,naturopath,https://waterwellclinic.com/au,Pos1 pin: 'Naturopath Australia'. Rest unpinned.
+
+
+WW | AU | Online Naturopath,Herbal Medicine AU,Medical Herbalist Australia,Online Herbal Medicine,Not Another Off-Shelf Bottle,Tried Every Supplement Going,Formulas Made For You,Real Testing Behind The Plan,Video Consults From Home,A Plan Built Around You,Sits Beside Your GP's Plan,15 Free Minutes To Start,Formulas Adjusted As You Go,"Herbal Medicine, AU-Wide",Book A Herbal Consult,Get Your Own Formula,Speak To A Herbalist,"Individually prescribed herbal formulas, chosen for your case, not pulled off a shelf.","Your formula is adjusted as your body responds, not repeated on autopilot.","Start with a free 15-minute session, or go straight to a full consultation.",Works alongside the medical care you already have. Nothing is replaced.,herbal,australia,https://waterwellclinic.com/au,Pos1 pin: 'Medical Herbalist Australia'. Rest unpinned.
+
+
+WW | AU | Skin Conditions,Eczema AU,Naturopath For Eczema,Eczema Naturopath Online,Itching That Wakes You At 3am,Flares That Keep Coming Back,Eczema Starts On The Inside,"Testing, Not Trial And Error","Book Online, Meet Online",Not A Template Plan,Complements Your GP Care,Book A Free 15-Min Chat,"Herbal Medicine, Prescribed","Eczema Support, AU-Wide",Book An Eczema Consult,"Treat The Cause, Not The Flare",Start Your Eczema Plan,Steroid creams calm the flare. They don't touch whatever keeps causing it.,"Eczema is looked at from the gut and immune side, not only the skin.","A free 15-minute discovery session first, or book the full consultation.","Naturopathy that works alongside your GP and current medication, not against it.",australia,eczema,https://waterwellclinic.com/conditions/eczema,Pos1 pin: 'Naturopath For Eczema'. Rest unpinned.
+
+
+WW | AU | Skin Conditions,TSW AU,TSW Naturopath,Topical Steroid Withdrawal,Worse Since Stopping Steroids,"Red, Burning, Shedding Skin","TSW Is A Process, Not A Flare",Answers From Actual Testing,A Full 75-Minute Appointment,"Your Case, Not A Protocol",Keeps Your Doctor Informed,Free 15-Min Discovery Call,Made Up For Your Case,"TSW Support, AU-Wide",Book A TSW Consult,Get Real TSW Support,Start Your TSW Plan,"Topical steroid withdrawal is brutal, and badly understood. You don't have to guess.","Unhurried support for topical steroid withdrawal, at the pace your skin sets.","Start with a free 15-minute session, or go straight to a full consultation.",Works alongside the medical care you already have. Nothing is replaced.,australia,tsw,https://waterwellclinic.com/conditions/tsw,Pos1 pin: 'TSW Naturopath'. Rest unpinned.
+
+
+WW | AU | Skin Conditions,Psoriasis AU,Naturopath For Psoriasis,Psoriasis Naturopath Online,Plaques That Never Fully Go,Flares With No Clear Trigger,Psoriasis Is An Immune Signal,"Test First, Then Treat","Private, Secure Video Calls","One-On-One, Start To Finish",Works With Your Doctor,Start With A Free Chat,Not A Shelf Supplement,"Psoriasis Support, AU-Wide",Book A Psoriasis Consult,"Calm The Driver, Not The Skin",Start Your Psoriasis Plan,Psoriasis is immune-driven. Calming the skin without calming the driver never holds.,"Diet, gut and immune factors looked at together, then tested where it's unclear.","A free 15-minute discovery session first, or book the full consultation.",Works alongside the medical care you already have. Nothing is replaced.,australia,psoriasis,https://waterwellclinic.com/conditions/psoriasis,Pos1 pin: 'Naturopath For Psoriasis'. Rest unpinned.
+
+
+WW | AU | Skin Conditions,Acne AU,Naturopath For Acne,Hormonal Acne Naturopath,Adult Acne That Won't Clear,Breakouts On A Monthly Cycle,Acne Is A Hormone & Gut Signal,Lab Work Without The Clinic,Consult From Your Own Home,Time To Tell It Properly,Fits Around Your GP's Care,A Free First Conversation,Herbs Matched To Your Case,"Acne Support, AU-Wide",Book An Acne Consult,Clear It From The Inside,Start Your Acne Plan,Adult acne is rarely about your face wash. Usually it's hormones and gut.,"Hormone and gut testing posted out, then a plan built on what it actually shows.","Start with a free 15-minute session, or go straight to a full consultation.","Naturopathy that works alongside your GP and current medication, not against it.",australia,acne,https://waterwellclinic.com/conditions/acne,Pos1 pin: 'Naturopath For Acne'. Rest unpinned.
+
+
+WW | AU | Skin Conditions,Rosacea AU,Naturopath For Rosacea,Rosacea Naturopath Online,Redness That Flares At Random,Flushing You Can't Predict,Find Your Rosacea Triggers,"Your Results, Your Plan",Online Video Appointments,Seen As A Whole Person,Alongside Your Current Care,"Talk First, Free Of Charge",A Formula Built For You,"Rosacea Support, AU-Wide",Book A Rosacea Consult,Find What Sets It Off,Start Your Rosacea Plan,Rosacea flares have triggers. Most people are never shown how to find theirs.,"Gut, diet and trigger factors mapped properly, rather than managing the redness.","A free 15-minute discovery session first, or book the full consultation.",Works alongside the medical care you already have. Nothing is replaced.,australia,rosacea,https://waterwellclinic.com/conditions/rosacea,Pos1 pin: 'Naturopath For Rosacea'. Rest unpinned.
+
+
+WW | AU | Skin Conditions,Skin Infections AU,Naturopath For Skin Infections,Chronic Hives Naturopath,Infections That Keep Returning,Hives With No Known Cause,Recurring Is An Immune Signal,Guesswork Taken Out,"No Travel, No Waiting Room","Continuity, Every Appointment",Your Doctor Stays Involved,Free Intro Call Available,Adjusted As Your Body Responds,"Skin Support, AU-Wide",Book A Skin Consult,Stop The Cycle Repeating,Start Your Skin Plan,"Skin infections and hives that keep returning are a signal, not bad luck.","Immune and gut testing posted out, so recurring problems get looked at properly.","Start with a free 15-minute session, or go straight to a full consultation.",Works alongside the medical care you already have. Nothing is replaced.,australia,skin,https://waterwellclinic.com/conditions/skin-infections,Pos1 pin: 'Naturopath For Skin Infections'. Rest unpinned.
+
+
+
+"NEGATIVE KEYWORDS — phrase match, per ad group"
+Campaign,Ad Group,Negatives (phrase match)
+WW | AU | Online Naturopath,Online Naturopath Consult AU,"""free""; ""jobs""; ""job""; ""career""; ""careers""; ""course""; ""courses""; ""class""; ""classes""; ""training""; ""become a naturopath""; ""school""; ""degree""; ""diploma""; ""certificate""; ""university""; ""salary""; ""wage""; ""what is""; ""definition""; ""meaning""; ""wikipedia""; ""wiki""; ""reddit""; ""forum""; ""quora""; ""pdf""; ""doctor appointment""; ""see a doctor""; ""find a doctor""; ""gp near me""; ""find a gp""; ""gp appointment""; ""gp clinic""; ""pharmacy""; ""chemist""; ""prescription""; ""buy medication""; ""cheap medication""; ""cream""; ""ointment""; ""medicare""; ""bulk billing""; ""rebate""; ""health fund"""
+
+
+WW | AU | Online Naturopath,General Naturopathy AU,"""free""; ""jobs""; ""job""; ""career""; ""careers""; ""course""; ""courses""; ""class""; ""classes""; ""training""; ""become a naturopath""; ""school""; ""degree""; ""diploma""; ""certificate""; ""university""; ""salary""; ""wage""; ""what is""; ""definition""; ""meaning""; ""wikipedia""; ""wiki""; ""reddit""; ""forum""; ""quora""; ""pdf""; ""doctor appointment""; ""see a doctor""; ""find a doctor""; ""gp near me""; ""find a gp""; ""gp appointment""; ""gp clinic""; ""pharmacy""; ""chemist""; ""prescription""; ""buy medication""; ""cheap medication""; ""cream""; ""ointment""; ""medicare""; ""bulk billing""; ""rebate""; ""health fund"""
+
+
+WW | AU | Online Naturopath,Herbal Medicine AU,"""free""; ""jobs""; ""job""; ""career""; ""careers""; ""course""; ""courses""; ""class""; ""classes""; ""training""; ""become a herbalist""; ""school""; ""degree""; ""diploma""; ""certificate""; ""university""; ""salary""; ""wage""; ""what is""; ""definition""; ""meaning""; ""wikipedia""; ""wiki""; ""reddit""; ""forum""; ""quora""; ""pdf""; ""buy herbs""; ""buy herbal""; ""herbal supplements""; ""herbal tea""; ""herbal tincture""; ""shop""; ""stockist""; ""wholesale""; ""supplier""; ""dispensary""; ""doctor appointment""; ""see a doctor""; ""find a doctor""; ""pharmacy""; ""chemist""; ""prescription""; ""medicare""; ""bulk billing""; ""rebate""; ""health fund"""
+
+
+WW | AU | Skin Conditions,Eczema AU,"""free""; ""jobs""; ""job""; ""career""; ""careers""; ""course""; ""courses""; ""class""; ""classes""; ""training""; ""become a naturopath""; ""school""; ""degree""; ""diploma""; ""certificate""; ""university""; ""salary""; ""wage""; ""what is""; ""definition""; ""meaning""; ""wikipedia""; ""wiki""; ""reddit""; ""forum""; ""quora""; ""pdf""; ""doctor appointment""; ""see a doctor""; ""find a doctor""; ""gp near me""; ""find a gp""; ""gp appointment""; ""gp clinic""; ""pharmacy""; ""chemist""; ""prescription""; ""buy medication""; ""cheap medication""; ""cream""; ""ointment""; ""medicare""; ""bulk billing""; ""rebate""; ""health fund"""
+
+
+WW | AU | Skin Conditions,TSW AU,"""free""; ""jobs""; ""job""; ""career""; ""careers""; ""course""; ""courses""; ""class""; ""classes""; ""training""; ""become a naturopath""; ""school""; ""degree""; ""diploma""; ""certificate""; ""university""; ""salary""; ""wage""; ""what is""; ""definition""; ""meaning""; ""wikipedia""; ""wiki""; ""reddit""; ""forum""; ""quora""; ""pdf""; ""doctor appointment""; ""see a doctor""; ""find a doctor""; ""gp near me""; ""find a gp""; ""gp appointment""; ""gp clinic""; ""pharmacy""; ""chemist""; ""prescription""; ""buy medication""; ""cheap medication""; ""medicare""; ""bulk billing""; ""rebate""; ""health fund""; ""buy steroid cream""; ""best steroid cream""; ""steroid cream price"""
+
+
+WW | AU | Skin Conditions,Psoriasis AU,"""free""; ""jobs""; ""job""; ""career""; ""careers""; ""course""; ""courses""; ""class""; ""classes""; ""training""; ""become a naturopath""; ""school""; ""degree""; ""diploma""; ""certificate""; ""university""; ""salary""; ""wage""; ""what is""; ""definition""; ""meaning""; ""wikipedia""; ""wiki""; ""reddit""; ""forum""; ""quora""; ""pdf""; ""doctor appointment""; ""see a doctor""; ""find a doctor""; ""gp near me""; ""find a gp""; ""gp appointment""; ""gp clinic""; ""pharmacy""; ""chemist""; ""prescription""; ""buy medication""; ""cheap medication""; ""cream""; ""ointment""; ""medicare""; ""bulk billing""; ""rebate""; ""health fund"""
+
+
+WW | AU | Skin Conditions,Acne AU,"""free""; ""jobs""; ""job""; ""career""; ""careers""; ""course""; ""courses""; ""class""; ""classes""; ""training""; ""become a naturopath""; ""school""; ""degree""; ""diploma""; ""certificate""; ""university""; ""salary""; ""wage""; ""what is""; ""definition""; ""meaning""; ""wikipedia""; ""wiki""; ""reddit""; ""forum""; ""quora""; ""pdf""; ""doctor appointment""; ""see a doctor""; ""find a doctor""; ""gp near me""; ""find a gp""; ""gp appointment""; ""gp clinic""; ""pharmacy""; ""chemist""; ""prescription""; ""buy medication""; ""cheap medication""; ""cream""; ""ointment""; ""medicare""; ""bulk billing""; ""rebate""; ""health fund"""
+
+
+WW | AU | Skin Conditions,Rosacea AU,"""free""; ""jobs""; ""job""; ""career""; ""careers""; ""course""; ""courses""; ""class""; ""classes""; ""training""; ""become a naturopath""; ""school""; ""degree""; ""diploma""; ""certificate""; ""university""; ""salary""; ""wage""; ""what is""; ""definition""; ""meaning""; ""wikipedia""; ""wiki""; ""reddit""; ""forum""; ""quora""; ""pdf""; ""doctor appointment""; ""see a doctor""; ""find a doctor""; ""gp near me""; ""find a gp""; ""gp appointment""; ""gp clinic""; ""pharmacy""; ""chemist""; ""prescription""; ""buy medication""; ""cheap medication""; ""cream""; ""ointment""; ""medicare""; ""bulk billing""; ""rebate""; ""health fund"""
+
+
+WW | AU | Skin Conditions,Skin Infections AU,"""free""; ""jobs""; ""job""; ""career""; ""careers""; ""course""; ""courses""; ""class""; ""classes""; ""training""; ""become a naturopath""; ""school""; ""degree""; ""diploma""; ""certificate""; ""university""; ""salary""; ""wage""; ""what is""; ""definition""; ""meaning""; ""wikipedia""; ""wiki""; ""reddit""; ""forum""; ""quora""; ""pdf""; ""doctor appointment""; ""see a doctor""; ""find a doctor""; ""gp near me""; ""find a gp""; ""gp appointment""; ""gp clinic""; ""pharmacy""; ""chemist""; ""prescription""; ""buy medication""; ""cheap medication""; ""cream""; ""ointment""; ""medicare""; ""bulk billing""; ""rebate""; ""health fund"""
+
+
+
+SHARED NEGATIVE LISTS (phrase match)
+Junk & Informational,"""free""; ""jobs""; ""job""; ""career""; ""careers""; ""course""; ""courses""; ""class""; ""classes""; ""training""; ""become a naturopath""; ""school""; ""degree""; ""diploma""; ""certificate""; ""university""; ""salary""; ""wage""; ""what is""; ""definition""; ""meaning""; ""wikipedia""; ""wiki""; ""reddit""; ""forum""; ""quora""; ""pdf"""
+Not Our Service,"""doctor appointment""; ""see a doctor""; ""find a doctor""; ""gp near me""; ""find a gp""; ""gp appointment""; ""gp clinic""; ""dermatologist""; ""pharmacy""; ""chemist""; ""prescription""; ""buy medication""; ""medication side effects""; ""cheap medication""; ""buy cream""; ""best cream""; ""cream for eczema""; ""eczema cream""; ""buy ointment""; ""best ointment""; ""buy steroid cream""; ""best steroid cream""; ""steroid cream price""; ""steroid cream side effects""; ""dupixent""; ""cure""; ""detox""; ""cleanse"""
+
+EXTENSIONS
+Type,Text,Desc 1,Desc 2,URL
+Sitelink,Book a Free 15-Min Chat,A short call to ask questions,Then book if it suits,https://waterwellclinic.com/au#visit
+Sitelink,Book a Full Consultation,The complete appointment,By secure video,https://waterwellclinic.com/au#visit
+Sitelink,Skin Health,"Eczema, TSW, psoriasis, acne",Rosacea and skin concerns,https://waterwellclinic.com/au#conditions
+Sitelink,"Gut, Hormones & Energy","Digestion, cycle, fatigue",Whole-body naturopathy,https://waterwellclinic.com/conditions/gut-health
+Sitelink,Meet Kohei,"BNatMed, BSc, MATMS",10+ years in natural health,https://waterwellclinic.com/au#story
+Sitelink,How It Works,Consultations by secure video,"One practitioner, every visit",https://waterwellclinic.com/au#how
+Callout,Qualified Naturopath,,,
+Callout,Personalised Plans,,,
+Callout,A Root-Cause Approach,,,
+Callout,10+ Years Experience,,,
+Callout,Consults By Secure Video,,,
+Callout,"Online, Australia-Wide",,,
+Callout,Same Practitioner,,,
+Callout,Complements Your GP Care,,,
+Snippet: Services,Naturopathy,,,
+Snippet: Services,Skin Health,,,
+Snippet: Services,Gut Health,,,
+Snippet: Services,Hormone Support,,,
+Snippet: Services,Energy & Fatigue,,,
+Snippet: Services,Sleep & Stress,,,
