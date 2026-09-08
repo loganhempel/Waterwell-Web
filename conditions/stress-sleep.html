@@ -355,6 +355,14 @@
   .cta-form input:focus,.cta-form textarea:focus{outline:2px solid var(--sage);
     outline-offset:1px;border-color:transparent;background:var(--paper)}
   .cta-form button{width:100%;justify-content:center;margin-top:2px}
+  /* Shown, not silent. The browser hands this over without the patient typing
+     anything, so the least we can do is say what is being sent. */
+  .tzrow{display:flex;align-items:baseline;justify-content:space-between;gap:12px;
+    padding:11px 15px;border:1px dashed var(--line);border-radius:12px;
+    background:var(--bg-soft)}
+  .tzk{font-family:var(--mono);font-size:11px;letter-spacing:.1em;
+    text-transform:uppercase;color:var(--sage-text)}
+  .tzv{font-size:.9rem;color:var(--ink);text-align:right}
   .cta-form .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
   .cta-form .fnote{font-size:.84rem;color:var(--muted);margin:0;line-height:1.5}
   .cta-form .msg{font-size:.9rem;margin:0;min-height:1.2em}
@@ -416,8 +424,11 @@
       <div><label for="cf-email">Email</label>
         <input id="cf-email" name="email" type="email" autocomplete="email" inputmode="email" required></div>
     </div>
-    <div><label for="cf-city">Your city</label>
-      <input id="cf-city" name="city" type="text" placeholder="Your nearest city" autocomplete="address-level2" required></div>
+    <div class="tzrow" id="cf-tzrow" hidden>
+      <span class="tzk">Your time zone</span>
+      <span class="tzv" id="cf-tzv"></span>
+    </div>
+    <input type="hidden" id="cf-tz" name="timezone" value="">
     <div><label for="cf-msg">Anything you’d like Kohei to know? (optional)</label>
       <textarea id="cf-msg" name="msg" placeholder="A little about your situation and what you’ve tried…"></textarea></div>
     <button class="btn btn-primary" type="submit">Request my free discovery session <span class="arrow">→</span></button>
@@ -548,8 +559,22 @@ addEventListener('keydown',function(e){if(e.key==='Escape'&&d.classList.contains
   var SET = /^[0-9a-f-]{30,}$/i.test(KEY);
   var CONDITION = 'Stress & sleep';
   var out = document.getElementById('cf-msg-out');
-  // Time zone field removed 14 Aug on Kohei's instruction — reception works
-  // the hour out from the city.
+
+  // 9 Sep, Logan: the "your city" field is replaced by the time zone the
+  // browser already knows. One less required field to type on a phone, and it
+  // is more precise than a city name for picking an hour. Same value format as
+  // the homepage booking form so both land in Kohei's inbox reading alike.
+  // Reverses Kohei's 14 Aug instruction to work the hour out from the city.
+  try {
+    var tzEl = document.getElementById('cf-tz'), tzRow = document.getElementById('cf-tzrow'),
+        tzV = document.getElementById('cf-tzv');
+    var zone = Intl.DateTimeFormat().resolvedOptions().timeZone || '';
+    var local = new Date().toLocaleTimeString([], {hour:'2-digit', minute:'2-digit'});
+    if(zone && tzEl){
+      tzEl.value = zone + ' (their local time ' + local + ')';
+      if(tzV && tzRow){ tzV.textContent = zone.replace(/_/g,' ') + ' \u00b7 ' + local; tzRow.hidden = false; }
+    }
+  } catch(e){ /* unsupported or blocked: the row stays hidden and nothing is sent */ }
 
   function say(t, ok){ out.textContent = t; out.className = 'msg ' + (ok ? 'ok' : 'err'); }
 
@@ -557,14 +582,15 @@ addEventListener('keydown',function(e){if(e.key==='Escape'&&d.classList.contains
     e.preventDefault();
     // Honeypot. Report success so a bot does not learn to retry, send nothing.
     if(f.website && f.website.value.trim()){ f.reset(); say('Thanks \u2014 that\u2019s come through.', true); return; }
-    var name = f.name.value.trim(), email = f.email.value.trim(), city = f.city.value.trim();
+    var name = f.name.value.trim(), email = f.email.value.trim(),
+        tz = (f.timezone && f.timezone.value) || '';
     if(!name){ f.name.focus(); return say('Please add your name so Kohei knows who to reply to.', false); }
     if(!email){ f.email.focus(); return say('Please add an email address for the reply.', false); }
     if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)){ f.email.focus(); return say('That email address does not look right \u2014 check it and try again.', false); }
-    if(!city){ f.city.focus(); return say('Please add your city so Kohei can offer a sensible time.', false); }
 
     var subject = 'Website enquiry \u2014 ' + name + ' (' + CONDITION + ')';
-    var body = 'Name: ' + name + '\nEmail: ' + email + '\nCity: ' + city
+    var body = 'Name: ' + name + '\nEmail: ' + email
+      + (tz ? '\nTime zone: ' + tz : '')
       + '\nEnquiry from: ' + CONDITION + ' page\n\n' + (f.msg.value || '');
 
     if(!SET){
@@ -582,7 +608,7 @@ addEventListener('keydown',function(e){if(e.key==='Escape'&&d.classList.contains
       var res = await fetch('https://api.web3forms.com/submit', {
         method:'POST', headers:{'Content-Type':'application/json','Accept':'application/json'},
         body: JSON.stringify({ access_key: KEY, subject: subject, from_name: 'Waterwell website',
-          name: name, email: email, city: city,
+          name: name, email: email, timezone: tz,
           condition: CONDITION, message: f.msg.value || '' })
       });
       var j = await res.json();
