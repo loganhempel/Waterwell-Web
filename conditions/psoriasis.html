@@ -58,7 +58,7 @@
   .chero .ic svg{width:56px;height:56px}
   .chero h1{font-size:clamp(2.6rem,6vw,4.2rem);letter-spacing:-.01em}
   .chero .tag{font-family:var(--display);font-style:italic;font-size:clamp(1.3rem,2.4vw,1.8rem);color:var(--sage);margin-top:10px}
-  .prose{padding:20px 0 40px}
+  .prose{padding:96px 0}
   .prose .lead{font-size:1.2rem;color:var(--ink);max-width:64ch;margin-bottom:34px}
   .approach-card{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:40px 42px;box-shadow:var(--shadow-soft);max-width:760px}
   .approach-card h2{font-size:1.7rem;margin-bottom:16px}
@@ -137,7 +137,7 @@
      underneath the fixed header. */
   section[id],div[id]{scroll-margin-top:74px}
 }
-  .path-brief{padding:56px 0;border-top:1px solid var(--line)}
+  .path-brief{padding:96px 0;background:var(--bg-soft)}
   .path-brief h2{font-size:clamp(1.5rem,3vw,2rem);margin-top:10px}
   .pb-row{list-style:none;margin:26px 0 0;padding:0;display:grid;
     grid-template-columns:repeat(4,1fr);gap:14px;counter-reset:pb}
@@ -181,6 +181,26 @@
      lands on. It is now the first interactive thing on the page. */
   .chero{padding:116px 0 12px}
   #start{scroll-margin-top:96px}
+  /* Shared section head, so the approach, the process, the FAQ and the Kohei
+     band all open the same way. */
+  .sec-head h2,.kwrap h2,.path-brief h2,.faq h2{font-size:clamp(1.6rem,3.2vw,2.2rem);
+    margin-top:12px;color:var(--navy);line-height:1.14;letter-spacing:-.01em}
+  .approach-body{margin-top:18px;color:var(--muted);max-width:62ch;font-size:1.03rem}
+  .prose .cond-shot{margin-top:44px}
+  /* The four step cards were small and weak in a very wide band. */
+  .path-brief .pb-row{margin-top:32px;gap:18px}
+  .path-brief .pb-row li{padding:26px 22px;gap:12px}
+  /* Backgrounds alternate deliberately (soft / bg / soft / bg / navy) so the
+     seams are legible as sections. The 1px hairlines are gone — with two creams
+     this close together a rule plus a tint read as an accident. */
+  @media(max-width:1000px){
+    .kband,.prose,.path-brief,.faq{padding:68px 0} .ask{padding:76px 0}
+    .others{padding:56px 0 32px}
+  }
+  @media(max-width:600px){
+    .kband,.prose,.path-brief,.faq{padding:52px 0} .ask{padding:60px 0}
+    .others{padding:44px 0 24px}
+  }
   .chero .wrap,.kband .wrap,.faq .wrap{max-width:1140px}
   /* the mark cost 78px of height above the h1 with a form beside it */
   .chero .ic{width:42px;height:42px;margin-bottom:14px}
@@ -210,7 +230,14 @@
     border:1px solid var(--line);border-radius:999px;padding:7px 13px}
   /* The card tracks the reader down the argument instead of scrolling away.
      Only where there is a second column to be sticky inside of. */
-  @media(min-width:1001px){ .chero-col-form{position:sticky;top:92px} }
+  @media(min-width:1001px){
+    .chero-copy{grid-column:1;grid-row:1}
+    .next{grid-column:1;grid-row:2}
+    .chero-col-form{grid-column:2;grid-row:1/3;position:sticky;top:92px}
+  }
+  @media(max-width:1000px){
+    .chero-copy{order:1} .chero-col-form{order:2} .next{order:3}
+  }
   @media(max-width:1000px){
     .chero{padding:96px 0 8px}
     .chero-grid{grid-template-columns:1fr;gap:26px}
@@ -221,14 +248,23 @@
      off the right edge under two veils: a vertical one that leaves the top
      third clean and ramps to .74, and a horizontal feather so the left edge
      never meets the beige as a seam and the copy never sits on bare photo. */
-  .kband{position:relative;overflow:hidden;padding:58px 0;
-    border-top:1px solid var(--line);background:var(--bg-soft)}
-  .kphoto{position:absolute;right:calc(50% - 50vw);top:0;bottom:0;
-    width:min(41vw,600px);z-index:0;overflow:hidden}
-  .kphoto img{width:100%;height:100%;object-fit:cover;object-position:72% 14%}
+  /* The band has to be tall enough for a 1100x1467 portrait to crop sanely.
+     At 44px padding it was ~340px tall, so object-fit:cover zoomed to a
+     disembodied head cut off at the crown AND the chin, with a hard horizontal
+     seam where the photo stopped at the section edge. 96px padding matches the
+     homepage .pad rhythm and gives the box roughly square proportions. */
+  .kband{position:relative;overflow:hidden;padding:96px 0;background:var(--bg)}
+  .kphoto{position:absolute;right:calc(50% - 50vw);top:-40px;bottom:-40px;
+    width:min(44vw,660px);z-index:0;overflow:hidden}
+  .kphoto img{width:100%;height:100%;object-fit:cover;object-position:68% 22%}
+  /* Three veils, not two. The homepage version only needs a bottom ramp because
+     its photo runs the full height of a very tall section. This band is short
+     enough that BOTH horizontal edges cut through him, so the top gets a
+     feather as well and his face sits in the clear middle. The bottom ramp goes
+     almost fully opaque so the edge dissolves instead of ending in a line. */
   .kphoto::after{content:"";position:absolute;inset:0;
-    background:linear-gradient(180deg,rgba(251,247,239,0) 0%,rgba(251,247,239,0) 30%,rgba(251,247,239,.30) 42%,rgba(251,247,239,.60) 51%,rgba(251,247,239,.72) 58%,rgba(251,247,239,.74) 100%),
-               linear-gradient(90deg,var(--bg-soft) 0%,rgba(251,247,239,.72) 8%,rgba(251,247,239,.24) 20%,rgba(251,247,239,0) 38%)}
+    background:linear-gradient(180deg,var(--bg) 0%,rgba(244,238,228,.72) 7%,rgba(244,238,228,.18) 16%,rgba(244,238,228,0) 26%,rgba(244,238,228,0) 46%,rgba(244,238,228,.34) 60%,rgba(244,238,228,.70) 78%,rgba(244,238,228,.93) 92%,var(--bg) 100%),
+               linear-gradient(90deg,var(--bg) 0%,rgba(244,238,228,.74) 9%,rgba(244,238,228,.26) 22%,rgba(244,238,228,0) 40%)}
   .kwrap{position:relative;z-index:1;max-width:1140px}
   .kwrap h2{font-size:clamp(1.6rem,3.2vw,2.2rem);margin-top:12px;color:var(--navy)}
   .kcreds{font-family:var(--mono);font-size:11px;letter-spacing:.12em;
@@ -239,7 +275,7 @@
   @media(max-width:1160px){.kphoto{width:33vw}}
   @media(max-width:1060px){.kphoto{width:29vw}}
   @media(max-width:1000px){
-    .kband{padding:44px 0}
+    .kband{padding:68px 0}
     .kphoto{position:static;width:auto;border-radius:20px;margin:0 0 26px;
       aspect-ratio:16/9;box-shadow:var(--shadow)}
     .kphoto::after{display:none}
@@ -250,7 +286,7 @@
   /* FAQ — the pages carried no objection handling at all. <details> so it is
      keyboard- and screen-reader-correct with no JavaScript, and so it still
      opens with motion disabled. */
-  .faq{padding:58px 0;border-top:1px solid var(--line)}
+  .faq{padding:96px 0}
   .faq h2{font-size:clamp(1.5rem,3vw,2rem);margin-top:10px}
   .faq-list{margin-top:24px}
   .faq details:first-child{border-top:1px solid var(--line)}
@@ -270,7 +306,7 @@
 
   /* SECOND ASK — a button back to the one form in the hero, not a second form.
      Two forms would mean duplicate ids and the handler would bind to the first. */
-  .ask{background:var(--navy);color:#fff;padding:60px 0;text-align:center}
+  .ask{background:var(--navy);color:#fff;padding:100px 0;text-align:center}
   .ask h2{color:#fff;font-size:clamp(1.6rem,3.4vw,2.3rem)}
   .ask p{color:rgba(255,255,255,.82);margin:12px auto 0;max-width:52ch}
   .ask .reassure{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;
@@ -279,7 +315,7 @@
 
   /* Browse links demoted from cards to quiet text. On a paid landing page a
      grid of nine outbound links is the blog tell and a leak. */
-  .others{padding:40px 0 12px;border-top:1px solid var(--line)}
+  .others{padding:72px 0 40px}
   .others h2{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;
     text-transform:uppercase;color:var(--sage-text);font-weight:700}
   .others .oc-fam{font-family:var(--mono);font-size:11px;letter-spacing:.12em;
@@ -355,7 +391,7 @@
      chips — and the form beside them, not 3,000px below them. -->
 <section class="chero"><div class="wrap">
   <div class="chero-grid">
-    <div>
+    <div class="chero-copy">
       <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="3.5" width="11" height="11" rx="2.5"/><rect x="9.5" y="9.5" width="11" height="11" rx="2.5"/></svg></span>
       <span class="eyebrow">What we work with</span>
       <h1 style="margin-top:14px">Psoriasis</h1>
@@ -364,13 +400,6 @@
       <ul class="trust">
         <li>Free 15-min call</li><li>Fully online</li><li>Adults &amp; children</li>
       </ul>
-      <!-- The left column ran out of content half way down the form. What goes
-           there is the objection the form itself creates: "and then what?" -->
-      <ol class="next">
-        <li><b>You send the form</b><span>Takes a minute. No payment details, nothing to install.</span></li>
-        <li><b>Kohei replies</b><span>Usually within one working day, from his own inbox.</span></li>
-        <li><b>A free 15-minute video call</b><span>A conversation about your case. No obligation to book anything.</span></li>
-      </ol>
     </div>
     <div class="chero-col-form">
 
@@ -399,6 +428,14 @@
   </div>
 
     </div>
+    <!-- Sits under the chips on desktop, but AFTER the form on a phone: the
+         brief was the form directly under the condition header, and on one
+         column this list would otherwise push it down a screen. -->
+    <ol class="next">
+        <li><b>You send the form</b><span>Takes a minute. No payment details, nothing to install.</span></li>
+        <li><b>Kohei replies</b><span>Usually within one working day, from his own inbox.</span></li>
+      <li><b>A free 15-minute video call</b><span>A conversation about your case. No obligation to book anything.</span></li>
+    </ol>
   </div>
 </div></section>
 
@@ -415,10 +452,11 @@
 </section>
 
 <section class="prose"><div class="wrap">
-  <div class="approach-card">
-    <h2>The Waterwell approach to psoriasis</h2>
-    <p>We look closely at gut and liver function to slowly calm the autoimmune activity driving your psoriasis, rather than only managing the plaques at the surface. Care is gradual and completely individual, built around what your body needs to come back into balance.</p>
+  <div class="sec-head">
+    <span class="eyebrow">The approach</span>
+    <h2>The Waterwell approach to psoriasis.</h2>
   </div>
+  <p class="approach-body">We look closely at gut and liver function to slowly calm the autoimmune activity driving your psoriasis, rather than only managing the plaques at the surface. Care is gradual and completely individual, built around what your body needs to come back into balance.</p>
   <figure class="cond-shot">
     <img src="/assets/conditions/psoriasis.jpg" alt="Plaque psoriasis at the elbow — one of the presentations Kohei works with." loading="lazy" decoding="async"
          width="1600" height="900">
