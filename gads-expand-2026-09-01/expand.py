@@ -21,6 +21,8 @@ WHOLE_BODY = ("Gut & Digestive Health","Hormones & Women's Health","Fatigue & En
               "Stress & Sleep","Gut & Digestive Health AU","Hormones & Women's Health AU",
               "Fatigue & Energy AU")
 
+HOME = {"NZ": "https://waterwellclinic.com/nz", "AU": "https://waterwellclinic.com/au"}
+
 SRC = os.path.expanduser("~/Client Work/Waterwell/gads-build-2026-08-22/waterwell-2026-08-22.json")
 OUT = os.path.dirname(os.path.abspath(__file__))
 
@@ -384,6 +386,18 @@ def main():
                 ag["rsa"] = {"headlines": nc["headlines"], "descriptions": nc["descriptions"],
                              "paths": ag["rsa"]["paths"], "pinning_notes": nc["pinning_notes"]}
 
+    # 4d-bis. ALL ads land on the region home page — Logan's call, 8 Sep 2026.
+    # The per-condition pages (/conditions/eczema, /tsw, ...) read as a blog, not
+    # as a clinic that takes bookings, so every ad group now points at the region
+    # home. Region, not the global "/", because /nz and /au carry different
+    # compliance wording and the campaigns are geo-split — an AU click must not
+    # land on the NZ page. Display paths are unchanged: they still carry the
+    # condition into the visible URL, and the home page covers every one of them.
+    for cp in d["campaigns"]:
+        home = HOME[geo_of(cp["name"])]
+        for ag in cp["ad_groups"]:
+            ag["final_url"] = home
+
     # 4e. scope: Kohei's "not skin related" flag
     if SKIN_ONLY:
         for cp in d["campaigns"]:
@@ -396,8 +410,8 @@ def main():
     errs = []
     for cp in d["campaigns"]:
         for ag in cp["ad_groups"]:
-            if not ag["final_url"].startswith("https://waterwellclinic.com/"):
-                errs.append(f"{ag['name']}: bad URL {ag['final_url']}")
+            if ag["final_url"] not in HOME.values():
+                errs.append(f"{ag['name']}: final URL must be a region home, got {ag['final_url']}")
             for h in ag["rsa"]["headlines"]:
                 if len(h) > 30: errs.append(f"{ag['name']}: headline {len(h)} > 30 — {h!r}")
             for x in ag["rsa"]["descriptions"]:
