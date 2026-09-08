@@ -175,22 +175,154 @@
     border:1px solid var(--line);background:var(--paper)}
   .cond-shot figcaption{margin-top:12px;font-size:.86rem;color:var(--muted);line-height:1.5}
   .cond-shot .vary{display:block;font-size:.8rem;color:var(--muted);opacity:.85;margin-top:3px}
+  /* ------------------------------------------------ 8 Sep 2026 wireframe -- */
+  /* HERO: the argument and the ask side by side. The form used to sit ~3,000px
+     down the page, below four blocks of prose, on the page every paid click
+     lands on. It is now the first interactive thing on the page. */
+  .chero{padding:116px 0 12px}
+  #start{scroll-margin-top:96px}
+  .chero .wrap,.kband .wrap,.faq .wrap{max-width:1140px}
+  /* the mark cost 78px of height above the h1 with a form beside it */
+  .chero .ic{width:42px;height:42px;margin-bottom:14px}
+  .chero .ic svg{width:42px;height:42px}
+  /* prose stays at the 1000px measure; the card filled 760 of 1140 and read as an orphan */
+  .approach-card{max-width:none}
+  .chero-grid{display:grid;grid-template-columns:1.04fr .96fr;
+    gap:clamp(26px,3.6vw,54px);align-items:start}
+  .chero h1{font-size:clamp(2.5rem,5.4vw,3.9rem);line-height:1.03;letter-spacing:-.018em}
+  .chero .tag{font-family:var(--display);font-style:italic;color:var(--sage-text);
+    font-size:clamp(1.12rem,2.2vw,1.45rem);line-height:1.3;margin-top:10px}
+  .chero .lead{margin-top:18px;color:var(--muted);max-width:44ch}
+  .trust{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 0;padding:0}
+  .next{list-style:none;margin:28px 0 0;padding:0;display:grid;gap:0;counter-reset:nx;
+    border-left:1px solid var(--line)}
+  .next li{counter-increment:nx;position:relative;padding:0 0 18px 26px}
+  .next li:last-child{padding-bottom:0}
+  .next li::before{content:counter(nx);position:absolute;left:-9px;top:2px;
+    width:18px;height:18px;border-radius:50%;background:var(--bg);color:var(--sage-text);
+    border:1px solid var(--line);font-family:var(--mono);font-size:10px;font-weight:700;
+    display:flex;align-items:center;justify-content:center}
+  .next b{display:block;font-weight:700;font-size:.94rem;color:var(--navy)}
+  .next span{display:block;color:var(--muted);font-size:.88rem;line-height:1.5}
+  @media(max-width:1000px){.next{margin-top:22px}}
+  .trust li{font-family:var(--mono);font-size:10.5px;letter-spacing:.11em;
+    text-transform:uppercase;color:var(--sage-text);background:var(--bg-soft);
+    border:1px solid var(--line);border-radius:999px;padding:7px 13px}
+  /* The card tracks the reader down the argument instead of scrolling away.
+     Only where there is a second column to be sticky inside of. */
+  @media(min-width:1001px){ .chero-col-form{position:sticky;top:92px} }
+  @media(max-width:1000px){
+    .chero{padding:96px 0 8px}
+    .chero-grid{grid-template-columns:1fr;gap:26px}
+    .chero .lead{max-width:none}
+  }
 
-  .cta-form{margin-top:26px;text-align:left;display:grid;gap:12px}
+  /* KOHEI BAND — the homepage #approach treatment, ported. Photograph bleeds
+     off the right edge under two veils: a vertical one that leaves the top
+     third clean and ramps to .74, and a horizontal feather so the left edge
+     never meets the beige as a seam and the copy never sits on bare photo. */
+  .kband{position:relative;overflow:hidden;padding:58px 0;
+    border-top:1px solid var(--line);background:var(--bg-soft)}
+  .kphoto{position:absolute;right:calc(50% - 50vw);top:0;bottom:0;
+    width:min(41vw,600px);z-index:0;overflow:hidden}
+  .kphoto img{width:100%;height:100%;object-fit:cover;object-position:72% 14%}
+  .kphoto::after{content:"";position:absolute;inset:0;
+    background:linear-gradient(180deg,rgba(251,247,239,0) 0%,rgba(251,247,239,0) 30%,rgba(251,247,239,.30) 42%,rgba(251,247,239,.60) 51%,rgba(251,247,239,.72) 58%,rgba(251,247,239,.74) 100%),
+               linear-gradient(90deg,var(--bg-soft) 0%,rgba(251,247,239,.72) 8%,rgba(251,247,239,.24) 20%,rgba(251,247,239,0) 38%)}
+  .kwrap{position:relative;z-index:1;max-width:1140px}
+  .kwrap h2{font-size:clamp(1.6rem,3.2vw,2.2rem);margin-top:12px;color:var(--navy)}
+  .kcreds{font-family:var(--mono);font-size:11px;letter-spacing:.12em;
+    text-transform:uppercase;color:var(--sand-text);vertical-align:middle;
+    margin-left:10px;white-space:nowrap}
+  .kwrap p{margin-top:14px;color:var(--muted);max-width:52ch}
+  @media(max-width:1300px){.kphoto{width:37vw}}
+  @media(max-width:1160px){.kphoto{width:33vw}}
+  @media(max-width:1060px){.kphoto{width:29vw}}
+  @media(max-width:1000px){
+    .kband{padding:44px 0}
+    .kphoto{position:static;width:auto;border-radius:20px;margin:0 0 26px;
+      aspect-ratio:16/9;box-shadow:var(--shadow)}
+    .kphoto::after{display:none}
+    .kphoto img{object-position:60% 26%}
+    .kwrap p{max-width:none}
+  }
+
+  /* FAQ — the pages carried no objection handling at all. <details> so it is
+     keyboard- and screen-reader-correct with no JavaScript, and so it still
+     opens with motion disabled. */
+  .faq{padding:58px 0;border-top:1px solid var(--line)}
+  .faq h2{font-size:clamp(1.5rem,3vw,2rem);margin-top:10px}
+  .faq-list{margin-top:24px}
+  .faq details:first-child{border-top:1px solid var(--line)}
+  .faq details{border-bottom:1px solid var(--line)}
+  .faq summary{cursor:pointer;list-style:none;display:block;position:relative;
+    padding:19px 46px 19px 0;font-family:var(--display);font-size:1.14rem;
+    line-height:1.35;color:var(--navy)}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary:focus-visible{outline:2px solid var(--sage);outline-offset:3px;border-radius:6px}
+  .faq summary::before,.faq summary::after{content:"";position:absolute;right:8px;
+    top:50%;width:13px;height:2px;border-radius:2px;background:var(--sage);
+    transition:transform .3s var(--ease),opacity .3s var(--ease)}
+  .faq summary::after{transform:rotate(90deg)}
+  .faq details[open] summary::after{transform:rotate(0);opacity:0}
+  .faq .fa{padding:0 44px 20px 0}
+  .faq .fa p{color:var(--muted);margin:0}
+
+  /* SECOND ASK — a button back to the one form in the hero, not a second form.
+     Two forms would mean duplicate ids and the handler would bind to the first. */
+  .ask{background:var(--navy);color:#fff;padding:60px 0;text-align:center}
+  .ask h2{color:#fff;font-size:clamp(1.6rem,3.4vw,2.3rem)}
+  .ask p{color:rgba(255,255,255,.82);margin:12px auto 0;max-width:52ch}
+  .ask .reassure{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;
+    text-transform:uppercase;color:var(--sage-bright);margin-top:18px}
+  .ask .btn{margin-top:22px;background:#fff;color:var(--navy)}
+
+  /* Browse links demoted from cards to quiet text. On a paid landing page a
+     grid of nine outbound links is the blog tell and a leak. */
+  .others{padding:40px 0 12px;border-top:1px solid var(--line)}
+  .others h2{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--sage-text);font-weight:700}
+  .others .oc-fam{font-family:var(--mono);font-size:11px;letter-spacing:.12em;
+    text-transform:uppercase;color:var(--sand-text);font-weight:700;margin:20px 0 8px}
+  /* Nine outbound cards on the page every paid click lands on read as a blog
+     index and leak the click. Same links, demoted to quiet inline text. */
+  .others .oc-grid{display:flex;flex-wrap:wrap;gap:8px 10px}
+  .others .oc{display:inline-flex;align-items:center;gap:7px;background:none;
+    border:1px solid var(--line);border-radius:999px;box-shadow:none;
+    padding:8px 15px;font-size:.9rem;color:var(--navy);
+    transition:border-color .25s var(--ease),background .25s var(--ease)}
+  .others .oc:hover{background:var(--bg-soft);border-color:var(--sage)}
+  .others .oc svg{width:15px;height:15px;color:var(--sage)}
+  .others .oc-ar{display:none}
+  .others .oc-ic{width:auto;height:auto;background:none;padding:0;
+    display:inline-flex;align-items:center;box-shadow:none;border:0}
+
+  /* The form moved out of the navy band at the foot of the page and into the
+     hero, so it is now a light card on cream. Same ids and field names — the
+     handler in FORM_JS is untouched. */
+  .formcard{background:var(--paper);border:1px solid var(--line);border-radius:22px;
+    padding:clamp(20px,2.4vw,28px);box-shadow:var(--shadow)}
+  .formcard h2{font-size:1.4rem;line-height:1.15;color:var(--navy)}
+  .formcard .fsub{margin-top:7px;color:var(--muted);font-size:.94rem}
+  .fmeta{font-family:var(--mono);font-size:11px;letter-spacing:.1em;
+    text-transform:uppercase;color:var(--sage-text);margin-top:12px}
+  .cta-form{margin-top:16px;text-align:left;display:grid;gap:12px}
   .cta-form .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-  .cta-form label{display:block;font-family:var(--mono);font-size:10.5px;
-    letter-spacing:.12em;text-transform:uppercase;color:var(--sage-bright);margin-bottom:6px}
-  .cta-form input,.cta-form textarea{width:100%;font:inherit;font-size:15px;
-    padding:13px 15px;border:1px solid rgba(255,255,255,.45);border-radius:12px;
-    background:var(--paper);color:var(--ink);box-sizing:border-box}
-  .cta-form textarea{min-height:88px;resize:vertical}
+  /* 11.5px, not the 10.5px micro-label size used for decorative eyebrows:
+     these label the fields of the only conversion element on the page. */
+  .cta-form label{display:block;font-family:var(--mono);font-size:11.5px;
+    letter-spacing:.1em;text-transform:uppercase;color:var(--sage-text);margin-bottom:6px}
+  .cta-form input,.cta-form textarea{width:100%;font:inherit;font-size:16px;
+    padding:13px 15px;border:1px solid var(--line);border-radius:12px;
+    background:var(--bg-soft);color:var(--ink);box-sizing:border-box}
+  .cta-form textarea{min-height:84px;resize:vertical}
   .cta-form input:focus,.cta-form textarea:focus{outline:2px solid var(--sage);
-    outline-offset:1px;border-color:transparent}
+    outline-offset:1px;border-color:transparent;background:var(--paper)}
   .cta-form button{width:100%;justify-content:center;margin-top:2px}
   .cta-form .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
-  .cta-form .fnote{font-size:.86rem;color:rgba(255,255,255,.75);margin:0}
+  .cta-form .fnote{font-size:.84rem;color:var(--muted);margin:0;line-height:1.5}
   .cta-form .msg{font-size:.9rem;margin:0;min-height:1.2em}
-  .cta-form .msg.ok{color:var(--sage-bright)} .cta-form .msg.err{color:#ffb4a2}
+  .cta-form .msg.ok{color:var(--sage-text)} .cta-form .msg.err{color:#B23A2B}
   @media(max-width:560px){ .cta-form .row{grid-template-columns:1fr} }
 
 </style>
@@ -210,26 +342,81 @@
 <header class="nav"><div class="wrap nav-inner">
   <a class="brand" href="/" aria-label="Waterwell Clinic — home"><img src="/assets/logo.png" alt="Waterwell Clinic" width="1500" height="162"></a>
   <a class="nav-back" href="/#conditions">← All conditions</a>
-  <a class="btn btn-primary nav-cta-btn" href="/#visit"><span class="cta-long">Free discovery session</span><span class="cta-short">Book free call</span> <span class="arrow">→</span></a>
+  <a class="btn btn-primary nav-cta-btn" href="#start"><span class="cta-long">Free discovery session</span><span class="cta-short">Book free call</span> <span class="arrow">→</span></a>
   <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
 </div></header>
 <div class="drawer" id="drawer">
   <a href="/#conditions">Conditions</a><a href="/#how">How it works</a><a href="/#services">Services</a><a href="/#results">Results</a><a href="/#story">About Kohei</a><a href="/#online">Online care</a><a href="/blog">Articles</a><a href="/podcast">Podcast</a>
-  <a class="btn btn-primary" href="/#visit">Book a free discovery session →</a>
+  <a class="btn btn-primary" href="#start">Book a free discovery session →</a>
 </div>
 
 <main id="main">
+<!-- ASK FIRST. The condition header, the argument in one paragraph, the proof
+     chips — and the form beside them, not 3,000px below them. -->
 <section class="chero"><div class="wrap">
-  <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="9" cy="10" r="1" fill="currentColor" stroke="none"/><circle cx="15" cy="11" r="1" fill="currentColor" stroke="none"/><circle cx="12" cy="15" r="1" fill="currentColor" stroke="none"/></svg></span>
-  <span class="eyebrow">What we work with</span>
-  <h1 style="margin-top:14px">Acne</h1>
-  <p class="tag">Clearer skin by treating the cause.</p>
+  <div class="chero-grid">
+    <div>
+      <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="9" cy="10" r="1" fill="currentColor" stroke="none"/><circle cx="15" cy="11" r="1" fill="currentColor" stroke="none"/><circle cx="12" cy="15" r="1" fill="currentColor" stroke="none"/></svg></span>
+      <span class="eyebrow">What we work with</span>
+      <h1 style="margin-top:14px">Acne</h1>
+      <p class="tag">Clearer skin by treating the cause.</p>
+      <p class="lead">Acne that keeps coming back is rarely just about your skin — it’s usually a sign of what’s happening internally.</p>
+      <ul class="trust">
+        <li>Free 15-min call</li><li>Fully online</li><li>Adults &amp; children</li>
+      </ul>
+      <!-- The left column ran out of content half way down the form. What goes
+           there is the objection the form itself creates: "and then what?" -->
+      <ol class="next">
+        <li><b>You send the form</b><span>Takes a minute. No payment details, nothing to install.</span></li>
+        <li><b>Kohei replies</b><span>Usually within one working day, from his own inbox.</span></li>
+        <li><b>A free 15-minute video call</b><span>A conversation about your case. No obligation to book anything.</span></li>
+      </ol>
+    </div>
+    <div class="chero-col-form">
+
+  <div class="formcard" id="start">
+    <h2>Book your free 15-minute call</h2>
+    <p class="fsub">A conversation about your acne and whether Kohei can help. Nothing more.</p>
+    <p class="fmeta">15 min &#183; free &#183; no obligation</p>
+  <form class="cta-form" id="cform" novalidate>
+    <div class="hp" aria-hidden="true"><label for="cf-web">Website</label>
+      <input id="cf-web" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+    <div class="row">
+      <div><label for="cf-name">Your name</label>
+        <input id="cf-name" name="name" type="text" autocomplete="name" required></div>
+      <div><label for="cf-email">Email</label>
+        <input id="cf-email" name="email" type="email" autocomplete="email" inputmode="email" required></div>
+    </div>
+    <div><label for="cf-city">Your city</label>
+      <input id="cf-city" name="city" type="text" placeholder="Your nearest city" autocomplete="address-level2" required></div>
+    <div><label for="cf-msg">Anything you’d like Kohei to know? (optional)</label>
+      <textarea id="cf-msg" name="msg" placeholder="A little about your situation and what you’ve tried…"></textarea></div>
+    <button class="btn btn-primary" type="submit">Request my free discovery session <span class="arrow">→</span></button>
+    <p class="msg" id="cf-msg-out" role="status" aria-live="polite"></p>
+    <p class="fnote">You’re welcome to send photos of your skin and a completed health
+      questionnaire before we meet — I’ll send the questionnaire once we book.</p>
+  </form>
+  </div>
+
+    </div>
+  </div>
 </div></section>
 
+<section class="kband">
+  <div class="kphoto" aria-hidden="true">
+    <img src="/assets/approach-considered.jpg" alt="" loading="lazy" decoding="async" width="1100" height="1467">
+  </div>
+  <div class="wrap kwrap">
+    <span class="eyebrow">Who you&#8217;d be working with</span>
+    <h2>Kohei Iguchi <span class="kcreds">BNatMed, BSc, MATMS</span></h2>
+    <p>Kohei is a qualified naturopath with more than ten years in practice and hundreds of skin patients behind him. He had severe eczema himself, so he has been on both sides of the consultation.</p>
+    <ul class="trust"><li>Qualified naturopath</li><li>10 years&#8217; practice</li><li>Consults by secure video</li></ul>
+  </div>
+</section>
+
 <section class="prose"><div class="wrap">
-  <p class="lead">Acne that keeps coming back is rarely just about your skin — it’s usually a sign of what’s happening internally.</p>
   <div class="approach-card">
-    <h2>The Waterwell approach</h2>
+    <h2>The Waterwell approach to acne</h2>
     <p>We support hormonal balance, gut health and your skin’s microbial balance, and look at the dietary and lifestyle factors feeding your breakouts — so we’re working on why the acne keeps returning, not just the spots you can see.</p>
   </div>
   <figure class="cond-shot">
@@ -245,44 +432,47 @@
   <span class="eyebrow">A clear path</span>
   <h2>What working together looks like.</h2>
   <ol class="pb-row">
-    <li><span class="pb-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span><b>Free discovery session</b><span class="pb-m">15 min · free</span></li>
-    <li><span class="pb-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3v5a4 4 0 0 0 8 0V3"/><path d="M12 12v3a5 5 0 0 0 5 5 3 3 0 0 0 3-3v-2"/><circle cx="20" cy="13" r="1.6"/></svg></span><b>Initial consultation</b><span class="pb-m">75 min · by video</span></li>
+    <li><span class="pb-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span><b>Free discovery session</b><span class="pb-m">15 min &#183; free</span></li>
+    <li><span class="pb-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3v5a4 4 0 0 0 8 0V3"/><path d="M12 12v3a5 5 0 0 0 5 5 3 3 0 0 0 3-3v-2"/><circle cx="20" cy="13" r="1.6"/></svg></span><b>Initial consultation</b><span class="pb-m">75 min &#183; by video</span></li>
     <li><span class="pb-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h9l4 4v14a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h4"/></svg></span><b>Your tailored plan</b><span class="pb-m">individual</span></li>
     <li><span class="pb-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l5-5 4 3 5-7"/><path d="M15 8h4v4"/></svg></span><b>Review &amp; progress</b><span class="pb-m">ongoing</span></li>
   </ol>
 </div></section>
 
-<section class="cta"><div class="wrap"><div class="cta-inner">
+<section class="faq"><div class="wrap">
+  <span class="eyebrow">Good to know</span>
+  <h2>Questions, answered.</h2>
+  <div class="faq-list">
+    <details name="wwfaq">
+      <summary>Do you work with children and babies?</summary>
+      <div class="fa"><p>Absolutely. Children are far more likely to suffer from skin conditions than adults, so many of our patients are little ones. Kohei works through it with the parent as much as the child, so you know what you are doing and why at every stage.</p></div>
+    </details>
+    <details name="wwfaq">
+      <summary>How does the free discovery session work?</summary>
+      <div class="fa"><p>It&#8217;s a relaxed 15-minute conversation about what&#8217;s going on and how Kohei may be able to help, so you can decide whether to book an initial consultation. No pressure, no obligation.</p></div>
+    </details>
+    <details name="wwfaq">
+      <summary>Can I keep taking my current medication?</summary>
+      <div class="fa"><p>Yes. Naturopathic care is complementary — it works alongside your existing care. Kohei will never tell you to stop a prescribed medication without your wish to and a conversation with your doctor first.</p></div>
+    </details>
+    <details name="wwfaq">
+      <summary>What happens during a first consultation?</summary>
+      <div class="fa"><p>The initial consultation is 75 minutes. You complete a health questionnaire beforehand, then you talk through your history, lifestyle and diet in depth. You leave with a temporary plan to get started, and a fully personalised plan the following week.</p></div>
+    </details>
+    <details name="wwfaq">
+      <summary>How long until I see a change?</summary>
+      <div class="fa"><p>Every case and every individual is unique, so timeframes vary. Some people notice changes within weeks; deeper change takes longer. After your initial consultation you&#8217;ll receive a tailored Estimated Progress Timeline.</p></div>
+    </details>
+  </div>
+</div></section>
+
+<section class="ask"><div class="wrap">
   <h2>Not sure if we can help with your acne?</h2>
-  <p>Start with a free 15-minute discovery session — no commitment, just a conversation about what’s going on and whether Kohei is the right fit.</p>
-  <div class="reassure">15 mins · no cost · no commitment · just a conversation</div>
+  <p>Start with a free 15-minute discovery session — no commitment, just a conversation about what&#8217;s going on and whether Kohei is the right fit.</p>
+  <div class="reassure">15 mins &#183; no cost &#183; no commitment</div>
+  <a class="btn btn-primary" href="#start">Book your free call <span class="arrow">&#8594;</span></a>
+</div></section>
 
-  <form class="cta-form" id="cform" novalidate>
-    <div class="hp" aria-hidden="true"><label for="cf-web">Website</label>
-      <input id="cf-web" name="website" type="text" tabindex="-1" autocomplete="off"></div>
-    <div class="row">
-      <div><label for="cf-name">Your name</label>
-        <input id="cf-name" name="name" type="text" autocomplete="name" required></div>
-      <div><label for="cf-email">Email</label>
-        <input id="cf-email" name="email" type="email" autocomplete="email" inputmode="email" required></div>
-    </div>
-    <div class="row">
-      <div><label for="cf-city">Your city</label>
-        <input id="cf-city" name="city" type="text" placeholder="Your nearest city" autocomplete="address-level2" required></div>
-    </div>
-    <div><label for="cf-msg">Anything you’d like Kohei to know? (optional)</label>
-      <textarea id="cf-msg" name="msg" placeholder="A little about your situation and what you’ve tried…"></textarea></div>
-    <p class="fnote">You’re welcome to send photos of your skin and a completed health
-      questionnaire before we meet — I’ll send the questionnaire once we book.</p>
-    <button class="btn btn-primary" type="submit">Request my free discovery session <span class="arrow">→</span></button>
-    <p class="msg" id="cf-msg-out" role="status" aria-live="polite"></p>
-  </form>
-
-</div></div></section>
-
-<!-- agent-batch3: browse links moved BELOW the ask. They were nine outbound
-     links sitting between the argument and the CTA, on the page every paid
-     click lands on. -->
 <section class="others"><div class="wrap">
   <h2>Other areas we work with</h2>
   <h3 class="oc-fam">Skin conditions</h3><div class="oc-grid"><a class="oc" href="/conditions/eczema"><span class="oc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 18 0"/><path d="M6.5 12a5.5 5.5 0 0 1 11 0"/><circle cx="12" cy="12" r="1.6" fill="currentColor" stroke="none"/></svg></span>Eczema<span class="oc-ar">→</span></a><a class="oc" href="/conditions/tsw"><span class="oc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg></span>Topical Steroid Withdrawal<span class="oc-ar">→</span></a><a class="oc" href="/conditions/psoriasis"><span class="oc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="3.5" width="11" height="11" rx="2.5"/><rect x="9.5" y="9.5" width="11" height="11" rx="2.5"/></svg></span>Psoriasis<span class="oc-ar">→</span></a><a class="oc" href="/conditions/skin-infections"><span class="oc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="6"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5.2 5.2l2 2M16.8 16.8l2 2M18.8 5.2l-2 2M7.2 16.8l-2 2"/></svg></span>Skin infections<span class="oc-ar">→</span></a><a class="oc" href="/conditions/rosacea"><span class="oc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4c3 2.5 5 5.5 5 8.5a5 5 0 0 1-10 0C7 9.5 9 6.5 12 4z"/><path d="M9.5 13.5c1 1 4 1 5 0" opacity=".7"/></svg></span>Rosacea<span class="oc-ar">→</span></a></div><h3 class="oc-fam">Whole-body health</h3><div class="oc-grid"><a class="oc" href="/conditions/gut-health"><span class="oc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3v4.5a4.5 4.5 0 0 0 4.5 4.5h0A4.5 4.5 0 0 1 18 16.5V21"/><path d="M6 7h4M6 11h5M13 17h5M12 21h6" opacity=".65"/></svg></span>Gut &amp; digestive health<span class="oc-ar">→</span></a><a class="oc" href="/conditions/hormones"><span class="oc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3.2"/><path d="M12 2v4M12 18v4M4.5 7.5l3.4 2M16.1 14.5l3.4 2M4.5 16.5l3.4-2M16.1 9.5l3.4-2"/></svg></span>Hormones &amp; women’s health<span class="oc-ar">→</span></a><a class="oc" href="/conditions/fatigue"><span class="oc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v9l5.5 3.2"/><circle cx="12" cy="12" r="9"/></svg></span>Fatigue &amp; energy<span class="oc-ar">→</span></a><a class="oc" href="/conditions/stress-sleep"><span class="oc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.2 8.2 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/><path d="M15.5 4.2l.9 1.9 1.9.9-1.9.9-.9 1.9-.9-1.9-1.9-.9 1.9-.9z" opacity=".7"/></svg></span>Stress &amp; sleep<span class="oc-ar">→</span></a></div>
@@ -295,7 +485,7 @@
 </div></footer>
 
 <div class="mcta" id="mcta">
-  <a href="/#visit">Book a free discovery session</a>
+  <a href="#start">Book a free discovery session</a>
 </div>
 <script>
 (function(){var b=document.getElementById('burger'),d=document.getElementById('drawer');
