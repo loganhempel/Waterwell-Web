@@ -235,7 +235,7 @@
   .hero-dots button:hover span{background:var(--sage-text)}
 
   /* Honeypot: off-canvas rather than display:none, which some bots skip. */
-  .hp-field{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+  .hp-field{display:none}
   /* #online sat 47px right of the 148px grid every other section aligns to,
      because the feature card's padding pushed its heading in. Centre the card's
      content so the section reads as centred on the page, like #belief. */
@@ -1681,7 +1681,7 @@
         </div>
       </div>
       <form class="book-form" id="bookform" novalidate>
-        <div class="hp-field" aria-hidden="true"><label for="bf-website">Website</label><input id="bf-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+        <div class="hp-field" aria-hidden="true"><label for="bf-xq7">Leave this blank</label><input id="bf-xq7" name="bf_xq7" type="text" tabindex="-1" autocomplete="off" aria-hidden="true"></div>
         <div class="field"><label for="bf-name">Your name</label><input id="bf-name" name="name" type="text" placeholder="First &amp; last name" autocomplete="name" required /></div>
         <div class="field"><label for="bf-email">Email</label><input id="bf-email" name="email" type="email" placeholder="you@example.com" autocomplete="email" inputmode="email" required /></div>
         <div class="field"><label for="bf-concern">Enquiry</label>
@@ -1944,11 +1944,12 @@
 
     f.addEventListener('submit', async e => {
       e.preventDefault();
-      // Honeypot — a real user cannot fill this. Pretend success so the bot
-      // does not learn to retry, but send nothing.
-      if (f.website && f.website.value.trim()) {
-        f.reset(); say('Thanks — that’s come through.', true); return;
-      }
+      // Honeypot. It used to be name="website" in an off-screen wrapper, which
+      // Chrome's address autofill happily filled — and the branch below then
+      // showed a success message and sent nothing, silently destroying the
+      // enquiry. Verified live 12 Sep 2026. It is now fail-safe: a filled
+      // honeypot flags the subject for triage, it never discards a lead.
+      const suspect = !!(f.bf_xq7 && f.bf_xq7.value.trim());
       const name = f.name.value.trim(), email = f.email.value.trim();
       if(!name){ f.name.focus(); say('Please add your name so Kohei knows who to reply to.', false); return; }
       if(!email){ f.email.focus(); say('Please add an email address for the reply.', false); return; }
@@ -1967,7 +1968,7 @@
         + (tz ? '\nTime zone: ' + tz : '')
         + '\nEnquiry: ' + (concern || 'Not specified')
         + '\n\n' + (f.msg.value || '')).trim();
-      const subject = 'Website enquiry — ' + name + (concern ? ' (' + concern + ')' : '');
+      const subject = (suspect ? '[CHECK] ' : '') + 'Website enquiry — ' + name + (concern ? ' (' + concern + ')' : '');
 
       if(!KEY_SET){ mailtoFallback(name, body, subject); return; }
 

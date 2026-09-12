@@ -363,7 +363,7 @@
   .tzk{font-family:var(--mono);font-size:11px;letter-spacing:.1em;
     text-transform:uppercase;color:var(--sage-text)}
   .tzv{font-size:.9rem;color:var(--ink);text-align:right}
-  .cta-form .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+  .cta-form .hp{display:none}
   .cta-form .fnote{font-size:.84rem;color:var(--muted);margin:0;line-height:1.5}
   .cta-form .msg{font-size:.9rem;margin:0;min-height:1.2em}
   .cta-form .msg.ok{color:var(--sage-text)} .cta-form .msg.err{color:#B23A2B}
@@ -416,8 +416,8 @@
     <p class="fsub">A conversation about your acne and whether Kohei can help. Nothing more.</p>
     <p class="fmeta">15 min &#183; free &#183; no obligation</p>
   <form class="cta-form" id="cform" novalidate>
-    <div class="hp" aria-hidden="true"><label for="cf-web">Website</label>
-      <input id="cf-web" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+    <div class="hp" aria-hidden="true"><label for="cf-xq7">Leave this blank</label>
+      <input id="cf-xq7" name="cf_xq7" type="text" tabindex="-1" autocomplete="off" aria-hidden="true"></div>
     <div class="row">
       <div><label for="cf-name">Your name</label>
         <input id="cf-name" name="name" type="text" autocomplete="name" required></div>
@@ -584,15 +584,17 @@ addEventListener('keydown',function(e){if(e.key==='Escape'&&d.classList.contains
 
   f.addEventListener('submit', async function(e){
     e.preventDefault();
-    // Honeypot. Report success so a bot does not learn to retry, send nothing.
-    if(f.website && f.website.value.trim()){ f.reset(); say('Thanks \u2014 that\u2019s come through.', true); return; }
+    // Honeypot. It used to be name="website", which Chrome autofill filled on
+    // real visitors — and this branch then faked success and sent nothing.
+    // Verified live 12 Sep 2026. Now fail-safe: it flags, it never discards.
+    var suspect = !!(f.cf_xq7 && f.cf_xq7.value.trim());
     var name = f.name.value.trim(), email = f.email.value.trim(),
         tz = (f.timezone && f.timezone.value) || '';
     if(!name){ f.name.focus(); return say('Please add your name so Kohei knows who to reply to.', false); }
     if(!email){ f.email.focus(); return say('Please add an email address for the reply.', false); }
     if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)){ f.email.focus(); return say('That email address does not look right \u2014 check it and try again.', false); }
 
-    var subject = 'Website enquiry \u2014 ' + name + ' (' + CONDITION + ')';
+    var subject = (suspect ? '[CHECK] ' : '') + 'Website enquiry \u2014 ' + name + ' (' + CONDITION + ')';
     var body = 'Name: ' + name + '\nEmail: ' + email
       + (tz ? '\nTime zone: ' + tz : '')
       + '\nEnquiry from: ' + CONDITION + ' page\n\n' + (f.msg.value || '');
