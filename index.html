@@ -1922,6 +1922,38 @@
     const WEB3FORMS_KEY = 'afca65db-afc1-4398-8f94-7a142f2994bb';
     const KEY_SET = /^[0-9a-f-]{30,}$/i.test(WEB3FORMS_KEY);
 
+    // Second recipient — the clinic's own inbox. Added 21 Sep 2026 after Kohei
+    // asked on 2 Sep why the enquiries were not reaching him directly.
+    //
+    // A CC is NOT available. Web3Forms free allows one recipient per access
+    // key, and `ccemail` is a Pro feature: posting it returns HTTP 400 and the
+    // ENTIRE submission is rejected. Verified live against this very key on
+    // 21 Sep 2026 — "You are trying to use a Pro feature, Please Upgrade to
+    // use ccemail" — not read off the docs. Never add that field here.
+    //
+    // The free equivalent is a SECOND access key bound to the clinic's inbox.
+    // The enquiry is posted twice, so Kohei gets it straight from Web3Forms
+    // rather than waiting on a manual forward from logan@emporom.org. Kohei
+    // generates the key himself at web3forms.com (it is emailed to whichever
+    // inbox he signs in with) and sends it over; paste it below.
+    //
+    // While it is empty the copy is skipped outright, so behaviour cannot
+    // regress from leaving it unset.
+    const CLINIC_KEY = '';
+    const CLINIC_SET = /^[0-9a-f-]{30,}$/i.test(CLINIC_KEY);
+
+    // Fire-and-forget. The visitor's success message depends ONLY on the
+    // primary post — a failed copy must never tell someone their enquiry did
+    // not send when the lead is already captured.
+    function copyToClinic(payload){
+      if(!CLINIC_SET) return;
+      fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {'Content-Type':'application/json', 'Accept':'application/json'},
+        body: JSON.stringify(Object.assign({}, payload, {access_key: CLINIC_KEY}))
+      }).catch(function(){ /* the lead is already captured; nothing to surface */ });
+    }
+
     const status = document.createElement('p');
     status.className = 'bf-status';
     status.setAttribute('role','status');
@@ -1977,22 +2009,27 @@
       if(btn){ btn.disabled = true; btn.textContent = 'Sending…'; }
       say('Sending…', true);
 
+      // One payload, two recipients. Built once so the copy Kohei receives is
+      // byte-for-byte the enquiry Logan receives.
+      const payload = {
+        access_key: WEB3FORMS_KEY,
+        subject: subject,
+        from_name: 'Waterwell website',
+        name: name,
+        email: email,
+        city: city,
+        timezone: tz,
+        concern: concern,
+        message: f.msg.value || '',
+        page: location.pathname
+      };
+      copyToClinic(payload);
+
       try {
         const res = await fetch('https://api.web3forms.com/submit', {
           method: 'POST',
           headers: {'Content-Type':'application/json', 'Accept':'application/json'},
-          body: JSON.stringify({
-            access_key: WEB3FORMS_KEY,
-            subject: subject,
-            from_name: 'Waterwell website',
-            name: name,
-            email: email,
-            city: city,
-            timezone: tz,
-            concern: concern,
-            message: f.msg.value || '',
-            page: location.pathname
-          })
+          body: JSON.stringify(payload)
         });
         const data = await res.json().catch(() => ({}));
         if(res.ok && data.success){
