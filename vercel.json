@@ -1,5 +1,177 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/services/eczema-treatment",
+      "destination": "/conditions/eczema",
+      "permanent": true
+    },
+    {
+      "source": "/services/free-discovery-session",
+      "destination": "/#book-call",
+      "permanent": true
+    },
+    {
+      "source": "/services/comprehensive-naturopathic-consultation",
+      "destination": "/#book-call",
+      "permanent": true
+    },
+    {
+      "source": "/about-me",
+      "destination": "/#story",
+      "permanent": true
+    },
+    {
+      "source": "/contact",
+      "destination": "/#book-call",
+      "permanent": true
+    },
+    {
+      "source": "/testimonials",
+      "destination": "/#results",
+      "permanent": true
+    },
+    {
+      "source": "/thank-you",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/ghp-award",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/services",
+      "destination": "/#services",
+      "permanent": true
+    },
+    {
+      "source": "/services/:path*",
+      "destination": "/#services",
+      "permanent": true
+    },
+    {
+      "source": "/depression-and-the-gut",
+      "destination": "/blog",
+      "permanent": true
+    },
+    {
+      "source": "/wp-admin/:path*",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-login.php",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/feed",
+      "destination": "/blog",
+      "permanent": true
+    },
+    {
+      "source": "/category/:path*",
+      "destination": "/blog",
+      "permanent": true
+    },
+    {
+      "source": "/the-gut-skin-axis-why-your-topical-creams-arent-clearing-your-eczema",
+      "destination": "/blog/the-gut-skin-axis-why-your-topical-creams-arent-clearing-your-eczema",
+      "permanent": true
+    },
+    {
+      "source": "/iron-is-it-making-your-eczema-worse",
+      "destination": "/blog/iron-is-it-making-your-eczema-worse",
+      "permanent": true
+    },
+    {
+      "source": "/tsw-is-it-real",
+      "destination": "/blog/tsw-is-it-real",
+      "permanent": true
+    },
+    {
+      "source": "/discoid-eczema-demystifying-thecoin-sized-rash-and-its-link-to-your-liver",
+      "destination": "/blog/discoid-eczema-demystifying-thecoin-sized-rash-and-its-link-to-your-liver",
+      "permanent": true
+    },
+    {
+      "source": "/eczema-unmasked-understanding-triggers-and-causes-for-lasting-relief",
+      "destination": "/blog/eczema-unmasked-understanding-triggers-and-causes-for-lasting-relief",
+      "permanent": true
+    },
+    {
+      "source": "/understanding-histamine-and-your-eczema",
+      "destination": "/blog/understanding-histamine-and-your-eczema",
+      "permanent": true
+    },
+    {
+      "source": "/5-simple-ways-to-treat-fungal-infections",
+      "destination": "/blog/5-simple-ways-to-treat-fungal-infections",
+      "permanent": true
+    },
+    {
+      "source": "/emotional-triggers-for-eczema",
+      "destination": "/blog/emotional-triggers-for-eczema",
+      "permanent": true
+    },
+    {
+      "source": "/covid-19-contact-diary-template",
+      "destination": "/blog/covid-19-contact-diary-template",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-not-fail-at-your-new-years-resolution-5-simple-tips",
+      "destination": "/blog/how-to-not-fail-at-your-new-years-resolution-5-simple-tips",
+      "permanent": true
+    },
+    {
+      "source": "/stress-and-high-blood-pressure",
+      "destination": "/blog/stress-and-high-blood-pressure",
+      "permanent": true
+    },
+    {
+      "source": "/are-you-getting-forgetful-use-ginkgo",
+      "destination": "/blog/are-you-getting-forgetful-use-ginkgo",
+      "permanent": true
+    },
+    {
+      "source": "/top-5-tips-to-help-you-breathe",
+      "destination": "/blog/top-5-tips-to-help-you-breathe",
+      "permanent": true
+    },
+    {
+      "source": "/episode-1-what-is-ripple-podcast-all-about",
+      "destination": "/blog/episode-1-what-is-ripple-podcast-all-about",
+      "permanent": true
+    },
+    {
+      "source": "/6-steps-to-beating-acne",
+      "destination": "/blog/6-steps-to-beating-acne",
+      "permanent": true
+    },
+    {
+      "source": "/5-simple-steps-to-achieve-your-health-goals",
+      "destination": "/blog/5-simple-steps-to-achieve-your-health-goals",
+      "permanent": true
+    },
+    {
+      "source": "/adrenal-fatigue-are-you-a-slave-to-your-exhaustion",
+      "destination": "/blog/adrenal-fatigue-are-you-a-slave-to-your-exhaustion",
+      "permanent": true
+    },
+    {
+      "source": "/skin-deep-are-you-suffering-from-eczema",
+      "destination": "/blog/skin-deep-are-you-suffering-from-eczema",
+      "permanent": true
+    },
+    {
+      "source": "/supplement-overload-are-you-taking-the-right-supplements",
+      "destination": "/blog/supplement-overload-are-you-taking-the-right-supplements",
+      "permanent": true
+    }
+  ]
 }
