@@ -527,7 +527,7 @@
 </main>
 
 <footer><div class="wrap">
-  <span>Waterwell Clinic · Naturopathic consultations by secure video · <a href="mailto:info@waterwellclinic.co.nz">info@waterwellclinic.co.nz</a> · <a href="/">Home</a> · <a href="/privacy">Privacy</a></span>
+  <span>Waterwell Clinic · Naturopathic consultations by secure video · <a href="mailto:info@waterwellclinic.com">info@waterwellclinic.com</a> · <a href="/">Home</a> · <a href="/privacy">Privacy</a></span>
   <span class="disc">Information on this site is general in nature and not a substitute for individual medical advice. Naturopathic care complements medical care — it does not replace it. Always consult a qualified health professional about your specific condition.</span>
 </div></footer>
 
@@ -602,9 +602,9 @@ addEventListener('keydown',function(e){if(e.key==='Escape'&&d.classList.contains
     if(!SET){
       // No access key yet. mailto cannot be tracked and loses most people, so
       // say plainly what is happening rather than pretending it was sent.
-      location.href = 'mailto:info@waterwellclinic.co.nz?subject=' + encodeURIComponent(subject)
+      location.href = 'mailto:info@waterwellclinic.com?subject=' + encodeURIComponent(subject)
         + '&body=' + encodeURIComponent(body.trim());
-      say('Opening your email app \u2014 if nothing happens, email info@waterwellclinic.co.nz directly.', true);
+      say('Opening your email app \u2014 if nothing happens, email info@waterwellclinic.com directly.', true);
       return;
     }
     var btn = f.querySelector('[type=submit]'), label = btn ? btn.innerHTML : '';
@@ -639,9 +639,9 @@ addEventListener('keydown',function(e){if(e.key==='Escape'&&d.classList.contains
           gtag('event','generate_lead',{form:'discovery_session', concern:CONDITION});
         }
       }
-      else { say('That did not send. Please email info@waterwellclinic.co.nz directly.', false); }
+      else { say('That did not send. Please email info@waterwellclinic.com directly.', false); }
     } catch(err){
-      say('That did not send. Please email info@waterwellclinic.co.nz directly.', false);
+      say('That did not send. Please email info@waterwellclinic.com directly.', false);
     } finally { if(btn){ btn.disabled = false; btn.innerHTML = label; } }
   });
 })();
