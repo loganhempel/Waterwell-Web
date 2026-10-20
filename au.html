@@ -1737,6 +1737,12 @@
   // say so — he is a health service provider and the Privacy Act small-business
   // exemption does not apply to him.
   const GA4_ID = 'G-83M8D2WPX4';
+  // Google Ads (AU account 453-512-2323) — "Submit lead form" conversion. There
+  // is no thank-you page (the form confirms in place), so the conversion fires
+  // from the form's success branch below, never on page load. Ads only credits
+  // its own clicks, so firing it for NZ visitors too is harmless.
+  const AW_ID = 'AW-18419793511';
+  const AW_LEAD = 'AW-18419793511/Mk14CKn756IdEOf8ns9E';
   if (/^G-[A-Z0-9]{6,}$/.test(GA4_ID)) {
     const tag = document.createElement('script');
     tag.async = true;
@@ -1753,6 +1759,7 @@
     gtag('set', 'allow_google_signals', false);
     gtag('set', 'allow_ad_personalization_signals', false);
     gtag('config', GA4_ID);
+    if (/^AW-\d+$/.test(AW_ID)) gtag('config', AW_ID);
   }
 
   const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -2020,6 +2027,7 @@
           window.dataLayer.push({event:'generate_lead', form:'discovery_session', concern:concern});
           if(typeof gtag === 'function'){
             gtag('event','generate_lead',{form:'discovery_session', concern:concern});
+            gtag('event','conversion',{send_to:AW_LEAD, value:1.0, currency:'AUD'});
           }
         } else {
           say('That didn’t send — opening your email instead.', false);

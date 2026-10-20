@@ -381,6 +381,7 @@
   gtag('set', 'allow_google_signals', false);
   gtag('set', 'allow_ad_personalization_signals', false);
   gtag('config', 'G-83M8D2WPX4');
+  gtag('config', 'AW-18419793511');
 </script>
 </head>
 <body>
@@ -562,6 +563,7 @@ addEventListener('keydown',function(e){if(e.key==='Escape'&&d.classList.contains
   var CKEY = '';
   var CSET = /^[0-9a-f-]{30,}$/i.test(CKEY);
   var CONDITION = 'Hormones & women’s health';
+  var AW_LEAD = 'AW-18419793511/Mk14CKn756IdEOf8ns9E';
   var out = document.getElementById('cf-msg-out');
 
   // 9 Sep, Logan: the "your city" field is replaced by the time zone the
@@ -637,6 +639,7 @@ addEventListener('keydown',function(e){if(e.key==='Escape'&&d.classList.contains
         window.dataLayer.push({event:'generate_lead', form:'discovery_session', concern:CONDITION});
         if(typeof gtag === 'function'){
           gtag('event','generate_lead',{form:'discovery_session', concern:CONDITION});
+          if(AW_LEAD) gtag('event','conversion',{send_to:AW_LEAD, value:1.0, currency:'AUD'});
         }
       }
       else { say('That did not send. Please email info@waterwellclinic.com directly.', false); }
