@@ -389,3 +389,8 @@ footer.bk-foot{background:transparent;color:var(--muted);padding:28px 0 40px}
 .lockup .lk-tag{font-size:11px}
 body.drawer-open .nav{z-index:130;background:transparent;backdrop-filter:none;-webkit-backdrop-filter:none;box-shadow:none}
 body.drawer-open .nav .brand{visibility:hidden}
+
+/* Belief (kept from v3, Kohei 6 Nov) */
+.belief{background:var(--bg-soft);text-align:center}
+.belief h2{max-width:14ch;margin:0 auto}
+.belief .lead{margin:28px auto 0;max-width:46ch}
