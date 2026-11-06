@@ -10,27 +10,27 @@
     },
     {
       "source": "/services/free-discovery-session",
-      "destination": "/#book-call",
+      "destination": "/book/discovery",
       "permanent": true
     },
     {
       "source": "/services/comprehensive-naturopathic-consultation",
-      "destination": "/#book-call",
+      "destination": "/book/consultation",
       "permanent": true
     },
     {
       "source": "/about-me",
-      "destination": "/#story",
+      "destination": "/about",
       "permanent": true
     },
     {
       "source": "/contact",
-      "destination": "/#book-call",
+      "destination": "/#visit",
       "permanent": true
     },
     {
       "source": "/testimonials",
-      "destination": "/#results",
+      "destination": "/#reviews",
       "permanent": true
     },
     {
@@ -45,12 +45,12 @@
     },
     {
       "source": "/services",
-      "destination": "/#services",
+      "destination": "/treatment",
       "permanent": true
     },
     {
       "source": "/services/:path*",
-      "destination": "/#services",
+      "destination": "/treatment",
       "permanent": true
     },
     {
