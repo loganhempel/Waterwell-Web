@@ -449,3 +449,32 @@ footer.bk-foot{background:var(--bg);color:var(--muted);padding:28px 0 36px;font-
 .band p.whisper,.statement p.whisper{font-size:clamp(1.5rem,2.6vw,2.2rem);color:var(--sand);margin-top:16px}
 #reviews::after{background:linear-gradient(0deg,rgba(7,34,61,.7),rgba(7,34,61,.45))}
 .focus-head{padding:var(--band-pad) var(--gutter) clamp(40px,5vw,64px)}
+
+/* audit fixes (8 Nov, independent audit) */
+/* Text over photos: measured contrast on the ground, worst 5% of pixels. */
+:root{--sand-lt:#E8D7B8}
+.band .whisper,.band p.whisper,.about-hero h1 span{color:var(--sand-lt)}
+.band::after{background:rgba(7,34,61,.66)}
+#reviews::after{background:linear-gradient(0deg,rgba(7,34,61,.74),rgba(7,34,61,.56))}
+.g-mark{color:rgba(255,255,255,.92)}
+.band.light::after{background:linear-gradient(0deg,rgba(7,34,61,.78) 0%,rgba(7,34,61,.2) 45%,rgba(7,34,61,0) 65%),linear-gradient(90deg,rgba(7,34,61,.62) 0%,rgba(7,34,61,.3) 45%,rgba(7,34,61,0) 75%)}
+/* nav sitting on a photo (/about): top scrim so the white tabs + lockup read */
+.band.light::before{content:'';position:absolute;left:0;right:0;top:0;height:200px;z-index:-1;background:linear-gradient(180deg,rgba(7,34,61,.7) 0%,rgba(7,34,61,.35) 55%,rgba(7,34,61,0) 100%);pointer-events:none}
+@media (max-width:600px){#belief::after{background:rgba(7,34,61,.76)}}
+/* focus rings on the dark photo bands and the sticky CTA */
+.band a:focus-visible,.band button:focus-visible,.mcta a:focus-visible{outline-color:var(--sage-bright)}
+/* podcast platforms: one line, brand icons, no pills (Kohei's image24) */
+.plat-strip{background:var(--navy-deep);padding:clamp(28px,3.4vw,44px) 0}
+.plat-strip .plats{margin:0 auto;justify-content:center;flex-wrap:nowrap;gap:clamp(20px,5vw,72px)}
+.plat-strip .plats a{font-size:15px;white-space:nowrap;color:rgba(255,255,255,.92)}
+.plat-strip .plats a:focus-visible{outline-color:var(--sage-bright)}
+@media (max-width:600px){
+  .plat-strip .plats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+  .plat-strip .plats{align-items:start}
+  .plat-strip .plats li{display:flex;justify-content:center;align-items:flex-start}
+  .plat-strip .plats a{flex-direction:column;align-items:center;gap:10px;font-size:11px;line-height:1.25;white-space:normal;text-align:center;letter-spacing:.02em}
+  .social{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px;margin-left:calc(var(--gutter)*-.5);margin-right:calc(var(--gutter)*-.5)}
+  .social a{padding:8px 2px;font-size:10.5px;letter-spacing:.1em}
+}
+/* /treatment: "A Clear Path" is the page title (Kohei: Stepping Stones -> A Clear Path) */
+.page-top .sub{font-family:var(--display);font-weight:400;font-size:clamp(1.8rem,3.4vw,3rem);line-height:1.08;color:var(--navy-ink);max-width:22ch;margin-top:22px}
