@@ -478,3 +478,6 @@ footer.bk-foot{background:var(--bg);color:var(--muted);padding:28px 0 36px;font-
 }
 /* /treatment: "A Clear Path" is the page title (Kohei: Stepping Stones -> A Clear Path) */
 .page-top .sub{font-family:var(--display);font-weight:400;font-size:clamp(1.8rem,3.4vw,3rem);line-height:1.08;color:var(--navy-ink);max-width:22ch;margin-top:22px}
+
+/* 8 Nov (Logan): "What I want for you…" bigger, but still below the h2 */
+#belief p.whisper{font-size:clamp(1.9rem,3.6vw,3rem);line-height:1.1;margin-top:0}
