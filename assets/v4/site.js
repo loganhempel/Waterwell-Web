@@ -85,6 +85,16 @@ const QUIZ_URL = 'https://kohei-63rjqpz4.scoreapp.com';
     });
   }
 
+  // /conditions/* 301 to /#tsw, /#acne ... : open the matching panel.
+  function openFromHash(){
+    const id = decodeURIComponent(location.hash.slice(1));
+    const el = id && document.getElementById(id);
+    if (el && el.tagName === 'DETAILS'){ el.open = true;
+      const top = el.getBoundingClientRect().top + scrollY - (nav ? nav.getBoundingClientRect().height + 16 : 0);
+      scrollTo(0, Math.max(0, top)); }
+  }
+  openFromHash(); addEventListener('hashchange', openFromHash);
+
   // Fixed-duration anchor scrolling (carried over from v3).
   const DUR = 560;
   const ease = t => t < .5 ? 4*t*t*t : 1 - Math.pow(-2*t + 2, 3)/2;

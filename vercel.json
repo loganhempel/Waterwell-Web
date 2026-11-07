@@ -4,8 +4,48 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/conditions/eczema",
+      "destination": "/#eczema",
+      "permanent": true
+    },
+    {
+      "source": "/conditions/tsw",
+      "destination": "/#tsw",
+      "permanent": true
+    },
+    {
+      "source": "/conditions/psoriasis",
+      "destination": "/#psoriasis",
+      "permanent": true
+    },
+    {
+      "source": "/conditions/acne",
+      "destination": "/#acne",
+      "permanent": true
+    },
+    {
+      "source": "/conditions/skin-infections",
+      "destination": "/#skin-infections",
+      "permanent": true
+    },
+    {
+      "source": "/conditions/rosacea",
+      "destination": "/#rosacea",
+      "permanent": true
+    },
+    {
+      "source": "/conditions/:path*",
+      "destination": "/#conditions",
+      "permanent": true
+    },
+    {
+      "source": "/conditions",
+      "destination": "/#conditions",
+      "permanent": true
+    },
+    {
       "source": "/services/eczema-treatment",
-      "destination": "/conditions/eczema",
+      "destination": "/#eczema",
       "permanent": true
     },
     {

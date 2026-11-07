@@ -29,30 +29,46 @@
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
-<header class="bk-header"><div class="wrap"><a class="brand" href="/" aria-label="Waterwell Clinic, home"><img src="/assets/logo.png" alt="Waterwell Clinic" width="1500" height="162"></a></div></header>
-<main id="main" class="bk-main">
-  <div class="wrap bk-grid">
-    <figure class="bk-photo"><img src="/assets/approach-considered.jpg" width="1100" height="1467" alt="Kohei Iguchi smiling during a consultation, notepad in hand" fetchpriority="high"></figure>
-    <div class="bk-copy">
+<header class="bk-bar"><div class="nav-inner">
+  <a class="brand" href="/" aria-label="Waterwell Clinic, home"><img src="/assets/logo.png" alt="Waterwell Clinic" width="1500" height="162"></a>
+  <a class="btn btn-outline" href="/"><span aria-hidden="true">&larr;</span> <span class="bk-long">Back to the main website</span><span class="bk-short">Back to main site</span></a>
+</div></header>
+<main id="main">
+  <section class="bk-hero">
+    <div class="split-photo"><img src="/assets/hero-discovery.jpg" width="1200" height="1500" alt="Kohei Iguchi on a video call at his laptop" style="object-position:50% 25%"></div>
+    <div class="split-text on-dark">
+      <span class="label">Free, 15 minutes, by video</span>
       <h1>Book your free discovery session.</h1>
-      <p class="reassure">Free, 15 minutes, by video.</p>
       <!-- COPY: interim, replace with Kohei's wording --><p class="lead">Send your details and I’ll email you to find a time that suits you.</p><!-- /COPY -->
-      <div class="bk-card on-dark">
-        <form class="book-form" id="bookform" novalidate data-enquiry data-form="book_discovery" data-subject="Discovery session request" data-booking="Discovery session" data-thanks="Thanks, that’s come through. Kohei will email you within one working day to find a time.">
-          <div class="hp-field" aria-hidden="true"><label for="bk-xq7">Leave this blank</label><input id="bk-xq7" name="bf_xq7" type="text" tabindex="-1" autocomplete="off" aria-hidden="true"></div>
-          <input type="hidden" name="booking_type" value="Discovery session">
-          <input type="hidden" id="bk-tz" name="timezone" value="">
-          <div class="field"><label for="bk-name">Your name</label><input id="bk-name" name="name" type="text" placeholder="First &amp; last name" autocomplete="name" required /></div>
-          <div class="field"><label for="bk-email">Email</label><input id="bk-email" name="email" type="email" placeholder="you@example.com" autocomplete="email" inputmode="email" required /></div>
-          <div class="field full"><label for="bk-msg">Anything you’d like Kohei to know? <span class="opt">(optional)</span></label><textarea id="bk-msg" name="msg" placeholder="A little about your skin and what you’ve tried…"></textarea></div>
-          <button class="btn btn-light full" type="submit">Request my discovery session <span class="arrow" aria-hidden="true">&rarr;</span></button>
-          <p class="form-note">Prefer email? <a href="mailto:info@waterwellclinic.com">info@waterwellclinic.com</a></p>
-        </form>
-      </div>
+      <div class="actions"><a class="btn btn-sand" href="#book">Request my discovery session <span class="arrow" aria-hidden="true">&darr;</span></a></div>
     </div>
-  </div>
+  </section>
+  <section class="bk-form" id="book">
+    <div class="wrap"><div class="inner">
+      <h2>Your details</h2>
+      <form class="book-form form-light" id="bookform" novalidate data-enquiry data-form="book_discovery" data-subject="Discovery session request" data-booking="Discovery session" data-thanks="Thanks, that’s come through. Kohei will email you within one working day to find a time.">
+        <div class="hp-field" aria-hidden="true"><label for="bk-xq7">Leave this blank</label><input id="bk-xq7" name="bf_xq7" type="text" tabindex="-1" autocomplete="off" aria-hidden="true"></div>
+        <input type="hidden" name="booking_type" value="Discovery session">
+        <input type="hidden" id="bk-tz" name="timezone" value="">
+        <div class="field"><label for="bk-name">Your name</label><input id="bk-name" name="name" type="text" placeholder="First &amp; last name" autocomplete="name" required /></div>
+        <div class="field"><label for="bk-email">Email</label><input id="bk-email" name="email" type="email" placeholder="you@example.com" autocomplete="email" inputmode="email" required /></div>
+        <div class="field full"><label for="bk-msg">How can I help?</label><textarea id="bk-msg" name="msg" placeholder="Tell me a bit about your skin concerns…"></textarea></div>
+        <button class="btn btn-primary full" type="submit">Request my discovery session <span class="arrow" aria-hidden="true">&rarr;</span></button>
+        <p class="form-note">Prefer email? <a href="mailto:info@waterwellclinic.com">info@waterwellclinic.com</a></p>
+      </form>
+    </div></div>
+  </section>
+  <section aria-label="What happens next">
+    <!-- COPY: interim, replace with Kohei's wording --><ol class="next3"><li><span class="n">01</span><p>Send your details below.</p></li><li><span class="n">02</span><p>Kohei emails you within one working day to find a time.</p></li><li><span class="n">03</span><p>A relaxed 15-minute video chat. No pressure, no obligation.</p></li></ol><!-- /COPY -->
+  </section>
+  <section class="bk-close on-dark">
+    <div class="wrap">
+      <!-- COPY: interim, replace with Kohei's wording --><p>Free, 15 minutes, by video. No obligation.</p><!-- /COPY -->
+      <div class="actions"><a class="btn btn-sand" href="#book">Request my discovery session <span class="arrow" aria-hidden="true">&uarr;</span></a><a class="btn btn-outline" href="/">Back to the main website</a></div>
+    </div>
+  </section>
 </main>
-<footer class="bk-foot"><div class="wrap">&copy; <span id="yr">2026</span> Waterwell Clinic. Kohei Iguchi, BNatMed, BSc. <a href="/privacy">Privacy policy</a></div></footer>
+<footer class="bk-foot"><div class="wrap"><span>&copy; <span id="yr">2026</span> Waterwell Clinic. Kohei Iguchi, BNatMed, BSc. <a href="/privacy">Privacy policy</a></span><span>Information on this site is general in nature and is not a substitute for individual medical advice.</span></div></footer>
 <script>
   // GA4 + Google Ads (AU account 453-512-2323) "Submit lead form" conversion.
   // There is no thank-you page, so the conversion fires from the form's
