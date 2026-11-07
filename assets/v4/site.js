@@ -8,7 +8,7 @@
 // ScoreApp; results are emailed. NOT PUBLICLY PUBLISHED YET (7 Nov 2026).
 // This is the ONLY place the URL lives: every link marked data-quiz gets
 // it from here. Swap it once the quiz (or an on-site version) goes live.
-const QUIZ_URL = 'https://kohei-63rjgpz4.scoreapp.com';
+const QUIZ_URL = 'https://kohei-63rjqpz4.scoreapp.com';
 
 (function(){
   const yr = document.getElementById('yr');
