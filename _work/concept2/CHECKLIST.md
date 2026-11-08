@@ -64,3 +64,14 @@ Scope: concept-spec/index.html, concept-spec/book/{discovery,consultation}.html,
 - [done] No console errors, no horizontal overflow at 320-1440, every internal href 200 except the 3 phase-2 pages
 - [done] Form test, Web3Forms stubbed (formtest.py): 3 forms post the v4 payload; success copy + generate_lead + conversion on 200; error copy, no conversion on 500
 - [done] Local servers killed
+
+# Phase 2 (8 Nov 2026): About, Treatment, Podcast
+- [done] /concept-spec/about, /treatment, /podcast built from _work/concept2/*.tpl.html via build.py (new shared partials: partials/head, nav, connect, foot). Copy = current v4 pages verbatim, same holds (no "Medical Herbalist", no skin photos, no "not curable" line)
+- [done] Kohei's structure: About = title in the photo, credibility strip, story, "Waterwell Clinic is" over the image, Outside the Clinic, Connect. Treatment = A Clear Path 5 steps (.bw-list), Tools Behind Your Care, Telehealth (.tele-band glass card), closing CTA. Podcast = big banner, 4 platforms in ONE line with brand marks (no pills), episodes, quiz band, Connect
+- [done] Every page: closing .bw-close band with data-mcta-hide, #mcta sticky quiz bar, nav "Free discovery call", Concept badge, noindex, nav logo -> /concept-spec. All book CTAs -> /concept-spec/book/*
+- [done] New CSS appended to spec.css only for patterns phase 1 lacked (.band-hero, .intro, .prose-2, .pbreak, .split-night, .want-solo, .trio, .close-sec, .tools, .pod-hero, .plats, .eps)
+- [done] Analytics guard in build.py: loader runs only on waterwellclinic.com / www.waterwellclinic.com; constants + success-branch conversion untouched. p2/analytics_test.py: 127.0.0.1 = 0 gtag requests, no window.gtag, no conversion; simulated prod (both hosts, requests intercepted and served from the local build) = tag loads, form submit fires the AW conversion. 18/18 pass. NOTE: formtest.py's conversion=True now only holds on the prod hosts
+- [HELD] Podcast episode 06 title "The Healing Power of Movement: …" fails the "heal" rule (v4 /podcast fails on the same line). Listed as "Kimberley James", original title in a HELD comment, link unchanged. Needs Logan/Kohei ruling
+- [done] Compliance 6/6 (compliance_concept.py). Contrast on photo text 6.6-13.5:1 (p2/contrast_p2.py)
+- [done] p2/check.py: 40 unique hrefs, all 200 (facebook.com returns 400 to scripts, 200 in Chromium), no dangling anchors, no console errors, no overflow at 320/390/1440, reveal rows turn on, sticky bar shows mid-page and steps aside on the closing band
+- [done] Render rounds r1, r2/r2b, r3 at 1440 + 390 (p2/shots). Fixes between rounds: podcast cover never crops (contain on the shot's wall colour), "Waterwell Clinic is" column kept off Kohei, mobile hero focal points
