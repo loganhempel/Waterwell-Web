@@ -636,3 +636,9 @@ ul,ol{margin:0;padding:0;list-style:none}
   .eps .tlink{grid-column:2;min-height:40px}
   .eps h3{font-size:19px}
 }
+/* audit 3: lander submit inside the first 390x844 screen */
+@media (max-width:640px){.bk-body .field textarea{min-height:64px}}
+/* audit 3: About intro staggers across the wrap on desktop (was one left column, right half empty) */
+@media (min-width:1041px){.intro p+p{margin-left:auto;margin-top:48px}}
+/* audit 3: Treatment "Tools" photo is 541px wide; pinned at one screen tall it scales ~1.3x instead of 2.4x */
+@media (min-width:1041px){.split:has(.tools) .split-media{position:sticky;top:0;height:100svh;align-self:start}}
