@@ -498,3 +498,33 @@ footer.bk-foot{background:var(--bg);color:var(--muted);padding:28px 0 36px;font-
 /* D2: closing band, left-aligned so it doesn't read as another centred slab */
 .close-band h2 em{font-style:italic;color:var(--sand)}
 .close-band .st-in{max-width:760px}
+/* D7 + L1: booking landers, form in the navy panel, steps above it */
+.bk-hero .split-text{justify-content:flex-start;padding-top:clamp(48px,6vw,88px);padding-bottom:clamp(48px,6vw,88px)}
+.bk-hero h1{font-size:clamp(2.6rem,4.4vw,4.2rem)}
+.bk-hero .lead{margin-top:18px}
+.bk-steps{list-style:none;margin-top:28px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border-top:1px solid rgba(255,255,255,.16);max-width:620px}
+.bk-steps li{padding:14px 16px 0 0;display:flex;flex-direction:column;gap:6px}
+.bk-steps .n{font-family:var(--display);font-size:1.6rem;line-height:1;color:var(--sand)}
+.bk-steps p{margin-top:0 !important;font-size:14px;line-height:1.45;color:rgba(255,255,255,.8) !important;font-weight:600}
+.bk-hero .book-form{margin-top:32px;max-width:620px;gap:22px 28px}
+.bk-hero .field textarea{min-height:64px}
+.field label .opt{text-transform:none;letter-spacing:0;font-weight:600;color:rgba(255,255,255,.6)}
+.bk-cred{margin-top:-6px;color:rgba(255,255,255,.86) !important;font-weight:600}
+.bk-alt{margin-top:28px !important;font-size:15px;color:rgba(255,255,255,.8)}
+.bk-alt a{color:#fff;text-underline-offset:4px}
+.bk-close .btn-outline{min-width:0}
+@media (max-width:960px){
+  .bk-hero .split-photo{min-height:34svh}
+  .bk-hero .split-text{padding:32px var(--gutter) 48px}
+}
+@media (max-width:600px){
+  .bk-hero .split-photo{min-height:0;height:min(24svh,210px)}
+  .bk-hero h1{font-size:2.35rem;margin-top:12px}
+  .bk-hero .lead{font-size:1rem;margin-top:12px}
+  .bk-steps{grid-template-columns:1fr;margin-top:18px;border-top:0}
+  .bk-steps li{flex-direction:row;align-items:baseline;gap:12px;padding:5px 0;border-top:1px solid rgba(255,255,255,.12)}
+  .bk-steps li:last-child{border-bottom:1px solid rgba(255,255,255,.12)}
+  .bk-steps .n{font-size:1.2rem;flex:none;width:24px}
+  .bk-steps p{font-size:13.5px}
+  .bk-hero .book-form{margin-top:22px}
+}

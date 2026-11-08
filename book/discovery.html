@@ -34,37 +34,31 @@
   <a class="btn btn-outline" href="/"><span aria-hidden="true">&larr;</span> <span class="bk-long">Back to the main website</span><span class="bk-short">Back to main site</span></a>
 </div></header>
 <main id="main">
-  <section class="bk-hero">
+  <section class="bk-hero" id="book">
     <div class="split-photo"><img src="/assets/hero-discovery.jpg" width="1200" height="1500" alt="Kohei Iguchi on a video call at his laptop" style="object-position:50% 25%"></div>
     <div class="split-text on-dark">
       <span class="label">Free, 15 minutes, by video</span>
       <h1>Book your free discovery session.</h1>
-      <!-- COPY: interim, replace with Kohei's wording --><p class="lead">Send your details and I’ll email you to find a time that suits you.</p><!-- /COPY -->
-      <div class="actions"><a class="btn btn-sand" href="#book">Request my discovery session <span class="arrow" aria-hidden="true">&darr;</span></a></div>
-    </div>
-  </section>
-  <section class="bk-form" id="book">
-    <div class="wrap"><div class="inner">
-      <h2>Your details</h2>
-      <form class="book-form form-light" id="bookform" novalidate data-enquiry data-form="book_discovery" data-subject="Discovery session request" data-booking="Discovery session" data-thanks="Thanks, that’s come through. Kohei will email you within one working day to find a time.">
+      <!-- COPY: interim, replace with Kohei's wording --><p class="lead">A 15-minute video chat with me about your skin and how I work. Send your details and I’ll email you a time.</p>
+      <ol class="bk-steps" aria-label="What happens next"><li><span class="n">01</span><p>Send your details.</p></li><li><span class="n">02</span><p>I’ll email you within one working day to find a time.</p></li><li><span class="n">03</span><p>A relaxed 15-minute video chat. No pressure, no obligation.</p></li></ol><!-- /COPY -->
+      <form class="book-form" id="bookform" novalidate data-enquiry data-form="book_discovery" data-subject="Discovery session request" data-booking="Discovery session" data-thanks="Thanks, that’s come through. I’ll email you within one working day to find a time.">
         <div class="hp-field" aria-hidden="true"><label for="bk-xq7">Leave this blank</label><input id="bk-xq7" name="bf_xq7" type="text" tabindex="-1" autocomplete="off" aria-hidden="true"></div>
         <input type="hidden" name="booking_type" value="Discovery session">
         <input type="hidden" id="bk-tz" name="timezone" value="">
         <div class="field"><label for="bk-name">Your name</label><input id="bk-name" name="name" type="text" placeholder="First &amp; last name" autocomplete="name" required /></div>
         <div class="field"><label for="bk-email">Email</label><input id="bk-email" name="email" type="email" placeholder="you@example.com" autocomplete="email" inputmode="email" required /></div>
-        <div class="field full"><label for="bk-msg">How can I help?</label><textarea id="bk-msg" name="msg" placeholder="Tell me a bit about your skin concerns…"></textarea></div>
-        <button class="btn btn-primary full" type="submit">Request my discovery session <span class="arrow" aria-hidden="true">&rarr;</span></button>
+        <div class="field full"><label for="bk-msg">How can I help? <span class="opt">(optional)</span></label><textarea id="bk-msg" name="msg" rows="2" placeholder="Tell me a bit about your skin concerns…"></textarea></div>
+        <button class="btn btn-light full" type="submit">Request my discovery session <span class="arrow" aria-hidden="true">&rarr;</span></button>
+        <p class="form-note bk-cred">Kohei Iguchi · Degree-qualified naturopath · BNatMed, BSc · 10+ years in practice</p>
         <p class="form-note">Prefer email? <a href="mailto:info@waterwellclinic.com">info@waterwellclinic.com</a></p>
       </form>
-    </div></div>
-  </section>
-  <section aria-label="What happens next">
-    <!-- COPY: interim, replace with Kohei's wording --><ol class="next3"><li><span class="n">01</span><p>Send your details below.</p></li><li><span class="n">02</span><p>Kohei emails you within one working day to find a time.</p></li><li><span class="n">03</span><p>A relaxed 15-minute video chat. No pressure, no obligation.</p></li></ol><!-- /COPY -->
+      
+    </div>
   </section>
   <section class="bk-close on-dark">
     <div class="wrap">
       <!-- COPY: interim, replace with Kohei's wording --><p>Free, 15 minutes, by video. No obligation.</p><!-- /COPY -->
-      <div class="actions"><a class="btn btn-sand" href="#book">Request my discovery session <span class="arrow" aria-hidden="true">&uarr;</span></a><a class="btn btn-outline" href="/">Back to the main website</a></div>
+      <div class="actions"><a class="btn btn-outline" href="/">Back to the main website</a></div>
     </div>
   </section>
 </main>
