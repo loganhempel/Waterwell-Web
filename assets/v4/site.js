@@ -36,13 +36,17 @@ const QUIZ_URL = 'https://kohei-63rjqpz4.scoreapp.com';
 
   // Nav state + sticky mobile CTA
   const nav = document.getElementById('nav'), mcta = document.getElementById('mcta');
-  const visit = document.getElementById('visit');
+  // The bar steps aside once a band with its own booking buttons is on screen
+  // (#visit on the homepage, the closing band on /about /treatment /podcast).
+  const hiders = [...document.querySelectorAll('[data-mcta-hide]')];
   function onScroll(){
     const y = window.scrollY;
     if (nav) nav.classList.toggle('scrolled', y > 20);
     if (mcta){
-      let hide = false;
-      if (visit){ hide = visit.getBoundingClientRect().top < window.innerHeight * 0.85; }
+      const hide = hiders.some(el => {
+        const r = el.getBoundingClientRect();
+        return r.top < window.innerHeight * 0.85 && r.bottom > 0;
+      });
       mcta.classList.toggle('show', y > window.innerHeight * 0.8 && !hide);
     }
   }

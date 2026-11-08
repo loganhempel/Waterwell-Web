@@ -488,3 +488,20 @@ footer.bk-foot{background:var(--bg);color:var(--muted);padding:28px 0 36px;font-
 
 /* 8 Nov (Logan): "What I want for you…" bigger, but still below the h2 */
 #belief p.whisper{font-size:clamp(1.9rem,3.6vw,3rem);line-height:1.1;margin-top:0}
+
+/* ── Stream I, audit 2 (8 Nov 2026) ─────────────────────────────────── */
+/* D1: the one booking button in the desktop nav (sand, 44px) */
+.nav-cta{min-height:44px;padding:12px 20px;font-size:11.5px;letter-spacing:.12em;white-space:nowrap;flex:none}
+@media (max-width:1440px) and (min-width:1181px){
+  .nav-links{gap:clamp(14px,1.4vw,22px)}
+  .nav-links a{letter-spacing:.12em}
+  .brand img{width:150px}
+}
+@media (max-width:1180px){.nav-cta{display:none}}
+.nw{white-space:nowrap}
+/* secondary button on navy: white outline */
+.btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.6)}
+.btn-ghost:hover{background:#fff;color:var(--navy-ink)}
+/* D2: closing band, left-aligned so it doesn't read as another centred slab */
+.close-band h2 em{font-style:italic;color:var(--sand)}
+.close-band .st-in{max-width:760px}
