@@ -632,8 +632,11 @@ footer.bk-foot{background:var(--bg);color:var(--muted);padding:28px 0 36px;font-
   .ticks{margin-top:22px}
 }
 /* D19: /about hero crop */
-@media (max-width:760px){.about-hero > picture img,.about-hero > img{object-position:50% 25%}}
+/* desktop uses 50% 25% (inline); on phones he sits right of centre, so follow him */
+@media (max-width:760px){.about-hero > picture img,.about-hero > img{object-position:74% 30% !important}.about-hero{min-height:78svh}}
 /* contrast measured on the ground (worst 5% of pixels): flat .56 under the text column, then fade */
 .band.lr::after{background:linear-gradient(90deg,rgba(7,34,61,.56) 0%,rgba(7,34,61,.56) 46%,rgba(7,34,61,.14) 72%,rgba(7,34,61,0) 100%)}
 #waterwell::after{background:linear-gradient(90deg,rgba(7,34,61,.6) 0%,rgba(7,34,61,.6) 44%,rgba(7,34,61,.14) 70%,rgba(7,34,61,0) 100%)}
 .band.light.page-banner::after{background:linear-gradient(90deg,rgba(7,34,61,.74) 0%,rgba(7,34,61,.6) 45%,rgba(7,34,61,.12) 80%,rgba(7,34,61,0) 100%)}
+/* optional-field hint on the dark contact form */
+.field label .opt{text-transform:none;letter-spacing:0;font-weight:600;color:rgba(255,255,255,.6)}

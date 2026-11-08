@@ -190,21 +190,22 @@ const QUIZ_URL = 'https://kohei-63rjqpz4.scoreapp.com';
       // triage, it never discards a lead (Chrome autofill fills these).
       const suspect = !!(f.bf_xq7 && f.bf_xq7.value.trim());
       const name = f.name.value.trim(), email = f.email.value.trim();
-      if(!name){ f.name.focus(); say('Please add your name so Kohei knows who to reply to.', false); return; }
+      if(!name){ f.name.focus(); say('Please add your name so I know who to reply to.', false); return; }
       if(!email){ f.email.focus(); say('Please add an email address for the reply.', false); return; }
       if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)){ f.email.focus();
         say('That email address does not look right. Check it and try again.', false); return; }
 
       // The form is novalidate, so every required field needs its own check.
+      // City is optional (audit 2): the browser time zone already rides along.
       const hasCity = !!f.city;
       const city = hasCity ? f.city.value.trim() : '';
-      if(hasCity && !city){ f.city.focus(); say('Please add your city so Kohei can offer a sensible time.', false); return; }
+      if(hasCity && f.city.required && !city){ f.city.focus(); say('Please add your city so I can offer a sensible time.', false); return; }
 
       const concern = booking || (f.concern ? f.concern.value : '');
       const tz = (f.timezone && f.timezone.value) || '';
       const msg = f.msg ? (f.msg.value || '') : '';
       const body = ('Name: ' + name + '\nEmail: ' + email
-        + (hasCity ? '\nCity: ' + city : '')
+        + (city ? '\nCity: ' + city : '')
         + (tz ? '\nTime zone: ' + tz : '')
         + (booking ? '\nBooking: ' + booking : '\nEnquiry: ' + (concern || 'Not specified'))
         + '\n\n' + msg).trim();
@@ -242,7 +243,7 @@ const QUIZ_URL = 'https://kohei-63rjqpz4.scoreapp.com';
         const data = await res.json().catch(() => ({}));
         if(res.ok && data.success){
           f.reset();
-          say(f.dataset.thanks || 'Thanks, that’s come through. Kohei usually replies within one working day.', true);
+          say(f.dataset.thanks || 'Thanks, that’s come through. My team and I reply within one working day.', true);
           // Conversion signal — the success branch is the ONLY place the
           // Google Ads conversion fires (there is no thank-you page).
           window.dataLayer = window.dataLayer || [];
