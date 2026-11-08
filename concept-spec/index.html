@@ -372,7 +372,10 @@
   const GA4_ID = 'G-83M8D2WPX4';
   const AW_ID = 'AW-18419793511';
   const AW_LEAD = 'AW-18419793511/Mk14CKn756IdEOf8ns9E';
-  if (/^G-[A-Z0-9]{6,}$/.test(GA4_ID)) {
+  // Concept guard: the tag loads ONLY on the production hosts, so preview
+  // visits (vercel.app, localhost) never count in the real GA4/Ads property.
+  const PROD_HOST = ['waterwellclinic.com', 'www.waterwellclinic.com'].indexOf(location.hostname) !== -1;
+  if (PROD_HOST && /^G-[A-Z0-9]{6,}$/.test(GA4_ID)) {
     const tag = document.createElement('script');
     tag.async = true;
     tag.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA4_ID;
