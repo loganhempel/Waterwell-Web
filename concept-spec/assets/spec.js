@@ -53,11 +53,6 @@ const QUIZ_URL = 'https://kohei-63rjqpz4.scoreapp.com';
   }
   openFromHash(); addEventListener('hashchange',openFromHash);
 
-  // Hero quiz card: ticks land once, in order
-  var rows=$$('#quizCard .g-row');
-  if(reduce){ rows.forEach(function(r){ r.classList.add('on'); }); }
-  else rows.forEach(function(r,i){ setTimeout(function(){ r.classList.add('on'); var t=$('.tick',r); t.classList.add('ping'); setTimeout(function(){ t.classList.remove('ping'); },380); }, 900+i*650); });
-
   // Scroll-linked lists (clear path + journey)
   function track(list,rowSel){
     if(!list) return;
@@ -72,18 +67,6 @@ const QUIZ_URL = 'https://kohei-63rjqpz4.scoreapp.com';
   track($('#bwList'),'.bw-row');
   track($('#jList'),'.j-step');
 
-  // Ripple rings: run only while visible, with a pause control
-  var rings=$('#rings'), pp=$('#ringsPP');
-  if(rings&&pp){
-    var on=!reduce, vis=false;
-    if(reduce){ pp.hidden=true; }
-    else {
-      var apply=function(){ rings.classList.toggle('go',vis); rings.classList.toggle('paused',!on||document.hidden); };
-      new IntersectionObserver(function(es){ vis=es[0].isIntersecting; apply(); },{threshold:.1}).observe(rings.parentNode);
-      document.addEventListener('visibilitychange',apply);
-      pp.addEventListener('click',function(){ on=!on; pp.setAttribute('aria-pressed',on?'false':'true'); pp.classList.toggle('paused',!on); $('.pp-t',pp).textContent=on?'Pause':'Play'; apply(); });
-    }
-  }
 })();
 
 // ── Enquiry forms ───────────────────────────────────────────────────────
