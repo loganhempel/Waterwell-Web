@@ -901,13 +901,13 @@ ul,ol{margin:0;padding:0;list-style:none}
 @media (max-width:1040px){.mcta{background:var(--frost);-webkit-backdrop-filter:blur(22px) saturate(1.5);backdrop-filter:blur(22px) saturate(1.5);box-shadow:inset 0 0 0 1px var(--frost-line),var(--frost-shadow)}}
 /* glass: condition cards frosted over a heavily blurred photo of his own desk, so the warmth comes from the real room */
 #conditions{position:relative;overflow:hidden;isolation:isolate}
-#conditions::before{content:"";position:absolute;inset:-96px;z-index:-1;background:url(/concept-spec/img/want.jpg) 50% 60%/cover;filter:blur(56px) sepia(.75) saturate(1.15);opacity:.3;pointer-events:none}
+#conditions::before{content:"";position:absolute;inset:-96px;z-index:-1;background:url(/concept-spec/img/want.jpg) 50% 60%/cover;filter:blur(56px) sepia(.45) saturate(.7);opacity:.26;pointer-events:none}
 .feat,.others{background:var(--frost);-webkit-backdrop-filter:blur(24px) saturate(1.4);backdrop-filter:blur(24px) saturate(1.4);box-shadow:inset 0 0 0 1px var(--frost-line),var(--frost-shadow)}
 .feat-k,.others-h,.others-f{color:var(--ink-2)}
 .acc[open]{background:rgba(255,255,255,.62);box-shadow:inset 0 0 0 1px var(--frost-line)}
 /* glass: call-to-action bands (self-contained, no backdrop-filter needed) */
 .bw-close{background:var(--paper-3);box-shadow:inset 0 0 0 1px var(--frost-line),var(--frost-shadow);isolation:isolate}
-.bw-close::before{display:block;content:"";position:absolute;inset:-48px;width:auto;height:auto;z-index:-1;background:linear-gradient(rgba(255,250,242,.5),rgba(255,250,242,.5)),url(/concept-spec/img/want.jpg) 50% 55%/cover;filter:blur(36px) sepia(.75) saturate(1.1);opacity:1;right:-48px;top:-48px}
+.bw-close::before{display:block;content:"";position:absolute;inset:-48px;width:auto;height:auto;z-index:-1;background:linear-gradient(rgba(244,237,226,.74),rgba(244,237,226,.74)),url(/concept-spec/img/want.jpg) 50% 55%/cover;filter:blur(36px) sepia(.45) saturate(.65);opacity:1;right:-48px;top:-48px}
 .bw-close>*{position:relative}
 /* glass: connect pills */
 .soc{background:var(--frost);box-shadow:inset 0 0 0 1px var(--frost-line),var(--frost-shadow)}
