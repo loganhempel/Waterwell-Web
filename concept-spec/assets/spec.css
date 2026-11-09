@@ -859,3 +859,84 @@ ul,ol{margin:0;padding:0;list-style:none}
 @media (max-width:640px){.band::after{background:linear-gradient(180deg,rgba(38,28,20,.1) 0%,rgba(38,28,20,.55) 45%,rgba(38,28,20,.84) 100%)}.want::after{background:rgba(38,28,20,.7)}}
 /* audit: Steps rows stay readable before they are scrolled to (the pale state read washed out) */
 .bw-row .bw-name,.bw-row .bw-desc{opacity:1;transform:none}
+
+/* ── Spacing + glass pass. One rhythm: --sec between text sections, --air between photo sections that would otherwise touch. Glass only on floating UI and cards, never over a photo of Kohei (his 9 Nov note). ── */
+:root{--sec:128px;--air:clamp(56px,7vw,104px);--head-gap:56px;
+  --frost:rgba(255,252,246,.58);--frost-line:rgba(255,255,255,.7);--frost-shadow:0 1px 2px rgba(58,44,30,.05),0 18px 44px -24px rgba(58,44,30,.28)}
+/* photo sections never touch */
+.pod,.split-night{margin-bottom:var(--air)}
+.want+.tele{margin-top:var(--air)}
+.split:has(.tools){margin-bottom:var(--air)}
+/* rhythm */
+.journey{padding:112px 0}
+#faq{padding:96px 0}
+.intro{padding:104px 0}
+.path{padding:88px 0 var(--sec)}
+#steps{padding-top:96px}
+.connect{padding:88px 0}
+.close-sec,.outside+.close-sec,.tele+.close-sec{padding:var(--sec) 0}
+.outside{padding-bottom:0}
+.split{min-height:680px}
+.split-body,.rev-body,.contact-body{padding-top:112px;padding-bottom:112px}
+.pod-body{padding-top:112px;padding-bottom:112px}
+.want{padding:144px 0 112px}
+/* heading to content is the same distance everywhere */
+.focus-grid,.arts,.eps,.trio{margin-top:var(--head-gap)}
+.focus-grid{gap:24px}
+.arts{gap:32px}
+.feat{padding:48px}
+.others{padding:20px}
+.bw-row{padding:36px 0}
+.bw-close{margin-top:72px}
+.form{gap:18px 16px}
+.tele-list{gap:16px}
+.tele-copy .lead{margin-top:20px}
+.cred-cell{padding-top:40px;padding-bottom:36px}
+.foot{padding-top:104px}
+/* glass: floating UI */
+.nav,.nav.solid,.bk-bar{background:var(--frost);-webkit-backdrop-filter:blur(22px) saturate(1.5);backdrop-filter:blur(22px) saturate(1.5);box-shadow:inset 0 0 0 1px var(--frost-line),var(--frost-shadow)}
+.sheet{background:rgba(255,252,246,.8);-webkit-backdrop-filter:blur(26px) saturate(1.5);backdrop-filter:blur(26px) saturate(1.5);box-shadow:inset 0 0 0 1px var(--frost-line),var(--shadow-lg)}
+.sheet .k{border-top-color:rgba(84,77,70,.16)}
+.draft-tag{background:rgba(42,37,33,.72);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
+@media (max-width:1040px){.mcta{background:var(--frost);-webkit-backdrop-filter:blur(22px) saturate(1.5);backdrop-filter:blur(22px) saturate(1.5);box-shadow:inset 0 0 0 1px var(--frost-line),var(--frost-shadow)}}
+/* glass: condition cards frosted over a heavily blurred photo of his own desk, so the warmth comes from the real room */
+#conditions{position:relative;overflow:hidden;isolation:isolate}
+#conditions::before{content:"";position:absolute;inset:-96px;z-index:-1;background:url(/concept-spec/img/want.jpg) 50% 60%/cover;filter:blur(56px) sepia(.75) saturate(1.15);opacity:.3;pointer-events:none}
+.feat,.others{background:var(--frost);-webkit-backdrop-filter:blur(24px) saturate(1.4);backdrop-filter:blur(24px) saturate(1.4);box-shadow:inset 0 0 0 1px var(--frost-line),var(--frost-shadow)}
+.feat-k,.others-h,.others-f{color:var(--ink-2)}
+.acc[open]{background:rgba(255,255,255,.62);box-shadow:inset 0 0 0 1px var(--frost-line)}
+/* glass: call-to-action bands (self-contained, no backdrop-filter needed) */
+.bw-close{background:var(--paper-3);box-shadow:inset 0 0 0 1px var(--frost-line),var(--frost-shadow);isolation:isolate}
+.bw-close::before{display:block;content:"";position:absolute;inset:-48px;width:auto;height:auto;z-index:-1;background:linear-gradient(rgba(255,250,242,.5),rgba(255,250,242,.5)),url(/concept-spec/img/want.jpg) 50% 55%/cover;filter:blur(36px) sepia(.75) saturate(1.1);opacity:1;right:-48px;top:-48px}
+.bw-close>*{position:relative}
+/* glass: connect pills */
+.soc{background:var(--frost);box-shadow:inset 0 0 0 1px var(--frost-line),var(--frost-shadow)}
+.soc:hover{box-shadow:inset 0 0 0 1px var(--ink-4),var(--frost-shadow)}
+@media (prefers-reduced-transparency:reduce){
+  .nav,.nav.solid,.bk-bar,.sheet,.feat,.others,.soc{background:var(--paper);-webkit-backdrop-filter:none;backdrop-filter:none}
+  .mcta{background:var(--paper);-webkit-backdrop-filter:none;backdrop-filter:none}
+  #conditions::before,.bw-close::before{display:none}
+}
+@media (max-width:1040px){
+  :root{--sec:88px;--head-gap:40px}
+  .journey{padding:80px 0}
+  #faq{padding:72px 0}
+  .intro{padding:72px 0}
+  .path{padding:64px 0 var(--sec)}
+  #steps{padding-top:64px}
+  .connect{padding:64px 0}
+  .split,.rev,.contact,.pod{min-height:0}
+  .split-body,.rev-body,.contact-body{padding-top:72px;padding-bottom:72px}
+  .pod-body{padding-top:72px;padding-bottom:64px}
+  .want{padding:104px 0 80px}
+  .tele .wrap{padding-top:48px;padding-bottom:64px}
+  .feat{padding:36px 28px}
+  .others{padding:12px}
+  .bw-close{margin-top:56px}
+  .foot{padding-top:80px}
+}
+@media (max-width:640px){
+  :root{--sec:80px;--air:48px}
+  .feat{padding:28px 24px}
+  .bw-row{padding:30px 0 30px 30px}
+}
