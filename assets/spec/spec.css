@@ -855,7 +855,7 @@ ul,ol{margin:0;padding:0;list-style:none}
 .pod-media img{object-position:50% 72%}
 .want img{object-position:50% 55%}
 .want::after{background:linear-gradient(90deg,rgba(38,28,20,.76) 0%,rgba(38,28,20,.66) 56%,rgba(38,28,20,.3) 100%)}
-@media (max-width:1040px){.hero-media{-webkit-mask-image:none;mask-image:none}.band img{object-position:62% 28%!important}}
+@media (max-width:1040px){.hero-media{-webkit-mask-image:none;mask-image:none}.band img{object-position:var(--opm,62% 28%)!important}}
 @media (max-width:640px){.band::after{background:linear-gradient(180deg,rgba(38,28,20,.1) 0%,rgba(38,28,20,.55) 45%,rgba(38,28,20,.84) 100%)}.want::after{background:rgba(38,28,20,.7)}}
 /* audit: Steps rows stay readable before they are scrolled to (the pale state read washed out) */
 .bw-row .bw-name,.bw-row .bw-desc{opacity:1;transform:none}
@@ -946,3 +946,8 @@ ul,ol{margin:0;padding:0;list-style:none}
 .bw-close{background:var(--paper);box-shadow:inset 0 0 0 1px var(--line),var(--shadow)}
 .bw-close::before{display:none!important}
 .foot-logo,.foot-klogo{width:283px;max-width:100%;height:auto}
+/* home podcast band: show the whole cover, never crop Kohei's head */
+.pod:not(.pod-hero) .pod-media{background:linear-gradient(#bab6aa,#c8c4b9 30%,#d0ccc5 60%,#d1d0cb) 0 0/50% 100% no-repeat,linear-gradient(#9e9683,#b2ab99 30%,#c2bbaf 60%,#c0baae) 100% 0/50% 100% no-repeat}
+.pod:not(.pod-hero) .pod-media img{inset:auto;left:50%;bottom:0;transform:translateX(-50%);height:100%;width:auto;max-width:100%;object-fit:contain;object-position:50% 100%;-webkit-mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent);mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent)}
+@media (max-width:1040px){.pod:not(.pod-hero) .pod-media{height:auto;aspect-ratio:1}}
+@media (max-width:600px){.cred-line .cred-key{display:block;line-height:1.35}.cred-line .cred-key+i{display:none}}
