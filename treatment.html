@@ -1,14 +1,12 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-AU">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>A Clear Path | Waterwell Clinic</title>
 <meta name="description" content="The five steps of working with Kohei Iguchi, the tools behind your care, and how telehealth appointments work." />
 
-<meta name="theme-color" content="#0E3A64" />
 <link rel="canonical" href="https://waterwellclinic.com/treatment" />
-<link rel="icon" href="/favicon.ico" sizes="48x48" />
 <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png" />
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
 <meta property="og:type" content="website" />
@@ -21,87 +19,163 @@
 <meta name="twitter:title" content="A Clear Path | Waterwell Clinic" />
 <meta name="twitter:description" content="The five steps of working with Kohei Iguchi, the tools behind your care, and how telehealth appointments work." />
 <meta name="twitter:image" content="https://waterwellclinic.com/assets/og-cover.jpg" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/instrument-serif-normal-400-latin.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/manrope-normal-300_800-latin.woff2" />
-<link rel="stylesheet" href="/assets/v4/site.css" />
-<script>document.documentElement.classList.add('js')</script>
-
+<meta name="theme-color" content="#f3f3f1">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/spec/spec.css">
+<link rel="preload" as="image" href="/assets/spec/img/clear-path-band.jpg" fetchpriority="high">
 </head>
 <body>
-<a class="skip-link" href="#main">Skip to content</a>
-<header class="nav over" id="nav">
-  <div class="nav-inner">
-    <a class="brand" href="/" aria-label="Waterwell Clinic, home"><img src="/assets/logo.png" alt="Waterwell Clinic" width="1500" height="162"></a>
-    <nav class="nav-links" aria-label="Main"><a href="/#conditions">Conditions</a><a href="/#approach">Services</a><a href="/#reviews">Reviews</a><a href="/#story">About</a><a href="/#podcast">Podcast</a><a href="/#articles">Articles</a><a href="/#visit">Contact</a></nav>
-    <a class="btn btn-sand nav-cta" href="/book/discovery">Free discovery call</a>
-    <a class="lockup" href="/" aria-label="Kohei Iguchi, Naturopathic Eczema Care"><span class="lk-name">Kohei Iguchi</span><span class="lk-tag">Naturopathic Eczema Care</span></a>
-    <button class="burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
+<a class="skip" href="#main">Skip to content</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-arrow" viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-out" viewBox="0 0 16 16"><path d="M5 11l6-6M6 5h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-check" viewBox="0 0 16 16"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 12 12"><path d="M6 1.5v9M1.5 6h9" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+  <symbol id="i-down" viewBox="0 0 16 16"><path d="M4 6l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-pause" viewBox="0 0 12 12"><rect x="2.5" y="2" width="2.4" height="8" rx=".8" fill="currentColor"/><rect x="7.1" y="2" width="2.4" height="8" rx=".8" fill="currentColor"/></symbol>
+  <symbol id="i-play" viewBox="0 0 12 12"><path d="M3.5 2.2v7.6a.6.6 0 0 0 .9.5l6-3.8a.6.6 0 0 0 0-1L4.4 1.7a.6.6 0 0 0-.9.5z" fill="currentColor"/></symbol>
+  <symbol id="i-quiz" viewBox="0 0 20 20"><path d="M6 4.5h8M6 10h8M6 15.5h5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="3" cy="4.5" r="1" fill="currentColor"/><circle cx="3" cy="10" r="1" fill="currentColor"/><circle cx="3" cy="15.5" r="1" fill="currentColor"/></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="M4 11l8-6.5 8 6.5M6 9.5V19h12V9.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M3.5 12h17M12 3.5c2.4 2.4 3.6 5.2 3.6 8.5s-1.2 6.1-3.6 8.5c-2.4-2.4-3.6-5.2-3.6-8.5s1.2-6.1 3.6-8.5z" fill="none" stroke="currentColor" stroke-width="1.5"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M12 7.5V12l3 2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M5 19c0-8 5-13 14-14-1 9-6 14-14 14z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M5 19l7-7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor"/></symbol>
+  <symbol id="i-fb" viewBox="0 0 24 24"><path d="M13.5 20.5v-7h2.4l.4-2.8h-2.8V9c0-.8.3-1.4 1.4-1.4h1.5V5.1c-.3 0-1.2-.1-2.2-.1-2.2 0-3.6 1.3-3.6 3.7v2H8.2v2.8h2.4v7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+  <symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="3.5" width="6" height="11" rx="3" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M6 11.5a6 6 0 0 0 12 0M12 17.5v3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+  <symbol id="i-yt" viewBox="0 0 24 24"><rect x="2.5" y="5.5" width="19" height="13" rx="4" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M10.2 9.4v5.2l4.4-2.6z" fill="currentColor"/></symbol>
+</svg>
+
+<nav class="nav" id="nav" aria-label="Main">
+  <a class="logo-ww" href="/" aria-label="Waterwell Clinic, back to the main website"><img src="/assets/spec/img/waterwell-logo.png" alt="Waterwell Clinic" width="1500" height="162"></a>
+  <ul>
+    <li><a href="/#conditions">Conditions</a></li>
+    <li><a href="/#services">Services</a></li>
+    <li><a href="/#reviews">Reviews</a></li>
+    <li><a href="/#about">About</a></li>
+    <li><a href="/#podcast">Podcast</a></li>
+    <li><a href="/#articles">Articles</a></li>
+    <li><a href="/#contact">Contact</a></li>
+  </ul>
+  <div class="nav-r">
+    <a class="logo-k" href="/about" aria-label="Kohei Iguchi, Naturopathic Eczema Care. About Kohei"><img src="/assets/spec/img/kohei-logo.png" width="693" height="225" alt="Kohei Iguchi, Naturopathic Eczema Care"></a>
+    <button class="menu-btn" type="button" id="menuBtn" aria-expanded="false" aria-controls="sheet" aria-label="Open menu"><span class="mt">Menu</span> <svg aria-hidden="true"><use href="#i-down"/></svg></button>
   </div>
-</header>
-<div class="drawer" id="drawer" aria-hidden="true">
-  <a href="/#conditions">Conditions</a><a href="/#approach">Services</a><a href="/#reviews">Reviews</a><a href="/#story">About</a><a href="/#podcast">Podcast</a><a href="/#articles">Articles</a><a href="/#visit">Contact</a>
-  <a class="btn btn-light" href="/book/discovery">Book a free discovery session <span class="arrow" aria-hidden="true">&rarr;</span></a>
+</nav>
+<div class="sheet" id="sheet" hidden>
+  <a href="/">Home</a><a href="/#conditions">Conditions</a><a href="/#services">Services</a><a href="/#reviews">Reviews</a><a href="/#about">About</a><a href="/#podcast">Podcast</a><a href="/#articles">Articles</a><a href="/#contact">Contact</a>
+  <a class="btn btn-dark" data-quiz="sheet" href="/book/discovery" style="margin-top:6px;color:#fff;justify-content:center"><span>Take the Free <span class="nw">3-Min</span> Quiz</span> <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+  <p class="k"><img src="/assets/spec/img/kohei-logo.png" width="693" height="225" alt="Kohei Iguchi, Naturopathic Eczema Care"></p>
 </div>
 
 <main id="main">
-<section class="band light page-banner on-dark" id="top">
-  <picture><source type="image/webp" srcset="/assets/v4/kohei/tools-1.webp"><img src="/assets/v4/kohei/tools-1.jpg" width="831" height="554" alt="Kohei writing notes beside a cup of tea" decoding="async" fetchpriority="high" style="object-position:60% 50%"></picture>
-  <div class="wrap"><div class="b-in">
+<header class="band band-hero on-dark" id="top">
+  <img src="/assets/spec/img/clear-path-band.jpg" width="2200" height="1467" alt="Kohei writing notes beside a cup of tea" fetchpriority="high" style="--op:60% 45%;--opm:30% 50%">
+  <div class="wrap">
     <h1>A Clear Path</h1>
-    <h2 class="sub">From skin flare-ups to feeling comfortable &amp; confident in your own skin.</h2>
+    <p class="ph-sub">From skin <span class="nw">flare-ups</span> to feeling comfortable &amp; confident in your own skin.</p>
     <p class="lead">No guesswork - five considered steps to help guide you from where you are now toward skin that feels balanced, nourished, and resilient.</p>
-  </div></div>
-</section>
-<section style="padding:var(--band-pad) 0">
-  <div class="wrap"><ol class="stones"><li class="reveal"><span class="n">01</span><h3>Gaining clarity</h3><p>Starting with a clear direction helps save you time, effort, and frustration. Through comprehensive consultations, functional testing, and over a decade of clinical experience, I work with you to explore the factors driving your skin symptoms.</p></li><li class="reveal"><span class="n">02</span><h3>Identifying and reducing obstacles</h3><p>Food and environmental sensitivities can act like speed bumps on your path to wellness, quietly contributing to inflammation and slowing down your body’s natural repair processes. Gently removing these triggers first helps create a supportive environment so the rest of your care plan can work effectively.</p></li><li class="reveal"><span class="n">03</span><h3>Addressing Underlying Drivers</h3><p>Once your skin begins to calm, I focus on supporting the underlying drivers behind your symptoms. Simply avoiding foods or triggers long-term isn't a sustainable solution - understanding why these sensitivities occurred in the first place is essential. From there, I draw on evidence-informed natural remedies designed to support gut health, hormonal balance, liver pathways, and a healthy microbiome to help guide your body back into balance.</p></li><li class="reveal"><span class="n">04</span><h3>Building Resilience</h3><p>Long-term health isn’t about avoiding your triggers forever - it’s about supporting your body’s natural resilience. Once your symptoms have calmed and we’ve targeted the underlying drivers, I gently guide you through reintroducing those foods and habits.</p></li><li class="reveal"><span class="n">05</span><h3>Empowerment</h3><p>Empowering you, instead of creating dependency, is essential to my practice. You’ll take what you’ve learned to maintain your progress with a personalised maintenance plan, along with occasional check-ins whenever you need extra support.</p></li></ol></div>
-</section>
-<section class="split paper" id="tools">
-  <div class="split-photo"><picture><source type="image/webp" srcset="/assets/v4/kohei/clear-path.webp"><img src="/assets/v4/kohei/clear-path.jpg" width="541" height="812" alt="Kohei Iguchi taking notes during a consultation" loading="lazy" decoding="async" style="object-position:55% 30%"></picture></div>
-  <div class="split-text">
-    <h2 class="reveal">The Tools Behind Your Care</h2>
-    <p class="reveal d1">Every plan is built around your individual health history, not a template. Here are the core modalities I draw on to support your skin:</p>
-    <ul class="tools reveal d1"><li><h3>Naturopathic Consultation</h3><p>A comprehensive, long-form appointment exploring your history, diet, lifestyle, and overall wellbeing - looking at the whole picture, not just your skin.</p></li><li><h3>Targeted Functional Testing</h3><p>Where needed, functional health testing can help provide clearer insights into potential underlying factors contributing to your skin health.</p></li><li><h3>Herbal Support</h3><p>Drawing on long-standing traditional knowledge and naturopathic principles, I prepare herbal formulations designed to support your body’s natural balance and overall vitality.</p></li><li><h3>Nutritional Support</h3><p>Targeted, practitioner-grade nutrients recommended to address identified dietary gaps and support your body’s overall vitality - never as a one-size-fits-all approach.</p></li><li><h3>Dietary &amp; Lifestyle Advice</h3><p>Practical, achievable adjustments to how you eat, sleep, move, and manage daily stress - tailored to fit the life you actually live so they remain sustainable long-term.</p></li></ul>
   </div>
-</section>
-<section class="split soft flip" id="telehealth">
-  <div class="split-photo"><picture><source type="image/webp" srcset="/assets/v4/kohei/telehealth-page.webp"><img src="/assets/v4/kohei/telehealth-page.jpg" width="849" height="566" alt="Hands typing on a laptop at a desk" loading="lazy" decoding="async" style="object-position:45% 78%"></picture></div>
-  <div class="split-text">
-    <h2 class="reveal">Telehealth appointments, from wherever you are.</h2>
-    <p class="reveal d1">The same in-depth, personalised care - from the comfort of your own home. Online consultation allows me to reach you anywhere in the world without compromising the quality of support.</p>
-    <ul class="pts reveal d1"><li>From the comfort of home</li><li>Sydney-based, seeing clients Australia-wide and worldwide</li><li>No traffic, no waiting room</li><li>Lower travel costs and emissions</li></ul>
-    
+</header>
+
+<section class="path" id="steps" aria-label="The five steps">
+  <div class="wrap">
+    <div class="bw-cols" aria-hidden="true"><span>Steps</span><span></span><span>What it involves</span></div>
+    <ol class="bw-list" id="bwList">
+      <li class="bw-row">
+        <div class="bw-name"><h3>Gaining clarity</h3></div>
+        <div class="bw-mid"><span class="bw-dot" aria-hidden="true"></span><span class="bw-k">01</span></div>
+        <div class="bw-desc"><p>Starting with a clear direction helps save you time, effort, and frustration. Through comprehensive consultations, functional testing, and over a decade of clinical experience, I work with you to explore the factors driving your skin symptoms.</p></div>
+      </li><li class="bw-row">
+        <div class="bw-name"><h3>Identifying and reducing obstacles</h3></div>
+        <div class="bw-mid"><span class="bw-dot" aria-hidden="true"></span><span class="bw-k">02</span></div>
+        <div class="bw-desc"><p>Food and environmental sensitivities can act like speed bumps on your path to wellness, quietly contributing to inflammation and slowing down your body’s natural repair processes. Gently removing these triggers first helps create a supportive environment so the rest of your care plan can work effectively.</p></div>
+      </li><li class="bw-row">
+        <div class="bw-name"><h3>Addressing Underlying Drivers</h3></div>
+        <div class="bw-mid"><span class="bw-dot" aria-hidden="true"></span><span class="bw-k">03</span></div>
+        <div class="bw-desc"><p>Once your skin begins to calm, I focus on supporting the underlying drivers behind your symptoms. Simply avoiding foods or triggers long-term isn't a sustainable solution - understanding why these sensitivities occurred in the first place is essential. From there, I draw on evidence-informed natural remedies designed to support gut health, hormonal balance, liver pathways, and a healthy microbiome to help guide your body back into balance.</p></div>
+      </li><li class="bw-row">
+        <div class="bw-name"><h3>Building Resilience</h3></div>
+        <div class="bw-mid"><span class="bw-dot" aria-hidden="true"></span><span class="bw-k">04</span></div>
+        <div class="bw-desc"><p>Long-term health isn’t about avoiding your triggers forever - it’s about supporting your body’s natural resilience. Once your symptoms have calmed and we’ve targeted the underlying drivers, I gently guide you through reintroducing those foods and habits.</p></div>
+      </li><li class="bw-row">
+        <div class="bw-name"><h3>Empowerment</h3></div>
+        <div class="bw-mid"><span class="bw-dot" aria-hidden="true"></span><span class="bw-k">05</span></div>
+        <div class="bw-desc"><p>Empowering you, instead of creating dependency, is essential to my practice. You’ll take what you’ve learned to maintain your progress with a personalised maintenance plan, along with occasional check-ins whenever you need extra support.</p></div>
+      </li>
+    </ol>
   </div>
 </section>
 
-<section class="statement navy on-dark close-band" id="close" data-mcta-hide>
-  <div class="wrap"><div class="st-in">
-    <h2 class="reveal">Ready when you are. I’d love to help.</h2>
-    
-    <div class="actions reveal d1"><a class="btn btn-light" href="/book/discovery">Book a free discovery session <span class="arrow" aria-hidden="true">&rarr;</span></a><a class="btn btn-ghost" href="/book/consultation">Book a Consult <span class="arrow" aria-hidden="true">&rarr;</span></a></div>
-  </div></div>
+<section class="split" id="tools" aria-labelledby="tools-h">
+  <div class="split-media clean"><img src="/assets/spec/img/tools-notes.jpg" width="1300" height="1950" alt="Kohei Iguchi taking notes during a consultation" loading="lazy" style="object-position:55% 30%"></div>
+  <div class="split-body">
+    <h2 class="h2" id="tools-h">The Tools Behind <span class="soft">Your Care</span></h2>
+    <p>Every plan is built around your individual health history, not a template. Here are the core modalities I draw on to support your skin:</p>
+    <div class="tools">
+      <details class="acc" name="tools" open><summary>Naturopathic Consultation<span class="pm" aria-hidden="true"><svg><use href="#i-plus"/></svg></span></summary><div class="body"><p>A comprehensive, long-form appointment exploring your history, diet, lifestyle, and overall wellbeing - looking at the whole picture, not just your skin.</p></div></details>
+      <details class="acc" name="tools"><summary>Targeted Functional Testing<span class="pm" aria-hidden="true"><svg><use href="#i-plus"/></svg></span></summary><div class="body"><p>Where needed, functional health testing can help provide clearer insights into potential underlying factors contributing to your skin health.</p></div></details>
+      <details class="acc" name="tools"><summary>Herbal Support<span class="pm" aria-hidden="true"><svg><use href="#i-plus"/></svg></span></summary><div class="body"><p>Drawing on long-standing traditional knowledge and naturopathic principles, I prepare herbal formulations designed to support your body’s natural balance and overall vitality.</p></div></details>
+      <details class="acc" name="tools"><summary>Nutritional Support<span class="pm" aria-hidden="true"><svg><use href="#i-plus"/></svg></span></summary><div class="body"><p>Targeted, practitioner-grade nutrients recommended to address identified dietary gaps and support your body’s overall vitality - never as a one-size-fits-all approach.</p></div></details>
+      <details class="acc" name="tools"><summary>Dietary &amp; Lifestyle Advice<span class="pm" aria-hidden="true"><svg><use href="#i-plus"/></svg></span></summary><div class="body"><p>Practical, achievable adjustments to how you eat, sleep, move, and manage daily stress - tailored to fit the life you actually live so they remain sustainable long-term.</p></div></details>
+    </div>
+  </div>
 </section>
 
+<section class="tele" id="telehealth" aria-labelledby="tele-h">
+  <img src="/assets/spec/img/telehealth.jpg" width="2400" height="1600" alt="Hands typing on a laptop in a bright room" loading="lazy">
+  <div class="wrap">
+    <div class="tele-copy">
+      <h2 class="h2" id="tele-h">Telehealth appointments, <span class="soft">from wherever you are.</span></h2>
+      <p class="lead">The same in-depth, personalised care - from the comfort of your own home. Online consultation allows me to reach you anywhere in the world without compromising the quality of support.</p>
+      <ul class="tele-list">
+        <li><svg aria-hidden="true"><use href="#i-home"/></svg>From the comfort of home</li>
+        <li><svg aria-hidden="true"><use href="#i-globe"/></svg>Sydney-based, seeing clients Australia-wide and worldwide</li>
+        <li><svg aria-hidden="true"><use href="#i-clock"/></svg>No traffic, no waiting room</li>
+        <li><svg aria-hidden="true"><use href="#i-leaf"/></svg>Lower travel costs and emissions</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="sec close-sec" id="close" aria-labelledby="close-h" data-mcta-hide>
+  <div class="wrap">
+    <div class="bw-close">
+      <div>
+        <h2 id="close-h">Ready when you are. <span class="soft">I’d love to help.</span></h2>
+      </div>
+      <div class="acts">
+        <a class="btn btn-dark hb" href="/book/consultation"><span class="hb-dot" aria-hidden="true"></span><span class="hb-a">Book a Consult <svg aria-hidden="true"><use href="#i-arrow"/></svg></span><span class="hb-b" aria-hidden="true">Book a Consult <svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+        <a class="tlink" href="/book/discovery"><span>Or book a free discovery session</span> <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
 </main>
-<footer class="on-dark">
+
+<footer class="foot" data-mcta-hide>
   <div class="wrap">
     <div class="foot-top">
-      <div class="foot-brand">
-        <a class="foot-logo" href="/" aria-label="Waterwell Clinic, home"><img src="/assets/logo.png" alt="Waterwell Clinic" width="1500" height="162" loading="lazy"></a>
-        <a class="lockup" href="/" aria-label="Kohei Iguchi, Naturopathic Eczema Care"><span class="lk-name">Kohei Iguchi</span><span class="lk-tag">Naturopathic Eczema Care</span></a>
-        <p><b>Degree-Qualified Naturopath</b><!-- HELD: compliance (herbalist title: "& Medical Herbalist"). Not published until cleared. --><br>BNatMed, BSc, Member of ATMS and IICT.</p>
+      <div>
+        <a href="/" aria-label="Waterwell Clinic, back to the main website" style="display:inline-block"><img class="foot-logo" src="/assets/spec/img/waterwell-logo.png" width="1500" height="162" alt="Waterwell Clinic" loading="lazy"></a>
+        <img class="foot-klogo" src="/assets/spec/img/kohei-logo-white.png" width="693" height="225" alt="Kohei Iguchi, Naturopathic Eczema Care" loading="lazy"><p class="foot-k"><small>Degree-Qualified Naturopath<br>BNatMed, BSc, Member of ATMS and IICT.</small></p>
       </div>
-      <nav class="foot-links" aria-label="Footer">
-        <div><h3>Explore</h3><ul><li><a href="/#conditions">Conditions</a></li><li><a href="/#approach">Services</a></li><li><a href="/#reviews">Reviews</a></li><li><a href="/#story">About</a></li><li><a href="/#podcast">Podcast</a></li><li><a href="/#articles">Articles</a></li><li><a href="/#visit">Contact</a></li><li><a href="/privacy">Privacy policy</a></li><li><a href="/code-of-conduct">Code of Conduct &amp; complaints</a></li></ul></div>
+      <nav class="foot-nav" aria-label="Footer">
+        <h4>Explore</h4>
+        <ul><li><a href="/#conditions">Conditions</a></li><li><a href="/treatment">Services</a></li><li><a href="/#reviews">Reviews</a></li><li><a href="/about">About</a></li><li><a href="/podcast">Podcast</a></li><li><a href="/#articles">Articles</a></li><li><a href="/#contact">Contact</a></li><li><a href="/">Back to the main website</a></li></ul>
       </nav>
     </div>
-    <div class="foot-bottom">
-      <span>&copy; <span id="yr">2026</span> Waterwell Clinic. Kohei Iguchi - BNatMed, BSc, Degree-Qualified Naturopath.<!-- HELD: compliance (herbalist title: "& Medical Herbalist"). Not published until cleared. --></span>
-      <span class="disc">Information on this site is general in nature and not a substitute for individual medical advice. Always consult a medical professional about your specific condition. Always consult your GP or prescribing healthcare professional before changing any prescribed treatments.</span>
+    <div class="foot-legal">
+      <p class="links"><a href="/privacy">Privacy policy</a><a href="/code-of-conduct">Code of Conduct &amp; complaints</a></p>
+      <p>© <span id="yr">2026</span> Waterwell Clinic. Kohei Iguchi - BNatMed, BSc, Degree-Qualified Naturopath.</p>
+      <p>Information on this site is general in nature and not a substitute for individual medical advice. Always consult a medical professional about your specific condition. Always consult your GP or prescribing healthcare professional before changing any prescribed treatments.</p>
     </div>
   </div>
 </footer>
+<div class="mcta" id="mcta"><a class="btn btn-dark" data-quiz="sticky-treatment" href="/book/discovery"><span>Take the Free <span class="nw">3-Min</span> Quiz</span> <svg aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
 
-<div class="mcta" id="mcta"><a class="btn btn-sand" data-quiz="sticky-treatment" href="/book/discovery">Take the Free 3-Min Quiz</a></div>
 <script>
   // GA4 + Google Ads (AU account 453-512-2323) "Submit lead form" conversion.
   // There is no thank-you page, so the conversion fires from the form's
@@ -109,7 +183,10 @@
   const GA4_ID = 'G-83M8D2WPX4';
   const AW_ID = 'AW-18419793511';
   const AW_LEAD = 'AW-18419793511/Mk14CKn756IdEOf8ns9E';
-  if (/^G-[A-Z0-9]{6,}$/.test(GA4_ID)) {
+  // Concept guard: the tag loads ONLY on the production hosts, so preview
+  // visits (vercel.app, localhost) never count in the real GA4/Ads property.
+  const PROD_HOST = ['waterwellclinic.com', 'www.waterwellclinic.com'].indexOf(location.hostname) !== -1;
+  if (PROD_HOST && /^G-[A-Z0-9]{6,}$/.test(GA4_ID)) {
     const tag = document.createElement('script');
     tag.async = true;
     tag.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA4_ID;
@@ -125,6 +202,6 @@
     if (/^AW-\d+$/.test(AW_ID)) gtag('config', AW_ID);
   }
 </script>
-<script src="/assets/v4/site.js" defer></script>
+<script src="/assets/spec/spec.js" defer></script>
 </body>
 </html>

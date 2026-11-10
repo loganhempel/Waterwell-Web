@@ -1,14 +1,12 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-AU">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>About Kohei Iguchi | Waterwell Clinic</title>
 <meta name="description" content="Kohei Iguchi is a degree-qualified naturopath (BNatMed, BSc) who lived through severe eczema himself. His story, his training, and life outside the clinic." />
 
-<meta name="theme-color" content="#0E3A64" />
 <link rel="canonical" href="https://waterwellclinic.com/about" />
-<link rel="icon" href="/favicon.ico" sizes="48x48" />
 <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png" />
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
 <meta property="og:type" content="website" />
@@ -21,122 +19,199 @@
 <meta name="twitter:title" content="About Kohei Iguchi | Waterwell Clinic" />
 <meta name="twitter:description" content="Kohei Iguchi is a degree-qualified naturopath (BNatMed, BSc) who lived through severe eczema himself. His story, his training, and life outside the clinic." />
 <meta name="twitter:image" content="https://waterwellclinic.com/assets/og-cover.jpg" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/instrument-serif-normal-400-latin.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/manrope-normal-300_800-latin.woff2" />
-<link rel="stylesheet" href="/assets/v4/site.css" />
-<script>document.documentElement.classList.add('js')</script>
-
+<meta name="theme-color" content="#f3f3f1">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/spec/spec.css">
+<link rel="preload" as="image" href="/assets/spec/img/reviews-kohei.jpg" fetchpriority="high">
 </head>
 <body>
-<a class="skip-link" href="#main">Skip to content</a>
-<header class="nav over" id="nav">
-  <div class="nav-inner">
-    <a class="brand" href="/" aria-label="Waterwell Clinic, home"><img src="/assets/logo.png" alt="Waterwell Clinic" width="1500" height="162"></a>
-    <nav class="nav-links" aria-label="Main"><a href="/#conditions">Conditions</a><a href="/#approach">Services</a><a href="/#reviews">Reviews</a><a href="/#story">About</a><a href="/#podcast">Podcast</a><a href="/#articles">Articles</a><a href="/#visit">Contact</a></nav>
-    <a class="btn btn-sand nav-cta" href="/book/discovery">Free discovery call</a>
-    <a class="lockup" href="/" aria-label="Kohei Iguchi, Naturopathic Eczema Care"><span class="lk-name">Kohei Iguchi</span><span class="lk-tag">Naturopathic Eczema Care</span></a>
-    <button class="burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
+<a class="skip" href="#main">Skip to content</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-arrow" viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-out" viewBox="0 0 16 16"><path d="M5 11l6-6M6 5h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-check" viewBox="0 0 16 16"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 12 12"><path d="M6 1.5v9M1.5 6h9" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+  <symbol id="i-down" viewBox="0 0 16 16"><path d="M4 6l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-pause" viewBox="0 0 12 12"><rect x="2.5" y="2" width="2.4" height="8" rx=".8" fill="currentColor"/><rect x="7.1" y="2" width="2.4" height="8" rx=".8" fill="currentColor"/></symbol>
+  <symbol id="i-play" viewBox="0 0 12 12"><path d="M3.5 2.2v7.6a.6.6 0 0 0 .9.5l6-3.8a.6.6 0 0 0 0-1L4.4 1.7a.6.6 0 0 0-.9.5z" fill="currentColor"/></symbol>
+  <symbol id="i-quiz" viewBox="0 0 20 20"><path d="M6 4.5h8M6 10h8M6 15.5h5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="3" cy="4.5" r="1" fill="currentColor"/><circle cx="3" cy="10" r="1" fill="currentColor"/><circle cx="3" cy="15.5" r="1" fill="currentColor"/></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="M4 11l8-6.5 8 6.5M6 9.5V19h12V9.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M3.5 12h17M12 3.5c2.4 2.4 3.6 5.2 3.6 8.5s-1.2 6.1-3.6 8.5c-2.4-2.4-3.6-5.2-3.6-8.5s1.2-6.1 3.6-8.5z" fill="none" stroke="currentColor" stroke-width="1.5"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M12 7.5V12l3 2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M5 19c0-8 5-13 14-14-1 9-6 14-14 14z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M5 19l7-7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor"/></symbol>
+  <symbol id="i-fb" viewBox="0 0 24 24"><path d="M13.5 20.5v-7h2.4l.4-2.8h-2.8V9c0-.8.3-1.4 1.4-1.4h1.5V5.1c-.3 0-1.2-.1-2.2-.1-2.2 0-3.6 1.3-3.6 3.7v2H8.2v2.8h2.4v7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+  <symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="3.5" width="6" height="11" rx="3" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M6 11.5a6 6 0 0 0 12 0M12 17.5v3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+  <symbol id="i-yt" viewBox="0 0 24 24"><rect x="2.5" y="5.5" width="19" height="13" rx="4" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M10.2 9.4v5.2l4.4-2.6z" fill="currentColor"/></symbol>
+</svg>
+
+<nav class="nav" id="nav" aria-label="Main">
+  <a class="logo-ww" href="/" aria-label="Waterwell Clinic, back to the main website"><img src="/assets/spec/img/waterwell-logo.png" alt="Waterwell Clinic" width="1500" height="162"></a>
+  <ul>
+    <li><a href="/#conditions">Conditions</a></li>
+    <li><a href="/#services">Services</a></li>
+    <li><a href="/#reviews">Reviews</a></li>
+    <li><a href="/#about">About</a></li>
+    <li><a href="/#podcast">Podcast</a></li>
+    <li><a href="/#articles">Articles</a></li>
+    <li><a href="/#contact">Contact</a></li>
+  </ul>
+  <div class="nav-r">
+    <a class="logo-k" href="/about" aria-label="Kohei Iguchi, Naturopathic Eczema Care. About Kohei"><img src="/assets/spec/img/kohei-logo.png" width="693" height="225" alt="Kohei Iguchi, Naturopathic Eczema Care"></a>
+    <button class="menu-btn" type="button" id="menuBtn" aria-expanded="false" aria-controls="sheet" aria-label="Open menu"><span class="mt">Menu</span> <svg aria-hidden="true"><use href="#i-down"/></svg></button>
   </div>
-</header>
-<div class="drawer" id="drawer" aria-hidden="true">
-  <a href="/#conditions">Conditions</a><a href="/#approach">Services</a><a href="/#reviews">Reviews</a><a href="/#story">About</a><a href="/#podcast">Podcast</a><a href="/#articles">Articles</a><a href="/#visit">Contact</a>
-  <a class="btn btn-light" href="/book/discovery">Book a free discovery session <span class="arrow" aria-hidden="true">&rarr;</span></a>
+</nav>
+<div class="sheet" id="sheet" hidden>
+  <a href="/">Home</a><a href="/#conditions">Conditions</a><a href="/#services">Services</a><a href="/#reviews">Reviews</a><a href="/#about">About</a><a href="/#podcast">Podcast</a><a href="/#articles">Articles</a><a href="/#contact">Contact</a>
+  <a class="btn btn-dark" data-quiz="sheet" href="/book/discovery" style="margin-top:6px;color:#fff;justify-content:center"><span>Take the Free <span class="nw">3-Min</span> Quiz</span> <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+  <p class="k"><img src="/assets/spec/img/kohei-logo.png" width="693" height="225" alt="Kohei Iguchi, Naturopathic Eczema Care"></p>
 </div>
 
 <main id="main">
-<section class="band light about-hero" id="top">
-  <picture><source type="image/webp" srcset="/assets/v4/kohei/about-hero.webp"><img src="/assets/v4/kohei/about-hero.jpg" width="982" height="655" alt="Kohei Iguchi at his desk beside a laptop, looking out of the window" decoding="async" fetchpriority="high" style="object-position:50% 25%"></picture>
-  <div class="wrap"><div class="b-in">
-    <h1>Kohei Iguchi <span>Degree-Qualified Naturopath</span></h1><!-- HELD: compliance (herbalist title: "& Medical Herbalist"). Not published until cleared. -->
-  </div></div>
-</section>
-<section class="cred on-dark" aria-label="Experience and memberships"><div class="cred-in"><ul><li class="reveal"><b>10+</b><span>Years of clinical experience</span></li><li class="reveal"><b>1,000+</b><span>Clients with chronic skin concerns</span></li><li class="reveal"><b>125k+</b><span>YouTube views</span></li><li class="reveal"><b>2</b><span>Advisory roles, Conquer Health &amp; She Thrives</span></li></ul><p class="cred-line">Degree-Qualified Naturopath <i>·</i> BNatMed <i>·</i> BSc <i>·</i> ATMS Accredited Practitioner <i>·</i> IICT Member<!-- HELD: compliance (herbalist title). Not published until cleared. --></p></div></section>
-
-<section class="prose-band" id="story">
-  <div class="wrap"><div class="prose">
-    <p class="big reveal">Born in Tokyo, Japan and soon migrated to New Zealand at the age of 8, I had no idea that I would one day become a Natural Health Practitioner.</p>
-    <p class="big reveal">I first took interest in the human mind, with a Bachelor of Science majoring in Psychology. But soon after, I became bedridden by a chronic skin condition…</p>
-  </div></div>
-</section>
-<section class="prose-band soft two">
-  <div class="wrap two-grid"><h2 class="reveal">My Skin Journey</h2><div class="prose">
-    <p class="reveal">As a young child, maybe since the age of 5, I had minor eczema around my elbow creases. It was never severe, but I do remember some awful moments where I had to wear bandages, and my mum would try her best to use natural remedies and rub sea salt directly on my eczema instead of steroid creams - grateful in hindsight, but it was painful!</p>
-    <p class="reveal">I would get through my teenage years without too much problem with my skin.</p>
-    <p class="reveal">But in 2010, my eczema erupted all over my body, and it took over my life. I cannot tell you the amount of pain and the agony I went through - words just don’t quite capture the level of torment.</p>
-    <!-- HELD: compliance (Kohei's own skin photos, docx image6 + image7; no-before/after rule). -->
-    <p class="reveal">My body was covered in dry, flaky, weeping and uncontrollably itchy skin. It hurt to move my body, it hurt to even smile. I was bedridden all day, and I would stay up scratching all night, waking up with dead skin and blood all over my sheets, and the day would start again.</p>
-    <p class="reveal">I was trapped in a cycle of using strong prescription treatments, which unfortunately could no longer hold off the intense itch and recurrent skin infections. I truly lost hope towards the end.</p>
-  </div></div>
-</section>
-<div class="photo-break"><picture><source type="image/webp" srcset="/assets/v4/kohei/telehealth-home.webp"><img src="/assets/v4/kohei/telehealth-home.jpg" width="849" height="566" alt="Kohei Iguchi at his laptop" loading="lazy" decoding="async" style="object-position:55% 45%"></picture></div>
-<section class="prose-band two">
-  <div class="wrap two-grid"><h2 class="reveal">My relationship with Naturopathy</h2><div class="prose">
-    <p class="reveal">This is when everything changed for me. I was introduced to a Naturopath through a family member. It was the first time anyone had spent 90 minutes asking about every part of my health.</p>
-    <p class="reveal">For the first time, someone asked why my skin was reacting, not just how to calm it down.</p><!-- HELD: compliance (implies cure, replaced by the line above: "Sorry, eczema is not curable" is not the mantra here. I learnt that there’s always a reason for disharmony in the body, and there’s a way back to balance.). Not published until cleared. -->
-    <p class="reveal">I immediately began my path to becoming a naturopath at the South Pacific College of Natural Medicine in Auckland, New Zealand, even before my condition had improved, and it immediately turned into a life passion of mine.</p>
-    <p class="reveal">Over the next 12 months, by focusing deeply on nutrition, targeted dietary support, and restoring whole-body balance, my skin slowly settled.</p>
-  </div></div>
-</section>
-<section class="split navy on-dark">
-  <div class="split-photo"><picture><source type="image/webp" srcset="/assets/v4/kohei/about-cert.webp"><img src="/assets/v4/kohei/about-cert.jpg" width="714" height="476" alt="Kohei Iguchi’s Bachelor of Natural Medicine certificate on the wall" loading="lazy" decoding="async" style="object-position:40% 50%"></picture></div>
-  <div class="split-text">
-    <p class="reveal">3 years later I graduated with a Bachelor of Natural Medicine, and eventually created the Waterwell Clinic - a holistic skin support practice dedicated to supporting people who are feeling helpless, and guiding you to find your way back to comfort, resilience, and hope.</p>
-    <p class="reveal d1">Since then I’ve had the pleasure of giving numerous seminars and webinars, mentoring, becoming one of the advisory naturopaths for Conquer Health and She Thrives group, and providing naturopathic care to over 1,000 people all over the world.</p>
-    <p class="reveal d1">As of June 2026, Waterwell Clinic has officially relocated to Sydney, Australia, and I’m truly excited to grow as a practitioner and serve a wider group of people who are struggling with their skin!</p>
-  </div>
-</section>
-<section class="band lr stack" id="waterwell">
-  <picture><source type="image/webp" srcset="/assets/v4/kohei/about-well.webp"><img src="/assets/v4/kohei/about-well.jpg" width="990" height="660" alt="" loading="lazy" decoding="async" style="object-position:50% 50%"></picture>
-  <div class="wrap"><div class="b-in">
-    <h2 class="reveal">Waterwell Clinic is</h2>
-    <p class="reveal d1">Derived from my last name - Iguchi. In Japanese, it means ‘The Mouth of the Well’. The water-well of a village is usually located in the centre of the village, and it’s considered as the life-source of the community.</p>
-    <p class="reveal d1">It provides clean drinking water, supplies water for crops and livestock, and even serves as a central gathering space where villagers meet, exchange news, and build social bonds.</p>
-    <p class="reveal d1">Waterwell Clinic was built around this image - a place where people can gather for sustenance, replenishment, education, and creating a positive ripple effect throughout the community.</p>
-  </div></div>
-</section>
-<section class="prose-band soft" id="outside">
-  <div class="wrap"><div class="prose">
-    <h2 class="reveal">Outside the Clinic</h2>
-    <p class="reveal">I enjoy climbing, both outdoor and indoor bouldering and sport climbing. I can’t think of a better way to spend my weekend than being in nature with my close friends, face-to-face with a big wall. I also enjoy photography, sketching, snowboarding, hiking, travelling, playing a bit of guitar, and dancing (though I’ve mostly retired!).</p>
-  </div></div>
-</section>
-<div class="three outside"><div class="reveal"><div class="t-img"><picture><source type="image/webp" srcset="/assets/v4/kohei/outside-1.webp"><img src="/assets/v4/kohei/outside-1.jpg" width="442" height="664" alt="Kohei rock climbing on an overhanging cliff" loading="lazy" decoding="async" style="object-position:50% 40%"></picture></div></div><div class="reveal"><div class="t-img"><picture><source type="image/webp" srcset="/assets/v4/kohei/outside-2.webp"><img src="/assets/v4/kohei/outside-2.jpg" width="520" height="686" alt="A mountain valley under a blue sky" loading="lazy" decoding="async" style="object-position:50% 50%"></picture></div></div><div class="reveal"><div class="t-img"><picture><source type="image/webp" srcset="/assets/v4/kohei/outside-3.webp"><img src="/assets/v4/kohei/outside-3.jpg" width="409" height="726" alt="Kohei walking along a colonnade" loading="lazy" decoding="async" style="object-position:50% 60%"></picture></div></div></div>
-<section class="statement navy on-dark close-band" id="close" data-mcta-hide>
-  <div class="wrap"><div class="st-in">
-    <h2 class="reveal">Want to talk about your skin?</h2>
-    <p class="reveal d1">Book a free 15-minute discovery session with me. No pressure, no obligation.</p>
-    <div class="actions reveal d1"><a class="btn btn-light" href="/book/discovery">Book my free discovery session <span class="arrow" aria-hidden="true">&rarr;</span></a><a class="text-link" data-quiz="about-close" href="/book/discovery">Or take the free 3-min quiz</a></div>
-  </div></div>
-</section>
-
-<section class="connect" id="connect" aria-labelledby="connect-h">
+<header class="band band-hero on-dark" id="top">
+  <img src="/assets/spec/img/reviews-kohei.jpg" width="1800" height="1200" alt="Kohei Iguchi at his desk beside a laptop, looking out of the window" fetchpriority="high" style="--op:62% 30%;--opm:74% 30%">
   <div class="wrap">
-    <h2 id="connect-h" class="reveal">Connect with me</h2>
-    <ul class="social reveal d1"><li><a href="https://www.instagram.com/waterwellclinic/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"/></svg><span>Instagram</span></a></li><li><a href="https://www.facebook.com/waterwellclinic" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7.6h2.6l.4-3h-3V8.5c0-.9.3-1.5 1.5-1.5h1.6V4.3c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.2H7.8v3h2.6V21h3.1z"/></svg><span>Facebook</span></a></li><li><a href="https://linktr.ee/waterwellclinic" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21M8.5 21h7"/></svg><span>Podcast</span></a></li><li><a href="https://www.youtube.com/@waterwellclinic" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2 26 26 0 0 0 2 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8A26 26 0 0 0 22 12a26 26 0 0 0-.4-4.8zM10 15V9l5.2 3L10 15z"/></svg><span>YouTube</span></a></li></ul>
+    <h1>Kohei Iguchi <span class="soft">Degree-Qualified Naturopath &amp; Medical Herbalist</span></h1>
+  </div>
+</header>
+
+<section class="cred" aria-label="Experience and memberships">
+  <div class="wrap">
+    <div class="cred-grid">
+      <div class="cred-cell stat"><span class="n">10+</span><span class="l">Years of clinical experience</span></div>
+      <div class="cred-cell stat"><span class="n">1,000+</span><span class="l">Clients with chronic skin concerns</span></div>
+      <div class="cred-cell stat"><span class="n">125k+</span><span class="l">YouTube views</span></div>
+      <div class="cred-cell stat"><span class="n">2</span><span class="l">Advisory roles, Conquer Health &amp; She Thrives</span></div>
+    </div>
+    <p class="cred-line"><span class="nw">Degree-Qualified Naturopath</span> <i>·</i> <span class="nw">BNatMed</span> <i>·</i> <span class="nw">BSc</span> <i>·</i> <span class="nw">ATMS Accredited Practitioner</span> <i>·</i> <span class="nw">IICT Member</span><!-- HELD: compliance (herbalist title). Not published until cleared. --></p>
   </div>
 </section>
 
+<section class="intro" id="story" aria-label="Introduction">
+  <div class="wrap">
+    <p>Born in Tokyo, Japan and soon migrated to New Zealand at the age of 8, I had no idea that I would one day become a Natural Health Practitioner.</p>
+    <p>I first took interest in the human mind, with a Bachelor of Science majoring in Psychology. But soon after, I became bedridden by a chronic skin condition…</p>
+  </div>
+</section>
+
+<section class="sec sec-paper" aria-labelledby="sj-h">
+  <div class="wrap prose-2">
+    <div class="head"><h2 class="h2" id="sj-h">My Skin Journey</h2></div>
+    <div class="prose">
+      <p>As a young child, maybe since the age of 5, I had minor eczema around my elbow creases. It was never severe, but I do remember some awful moments where I had to wear bandages, and my mum would try her best to use natural remedies and rub sea salt directly on my eczema instead of steroid creams - grateful in hindsight, but it was painful!</p>
+      <p>I would get through my teenage years without too much problem with my skin.</p>
+      <p>But in 2010, my eczema erupted all over my body, and it took over my life. I cannot tell you the amount of pain and the agony I went through - words just don’t quite capture the level of torment.</p>
+      <div class="skin-pair">
+        <img src="/assets/spec/img/skin-back.jpg" width="453" height="604" alt="Kohei's back covered in red, inflamed eczema" loading="lazy">
+        <img src="/assets/spec/img/skin-front.jpg" width="447" height="596" alt="Kohei's chest and arms covered in red, inflamed eczema" loading="lazy">
+      </div>
+      <p>My body was covered in dry, flaky, weeping and uncontrollably itchy skin. It hurt to move my body, it hurt to even smile. I was bedridden all day, and I would stay up scratching all night, waking up with dead skin and blood all over my sheets, and the day would start again.</p>
+      <p>I was trapped in a cycle of using strong prescription treatments, which unfortunately could no longer hold off the intense itch and recurrent skin infections. I truly lost hope towards the end.</p>
+    </div>
+  </div>
+</section>
+
+<div class="pbreak"><img src="/assets/spec/img/about-laptop.jpg" width="2400" height="1600" alt="Kohei Iguchi at his laptop" loading="lazy" style="object-position:55% 45%"></div>
+
+<section class="sec" aria-labelledby="nat-h">
+  <div class="wrap prose-2">
+    <div class="head"><h2 class="h2" id="nat-h">My relationship <span class="soft">with Naturopathy</span></h2></div>
+    <div class="prose">
+      <p>This is when everything changed for me. I was introduced to a Naturopath through a family member. It was the first time anyone had spent 90 minutes asking about every part of my health.</p>
+      <p>For the first time, someone asked why my skin was reacting, not just how to calm it down.</p><!-- HELD: compliance (implies cure, replaced by the line above: "Sorry, eczema is not curable" is not the mantra here. I learnt that there’s always a reason for disharmony in the body, and there’s a way back to balance.). Not published until cleared. -->
+      <p>I immediately began my path to becoming a naturopath at the South Pacific College of Natural Medicine in Auckland, New Zealand, even before my condition had improved, and it immediately turned into a life passion of mine.</p>
+      <p>Over the next 12 months, by focusing deeply on nutrition, targeted dietary support, and restoring whole-body balance, my skin slowly settled.</p>
+    </div>
+  </div>
+</section>
+
+<section class="split split-night" aria-label="Waterwell Clinic today">
+  <div class="split-media clean"><img src="/assets/spec/img/about-cert.jpg" width="1600" height="1067" alt="Kohei Iguchi’s Bachelor of Natural Medicine certificate on the wall" loading="lazy" style="object-position:40% 50%"></div>
+  <div class="split-body">
+    <p class="big">3 years later I graduated with a Bachelor of Natural Medicine, and eventually created the Waterwell Clinic - a holistic skin support practice dedicated to supporting people who are feeling helpless, and guiding you to find your way back to comfort, resilience, and hope.</p>
+    <p>Since then I’ve had the pleasure of giving numerous seminars and webinars, mentoring, becoming one of the advisory naturopaths for Conquer Health and She Thrives group, and providing naturopathic care to over 1,000 people all over the world.</p>
+    <p>As of June 2026, Waterwell Clinic has officially relocated to Sydney, Australia, and I’m truly excited to grow as a practitioner and serve a wider group of people who are struggling with their skin!</p>
+  </div>
+</section>
+
+<section class="want want-solo" id="waterwell" aria-labelledby="ww-h">
+  <img src="/assets/spec/img/about-well.jpg" width="990" height="660" alt="" loading="lazy">
+  <div class="wrap">
+    <h2 id="ww-h">Waterwell Clinic is</h2>
+    <p class="lead">Derived from my last name - Iguchi. In Japanese, it means ‘The Mouth of the Well’. The water-well of a village is usually located in the centre of the village, and it’s considered as the life-source of the community.</p>
+    <div class="want-cols">
+      <p>It provides clean drinking water, supplies water for crops and livestock, and even serves as a central gathering space where villagers meet, exchange news, and build social bonds.</p>
+      <p>Waterwell Clinic was built around this image - a place where people can gather for sustenance, replenishment, education, and creating a positive ripple effect throughout the community.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec outside" id="outside" aria-labelledby="out-h">
+  <div class="wrap">
+    <div class="head-row">
+      <div class="head"><h2 class="h2" id="out-h">Outside the Clinic</h2></div>
+      <p class="lead">I enjoy climbing, both outdoor and indoor bouldering and sport climbing. I can’t think of a better way to spend my weekend than being in nature with my close friends, face-to-face with a big wall. I also enjoy photography, sketching, snowboarding, hiking, travelling, playing a bit of guitar, and dancing (though I’ve mostly retired!).</p>
+    </div>
+  </div>
+  <div class="trio">
+    <img src="/assets/spec/img/outside-climb.jpg" width="442" height="664" alt="Kohei rock climbing on an overhanging cliff" loading="lazy" style="object-position:50% 40%">
+    <img src="/assets/spec/img/outside-valley.jpg" width="520" height="686" alt="A mountain valley under a blue sky" loading="lazy">
+    <img src="/assets/spec/img/journey-walk.jpg" width="409" height="726" alt="Kohei walking along a colonnade" loading="lazy" style="object-position:50% 60%">
+  </div>
+</section>
+
+<section class="sec close-sec" id="close" aria-labelledby="close-h" data-mcta-hide>
+  <div class="wrap">
+    <div class="bw-close">
+      <div>
+        <h2 id="close-h">Want to talk about your skin?</h2>
+        <p class="sub">Start with the free <span class="nw">3-minute</span> quiz, or book your initial consultation with me.</p>
+      </div>
+      <div class="acts">
+        <a class="btn btn-dark hb" href="/book/consultation"><span class="hb-dot" aria-hidden="true"></span><span class="hb-a">Book a Consult <svg aria-hidden="true"><use href="#i-arrow"/></svg></span><span class="hb-b" aria-hidden="true">Book a Consult <svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+        <a class="tlink" data-quiz="about-close" href="/book/discovery"><span>Or take the free <span class="nw">3-min</span> quiz</span> <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="connect" id="connect" aria-labelledby="cn-h">
+  <div class="wrap connect-row">
+    <h2 class="h2" id="cn-h">Connect with me</h2>
+    <div class="socials">
+      <a class="soc" href="https://www.instagram.com/waterwellclinic/" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-ig"/></svg>Instagram</a>
+      <a class="soc" href="https://www.facebook.com/waterwellclinic" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-fb"/></svg>Facebook</a>
+      <a class="soc" href="https://linktr.ee/waterwellclinic" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-mic"/></svg>Podcast</a>
+      <a class="soc" href="https://www.youtube.com/@waterwellclinic" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-yt"/></svg>YouTube</a>
+    </div>
+  </div>
+</section>
 </main>
-<footer class="on-dark">
+
+<footer class="foot" data-mcta-hide>
   <div class="wrap">
     <div class="foot-top">
-      <div class="foot-brand">
-        <a class="foot-logo" href="/" aria-label="Waterwell Clinic, home"><img src="/assets/logo.png" alt="Waterwell Clinic" width="1500" height="162" loading="lazy"></a>
-        <a class="lockup" href="/" aria-label="Kohei Iguchi, Naturopathic Eczema Care"><span class="lk-name">Kohei Iguchi</span><span class="lk-tag">Naturopathic Eczema Care</span></a>
-        <p><b>Degree-Qualified Naturopath</b><!-- HELD: compliance (herbalist title: "& Medical Herbalist"). Not published until cleared. --><br>BNatMed, BSc, Member of ATMS and IICT.</p>
+      <div>
+        <a href="/" aria-label="Waterwell Clinic, back to the main website" style="display:inline-block"><img class="foot-logo" src="/assets/spec/img/waterwell-logo.png" width="1500" height="162" alt="Waterwell Clinic" loading="lazy"></a>
+        <img class="foot-klogo" src="/assets/spec/img/kohei-logo-white.png" width="693" height="225" alt="Kohei Iguchi, Naturopathic Eczema Care" loading="lazy"><p class="foot-k"><small>Degree-Qualified Naturopath<br>BNatMed, BSc, Member of ATMS and IICT.</small></p>
       </div>
-      <nav class="foot-links" aria-label="Footer">
-        <div><h3>Explore</h3><ul><li><a href="/#conditions">Conditions</a></li><li><a href="/#approach">Services</a></li><li><a href="/#reviews">Reviews</a></li><li><a href="/#story">About</a></li><li><a href="/#podcast">Podcast</a></li><li><a href="/#articles">Articles</a></li><li><a href="/#visit">Contact</a></li><li><a href="/privacy">Privacy policy</a></li><li><a href="/code-of-conduct">Code of Conduct &amp; complaints</a></li></ul></div>
+      <nav class="foot-nav" aria-label="Footer">
+        <h4>Explore</h4>
+        <ul><li><a href="/#conditions">Conditions</a></li><li><a href="/treatment">Services</a></li><li><a href="/#reviews">Reviews</a></li><li><a href="/about">About</a></li><li><a href="/podcast">Podcast</a></li><li><a href="/#articles">Articles</a></li><li><a href="/#contact">Contact</a></li><li><a href="/">Back to the main website</a></li></ul>
       </nav>
     </div>
-    <div class="foot-bottom">
-      <span>&copy; <span id="yr">2026</span> Waterwell Clinic. Kohei Iguchi - BNatMed, BSc, Degree-Qualified Naturopath.<!-- HELD: compliance (herbalist title: "& Medical Herbalist"). Not published until cleared. --></span>
-      <span class="disc">Information on this site is general in nature and not a substitute for individual medical advice. Always consult a medical professional about your specific condition. Always consult your GP or prescribing healthcare professional before changing any prescribed treatments.</span>
+    <div class="foot-legal">
+      <p class="links"><a href="/privacy">Privacy policy</a><a href="/code-of-conduct">Code of Conduct &amp; complaints</a></p>
+      <p>© <span id="yr">2026</span> Waterwell Clinic. Kohei Iguchi - BNatMed, BSc, Degree-Qualified Naturopath.</p>
+      <p>Information on this site is general in nature and not a substitute for individual medical advice. Always consult a medical professional about your specific condition. Always consult your GP or prescribing healthcare professional before changing any prescribed treatments.</p>
     </div>
   </div>
 </footer>
+<div class="mcta" id="mcta"><a class="btn btn-dark" data-quiz="sticky-about" href="/book/discovery"><span>Take the Free <span class="nw">3-Min</span> Quiz</span> <svg aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
 
-<div class="mcta" id="mcta"><a class="btn btn-sand" data-quiz="sticky-about" href="/book/discovery">Take the Free 3-Min Quiz</a></div>
 <script>
   // GA4 + Google Ads (AU account 453-512-2323) "Submit lead form" conversion.
   // There is no thank-you page, so the conversion fires from the form's
@@ -144,7 +219,10 @@
   const GA4_ID = 'G-83M8D2WPX4';
   const AW_ID = 'AW-18419793511';
   const AW_LEAD = 'AW-18419793511/Mk14CKn756IdEOf8ns9E';
-  if (/^G-[A-Z0-9]{6,}$/.test(GA4_ID)) {
+  // Concept guard: the tag loads ONLY on the production hosts, so preview
+  // visits (vercel.app, localhost) never count in the real GA4/Ads property.
+  const PROD_HOST = ['waterwellclinic.com', 'www.waterwellclinic.com'].indexOf(location.hostname) !== -1;
+  if (PROD_HOST && /^G-[A-Z0-9]{6,}$/.test(GA4_ID)) {
     const tag = document.createElement('script');
     tag.async = true;
     tag.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA4_ID;
@@ -160,6 +238,6 @@
     if (/^AW-\d+$/.test(AW_ID)) gtag('config', AW_ID);
   }
 </script>
-<script src="/assets/v4/site.js" defer></script>
+<script src="/assets/spec/spec.js" defer></script>
 </body>
 </html>

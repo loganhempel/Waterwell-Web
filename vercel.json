@@ -4,6 +4,16 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/concept-spec",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/concept-spec/:path*",
+      "destination": "/:path*",
+      "permanent": true
+    },
+    {
       "source": "/conditions/eczema",
       "destination": "/#eczema",
       "permanent": true
