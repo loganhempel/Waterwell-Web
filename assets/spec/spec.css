@@ -951,3 +951,13 @@ ul,ol{margin:0;padding:0;list-style:none}
 .pod:not(.pod-hero) .pod-media img{inset:auto;left:50%;bottom:0;transform:translateX(-50%);height:100%;width:auto;max-width:100%;object-fit:contain;object-position:50% 100%;-webkit-mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent);mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent)}
 @media (max-width:1040px){.pod:not(.pod-hero) .pod-media{height:auto;aspect-ratio:1}}
 @media (max-width:600px){.cred-line .cred-key{display:block;line-height:1.35}.cred-line .cred-key+i{display:none}}
+
+/* Quiz preview card on the hero (Kohei + coach, 10/11 Nov): makes it obvious the CTA is a quiz */
+.hero-quiz{position:absolute;z-index:1;right:max(24px,calc(50% - 696px));bottom:32px;width:196px;display:block;border-radius:20px;overflow:hidden;background:#fff;text-decoration:none;color:var(--ink);box-shadow:0 1px 0 rgba(255,255,255,.6) inset,0 24px 48px -18px rgba(14,40,64,.42),0 2px 8px rgba(14,40,64,.12);transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s}
+.hero-quiz img{display:block;width:100%;height:auto;aspect-ratio:560/744;object-fit:cover}
+.hero-quiz .hq-tag{display:flex;align-items:center;gap:8px;padding:11px 14px 12px;font-size:13px;font-weight:500;color:var(--water)}
+.hero-quiz .hq-dot{width:7px;height:7px;border-radius:50%;background:var(--water-2);flex:none}
+.hero-quiz:hover{transform:translateY(-4px);box-shadow:0 1px 0 rgba(255,255,255,.6) inset,0 32px 56px -20px rgba(14,40,64,.48),0 2px 8px rgba(14,40,64,.12)}
+.hero-quiz:focus-visible{outline:2px solid var(--water);outline-offset:4px}
+@media (max-width:1040px){.hero-quiz{right:var(--gut,16px);bottom:18px;width:132px;border-radius:14px}.hero-quiz .hq-tag{padding:8px 10px 9px;font-size:11.5px;gap:6px}.hero-quiz .hq-dot{width:6px;height:6px}}
+@media (prefers-reduced-motion:reduce){.hero-quiz{transition:none}.hero-quiz:hover{transform:none}}
